@@ -212,7 +212,8 @@ Description: "Gültige Kombinationen aus Wirkstoffcode und Applikationsweg gemä
 * #1503io "Clonidin - intraossär"
 * #1503iv "Clonidin - intravenös"
 * #1503po "Clonidin - oral"
-* #1509io "Urapidil - intraossär"
+* #1509io "Urapidil - intraossär" 
+// TODO: CHECK FOR EMAIL TO DIVI, weather this was an error as the i.o. code doesnt follow the urapidil code in the spec
 * #1597xx "vorbehandelt mit Antihypertensiva/Vasodilatantien - sämtliche Applikationsformen"
 * #1598ih "sonstiges Antihypertensivum/Vasodilatans - inhalativ"
 * #1598im "sonstiges Antihypertensivum/Vasodilatans - intramuskulär"
