@@ -468,6 +468,8 @@ Description: "Gültige Kombinationen aus Wirkstoffcode und Applikationsweg gemä
 * #3101io "HÄS - intraossär"
 * #3101iv "HÄS - intravenös"
 * #3102io "SVR/Hyperosmol. NaCl - intraossär"
+* #3102iv "SVR/Hyperosmol. NaCl - intravenös"
+// TODO: Spec has a blank space too much, thats why this was missing previously - not reported to divi unitl now, please check later
 * #3103io "Gelatine - intraossär"
 * #3103iv "Gelatine - intravenös"
 * #3197xx "vorbehandelt mit Kolloid - sämtliche Applikationsformen"
