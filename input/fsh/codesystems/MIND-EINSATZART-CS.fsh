@@ -6,7 +6,7 @@ Description: "Einsatzart gemäß MIND 7.1 Spezifikation. Beschreibt die Art des 
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
-* ^publisher = "Dein Projekt"
+* ^publisher = "Till Koch"
 * ^content = #complete
 * ^caseSensitive = true
 

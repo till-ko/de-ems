@@ -6,6 +6,6 @@ Description: "ValueSet für die Einsatzart gemäß MIND 7.1 Spezifikation."
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
-* ^publisher = "Dein Projekt"
+* ^publisher = "Till Koch"
 
 * include codes from system MindEinsatzartCS
