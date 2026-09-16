@@ -1,0 +1,1023 @@
+quelle_pdf_seite;zeile_normalisiert
+15;3. Codes MIND
+15;MIND 7.1 Codeliste Release 1: 28.08.2026
+15;Feldname Werteliste
+15;Protokolltyp NA
+15;RD
+15;Standortkennung Amtlicher Gemeindeschlüssel des RM-Standortes
+15;-1 = nicht dokumentiert
+15;99999999 = nicht bekannt
+15;EinsatzArt Einsatzart
+15;01 = Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA
+15;02 = Notfallrettung - Primäreinsatz nur mit TNA
+15;03 = Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA
+15;04 = Notfallrettung - Primäreinsatz ohne NA
+15;05 = Notfallrettung - Verlegung nur mit (physisch anwesendem) NA
+15;06 = Notfallrettung - Verlegung nur mit TNA
+15;07 = Notfallrettung - Verlegung mit (physisch anwesendem) NA und TNA
+15;08 = Notfallrettung - Verlegung ohne NA
+15;09 = Intensivtransport
+15;10 = Krankentransport
+15;11 = Dienstfahrt
+15;12 = Pause
+15;Gemeindeschlüssel Amtlicher Gemeindeschlüssel des Einsatzortes
+15;-1 = nicht dokumentiert
+15;99999998 = Einsatzort im Ausland
+15;99999999 = nicht bekannt
+15;Postleitzahl Postleitzahl des Einsatzortes
+15;-1 = nicht dokumentiert
+15;99999 = nicht bekannt
+15;EinsatzortTyp Beschreibung des Einsatzortes
+15;-1 = nicht dokumentiert
+15;01 = Wohnung
+15;02 = Pflegeeinrichtung
+15;03 = Arbeitsplatz
+15;04 = Arztpraxis
+15;05 = Straße
+15;06 = öffentlicher Raum
+15;07 = Krankenhaus
+15;08 = Massenveranstaltung
+15;09 = Bildungseinrichtung
+15;10 = Sportstätte
+15;11 = Geburtshaus/-einrichtung
+15;12 = unwegsames Gelände
+15;98 = Sonstige
+15;RDTransport Rettungsdienstlicher Transport
+15;01 = kein Patiententransport, trotz Patientenkontakt
+15;02 = kein Patiententransport, da kein Patientenkontakt
+15;03 = Transport durch RTW
+15;04 = Transport durch NAW
+15;05 = Transport durch RTH / ITH
+15;06 = Transport durch KTW
+15;07 = Transport durch N-KTW
+15;08 = Transport durch S-RTW
+15;09 = Transport durch ITW
+15;98 = Transport durch sonstige Rettungsmittel
+15;AerztlBegleit Ärztliche Transportbegleitung
+15;00 = keine
+15;01 = Begleitung durch NA bodengebunden
+15;02 = Begleitung durch NA RTH
+15;03 = Begleitung durch Telenotarzt
+15;04 = Begleitung durch Krankenhaus-Arzt
+15;05 = Begleitung durch niedergelassenen Arzt
+15;98 = Begleitung durch sonstigen Arzt
+15;NotarztNachgefordert Physisch anwesender Notarzt wurde nachgefordert
+15;01 = Ja
+15;02 = Nein
+15;TNANachgefordert Tele-Notarzt wurde nachgefordert
+15;01 = Ja
+15;02 = Nein
+15;Release 1: 28.08.2026 Codes MIND Seite 1 von 15
+15;MIND 7.1 Codeliste Release 1: 28.08.2026
+15;KeinTranspMitPat Grund für Einsatz ohne Transport trotz Patientenkontakt
+15;01 = ambulante Versorgung, keine Klinikbehandlung notwendig
+15;02 = primäre Todesfeststellung (ohne CPR durch das dokumentierende RM)
+15;03 = Patient im Einsatzverlauf verstorben
+15;04 = Patient lehnt Transport ab
+15;05 = Hilfeleistung
+15;06 = an ambulanten Sektor verwiesen (ÄBD, Hausarzt etc.)
+15;07 = Patientenübergabe an Polizei
+15;08 = Unterstützung eines anderen Rettungsmittels
+15;09 = First Responder
+15;10 = Einsatzabbruch aus Wettergründen
+15;11 = Ausfall Rettungsmittel (Eigenunfall, technischer Defekt, Personal erkrankt)
+15;12 = Rettungsmittel für Transport nicht geeignet
+15;13 = Transport durch Dritte (z.B. Angehörige, Taxi)
+15;98 = sonstige
+15;KeinTranspOhnePat Grund für Einsatz ohne Transport, da kein Patientenkontakt
+15;01 = Von Leitstelle abbestellt / Abbruch vor Erreichen des Notfallorts
+15;02 = Kein Patient vorgefunden oder Patient bereits abtransportiert
+15;03 = (Vorsorgliche) Bereitstellung
+15;04 = Gebietsabdeckung
+15;05 = Personaltransport (Notarztzubringer/LNA, OrgL,…)
+15;06 = Materialtransport (Blut, spez. Devices,…)
+15;07 = Einsatzabbruch aus Wettergründen
+15;08 = Ausfall Rettungsmittel (Eigenunfall, technischer Defekt, Personal erkrankt)
+15;98 = sonstige
+15;DokRM Typ des dokumentierenden Rettungsmittels
+15;01 = NEF
+15;02 = RTW
+15;03 = KTW
+15;04 = NAW
+15;05 = RTH
+15;06 = ITH
+15;07 = ITW
+15;08 = Langstreckenflugzeug
+15;09 = Ambulanzflugzeug
+15;10 = First Responder
+15;11 = Bergrettung
+15;12 = Wasserrettung
+15;13 = Selbstfahrender NA
+15;14 = Telenotarzt
+15;15 = Single Responder (Gemeinde-NotSan, REF, AEF,...)
+15;16 = LNA
+15;17 = OrgL
+15;18 = N-KTW
+15;19 = MIC
+15;20 = S-RTW (Schwerlast)
+15;98 = Sonstige
+15;BeteilRM Typen der am Einsatz beteiligten Rettungsmittel
+15;01 = NEF
+15;02 = RTW
+15;03 = KTW
+15;04 = NAW
+15;05 = RTH
+15;06 = ITH
+15;07 = ITW
+15;08 = Langstreckenflugzeug
+15;09 = Ambulanzflugzeug
+15;10 = First Responder
+15;11 = Bergrettung
+15;12 = Wasserrettung
+15;13 = Selbstfahrender NA
+15;14 = Telenotarzt
+15;15 = Single Responder (Gemeinde-NotSan, REF, AEF,...)
+15;16 = LNA
+15;17 = OrgL
+15;18 = N-KTW
+15;19 = MIC
+15;20 = S-RTW (Schwerlast)
+15;21 = Ersthelfer-App
+15;98 = Sonstige
+16;Release 1: 28.08.2026 Codes MIND Seite 2 von 15
+16;MIND 7.1 Codeliste Release 1: 28.08.2026
+16;AerztlQualifikation Notärztl./Transportärztl.Fachgebiet/Qualifikation
+16;-1 = nicht dokumentiert
+16;01 = Innere
+16;02 = Chirurgie
+16;03 = Anästhesie
+16;04 = Pädiatrie
+16;05 = Allgemeinmedizin
+16;06 = Neurologie
+16;07 = Zusatzbezeichnung Notfallmedizin
+16;08 = Zusatzbezeichnung Intensivmedizin
+16;09 = Zusatzbezeichnung Klinische Akut- und Notfallmedizin
+16;10 = Ärztin/Arzt in Weiterbildung
+16;11 = Fachärztin/-arzt
+16;98 = Andere Fachrichtung
+16;StatusPersonal Status des Personals
+16;-1 = nicht dokumentiert
+16;01 = Ärztin/Arzt
+16;02 = Notfallsanitäter/in
+16;03 = Rettungsassistent/in
+16;04 = Rettungssanitäter/in
+16;05 = Intensivpflegepersonal
+16;98 = Sonstige
+16;SymptombeginnVor24h Bestehen die Symptome länger als 24 Stunden?
+16;00 = unbekannt
+16;01 = Ja
+16;02 = Nein
+16;SymptombeginnGesichert Ist der Symptombeginn gesichert oder geschätzt?
+16;01 = Symptombeginn gesichert
+16;02 = Symptombeginn geschätzt
+16;Alter Patientenalter
+16;Wertebereich = 000:01 bis 125:00 (Jahre:Monate)
+16;999:00 = Neugeboren: Geburt bis 28. Tag
+16;ValiditaetAlter Ist das Alter gesichert oder geschätzt?
+16;01 = gesichert
+16;02 = geschätzt
+16;Geschlecht Geschlecht des Patienten
+16;-1= nicht dokumentiert
+16;01 = männlich
+16;02 = weiblich
+16;03 = divers
+16;Bewusstsein1 Bewusstseinslage
+16;Bewusstsein2 -1 = nicht untersucht
+16;01 = analgosediert/Narkose
+16;02 = wach
+16;03 = reagiert auf Ansprache
+16;04 = reagiert auf Schmerzreiz
+16;05 = bewusstlos
+16;98 = Sonstige
+16;99 = nicht beurteilbar
+16;GlasgowComaScale1 Glasgow Coma Scale
+16;GlasgowComaScale2 Wertebereich = 3 bis 15
+16;-1 = nicht untersucht
+16;99 = nicht beurteilbar
+16;NeurologischeAuffaelligkeiten1 Akute neurologische Auffälligkeiten (ZNS, PNS)
+16;-1 = nicht untersucht
+16;00 = keine
+16;01 = Gesichtslähmung (kein Lächeln/hängender Mundwinkel) F
+16;02 = Motorik Arme (einseitiges Absinken <10s/kein Anheben/keine Bewegung) A
+16;03 = Motorik Beine (einseitiges Absinken <5s/kein Anheben/keine Bewegung)
+16;04 = Sehstörung/Doppelbilder
+16;05 = Sprachstörung (Aphasie)/Sprechstörung (Dysarthrie) S
+16;06 = Schluckstörung
+16;07 = Sensibilitätsstörung
+16;08 = Gangunsicherheit/Schwindel
+16;09 = Herdblick
+16;10 = Übelkeit/Erbrechen
+16;11 = Kopfschmerzen
+16;12 = Meningismus
+16;13 = Babinski Zeichen
+16;14 = Querschnittsymptomatik
+16;97 = vorbestehendes neurolog. Defizit
+16;98 = Sonstige
+16;99 = nicht beurteilbar
+17;Release 1: 28.08.2026 Codes MIND Seite 3 von 15
+17;MIND 7.1 Codeliste Release 1: 28.08.2026
+17;SystolischerBlutdruck1 Systolischer Blutdruck - Messwert in mmHg
+17;SystolischerBlutdruck2 Wertebereich = 0 bis 300
+17;-1 = nicht gemessen
+17;999 = nicht messbar
+17;EKGBefund1 EKG-Befund
+17;EKGBefund2 -1 = kein EKG durchgeführt
+17;01 = Sinusrhythmus
+17;02 = absolute Arrhythmie
+17;03 = AV-Block II
+17;04 = AV-Block III
+17;05 = schmale QRS-Tachykardie
+17;06 = breite QRS-Tachykardie
+17;07 = Kammerflimmern
+17;08 = pulslose elektrische Aktivität
+17;09 = Asystolie
+17;10 = Schrittmacherrhythmus
+17;11 = signifikante ST-Hebungen
+17;12 = Schenkelblock
+17;98 = Sonstige
+17;99 = nicht durchführbar/nicht beurteilbar
+17;Herzfrequenz1 Herzfrequenz - Messwert in /min
+17;Herzfrequenz2 Wertebereich = 0 bis 300
+17;-1 = nicht gemessen
+17;999 = nicht beurteilbar
+17;Atemfrequenz1 Atemfrequenz
+17;Atemfrequenz2 Wertebereich = 0 bis 98
+17;-1 = nicht gemessen
+17;99 = nicht beurteilbar
+17;Sauerstoffsaettigung1 Sauerstoffsättigung - Messwert in %
+17;Sauerstoffsaettigung2 Wertebereich = 0 bis 100
+17;-1 = nicht gemessen
+17;999 = nicht messbar
+17;Rekapillarisierungszeit Rekapillarisierungszeit - Messwert in s
+17;Wertebereich = 1 bis 10
+17;-1 = nicht gemessen
+17;11 = größer 10 Sekunden
+17;Schmerzempfinden1 Schmerzempfinden - nach Numerischer Rating Scala (NRS)
+17;Schmerzempfinden2 Wertebereich = 0 bis 10
+17;-1 = nicht gemessen
+17;99 = nicht beurteilbar
+17;Schmerzerleben Schmerzerleben durch Patienten
+17;00 = tolerabel
+17;01 = nicht tolerabel
+17;Blutzuckerwert1 Blutzucker
+17;Blutzuckerwert2 Messwert in mg/dl bzw. mmol/l
+17;Wertebereich = 0 bis 900 bei Einheit mg/dl bzw.
+17;Wertebereich = 0.0 bis 50.0 bei Einheit mmol/l
+17;-1 = nicht gemessen
+17;997 = "low"
+17;998 = "high"
+17;999 = nicht messbar
+17;BlutzuckerEinheit 01 = mg/dl
+17;02 = mmol/l
+17;Temperatur Temperatur
+17;Messwert in Grad Celsius
+17;Wertebereich = 20.0 bis 50.0
+17;-1.0 = nicht gemessen
+17;99.9 = nicht messbar
+17;Atmung1 Klinische Befunde Atmung
+17;Atmung2 -1 = nicht untersucht
+17;00 = unauffällige Spontanatmung
+17;01 = Dyspnoe
+17;02 = Zyanose
+17;03 = Spastik
+17;04 = Rasselgeräusche
+17;05 = Stridor
+17;06 = Atemwegsverlegung
+17;07 = Schnappatmung
+17;08 = Apnoe
+17;09 = Beatmung
+17;10 = Hyperventilation
+17;98 = Sonstige
+17;99 = nicht beurteilbar
+18;Release 1: 28.08.2026 Codes MIND Seite 4 von 15
+18;MIND 7.1 Codeliste Release 1: 28.08.2026
+18;Hautbefunde Hautbefunde
+18;-1 = nicht untersucht
+18;00 = unauffällig
+18;01 = Kalt-Schweissigkeit
+18;02 = Stehende Hautfalten
+18;03 = Ödeme
+18;04 = blass/fahl
+18;05 = Dekubitus
+18;06 = Exanthem/Erythem
+18;07 = Marmorierung
+18;08 = Ikterus
+18;98 = Sonstige
+18;99 = nicht beurteilbar
+18;Psyche1 Psychischer Zustand
+18;Psyche2 -1 = nicht untersucht
+18;00 = unauffällig
+18;01 = aggressiv
+18;02 = depressiv
+18;03 = wahnhaft
+18;04 = verwirrt
+18;05 = verlangsamt
+18;06 = manisch
+18;07 = erregt
+18;08 = ängstlich
+18;09 = suizidal
+18;10 = motorisch unruhig
+18;98 = Sonstige
+18;99 = nicht beurteilbar
+18;Pupillenweite1 Pupillenweite
+18;Pupillenweite2 -1 = nicht untersucht
+18;01 = beidseits eng
+18;02 = beidseits mittelweit
+18;03 = beidseits weit
+18;04 = Anisokorie
+18;05 = entrundet
+18;98 = Sonstige
+18;99 = nicht beurteilbar
+18;Lichtreaktion1 Lichtreaktion
+18;Lichtreaktion2 -1 = nicht untersucht
+18;00 = beidseits prompt
+18;01 = beidseits träge
+18;02 = beidseits keine
+18;03 = Seitendifferenz
+18;98 = Sonstige
+18;99 = nicht beurteilbar
+18;EtCO2Wert1 erster / letzter gemessener etCO2 Wert (unter Beatmung in mmHg gemessen)
+18;EtCO2Wert2 Wertebereich = 0 bis 120
+18;-1 = nicht gemessen
+18;999 = nicht messbar
+18;Die nachfolgenden mit hellblauer Farbe markierten Felder betreffen nur Baden-Württemberg
+18;VBeatmung Beatmung (außer Heimbeatmung)
+18;01 = Ja
+18;02 = Nein
+18;VBeatmungDetail differenzierte Beatmung
+18;01 = Ja
+18;02 = Nein
+18;KatecholaminPflicht Katecholaminpflichtigkeit
+18;01 = Ja
+18;02 = Nein
+18;KatecholaminTherapie differenzierte Katecholamin-Therapie
+18;01 = Ja
+18;02 = Nein
+18;FortlaufendSedierung fortlaufende Sedierung/Narkose
+18;01 = Ja
+18;02 = Nein
+18;VigilanzMinderung deutliche Vigilanzminderung mit Einschränkung von Schutzreflexen
+18;01 = Ja
+18;02 = Nein
+18;InvasivBlutdruck invasive Blutdruckmessung
+18;01 = Ja
+18;02 = Nein
+19;Release 1: 28.08.2026 Codes MIND Seite 5 von 15
+19;MIND 7.1 Codeliste Release 1: 28.08.2026
+19;SpezDevices Spezielle Devices
+19;-1 = keine speziellen Devices eingesetzt
+19;01 = Impella
+19;02 = externer Schrittmacher
+19;03 = IABP
+19;04 = ECMO
+19;98 = Sonstige
+19;AnzahlPerfusor Anzahl der Perfusoren
+19;Einstellige numerische Angabe (0 bis 9)
+19;IndikationArztbegleitung Indikation Arztbegleitung gegeben
+19;01 = Ja
+19;02 = Nein
+19;ZDringlichkeit Zeitliche Dringlichkeit
+19;01 = Notfall - schnellstmöglich, vitale Indikation
+19;02 = dringlich - zeitnah, keine vitale Indikation
+19;03 = planbar - Stunden oder Tage, nicht dringlich
+19;IndikationIT Indikation Intensivtransport
+19;00 = nein
+19;01 = ja, Patientenzustand
+19;02 = ja, intensivmedizinische Personalqualifikation erforderlich
+19;03 = ja, medizintechnische Ausstattung der Regelrettung nicht ausreichend
+19;98 = ja, Sonstiges
+19;Diagnose ZNS Erkrankungen
+19;1100 = Hirninfarkt, TIA, intrakranielle Blutung (1101 bis 1104)
+19;1101 = TIA
+19;1102 = Hirninfarkt
+19;1103 = ICB (klin. Diagn.)
+19;1104 = SAB (klin. Diagn.)
+19;1105 = Krampfanfall
+19;1106 = Fieberkrampf
+19;1107 = Status Epilepticus
+19;1108 = Meningitis - Encephalitis
+19;1198 = sonstige Erkrankung ZNS
+19;Herz/Kreislauf Erkrankungen
+19;1201 = ACS
+19;1202 = STEMI VW
+19;1203 = STEMI HW
+19;1204 = Thoraxschmerz unklarer Genese
+19;1205 = Kardiogener Schock
+19;1206 = tachykarde Rhythmusstörung
+19;1207 = bradykarde Rhythmusstörung
+19;1208 = PM-Fehlfunktion
+19;1209 = ICD-Fehlfunktion
+19;1210 = Lungenembolie
+19;1211 = Herzinsuffizienz
+19;1212 = Lungenödem
+19;1213 = hypertensive Entgleisung
+19;1214 = hypertensiver Notfall
+19;1215 = Aortenaneurysma/-dissektion
+19;1216 = Hypotonie
+19;1217 = orthostatische Fehlregulation
+19;1218 = Synkope
+19;1219 = Thrombose/arterieller Verschluss
+19;1220 = Herz-Kreislauf-Stillstand
+19;1221 = hämorrhagischer Schock
+19;1298 = sonstige Erkrankung Herz-Kreislauf
+19;Atemwegserkrankungen
+19;1301 = Asthma (Anfall)
+19;1302 = Status Asthmaticus
+19;1303 = exacerbierte COPD
+19;1304 = Aspiration
+19;1305 = Pneumonie/Bronchitis
+19;1306 = Epiglottitis
+19;1307 = Pseudokrupp
+19;1308 = anderer respiratorischer Infekt
+19;1309 = Hyperventilationssyndrom
+19;1310 = Spontanpneumothorax
+19;1311 = Hämoptysis
+19;1312 = Dyspnoe unklarer Ursache
+19;1398 = sonstige Erkrankung Atmung
+20;Release 1: 28.08.2026 Codes MIND Seite 6 von 15
+20;MIND 7.1 Codeliste Release 1: 28.08.2026
+20;Diagnose Abdominelle Erkrankungen
+20;1401 = akutes Abdomen
+20;1402 = obere GI Blutung
+20;1403 = untere GI Blutung
+20;1404 = Kolik (Galle, Niere,...)
+20;1405 = (Infektiöse) Gastroenteritis
+20;1406 = Mesenterialinfarkt
+20;1498 = sonstige Erkrankung Abdomen
+20;Psychiatrische Erkrankungen
+20;1501 = Depression, Angst
+20;1502 = Manie, Psychose
+20;1503 = Entzugssymptomatik, Delir
+20;1504 = Suizidalität
+20;1505 = psychosoziale Krise
+20;1598 = sonstige Erkrankung Psychiatrie
+20;Störungen des Stoffwechsels sowie des Wasser- und Elektrolythaushalts
+20;1601 = Hypoglykämie
+20;1602 = Hyperglykämie
+20;1603 = Urämie/ANV
+20;1604 = Exsikkose
+20;1605 = Elektrolytstörungen
+20;1698 = sonstige Erkrankung Stoffwechsel
+20;Gyn-/Geburtshilfe Notfälle
+20;1701 = Schwangerschaft > 35. SSW (zur Entbindung in die Klinik)
+20;1702 = Schwangerschaftskomplikation (z. B. Eklampsie)
+20;1703 = Präklinische Geburt
+20;1704 = Extrauterine Gravidität
+20;1705 = vaginale Blutung
+20;1798 = sonstige Erkrankung Gynäkologie
+20;Sonstige Erkrankungen
+20;1801 = Anaphylaxie Grad 1/2
+20;1802 = Anaphylaxie Grad 3/4
+20;1803 = Intoxikation Alkohol
+20;1804 = Intoxikation Drogen
+20;1805 = Intoxikation Medikamente
+20;1806 = sonstige Intoxikation
+20;1807 = akzidentelle Intoxikation
+20;1808 = Sepsis/sept. Schock
+20;1809 = Hochkontagiöse Erreger (SARS, HKLE,...)
+20;1810 = sonstige Infektionserkrankungen
+20;1811 = Hitzeerschöpfung, Hitzschlag
+20;1812 = Unterkühlung/Erfrierung
+20;1813 = SIDS
+20;1814 = akute Lumbago
+20;1815 = Palliative Situation
+20;1816 = medizinische Behandlungskomplikation
+20;1817 = Epistaxis/HNO-Erkrankung
+20;1818 = urologische Erkrankung
+20;1819 = Augenerkrankung
+20;1820 = sonstiger akuter Schmerzzustand
+20;1821 = Schock unklarer Genese
+20;1822 = Erysipel
+20;1898 = sonstige Erkrankung
+20;1899 = führendes soziales Problem
+20;9999 = keine Erkrankung/Verletzung feststellbar
+20;Diagnose SHT
+20;2001 = leicht
+20;2002 = mittel
+20;2003 = schwer
+20;2004 = lebensbedrohlich oder tödlich
+20;Trauma Gesicht/Kopf/Hals
+20;2101 = leicht
+20;2102 = mittel
+20;2103 = schwer
+20;2104 = lebensbedrohlich oder tödlich
+20;Trauma HWS
+20;2201 = leicht
+20;2202 = mittel
+20;2203 = schwer
+20;2204 = lebensbedrohlich oder tödlich
+21;Release 1: 28.08.2026 Codes MIND Seite 7 von 15
+21;MIND 7.1 Codeliste Release 1: 28.08.2026
+21;Diagnose Trauma Thorax
+21;2301 = leicht
+21;2302 = mittel
+21;2303 = schwer
+21;2304 = lebensbedrohlich oder tödlich
+21;Trauma Abdomen
+21;2401 = leicht
+21;2402 = mittel
+21;2403 = schwer
+21;2404 = lebensbedrohlich oder tödlich
+21;Trauma BWS/LWS
+21;2501 = leicht
+21;2502 = mittel
+21;2503 = schwer
+21;2504 = lebensbedrohlich oder tödlich
+21;Trauma Becken
+21;2601 = leicht
+21;2602 = mittel
+21;2603 = schwer
+21;2604 = lebensbedrohlich oder tödlich
+21;Trauma obere Extremität
+21;2701 = leicht
+21;2702 = mittel
+21;2703 = schwer
+21;2704 = lebensbedrohlich oder tödlich
+21;Trauma untere Extremität
+21;2801 = leicht
+21;2802 = mittel
+21;2803 = schwer
+21;2804 = lebensbedrohlich oder tödlich
+21;Trauma Weichteile
+21;2901 = leicht
+21;2902 = mittel
+21;2903 = schwer
+21;2904 = lebensbedrohlich oder tödlich
+21;Trauma Gefäßverletzungen
+21;2911 = leicht
+21;2912 = mittel
+21;2913 = schwer
+21;2914 = lebensbedrohlich oder tödlich
+21;Spezielle Traumata
+21;3001 = Verbrennung/Verbrühung
+21;3002 = Inhalationstrauma/Rauchgasinhalation
+21;3003 = Elektrounfall
+21;3004 = Verätzung
+21;3005 = (Beinahe-) Ertrinken
+21;3006 = Tauchunfall
+21;3098 = Sonstige
+21;Verletzungsmuster Verletzungsmuster
+21;01 = Einzelverletzung
+21;02 = Mehrfachverletzung
+21;03 = Polytrauma (nach Tscherne)
+21;Unfallursache Unfallursache
+21;01 = Unfall
+21;02 = Verdacht auf Gewaltanwendung
+21;03 = Verdacht auf Suizid(versuch)
+21;99 = nicht bekannt
+21;Unfallmechanismus Unfallmechanismus
+21;01 = stumpf
+21;02 = penetrierend
+21;03 = Amputation
+21;99 = nicht bekannt
+22;Release 1: 28.08.2026 Codes MIND Seite 8 von 15
+22;MIND 7.1 Codeliste Release 1: 28.08.2026
+22;Unfallhergang Unfallhergang
+22;01 = PKW-Insasse
+22;02 = LKW-Insasse
+22;03 = Bus-Insasse
+22;04 = Motorradfahrer/-sozius
+22;05 = Fahrrad
+22;06 = unterstütztes Fahrrad (E-Bike/Pedelec)
+22;07 = E-Scooter
+22;08 = Fußgänger angefahren
+22;09 = sonstiger Verkehrsunfall
+22;10 = (Ab)Sturz mit Fallhöhe mehr als 3m (Kinder jünger als 2 Jahre: Fallhöhe mehr als 90cm, Kinder 2-14 Jahre:
+22;Fallhöhe mehr als 1,5m)
+22;11 = (Ab)Sturz mit Fallhöhe maximal 3m (Kinder jünger als 2 Jahre: Fallhöhe maximal 90cm, Kinder 2-14 Jahre:
+22;Fallhöhe maximal 1,5m)
+22;12 = ebenerdiger Sturz
+22;13 = Schlagverletzung (Gegenstand, Ast,…)
+22;14 = Schussverletzung
+22;15 = Stichverletzung
+22;16 = Gewaltverbrechen
+22;17 = Explosion/Verpuffung (thermomech. Kombiverletzung)
+22;18 = Verschüttung
+22;19 = Arbeitsunfall
+22;20 = Sportunfall
+22;98 = andere Unfallarten
+22;99 = nicht bekannt
+22;HelmPat Helm Patient
+22;00 = unbekannt
+22;01 = Ja
+22;02 = Nein
+22;NACAScore NACA-Score
+22;01 = geringfügige Störung
+22;02 = ambulante Abklärung
+22;03 = stationäre Behandlung
+22;04 = akute Lebensgefahr nicht auszuschließen
+22;05 = akute Lebensgefahr
+22;06 = primär erfolgreiche Reanimation
+22;07 = Tod
+22;99 = nicht beurteilbar
+22;MNACAScore M-NACA Score
+22;02 = leichte Störung
+22;03 = mäßige Störung
+22;04 = drohende Lebensgefahr
+22;05 = akute Lebensgefahr
+22;06 = erfolgreiche Reanimation
+22;07 = Biolog. Tod vorliegend - erfolglose Reanimation
+22;99 = nicht errechenbar
+22;Airway Airway Maßnahmen
+22;-1 = keine Maßnahmen durchgeführt
+22;01 = Freimachen/Freihalten der Atemwege (z.B. Guedel/WendlTubus)/Absaugen
+22;02 = Maskenbeatmung unmöglich
+22;03 = supraglott. Atemwegshilfe SGA
+22;04 = Atemwegszugang erschwert
+22;05 = Endotrachealtubus
+22;06 = Intubation erschwert, mehr als 2 Versuche
+22;07 = Koniotomie/chir. Atemweg
+22;08 = Trachealkanülenwechsel
+22;98 = Sonstige
+22;Atemunterst Atemunterstützung - Beatmung
+22;-1 = keine Atemunterstützung durchgeführt
+22;01 = Sauerstoffgabe (Sonde/Maske)
+22;02 = manuell unterstützte Spontanatmung (Maske/Beutel)
+22;03 = manuelle Beatmung bei fehlender Spontanatmung (Maske/Beutel)
+22;04 = maschinell unterstützte Maskenbeatmung (NIV)
+22;05 = maschinelle invasive Beatmung (unterstützt oder kontrolliert)
+22;98 = Sonstige
+22;CirculationZugang Medikamentenzugang
+22;-1 = kein Zugang gelegt
+22;01 = PVK
+22;02 = ZVK
+22;03 = Shaldon- oder anderer großlumiger Katheter
+22;04 = IO Punktion
+22;97 = Zugang vorhanden/durch Andere
+22;98 = Sonstige
+23;Release 1: 28.08.2026 Codes MIND Seite 9 von 15
+23;MIND 7.1 Codeliste Release 1: 28.08.2026
+23;SpezMassn Spezielle Maßnahmen
+23;-1 = keine speziellen Maßnahmen durchgeführt
+23;01 = Kühlung lokal
+23;02 = Kühlung systemisch
+23;03 = Wärmemanagement
+23;04 = Entbindung
+23;05 = Neugeborenenversorgung
+23;06 = Krisenintervention
+23;07 = Kardioversion
+23;08 = Notfallnarkose
+23;09 = Tourniquet
+23;10 = Hämostyptica
+23;11 = Thoraxdrainage/Entlastungspunktion
+23;12 = Thorakotomie
+23;13 = REBOA (resuscitative endovascular balloon occlusion of the aorta)
+23;98 = Sonstige
+23;EKG12Kanal 12-Kanal-EKG
+23;-1 = kein 12-Kanal-EKG durchgeführt
+23;01 = durch eigenes RM vor Ort
+23;02 = durch Andere
+23;03 = telemetrische Übermittlung an Zielklinik
+23;04 = nicht durchführbar
+23;Medizintechnik Medizintechnik
+23;-1 = keine Medizintechnik eingesetzt
+23;01 = invasive RR-Messung
+23;02 = ZVD
+23;03 = ICP
+23;04 = Ultraschall (Sono/Echo)
+23;05 = Notfallpacer
+23;06 = Spritzenpumpe(n)
+23;07 = Videolaryngoskopie
+23;08 = Transportinkubator
+23;98 = Sonstige
+23;LagTrans Lagerungs- und Rettungstechnik
+23;-1 = keine Lagerungs- und Rettungstechnik
+23;01 = OK Hochlagerung
+23;02 = Flachlagerung
+23;03 = Schocklagerung
+23;04 = stabile Seitenlage
+23;05 = sitzender Transport
+23;06 = Cervicalstütze/HWS-Immobilisation
+23;07 = Spineboard
+23;08 = Schaufeltrage
+23;09 = Vakuummatratze
+23;10 = (Extremitäten-)Schienung
+23;11 = Reposition
+23;12 = Verband
+23;13 = Beckenschlinge
+23;98 = Sonstige
+23;DurchfHeilkundlMassn Eigenständig oder eigenverantwortlich durchgeführte heilkundliche Maßnahmen durch Notfallsanitäterinnen/Notfallsanitäter
+23;01 = ja, Medikamentengabe
+23;02 = ja, Maßnahmen
+23;03 = nein
+23;Behandlungspfad diese Codes sind bundesland- und/oder regionalspezifisch
+23;Medikamentengabe Erläuterung Applikationsformen: iv=intravenös, io=intraossär, im=intramuskulär, sc=subcutan, nl=intranasal, ih=inhalativ,
+23;po=oral, sl=sublingual/buccal, rl=rectal, td=transdermal
+23;Analgetika
+23;Fentanyl: 1001iv, 1001io, 1001im, 1001sc, 1001nl, 1001sl, 1001td
+23;Morphin: 1002iv, 1002io, 1002im, 1002sc, 1002nl, 1002po, 1002td
+23;Piritramid: 1003iv, 1003io, 1003im, 1003sc
+23;Sufentanil: 1004iv, 1004io, 1004nl, 1004sl
+23;anderes Opioid: 1005iv, 1005io, 1005im, 1005sc, 1005nl, 1005po, 1005sl, 1005rl, 1005td
+23;Metamizol: 1006iv, 1006io, 1006po
+23;Paracetamol: 1007iv, 1007io, 1007po, 1007rl
+23;Oxycodon: 1008iv, 1008io, 1008sc, 1008po, 1008sl
+23;Ketamin/Esketamin: 1009iv, 1009io, 1009im, 1009sc, 1009nl, 1009ih, 1009rl
+23;NSAID (z.B. Ibuprofen, Diclofenac): 1010iv, 1010io, 1010po, 1010rl
+23;Lokalanästhetikum (z.B. Lidocain): 1011sc, 1011td
+23;vorbehandelt mit Analgetika (sämtliche Applikationsformen): 1097xx
+23;sonstiges Analgetikum: 1098iv, 1098io, 1098im, 1098sc, 1098nl, 1098ih, 1098po, 1098sl, 1098rl, 1098td
+24;Release 1: 28.08.2026 Codes MIND Seite 10 von 15
+24;MIND 7.1 Codeliste Release 1: 28.08.2026
+24;Medikamentengabe Antiarrhythmika
+24;Betablocker: 1101iv, 1101io, 1101po
+24;Amiodaron: 1102iv, 1102io, 1102po
+24;Adenosin: 1103iv, 1103io
+24;Atropin: 1104iv, 1104io
+24;Verapamil: 1105iv, 1105io 1105po
+24;Ajmalin: 1106iv, 1106io
+24;Digitalisglykosid: 1107iv, 1107io
+24;Lidocain: 1108iv, 1108io
+24;vorbehandelt mit Antiarrhythmika (sämtliche Applikationsformen): 1197xx
+24;sonstiges Antiarrhythmikum: 1198iv, 1198io, 1198im, 1198sc, 1198nl, 1198ih, 1198po, 1198sl, 1198rl, 1198td
+24;Antidota
+24;Flumazenil: 1201iv, 1201io, 1201nl
+24;Carbo medicinalis (Kohle): 1202po
+24;Naloxon: 1203iv, 1203io, 1203im, 1203sc, 1203nl
+24;Physostigmin: 1204iv, 1204io
+24;Atropin (als Antidot):1205iv, 1205io
+24;Obidoxim: 1206iv, 1206io
+24;Hydroxocobalamin: 1207iv, 1207io
+24;Natriumthiosulfat: 1208iv, 1208io
+24;4-Dimethylaminophenol (4-DMAP): 1209iv, 1209io
+24;Toloniumchlorid (Toluidinblau):1210iv, 1210 io
+24;Methylthioniniumchlorid (Methylenblau): 1211iv, 1211io
+24;vorbehandelt mit Antidota (sämtliche Applikationsformen): 1297xx
+24;sonstiges Antidot: 1298iv, 1298io, 1298im, 1298sc, 1298nl, 1298ih, 1298po, 1298sl, 1298rl, 1298td
+24;Antiemetika
+24;Dimenhydrinat: 1301iv, 1301io, 1301po, 1301rl
+24;Metoclopramid: 1302iv, 1302io, 1302po
+24;5HT3 Antagonist (z. B. Ondansetron):1303iv, 1303io, 1303po, 1303rl
+24;vorbehandelt mit Antiemetika (sämtliche Applikationsformen): 1397xx
+24;sonstiges Antiemetikum: 1398iv, 1398io, 1398im, 1398sc, 1398nl, 1398ih, 1398po, 1398sl, 1398rl, 1398td
+24;Sedativa/Antiepileptika
+24;Clonazepam: 1401iv, 1401io
+24;Diazepam: 1402iv, 1402io, 1402im, 1402sc, 1402po, 1402sl, 1402nl, 1402rl
+24;Lorazepam: 1403iv, 1403io, 1403im, 1403sc, 1403po, 1403sl, 1403nl, 1403rl
+24;Midazolam: 1404iv, 1404io, 1404im, 1404sc, 1404po, 1404sl, 1404nl, 1404rl
+24;Phenytoin: 1405iv, 1405io
+24;Levetiracetam: 1406iv, 1406io
+24;vorbehandelt mit Sedativa/Antiepileptika (sämtliche Applikationsformen): 1497xx
+24;sonstiges Sedativum/Antiepileptikum: 1498iv, 1498io, 1498im, 1498sc, 1498nl, 1498ih, 1498po, 1498sl, 1498rl, 1498td
+24;Antihypertensiva/Vasodilatantien
+24;Urapidil: 1501iv, 1509io
+24;Glyceroltrinitrat: 1502iv, 1502io, 1502sl
+24;Clonidin: 1503iv, 1503io, 1503po
+24;vorbehandelt mit Antihypertensiva/Vasodilatantien (sämtliche Applikationsformen): 1597xx
+24;sonstiges Antihypertensivum/Vasodilatans: 1598iv, 1598io, 1598im, 1598sc, 1598nl, 1598ih, 1598po, 1598sl, 1598rl, 1598td
+24;Bronchodilatantien
+24;Salbutamol: 1601iv, 1601io, 1601ih
+24;Reproterol: 1602iv, 1602io, 1602ih
+24;Ipratropiumbromid: 1603iv, 1603io, 1603im, 1603sc, 1603ih
+24;Theophyllin: 1604iv, 1604io, 1604po
+24;vorbehandelt mit Brochodilatantien (sämtliche Applikationsformen): 1697xx
+24;sonstiges Bronchodilatans: 1698iv, 1698io, 1698im, 1698sc, 1698nl, 1698ih, 1698po, 1698sl, 1698rl, 1698td
+24;Diuretika
+24;Furosemid: 1701iv, 1701io
+24;vorbehandelt mit Diuretika (sämtliche Applikationsformen): 1797xx
+24;sonstiges Diuretikum: 1798iv, 1798io, 1798im, 1798sc, 1798nl, 1798ih, 1798po, 1798sl, 1798rl, 1798td
+24;Katecholamine/Vasopressoren
+24;Epinephrin: 1801iv, 1801io, 1801im, 1801sc, 1801nl, 1801ih
+24;Norepinephrin: 1802iv, 1802io
+24;Cafedrin/Theoadrenalin: 1803iv, 1803io
+24;Dobutamin: 1804iv, 1804io
+24;Vasopressin: 1805iv, 1805io
+24;vorbehandelt mit Katecholaminen (sämtliche Applikationsformen): 1897xx
+24;sonstige Katecholamine: 1898iv, 1898io, 1898im, 1898sc, 1898nl, 1898ih, 1898po, 1898sl, 1898rl, 1898td
+24;Kortikosteroide
+24;Dexametason: 1901iv, 1901io, 1901ih
+24;Methyl-/Prednisolon: 1902iv, 1902io, 1902ih, 1902rl
+24;vorbehandelt mit Kortikosteroiden (sämtliche Applikationsformen): 1997xx
+24;sonstiges Corticoid :1998iv, 1998io, 1998im, 1998sc, 1998nl, 1998ih, 1998po, 1998sl, 1998rl, 1998td
+25;Release 1: 28.08.2026 Codes MIND Seite 11 von 15
+25;MIND 7.1 Codeliste Release 1: 28.08.2026
+25;Medikamentengabe Muskelrelaxantien
+25;Suxamethonium: 2001iv, 2001io, 2001im
+25;Rocuronium 2002iv, 2002io
+25;vorbehandelt mit Muskelrelaxantien (sämtliche Applikationsformen): 2097xx
+25;sonstiges Muskelrelaxans: 2098iv, 2098io, 2098im, 2098sc, 2098nl, 2098ih, 2098po, 2098sl, 2098rl, 2098td
+25;Narkotika
+25;Etomidat: 2101iv, 2101io
+25;Propofol: 2102iv, 2102io
+25;Thiopental: 2103iv, 2103io
+25;vorbehandelt mit Narkotika (sämtliche Applikationsformen): 2197xx
+25;sonstiges Narkotikum: 2198iv, 2198io, 2198im, 2198sc, 2198nl, 2198ih, 2198po, 2198sl, 2198rl, 2198td
+25;Psychopharmaka
+25;Haloperidol: 2201iv, 2201io, 2201im
+25;Promethazin: 2202iv, 2202io, 2202im
+25;vorbehandelt mit Psychopharmaka (sämtliche Applikationsformen): 2297xx
+25;sonstige Psychopharmaka: 2298iv, 2298io, 2298im, 2298sc, 2298nl, 2298ih, 2298po, 2298sl, 2298rl, 2298td
+25;Antikoagulanzien
+25;UF Heparin: 2301iv, 2301io, 2301sc
+25;NM Heparin: 2302sc
+25;vorbehandelt mit Antikoagluanzien (sämtliche Applikationsformen): 2397xx
+25;sonstige Antikoagulanzien: 2398iv, 2398io, 2398im, 2398sc, 2398po
+25;TZ-Aggregationshemmer
+25;Acetylsalicylsäure: 2401iv, 2401io, 2401po
+25;Clopidogrel o.a.: 2402iv, 2402io, 2402po
+25;vorbehandelt mitTZ-Aggregationshemmern (sämtliche Applikationsformen): 2497xx
+25;sonstige TZ-Aggregationshemmer: 2498iv, 2498io, 2498im, 2498sc, 2498po, 2498sl
+25;Thrombolytika
+25;Tenecteplase: 2601iv, 2601io
+25;Alteplase: 2602iv, 2602io
+25;Reteplase: 2603iv, 2603io
+25;vorbehandelt mit sonstigen Thrombolytika (sämtliche Applikationsformen): 2697xx
+25;sonstiges Thrombolytikum: 2698iv, 2698io, 2698im, 2698sc
+25;Sonstige Medikamente
+25;Glukose: 2501iv, 2501io, 2501po
+25;H1 Blocker (z.B. Dimetinden): 2502iv, 2502io, 2502po
+25;H2 Blocker (z.B. Ranitidin): 2503iv, 2503io, 2503po
+25;Butylscopolamin: 2504iv, 2504io, 2504po
+25;Antibiotikum (z. B. Ceftriaxon): 2505iv, 2505io, 2505po
+25;Biperiden: 2506iv, 2506io, 2506po
+25;Oxytocin: 2507iv, 2507io, 2507nl
+25;Fenoterol (als Tokolytikum): 2508iv, 2508io, 2508ih
+25;Kaliumchlorid: 2509iv, 2509io, 2509po
+25;Calciumgluconat: 2510iv, 2510io 2510td
+25;Magnesiumsulfat: 2511iv, 2511io
+25;Insulin: 2512iv, 2512io, 2512sc
+25;Tranexamsäure: 2513iv, 2513io, 2513nl
+25;Natriumhydrogencarbonat: 2514iv, 2514io
+25;Erythrozytenkonzentrat: 2515iv, 2515io
+25;FFP: 2516iv, 2516io
+25;PPSB: 2517iv, 2517io
+25;Fibronogen: 2518iv, 2518io
+25;Lyoplasma: 2519iv, 2519io
+25;Thiamin: 2520iv, 2520io
+25;Simethicon: 2521po
+25;abschwellende Nasentropfen (z.B. Xylometazolin): 2522nl
+25;vorbehandelt mit sonstigen Medikamenten (sämtliche Applikationsformen): 2597xx
+25;sonstige Medikamente: 2598iv, 2598io, 2598im, 2598sc, 2598nl, 2598ih, 2598po, 2598sl, 2598rl, 2598td
+25;kein Medikament: 999999
+25;Infusionsgabe Kristalloide Infusionen
+25;Isotone Kochsalzlösung.: 3001iv, 3001io, 3001sc
+25;Vollelektrolytlösung: 3002iv, 3002io, 3002sc
+25;vorbehandelt mit Kristalloid (sämtliche Applikationsformen): 3097xx
+25;sonstiges Kristalloid: 3098iv, 3098io, 3098sc
+25;Spezielle Infusionen
+25;HÄS: 3101iv, 3101io
+25;SVR/Hyperosmol. NaCl: 3102 iv, 3102io
+25;Gelatine: 3103iv, 3103io
+25;vorbehandelt mit Kolloid (sämtliche Applikationsformen): 3197xx
+25;sonstige: 3198iv, 3198io, 3198 sc
+25;sonstige Angaben
+25;keine Infusion: 999999
+26;Release 1: 28.08.2026 Codes MIND Seite 12 von 15
+26;MIND 7.1 Codeliste Release 1: 28.08.2026
+26;NeurologischeAuffaelligkeiten2 Akute neurologische Auffälligkeiten (ZNS, PNS)
+26;-1 = nicht untersucht
+26;00 = keine
+26;01 = Gesichtslähmung (kein Lächeln/hängender Mundwinkel) F
+26;02 = Motorik Arme (einseitiges Absinken <10s/kein Anheben/keine Bewegung) A
+26;03 = Motorik Beine (einseitiges Absinken <5s/kein Anheben/keine Bewegung)
+26;04 = Sehstörung/Doppelbilder
+26;05 = Sprachstörung (Aphasie)/Sprechstörung (Dysarthrie) S
+26;06 = Schluckstörung
+26;07 = Sensibilitätsstörung
+26;08 = Gangunsicherheit/Schwindel
+26;09 = Herdblick
+26;10 = Übelkeit/Erbrechen
+26;11 = Kopfschmerzen
+26;12 = Meningismus
+26;13 = Babinski Zeichen
+26;14 = Querschnittsymptomatik
+26;96 = gegenüber Erstbefund keine Änderungen
+26;98 = Sonstige
+26;99 = nicht beurteilbar
+26;SoSiTransport Sondersignal bei Transport:
+26;01 = Ja
+26;02 = Nein
+26;OrtPatUeberg Ort Patienten-Übergabe
+26;01 = ZNA/INA/PINA
+26;02 = INZ/KINZ
+26;03 = Schockraum
+26;04 = Intensivstation
+26;05 = Allgemeinstation
+26;06 = Herzkatheterlabor (HKL)
+26;07 = Stroke Unit
+26;08 = CT
+26;09 = OP direkt
+26;10 = Fachambulanz
+26;11 = Chest Pain Unit (CPU)
+26;12 = Kreisssaal
+26;13 = Arztpraxis
+26;14 = Notfall-/Bereitschaftspraxis
+26;15 = Einsatzstelle
+26;98 = Sonstige
+26;NummerZK Kennung der Zielklinik:
+26;000001001 bis 000009990 = ID aus Krankenhausverzeichnis (Transportziele) für die Datenlieferung an die SQR-BW
+26;770000000 bis 779999999 = Standortnummer
+26;000009998 = sonstige Zielklinik
+26;000009999 = anderes Transportziel (z.B. Arztpraxis)
+26;AnmeldungPatient Patient in Zielklinik angemeldet
+26;01 = Ja
+26;02 = Nein
+26;Einsatzbesonderheiten Einsatzbesonderheiten
+26;00 = keine
+26;01 = nächste geeignete Klink nicht aufnahmebereit
+26;02 = Pat. lehnt indizierte Maßnahmen ab
+26;03 = bewusster Therapieverzicht
+26;04 = indizierte Maßnahme aufgrund Kontraindikation nicht durchgeführt
+26;05 = Infektionstransport (mit Desinfektionsmaßnahmen)
+26;06 = aufwendiger Infektionstransport - über die reguläre Ausstattung hinausgehende Infektionsschutzmaßnahmen/-
+26;ausrüstung erforderlich
+26;07 = Schwerlasttransport
+26;08 = Zwangsunterbringung
+26;09 = aufwendige technische Rettung
+26;10 = Einsatz mit LNA/OrgL
+26;11 = mehrere Patienten
+26;12 = MANV
+26;13 = kein Notarzt in angemessener Zeit verfügbar
+26;14 = erschwerter Patientenzugang
+26;15 = verzögerte Patientenübergabe
+26;16 = Gewalt gegen Einsatzkräfte
+26;17 = Wahl der Zielklinik durch Dritte (z.B. HA, Klinikarzt,...)
+26;18 = Wahl der Zielklinik verursacht durch Patientenwunsch
+26;19 = Einsatzabbruch (dieses Einsatzes) wegen Folgeeinsatz
+26;20 = dieser Einsatz ist ein Folgeeinsatz
+26;98 = Sonstige
+27;Release 1: 28.08.2026 Codes MIND Seite 13 von 15
+27;MIND 7.1 Codeliste Release 1: 28.08.2026
+27;PreEmergencyStatus Zustand vor Eintritt des Notfalls
+27;01 = ohne Vorerkrankungen (VE)
+27;02 = VE ohne nennenswerte Einschränkung des tgl. Lebens
+27;03 = VE mit nennenswerter Einschränkung des tgl. Lebens
+27;04 = normales tgl. Leben unmöglich
+27;05 = Pat. wird in den nächsten 24 Std. sterben, mit und ohne medizinische/-r Hilfe
+27;99 = nicht bekannt
+27;Reanimationssituation Lag eine Reanimationssituation vor / wurde von der Rettungsmittelbesatzung eine Reanimation begonnen?
+27;00 = keine Reanimationssituation (kein Tod/kein Kreislaufstillstand)
+27;01 = Reanimation durchgeführt durch dokumentierendes Rettungsmittel
+27;02 = Reanimation durchgeführt und aufgrund nachträglicher Erkenntnis über fehlendes Therapieziel eingestellt
+27;03 = Reanimation durchgeführt und aufgrund nachträglicher Erkenntnis über mutmaßlichen Patientenwillen eingestellt
+27;04 = Reanimation durch Andere durchgeführt mit fortbestehendem ROSC bei eigenem Eintreffen
+27;05 = Reanimation nicht durchgeführt, weil sichere Todeszeichen
+27;06 = Reanimation nicht durchgeführt, aufgrund mutmaßlichen Patientenwillens (z.B. DNR-Order)
+27;07 = Reanimation nicht durchgeführt, weil aussichtslose Grunderkrankung bekannt
+27;08 = Reanimation nicht durchgeführt, wegen aussichtsloser sonstiger Faktoren (z.B. Zeit überschritten)
+27;Reanimationstechnik Reanimationstechnik
+27;-1 = keine
+27;01 = Einsatz eines public access AED
+27;02 = Einsatz eines feedback-Systems
+27;03 = Mechanisches Thoraxkompressionsgerät
+27;04 = extrakorporale CPR (eCPR)
+27;URKRSTST Vermutete Ursache des Kreislaufstillstandes
+27;01 = kardial
+27;02 = Trauma
+27;03 = Ertrinken
+27;04 = Hypoxie
+27;05 = Intoxikation
+27;06 = ICB/SAB
+27;07 = SIDS
+27;08 = Verbluten
+27;09 = Stroke
+27;10 = metabolisch
+27;11 = Sepsis
+27;12 = Anaphylaxie
+27;13 = Stromschlag
+27;97 = sonstiges nicht medizinisch
+27;98 = sonstiges medizinisch
+27;99 = nicht bekannt
+27;SPORT Zusammenhang mit sportlicher Aktivität:
+27;01 = Ja
+27;02 = Nein
+27;ZCKB Kollaps beobachtet durch
+27;-1 = nicht beobachtet
+27;01 = Ersthelfende
+27;02 = aktivierte Ersthelfende (z.B. App-Ersthelfende)
+27;03 = First Responder
+27;04 = KTW-Besatzung
+27;05 = RTW-Besatzung
+27;06 = NA-Rettungsmittel
+27;98 = Sonstige
+27;99 = nicht bekannt
+27;ZCHDM Beginn der Herzdruckmassage durch
+27;-1 = keine Herzdruckmassage durchgeführt
+27;01 = Ersthelfende
+27;02 = aktivierte Ersthelfende (z.B. App-Ersthelfende)
+27;03 = First Responder
+27;04 = KTW-Besatzung
+27;05 = RTW-Besatzung
+27;06 = NA-Rettungsmittel
+27;98 = Sonstige
+27;99 = nicht bekannt
+27;ZCDEFI Erste Defibrillation durch
+27;-1 = keine Defibrillation durchgeführt
+27;01 = Ersthelfende
+27;02 = aktivierte Ersthelfende (z.B. App-Ersthelfende)
+27;03 = First Responder
+27;04 = KTW-Besatzung
+27;05 = RTW-Besatzung
+27;06 = NA-Rettungsmittel
+27;98 = Sonstige
+27;99 = nicht bekannt
+28;Release 1: 28.08.2026 Codes MIND Seite 14 von 15
+28;MIND 7.1 Codeliste Release 1: 28.08.2026
+28;ROSC Erreichen eines Spontankreislaufs (ROSC)
+28;01 = niemals ROSC
+28;02 = jemals ROSC
+28;KHAUF Patientenzustand bei Krankenhausaufnahme
+28;01 = keine Krankenhausaufnahme, Tod an der Einsatzstelle
+28;02 = Krankenhausaufnahme mit ROSC
+28;03 = Krankenhausaufnahme unter laufender Reanimation
+29;Release 1: 28.08.2026 Codes MIND Seite 15 von 15

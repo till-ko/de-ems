@@ -1,0 +1,1089 @@
+quelle_pdf_seite;zeile_normalisiert
+38;5. Datenfelder komplett (inklusive Plausibilitäten und Abhängigkeiten)
+38;Gesamtdatensatz
+38;DIVI-NOTFALLEINSATZ-DATENSATZ 7.1
+38;Release 1: 28.08.2026
+38;MIND 7.1
+38;DIVI-NOTFALLEINSATZ- MIND-
+38;DATENSATZBESCHREIBUNG 7.1 Pflicht
+38;Einfach-/ Teildatensatz techn.
+38;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+38;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+38;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+38;E/M Rettungsdienst MIND
+38;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+38;(RD)
+38;DIVI-Notfalleinsatzprotokoll relevant
+38;Kapitel: Strukturdaten dieses Kapitel ist immer Pflicht
+38;Protokolltyp Ja Strukturdaten Dokument-Header DM E Werteliste siehe Tabellenblatt Codes NA + RD Typ des verwendeten Protokolls: Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen z.B. ProjektID, Rettungsmitteltyp, Einsatzart, Qualifikation
+38;• NA für Notarztdokumentation Personal.
+38;• RD für Rettungsdienstdokumentation
+38;Sollte in Stammdaten fest dem Rettungsmittel/Personal zugewiesen werden.
+38;Beim Wechsel von Dokumentations-Pads zwischen Fahrzeugen muss unbedingt darauf geachtet werden, dass das
+38;korrekte Rettungsmittel mit der ihm zugeordneten Projekt-ID und der richtige Protokolltyp ausgewählt sind.
+38;Standortkennung Nein Strukturdaten EinsatztechnischeDaten DM E Amtlicher Gemeindeschlüssel des RM-Standortes NA + RD Amtlicher Gemeindeschlüssel des Rettungsmittel-Standorts.
+38;BL-LK (Bundesland-Landkreis-Rettungswache;
+38;Bundesland und Landkreis jeweils nach Vorgaben des
+38;Gemeindeschlüssels) -2
+38;Werteliste siehe Tabellenblatt Codes
+38;ProjektID Ja Strukturdaten M E ProjektID NA + RD Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird. Standortverantwortliche sind Prüfung auf Plausibilität, z.B. Leitstelle, Einsatzart, Rettungsmitteltyp, Protokolltyp.
+38;aufgefordert, sich dort um eine ID-Zuteilung zu bemühen.
+38;Einmalig in Stammdaten einzupflegen.
+38;Leitstelle Ja Strukturdaten PatStammdaten DM E Landkreiskennung der Heimatleitstelle (z.B. S für NA + RD Für einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden. Prüfung auf Plausibilität, z.B. ProjektID und Leitstelle.
+38;Stuttgart, OG für Offenburg)
+38;Einmalig in Stammdaten einzupflegen.
+38;Softwarekennung siehe Hinweise/ Strukturdaten M E Kennung des Dokumentationssystems des NA+RD Identifikation des Dokumentationssystems und der Software-Version, mit der die Einsatzdaten erzeugt wurden. Pflichtfeld in BW
+38;Plausibilitäten/ Rettungsmittels und der Software-Version -2
+38;Abhängigkeiten
+38;EinsatzNr Nein PatStammdaten D E Text, je nach Zuordnung des Rettungsmittels zu Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes. Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;Leitstelle/Standort bzw. nach Projekt festzulegen
+38;Zeichenlimit: 50
+38;PatNr Nein PatStammdaten D E Text, je nach Zuordnung des Rettungsmittels zu Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Patienten. Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;Leitstelle/Standort bzw. nach Projekt festzulegen
+38;Zeichenlimit: 50
+38;AuftrNr Nein PatStammdaten D E Text, je nach Zuordnung des Rettungsmittels zu Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des RD-Auftrages. Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;Leitstelle/Standort bzw. nach Projekt festzulegen
+38;Zeichenlimit: 50
+38;Kapitel: RettungstechnischeDaten dieses Kapitel ist immer Pflicht
+38;Primaerschluessel Ja RettungstechnischeDaten M E eindeutiger Primärschlüssel für NA + RD Innerhalb eines Leitstellenbereiches darf in einem Kalenderjahr kein Primärschlüssel mehrfach vergeben werden.
+38;alle Fälle pro Jahr
+38;Zeichenlimit 20 Es ist unbedingt darauf zu achten, dass im NA-Protokoll die NA-Auftragsnummer und im RD-Protokoll die RD-
+38;Auftragsnummer verwendet wird!
+38;Bei mehreren Patienten in einem Einsatz, soll von der "Heimatleitstelle" für jeden Patienten eine separate
+38;Auftragsnummer zugeteilt werden. Diese ist ggf. anzufordern. Dort wo dies leitstellen-/abrechnungsseitig nicht möglich
+38;ist, soll der Primärschlüssel im jeweiligen Datensatz durch ein eindeutiges Suffix gekennzeichnet werden (bspw.
+38;Auftragsnummer der Leitstelle ergänzt mit -01 bis -99 oder mit -A bis -Z)
+38;EinsatzArt Ja RettungstechnischeDaten EinsatztechnischeDaten DM E Werteliste siehe Tabellenblatt Codes NA + RD Art des RD-Einsatzes/Notarzteinsatzes Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+38;Für die Auswahl des zutreffenden Codes ist der Status zum Zeitpunkt der Alarmierung des dokumentierenden
+38;Rettungsmittels durch die Leitstelle maßgeblich. Wenn Protokolltyp NA, dann ist EinsatzArt GLEICH (04 ODER 08 ODER 10) unzulässig.
+38;(d.h. in einem NA-Protokoll dürfen unter EinsatzArt nur Ausprägungen mit dem Inhalt "mit (physisch anwesendem) NA"
+38;dokumentiert werden, auch wenn der NA nachgefordert wurde und die primäre Alarmierung des RTW ohne NA erfolgte.
+38;Im RD-Protokoll dürfen - sofern bei Alarmierung des RTW (noch) keine Alarmierung eines NA/TNA erfolgt ist - unter
+38;EinsatzArt nur Ausprägungen mit dem Inhalt "ohne NA" dokumentiert werden, auch wenn es später zu einer NA-
+38;Nachforderung kam.)
+38;Einsatzarten "mit (physisch anwesendem) NA" (01, 03, 05, 07) bzw. "mit...TNA" (02, 03, 06, 07) sind immer dann
+38;auszuwählen, wenn bis zum Zeitpunkt der Alarmierung des dokumentierenden RM ein NA oder ein TNA ebenfalls
+38;alarmiert wurden.
+38;Dienstfahrt und Pause sind organisatorische Einsatzarten, die in keinem Bezug zu einem beabsichtigten oder
+38;tatsächlichen Patientenkontakt stehen (beispielsweise Fahrt in die Kfz-Werkstatt). Ein Materialtransport, für den ein
+38;Patientenbezug hergestellt werden kann (z.B. Transport eines Inkubators durch einen RTW zu einem anderen Einsatz)
+38;ist nicht mit Dienstfahrt zu kodieren.
+38;Wenn ein RTW von der Leitstelle einen Krankentransportauftrag erhalten hat, ist als EinsatzArt Krankentransport
+38;auszuwählen.
+38;Codes 09-12 nicht im DIVI Protokoll abgebildet
+38;Gemeindeschluessel Nein RettungstechnischeDaten EinsatztechnischeDaten DM E Amtlicher Gemeindeschlüssel des Einsatzortes NA + RD Quelle ist das Statistische Bundesamt. Der Amtliche Gemeindeschlüssel (AGS) ist ein 8-stelliger Schlüssel zur
+38;eindeutigen Identifizierung einer Gemeinde mit den Bestandteilen: Bundesland (2 Stellen), Regierungsbezirk (1 Stelle), -2
+38;Werteliste siehe Tabellenblatt Codes Kreis (2 Stellen) und Gemeinde (3 Stellen)
+38;Postleitzahl Nein RettungstechnischeDaten EinsatztechnischeDaten DM E Postleitzahl des Einsatzortes NA + RD PLZ des Einsatzortes - diese ist bei Einsätzen am Wohnort des Patienten zumeist der Versichertenkarte zu entnehmen.
+38;-2
+38;Werteliste siehe Tabellenblatt Codes
+38;GeoEinsatzort Nein RettungstechnischeDaten EinsatztechnischeDaten DM E Geokoordinaten des Einsatzortes NA + RD Die Koordinaten werden in der Reihenfolge Breitengrad, Längengrad mit Komma getrennt angegeben.
+38;-2
+38;GPS Geo-Koordinaten im Dezimalformat [WGS 84] Format: 99.999999,99.999999
+38;EinsatzortTyp siehe Hinweise/ RettungstechnischeDaten EinsatztechnischeDaten DM E Werteliste siehe Tabellenblatt Codes NA + RD Beschreibung des Einsatzortes. Pflicht wenn:
+38;Plausibilitäten/ EinsatzArt NICHT (11 ODER 12) -2
+38;Abhängigkeiten Pflicht, außer für Dienstfahrten und Pauseneinsätze
+38;RDTransport siehe Hinweise/ RettungstechnischeDaten Einsatzverlauf DM E Werteliste siehe Tabellenblatt Codes NA + RD Welches Rettungsmittel hat den überwiegenden Anteil des Transports des Patienten (hinsichtlich der Transportstrecke) Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+38;Plausibilitäten/ durchgeführt?
+38;Abhängigkeiten • Bei Auswahl 01 wird KeinTranspMitPat zum Pflichtfeld
+38;"Transport durch NAW" ist nur auszuwählen, wenn es sich bei dem RM von vornherein um einen NAW gehandelt hat • Bei Auswahl 02 wird KeinTranspOhnePat zum Pflichtfeld
+38;(ein RTW, bei dem der NA den Transport begleitet, bleibt ein RTW)
+38;-2
+38;Pflicht wenn:
+38;Bei gemeinsamem Einsatz von RTW und NA identische Dokumentation in RD- und NA-Protokoll EinsatzArt NICHT (11 ODER 12)
+38;Pflicht, außer für Dienstfahrten und Pauseneinsätze Wenn EinsatzArt GLEICH (11 ODER 12), sind sämtliche Inhalte in RDTransport außer -2 unzulässig.
+38;Release 1: 28.08.2026 Datenfelder komplett Seite 1 von 12
+38;DIVI-NOTFALLEINSATZ-
+38;MIND-
+38;DATENSATZBESCHREIBUNG 7.1 Pflicht
+38;Einfach-/ Teildatensatz techn.
+38;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+38;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+38;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+38;E/M Rettungsdienst MIND
+38;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+38;DIVI-Notfalleinsatzprotokoll relevant
+38;(RD)
+38;AerztlBegleit siehe Hinweise/ RettungstechnischeDaten Einsatzverlauf DM M Ärztliche Begleitung NA + RD Wurde der Transport ärztlich begleitet? Wenn ja, von wem? Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+38;Plausibilitäten/
+38;Abhängigkeiten Werteliste siehe Tabellenblatt Codes Pflicht für NA- und RD-Protokolle bei Einsätzen mit durchgeführtem Transport Pflicht wenn:
+38;RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06 ODER 07 ODER 08 ODER 09 ODER 98) -2
+38;Bei gemeinsamem Einsatz von RTW und NA identische Dokumentation in RD- und NA-Protokoll
+38;Kombinationen mit 00 sind unzulässig
+38;NotarztNachgefordert siehe Hinweise/ RettungstechnischeDaten EinsatztechnischeDaten DM E Physisch anwesender Notarzt wurde nachgefordert NA + RD Betrifft nur die Nachforderung eines physisch anwesenden Notarztes (nicht eines Telenotarztes). Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+38;Plausibilitäten/
+38;Abhängigkeiten Werteliste siehe Tabellenblatt Codes NA: Wurden Sie nachgefordert? Pflicht wenn:
+38;RD: Haben Sie einen Notarzt nachgefordert? EinsatzArt NICHT (11 ODER 12)
+38;Falls unbekannt: "nein" dokumentieren
+38;Wenn Protokolltyp GLEICH RD UND EinsatzArt GLEICH (01 ODER 03 ODER 05 ODER 07), dann ist
+38;-2
+38;Pflicht, außer für Dienstfahrten und Pauseneinsätze NotarztNachgefordert = 01 unzulässig.
+38;wenn bei Protokolltyp RD eine Einsatzart ausgewählt wurde, die eine primäre Alarmierung eines (physisch
+38;anwesendem) NA zum Ausdruck bringt (01, 03, 05, oder 07) ist die Dokumentation NotarztNachgefordert=ja
+38;unzulässig.
+38;TNANachgefordert siehe Hinweise/ RettungstechnischeDaten EinsatztechnischeDaten DM E Tele-Notarzt wurde nachgefordert NA + RD Betrifft nur die Nachforderung eines Telenotarztes (nicht eines physisch anwesenden Notarztes). Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+38;Plausibilitäten/
+38;Abhängigkeiten Werteliste siehe Tabellenblatt Codes NA/RD: Haben Sie einen TNA nachgefordert? Pflicht wenn:
+38;EinsatzArt NICHT (11 ODER 12)
+38;Pflicht, außer für Dienstfahrten und Pauseneinsätze -2
+38;wenn bei Protokolltyp RD eine Einsatzart ausgewählt wurde, die eine primäre Alarmierung eines TNA zum Ausdruck Wenn Protokolltyp GLEICH RD UND EinsatzArt GLEICH (02 ODER 03 ODER 06 ODER 07), dann ist
+38;bringt (02, 03, 06, oder 07) ist die Dokumentation TNANachgefordert=ja unzulässig. TNANachgefordert = 01 unzulässig.
+38;KeinTranspMitPat siehe Hinweise/ RettungstechnischeDaten PatientenTransport DM E Grund für Einsatz ohne Transport trotz Patientenkontakt NA + RD Pflicht für Einsätze ohne Transport trotz Patientenkontakt Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+38;Plausibilitäten/
+38;Abhängigkeiten Werteliste siehe Tabellenblatt Codes nur für Einsätze ohne Transport, aber mit Patientenkontakt; nicht für Einsätze ohne Patientenkontakt (diese sollen unter Pflicht wenn:
+38;KeinTranspOhnePat dokumentiert werden) RDTransport GLEICH 01
+38;02 = primäre Todesfeststellung (ohne CPR): reine Todesfeststellungen ohne Reanimation Wenn RDTransport NICHT 01, sind sämtliche Inhalte in KeinTranspMitPat außer -2 unzulässig.
+38;(Erstbefunde sind erforderlich, Abschlussbefunde/Diagnosen/RD-Maßnahmen sind nicht erforderlich.)
+38;Der Grund für die nicht durchgeführte Reanimation muss im Feld Reanimationssituation angegeben werden!
+38;Sobald Reanimationsmaßnahmen durchgeführt wurden, darf im Feld KeinTranspMitPat nicht die 02
+38;ausgewählt werden und im Feld Reanimationssituation muss 01 oder 02 oder 03 gewählt werden.
+38;-2
+38;Erfolglose Reanimationen werden mit dem Code 03 = Patient im Einsatzverlauf verstorben dokumentiert.
+38;Wenn Reanimationsmaßnahmen durch andere erfolgten und bei Eintreffen des eigenen RM der ROSC fortbesteht, darf
+38;im Feld KeinTranspMitPat nicht die 02 ausgewählt werden und im Feld Reanimationssituation muss 04 gewählt
+38;werden.
+38;Die Dokumentation über das Vorliegen eines Einsatzes ohne Transport trotz stattgehabtem Patientenkontakt erfolgt in
+38;Kombination mit dem Feld RDTransport (01 = kein Patiententransport, trotz Patientenkontakt).
+38;KeinTranspOhnePat siehe Hinweise/ RettungstechnischeDaten Einsatzverlauf DM E Grund für Einsatz ohne Transport, da kein NA + RD Pflicht für Einsätze ohne Transport wegen fehlendem Patientenkontakt Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+38;Plausibilitäten/ EinsatztechnischeDaten Patientenkontakt
+38;Abhängigkeiten nur für Einsätze ohne Patientenkontakt; nicht für Einsätze mit Patientenkontakt ohne Patiententransport (diese müssen Pflicht wenn:
+38;Werteliste siehe Tabellenblatt Codes unter KeinTranspMitPat dokumentiert werden) RDTransport GLEICH 02 -2
+38;Die Dokumentation über das Vorliegen eines Einsatzes ohne Transport aufgrund fehlenden Patientenkontakts erfolgt in Wenn RDTransport NICHT 02, sind sämtliche Inhalte in KeinTranspOhnePat außer -2 unzulässig.
+38;Kombination mit dem Feld RDTransport (02 = kein Patiententransport, da kein Patientenkontakt).
+38;DokRM Ja RettungstechnischeDaten EinsatztechnischeDaten DM E Rettungsmitteltyp des dokumentierenden NA + RD Codierung des Rettungsmittels, welches den Einsatz abwickelt und dokumentiert. Wenn Protokolltyp NA dann sind DokRM GLEICH (02 ODER 03 ODER 10 ODER 11 ODER 12 ODER 15 ODER 17
+38;Rettungsmittels ODER 18 ODER 20) unzulässig
+38;Werteliste siehe Tabellenblatt Codes Wenn Protokolltyp RD dann sind DokRM GLEICH (01 ODER 04 ODER 05 ODER 06 ODER 07 ODER 08 ODER 09
+38;ODER 13 ODER 14 ODER 16 ODER 19) unzulässig.
+38;BeteilRM Nein RettungstechnischeDaten EinsatztechnischeDaten DM M Rettungsmitteltyp/en des/der beteiligten Rettungsmittel/s NA + RD Codierung der am Einsatz beteiligten Rettungsmittel
+38;Wird in der Regel durch die Leitstelle dokumentiert.
+38;Werteliste siehe Tabellenblatt Codes -2
+38;AerztlQualifikation siehe Hinweise/ RettungstechnischeDaten EinsatztechnischeDaten DM M Fachrichtung/Qualifikation des Notarztes/Transportarztes NA Pflicht für NA-Protokolle, außer für Dienstfahrten oder Pauseneinsätze Pflicht wenn:
+38;Plausibilitäten/ Protokolltyp GLEICH NA
+38;Abhängigkeiten Werteliste siehe Tabellenblatt Codes Es ist immer die Fachrichtung/Qualifikation des dokumentierenden Arztes einzutragen UND EinsatzArt NICHT (11 ODER 12) -2
+38;StatusPersonal siehe Hinweise/ RettungstechnischeDaten EinsatztechnischeDaten DM E Status des Personals NA + RD Qualifikation des höchstqualifizierten Mitarbeiters auf dem Rettungsmittel. Beim notarztbesetzten Rettungsmittel die des Pflicht wenn:
+38;Plausibilitäten/ Notarztes, beim nicht NA-besetzten Rettungsmittel die des Rettungsdienstmitarbeitenden. EinsatzArt NICHT (11 ODER 12)
+38;Abhängigkeiten Werteliste siehe Tabellenblatt Codes -2
+38;Pflicht, außer für Dienstfahrten und Pauseneinsätze
+38;EinsatzOrtName Nein EinsatztechnischeDaten D E Text, Zeichenlimit 50 Bei Einsätzen in Ortschaften Ortsname, sonst Bezeichnung der Straße (7.B. BAB98, B16) oder Name der Gemarkung Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;(z.B. Chiemsee)
+38;EinsatzStrasseName Nein EinsatztechnischeDaten D E Text, Zeichenlimit 100 Bei Einsätzen in Ortschaften Straßenname, sonst Wegekilometer der Straße (z.B. Streckenkilometer 122) oder andere Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;nähere Bezeichnung (z.B. Ostufer)
+38;KollapsBeobachtet Nein EinsatztechnischeDaten D E Werteliste siehe Tabellenblatt Codes_DIVI Ja, wenn der Moment des Kollapses / der Synkope / des akuten Ereignisses von Umstehnden beobachtet wurde. Nicht Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;ausgefüllt wird wie nein behandelt
+38;AnkunftVorRettungsdienst Nein EinsatztechnischeDaten D E Werteliste siehe Tabellenblatt Codes_DIVI J/N, wenn Notarzt und Rettungsdienst zu getrennten Zeitpunkten am Einsatzort angekommen sind. Nicht ausgefüllt wird gewertet, Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;wie unbekannt gewertet.
+38;NotarztName Nein EinsatztechnischeDaten D E Text, Zeichenlimit 100 Klartext Name des Notarztes, ggf. mit Vornamen und Titel Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;AssistenzName Nein EinsatztechnischeDaten D E Text, Zeichenlimit 100 Klartext Name des höchstqualifizierten Assistenten, ggf. mit Vornamen und Berufsbezeichnung Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;TeamName Nein EinsatztechnischeDaten D M Text, Zeichenlimit 100 Ggf. weitere Teammitglieder erfassen, durch Kommata getrennt Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;RufnameFahrzeug Nein EinsatztechnischeDaten D M Text, Zeichenlimit 50 Rufname des Fahrzeugs, dessen Einsatz hier dokumentiert wird. Steigt der dokumentierende Notarzt um, so werden Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;hier beide Rufnamen angegeben.
+38;FehleinsatzGrund Nein EinsatztechnischeDaten D E Werteliste siehe Tabellenblatt Codes_DIVI Gründe, warum im gegebenen Fall kein Patient behandelt werden konnte bzw. warum ein anders gearteter Einsatz Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;(Geräte-Zubringer etc.) nicht erfolgreich abgeschlossen werden konnte
+38;Dokumentierend Nein Bemerkungen D E Text, Zeichenlimit 100 Vorname, Name + ggf. Titel und Funktion des Dokumentierenden/Dokumentationsverantwortlichen, ggf. auch siehe Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+38;NotarztName oder siehe AssistenzName
+38;Kapitel: ZeitenEinsatzablauf dieses Kapitel ist immer Pflicht
+38;Einsatzdatum Ja ZeitenEinsatzablauf EinsatztechnischeDaten DM E Einsatzdatum NA + RD Einsatzdatum bezieht sich auf den Zeitpunkt der Alarmierung.
+39;Release 1: 28.08.2026 Datenfelder komplett Seite 2 von 12
+39;DIVI-NOTFALLEINSATZ-
+39;MIND-
+39;DATENSATZBESCHREIBUNG 7.1 Pflicht
+39;Einfach-/ Teildatensatz techn.
+39;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+39;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+39;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+39;E/M Rettungsdienst MIND
+39;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+39;DIVI-Notfalleinsatzprotokoll relevant
+39;(RD)
+39;SymptombeginnVor24h siehe Hinweise/ ZeitenEinsatzablauf EinsatztechnischeDaten DM E Bestehen die Symptome länger als 24 Stunden oder ist NA + RD Pflicht für NA-Protokolle bei Primäreinsätzen, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um eine Pflicht wenn:
+39;Plausibilitäten/ dies unbekannt? primäre Todesfeststellung (ohne CPR) oder eine Hilfeleistung oder eine Unterstützung eines anderen RM handelt. Protokolltyp GLEICH NA
+39;Abhängigkeiten UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05 ODER 06
+39;Werteliste siehe Tabellenblatt Codes Pflicht für RD-Protokolle bei Primäreinsätzen ohne erkennbare Beteiligung eines physisch anwesenden NA, wenn ein ODER 07 ODER 08 ODER 09 ODER 98)
+39;Patientenkontakt stattgefunden hat, außer wenn es sich um eine primäre Todesfeststellung (ohne CPR) oder eine UND EinsatzArt GLEICH (01 ODER 03)
+39;Hilfeleistung oder eine Unterstützung eines anderen RM handelt. UND KeinTranspMitPat NICHT (02 ODER 05 ODER 08)
+39;ODER
+39;-2
+39;Protokolltyp GLEICH RD
+39;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05 ODER 06
+39;ODER 07 ODER 08 ODER 09 ODER 98)
+39;UND EinsatzArt GLEICH (02 ODER 04)
+39;UND NotarztNachgefordert GLEICH 02
+39;UND KeinTranspMitPat NICHT (02 ODER 05 ODER 08)
+39;Symptombeginn siehe Hinweise/ ZeitenEinsatzablauf EinsatztechnischeDaten DM E Ereigniszeitpunkt, Unfallzeitpunkt, Kollapszeitpunkt, NA + RD Wenn der Symptombeginn bzw. Unfall-/Ereignis-/Kollapszeitpunkt (bekannt oder geschätzt) innerhalb von 24 Stunden Pflicht wenn: 1902-02-
+39;Plausibilitäten/ Zeitpunkt Symptom-/Beschwerdebeginn vor Alarmierung liegt, ist die Uhrzeit hier anzugeben. SymptombeginnVor24h GLEICH 02 02T22:00
+39;Abhängigkeiten UND EinsatzArt NICHT (11 ODER 12) :00.000+
+39;01:00
+39;SymptombeginnGesichert siehe Hinweise/ ZeitenEinsatzablauf EinsatztechnischeDaten DM E Ist der Symptombeginn gesichert oder geschätzt? NA + RD Gibt es belastbare Angaben zum Symptombeginn durch Patienten, Angehörige, Zeugen, etc.? Pflicht wenn:
+39;Plausibilitäten/ SymptombeginnVor24h GLEICH 02 -2
+39;Abhängigkeiten Werteliste siehe Tabellenblatt Codes Pflicht, wenn Symptombeginn innerhalb der letzten 24 Stunden. UND EinsatzArt NICHT (11 ODER 12)
+39;ZeitNotfallmeldung Nein ZeitenEinsatzablauf EinsatztechnischeDaten M E Zeitpunkt Eingang Notfallmeldung NA + RD Definition: Zeitpunkt des Anrufes (Aufschaltzeitpunkt aus Leitstellen-Datensatz) 1902-02-
+39;in LST Wird in der Leitstelle dokumentiert. 02T22:00
+39;:00.000+
+39;01:00
+39;ZeitAlarm Nein ZeitenEinsatzablauf EinsatztechnischeDaten DM E Zeitpunkt Alarm/Auftragsvergabe NA + RD Definition: Auslösung Alarm durch LST 1902-02-
+39;Wird in der Leitstelle dokumentiert. 02T22:00
+39;:00.000+
+39;01:00
+39;ZeitAusruecken Nein ZeitenEinsatzablauf M E Zeitpunkt Abfahrt/Abflug Standort NA + RD Definition: Ausrücken des einsatzklaren Rettungsmittels (Besatzung komplett!) 1902-02-
+39;Status 3 Wird in der Leitstelle dokumentiert. 02T22:00
+39;:00.000+
+39;01:00
+39;ZeitAnkunftEinsatzort Nein ZeitenEinsatzablauf EinsatztechnischeDaten DM E Zeitpunkt Ankunft Einsatzort NA + RD Definition: Ankunft des dokumentierenden RM am Einsatzort. 1902-02-
+39;Status 4 Wird in der Leitstelle dokumentiert. 02T22:00
+39;:00.000+
+39;01:00
+39;ZeitAnkunftPatientPatientenkontakt siehe Hinweise/ ZeitenEinsatzablauf EinsatztechnischeDaten DM E Zeitpunkt Ankunft Patient NA + RD Definition: Ankunft der Rettungsmittelbesatzung beim Patienten bzw. Beginn der Übernahme des Patienten bei Pflicht wenn: 1902-02-
+39;Plausibilitäten/ Sekundäreinsätzen. Protokolltyp GLEICH NA 02T22:00
+39;Abhängigkeiten UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05 ODER 06 :00.000+
+39;Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um eine Hilfeleistung oder ODER 07 ODER 08 ODER 09 ODER 98) 01:00
+39;die Unterstützung eines anderen RM handelt. UND KeinTranspMitPat NICHT (05 ODER 08)
+39;Pflicht für RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um einen Krankentransport
+39;oder um eine Hilfeleistung oder die Unterstützung eines anderen RM handelt. ODER
+39;Protokolltyp GLEICH RD
+39;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05 ODER 06
+39;ODER 07 ODER 08 ODER 09 ODER 98)
+39;UND NICHT (EinsatzArt GLEICH 10
+39;ODER KeinTranspMitPat GLEICH [05 ODER 08])
+39;ZeitTransportbeginn Nein ZeitenEinsatzablauf EinsatztechnischeDaten DM E Zeitpunkt Transportbeginn NA + RD Definition: Beginn des Patiententransportes. 1902-02-
+39;Status 7 Wird in der Leitstelle dokumentiert. 02T22:00
+39;:00.000+
+39;01:00
+39;ZeitEintreffenTransportziel Nein ZeitenEinsatzablauf EinsatztechnischeDaten DM E Zeitpunkt Eintreffen Transportziel NA + RD Definition: Fahrzeug trifft am Transportziel ein 1902-02-
+39;Status 8 Wird in der Leitstelle dokumentiert. 02T22:00
+39;:00.000+
+39;01:00
+39;ZeitUebergabePatient siehe Hinweise/ ZeitenEinsatzablauf EinsatztechnischeDaten DM E Übergabe des Patienten an Weiterbehandler NA + RD Definition: Übergabe an Personal der Zielklinik/Praxis oder Übergabe an anderes Rettungsmittel (Übergang der Pflicht wenn: 1902-02-
+39;Plausibilitäten/ Verantwortung für den Patienten). Protokolltyp GLEICH NA 02T22:00
+39;Abhängigkeiten Bei Einsätzen ohne Patiententransport optional als Abschluss der Behandlung. UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06 :00.000+
+39;ODER 07 ODER 08 ODER 09 ODER 98) 01:00
+39;Pflicht für NA-Protokolle, wenn ein Patiententransport stattgefunden hat (Übergabezeitpunkt an Klinik bzw. an anderes
+39;transportierendes RM, wenn dokumentierender NA den Transport nicht begleitet) ODER
+39;Pflicht für RD-Protokolle, wenn ein Patiententransport durch das dokumentierende RM stattgefunden hat und keine Protokolltyp GLEICH RD
+39;notärztliche Begleitung erfolgt bzw. die Begleitung ausschließlich durch einen TNA durchgeführt wurde. UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+39;ODER 07 ODER 08 ODER 09 ODER 98)
+39;UND AerztlBegleit ENTHÄLT (00 ODER 03)
+39;UND AerztlBegleit ENTHÄLT NICHT (01 ODER 02 ODER 04
+39;ODER 05 ODER 98)
+39;ZeitEinsatzende Ja ZeitenEinsatzablauf EinsatztechnischeDaten DM E Zeitpunkt Einsatzende NA + RD Definition: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenhängenden Arbeiten wie z.B.
+39;Desinfektionstätigkeiten und Dokumentation).
+39;Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um eine Hilfeleistung oder Pflicht wenn:
+39;eine Unterstützung eines anderen Rettungsmittels handelt. Protokolltyp GLEICH NA
+39;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05 ODER 06
+39;Pflicht für RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich beim dokumentierenden ODER 07 ODER 08 ODER 09 ODER 98)
+39;Rettungsmittel um einen Krankentransport, eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels UND KeinTranspMitPat NICHT (05 ODER 08)
+39;handelt.
+39;ODER
+39;Kapitel: Patientendaten
+39;Protokolltyp GLEICH RD
+39;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05 ODER 06
+39;ODER 07 ODER 08 ODER 09 ODER 98)
+39;UND NICHT (EinsatzArt GLEICH 10
+39;ODER KeinTranspMitPat GLEICH [05 ODER 08])
+40;Release 1: 28.08.2026 Datenfelder komplett Seite 3 von 12
+40;DIVI-NOTFALLEINSATZ-
+40;MIND-
+40;DATENSATZBESCHREIBUNG 7.1 Pflicht
+40;Einfach-/ Teildatensatz techn.
+40;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+40;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+40;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+40;E/M Rettungsdienst MIND
+40;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+40;DIVI-Notfalleinsatzprotokoll relevant
+40;(RD)
+40;Alter Ja Patientendaten PatStammdaten M E Alter des Patienten NA + RD Spezifische Dokumentation für Kinder unter einem Monat (siehe Codes) Wenn Kapitel "Patientendaten" Pflicht, dann ist 222:00 unzulässig.
+40;Werteliste siehe Tabellenblatt Codes Angabe in vollendeten Jahren und Lebensmonaten (Bezugspunkt ist die Eintreffzeit).
+40;Ab dem 29. Lebenstag gilt der erste Lebensmonat als vollendet. In diesem Fall ist der Wert 000:01 zu übermitteln
+40;222:00
+40;Wenn das Alter nicht bekannt ist, soll es geschätzt werden. Auch in seltenen Fällen, wenn die Schätzung des Alters
+40;schwierig ist, soll trotzdem eine grobe Vermutung dokumentiert werden
+40;ValiditaetAlter Ja Patientendaten PatStammdaten M E Ist das Alter gesichert oder geschätzt? NA + RD Wenn Kapitel "Patientendaten" Pflicht, dann ist -2 unzulässig.
+40;-2
+40;Werteliste siehe Tabellenblatt Codes
+40;Geschlecht Ja Patientendaten PatStammdaten DM E Geschlecht des Patienten NA + RD Wenn Kapitel "Patientendaten" Pflicht, dann ist -2 unzulässig.
+40;-2
+40;Werteliste siehe Tabellenblatt Codes
+40;PatName Nein PatStammdaten D E Text, Zeichenlimit 50 Name des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;PatPseudonym Nein PatStammdaten D E Werteliste siehe Tabellenblatt Codes_DIVI Ja, wenn Patientenname nicht bekannt und ein Pseudonym (ggf. Zählnummer bei MANV) gewählt wurde. Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Keine Angabe wird wie Nein gewertet, sofern ein Name eingetragen ist
+40;PatVorname Nein PatStammdaten D E Text, Zeichenlimit 50 Vorname des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;PatGebDat Nein PatStammdaten D E Datum, Format: TT/MM/JJJJ (10 Zeichen) Geburtsdatum des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;GebDatGeschaetzt Nein PatStammdaten D E Werteliste siehe Tabellenblatt Codes_DIVI Ja, wenn Geburtsdatum geschätzt wurde. Keine Angabe wird wie Nein gewertet, sofern ein Geburtsdatum eingetragen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;ist
+40;Strasse Nein PatStammdaten D E Text, Zeichenlimit 100 Strasse des Wohnorts des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Plz Nein PatStammdaten D E Text, Zeichenlimit 10 Postleitzahl des W ohnorts des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Text weil Zahl die Länderkennung (z.B. D-) bei länderübergreifenden Einsätzen nicht erlauben würde
+40;Ort Nein PatStammdaten D E Text, Zeichenlimit 50 Ort des Wohnorts des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Kasse Nein PatStammdaten D E Text, Zeichenlimit 50 Krankenkasse des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;KasseNr Nein PatStammdaten D E Text, Zeichenlimit 50 Krankenkassen-Nummer der Krankenkasse des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;VersNr Nein PatStammdaten D E Text, Zeichenlimit 50 Versicherungs-Nummer des Patienten Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Notfallgeschehen Nein Notfallgeschehen D E Text, Zeichenlimit 2000 Anamnese, klinische Untersuchung und weitere relevante Angaben zum Einsatz, sofern diese im Protokoll nicht an Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;anderer Stelle erfasst werden können (Beispiel: Anwesenheit von aggressiven Angehörigen, Behinderung durch
+40;Schaulustige etc.)
+40;BMIunter40 Nein Notfallgeschehen D E Werteliste siehe Tabellenblatt Codes_DIVI Ja, wenn geschätzter Body-Mass-Index kleiner als 40 ist. Nein, wenn geschätzter Body-Mass-Index gleich oder größer Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;als 40 ist.
+40;Keine Angabe wird nicht gewertet
+40;Versorgungssituation Nein Notfallgeschehen D E Werteliste siehe Tabellenblatt Codes_DIVI Angaben zur Versorgungssituation des Patienten vor dem Einsatzereignis Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;AntikoagulanzienVorEreignis Nein Notfallgeschehen D E Werteliste siehe Tabellenblatt Codes_DIVI Angaben zur Einnahme von Antikoagulantien durch den Patienten vor dem Einsatzereignis Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Ersthelfermassnahmen Nein Notfallgeschehen D E Werteliste siehe Tabellenblatt Codes_DIVI Angaben zum Einsatz von Ersthelfermaßnahmen vor dem Eintreffen professioneller Hilfe Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Dialysepflichtigkeit Nein Notfallgeschehen D E Werteliste siehe Tabellenblatt Codes_DIVI Ja, wenn beim Patienten vor dem Einsatzereignis Dialysepflichtigkeit bestand. Keine Angabe wird wie Nein gewertet Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Infektiositaet Nein Notfallgeschehen D E Werteliste siehe Tabellenblatt Codes_DIVI Ja, wenn beim Patienten vor dem Einsatzereignis gesundheits- bzw. hygienisch relevante, chronische Infektionen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;bekannt waren. Keine Angabe wird wie Nein gewertet
+40;VitalProblem Nein Notfallgeschehen D M Werteliste siehe Tabellenblatt Codes_DIVI Auflistung der vital bedrohlichen Probleme des Patienten nach dem cABCDE-Schema Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+40;Erste gemessenene Werte bzw. erste erhobene Befunde Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um eine Hilfeleistung oder Pflicht wenn:
+40;eine Unterstützung eines anderen Rettungsmittels handelt. Protokolltyp GLEICH NA
+40;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+40;Pflicht für RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um einen Krankentransport, ODER 06 ODER 07 ODER 08
+40;eine Hilfeleistung, eine Unterstützung eines anderen Rettungsmittels oder um eine Verlegung mit physisch ODER 09 ODER 98)
+40;anwesendem Notarzt handelt. UND KeinTranspMitPat NICHT (05 ODER 08)
+40;ODER
+40;Kapitel: ErsteMesswerteUndBefunde
+40;Protokolltyp GLEICH RD
+40;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+40;ODER 06 ODER 07 ODER 08
+40;ODER 09 ODER 98)
+40;UND KeinTranspMitPat NICHT (05 ODER 08)
+40;UND EinsatzArt NICHT (05 ODER 07 ODER 10)
+40;Bewusstsein1 Ja ErsteMesswerteUndBefunde ErsteBefundeNeuro DM E Bewusstseinslage NA + RD Es ist die jeweils beste Ausprägung zu wählen Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;-2
+40;Werteliste siehe Tabellenblatt Codes
+40;GlasgowComaScale1 Ja ErsteMesswerteUndBefunde ErsteBefundeNeuro DM E Glasgow Coma Scale NA + RD Bei Seitendifferenz bessere Seite Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;-2
+40;Werteliste siehe Tabellenblatt Codes
+40;NeurologischeAuffaelligkeiten1 Ja ErsteMesswerteUndBefunde ErsteBefundeNeuro DM M Neurologische Auffälligkeiten NA + RD • sNIHSS-EMS Items und BEFAST werden abgebildet. Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;• die Dokumentation von Schweregraden und der Körperseite ist im -2
+40;Werteliste siehe Tabellenblatt MIND nicht vorgesehen Kombinationen mit 00, -1 oder 99 sind unzulässig.
+40;SystolischerBlutdruck1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Systolischer Blutdruck NA + RD Bedeutet RR-Messung durchgeführt, wenn Angabe im Wertebereich oder 999. Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;Messwert in mmHg
+40;-2
+40;Werteliste siehe Tabellenblatt Codes
+40;EKGBefund1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM M EKG-Befund NA + RD Hier sollen nur die Ausprägungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;(nicht diejenigen im weiteren Verlauf).
+40;Werteliste siehe Tabellenblatt Codes Für QS wird EKG als durchgeführt gewertet, wenn Angabe ungleich -1. Kombinationen mit -1 oder 99 sind unzulässig. -2
+40;Herzfrequenz1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Herzfrequenz NA + RD Vom Monitor abgelesene Herzfrequenz pro Minute (ggf. palpatorisch oder pulsoximetrisch bestimmte Pulsfrequenz, Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;Messwert in /min wenn kein EKG abgeleitet wurde).
+40;Werte GRÖSSER 0 bei EKGBefund1 GLEICH 09 sind unzulässig. -2
+40;Werteliste siehe Tabellenblatt Codes
+40;Atemfrequenz1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Atemfrequenz NA + RD Ausgezählte oder vom Monitor abgelesene Atemfrequenz pro Minute. Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;Messwert in /min
+40;Werte GRÖSSER 0 bei Atmung1 GLEICH 08 sind unzulässig. -2
+40;Werteliste siehe Tabellenblatt Codes
+40;Sauerstoffsaettigung1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Sauerstoffsättigung NA + RD Bedeutet Pulsoxymetrie durchgeführt, wenn Angabe im Wertebereich oder 999. Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;Messwert in %
+40;Der Erstbefund der Sauerstoffsättigung sollte möglichst vor Therapie mit Sauerstoff ermittelt werden. -2
+40;Werteliste siehe Tabellenblatt Codes
+40;Rekapillarisierungszeit Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Rekapillarisierungszeit NA + RD Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;Messwert in s
+40;-2
+40;Werteliste siehe Tabellenblatt Codes
+40;Schmerzempfinden1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Schmerzempfinden nach NA + RD Erstbefund des Schmerzempfindens vor dem Einleiten von Maßnahmen. Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+40;Numerischer Rating Scala (NRS)
+40;Wenn Bewusstsein1 GLEICH 05, dann ist Schmerzempfinden GLEICH (01 bis 10) unzulässig. -2
+40;Werteliste siehe Tabellenblatt Codes
+40;Schmerzerleben Nein ErsteMesswerteUndBefunde ErsteMesswerte DM E Werteliste siehe Tabellenblatt Codes NA + RD Mit dem Schmerzerleben soll der subjektive Bedarf eines Patienten nach einer Schmerztherapie zum Ausdruck
+40;gebracht werden und damit deren Indikation dokumentiert werden. -2
+41;Release 1: 28.08.2026 Datenfelder komplett Seite 4 von 12
+41;DIVI-NOTFALLEINSATZ-
+41;MIND-
+41;DATENSATZBESCHREIBUNG 7.1 Pflicht
+41;Einfach-/ Teildatensatz techn.
+41;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+41;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+41;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+41;E/M Rettungsdienst MIND
+41;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+41;DIVI-Notfalleinsatzprotokoll relevant
+41;(RD)
+41;Blutzuckerwert1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Blutzucker NA + RD Bedeutet Blutzuckermessung durchgeführt, wenn Angabe im Wertebereich, 997, 998 oder 999 Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+41;Messwert in mg/dl bzw. mmol/l
+41;Bei Auswahl 0 bis 900 bzw. 0.0 bis 50.0 wird BlutzuckerEinheit zum Pflichtfeld -2
+41;Werteliste siehe Tabellenblatt Codes
+41;Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+41;BlutzuckerEinheit siehe Hinweise/ ErsteMesswerteUndBefunde ErsteMesswerte DM E Werteliste siehe Tabellenblatt Codes NA + RD Ermöglicht die Dokumentation der im jeweiligen Bundesland / Rettungsdienstbereich gültigen Maßeinheit für den Pflicht wenn:
+41;Plausibilitäten/ Blutzuckerwert Blutzuckerwert1 ODER Blutzuckerwert2 ENTHÄLT (0 bis 900 bzw. 0.0 bis 50.0) -2
+41;Abhängigkeiten
+41;Temperatur Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Temperatur NA + RD Bedeutet Temperatur-Messung durchgeführt, wenn Angabe im Wertebereich oder 99.9. Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+41;Messwert in Grad Celsius
+41;Keine explizite Ortsangabe, wenn möglich zentral (Tympanon) -2
+41;Werteliste siehe Tabellenblatt Codes
+41;Atmung1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM M Klinische Befunde Atmung NA + RD Hier sollen nur die Ausprägungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+41;(nicht diejenigen im weiteren Verlauf). -2
+41;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1, 00 oder 99 sind unzulässig.
+41;Hautbefunde Ja ErsteMesswerteUndBefunde ErsteMesswerte DM M Hautbefunde NA + RD Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1, 00 oder 99 sind unzulässig.
+41;Psyche1 Ja ErsteMesswerteUndBefunde ErsteMesswerte M M Psychischer Zustand NA + RD Hier sollen nur die Ausprägungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+41;(nicht diejenigen im weiteren Verlauf). -2
+41;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1, 00 oder 99 sind unzulässig.
+41;Pupillenweite1 Ja ErsteMesswerteUndBefunde ErsteMesswerte M E Pupillenweite NA + RD Es ist die klinisch relevanteste Ausprägung zu dokumentieren Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Werteliste siehe Tabellenblatt Codes
+41;Lichtreaktion1 Ja ErsteMesswerteUndBefunde ErsteMesswerte DM E Lichtreaktion NA + RD Wenn Kapitel "ErsteMesswerteUndBefunde" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Werteliste siehe Tabellenblatt Codes
+41;EtCO2Wert1 siehe Hinweise/ ErsteMesswerteUndBefunde ErsteMesswerte DM E erster gemessener etCO2 Wert (unter Beatmung in NA + RD Bedeutet Kapnometrie durchgeführt, wenn Angabe im Wertebereich oder 999. Pflicht wenn:
+41;Plausibilitäten/ mmHg gemessen) Airway GLEICH (03 ODER 05 ODER 07)
+41;Abhängigkeiten Pflicht, wenn eine Atemwegssicherung oder eine maschinelle invasive Beatmung (unterstützt oder kontrolliert) ODER Atemunterst GLEICH 05 -2
+41;Werteliste siehe Tabellenblatt Codes dokumentiert ist .
+41;ZeitErsteWerte Nein ErsteBefundeNeuro D E Angabe von Datum und Uhrzeit Zeit zu der begonnen wurde, die die ersten Werte des Kapitels ErsteMesswerteNeuro erfasst wurden Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;GCSAugenOeffnen1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: GCS-Stadium für Augen öffnen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;GCSVerbaleReaktion1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: GCS-Stadium für Beste verbale Reaktion Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;GCSMotorischArmRechts1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: GCS-Stadium für Beste motorische Reaktion am rechten Arm Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;GCSMotorischArmLinks1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: GCS-Stadium für Beste motorische Reaktion am linken Arm Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;GCSMotorischBeinRechts1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: GCS-Stadium für Beste motorische Reaktion am rechten Bein Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;GCSMotorischBeinLinks1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: GCS-Stadium für Beste motorische Reaktion am linken Bein Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;NeurologischeAuffaelligkeitenSonstige1 Nein ErsteBefundeNeuro D M Text, Zeichenlimit 200 Erste Werte: Text für sonstige neurologische Auffälligkeiten, die im strukturierten Bereich nicht erfasst werden können. Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;ExtremitaetenbewegungArmRechts1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Kraft der Extremitätenbewegung des rechten Armes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;ExtremitaetenbewegungArmLinks1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Kraft der Extremitätenbewegung des linken Armes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;ExtremitaetenbewegungBeinRechts1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Kraft der Extremitätenbewegung des rechten Beines Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;ExtremitaetenbewegungBeinLinks1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Kraft der Extremitätenbewegung des linken Beines Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;PupillenweiteRechts1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Beurteilung der Pupillenweite rechts Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;PupillenweiteLinks1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Beurteilung der Pupillenweite links Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;LichtreaktionRechts1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Beurteilung der Pupillenreaktion rechts Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;LichtreaktionLinks1 Nein ErsteBefundeNeuro D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Beurteilung der Pupillenreaktion links Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;DiastolischerBlutdruck1 Nein ErsteMesswerte D E Zahl Erste Werte: Diastolischer Blutdruck Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;Werteliste siehe Tabellenblatt Codes_DIVI
+41;SauerstoffsaettigungRaumluft1 Nein ErsteMesswerte D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Ja = Sauerstoffsättigung bei Raumluft gemessen, Nein = Sauerstoffsättigung unter O2-Gabe gemessen, Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;leer = Wertung wie bei Raumluft-Messung
+41;HerzfrequenzRhythmisch1 Nein ErsteMesswerte D E Werteliste siehe Tabellenblatt Codes_DIVI Erste Werte: Ja = Herzaktion rhythmisch, Nein = Herzaktion arrhythmisch, leer = unbekannt Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;qSOFA Nein ErsteMesswerte D E Werteliste siehe Tabellenblatt Codes_DIVI Wert des qSOFA bei Beginn des Einsatzes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;NEWS2Score Nein ErsteMesswerte D E Werteliste siehe Tabellenblatt Codes_DIVI NEWS2 Score-Wert für Sepsisverdacht zu Beginn des Einsatzes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+41;Pflicht für NA-Protokolle, wenn eine Verlegung mit physisch anwesendem NA oder ein Intensivtransport stattfindet. Die Abhängigkeiten des gesamten Kapitels betreffen nur das Bundesland Baden-Württemberg
+41;(Für RD-Protokolle ist dieses Kapitel nie Pflicht.)
+41;Kapitel: ErstbefundeVerlegung Pflicht wenn:
+41;Protokolltyp GLEICH NA
+41;UND EinsatzArt GLEICH ( 05 ODER 07 ODER 09)
+41;VBeatmung Ja M E Beatmung (außer Heimbeatmung) NA Wenn Kapitel "ErstbefundeVerlegung" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Werteliste siehe Tabellenblatt Codes
+41;VBeatmungDetail siehe Hinweise/ M E differenzierte Beatmung NA Differenzierte Beatmung bedeutet FiO2 > 0,4. Pflicht wenn:
+41;Plausibilitäten/ VBeatmung GLEICH 01
+41;Abhängigkeiten Werteliste siehe Tabellenblatt Codes Pflicht, wenn im Kapitel "Erstbefunde Verlegung" eine Beatmung dokumentiert wurde. -2
+41;Wenn VBeatmung GLEICH 01, dann ist -2 unzulässig.
+41;KatecholaminPflicht Ja M E Katecholaminpflichtigkeit NA Wenn Kapitel "ErstbefundeVerlegung" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Werteliste siehe Tabellenblatt Codes
+41;KatecholaminTherapie siehe Hinweise/ M E differenzierte Katecholamin-Therapie NA Differenzierte Katecholamin-Therapie bedeutet mehr als ein Katecholamin. Pflicht wenn:
+41;Plausibilitäten/ KatecholaminPflicht GLEICH 01
+41;Abhängigkeiten Werteliste siehe Tabellenblatt Codes Pflicht, wenn im Kapitel "Erstbefunde Verlegung" eine Katecholaminpflichtigkeit dokumentiert wurde. -2
+41;Wenn KatecholaminPflicht GLEICH 01, dann ist -2 unzulässig.
+41;FortlaufendSedierung Ja M E fortlaufende Sedierung/Narkose NA Wenn Kapitel "ErstbefundeVerlegung" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Werteliste siehe Tabellenblatt Codes
+41;VigilanzMinderung Ja M E deutliche Vigilanzminderung mit Einschränkung von NA Deutliche Vigilanzminderung mit Einschränkung von Schutzreflexen gilt bei GCS < 9. Wenn Kapitel "ErstbefundeVerlegung" Pflicht, dann ist -2 unzulässig.
+41;Schutzreflexen
+41;-2
+41;Werteliste siehe Tabellenblatt Codes
+41;InvasivBlutdruck Ja M E invasive Blutdruckmessung NA Wenn Kapitel "ErstbefundeVerlegung" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Werteliste siehe Tabellenblatt Codes
+41;SpezDevices Ja M M spezielle Devices NA Wenn Kapitel "ErstbefundeVerlegung" Pflicht, dann ist -2 unzulässig.
+41;Siehe Exporthinweise zu Option "Sonstige". -2
+41;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1 sind unzulässig.
+41;AnzahlPerfusor Ja M E Anzahl der Perfusoren NA Wenn Kapitel "ErstbefundeVerlegung" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Einstellige numerische Angabe (0 bis 9)
+41;Pflicht für NA-Protokolle, wenn laut Feld EinsatzArt eine Verlegung mit physisch anwesendem NA oder ein Die Abhängigkeiten des gesamten Kapitels betreffen nur das Bundesland Baden-Württemberg
+41;Intensivtransport stattfindet.
+41;Kapitel: EinschaetzungVerlegungsarzt (Für RD-Protokolle ist dieses Kapitel nie Pflicht.) Pflicht wenn:
+41;Protokolltyp GLEICH NA
+41;UND EinsatzArt GLEICH ( 05 ODER 07 ODER 09)
+41;IndikationArztbegleitung Ja M E Indikation Arztbegleitung gegeben NA Wenn Kapitel "EinschaetzungVerlegungsarzt" Pflicht, dann ist -2 unzulässig.
+41;-2
+41;Werteliste siehe Tabellenblatt Codes
+42;Release 1: 28.08.2026 Datenfelder komplett Seite 5 von 12
+42;DIVI-NOTFALLEINSATZ-
+42;MIND-
+42;DATENSATZBESCHREIBUNG 7.1 Pflicht
+42;Einfach-/ Teildatensatz techn.
+42;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+42;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+42;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+42;E/M Rettungsdienst MIND
+42;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+42;(RD)
+42;DIVI-Notfalleinsatzprotokoll relevant
+42;ZDringlichkeit Ja M E Einschätzung der zeitlichen Dringlichkeit durch NA Wenn Kapitel "EinschaetzungVerlegungsarzt" Pflicht, dann ist -2 unzulässig.
+42;Transportarzt
+42;-2
+42;Werteliste siehe Tabellenblatt Codes
+42;IndikationIT Ja M M Indikation Intensivtransport NA Siehe Exporthinweise zu Option "Sonstige". Wenn VBeatmung GLEICH 01 UND KatecholaminPflicht GLEICH 01, dann ist Code 00 unzulässig.
+42;Werteliste siehe Tabellenblatt Codes Die Antwort NEIN ist implausibel, wenn im Kapitel "ErstbefundeVerlegung" sowohl eine Beatmung als auch eine
+42;Katecholaminpflichtigkeit dokumentiert sind. Wenn Kapitel "EinschaetzungVerlegungsarzt" Pflicht, dann ist -2 unzulässig. -2
+42;Kombinationen mit 00 sind unzulässig.
+42;Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat - außer wenn es sich um eine primäre Pflicht wenn:
+42;Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels handelt. Protokolltyp GLEICH NA
+42;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+42;Pflicht für RD Protokolle, wenn ein Patientenkontakt stattgefunden hat - außer wenn es sich um einen Krankentransport, ODER 06 ODER 07 ODER 08
+42;eine primäre Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels ODER 09 ODER 98)
+42;handelt oder ein physisch anwesender NA primär mitalarmiert oder nachgefordert wurde. UND KeinTranspMitPat NICHT (02 ODER 05 ODER 08)
+42;Hinweis für BW: Wenn eine Diagnose, für die ein Indikator zur Eignung der Zielklinik oder zur leitliniengerechten ODER
+42;Versorgung dieser Diagnose existiert, im Diagnosen-Feld dokumentiert ist, wird auch eine entsprechend geeignete
+42;Zielklinik und leitliniengerechte Versorgung erwartet. Eher unwahrscheinliche Differentialdiagnosen sollen im Freitext
+42;Kapitel: Diagnosen
+42;dokumentiert werden. Protokolltyp GLEICH RD
+42;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+42;ODER 06 ODER 07 ODER 08
+42;ODER 09 ODER 98)
+42;UND KeinTranspMitPat NICHT (02 ODER 05 ODER 08)
+42;UND NotarztNachgefordert GLEICH 02
+42;UND EinsatzArt GLEICH (02 ODER 04 ODER 06 ODER 08)
+42;Diagnose Ja Diagnose Erkrankungen DM M Verdachtsdiagnose(n) NA + RD Hier sollen nur einsatzrelevante Diagnosen und keine Vorerkrankungen dokumentiert werden. Wenn Kapitel "Diagnosen" Pflicht, dann ist -2 unzulässig.
+42;Werteliste siehe Tabellenblatt Codes • (Verdachts-)Diagnose der Notärztin/des Notarztes bzw. der Notfallsanitäterin/des Notfallsanitäters
+42;• Verstorbene Patienten können mit 1220 = Herz-Kreislauf-Stillstand oder 1813 = SIDS codiert
+42;werden.
+42;• Bei einer Anaphylaxie Grad 4 soll zusätzlich die Diagnose 1220 = Herz-Kreislauf-Stillstand
+42;dokumentiert werden.
+42;• Bei tödlichen Verletzungen soll zusätzlich die Diagnose 1220 = Herz-Kreislauf-Stillstand
+42;dokumentiert werden. -2
+42;• Bitte die Differenzierung zwischen hypertensivem Notfall (mit Organschäden und Lebensgefahr, z.B.
+42;AP- Beschwerden, Lungenödem, neurologische Symptome) und hypertensiver Entgleisung (ohne
+42;Organschäden/Lebensgefahr) beachten!
+42;DiagnoseSonstige_ZNS Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich ZNS- Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Erkrankungen
+42;DiagnoseSonstige_HerzKreislauf Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Herz/Kreislauf-Erkrankungen
+42;DiagnoseSonstige_Atmung Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Erkrankungen der Atmungsorgane
+42;DiagnoseSonstige_Abdomen Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich abdominelle Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Erkrankungen
+42;DiagnoseSonstige_Psychiatrie Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;psychiatrische Erkrankungen
+42;DiagnoseSonstige_Stoffwechsel Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich Stoffwechsel- Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Erkrankungen
+42;DiagnoseSonstige_Paediatrie Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich pädiatrische Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Erkrankungen
+42;DiagnoseSonstige_Gynaekologie Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;gynäkologische Erkrankungen
+42;DiagnoseSonstige_Sonstige Nein Erkrankungen D M Text, Zeichenlimit 200 Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht wählbaren Diagnose aus dem Bereich sonstiger Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Erkrankungen
+42;Heimbeatmung Nein Erkrankungen D E Werteliste siehe Tabellenblatt Codes_DIVI Ja = Heimbeatmung verfügbar bzw. genutzt, Nein = keine Heimbeatmung verfügbar bzw. genutzt, leer = unbekannt Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Heimsauerstoff Nein Erkrankungen D E Werteliste siehe Tabellenblatt Codes_DIVI Ja = Heimsauerstoff verfügbar bzw. genutzt, Nein = kein Heimsauerstoff verfügbar bzw. genutzt, leer = unbekannt Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Erstdiagnosen Nein Erstdiagnosen D E Text, Zeichenlimit 500 Raum für frei formulierbare Diagnosen und Symptome Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Pflicht für NA- und RD-Protokolle, wenn mindestens eine Verletzung aus Diagnosecodeliste mit führender 2 vorhanden. Pflicht wenn:
+42;Kapitel: VerletzungenDetails
+42;Mindestens ein Diagnose-Code GLEICH 2nnn
+42;Verletzungsmuster Ja VerletzungenDetails Verletzungen DM E Verletzungsmuster NA + RD Polytrauma: Gleichzeitig entstandene Verletzungen mehrerer Körperregionen oder Organsysteme, wobei wenigstens Wenn Kapitel "VerletzungenDetails" Pflicht, dann ist -2 unzulässig.
+42;eine Verletzung oder die Kombination mehrerer lebensbedrohlich ist. -2
+42;Werteliste siehe Tabellenblatt Codes
+42;Unfallursache Ja VerletzungenDetails Verletzungen DM E Unfallursache NA + RD Wenn Kapitel "VerletzungenDetails" Pflicht, dann ist -2 unzulässig.
+42;-2
+42;Werteliste siehe Tabellenblatt Codes
+42;Unfallmechanismus Ja VerletzungenDetails Verletzungen DM M Unfallmechanismus NA + RD Wenn Kapitel "VerletzungenDetails" Pflicht, dann ist -2 unzulässig.
+42;-2
+42;Werteliste siehe Tabellenblatt Codes Kombinationen mit 99 sind unzulässig.
+42;Unfallhergang Ja VerletzungenDetails Verletzungen DM M Unfallhergang NA + RD Wenn Kapitel "VerletzungenDetails" Pflicht, dann ist -2 unzulässig.
+42;-2
+42;Werteliste siehe Tabellenblatt Codes Kombinationen mit 99 sind unzulässig.
+42;HelmPat Nein VerletzungenDetails Verletzungen DM E Helm Patient NA + RD Hat der/die Verunfallte zum Zeitpunkt des Unfalls einen Helm getragen?
+42;-2
+42;Werteliste siehe Tabellenblatt Codes
+42;Penetrierend Nein Verletzungen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste, ob und ggf. wo penetrierende Verletzungen vorliegen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Instabil Nein Verletzungen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste, ob und ggf. wo instabile Verletzungen vorliegen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;SensomotorDefizit Nein Verletzungen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste, ob und ggf. wo sensomotorische Defizite vorliegen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Amputation Nein Verletzungen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste, ob und ggf. wo Amputationsverletzungen vorliegen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;Unfallhergang2 Nein Verletzungen D E Werteliste siehe Tabellenblatt Codes_DIVI Werteliste zum Unfallhergang Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;VerletzungenSonstige Nein Verletzungen D E Text, Zeichenlimit 200 Raum zur Erfassung einer bei den strukturierten Verletzungen nicht wählbaren "sonstigen" Verletzung Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+42;GewaltSonstige Nein Verletzungen D E Text, Zeichenlimit 200 Raum zur Erfassung einer bei den strukturierten Verletzungen nicht wählbaren "sonstigen" Gewalteinwirkung Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;Release 1: 28.08.2026 Datenfelder komplett Seite 6 von 12
+43;DIVI-NOTFALLEINSATZ- MIND-
+43;DATENSATZBESCHREIBUNG 7.1 Pflicht
+43;Einfach-/ Teildatensatz techn.
+43;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+43;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+43;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+43;E/M Rettungsdienst MIND
+43;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+43;(RD)
+43;DIVI-Notfalleinsatzprotokoll relevant
+43;Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um eine Hilfeleistung oder Pflicht wenn:
+43;eine Unterstützung eines anderen Rettungsmittels handelt.. Protokolltyp GLEICH NA
+43;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+43;Pflicht für RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um einen Krankentransport, ODER 06 ODER 07 ODER 08
+43;eine Hilfeleistung, eine Unterstützung eines anderen Rettungsmittels oder um eine Verlegung mit physisch ODER 09 ODER 98)
+43;anwesendem Notarzt handelt. UND KeinTranspMitPat NICHT (05 ODER 08)
+43;ODER
+43;Kapitel: Scores
+43;Protokolltyp GLEICH RD
+43;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+43;ODER 06 ODER 07 ODER 08
+43;ODER 09 ODER 98)
+43;UND KeinTranspMitPat NICHT (05 ODER 08)
+43;UND EinsatzArt NICHT (05 ODER 07 ODER 10)
+43;NACAScore Ja Scores Erstdiagnosen DM E Werteliste siehe Tabellenblatt Codes NA + RD Subjektive Einschätzung der Schwere der Erkrankung oder Verletzung durch das rettungsdienstliche Personal. Es gilt Wenn Kapitel "Scores" Pflicht, dann ist -2 unzulässig.
+43;die jeweils schlimmste Ausprägung im Einsatzverlauf.
+43;-2
+43;MNACAScore Nein Scores M E M-NACAScore NA + RD Objektivierung des NACA Scores.
+43;Werteliste siehe Tabellenblatt Codes Soll aus dokumentierten Feldern berechnet werden! -2
+43;Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat - außer wenn es sich um eine primäre Pflicht wenn:
+43;Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels handelt. Protokolltyp GLEICH NA
+43;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+43;Pflicht für RD Protokolle, wenn ein Patientenkontakt stattgefunden hat - außer wenn es sich um einen Krankentransport, ODER 06 ODER 07 ODER 08
+43;eine primäre Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels ODER 09 ODER 98)
+43;handelt oder ein physisch anwesender NA primär mitalarmiert oder nachgefordert wurde. UND KeinTranspMitPat NICHT (02 ODER 05 ODER 08)
+43;ODER
+43;Kapitel: RDMassnahmen
+43;Protokolltyp GLEICH RD
+43;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+43;ODER 06 ODER 07 ODER 08
+43;ODER 09 ODER 98)
+43;UND KeinTranspMitPat NICHT (02 ODER 05 ODER 08)
+43;UND NotarztNachgefordert GLEICH 02
+43;UND EinsatzArt GLEICH (02 ODER 04 ODER 06 ODER 08)
+43;Airway Ja RDMassnahmen Massnahmen DM M Airway Maßnahmen NA + RD bei vorbestehendem Tracheostoma ohne eigene Maßnahmen soll "keine Maßnahmen durchgeführt" codiert werden Wenn Kapitel "RDMassnahmen" Pflicht, dann ist -2 unzulässig.
+43;-2
+43;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1 sind unzulässig.
+43;Atemunterst Ja RDMassnahmen Massnahmen DM M Atemunterstützung - Beatmung NA + RD Wenn Kapitel "RDMassnahmen" Pflicht, dann ist -2 unzulässig.
+43;-2
+43;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1 sind unzulässig.
+43;CirculationZugang Ja RDMassnahmen Massnahmen DM M Medikamentenzugang NA + RD Wenn Kapitel "RDMassnahmen" Pflicht, dann ist -2 unzulässig.
+43;-2
+43;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1 sind unzulässig.
+43;SpezMassn Ja RDMassnahmen Massnahmen DM M Spezielle Maßnahmen NA + RD Wenn Kapitel "RDMassnahmen" Pflicht, dann ist -2 unzulässig.
+43;-2
+43;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1 sind unzulässig.
+43;EKG12Kanal siehe Hinweise/ RDMassnahmen ErsteMesswerte DM M Dokumentation eines 12-Kanal-EKGs NA + RD Pflicht bei dokumentiertem ACS, STEMI oder Thoraxschmerz unklarer Genese Pflicht wenn:
+43;Plausibilitäten/ Diagnose ENTHÄLT (1201 ODER 1202 ODER 1203 ODER 1 204)
+43;Abhängigkeiten Werteliste siehe Tabellenblatt Codes
+43;Wenn EKG12Kanal Pflicht, dann ist -2 unzulässig. -2
+43;Kombinationen mit -1 sind unzulässig.
+43;Medizintechnik Ja RDMassnahmen Massnahmen DM M Medizintechnik NA + RD Wenn Kapitel "RDMassnahmen" Pflicht, dann ist -2 unzulässig.
+43;-2
+43;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1 sind unzulässig.
+43;LagTrans Ja RDMassnahmen Massnahmen DM M Lagerungs- und Rettungstechnik NA + RD Mit HWS-Immobilisation ist nicht nur die Anlage einer Cervicalstütze gemeint, sondern auch andere Methoden der Wenn Kapitel "RDMassnahmen" Pflicht, dann ist -2 unzulässig.
+43;Immobilisation wie z.B. Headblocks. -2
+43;Werteliste siehe Tabellenblatt Codes Kombinationen mit -1 sind unzulässig.
+43;DurchfHeilkundlMassn siehe Hinweise/ RDMassnahmen Medikation DM M Durchführung heilkundlicher Maßnahmen RD Hiermit sind durchgeführte heilkundliche Maßnahmen durch Notfallsanitäter gemeint Pflicht wenn:
+43;Plausibilitäten/ Protokolltyp GLEICH RD
+43;Abhängigkeiten Werteliste siehe Tabellenblatt Codes UND DokRM GLEICH (02 ODER 15)
+43;-2
+43;Wenn DurchfHeilkundlMassn Pflicht, dann ist -2 unzulässig.
+43;Kombinationen mit 03 sind unzulässig.
+43;Behandlungspfad siehe Hinweise/ RDMassnahmen M M Werteliste siehe Tabellenblatt Codes RD Hier soll dokumentiert werden, welcher Behandlungspfad genutzt wurde (sinngleich Standardarbeitsanweisungen, Pflicht wenn:
+43;Plausibilitäten/ Algorithmen, Handlungsempfehlungen etc. nach örtlicher Vorgabe) Protokolltyp GLEICH RD
+43;Abhängigkeiten UND DurchfHeilkundlMassn GLEICH (01 ODER 02) -2
+43;Wenn Behandlungspfad Pflicht, dann ist -2 unzulässig.
+43;Airway2 Nein Massnahmen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste zu erweiterten Airway-Massnahmen (in Ergänzung zu Feld Airway) Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;EndotrachealGroesse Nein Massnahmen D E Zahl, in mm, Format nn.n Größe des Endotrachealtubus, falls dieser zur Anwendung kam (bei mehreren Intubationsversuchen wird der Tubus, Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;der zur Beatmung endotracheal verblieb, genommen)
+43;SauerstoffgabeLiterMin Nein Massnahmen D E Zahl, in Liter, Format nn.n Applizierte Menge Sauerstoff in Litern/Minute, falls dieser zur Anwendung kam Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;IntubationVersuchAnzahl Nein Massnahmen D E Zahl, Format nn Anzahl Intubationsversuche, falls intubiert wurde Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;CirculationZugang2 Nein Massnahmen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste der bereits liegenden Zugänge Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;ZugangArt Nein Massnahmen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste der vom Dokumentierenden bzw. in seiner Verantwortung gelegten Gefäß-Zugänge * gemeinsame Wertepaare
+43;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;ZugangArtSonstige Nein Massnahmen D M Text, Zeichenlimit 50 Name eines in der Werteliste nicht aufgeführten, vom Dokumentierenden bzw. in seiner Verantwortung gelegten Gefäß- * gemeinsame Wertepaare
+43;Zuganges Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;ZugangOrt Nein Massnahmen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste der Orte, an denen die vom Dokumentierenden bzw. in seiner Verantwortung gelegten Gefäß-Zugänge in * gemeinsame Wertepaare
+43;den Patienten eingebracht wurden Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;ZugangOrtSonstige Nein Massnahmen D M Text, Zeichenlimit 50 Name eines Ortes, der in der Liste der Gefäß-Zugangs-Lokalisation nicht aufgeführt wird, an dem vom * gemeinsame Wertepaare
+43;Dokumentierenden bzw. in seiner Verantwortung ein Gefäß-Zugänge gelegt wurde Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;ZugangSeite Nein Massnahmen D M Werteliste siehe Tabellenblatt Codes_DIVI Körperseite an der der Zugang eingebracht wurde * gemeinsame Wertepaare
+43;bei unpaariger Zugangsoption (z.B. Kopf) wird 03 gewählt Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;ZugangGroesse Nein Massnahmen D M Werteliste siehe Tabellenblatt Codes_DIVI Größe des dokumentierten Zuganges * gemeinsame Wertepaare
+43;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+43;ZugangGroesseSonstige Nein Massnahmen D M Text, Zeichenlimit: 50, Einheit: G (Durchmesser) Größe des dokumentierten Zuganges falls in der Liste ZugangGröße nicht aufgeführt * gemeinsame Wertepaare
+43;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;Release 1: 28.08.2026 Datenfelder komplett Seite 7 von 12
+44;DIVI-NOTFALLEINSATZ-
+44;MIND-
+44;DATENSATZBESCHREIBUNG 7.1 Pflicht
+44;Einfach-/ Teildatensatz techn.
+44;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+44;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+44;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+44;E/M Rettungsdienst MIND
+44;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+44;(RD)
+44;DIVI-Notfalleinsatzprotokoll relevant
+44;ZugangAnzahl Nein Massnahmen D M Zahl, Format nn Anzahl vom Dokumentierenden gelegte Zugänge insgesamt * gemeinsame Wertepaare
+44;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;ZugangErschwert Nein Massnahmen D E Werteliste siehe Tabellenblatt Codes_DIVI Werteliste zum erschwerten endotrachealzugang Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;Beatmung Nein Massnahmen D E Werteliste siehe Tabellenblatt Codes_DIVI Werteliste zur Art der Beatmung Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;BeatmungFiO2 Nein Massnahmen D E Zahl maximale O2 -Konzentration bei Beatmung während des Einsatzes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;BeatmungAF Nein Massnahmen D E Zahl Maximale Atemfrequenz bei Beatmung (assistiert oder kontrolliert) während des Einsatzes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;BeatmungAMV Nein Massnahmen D E Zahl, L/Min Maximales Atemminutenvolumen bei Beatmung während des Einsatzes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;BeatmungPEEP Nein Massnahmen D E Zahl, mBar Maximaler PEEP bei Beatmung während des Einsatzes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;BeatmungPmax Nein Massnahmen D E Zahl, mBar Maximaler Spitzendruck bei Beatmung während des Einsatzes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;DefiArtGeraet Nein Massnahmen D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste für die Art der eingesetzten Defibrillatoren Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;DefiSchockZ1 Nein Massnahmen D E Angabe von Datum und Uhrzeit Zeitpunkt der ersten Schockapplikation Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;DefiSchockAnzahl Nein Massnahmen D E Zahl, Format nn Anzahl der abgegebenen Schocks (Kardioversion plus Defibrillation) Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;DefiSchockEnergie Nein Massnahmen D E Zahl, Format nnn Maximale Energie der abgegebenen Schocks Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;Werteliste siehe Tabellenblatt Codes_DIVI
+44;MassnahmenWeitere Nein Massnahmen D M Werteliste siehe Tabellenblatt Codes_DIVI Weitere durchgeführte Maßnahmen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;MassnahmenLagerungSonstige Nein Massnahmen D E Text, Zeichenlimit 200 Lagerungsmethoden bzw. eingesetzte Lagerungshilfsmitteln Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;MassnahmenSpritzenpumpenAnzahl Nein Massnahmen D E Zahl, Format nn Anzahl eingesetzter Spritzenpumpen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;MassnahmenSonstige Nein Massnahmen D E Text, Zeichenlimit 200 Weitere eingesetzte Massnahmen, die in den Wertelsiten und Feldern im Massnahmen-Kapitel nicht vorgesehen sind. Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;DurchfHeilkundlMassnText Nein Medikation D E Text, Zeichenlimit 200 Medikation, die im Rahmen der Durchführung heilkundlicher Maßnahmen vom Rettungsdienst ohne Arzt gegeben Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;wurde
+44;Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat - außer wenn es sich um eine primäre Pflicht wenn:
+44;Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels handelt. Protokolltyp GLEICH NA
+44;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+44;Pflicht für RD Protokolle, wenn ein Patientenkontakt stattgefunden hat - außer wenn es sich um einen Krankentransport, ODER 06 ODER 07 ODER 08
+44;eine primäre Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels ODER 09 ODER 98)
+44;handelt oder ein physisch anwesender NA primär mitalarmiert oder nachgefordert wurde. UND KeinTranspMitPat NICHT (02 ODER 05 ODER 08)
+44;ODER
+44;Kapitel: MedikamentoeseTherapie
+44;Protokolltyp GLEICH RD
+44;UND RDTransport GLEICH (01 ODER 03 ODER 04 ODER 05
+44;ODER 06 ODER 07 ODER 08
+44;ODER 09 ODER 98)
+44;UND KeinTranspMitPat NICHT (02 ODER 05 ODER 08)
+44;UND NotarztNachgefordert GLEICH 02
+44;UND EinsatzArt GLEICH (02 ODER 04 ODER 06 ODER 08)
+44;Medikamentengabe Ja MedikamentoeseTherapie Medikation DM M Medikamentencodes für Art des Medikaments und NA + RD Nur einsatzrelevante Medikamente dokumentieren. Wenn Kapitel "MedikamentoeseTherapie" Pflicht, dann ist -2 unzulässig.
+44;Applikationsweg
+44;Auch eine Vorbehandlung durch Andere soll dokumentiert werden, da diese für verschiedene Indikatoren relevant sein Kombinationen mit 999999 sind unzulässig.
+44;Werteliste siehe Tabellenblatt Codes kann (für jede Medikamenten-Gruppe separat dokumentierbar). -2
+44;Dauermedikation und Verabreichung durch Andere (Hausarzt, andere Rettungsmittel etc.): nn97xx
+44;Infusionsgabe Ja MedikamentoeseTherapie Medikation DM M Medikamentencodes für Art der Infusion und NA + RD Nur einsatzrelevante Medikamente dokumentieren Wenn Kapitel "MedikamentoeseTherapie" Pflicht, dann ist -2 unzulässig.
+44;Applikationsweg Dauermedikation und Verabreichung durch Andere (Hausarzt, andere Rettungsmittel etc.): nn97xx
+44;Kombinationen mit 999999 sind unzulässig. -2
+44;Werteliste siehe Tabellenblatt Codes
+44;MedikamentengabeDosis Nein Medikation D M Text, Zeichenlimit 20 Dosis der Medikamentengabe inklusive Einheit Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;InfusionsgabeMenge Nein Medikation D M Text, Zeichenlimit 20 Menge der Infusionsgabe in ml Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;Lysetherapie Nein Medikation D E Werteliste siehe Tabellenblatt Codes_DIVI Werteliste Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;LysetherapieBeginn Nein Medikation D E Angabe von Datum und Uhrzeit Datum und Uhrzeit - wenn Lysetherapiebeginn nicht bekannt leer Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+44;Pflicht für NA-Protokolle, wenn ein Patiententransport stattgefunden hat. Sofern der dokumentierende NA den Transport Pflicht wenn:
+44;nicht begleitet, müssen die Befunde zum Zeitpunkt der Übergabe an das andere Rettungsmittel dokumentiert werden Protokolltyp GLEICH NA
+44;(d.h. für Feld OrtPatUeberg i.d.R. 15 = Einsatzstelle). UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+44;ODER 07 ODER 08 ODER 09 ODER 98)
+44;Pflicht für RD-Protokolle, wenn ein Patiententransport stattfindet und der Transport nicht durch einen physisch
+44;anwesenden Notarzt, sondern allenfalls durch einen Telenotarzt begleitet wird und es sich nicht um einen ODER
+44;Krankentransport handelt.
+44;Kapitel: AbschlussBefundeBT
+44;Protokolltyp GLEICH RD
+44;Abschlussbefunde bei Transport
+44;UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+44;ODER 07 ODER 08 ODER 09 ODER 98)
+44;UND AerztlBegleit ENTHÄLT (00 ODER 03)
+44;UND AerztlBegleit ENTHÄLT NICHT (01 ODER 02 ODER 04
+44;ODER 05 ODER 98)
+44;UND EinsatzArt NICHT 10
+44;Bewusstsein2 Ja AbschlussBefundeBT Uebergabe DM E Bewusstseinslage NA + RD Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+44;-2
+44;Werteliste siehe Tabellenblatt Codes
+44;GlasgowComaScale2 Ja AbschlussBefundeBT Uebergabe DM E Glasgow Coma Scale NA + RD Bei Seitendifferenz bessere Seite. Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+44;-2
+44;Werteliste siehe Tabellenblatt Codes
+44;NeurologischeAuffaelligkeiten2 Ja AbschlussBefundeBT Uebergabe DM M Neurologische Auffälligkeiten NA + RD • sNIHSS-EMS Items und BEFAST werden abgebildet. Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+44;• die Dokumentation von Schweregraden und der Körperseite ist im -2
+44;Werteliste siehe Tabellenblatt MIND nicht vorgesehen Kombinationen mit 00, -1 oder 99 sind unzulässig.
+44;SystolischerBlutdruck2 Ja AbschlussBefundeBT Uebergabe DM E Systolischer Blutdruck NA + RD Bedeutet RR-Messung durchgeführt, wenn Angabe im Wertebereich oder 999. Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+44;Messwert in mmHg
+44;-2
+44;Werteliste siehe Tabellenblatt Codes
+44;EKGBefund2 Ja AbschlussBefundeBT Uebergabe DM M EKG-Befund NA + RD Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl möglich (hier sollen Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig
+44;keine Ausprägungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren
+44;Werteliste siehe Tabellenblatt Codes und nicht mehr vorhanden sind!). Kombinationen mit -1 oder 99 sind unzulässig.
+44;Für QS wird EKG als durchgeführt gewertet, wenn Angabe ungleich -1. -2
+44;Herzfrequenz2 Ja AbschlussBefundeBT Uebergabe DM E Herzfrequenz NA + RD Vom Monitor abgelesene Herzfrequenz pro Minute (ggf. palpatorisch oder pulsoximetrisch bestimmte Pulsfrequenz, Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+44;Messwert in /min wenn kein EKG abgeleitet wurde).
+44;Wenn EKGBefund2 GLEICH 09, dann sind Werte GRÖSSER 0 unzulässig. -2
+44;Werteliste siehe Tabellenblatt Codes
+45;Release 1: 28.08.2026 Datenfelder komplett Seite 8 von 12
+45;DIVI-NOTFALLEINSATZ-
+45;MIND-
+45;DATENSATZBESCHREIBUNG 7.1 Pflicht
+45;Einfach-/ Teildatensatz techn.
+45;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+45;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+45;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+45;E/M Rettungsdienst MIND
+45;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+45;(RD)
+45;DIVI-Notfalleinsatzprotokoll relevant
+45;Atemfrequenz2 Ja AbschlussBefundeBT Uebergabe DM E Atemfrequenz NA + RD Ausgezählte oder vom Monitor abgelesene Atemfrequenz pro Minute. Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;Messwert in /min Wenn Atmung2 GLEICH 08, dann sind Werte GRÖSSER 0 unzulässig. -2
+45;Werteliste siehe Tabellenblatt Codes
+45;Sauerstoffsaettigung2 Ja AbschlussBefundeBT Uebergabe DM E Sauerstoffsättigung NA + RD Dieser Wert wird ggf. unter Sauerstofftherapie gemessen Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;Messwert in %
+45;Bedeutet Pulsoxymetrie durchgeführt, wenn Angabe im Wertebereich oder 999. -2
+45;Werteliste siehe Tabellenblatt Codes
+45;Schmerzempfinden2 Ja AbschlussBefundeBT Uebergabe DM E Schmerzempfinden nach NA + RD Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;Numerischer Rating Scala (NRS)
+45;-2
+45;Werteliste siehe Tabellenblatt Codes
+45;Atmung2 Ja AbschlussBefundeBT Uebergabe DM M Klinische Befunde Atmung NA + RD Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl möglich (hier sollen Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;keine Ausprägungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren -2
+45;Werteliste siehe Tabellenblatt Codes und nicht mehr vorhanden sind!). Kombinationen mit -1, 00 oder 99 sind unzulässig.
+45;Psyche2 Ja AbschlussBefundeBT Uebergabe DM M Psychischer Zustand Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl möglich (hier sollen Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;keine Ausprägungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren -2
+45;Werteliste siehe Tabellenblatt Codes und nicht mehr vorhanden sind!). Kombinationen mit -1, 00 oder 99 sind unzulässig.
+45;Pupillenweite2 Ja AbschlussBefundeBT Uebergabe DM E Pupillenweite NA + RD Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;-2
+45;Werteliste siehe Tabellenblatt Codes
+45;Lichtreaktion2 Ja AbschlussBefundeBT Uebergabe DM E Lichtreaktion NA + RD Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;-2
+45;Werteliste siehe Tabellenblatt Codes
+45;SoSiTransport siehe Hinweise/ AbschlussBefundeBT Einsatzverlauf DM E Sondersignal bei Transport: NA + RD Sondersignalverwendung des transportierenden Rettungsmittels. Bei Patiententransport durch Hubschrauber: 01 = Ja Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;Plausibilitäten/
+45;Abhängigkeiten Werteliste siehe Tabellenblatt Codes Pflicht für NA-Protokolle, wenn ein Patiententransport stattgefunden hat, der durch den dokumentierenden NA begleitet
+45;wurde. Pflicht wenn:
+45;Protokolltyp GLEICH NA
+45;Pflicht für RD-Protokolle, wenn ein Patiententransport stattfindet und der Transport nicht durch einen physisch UND DokRM GLEICH (01 ODER 04 ODER 07 ODER 13)
+45;anwesenden Notarzt, sondern allenfalls durch einen Telenotarzt begleitet wird und es sich nicht um einen UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+45;Krankentransport handelt. ODER 07 ODER 08 ODER 09 ODER 98)
+45;UND AerztlBegleit GLEICH 01
+45;ODER
+45;Protokolltyp GLEICH NA
+45;UND DokRM GLEICH (05 ODER 06)
+45;UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+45;ODER 07 ODER 08 ODER 09 ODER 98) -2
+45;UND AerztlBegleit GLEICH 02
+45;ODER
+45;Protokolltyp GLEICH RD
+45;UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+45;ODER 07 ODER 08 ODER 09 ODER 98)
+45;UND AerztlBegleit ENTHÄLT (00 ODER 03)
+45;UND AerztlBegleit ENTH ÄLT NICHT (01 ODER 02 ODER 04
+45;ODER 05 ODER 98)
+45;UND EinsatzArt NICHT 10
+45;OrtPatUeberg Ja AbschlussBefundeBT Uebergabe DM E Werteliste siehe Tabellenblatt Codes NA + RD Der Ort, an dem der Patient primär übergeben wird. Sollten mehrere Auswahlmöglichkeiten zutreffen, ist die für die Wenn Kapitel "AbschlussbefundeBT" Pflicht, dann ist -2 unzulässig.
+45;Weiterversorgung des jeweiligen Patienten spezifischste anzugeben. Sofern der dokumentierende NA den Transport
+45;nicht begleitet, ist i.d.R. -2
+45;15 = Einsatzstelle zutreffend.
+45;ZeitWerte2 Nein Uebergabe D E Angabe von Datum und Uhrzeit Zeit zu der begonnen wurde, die die abschließenden Werte des Kapitels AbschließendeMesswerteNeuro erfasst wurden Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;NeurologieVerlauf Nein Uebergabe D M Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: Werteliste zum Neurologischen Verlauf Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;GCSWert2 Nein Uebergabe D E Zahl Abschließende Werte: GCS-Summe Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;NeurologischeAuffaelligkeitenSonstige2 Nein Uebergabe D E Text, Zeichenlimit 200 Abschließende Werte: Text für sonstige neurologische Auffälligkeiten, die im strukturierten Bereich nicht erfasst werden Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;können.
+45;ExtremitaetenbewegungArmRechts2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: GCS-Stadium für Beste motorische Reaktion am rechten Arm Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;ExtremitaetenbewegungArmLinks2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: GCS-Stadium für Beste motorische Reaktion am linken Arm Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;ExtremitaetenbewegungBeinRechts2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: GCS-Stadium für Beste motorische Reaktion am rechten Bein Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;ExtremitaetenbewegungBeinLinks2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: GCS-Stadium für Beste motorische Reaktion am linken Bein Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;PupillenweiteRechts2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: Beurteilung der Pupillenweite rechts Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;PupillenweiteLinks2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: Beurteilung der Pupillenweite links Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;LichtreaktionRechts2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: Beurteilung der Lichtreaktion rechts Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;LichtreaktionLinks2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: Beurteilung der Lichtreaktion links Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;DiastolischerBlutdruck2 Nein Uebergabe D E Zahl Abschließende Werte: Diastolischer Blutdruck Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;Werteliste siehe Tabellenblatt Codes_DIVI
+45;SauerstoffsaettigungRaumluft2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: wurde die Sättigung unter Raumluft gemessen? Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;HerzfrequenzRhythmisch2 Nein Uebergabe D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: waren die Herzraktionen rhythmisch? Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;OrtPatUebergSonstige Nein Bemerkungen D E Text, Zeichenlimit 200 Abschließende Werte: wo fand die Patientenübergabe statt? Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;UebergVerzoegert Nein Bemerkungen D E Werteliste siehe Tabellenblatt Codes_DIVI Abschließende Werte: wurde die Patientenübergabe verzögert? Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;UebergName Nein Bemerkungen D E Text, Zeichenlimit 75 Abschließende Werte: Klarname der Person, an die die Patientin/der Patient übergeben wurde Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;Bemerkungen Nein Bemerkungen D E Langtext, Zeichenlimit 2000 Abschließende Werte: Bemerkungen Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+45;Pflicht für NA- und RD-Protokolle, wenn die Diagnose Hypoglykämie gestellt wurde oder wenn eine Atemwegssicherung Pflicht wenn:
+45;oder eine maschinelle invasive Beatmung (unterstützt oder kontrolliert) stattgefunden hat Airway GLEICH (03 ODER 05 ODER 07)
+45;Kapitel: AbschlussBefundeBTAV ODER Atemunterst GLEICH 05
+45;Abschlussbefunde bei Transport und ambulanter
+45;Versorgung ODER
+45;Diagnose ENTHÄLT 1601 (Hypoglykämie)
+45;Blutzuckerwert2 siehe Hinweise/ M E Blutzucker NA + RD Bedeutet Blutzuckermessung durchgeführt, wenn Angabe im Wertebereich, 997, 998 oder 999 Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+45;Plausibilitäten/ Messwert in mg/dl bzw. mmol/l
+45;Abhängigkeiten Bei Auswahl 0 bis 900 bzw. 0.0 bis 50.0 wird BlutzuckerEinheit zum Pflichtfeld
+45;Werteliste siehe Tabellenblatt Codes
+45;Pflicht wenn: -2
+45;Diagnose ENTHÄLT 1601
+45;Wenn Blutzuckerwert2 Pflicht, dann ist -2 unzulässig.
+46;Release 1: 28.08.2026 Datenfelder komplett Seite 9 von 12
+46;DIVI-NOTFALLEINSATZ-
+46;MIND-
+46;DATENSATZBESCHREIBUNG 7.1 Pflicht
+46;Einfach-/ Teildatensatz techn.
+46;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+46;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+46;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+46;E/M Rettungsdienst MIND
+46;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+46;DIVI-Notfalleinsatzprotokoll relevant
+46;(RD)
+46;EtCO2Wert2 siehe Hinweise/ M E etCO2 Wert (zuletzt unter Beatmung in mmHg NA + RD Bedeutet Kapnometrie durchgeführt, wenn Angabe im Wertebereich oder 999. Pflicht wenn:
+46;Plausibilitäten/ gemessen): Airway GLEICH (03 ODER 05 ODER 07)
+46;Abhängigkeiten Pflicht wenn Atemwegssicherung oder maschinelle invasive Beatmung (unterstützt oder kontrolliert) dokumentiert. ODER Atemunterst GLEICH 05
+46;Werteliste siehe Tabellenblatt Codes -2
+46;Wenn EtCO2Wert2 Pflicht, dann ist -2 unzulässig.
+46;Pflicht für NA-Protokolle, wenn es sich bei dem dokumentierenden Rettungsmittel um ein bodengebundenes Pflicht wenn:
+46;notarztbesetztes Rettungsmittel handelt, ein Patiententransport stattfindet und der Notarzt den Transport begleitet oder Protokolltyp GLEICH NA
+46;der RTW den Transport ohne ärztliche Begleitung durchführt. UND DokRM GLEICH (01 ODER 04 ODER 07 ODER 13)
+46;UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+46;Pflicht für NA-Protokolle, wenn es sich bei dem dokumentierenden Rettungsmittel um ein luftgebundenes ODER 07 ODER 08 ODER 09 ODER 98)
+46;notarztbesetztes Rettungsmittel handelt, ein Patiententransport stattfindet und der Notarzt den Transport begleitet oder UND AerztlBegleit ENTHÄLT ( 00 ODER 01)
+46;der RTW den Transport ohne ärztliche Begleitung durchführt.
+46;ODER
+46;Pflicht für RD-Protokolle, wenn ein Patiententransport stattfindet und der Transport nicht durch einen physisch
+46;anwesenden Notarzt, sondern allenfalls durch einen Telenotarzt begleitet wird Protokolltyp GLEICH NA
+46;UND DokRM GLEICH (05 ODER 06)
+46;UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+46;ODER 07 ODER 08 ODER 09 ODER 98)
+46;Kapitel: Zielklinik
+46;UND AerztlBegleit ENTHÄLT ( 00 ODER 02)
+46;ODER
+46;Protokolltyp GLEICH RD
+46;UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+46;ODER 07 ODER 08 ODER 09 ODER 98)
+46;UND AerztlBegleit ENTHÄLT (00 ODER 03)
+46;UND AerztlBegleit ENTHÄLT NICHT (01 ODER 02 ODER 04
+46;ODER 05 ODER 98)
+46;NummerZK Ja Zielklinik M E Kennung der Zielklinik NA + RD • Standortnummer nach §293 Absatz 6 SGB V aus dem bundesweiten Verzeichnis der Standorte der nach § Wenn Kapitel "Zielklinik" Pflicht, dann ist -2 unzulässig.
+46;108 SGB V zugelassenen Krankenhäuser und ihrer Ambulanzen.
+46;Werteliste siehe Tabellenblatt Codes Falls nur die Standort-ID bekannt ist (= erste 6 Stellen der Standortnummer) ist diese nach der 6. Stelle
+46;mit "0" (Null) auf 9 Stellen aufzufüllen: Standortnummer (9-stellig: 77nnnnnnn) oder Standort-ID (6-stellig:
+46;77nnnn000) der Zielklinik.
+46;• Einmalige Anlage aller regelhaft angefahrenen/angeflogenen Krankenhäuser der Akutversorgung in
+46;-2
+46;Stammdatenbank erforderlich.
+46;• Für Einrichtungen ohne Standortnummer müssen auf örtlicher Ebene alternative Definitionen getroffen
+46;werden.
+46;AnmeldungPatient siehe Hinweise/ Zielklinik EinsatztechnischeDaten DM E Wurde der Patient in der Zielklinik angemeldet? NA + RD • Patientenanmeldung durch Fahrzeugbesatzung oder Leitstellenpersonal. Wenn Kapitel "Zielklinik" Pflicht, dann ist -2 unzulässig.
+46;Plausibilitäten/ • Mindestens einmal pro Patient erforderlich.
+46;Abhängigkeiten Muss bei Patiententransport angegeben werden, auch Pflicht wenn:
+46;wenn die Anmeldung durch die Leitstelle erfolgt. Pflicht für NA-Protokolle, wenn ein Patiententransport stattgefunden hat, der durch den dokumentierenden NA begleitet Protokolltyp GLEICH NA
+46;wurde. UND DokRM GLEICH (01 ODER 04 ODER 07 ODER 13)
+46;Werteliste siehe Tabellenblatt Codes UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+46;Pflicht für RD-Protokolle, wenn ein Patiententransport stattfindet und der Transport nicht durch einen physisch ODER 07 ODER 08 ODER 09 ODER 98)
+46;anwesenden Notarzt, sondern allenfalls durch einen Telenotarzt begleitet wird und es sich nicht um einen UND AerztlBegleit GLEICH 01
+46;Krankentransport handelt.
+46;ODER
+46;Protokolltyp GLEICH NA
+46;UND DokRM GLEICH (05 ODER 06)
+46;UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+46;ODER 07 ODER 08 ODER 09 ODER 98) -2
+46;UND AerztlBegleit GLEICH 02
+46;ODER
+46;Protokolltyp GLEICH RD
+46;UND RDTransport GLEICH (03 ODER 04 ODER 05 ODER 06
+46;ODER 07 ODER 08 ODER 09 ODER 98)
+46;UND AerztlBegleit ENTHÄLT (00 ODER 03)
+46;UND AerztlBegleit ENTHÄLT NICHT (01 ODER 02 ODER 04
+46;ODER 05 ODER 98)
+46;UND EinsatzArt NICHT 10
+46;AnmeldungWo Nein EinsatztechnischeDaten D E Werteliste siehe Tabellenblatt Codes_DIVI Werteliste zur speziellen Ressource des Krankenhauses, die eine spezifische Voranmeldung erfordert Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+46;AnmeldungWoSonstige Nein EinsatztechnischeDaten D E Text, Zeichenlimit 200 Speziellen Ressource des Krankenhauses, die eine spezifische Voranmeldung erfordert aber in der zugehörigen Liste Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+46;nicht aufgeführt ist
+46;Transportziel Nein EinsatztechnischeDaten D E Text, Zeichenlimit 200 Name des Transportziels, ggf. mit Adresse Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+46;Pflicht wenn:
+46;Kapitel: EinsatzBesonderheiten
+46;EinsatzArt NICHT (11 ODER 12)
+46;Einsatzbesonderheiten Ja EinsatzBesonderheiten Einsatzverlauf + Bemerkungen + DM M Einsatzbesonderheiten NA + RD • Abweichung von medizinischen Standards, Kombinationen mit 00 sind unzulässig.
+46;EinsattechnDaten • Abweichung vom Zeitablauf,
+46;Werteliste siehe Tabellenblatt Codes • erhöhter Aufwand.
+46;Ablehnung indizierter Maßnahmen (z.B. Diagnostik, Therapie) durch Patienten: 02. -2
+46;Transportverweigerung ist im Feld KeinTranspMitPat zu dokumentieren (04 = Patient lehnt Transport ab).
+46;Pflicht, außer für Dienstfahrten und Pauseneinsätze
+46;PreEmergencyStatus Nein EinsatzBesonderheiten Notfallgeschehen DM E Werteliste siehe Tabellenblatt Codes_DIVI NA + RD Schwere der Vorerkrankungen, Zustand vor Eintritt des Notfalls. -2
+46;Pflicht für NA-Protokolle, wenn die Diagnose Herz-Kreislauf-Stillstand, ein SIDS, eine primäre Todesfeststellung (ohne Pflicht wenn:
+46;CPR) oder "Patient im Einsatzverlauf verstorben" dokumentiert wurde. Protokolltyp GLEICH NA
+46;UND (Diagnose ENTHÄLT (1220 ODER 1813)
+46;Pflicht für RD-Protokolle, wenn die Diagnose Herz-Kreislauf-Stillstand dokumentiert wurde, oder bei einer ODER KeinTranspMitPat GLEICH [02 ODER 03])
+46;Todesfeststellung bzw. einer Dokumentation des Todes im Einsatzverlauf, aber nur wenn eine Notfallrettung ohne
+46;erkennbare primäre NA-Beteiligung vorliegt. ODER
+46;Kapitel: Reanimation
+46;Protokolltyp GLEICH RD
+46;UND (Diagnose ENTHÄLT ( 1220 ODER 1813)
+46;ODER KeinTranspMitPat GLEICH [02 ODER 03])
+46;UND EinsatzArt GLEICH (02 ODER 04 ODER 06 ODER 08)
+47;Release 1: 28.08.2026 Datenfelder komplett Seite 10 von 12
+47;DIVI-NOTFALLEINSATZ-
+47;MIND-
+47;DATENSATZBESCHREIBUNG 7.1 Pflicht
+47;Einfach-/ Teildatensatz techn.
+47;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+47;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+47;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+47;E/M Rettungsdienst MIND
+47;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+47;(RD)
+47;DIVI-Notfalleinsatzprotokoll relevant
+47;Reanimationssituation Ja Reanimation Reanimation M E Wurde eine Reanimation durchgeführt? NA + RD Eine begonnene Reanimation ist mit 01 oder 02 oder 03 zu dokumentieren. Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
+47;Werteliste siehe Tabellenblatt Codes
+47;Bei primärer Todesfeststellung (ohne CPR) ist nur "Reanimation nicht durchgeführt..." zulässig. Wenn KeinTranspMitPat GLEICH 02, dann ist Reanimationssituation GLEICH (00 ODER 01 ODER 02 ODER 03
+47;ODER 04) unzulässig.
+47;Ohne Patientenkontakt ist nur "keine Reanimationssituation (kein Tod/kein Kreislaufstillstand)" zulässig.
+47;Wenn RDTransport GLEICH 02, dann ist nur Reanimationssituation GLEICH 00 zulässig.
+47;-2
+47;Bei Diagnose Herz-Kreislauf-Stillstand oder SIDS bzw. bei Dokumentation "Patient im Einsatzverlauf verstorben" ist
+47;"keine Reanimationssituation (kein Tod/kein Kreislaufstillstand)" unzulässig. Wenn Diagnose ENTHÄLT ( 1220 ODER 1813) ODER KeinTranspMitPat GLEICH 03 dann ist Reanimationssituation
+47;GLEICH 00 unzulässig.
+47;Pflicht für NA-Protokolle, wenn dokumentierendes Rettungsmittel Reanimation durchgeführt hat. Pflicht wenn:
+47;Protokolltyp GLEICH NA
+47;Pflicht für RD-Protokolle, wenn dokumentierendes Rettungsmittel Reanimation durchgeführt hat und eine Notfallrettung UND Reanimationssituation GLEICH (01 ODER 02 ODER 03)
+47;ohne erkennbare NA-Beteiligung bzw. -Nachforderung vorliegt.
+47;ODER
+47;Kapitel: ReanimationDetails
+47;Protokolltyp GLEICH RD
+47;UND Reanimationssituation GLEICH (01 ODER 02 ODER 03)
+47;UND EinsatzArt GLEICH (02 ODER 04 ODER 06 ODER 08)
+47;UND NotarztNachgefordert GLEICH 02
+47;Reanimationstechnik Ja ReanimationDetails Massnahmen DM M Werteliste siehe Tabellenblatt Codes NA + RD Wenn Reanimationssituation GLEICH (00 ODER 05 ODER 06 ODER 07 ODER 08), dann sind alle Werte außer -2
+47;unzulässig.
+47;-2
+47;Kombinationen mit -1 sind unzulässig.
+47;URKRSTST Ja ReanimationDetails Massnahmen DM E Vermutete Ursache des Kreislaufstillstandes NA + RD Die internationalen Vorgaben des Utstein-Style Protokolls unterscheiden die Ursachen eines Kreislaufstillstandes in Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer -2 unzulässig.
+47;mehreren Sektionen. Gefragt ist die aus Sicht des Notarztes vermutliche Ursache. -2
+47;Werteliste siehe Tabellenblatt Codes
+47;SPORT Nein ReanimationDetails Massnahmen DM E Zusammenhang mit sportlicher Aktivität: NA + RD Besteht ein Zusammenhang des Kreislaufstillstandes mit sportlicher Aktivität? Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer -2 unzulässig.
+47;-2
+47;Werteliste siehe Tabellenblatt Codes
+47;ZEOFR Nein ReanimationDetails Notfallgeschehen DM E Zeitstempel Eintreffen First Responder NA + RD Eintreffzeit eines First Responders als "Vorausversorger" neben dem regulären Rettungsdienst am Einsatzort. Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer "1902-02-02T22:00:00.000+01:00" unzulässig. 1902-02-
+47;Angabe von Datum und Uhrzeit 02T22:00
+47;:00.000+
+47;01:00
+47;ZCKB Ja ReanimationDetails Massnahmen DM E Person Kollaps beobachtet NA + RD Wer hat den Kollaps beobachtet? Ersthelfer entspricht dem nichtmedizinischen Personal bzw. Laien. Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer -2 unzulässig.
+47;-2
+47;Werteliste siehe Tabellenblatt Codes
+47;ZCHDM Ja ReanimationDetails Massnahmen DM E Person Herzdruckmassage begonnen NA + RD Wer hat mit der Herzdruckmassage begonnen bzw. den Beginn angeordnet? (Es ist die jeweils am höchsten Wenn Protokolltyp GLEICH NA
+47;qualifizierte anwesende Person zu dokumentieren) UND Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER 08), dann ist 06 unzulässig.
+47;Werteliste siehe Tabellenblatt Codes
+47;Wenn Protokolltyp GLEICH RD
+47;UND Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER 08), dann sind 05 ODER 06 unzulässig. -2
+47;Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer -2 unzulässig.
+47;ZCDEFI Ja ReanimationDetails Massnahmen DM E Person Defibrillation durchgeführt NA + RD Wer hat die erste Defibrillation durchgeführt bzw. angeordnet? (Es ist die jeweils am höchsten qualifizierte anwesende Wenn Protokolltyp GLEICH NA
+47;Person zu kodieren.) UND Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER 08), dann ist 06 unzulässig.
+47;Werteliste siehe Tabellenblatt Codes
+47;Wenn Protokolltyp GLEICH RD
+47;UND Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER 08), dann sind 05 ODER 06 unzulässig. -2
+47;Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer -2 unzulässig.
+47;ZHDM Ja ReanimationDetails Massnahmen DM E Zeitpunkt Beginn Herzdruckmassage NA + RD Erster Zeitpunkt, zu dem mit der Herzdruckmassage begonnen wurde, ggf. schätzen. Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer "1902-02-02T22:00:00.000+01:00" unzulässig. 1902-02-
+47;Angabe von Datum und Uhrzeit 02T22:00
+47;:00.000+
+47;01:00
+47;ZDEFI1 siehe Hinweise/ ReanimationDetails Massnahmen DM E Zeitpunkt erste Defibrillation NA + RD Zeitpunkt der ersten Defibrillation. Pflicht wenn: 1902-02-
+47;Plausibilitäten/ Angabe von Datum und Uhrzeit Protokolltyp GLEICH NA UND ZCDEFI GLEICH (04 ODER 05 ODER 06) 02T22:00
+47;Abhängigkeiten Pflicht für NA-Protokolle, wenn eine Defibrillation durch den KTW, RTW oder NA dokumentiert wurde :00.000+
+47;ODER 01:00
+47;Pflicht für RD-Protokolle, wenn eine Defibrillation durch den KTW oder RTW dokumentiert wurde und eine Notfallrettung Protokolltyp GLEICH RD UND ZCDEFI GLEICH (04 ODER 05)
+47;ohne erkennbare NA-Beteiligung bzw. -Nachforderung vorliegt. UND EinsatzArt GLEICH (02 ODER 04 ODER 06 ODER 08)
+47;UND NotarztNachgefordert GLEICH 02
+47;Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer "1902-02-02T22:00:00.000+01:00" unzulässig.
+47;ZROSC1 siehe Hinweise/ ReanimationDetails Massnahmen DM E Zeitpunkt 1. ROSC NA + RD Bei Wiedereintritt eines Eigenkreislaufs (ROSC) ist die Zeit zu notieren. Ab diesem Zeitpunkt hat der Patient einen Pflicht wenn: 1902-02-
+47;Plausibilitäten/ Angabe von Datum und Uhrzeit eigenen Kreislauf mit einem messbaren Puls. Auch wenn dieser wieder zusammenbricht. ROSC GLEICH 02 02T22:00
+47;Abhängigkeiten ROSC = return of spontaneous circulation (Spontankreislauf) :00.000+
+47;Wenn Reanimationssituation GLEICH (00 ODER 05 ODER 06 ODER 07 ODER 08), dann sind alle Werte außer "1902- 01:00
+47;02-02T00:00:00" unzulässig.
+47;ROSC Ja ReanimationDetails Massnahmen DM E Erreichen eines Spontankreislaufs NA + RD Konnte durch die Reanimationsmaßnahmen jemals ein spontaner Kreislauf > 20 Sekunden etabliert werden? Wenn KHAUF GLEICH 02, dann nur ROSC GLEICH 02 zulässig.
+47;Werteliste siehe Tabellenblatt Codes Wenn laut Feld KHAUF "Krankenhausaufnahme mit ROSC", dann in Feld ROSC nur " jemals ROSC" zulässig. Wenn Reanimationssituation GLEICH (00 ODER 05 ODER 06 ODER 07 ODER 08), dann sind alle Werte außer -2 -2
+47;unzulässig.
+47;KHAUF Ja ReanimationDetails Reanimation DM E Patientenzustand bei Krankenhausaufnahme NA + RD Zustand bei Übergabe an die Zielklinik. Wenn Reanimationssituation GLEICH 00, dann sind alle Werte außer -2 unzulässig.
+47;Werteliste siehe Tabellenblatt Codes Wenn Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER 08), dann sind alle Werte außer 01 unzulässig. -2
+47;ZTOD Nein ReanimationDetails Reanimation DM E Zeitpunkt TOD NA + RD Beendigungszeitpunkt der Reanimationsmaßnahmen. Wenn Reanimationssituation GLEICH (00 ODER 05 ODER 06 ODER 07 ODER 08), dann sind alle Werte außer "1902- 1902-02-
+47;Angabe von Datum und Uhrzeit 02-02T00:00:00" unzulässig. 02T22:00
+47;:00.000+
+47;01:00
+47;ReanimationJa Nein Massnahmen D E Werteliste siehe Tabellenblatt Codes_DIVI Werteliste ob und mit welchem Erfolg eine Reanimation erfolgte Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+47;ReanimationFeedback Nein Massnahmen D E Werteliste siehe Tabellenblatt Codes_DIVI Ja = Ein Feedbacksystem wurde eingesetzt, Nein = Es wurde kein Feedbacksystem eingesetzt, Leer = wie Nein Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+47;ReanimationTelefon Nein Massnahmen D E Werteliste siehe Tabellenblatt Codes_DIVI Ja = Telefonreanimation wurde eingesetzt, Nein = Telefonreanimation wurde nicht eingesetzt, Leer = wie Nein Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+47;ReanimationNein Nein Massnahmen D E Werteliste siehe Tabellenblatt Codes_DIVI Werteliste, warum eine Reanimation bei reaktionslosem Patienten nicht eingesetzt wurde Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+47;ReanimationNeinSonstige Nein Massnahmen D E Text, Zeichenlimit 200 Text warum eine Reanimation bei reaktionslosem Patienten nicht eingesetzt wurde, wenn Wert in zugehöriger Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+47;Werteliste nicht enthalten ist
+48;Release 1: 28.08.2026 Datenfelder komplett Seite 11 von 12
+48;DIVI-NOTFALLEINSATZ-
+48;MIND-
+48;DATENSATZBESCHREIBUNG 7.1 Pflicht
+48;Einfach-/ Teildatensatz techn.
+48;MIND-DATENSATZBESCHREIBUNG 7.1 Zugehörigkeit Bezeichnung Merkmal
+48;MIND-Kapitel DIVI-Kapitel Mehrfach Notarzt (NA) Erläuterungen Hinweise /Plausibilitäten/Abhängigkeiten Default
+48;Datenfelder in roter Schriftarbe (z.B. (jeweils bezogen auf das DIVI-MIND Ausprägung
+48;E/M Rettungsdienst MIND
+48;EinsatzNr) sind ausschließlich für das zugehörige Kapitel)
+48;(RD)
+48;DIVI-Notfalleinsatzprotokoll relevant
+48;UrsacheSonstige Nein Reanimation D E Text, Zeichenlimit 200 Vermutete Ursache des Kreislaufstillstands, wenn in der zugehörigen Werteliste nicht angegeben Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+48;KollapsBeobachtetSonstige Nein Reanimation D E Text, Zeichenlimit 200 Angabe zur Person, die den Kollaps beobachtet hat, wenn in den zugehörigen Feldern nicht aufgelistet Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+48;BeginnHDMSonstige Nein Reanimation D E Text, Zeichenlimit 200 Angabe zur Person, die mit der Reanimation begonnen hat, wenn in den zugehörigen Feldern nicht aufgelistet Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+48;ErsteDefiSonstige Nein Reanimation D E Text, Zeichenlimit 200 Angabe zur Person, die die erste Defibrillation durchgeführt hat, wenn in den zugehörigen Feldern nicht aufgelistet Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+48;TodInfo Nein Reanimation D M Werteliste siehe Tabellenblatt Codes_DIVI Werteliste zu Todeszeitpunkt und Ort des Todes Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+48;TodArt Nein Reanimation D E Werteliste siehe Tabellenblatt Codes_DIVI Werteliste zur Todesart Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+48;TodZeit Nein Reanimation D E Angabe von Datum und Uhrzeit Zeitpunkt des Todes (Festlegung durch Arzt der die ggf. vorläufige oder endgültige Leichenschau macht) Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.
+48;Ende
+49;Release 1: 28.08.2026 Datenfelder komplett Seite 12 von 12

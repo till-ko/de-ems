@@ -1,0 +1,274 @@
+quelle_pdf_seite;zeile_normalisiert
+30;4. Exporthinweise MIND
+30;MIND 7.1 Exporthinweise Release 1: 28.08.2026
+30;Kapitel-/Feldname Besondere Hinweise für Baden-Württemberg Exporthinweise an Hersteller
+30;Wichtig:
+30;Im MIND werden Pflichtfelder von optionalen Feldern unterschieden. Bei Pflichtfeldern wird im Datensatz immer ein gültiger Eintrag, entsprechend der in der Spalte
+30;„Bezeichnung Merkmal Ausprägung“ definierten Feldinhalte, erwartet. Ein Datensatz kann nicht abgeschlossen und exportiert werden, wenn nicht alle Pflichtfelder mit einem
+30;gültigen Eintrag versehen sind. Bei den Pflichtfeldern werden zwei unterschiedliche Pflichtbedingungen unterschieden: Generelle Pflichtfelder sind immer und ohne weitere
+30;Abhängigkeiten für jeden Datensatz Pflicht. Dies kann für ein einzelnes Datenfeld oder für ein gesamtes Kapitel gelten, sie sind in der Spalte Pflicht durch ein "Ja"
+30;gekennzeichnet. Pflichtfelder, die in Abhängigkeit der Inhalte anderer Felder zur Pflicht werden, sind in der Spalte Pflicht durch "siehe Hinweise/Plausibilitäten/Abhängigkeiten"
+30;gekennzeichnet, die Abhängigkeiten selbst sind jeweils in der korrespondierenden Zelle der Spalte "Hinweise/Plausibilitäten/Abhängigkeiten" definiert.
+30;Für den Export müssen alle MIND-Felder mit Inhalten versehen sein. Wurde in einem optionalen Feld ein Inhalt dokumentiert, der einem im Datensatz definierten Feldinhalt
+30;entspricht und damit XSD-konform ist, muss dieser Inhalt entsprechend exportiert werden. Leere optionale Felder, bei denen der Nutzer keinen Wert eingetragen hat, müssen
+30;mit dem technischen Default (letzte Spalte im Tabellenblatt Datenfelder_MIND) befüllt werden. Dabei muss sichergestellt sein, dass ein vom Nutzer eingetragener Inhalt nicht
+30;durch den technischen Default überschrieben wird.
+30;Die technischen Defaults dürfen nicht in Felder eingetragen werden, für die eine Pflichtbedingung formuliert ist.
+30;Kapitel: Strukturdaten
+30;Protokolltyp Typ des verwendeten Teildatensatzes
+30;NA – Notarztdokumentation: NA-Projekt-ID, NA-Einsatzart, NA-
+30;Rettungsmittel, NA-Qualifikation, Fachgebiet NA
+30;RD – Rettungsdienstdokumenation: RD-Projekt-ID, RD-
+30;Einsatzart, RD-Rettungsmittel, RD-Qualifikation
+30;Standortkennung*
+30;ProjektID Wird von der SQR-BW bei der Standortregistrierung vergeben Soll beim Export automatisch eingetragen werden.
+30;und den NA-Standortleitern/RDL mitgeteilt.
+30;Die Verwendung der korrekten ProjektID ist essenziell für die
+30;korrekte Zuordnung von Rettungsmittel(n) zum Standort!
+30;Leitstelle Landkreiskennung der Heimatleitstelle wird von der SQR-BW Soll beim Export automatisch eingetragen werden.
+30;vergeben und steht unter www.sqrbw.de in der Infothek zur
+30;Verfügung (Leitstellenkennung).
+30;Softwarekennung Pflicht in Baden-Württemberg. Zu verwendendes Soll beim Export automatisch eingetragen werden.
+30;Softwarehersteller-Kürzel muss initial bei der SQR-BW Identifikation des Dokumentationssystems und der
+30;angefordert werden. Softwareversion.
+30;Kapitel: RettungstechnischeDaten
+30;Release 1: 28.08.2026 Exporthinweise MIND Seite 1 von 8
+30;Primaerschluessel DER PRIMÄRSCHLÜSSEL IST DIE AUFTRAGSNUMMER
+30;DER HEIMATLEITSTELLE!
+30;(Heimatleitstelle ist die für den RDB zuständige Leitstelle, in
+30;dem das Rettungsmittel seinen Standort hat).
+30;Hinweis: Nicht zu verwechseln mit der Auftragsnummer ist die
+30;Einsatznummer. Unter dieser werden die Auftragsnummern
+30;mehrerer Rettungsmittel und/oder Patienten innerhalb eines
+30;Einsatzes zusammengefasst.
+30;EinsatzArt Wenn ein RTW ersatzweise einen Krankentransport durchführt,
+30;ist dies mit 10 (und nicht 04 bzw. 08) zu dokumentieren.
+30;Um sicherzustellen, dass Sekundäreinsätze bei bestimmten
+30;Indikatorberechnungen ausgeschlossen werden, ist es
+30;erforderlich, dass diese unter EinsatzArt als "Verlegung" [oder
+30;Intensivtransport] dokumentiert werden.
+30;Gemeindeschlüssel*
+30;Postleitzahl*
+30;GeoEinsatzort Geokoordinaten des Einsatzortes im Dezimalformat [WGS 84].
+30;Die Koordinaten werden in der Reihenfolge Breitengrad,
+30;Längengrad mit Komma getrennt angegeben. Format:
+30;99.999999,99.999999
+30;EinsatzortTyp
+30;RDTransport
+30;AerztlBegleit
+30;NotarztNachgefordert
+30;TNANachgefordert
+30;KeinTranspMitPat
+30;KeinTranspOhnePat
+30;DokRM Sofern ein RTW einen Krankentransport durchführt, ist hier
+30;trotzdem der Code 02 (RTW) zu wählen. Für
+30;Krankentransporte, die von KTW durchgeführt werden, ist kein
+30;Datensatzexport an die SQR-BW vorzunehmen.
+30;BeteilRM keine Relevanz und damit auch keine Befüllung für BW, da das Feld soll in Abhängigkeit vom Feld "Dokumentierendes RM"
+30;diese Information den Leitstellen-Daten entnommen wird vorbelegt werden (dokumentierendes RM soll automatisch in
+30;"beteiligte RM" übernommen werden)
+31;Release 1: 28.08.2026 Exporthinweise MIND Seite 2 von 8
+31;AerztlQualifikation Wert aus Codetabelle kann beim Export automatisch erzeugt
+31;werden, beispielsweise durch Zugriff auf Stammdatenbank
+31;(Personalnummer o.ä.).
+31;StatusPersonal
+31;Kapitel: ZeitenEinsatzablauf
+31;Einsatzdatum
+31;SymptombeginnVor24h
+31;Symptombeginn Angabe von Datum und Zeit (Formattyp xs:dateTime).
+31;SymptombeginnGesichert
+31;ZeitNotfallmeldung* Formattyp xs:dateTime
+31;ZeitAlarm* Formattyp xs:dateTime
+31;ZeitAusruecken* Formattyp xs:dateTime
+31;ZeitAnkunftEinsatzort* Formattyp xs:dateTime
+31;ZeitAnkunftPatientPatientenkontakt Formattyp xs:dateTime
+31;ZeitTransportbeginn* Formattyp xs:dateTime
+31;ZeitEintreffenTransportziel* Formattyp xs:dateTime
+31;ZeitUebergabePatient Formattyp xs:dateTime
+31;ZeitEinsatzende Formattyp xs:dateTime
+31;Kapitel: Patientendaten
+31;Alter
+31;ValiditaetAlter
+31;Geschlecht
+31;Kapitel: ErsteMesswerteUndBefunde
+31;Bewusstsein1
+31;GlasgowComaScale1
+31;NeurologischeAuffaelligkeiten1
+31;SystolischerBlutdruck1
+31;EKGBefund1
+31;Herzfrequenz1 Wird hier kein gültiger Wert dokumentiert, muss eine erhobene
+31;Pulsfrequenz exportiert werden.
+31;Atemfrequenz1
+31;Sauerstoffsaettigung1
+31;Rekapillarisierungzeit
+31;Schmerzempfinden1
+31;Schmerzerleben
+32;Release 1: 28.08.2026 Exporthinweise MIND Seite 3 von 8
+32;Blutzuckerwert1 Der erste im Einsatzverlauf dokumentierte Wert aus dem
+32;Wertebereich (0 bis 900 bzw. 0.0 bis 50.0) bzw. "997 = low", "998
+32;= high" oder "999 = nicht messbar" muss exportiert werden, auch
+32;wenn zuvor "-1 = nicht gemessen" angeben wurde.
+32;BlutzuckerEinheit In BW ist - sofern erforderlich - hier der Defaultwert 01 (=mg/dl)
+32;zu setzen
+32;Temperatur Der erste im Einsatzverlauf dokumentierte Wert aus dem
+32;Wertebereich (20.0-50.0) oder "99.9 = nicht messbar" muss
+32;exportiert werden, auch wenn zuvor "-1.0 = nicht gemessen"
+32;angeben wurde.
+32;Atmung1
+32;Hautbefunde
+32;Psyche1
+32;Pupillenweite1 Sofern die Möglichkeit einer seitengetrennten
+32;Befunddokumentation auf dem Pad angeboten wird, ist diese bei
+32;beidseitiger gleicher Ausprägung mit den Codes 01 bis 03
+32;(beidseits gleich) bzw. bei seitengetrennter Ausprägung mit dem
+32;Code 04 (Anisokorie) zu exportieren
+32;Lichtreaktion1 Sofern die Möglichkeit einer seitengetrennten
+32;Befunddokumentation auf dem Pad angeboten wird, ist diese bei
+32;beidseitiger gleicher Ausprägung mit den Codes 00 bis 02
+32;(beidseits prompt, träge, keine) bzw. bei seitengetrennter
+32;Ausprägung mit dem Code 03 (Seitendifferenz) zu exportieren
+32;EtCO2Wert1 Der erste im Einsatzverlauf dokumentierte Wert aus dem
+32;Wertebereich (00-120) oder "999 = nicht messbar" muss
+32;exportiert werden, auch wenn zuvor "-1 = nicht gemessen"
+32;angeben wurde.
+32;Kapitel: ErstbefundeVerlegung Kapitel nur in Baden-Württemberg relevant
+32;VBeatmung
+32;VBeatmungDetail
+32;KatecholaminPflicht
+32;KatecholaminTherapie
+32;FortlaufendSedierung
+32;VigilanzMinderung
+32;InvasivBlutdruck
+33;Release 1: 28.08.2026 Exporthinweise MIND Seite 4 von 8
+33;SpezDevices Bei Auswahl von Sonstige (Code 98) muss ein Freitextfeld dazu
+33;ausgefüllt werden - nur wenn dieses befüllt wurde, ist die
+33;Auswahl valide
+33;AnzahlPerfusor Bei Angabe größer 9: Export von Wert 9
+33;Kapitel: EinschaetzungVerlegungsarzt Kapitel nur in Baden-Württemberg relevant
+33;IndikationArztbegleitung
+33;ZDringlichkeit
+33;IndikationIT Bei Auswahl von Sonstige (Code 98) muss ein Freitextfeld dazu
+33;ausgefüllt werden - nur wenn dieses befüllt wurde, ist die
+33;Auswahl valide
+33;Kapitel: Diagnosen
+33;Diagnose Jede hier dokumentierte Diagnose wird als Notfalldiagnose • Jede Diagnose nur einmal exportieren.
+33;betrachtet und für die Indikatorberechnung als relevant
+33;angesehen. • Diagnosen mit der Zusatzkennung "Z.n." (Zustand nach) dürfen
+33;nur exportiert werden, wenn es sich um die einzige vorhandene
+33;Diagnose handelt.
+33;Kapitel: VerletzungenDetails
+33;Verletzungsmuster
+33;Unfallursache
+33;Unfallmechanismus
+33;Unfallhergang
+33;HelmPat
+33;Kapitel: Scores
+33;NACAScore
+33;MNACAScore Wird durch SQR-BW berechnet. Ermittlung gemäß M-NACA Berechnungsschema.
+33;Erläuterung im Dokument "Ermittlung des M-NACA" auf
+33;www.sqrbw.de einzusehen.
+33;Kapitel: RDMassnahmen
+33;Airway
+33;Atemunterst
+33;CirculationZugang
+33;SpezMassn
+33;EKG12Kanal
+33;Medizintechnik
+33;LagTrans
+33;DurchfHeilkundlMassn in BW sind SAA/BPR gemeint
+33;Behandlungspfad aktuell können zu diesem Feld noch keine inhaltlichen aktuell können zu diesem Feld noch keine inhaltlichen
+33;Festlegungen getroffen werden Festlegungen getroffen werden
+33;Kapitel: MedikamentoeseTherapie
+34;Release 1: 28.08.2026 Exporthinweise MIND Seite 5 von 8
+34;Medikamentengabe Bei mehrfacher Gabe des gleichen Medikamentes nur einmaliger
+34;Export des entsprechenden Codes.
+34;Nicht alle am Markt verfügbaren Medikamente können in den
+34;hinterlegten Medikamentenlisten gepflegt werden. Daher kann es
+34;vorkommen, dass nicht hinterlegte Medikamente Bestandteil einer
+34;Notfallbehandlung darstellen, diese sollten daher auch
+34;dokumentiert werden können. Daher wurde für jede
+34;Medikamentengruppe ein Code **98** (sonstige) definiert. Für
+34;jede Medikamentengruppe sollte daher in der Medikamentenliste
+34;auch eine Auswahl "sonstige" ermöglicht werden. Aus
+34;forensischen Gründen empfehlen wir jedoch dringend, dass
+34;dem Anwender für die Auswahl eines Codes **98** (sonstige) aus
+34;irgendeiner Medikamentengruppe ein Freitextfeld zur Verfügung
+34;gestellt wird, in dem er das verabreichte Medikament mit
+34;Klarnamen dokumentieren kann.
+34;Infusionsgabe Bei mehrfacher Gabe der gleichen Infusionslösung nur einmaliger
+34;Export des entsprechenden Codes.
+34;Kapitel: AbschlussBefundeBT
+34;Bewusstsein2
+34;GlasgowComaScale2
+34;NeurologischeAuffaelligkeiten2
+34;SystolischerBlutdruck2
+34;EKGBefund2
+34;Herzfrequenz2 Wird hier kein gültiger Wert dokumentiert, muss eine erhobene
+34;Pulsfrequenz exportiert werden.
+34;Atemfrequenz2
+34;Sauerstoffsaettigung2
+34;Schmerzempfinden2
+34;Atmung2
+34;Psyche2
+34;Pupillenweite2 Sofern die Möglichkeit einer seitengetrennten
+34;Befunddokumentation auf dem Pad angeboten wird, ist diese bei
+34;beidseitiger gleicher Ausprägung mit den Codes 00 bis 02
+34;(beidseits prompt, träge, keine) bzw. bei seitengetrennter
+34;Ausprägung mit dem Code 04 (Anisokorie) zu exportieren
+35;Release 1: 28.08.2026 Exporthinweise MIND Seite 6 von 8
+35;Lichtreaktion2 Sofern die Möglichkeit einer seitengetrennten
+35;Befunddokumentation auf dem Pad angeboten wird, ist diese bei
+35;beidseitiger gleicher Ausprägung mit den Codes 01 bis 03
+35;(beidseits gleich) bzw. bei seitengetrennter Ausprägung mit dem
+35;Code 03 (Seitendifferenz) zu exportieren
+35;SoSiTransport
+35;OrtPatUeberg
+35;Kapitel: AbschlussBefundeBTAV
+35;Blutzuckerwert2 Der letzte im Einsatzverlauf dokumentierte Wert aus dem
+35;Wertebereich (0 bis 900 bzw. 0.0 bis 50.0) bzw. "997 = low", "998
+35;= high" oder "999 = nicht messbar" muss exportiert werden, auch
+35;wenn danach "-1 = nicht bestimmt" angeben wurde.
+35;EtCO2Wert2 Der letzte im Einsatzverlauf dokumentierte Wert aus dem
+35;Wertebereich (00-90) oder "99 = nicht messbar" muss exportiert
+35;werden, auch wenn danach "-1 = nicht gemessen" angeben
+35;wurde.
+35;Kapitel: Zielklinik
+35;NummerZK Bei Notarzteinsätzen sollte im Notarztprotokoll immer das
+35;Transportziel dokumentiert werden, auch wenn der Transport
+35;ohne notärztliche Begleitung erfolgt, da die Entscheidung über
+35;das Transportziel in notärztlicher Verantwortung liegt. Dies ist
+35;relevant für die Indikatorberechnung der SQR-BW.
+35;In BW soll anstelle der Standortnummer weiterhin die 4-stellige
+35;Klinik-ID der SQR-BW mit führenden Nullen von 000001000 bis
+35;000009900 geliefert werden. (zu finden unter
+35;https://www.sqrbw.de/sqr-bw/infothek)
+35;AnmeldungPatient
+35;Kapitel: EinsatzBesonderheiten
+35;Einsatzbesonderheiten Um eine ungewollte Berücksichtigung bei der
+35;Indikatorberechnung zu vermeiden, müssen falls zutreffend
+35;folgende Einsatzbesonderheiten hier dokumentiert werden:
+35;• Pat. lehnt indizierte Maßnahmen ab
+35;• bewusster Therapieverzicht
+35;• nächste geeignete Klink nicht aufnahmebereit
+35;PreEmergencyStatus
+35;Kapitel: Reanimation
+35;Reanimationssituation
+36;Release 1: 28.08.2026 Exporthinweise MIND Seite 7 von 8
+36;Kapitel: ReanimationDetails
+36;Reanimationstechnik
+36;URKRSTST
+36;SPORT
+36;ZEOFR Formattyp xs:dateTime
+36;ZCKB Formattyp xs:dateTime
+36;ZCHDM Formattyp xs:dateTime
+36;ZCDEFI Formattyp xs:dateTime
+36;ZHDM Formattyp xs:dateTime
+36;ZDEFI1 Formattyp xs:dateTime
+36;ZROSC1 Formattyp xs:dateTime
+36;ROSC
+36;KHAUF
+36;ZTOD Formattyp xs:dateTime
+36;Ende
+36;* Die grau hinterlegten Felder müssen nicht übermittelt werden, wenn die Informationen leitstellenseitig zur Verfügung stehen. Sie sind im Datensatz enthalten, da diese
+36;Möglichkeit nicht in allen Bundesländern zur Verfügung steht.
+37;Release 1: 28.08.2026 Exporthinweise MIND Seite 8 von 8

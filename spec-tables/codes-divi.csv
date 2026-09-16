@@ -1,0 +1,373 @@
+quelle_pdf_seite;zeile_normalisiert
+50;6. Codes DIVI
+50;DIVI Notfalleinsatzprotokoll 7.1 Werteliste Release 1: 28.08.2026
+50;Werteliste
+50;Fehleinsatz
+50;-1 = kein Fehleinsatz
+50;01 = kein Patient
+50;02 = Pat. bereits abtransportiert
+50;03 = abbestellt
+50;04 = böswillige Alarmierung
+50;05 = Einsatzabbruch technisch
+50;06 = Einsatzabbruch Wetter
+50;99 = Einsatzabbruch Sonstige
+50;Versorgungssituation
+50;-1 = nicht bekannt
+50;01 = unabhängig
+50;02 = Pflege zuhause
+50;03 = Pflege in Institution
+50;Antikoagulanzien vor dem Notfallereignis
+50;-1 = nicht bekannt
+50;01 = TZ-Aggregationshemmer
+50;02 = Vit.K Antagonist
+50;03 = Heparin(oide)
+50;04 = DOAK Thrombinhemmer
+50;05 = DOAK Xa-Hemmer
+50;99 = Sonstige bzw. unklar welche
+50;Ersthelfermaßnahmen
+50;-1 = nicht bekannt
+50;01 = suffizient
+50;02 = insuffizient
+50;03 = Keine
+50;Vitale Probleme nach ABCDE
+50;-1 = nicht erfasst
+50;01 = A
+50;02 = B
+50;03 = C
+50;04 = D
+50;05 = E
+50;Augen öffnen
+50;-1 = nicht untersucht
+50;00 = nicht vorhanden
+50;01 = auf Druck
+50;02 = auf Geräusch
+50;03 = Spontan
+50;99 = nicht beurteilbar
+50;Beste verbale Reaktion
+50;-1 = nicht untersucht
+50;00 = keine
+50;01 = Laute
+50;02 = Wörter
+50;03 = Koversationsfähig verwirrt
+50;04 = Koversationsfähig orientiert
+50;99 = nicht beurteilbar
+50;Release 1: 28.08.2026 Codes DIVI Seite 1 von 7
+50;DIVI Notfalleinsatzprotokoll 7.1 Werteliste Release 1: 28.08.2026
+50;Beste motorische Reaktion
+50;-1 = nicht untersucht
+50;00 = keine
+50;01 = Streckt
+50;02 = Beugt abnormal
+50;03 = Beugt normal
+50;04 = lokalisiert
+50;05 = folgt Aufforderung
+50;99 = nicht beurteilbar
+50;Beste motorische Reaktion
+50;-1 = nicht untersucht
+50;00 = keine
+50;01 = Streckt
+50;02 = Beugt abnormal
+50;03 = Beugt normal
+50;04 = lokalisiert
+50;05 = folgt Aufforderung
+50;99 = nicht beurteilbar
+50;Beste motorische Reaktion
+50;-1 = nicht untersucht
+50;00 = keine
+50;01 = Streckt
+50;02 = Beugt abnormal
+50;03 = Beugt normal
+50;04 = lokalisiert
+50;05 = folgt Aufforderung
+50;99 = nicht beurteilbar
+50;Beste motorische Reaktion
+50;-1 = nicht untersucht
+50;00 = keine
+50;01 = Streckt
+50;02 = Beugt abnormal
+50;03 = Beugt normal
+50;04 = lokalisiert
+50;05 = folgt Aufforderung
+50;99 = nicht beurteilbar
+50;Extremitätenbewegung
+50;-1 = nicht untersucht
+50;00 = keine Bewegung
+50;01 = kein Anheben
+50;02 = einseitiges Absinken
+50;99 = nicht beurteilbar
+50;Extremitätenbewegung
+50;-1 = nicht untersucht
+50;00 = keine Bewegung
+50;01 = kein Anheben
+50;02 = einseitiges Absinken
+50;99 = nicht beurteilbar
+50;Extremitätenbewegung
+50;-1 = nicht untersucht
+50;00 = keine Bewegung
+50;01 = kein Anheben
+50;02 = einseitiges Absinken
+50;99 = nicht beurteilbar
+51;Release 1: 28.08.2026 Codes DIVI Seite 2 von 7
+51;DIVI Notfalleinsatzprotokoll 7.1 Werteliste Release 1: 28.08.2026
+51;Extremitätenbewegung
+51;-1 = nicht untersucht
+51;00 = keine Bewegung
+51;01 = kein Anheben
+51;02 = einseitiges Absinken
+51;99 = nicht beurteilbar
+51;Pupillenweite rechts
+51;-1 = nicht untersucht
+51;00 = keine
+51;01 = eng
+51;02 = mittel
+51;03 = weit
+51;04 = entrundet
+51;99 = nicht beurteilbar
+51;Pupillenweite links
+51;-1 = nicht untersucht
+51;00 = keine
+51;01 = eng
+51;02 = mittel
+51;03 = weit
+51;04 = entrundet
+51;99 = nicht beurteilbar
+51;Lichtreaktion rechts
+51;-1 = nicht untersucht
+51;00 = keine
+51;01 = träge
+51;02 = prompt
+51;99 = nicht beurteilbar
+51;Lichtreaktion links
+51;-1 = nicht untersucht
+51;00 = keine
+51;01 = träge
+51;02 = prompt
+51;99 = nicht beurteilbar
+51;Diastolischer Blutdruck
+51;Messwert in mmHg
+51;Wertebereich = 0 - 250
+51;-1 = nicht gemessen
+51;999 = nicht messbar
+51;qSOFA-Score
+51;Wertebereich = 00 bis 03
+51;99 = nicht errechenbar
+51;NEWS2-Score
+51;Wertebereich = 00 bis 20
+51;99 = nicht errechenbar
+51;Penetrierende Verletzung
+51;-1 = nicht untersucht
+51;00 = keine
+51;01 = Kopf, Gesicht, Hals
+51;02 = Thorax
+51;03 = Abdomen
+51;99 = nicht beurteilbar
+51;Instabile Verletzung
+51;-1 = nicht untersucht
+51;00 = keine
+51;01 = Thorax
+51;02 = Becken
+51;99 = nicht beurteilbar
+52;Release 1: 28.08.2026 Codes DIVI Seite 3 von 7
+52;DIVI Notfalleinsatzprotokoll 7.1 Werteliste Release 1: 28.08.2026
+52;Sensomotorisches Defizit
+52;-1 = nicht untersucht
+52;00 = keine
+52;01 = HWS
+52;02 = BWS, LWS
+52;99 = nicht beurteilbar
+52;Amputation
+52;-1 = nicht untersucht
+52;00 = keine
+52;01 = Arm
+52;02 = Bein
+52;99 = nicht beurteilbar
+52;Unfallart
+52;01 = Fraktur von > 2 gr. Röhrenknochen
+52;02 = Verätzung
+52;03 = Einklemmung
+52;04 = Inhalationstrauma
+52;05 = Elektrounfall
+52;06 = (Beinahe-)Ertrinken
+52;07 = Tauchunfall
+52;08 = Hochrasanztrauma
+52;Airway Maßnahmen2
+52;-1 = keine Maßnahmen durchgeführt
+52;01 = mechanisches Freimachen/Freihalten der Atemwege
+52;02 = Absaugen
+52;03 = Präoxygenieren
+52;04 = Wendl-Tubus
+52;05 = Guedel-Tubus
+52;06 = Larynxmaske
+52;07 = Larynxtubus
+52;08 = Endotracheale Intubation oral
+52;09 = Endotracheale Intubation nasal
+52;98 = Sonstige
+52;Circulation Zugang2
+52;-1 = keine Maßnahmen durchgeführt
+52;01 = PVK vorhanden
+52;02 = ZVK vorhanden
+52;03 = IO vorhanden
+52;04 = Transnasal-Applikator
+52;Zugang Art
+52;01 = PVK
+52;02 = ZVK
+52;03 = intraossär
+52;04 = arteriell
+52;98 = Sonstige
+53;Release 1: 28.08.2026 Codes DIVI Seite 4 von 7
+53;DIVI Notfalleinsatzprotokoll 7.1 Werteliste Release 1: 28.08.2026
+53;Zugang Ort
+53;01 = Handrücken
+53;02 = Unterarm
+53;03 = Ellenbeuge
+53;04 = Oberarm
+53;05 = Hals
+53;06 = Kopf
+53;07 = Bein
+53;08 = Fuss
+53;09= V. basilica/cephalica
+53;10 = V. subclavia
+53;11 = V. jugularis int.
+53;12 = V. jugularis ext.
+53;13 = V. femoralis
+53;14 = Tibia proximal
+53;15 = Tibia distal
+53;16 = Humerus proximal
+53;17 = Sternum
+53;18 = A. radialis
+53;19 = A. femoralis
+53;98 = Sonstige
+53;Zugang Seite
+53;01 = links
+53;02 = rechts
+53;03 = keine Seite
+53;97 = unbekannt
+53;Zugang Größe
+53;01 = 24G
+53;02 = 22G
+53;03 = 20G
+53;04 = 18G
+53;05 = 18G kurz
+53;06 = 17G
+53;07 = 16G
+53;08 = 14G
+53;09= 15mm
+53;10 = 25mm
+53;11 = 45mm
+53;98 = Sonstige
+53;Zugang erschwert
+53;01 = Zugang erschwert
+53;02 = mehr als 2 Versuche
+53;03 = unmöglich - Verfahrenswechsel
+53;Beatmung
+53;-1 = keine Maßnahmen durchgeführt
+53;01 = Manuell
+53;02 = Maschinell kontrolliert
+53;03 = Maschinell assistiert
+53;04 = NIV
+53;Defi Geräteart
+53;01 = Defibrillation
+53;02 = Kardioversion
+53;03 = Defi
+53;04 = AED
+53;05 = publicAED
+53;Defischock Energie
+53;Wertebereich
+53;gültiger Wertebereich = 10 bis 500 Joule
+54;Release 1: 28.08.2026 Codes DIVI Seite 5 von 7
+54;DIVI Notfalleinsatzprotokoll 7.1 Werteliste Release 1: 28.08.2026
+54;weitere Massnahmen
+54;01 = Impella
+54;02 = IABP
+54;03 = ECMO
+54;04 = Thoraxdrainage rechts
+54;05 = Thoraxdrainage links
+54;06 = Entlastungspunktion rechts
+54;07 = Entlastungspunktion links
+54;08 = Thorakotomie
+54;09 = Thoraxverschlusspflaster
+54;10 = Magensonde
+54;11 = Blasenkatheter
+54;12 = besondere Hygienemaßnahmen
+54;Ersthelfermaßnahmen
+54;-1 = keine Lyse
+54;01 = Lyse vor Kreislaufstillstand
+54;02 = Lyse während Kreislaufstillstand
+54;03 = Lyse nach ROSC
+54;99 = Lysezeitpunkt nicht bekannt
+54;Neurologie Verlauf
+54;-1 = nicht untersucht
+54;01 = unverändert
+54;02 = neu erhoben
+54;Anmeldung wo
+54;-1 = keine Anmeldung
+54;01 = Stroke Unit
+54;02 = Herzkatheter
+54;03 = Traumazentrum
+54;04 = Schockraum
+54;99 = Sonstige benötigte Ressource
+54;Reanimation Ja
+54;01 = Reanimation erfolgt
+54;02 = ROSC im Verlauf
+54;03 = niemals ROSC
+54;04 = erfolglos
+54;Reanimation Nein
+54;01 = Patientenverfügung
+54;02 = zu spät
+54;03 = aussichtslose Grunderkrankung
+54;04 = Reanimation im Vorfeld erfolgreich
+54;05 = Sonstige
+54;Tod Info
+54;01 = vor Ort
+54;02 = auf dem Transport
+54;03 = Zeitpunkt bestimmbar
+54;04 = Zeitpunkt nicht bestimmbar
+54;Todesart
+54;01 = natürlich
+54;02 = unklar
+54;03 = nicht natürlich
+54;der Kollaps wurde beobachtet
+54;01 = Ja
+54;02 = Nein
+54;die Ankunft des notarztbesetzten Rettungsmittels erfolgte vor dem RTW
+54;01 = Ja
+54;02 = Nein
+55;Release 1: 28.08.2026 Codes DIVI Seite 6 von 7
+55;DIVI Notfalleinsatzprotokoll 7.1 Werteliste Release 1: 28.08.2026
+55;der Patientenname ist unbekannt und Pseudonym eingesetzt
+55;01 = Ja
+55;02 = Nein
+55;das Geburtsdatum wurde geschätzt
+55;01 = Ja
+55;02 = Nein
+55;der BMI liegt unter 40
+55;01 = Ja
+55;02 = Nein
+55;der Patient ist dialysepflichtig
+55;01 = Ja
+55;02 = Nein
+55;der Patient ist infektiös
+55;01 = Ja
+55;02 = Nein
+55;die Sauerstoffsättigung wurde bei Raumluft gemessen
+55;01 = Ja
+55;02 = Nein
+55;die Herzaktion ist rhythmisch
+55;01 = Ja
+55;02 = Nein
+55;Heimbeatmung ist verfügbar oder wurde genutzt
+55;01 = Ja
+55;02 = Nein
+55;Heimsauerstoff ist verfügbar oder wurde genutzt
+55;01 = Ja
+55;02 = Nein
+55;die Patientenübergabe wurde verzögert
+55;01 = Ja
+55;02 = Nein
+55;ein Feedbacksystem wurde eingesetzt
+55;01 = Ja
+55;02 = Nein
+55;eine Telefonreanimation wurde durchgeführt
+55;01 = Ja
+55;02 = Nein
+56;Release 1: 28.08.2026 Codes DIVI Seite 7 von 7
