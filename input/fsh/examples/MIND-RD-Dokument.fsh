@@ -17,6 +17,10 @@ Description: "Minimales deutsches MIND-7.1-Dokument mit Patient, Einsatz, Einsat
 * entry[3].resource = MindRdLocationExample
 * entry[4].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Practitioner/mind-practitioner-example"
 * entry[4].resource = MindRdPractitionerExample
+* entry[5].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-alter-example"
+* entry[5].resource = MindAlterExample
+* entry[6].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-altersvaliditaet-example"
+* entry[6].resource = MindAltersvaliditaetExample
 
 Instance: MindRdPatientExample
 InstanceOf: PatientDeEmsMindR4
@@ -66,3 +70,23 @@ Usage: #example
 * id = "mind-practitioner-example"
 * name.family = "Beispiel"
 * name.given = "Rettungsdienst"
+
+Instance: MindAlterExample
+InstanceOf: ObservationDeEmsMindAlter
+Usage: #example
+* id = "mind-alter-example"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumenttyp-cs"
+* code.coding.code = #patientenalter
+* subject = Reference(MindRdPatientExample)
+* effectiveDateTime = "2026-09-16T09:15:00+02:00"
+* valueString = "051:04"
+
+Instance: MindAltersvaliditaetExample
+InstanceOf: ObservationDeEmsMindAltersvaliditaet
+Usage: #example
+* id = "mind-altersvaliditaet-example"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumenttyp-cs"
+* code.coding.code = #altersvaliditaet
+* subject = Reference(MindRdPatientExample)
+* effectiveDateTime = "2026-09-16T09:15:00+02:00"
+* valueCodeableConcept = MindAltersvaliditaetCS#01
