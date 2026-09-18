@@ -7,7 +7,7 @@ Description: "Angabe, ob das dokumentierte MIND-Alter gesichert oder geschätzt 
 * status = #final
 * code 1..1
 * code.coding 1..1
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumenttyp-cs" (exactly)
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs" (exactly)
 * code.coding.code = #altersvaliditaet (exactly)
 * subject 1..1
 * subject only Reference(PatientDeEmsMindR4)

@@ -8,5 +8,3 @@ Description: "Dokumenttypen für deutsche MIND-7.1-Dokumente."
 * ^content = #complete
 * ^caseSensitive = true
 * #rd-einsatzdokument "MIND 7.1 Rettungsdienstdokumentation"
-* #patientenalter "Patientenalter"
-* #altersvaliditaet "Altersvalidität"

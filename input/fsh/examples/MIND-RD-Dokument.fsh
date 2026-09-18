@@ -75,17 +75,22 @@ Instance: MindAlterExample
 InstanceOf: ObservationDeEmsMindAlter
 Usage: #example
 * id = "mind-alter-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumenttyp-cs"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #patientenalter
 * subject = Reference(MindRdPatientExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
-* valueString = "051:04"
+* component[jahre].code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* component[jahre].code.coding.code = #alter-jahre
+* component[jahre].valueInteger = 51
+* component[monate].code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* component[monate].code.coding.code = #alter-monate
+* component[monate].valueInteger = 4
 
 Instance: MindAltersvaliditaetExample
 InstanceOf: ObservationDeEmsMindAltersvaliditaet
 Usage: #example
 * id = "mind-altersvaliditaet-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumenttyp-cs"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #altersvaliditaet
 * subject = Reference(MindRdPatientExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
