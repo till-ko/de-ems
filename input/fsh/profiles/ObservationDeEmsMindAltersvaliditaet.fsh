@@ -2,7 +2,7 @@ Profile: ObservationDeEmsMindAltersvaliditaet
 Parent: Observation
 Id: observation-de-ems-mind-altersvaliditaet
 Title: "MIND 7.1 Altersvalidität"
-Description: "Angabe, ob das dokumentierte MIND-Alter gesichert oder geschätzt ist."
+Description: "Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoolean = true bedeutet 'Alter geschätzt', valueBoolean = false bedeutet 'Alter gesichert'. Ist die Angabe nicht dokumentiert (CH-EMS-Konzept), wird statt valueBoolean der dataAbsentReason gesetzt."
 
 * status = #final
 * code 1..1
@@ -12,6 +12,13 @@ Description: "Angabe, ob das dokumentierte MIND-Alter gesichert oder geschätzt 
 * subject 1..1
 * subject only Reference(PatientDeEmsMindR4)
 * effectiveDateTime 1..1
-* value[x] only CodeableConcept
-* valueCodeableConcept 1..1
-* valueCodeableConcept from MindAltersvaliditaetVS (required)
+* value[x] only boolean
+* valueBoolean 0..1
+* dataAbsentReason 0..1
+* dataAbsentReason from http://hl7.org/fhir/ValueSet/data-absent-reason (extensible)
+* obeys mind-altersvaliditaet-xor-undokumentiert
+
+Invariant: mind-altersvaliditaet-xor-undokumentiert
+Description: "Es muss entweder valueBoolean (gesichert/geschätzt) oder dataAbsentReason (nicht dokumentiert) angegeben sein."
+Severity: #error
+Expression: "(valueBoolean.exists() and dataAbsentReason.empty()) or (valueBoolean.empty() and dataAbsentReason.exists())"

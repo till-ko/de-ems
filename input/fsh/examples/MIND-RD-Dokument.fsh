@@ -94,4 +94,16 @@ Usage: #example
 * code.coding.code = #altersvaliditaet
 * subject = Reference(MindRdPatientExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
-* valueCodeableConcept = MindAltersvaliditaetCS#01
+* valueBoolean = false
+
+Instance: MindAltersvaliditaetUndokumentiertExample
+InstanceOf: ObservationDeEmsMindAltersvaliditaet
+Usage: #example
+Title: "MIND 7.1 Altersvalidität nicht dokumentiert"
+Description: "Altersvalidität als not-asked (nicht dokumentiert) über dataAbsentReason nach CH-EMS-Konzept."
+* id = "mind-altersvaliditaet-undokumentiert-example"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.code = #altersvaliditaet
+* subject = Reference(MindRdPatientExample)
+* effectiveDateTime = "2026-09-16T09:15:00+02:00"
+* dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-asked
