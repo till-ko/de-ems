@@ -5,10 +5,11 @@ Title: "MIND 7.1 Einsatzdokument"
 Description: "Composition für ein deutsches MIND-7.1-RD-Dokument."
 
 * status = #final
+* extension contains MindSoftwarekennung named softwarekennung 0..1
+* extension[softwarekennung].valueString 0..1
 * type 1..1
+* type from MindProtokolltypVS (required)
 * type.coding 1..1
-* type.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumenttyp-cs" (exactly)
-* type.coding.code = #rd-einsatzdokument (exactly)
 * subject 1..1
 * subject only Reference(PatientDeEmsMindR4)
 * encounter 1..1

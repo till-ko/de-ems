@@ -49,6 +49,8 @@ Usage: #example
 * period.start = "2026-09-16T09:15:00+02:00"
 * period.end = "2026-09-16T10:00:00+02:00"
 * identifier[standortkennung].value = "03254021"
+* identifier[projektid].value = "PRJ-2026-0001"
+* identifier[leitstelle].value = "HI"
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER
 * type.coding = MindEinsatzartCS#04
 * location.location = Reference(MindRdLocationExample)
@@ -60,8 +62,8 @@ Usage: #example
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)
 * date = "2026-09-16T10:00:00+02:00"
-* type.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumenttyp-cs"
-* type.coding.code = #rd-einsatzdokument
+* type.coding = MindProtokolltypCS#RD
+* extension[softwarekennung].valueString = "MIND-LOGIK 3.4.1"
 * author = Reference(MindRdPractitionerExample)
 
 Instance: MindRdPractitionerExample
