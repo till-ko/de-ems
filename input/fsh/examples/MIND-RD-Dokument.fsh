@@ -21,6 +21,12 @@ Description: "Minimales deutsches MIND-7.1-Dokument mit Patient, Einsatz, Einsat
 * entry[5].resource = MindAlterExample
 * entry[6].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-altersvaliditaet-example"
 * entry[6].resource = MindAltersvaliditaetExample
+* entry[7].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-rdtransport-example"
+* entry[7].resource = MindRdTransportExample
+* entry[8].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-notarzt-nachgefordert-example"
+* entry[8].resource = MindNotarztNachgefordertExample
+* entry[9].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-zeit-alarm-example"
+* entry[9].resource = MindZeitAlarmExample
 
 Instance: MindRdPatientExample
 InstanceOf: PatientDeEmsMindR4
@@ -39,6 +45,9 @@ Usage: #example
 * address.city.extension[ags].valueCoding.code = #03254021
 * address.postalCode = "31134"
 * address.country = "DE"
+* extension[einsatzorttyp].valueCodeableConcept = MindEinsatzortTypCS#01
+* position.latitude = 52.150823
+* position.longitude = 9.951083
 
 Instance: MindRdEncounterExample
 InstanceOf: EncounterDeEmsMindR4
@@ -51,6 +60,7 @@ Usage: #example
 * identifier[standortkennung].value = "03254021"
 * identifier[projektid].value = "PRJ-2026-0001"
 * identifier[leitstelle].value = "HI"
+* identifier[primaerschluessel].value = "HI-2026-00042"
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER
 * type.coding = MindEinsatzartCS#04
 * location.location = Reference(MindRdLocationExample)
@@ -63,7 +73,7 @@ Usage: #example
 * encounter = Reference(MindRdEncounterExample)
 * date = "2026-09-16T10:00:00+02:00"
 * type.coding = MindProtokolltypCS#RD
-* extension[softwarekennung].valueString = "MIND-LOGIK 3.4.1"
+* extension[softwarekennung].valueString = "MIND-LOGIK 7.0.1"
 * author = Reference(MindRdPractitionerExample)
 
 Instance: MindRdPractitionerExample
@@ -109,3 +119,39 @@ Description: "Altersvalidität als not-asked (nicht dokumentiert) über dataAbse
 * subject = Reference(MindRdPatientExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-asked
+
+Instance: MindRdTransportExample
+InstanceOf: ObservationDeEmsMindRdTransport
+Usage: #example
+Title: "MIND 7.1 Rettungsdienstlicher Transport"
+Description: "RDTransport: Transport durch RTW."
+* id = "mind-rdtransport-example"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.code = #rd-transport
+* subject = Reference(MindRdPatientExample)
+* effectiveDateTime = "2026-09-16T09:30:00+02:00"
+* valueCodeableConcept = MindRdTransportCS#03
+
+Instance: MindNotarztNachgefordertExample
+InstanceOf: ObservationDeEmsMindNotarztNachgefordert
+Usage: #example
+Title: "MIND 7.1 Notarzt nachgefordert"
+Description: "NotarztNachgefordert: kein Notarzt nachgefordert."
+* id = "mind-notarzt-nachgefordert-example"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.code = #notarzt-nachgefordert
+* subject = Reference(MindRdPatientExample)
+* effectiveDateTime = "2026-09-16T09:30:00+02:00"
+* valueBoolean = false
+
+Instance: MindZeitAlarmExample
+InstanceOf: ObservationDeEmsMindZeitAlarm
+Usage: #example
+Title: "MIND 7.1 Zeitpunkt Alarm"
+Description: "ZeitAlarm: Alarmierung durch die Leitstelle."
+* id = "mind-zeit-alarm-example"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.code = #zeit-alarm
+* subject = Reference(MindRdPatientExample)
+* effectiveDateTime = "2026-09-16T09:15:00+02:00"
+* valueDateTime = "2026-09-16T09:15:00+02:00"

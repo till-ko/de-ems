@@ -14,7 +14,7 @@ Description: "Encounter-Ressource für den MIND 7.1 Datensatz"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier contains standortkennung 0..1 and projektid 1..1 and leitstelle 1..1
+* identifier contains standortkennung 0..1 and projektid 1..1 and leitstelle 1..1 and primaerschluessel 1..1
 * identifier[standortkennung].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-standortkennung"
 * identifier[standortkennung].value 1..1
 * identifier[standortkennung].value obeys mind-standortkennung-format
@@ -22,6 +22,9 @@ Description: "Encounter-Ressource für den MIND 7.1 Datensatz"
 * identifier[projektid].value 1..1
 * identifier[leitstelle].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-leitstelle"
 * identifier[leitstelle].value 1..1
+* identifier[primaerschluessel].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-primaerschluessel"
+* identifier[primaerschluessel].value 1..1
+* identifier[primaerschluessel].value obeys mind-primaerschluessel-laenge
 
 // --- EinsatzArt als Binding auf Encounter.type ---
 * type 1..1
@@ -30,3 +33,8 @@ Description: "Encounter-Ressource für den MIND 7.1 Datensatz"
 * location 1..1
 * location.location 1..1
 * location.location only Reference(LocationDeEmsMindR4)
+
+Invariant: mind-primaerschluessel-laenge
+Description: "Der Primärschlüssel darf höchstens 20 Zeichen lang sein (MIND: 'Zeichenlimit 20')."
+Severity: #error
+Expression: "length() <= 20"
