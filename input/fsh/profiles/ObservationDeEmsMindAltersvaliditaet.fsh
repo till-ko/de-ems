@@ -1,8 +1,8 @@
 Profile: ObservationDeEmsMindAltersvaliditaet
-Parent: Observation
+Parent: ObservationDeEmsBase
 Id: observation-de-ems-mind-altersvaliditaet
 Title: "MIND 7.1 Altersvalidität"
-Description: "Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoolean = true bedeutet 'Alter geschätzt', valueBoolean = false bedeutet 'Alter gesichert'. Ist die Angabe nicht dokumentiert (CH-EMS-Konzept), wird statt valueBoolean der dataAbsentReason gesetzt."
+Description: "Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoolean = true bedeutet 'Alter geschätzt', valueBoolean = false bedeutet 'Alter gesichert'. Ist die Angabe nicht dokumentiert (CH-EMS-Konzept), wird statt valueBoolean der dataAbsentReason gesetzt (vom Basisprofil ObservationDeEmsBase geerbt)."
 
 * status = #final
 * code 1..1
@@ -14,8 +14,6 @@ Description: "Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoole
 * effectiveDateTime 1..1
 * value[x] only boolean
 * valueBoolean 0..1
-* dataAbsentReason 0..1
-* dataAbsentReason from http://hl7.org/fhir/ValueSet/data-absent-reason (extensible)
 * obeys mind-altersvaliditaet-xor-undokumentiert
 
 Invariant: mind-altersvaliditaet-xor-undokumentiert

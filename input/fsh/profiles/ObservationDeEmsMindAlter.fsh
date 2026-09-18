@@ -1,5 +1,5 @@
 Profile: ObservationDeEmsMindAlter
-Parent: Observation
+Parent: ObservationDeEmsBase
 Id: observation-de-ems-mind-alter
 Title: "MIND 7.1 Patientenalter"
 Description: "MIND-Alter zum maßgeblichen Zeitpunkt des Einsatzes als Jahre (component[jahre]) und Monate (component[monate]). Der Export formt daraus das MIND-Format 'jjj:mm' (z. B. 51 Jahre 4 Monate = '051:04')."
