@@ -1,0 +1,683 @@
+Kapitel-/Feldname;"Pflicht
+(jeweils bezogen auf das zugehˆrige Kapitel)";Einfach-/ Mehrfach E/M;Bezeichnung Merkmal Auspr‰gung;Teildatensatz Notarzt (NA) Rettungsdienst (RD);Erl‰uterungen;Hinweise /Plausibilit‰ten/Abh‰ngigkeiten;techn. Default MIND;
+Kapitel: Strukturdaten;;;;;;dieses Kapitel ist immer Pflicht;;
+Protokolltyp;Ja;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Typ des verwendeten Protokolls:
+ï NA f¸r Notarztdokumentation
+ï RD f¸r Rettungsdienstdokumentation
+Sollte in Stammdaten fest dem Rettungsmittel/Personal zugewiesen werden.
+Beim Wechsel von Dokumentations-Pads zwischen Fahrzeugen muss unbedingt darauf geachtet werden, dass das korrekte Rettungsmittel mit der ihm zugeordneten Projekt-ID und der richtige Protokolltyp ausgew‰hlt sind.";Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen z.B. ProjektID, Rettungsmitteltyp, Einsatzart, Qualifikation Personal.;;
+Standortkennung;Nein;E;"Amtlicher Gemeindeschl¸ssel des RM-Standortes BL-LK (Bundesland-Landkreis-Rettungswache;
+Bundesland und Landkreis jeweils nach Vorgaben des Gemeindeschl¸ssels)
+Werteliste siehe Tabellenblatt Codes";NA + RD;Amtlicher Gemeindeschl¸ssel des Rettungsmittel-Standorts.;;-2;
+ProjektID;Ja;E;ProjektID;NA + RD;"Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird. Standortverantwortliche sind aufgefordert, sich dort um eine ID-Zuteilung zu bem¸hen.
+Einmalig in Stammdaten einzupflegen.";Pr¸fung auf Plausibilit‰t, z.B. Leitstelle, Einsatzart, Rettungsmitteltyp, Protokolltyp.;;
+Leitstelle;Ja;E;Landkreiskennung der Heimatleitstelle  (z.B. S f¸r Stuttgart, OG f¸r Offenburg);NA + RD;"F¸r einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden.
+Einmalig in Stammdaten einzupflegen.";Pr¸fung auf Plausibilit‰t, z.B. ProjektID und Leitstelle.;;
+Softwarekennung;"siehe Hinweise/ Plausibilit‰ten/
+Abh‰ngigkeiten";E;Kennung des Dokumentationssystems des Rettungsmittels und der Software-Version;NA+RD;Identifikation des Dokumentationssystems und der Software-Version, mit der die Einsatzdaten erzeugt wurden.;Pflichtfeld in BW;-2;
+Kapitel: RettungstechnischeDaten;;;;;;dieses Kapitel ist immer Pflicht;;
+Primaerschluessel;Ja;E;"eindeutiger Prim‰rschl¸ssel f¸r alle F‰lle pro Jahr
+Zeichenlimit 20";NA + RD;"Innerhalb eines Leitstellenbereiches darf in einem Kalenderjahr kein Prim‰rschl¸ssel mehrfach vergeben werden.
+Es ist unbedingt darauf zu achten, dass im NA-Protokoll die NA-Auftragsnummer und im RD-Protokoll die RD-Auftragsnummer verwendet wird!
+Bei mehreren Patienten in einem Einsatz, soll von der ""Heimatleitstelle"" f¸r jeden Patienten eine separate Auftragsnummer zugeteilt werden. Diese ist ggf. anzufordern. Dort wo dies leitstellen-/abrechnungsseitig nicht mˆglich ist, soll der Prim‰rschl¸ssel im jeweiligen Datensatz durch ein eindeutiges Suffix gekennzeichnet werden (bspw. Auftragsnummer der Leitstelle erg‰nzt mit -01 bis -99 oder mit -A bis -Z)";;;
+EinsatzArt;Ja;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Art des RD-Einsatzes/Notarzteinsatzes
+F¸r die Auswahl des zutreffenden Codes ist der Status zum Zeitpunkt der Alarmierung des dokumentierenden Rettungsmittels durch die Leitstelle maﬂgeblich.
+(d.h. in einem NA-Protokoll d¸rfen unter EinsatzArt nur Auspr‰gungen mit dem Inhalt ""mit (physisch anwesendem) NA"" dokumentiert werden, auch wenn der NA nachgefordert wurde und die prim‰re Alarmierung des RTW ohne NA erfolgte.
+Im RD-Protokoll d¸rfen - sofern bei Alarmierung des RTW (noch) keine Alarmierung eines NA/TNA erfolgt
+ist - unter EinsatzArt nur Auspr‰gungen mit dem Inhalt ""ohne NA"" dokumentiert werden, auch wenn es sp‰ter zu einer NA-Nachforderung kam.)
+Einsatzarten ""mit (physisch anwesendem) NA"" (01, 03, 05, 07) bzw. ""mit...TNA"" (02, 03, 06, 07) sind immer dann auszuw‰hlen, wenn bis zum Zeitpunkt der Alarmierung des dokumentierenden RM ein NA oder ein TNA ebenfalls alarmiert wurden.
+Dienstfahrt und Pause sind organisatorische Einsatzarten, die in keinem Bezug zu einem beabsichtigten oder tats‰chlichen Patientenkontakt stehen (beispielsweise Fahrt in die Kfz-Werkstatt). Ein Materialtransport, f¸r den ein Patientenbezug hergestellt werden kann (z.B. Transport eines Inkubators
+durch einen RTW zu einem anderen Einsatz) ist nicht mit Dienstfahrt zu kodieren.
+Wenn ein RTW von der Leitstelle einen Krankentransportauftrag erhalten hat, ist als EinsatzArt Krankentransport auszuw‰hlen.";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Wenn Protokolltyp NA, dann ist EinsatzArt GLEICH  (04 ODER  08 ODER  10) unzul‰ssig.";;
+Gemeindeschluessel;Nein;E;"Amtlicher Gemeindeschl¸ssel des Einsatzortes
+Werteliste siehe Tabellenblatt Codes";NA + RD;Quelle ist das Statistische Bundesamt. Der Amtliche Gemeindeschl¸ssel (AGS) ist ein 8-stelliger Schl¸ssel zur eindeutigen Identifizierung einer Gemeinde mit den Bestandteilen: Bundesland (2 Stellen), Regierungsbezirk (1 Stelle), Kreis (2 Stellen) und Gemeinde (3 Stellen);;-2;
+Postleitzahl;Nein;E;"Postleitzahl des Einsatzortes
+Werteliste siehe Tabellenblatt Codes";NA + RD;PLZ des Einsatzortes - diese ist bei Eins‰tzen am Wohnort des Patienten zumeist der Versichertenkarte zu entnehmen.;;-2;
+GeoEinsatzort;Nein;E;"Geokoordinaten des Einsatzortes
+GPS Geo-Koordinaten im Dezimalformat [WGS 84]";NA + RD;"Die Koordinaten werden in der Reihenfolge Breitengrad, L‰ngengrad mit Komma getrennt angegeben.
+Format: 99.999999,99.999999";;-2;
+EinsatzortTyp;"siehe Hinweise/ Plausibilit‰ten/
+Abh‰ngigkeiten";E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Beschreibung des Einsatzortes.
+Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze";"Pflicht wenn:
+EinsatzArt NICHT  (11 ODER  12)";-2;
+RDTransport;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Welches Rettungsmittel hat den ¸berwiegenden Anteil des Transports des Patienten (hinsichtlich der Transportstrecke) durchgef¸hrt?
+""Transport durch NAW"" ist nur auszuw‰hlen, wenn es sich bei dem RM von vornherein um einen NAW gehandelt hat (ein RTW, bei dem der NA den Transport begleitet, bleibt ein RTW)
+Bei gemeinsamem Einsatz von RTW und NA identische Dokumentation in RD- und NA-Protokoll Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+ï Bei Auswahl 01 wird KeinTranspMitPat zum Pflichtfeld
+ï Bei Auswahl 02 wird KeinTranspOhnePat zum Pflichtfeld
+Pflicht wenn:
+EinsatzArt NICHT  (11 ODER  12)
+Wenn EinsatzArt GLEICH  (11 ODER  12), sind s‰mtliche Inhalte in RDTransport auﬂer -2 unzul‰ssig.";-2;
+AerztlBegleit;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;M;"ƒrztliche Begleitung
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Wurde der Transport ‰rztlich begleitet? Wenn ja, von wem?
+Pflicht f¸r NA- und RD-Protokolle bei Eins‰tzen mit durchgef¸hrtem Transport
+Bei gemeinsamem Einsatz von RTW und NA identische Dokumentation in RD- und NA-Protokoll";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Pflicht wenn:
+RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06 ODER  07 ODER  08 ODER  09 ODER  98)
+Kombinationen mit 00 sind unzul‰ssig";-2;
+NotarztNachgefordert;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;Physisch anwesender Notarzt wurde nachgefordert Werteliste siehe Tabellenblatt Codes;NA + RD;"Betrifft nur die Nachforderung eines physisch anwesenden Notarztes (nicht eines Telenotarztes).
+NA: Wurden Sie nachgefordert?
+RD: Haben Sie einen Notarzt nachgefordert? Falls unbekannt: ""nein"" dokumentieren
+Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze
+wenn bei Protokolltyp RD eine Einsatzart ausgew‰hlt wurde, die eine prim‰re Alarmierung eines (physisch
+anwesendem) NA zum Ausdruck bringt (01, 03, 05, oder 07)  ist die Dokumentation NotarztNachgefordert=ja unzul‰ssig.";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Pflicht wenn:
+EinsatzArt NICHT  (11 ODER  12)
+Wenn Protokolltyp GLEICH  RD UND  EinsatzArt GLEICH  (01 ODER  03 ODER  05 ODER  07), dann ist
+NotarztNachgefordert = 01 unzul‰ssig.";-2;
+TNANachgefordert;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;Tele-Notarzt wurde nachgefordert Werteliste siehe Tabellenblatt Codes;NA + RD;"Betrifft nur die Nachforderung eines Telenotarztes (nicht eines physisch anwesenden Notarztes). NA/RD: Haben Sie einen TNA nachgefordert?
+Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze
+wenn bei Protokolltyp RD eine Einsatzart ausgew‰hlt wurde, die eine prim‰re Alarmierung eines TNA zum Ausdruck bringt (02, 03, 06, oder 07)  ist die Dokumentation TNANachgefordert=ja unzul‰ssig.";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Pflicht wenn:
+EinsatzArt NICHT  (11 ODER  12)
+Wenn Protokolltyp GLEICH  RD UND  EinsatzArt GLEICH  (02 ODER  03 ODER  06 ODER  07), dann ist
+TNANachgefordert = 01 unzul‰ssig.";-2;
+KeinTranspMitPat;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;Grund f¸r Einsatz ohne Transport trotz Patientenkontakt Werteliste siehe Tabellenblatt Codes;NA + RD;"Pflicht f¸r Eins‰tze ohne Transport trotz Patientenkontakt
+nur f¸r Eins‰tze ohne Transport, aber mit Patientenkontakt; nicht f¸r Eins‰tze ohne Patientenkontakt (diese sollen unter KeinTranspOhnePat dokumentiert werden)
+02 = prim‰re Todesfeststellung (ohne CPR): reine Todesfeststellungen ohne Reanimation (Erstbefunde sind erforderlich, Abschlussbefunde/Diagnosen/RD-Maﬂnahmen sind nicht erforderlich.)
+Der Grund f¸r die nicht durchgef¸hrte Reanimation muss im Feld Reanimationssituation angegeben werden!
+Sobald Reanimationsmaﬂnahmen durchgef¸hrt wurden, darf im Feld KeinTranspMitPat nicht die 02 ausgew‰hlt werden und im Feld Reanimationssituation muss 01  oder 02 oder 03 gew‰hlt werden.
+Erfolglose Reanimationen werden mit dem Code 03 = Patient im Einsatzverlauf verstorben dokumentiert.
+Wenn Reanimationsmaﬂnahmen durch andere erfolgten und bei Eintreffen des eigenen RM der ROSC  fortbesteht, darf im Feld KeinTranspMitPat nicht die 02 ausgew‰hlt werden und im Feld Reanimationssituation muss 04 gew‰hlt werden.
+Die Dokumentation ¸ber das Vorliegen eines Einsatzes ohne Transport trotz stattgehabtem Patientenkontakt erfolgt in Kombination mit dem Feld RDTransport (01 = kein Patiententransport, trotz Patientenkontakt).";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Pflicht wenn:
+RDTransport GLEICH  01
+Wenn RDTransport NICHT  01, sind s‰mtliche Inhalte in KeinTranspMitPat auﬂer -2 unzul‰ssig.";-2;
+KeinTranspOhnePat;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"Grund f¸r Einsatz ohne Transport, da kein Patientenkontakt
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Pflicht f¸r Eins‰tze ohne Transport wegen fehlendem Patientenkontakt
+nur f¸r Eins‰tze ohne Patientenkontakt; nicht f¸r Eins‰tze mit Patientenkontakt ohne Patiententransport (diese m¸ssen unter KeinTranspMitPat dokumentiert werden)
+Die Dokumentation ¸ber das Vorliegen eines Einsatzes ohne Transport aufgrund fehlenden Patientenkontakts erfolgt in Kombination mit dem Feld RDTransport (02 = kein Patiententransport, da kein Patientenkontakt).";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Pflicht wenn:
+RDTransport GLEICH  02
+Wenn RDTransport NICHT  02, sind s‰mtliche Inhalte in KeinTranspOhnePat auﬂer -2 unzul‰ssig.";-2;
+DokRM;Ja;E;Rettungsmitteltyp des dokumentierenden Rettungsmittels Werteliste siehe Tabellenblatt Codes;NA + RD;Codierung des Rettungsmittels, welches den Einsatz abwickelt und dokumentiert.;"Wenn Protokolltyp NA dann sind DokRM  GLEICH  (02 ODER  03 ODER  10 ODER  11 ODER  12 ODER  15 ODER  17
+ODER  18 ODER  20) unzul‰ssig
+Wenn Protokolltyp RD dann sind DokRM  GLEICH  (01 ODER  04 ODER  05 ODER  06 ODER  07 ODER  08 ODER  09
+ODER  13 ODER  14 ODER  16 ODER  19) unzul‰ssig.";;
+BeteilRM;Nein;M;"Rettungsmitteltyp/en des/der beteiligten Rettungsmittel/s
+Werteliste siehe Tabellenblatt Codes";NA + RD;Codierung der am Einsatz beteiligten Rettungsmittel Wird in der Regel durch die Leitstelle dokumentiert.;;-2;
+AerztlQualifikation;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;M;"Fachrichtung/Qualifikation des Notarztes/Transportarztes
+Werteliste siehe Tabellenblatt Codes";NA;"Pflicht f¸r NA-Protokolle, auﬂer f¸r Dienstfahrten oder Pauseneins‰tze
+Es ist immer die Fachrichtung/Qualifikation des dokumentierenden Arztes einzutragen";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  EinsatzArt NICHT  (11 ODER  12)";-2;
+StatusPersonal;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"Status des Personals
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Qualifikation des hˆchstqualifizierten Mitarbeiters auf dem Rettungsmittel. Beim notarztbesetzten Rettungsmittel die des Notarztes, beim nicht NA-besetzten Rettungsmittel die des Rettungsdienstmitarbeitenden.
+Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze";"Pflicht wenn:
+EinsatzArt NICHT  (11 ODER  12)";-2;
+Kapitel: ZeitenEinsatzablauf;;;;;;dieses Kapitel ist immer Pflicht;;
+Einsatzdatum;Ja;E;Einsatzdatum;NA + RD;Einsatzdatum bezieht sich auf den Zeitpunkt der Alarmierung.;;;
+SymptombeginnVor24h;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"Bestehen die Symptome l‰nger als 24 Stunden oder ist dies unbekannt?
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Pflicht f¸r NA-Protokolle bei Prim‰reins‰tzen, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um eine prim‰re Todesfeststellung (ohne CPR) oder eine Hilfeleistung oder eine Unterst¸tzung eines anderen RM handelt.
+Pflicht f¸r RD-Protokolle bei Prim‰reins‰tzen ohne erkennbare Beteiligung eines physisch anwesenden NA, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um eine prim‰re Todesfeststellung (ohne CPR) oder eine Hilfeleistung oder eine Unterst¸tzung eines anderen RM handelt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  EinsatzArt GLEICH  (01 ODER  03)
+UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  EinsatzArt GLEICH  (02 ODER  04)
+UND  NotarztNachgefordert GLEICH  02
+UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)";-2;
+Symptombeginn;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;Ereigniszeitpunkt, Unfallzeitpunkt, Kollapszeitpunkt, Zeitpunkt Symptom-/Beschwerdebeginn;NA + RD;Wenn der Symptombeginn bzw. Unfall-/Ereignis-/Kollapszeitpunkt (bekannt oder gesch‰tzt) innerhalb von 24 Stunden vor Alarmierung liegt, ist die Uhrzeit hier anzugeben.;"Pflicht wenn:
+SymptombeginnVor24h GLEICH  02
+UND  EinsatzArt NICHT  (11 ODER  12)";"1902-02-
+02T22:00:
+00.000+0
+1:00";
+SymptombeginnGesichert;"siehe Hinweise/
+Plausibilit‰ten/ Abh‰ngigkeiten";E;"Ist der Symptombeginn gesichert oder gesch‰tzt?
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Gibt es belastbare Angaben zum Symptombeginn durch Patienten, Angehˆrige, Zeugen, etc.?
+Pflicht, wenn Symptombeginn innerhalb der letzten 24 Stunden.";"Pflicht wenn:
+SymptombeginnVor24h GLEICH  02
+UND  EinsatzArt NICHT  (11 ODER  12)";-2;
+ZeitNotfallmeldung;Nein;E;Zeitpunkt Eingang Notfallmeldung in LST;NA + RD;Definition: Zeitpunkt des Anrufes (Aufschaltzeitpunkt aus Leitstellen-Datensatz) Wird in der Leitstelle dokumentiert.;;"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZeitAlarm;Nein;E;Zeitpunkt Alarm/Auftragsvergabe;NA + RD;Definition: Auslˆsung Alarm durch LST Wird in der Leitstelle dokumentiert.;;"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZeitAusruecken;Nein;E;Zeitpunkt Abfahrt/Abflug Standort Status 3;NA + RD;Definition: Ausr¸cken des einsatzklaren Rettungsmittels (Besatzung komplett!) Wird in der Leitstelle dokumentiert.;;"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZeitAnkunftEinsatzort;Nein;E;Zeitpunkt Ankunft Einsatzort Status 4;NA + RD;Definition: Ankunft des dokumentierenden RM am Einsatzort. Wird in der Leitstelle dokumentiert.;;"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZeitAnkunftPatientPatientenkontakt;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;Zeitpunkt Ankunft Patient;NA + RD;"Definition: Ankunft der Rettungsmittelbesatzung beim Patienten bzw. Beginn der ‹bernahme des Patienten bei Sekund‰reins‰tzen.
+Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um eine Hilfeleistung oder die Unterst¸tzung eines anderen RM handelt.
+Pflicht f¸r RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um einen Krankentransport oder um eine Hilfeleistung oder die Unterst¸tzung eines anderen RM handelt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (05 ODER  08)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND NICHT  (EinsatzArt GLEICH  10
+ODER  KeinTranspMitPat GLEICH  [05 ODER  08])";"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZeitTransportbeginn;Nein;E;Zeitpunkt Transportbeginn Status 7;NA + RD;Definition: Beginn des Patiententransportes. Wird in der Leitstelle dokumentiert.;;"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZeitEintreffenTransportziel;Nein;E;Zeitpunkt Eintreffen Transportziel Status 8;NA + RD;Definition: Fahrzeug trifft am Transportziel ein Wird in der Leitstelle dokumentiert.;;"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZeitUebergabePatient;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;‹bergabe des Patienten an Weiterbehandler;NA + RD;"Definition: ‹bergabe an Personal der Zielklinik/Praxis oder ‹bergabe an anderes Rettungsmittel (‹bergang der Verantwortung f¸r den Patienten).
+Bei Eins‰tzen ohne Patiententransport optional als Abschluss der Behandlung.
+Pflicht f¸r NA-Protokolle, wenn ein Patiententransport stattgefunden hat (‹bergabezeitpunkt an Klinik bzw. an anderes transportierendes RM, wenn dokumentierender NA den Transport nicht begleitet)
+Pflicht f¸r RD-Protokolle, wenn ein Patiententransport durch das dokumentierende RM stattgefunden hat
+und keine not‰rztliche Begleitung erfolgt bzw. die Begleitung ausschlieﬂlich durch einen TNA durchgef¸hrt wurde.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit ENTHƒLT  (00 ODER  03)
+UND  AerztlBegleit ENTHƒLT NICHT  (01 ODER  02 ODER  04
+ODER  05 ODER  98)";"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZeitEinsatzende;Ja;E;Zeitpunkt Einsatzende;NA + RD;Definition: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenh‰ngenden Arbeiten wie z.B. Desinfektionst‰tigkeiten und Dokumentation).;;;
+Kapitel: Patientendaten;;;;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.
+Pflicht f¸r RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich beim dokumentierenden Rettungsmittel um einen Krankentransport, eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (05 ODER  08)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  NICHT  (EinsatzArt GLEICH  10
+ODER  KeinTranspMitPat GLEICH  [05 ODER  08])";;
+Alter;Ja;E;"Alter des Patienten
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Spezifische Dokumentation f¸r Kinder unter einem Monat (siehe Codes)
+Angabe in vollendeten Jahren und Lebensmonaten (Bezugspunkt ist die Eintreffzeit).
+Ab dem 29. Lebenstag gilt der erste Lebensmonat als vollendet. In diesem Fall ist der Wert 000:01 zu ¸bermitteln
+Wenn das Alter nicht bekannt ist, soll es gesch‰tzt werden. Auch in seltenen F‰llen, wenn die Sch‰tzung des Alters schwierig ist, soll trotzdem eine grobe Vermutung dokumentiert werden";"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist 222:00 unzul‰ssig.";222:00;
+ValiditaetAlter;Ja;E;"Ist das Alter gesichert oder gesch‰tzt?
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Geschlecht;Ja;E;"Geschlecht des Patienten
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Kapitel: ErsteMesswerteUndBefunde;;;Erste gemessenene Werte bzw. erste erhobene Befunde;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.
+Pflicht f¸r RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um einen Krankentransport, eine Hilfeleistung, eine Unterst¸tzung eines anderen Rettungsmittels oder um eine Verlegung mit physisch anwesendem Notarzt handelt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (05 ODER  08)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (05 ODER  08)
+UND  EinsatzArt NICHT  (05 ODER  07 ODER  10)";;
+Bewusstsein1;Ja;E;"Bewusstseinslage
+Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die jeweils beste Auspr‰gung zu w‰hlen;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+GlasgowComaScale1;Ja;E;"Glasgow Coma Scale
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bei Seitendifferenz bessere Seite;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+NeurologischeAuffaelligkeiten1;Ja;M;"Neurologische Auff‰lligkeiten
+Werteliste siehe Tabellenblatt";NA + RD;"ï sNIHSS-EMS Items und BEFAST werden abgebildet.
+ï die Dokumentation von Schweregraden und der Kˆrperseite ist im MIND nicht vorgesehen";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit 00, -1 oder 99 sind unzul‰ssig.";-2;
+SystolischerBlutdruck1;Ja;E;"Systolischer Blutdruck Messwert in mmHg
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet RR-Messung durchgef¸hrt, wenn Angabe im Wertebereich oder 999.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+EKGBefund1;Ja;M;"EKG-Befund
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Hier sollen nur die Auspr‰gungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren (nicht diejenigen im weiteren Verlauf).
+F¸r QS wird EKG als durchgef¸hrt gewertet, wenn Angabe ungleich -1.";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1 oder 99 sind unzul‰ssig.";-2;
+Herzfrequenz1;Ja;E;"Herzfrequenz Messwert in /min
+Werteliste siehe Tabellenblatt Codes";NA + RD;Vom Monitor abgelesene Herzfrequenz pro Minute (ggf. palpatorisch oder pulsoximetrisch bestimmte Pulsfrequenz, wenn kein EKG abgeleitet wurde).;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
+Werte GR÷SSER  0 bei EKGBefund1 GLEICH  09 sind unzul‰ssig.";-2;
+Atemfrequenz1;Ja;E;"Atemfrequenz Messwert in /min
+Werteliste siehe Tabellenblatt Codes";NA + RD;Ausgez‰hlte oder vom Monitor abgelesene Atemfrequenz pro Minute.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
+Werte GR÷SSER  0 bei Atmung1 GLEICH  08 sind unzul‰ssig.";-2;
+Sauerstoffsaettigung1;Ja;E;"Sauerstoffs‰ttigung Messwert in %
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Bedeutet Pulsoxymetrie durchgef¸hrt, wenn Angabe im Wertebereich oder 999.
+Der Erstbefund der Sauerstoffs‰ttigung sollte mˆglichst vor Therapie mit Sauerstoff ermittelt werden.";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Rekapillarisierungszeit;Ja;E;"Rekapillarisierungszeit Messwert in s
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Schmerzempfinden1;Ja;E;"Schmerzempfinden nach Numerischer Rating Scala (NRS)
+Werteliste siehe Tabellenblatt Codes";NA + RD;Erstbefund des Schmerzempfindens vor dem Einleiten von Maﬂnahmen.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
+Wenn Bewusstsein1 GLEICH  05, dann ist Schmerzempfinden GLEICH  (01 bis 10) unzul‰ssig.";-2;
+Schmerzerleben;Nein;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Mit dem Schmerzerleben soll der subjektive Bedarf eines Patienten nach einer Schmerztherapie zum Ausdruck
+gebracht werden und damit deren Indikation dokumentiert werden.";;-2;
+Blutzuckerwert1;Ja;E;"Blutzucker
+Messwert in mg/dl bzw. mmol/l
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet Blutzuckermessung durchgef¸hrt, wenn Angabe im Wertebereich, 997, 998 oder 999;"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Bei Auswahl 0 bis 900 bzw. 0.0 bis 50.0 wird BlutzuckerEinheit zum Pflichtfeld Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+BlutzuckerEinheit;"siehe Hinweise/ Plausibilit‰ten/
+Abh‰ngigkeiten";E;Werteliste siehe Tabellenblatt Codes;NA + RD;Ermˆglicht die Dokumentation der im jeweiligen Bundesland / Rettungsdienstbereich g¸ltigen Maﬂeinheit f¸r den Blutzuckerwert;"Pflicht wenn:
+Blutzuckerwert1 ODER  Blutzuckerwert2 ENTHƒLT  (0 bis 900 bzw. 0.0 bis 50.0)";-2;
+Temperatur;Ja;E;"Temperatur
+Messwert in Grad Celsius
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Bedeutet Temperatur-Messung durchgef¸hrt, wenn Angabe im Wertebereich oder 99.9.
+Keine explizite Ortsangabe, wenn mˆglich zentral (Tympanon)";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Atmung1;Ja;M;"Klinische Befunde Atmung
+Werteliste siehe Tabellenblatt Codes";NA + RD;Hier sollen nur die Auspr‰gungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren (nicht diejenigen im weiteren Verlauf).;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;
+Hautbefunde;Ja;M;"Hautbefunde
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;
+Psyche1;Ja;M;"Psychischer Zustand
+Werteliste siehe Tabellenblatt Codes";NA + RD;Hier sollen nur die Auspr‰gungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren (nicht diejenigen im weiteren Verlauf).;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;
+Pupillenweite1;Ja;E;"Pupillenweite
+Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die klinisch relevanteste Auspr‰gung zu dokumentieren;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Lichtreaktion1;Ja;E;"Lichtreaktion
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+EtCO2Wert1;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"erster gemessener etCO2  Wert (unter Beatmung in mmHg gemessen)
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Bedeutet Kapnometrie durchgef¸hrt, wenn Angabe im Wertebereich oder 999.
+Pflicht, wenn eine Atemwegssicherung oder eine maschinelle invasive Beatmung (unterst¸tzt oder kontrolliert) dokumentiert ist .";"Pflicht wenn:
+Airway GLEICH  (03 ODER  05 ODER 07)
+ODER  Atemunterst GLEICH  05";-2;
+Kapitel: ErstbefundeVerlegung;;;;;Pflicht f¸r NA-Protokolle, wenn eine Verlegung mit physisch anwesendem NA oder ein Intensivtransport stattfindet. (F¸r RD-Protokolle ist dieses Kapitel nie Pflicht.);"Die Abh‰ngigkeiten des gesamten Kapitels betreffen nur das Bundesland Baden-W¸rttemberg
+Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  EinsatzArt GLEICH ( 05 ODER  07 ODER  09)";;
+VBeatmung;Ja;E;"Beatmung (auﬂer Heimbeatmung)
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+VBeatmungDetail;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"differenzierte Beatmung
+Werteliste siehe Tabellenblatt Codes";NA;"Differenzierte Beatmung bedeutet FiO2 > 0,4.
+Pflicht, wenn im Kapitel ""Erstbefunde Verlegung"" eine Beatmung dokumentiert wurde.";"Pflicht wenn:
+VBeatmung GLEICH  01
+Wenn VBeatmung GLEICH  01, dann ist -2 unzul‰ssig.";-2;
+KatecholaminPflicht;Ja;E;"Katecholaminpflichtigkeit
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+KatecholaminTherapie;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"differenzierte Katecholamin-Therapie
+Werteliste siehe Tabellenblatt Codes";NA;"Differenzierte Katecholamin-Therapie bedeutet mehr als ein Katecholamin.
+Pflicht, wenn im Kapitel ""Erstbefunde Verlegung"" eine Katecholaminpflichtigkeit dokumentiert wurde.";"Pflicht wenn:
+KatecholaminPflicht GLEICH  01
+Wenn KatecholaminPflicht GLEICH  01, dann ist -2 unzul‰ssig.";-2;
+FortlaufendSedierung;Ja;E;"fortlaufende Sedierung/Narkose
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+VigilanzMinderung;Ja;E;"deutliche Vigilanzminderung mit Einschr‰nkung von Schutzreflexen
+Werteliste siehe Tabellenblatt Codes";NA;Deutliche Vigilanzminderung mit Einschr‰nkung von Schutzreflexen gilt bei GCS < 9.;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+InvasivBlutdruck;Ja;E;"invasive Blutdruckmessung
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+SpezDevices;Ja;M;"spezielle Devices
+Werteliste siehe Tabellenblatt Codes";NA;"Siehe Exporthinweise zu Option ""Sonstige"".";"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1 sind unzul‰ssig.";-2;
+AnzahlPerfusor;Ja;E;"Anzahl der Perfusoren
+Einstellige numerische Angabe (0 bis 9)";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Kapitel: EinschaetzungVerlegungsarzt;;;;;"Pflicht f¸r NA-Protokolle, wenn laut Feld EinsatzArt eine Verlegung mit physisch anwesendem NA oder ein Intensivtransport stattfindet.
+(F¸r RD-Protokolle ist dieses Kapitel nie Pflicht.)";"Die Abh‰ngigkeiten des gesamten Kapitels betreffen nur das Bundesland Baden-W¸rttemberg
+Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  EinsatzArt GLEICH ( 05 ODER  07 ODER  09)";;
+IndikationArztbegleitung;Ja;E;"Indikation Arztbegleitung gegeben
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+ZDringlichkeit;Ja;E;"Einsch‰tzung der zeitlichen Dringlichkeit durch Transportarzt
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+IndikationIT;Ja;M;Indikation Intensivtransport Werteliste siehe Tabellenblatt Codes;NA;"Siehe Exporthinweise zu Option ""Sonstige"".
+Die Antwort NEIN ist implausibel, wenn im Kapitel ""ErstbefundeVerlegung"" sowohl eine Beatmung als auch eine Katecholaminpflichtigkeit dokumentiert sind.";"Wenn VBeatmung GLEICH  01 UND  KatecholaminPflicht GLEICH  01, dann ist Code 00 unzul‰ssig.
+Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 00 sind unzul‰ssig.";-2;
+Kapitel: Diagnosen;;;;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um eine prim‰re Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.
+Pflicht f¸r RD Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um einen Krankentransport, eine prim‰re Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt oder ein physisch anwesender NA prim‰r mitalarmiert oder nachgefordert wurde.
+Hinweis f¸r BW: Wenn eine Diagnose, f¸r die ein Indikator zur Eignung der Zielklinik oder zur leitliniengerechten Versorgung dieser Diagnose existiert, im Diagnosen-Feld dokumentiert ist, wird auch eine entsprechend geeignete Zielklinik und leitliniengerechte Versorgung erwartet. Eher unwahrscheinliche Differentialdiagnosen sollen im Freitext dokumentiert werden.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND   RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat  NICHT (02 ODER  05 ODER  08)
+UND  NotarztNachgefordert GLEICH  02
+UND  EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)";;
+Diagnose;Ja;M;"Verdachtsdiagnose(n)
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Hier sollen nur einsatzrelevante Diagnosen und keine Vorerkrankungen dokumentiert werden.
+ï (Verdachts-)Diagnose der Not‰rztin/des Notarztes bzw. der Notfallsanit‰terin/des Notfallsanit‰ters
+ï Verstorbene Patienten kˆnnen mit 1220 = Herz-Kreislauf-Stillstand oder 1813 = SIDS codiert werden.
+ï Bei einer Anaphylaxie Grad 4 soll zus‰tzlich die Diagnose 1220 = Herz-Kreislauf-Stillstand dokumentiert werden.
+ï Bei tˆdlichen Verletzungen soll zus‰tzlich die Diagnose 1220 = Herz-Kreislauf-Stillstand dokumentiert werden.
+ï Bitte die Differenzierung zwischen hypertensivem Notfall (mit Organsch‰den und Lebensgefahr, z.B. AP- Beschwerden, Lungenˆdem, neurologische Symptome) und hypertensiver Entgleisung (ohne Organsch‰den/Lebensgefahr) beachten!";"Wenn Kapitel ""Diagnosen"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Kapitel: VerletzungenDetails;;;;;Pflicht f¸r NA- und RD-Protokolle, wenn mindestens eine Verletzung aus Diagnosecodeliste mit f¸hrender 2 vorhanden.;"Pflicht wenn:
+Mindestens ein Diagnose-Code GLEICH  2nnn";;
+Verletzungsmuster;Ja;E;"Verletzungsmuster
+Werteliste siehe Tabellenblatt Codes";NA + RD;Polytrauma: Gleichzeitig entstandene Verletzungen mehrerer Kˆrperregionen oder Organsysteme, wobei wenigstens eine Verletzung oder die Kombination mehrerer lebensbedrohlich ist.;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Unfallursache;Ja;E;"Unfallursache
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Unfallmechanismus;Ja;M;"Unfallmechanismus
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit 99 sind unzul‰ssig.";-2;
+Unfallhergang;Ja;M;"Unfallhergang
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit 99 sind unzul‰ssig.";-2;
+HelmPat;Nein;E;"Helm Patient
+Werteliste siehe Tabellenblatt Codes";NA + RD;Hat der/die Verunfallte zum Zeitpunkt des Unfalls einen Helm getragen?;;-2;
+Kapitel: Scores;;;;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt..
+Pflicht f¸r RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um einen Krankentransport, eine Hilfeleistung, eine Unterst¸tzung eines anderen Rettungsmittels oder um eine Verlegung mit physisch anwesendem Notarzt handelt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (05 ODER  08)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (05 ODER  08)
+UND  EinsatzArt NICHT  (05 ODER  07 ODER  10)";;
+NACAScore;Ja;E;Werteliste siehe Tabellenblatt Codes;NA + RD;Subjektive Einsch‰tzung der Schwere der Erkrankung oder Verletzung durch das rettungsdienstliche Personal. Es gilt die jeweils schlimmste Auspr‰gung im Einsatzverlauf.;"Wenn Kapitel ""Scores"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+MNACAScore;Nein;E;"M-NACAScore
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Objektivierung des NACA Scores.
+Soll aus dokumentierten Feldern berechnet werden!";;-2;
+Kapitel: RDMassnahmen;;;;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um eine prim‰re Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.
+Pflicht f¸r RD Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um einen Krankentransport, eine prim‰re Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt oder ein physisch anwesender NA prim‰r mitalarmiert oder nachgefordert wurde.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND   RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat  NICHT (02 ODER  05 ODER  08)
+UND  NotarztNachgefordert GLEICH  02
+UND  EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)";;
+Airway;Ja;M;"Airway Maﬂnahmen
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Bei vorbestehendem Tracheostoma ohne eigene Maﬂnahmen soll ""keine Maﬂnahmen durchgef¸hrt"" codiert werden";"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1 sind unzul‰ssig.";-2;
+Atemunterst;Ja;M;"Atemunterst¸tzung - Beatmung
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1 sind unzul‰ssig.";-2;
+CirculationZugang;Ja;M;"Medikamentenzugang
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1 sind unzul‰ssig.";-2;
+SpezMassn;Ja;M;"Spezielle Maﬂnahmen
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1 sind unzul‰ssig.";-2;
+EKG12Kanal;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;M;Dokumentation eines 12-Kanal-EKGs Werteliste siehe Tabellenblatt Codes;NA + RD;Pflicht bei dokumentiertem ACS, STEMI oder Thoraxschmerz unklarer Genese;"Pflicht wenn:
+Diagnose ENTHƒLT  (1201 ODER  1202 ODER  1203 ODER 1 204)
+Wenn EKG12Kanal Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit -1 sind unzul‰ssig.";-2;
+Medizintechnik;Ja;M;"Medizintechnik
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1 sind unzul‰ssig.";-2;
+LagTrans;Ja;M;"Lagerungs- und Rettungstechnik
+Werteliste siehe Tabellenblatt Codes";NA + RD;Mit HWS-Immobilisation ist nicht nur die Anlage einer Cervicalst¸tze gemeint, sondern auch andere Methoden der Immobilisation wie z.B. Headblocks.;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1 sind unzul‰ssig.";-2;
+DurchfHeilkundlMassn;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;M;Durchf¸hrung heilkundlicher Maﬂnahmen Werteliste siehe Tabellenblatt Codes;RD;Hiermit sind durchgef¸hrte heilkundliche Maﬂnahmen durch Notfallsanit‰ter gemeint;"Pflicht wenn:
+Protokolltyp GLEICH  RD
+UND  DokRM GLEICH  (02 ODER  15)
+Wenn DurchfHeilkundlMassn Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 03 sind unzul‰ssig.";-2;
+Behandlungspfad;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;M;Werteliste siehe Tabellenblatt Codes;RD;Hier soll dokumentiert werden, welcher Behandlungspfad genutzt wurde (sinngleich Standardarbeitsanweisungen, Algorithmen, Handlungsempfehlungen etc. nach ˆrtlicher Vorgabe);"Pflicht wenn:
+Protokolltyp GLEICH  RD
+UND  DurchfHeilkundlMassn GLEICH  (01 ODER  02)
+Wenn Behandlungspfad Pflicht, dann ist -2 unzul‰ssig.";-2;
+Kapitel: MedikamentoeseTherapie;;;;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um eine prim‰re Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.
+Pflicht f¸r RD Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um einen Krankentransport, eine prim‰re Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt oder ein physisch anwesender NA prim‰r mitalarmiert oder nachgefordert wurde.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND   RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05
+ODER  06 ODER  07 ODER  08
+ODER  09 ODER  98)
+UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)
+UND  NotarztNachgefordert GLEICH  02
+UND  EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)";;
+Medikamentengabe;Ja;M;"Medikamentencodes f¸r Art des Medikaments und Applikationsweg
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Nur einsatzrelevante Medikamente dokumentieren.
+Auch eine Vorbehandlung durch Andere soll dokumentiert werden, da diese f¸r verschiedene Indikatoren relevant sein kann (f¸r jede Medikamenten-Gruppe separat dokumentierbar).
+Dauermedikation und Verabreichung durch Andere (Hausarzt, andere Rettungsmittel etc.): nn97xx";"Wenn Kapitel ""MedikamentoeseTherapie"" Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 999999 sind unzul‰ssig.";-2;
+Infusionsgabe;Ja;M;"Medikamentencodes f¸r Art der Infusion und Applikationsweg
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Nur einsatzrelevante Medikamente dokumentieren
+Dauermedikation und Verabreichung durch Andere (Hausarzt, andere Rettungsmittel etc.): nn97xx";"Wenn Kapitel ""MedikamentoeseTherapie"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit 999999 sind unzul‰ssig.";-2;
+Kapitel: AbschlussBefundeBT;;;Abschlussbefunde bei Transport;;"Pflicht f¸r NA-Protokolle, wenn ein Patiententransport stattgefunden hat. Sofern der dokumentierende NA den Transport nicht begleitet, m¸ssen die Befunde zum Zeitpunkt der ‹bergabe an das andere Rettungsmittel dokumentiert werden (d.h. f¸r Feld OrtPatUeberg i.d.R. 15 = Einsatzstelle).
+Pflicht f¸r RD-Protokolle, wenn ein Patiententransport stattfindet und der Transport nicht durch einen physisch anwesenden Notarzt, sondern allenfalls durch einen Telenotarzt begleitet wird und es sich nicht um einen Krankentransport handelt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit ENTHƒLT  (00 ODER  03)
+UND  AerztlBegleit ENTHƒLT NICHT  (01 ODER  02 ODER  04
+ODER  05 ODER 98)
+UND  EinsatzArt NICHT  10";;
+Bewusstsein2;Ja;E;"Bewusstseinslage
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+GlasgowComaScale2;Ja;E;"Glasgow Coma Scale
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bei Seitendifferenz bessere Seite.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+NeurologischeAuffaelligkeiten2;Ja;M;"Neurologische Auff‰lligkeiten
+Werteliste siehe Tabellenblatt";NA + RD;"ï sNIHSS-EMS Items und BEFAST werden abgebildet.
+ï die Dokumentation von Schweregraden und der Kˆrperseite ist im MIND nicht vorgesehen";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit 00, -1 oder 99 sind unzul‰ssig.";-2;
+SystolischerBlutdruck2;Ja;E;"Systolischer Blutdruck Messwert in mmHg
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet RR-Messung durchgef¸hrt, wenn Angabe im Wertebereich oder 999.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+EKGBefund2;Ja;M;"EKG-Befund
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl mˆglich (hier sollen keine Auspr‰gungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren und nicht mehr vorhanden sind!).
+F¸r QS wird EKG als durchgef¸hrt gewertet, wenn Angabe ungleich -1.";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig Kombinationen mit -1 oder 99 sind unzul‰ssig.";-2;
+Herzfrequenz2;Ja;E;"Herzfrequenz Messwert in /min
+Werteliste siehe Tabellenblatt Codes";NA + RD;Vom Monitor abgelesene Herzfrequenz pro Minute (ggf. palpatorisch oder pulsoximetrisch bestimmte Pulsfrequenz, wenn kein EKG abgeleitet wurde).;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.
+Wenn EKGBefund2 GLEICH  09, dann sind Werte GR÷SSER  0 unzul‰ssig.";-2;
+Atemfrequenz2;Ja;E;"Atemfrequenz Messwert in /min
+Werteliste siehe Tabellenblatt Codes";NA + RD;Ausgez‰hlte oder vom Monitor abgelesene Atemfrequenz pro Minute.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig. Wenn Atmung2 GLEICH  08, dann sind Werte GR÷SSER  0 unzul‰ssig.";-2;
+Sauerstoffsaettigung2;Ja;E;"Sauerstoffs‰ttigung Messwert in %
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Dieser Wert wird ggf. unter Sauerstofftherapie gemessen
+Bedeutet Pulsoxymetrie durchgef¸hrt, wenn Angabe im Wertebereich oder 999.";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Schmerzempfinden2;Ja;E;"Schmerzempfinden nach Numerischer Rating Scala (NRS)
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Atmung2;Ja;M;"Klinische Befunde Atmung
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl mˆglich (hier
+sollen keine Auspr‰gungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren und nicht mehr vorhanden sind!).";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;
+Psyche2;Ja;M;"Psychischer Zustand
+Werteliste siehe Tabellenblatt Codes";;"Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl mˆglich (hier
+sollen keine Auspr‰gungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren und nicht mehr vorhanden sind!).";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;
+Pupillenweite2;Ja;E;"Pupillenweite
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Lichtreaktion2;Ja;E;"Lichtreaktion
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+SoSiTransport;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;Sondersignal bei Transport: Werteliste siehe Tabellenblatt Codes;NA + RD;"Sondersignalverwendung des transportierenden Rettungsmittels. Bei Patiententransport durch Hubschrauber: 01
+= Ja
+Pflicht f¸r NA-Protokolle, wenn ein Patiententransport stattgefunden hat, der durch den dokumentierenden NA begleitet wurde.
+Pflicht f¸r RD-Protokolle, wenn ein Patiententransport stattfindet und der Transport nicht durch einen physisch anwesenden Notarzt, sondern allenfalls durch einen Telenotarzt begleitet wird und es sich nicht um einen Krankentransport handelt..";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.
+Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  DokRM GLEICH (01 ODER 04 ODER 07 ODER 13)
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit GLEICH  01
+ODER
+Protokolltyp GLEICH  NA
+UND  DokRM GLEICH  (05 ODER 06)
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit GLEICH  02
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit ENTHƒLT  (00 ODER  03)
+UND  AerztlBegleit ENTH ƒLT NICHT  (01 ODER  02 ODER  04
+ODER  05 ODER  98)
+UND  EinsatzArt NICHT  10";-2;
+OrtPatUeberg;Ja;E;Werteliste siehe Tabellenblatt Codes;NA + RD;Der Ort, an dem der Patient prim‰r ¸bergeben wird. Sollten mehrere Auswahlmˆglichkeiten zutreffen, ist die f¸r die Weiterversorgung des jeweiligen Patienten spezifischste anzugeben. Sofern der dokumentierende NA den Transport nicht begleitet, ist i.d.R. 15 = Einsatzstelle zutreffend.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+Kapitel: AbschlussBefundeBTAV;;;Abschlussbefunde bei Transport und ambulanter Versorgung;;Pflicht f¸r NA- und RD-Protokolle, wenn die Diagnose Hypoglyk‰mie gestellt wurde oder wenn eine Atemwegssicherung oder eine maschinelle invasive Beatmung (unterst¸tzt oder kontrolliert)  stattgefunden hat;"Pflicht wenn:
+Airway GLEICH  (03 ODER  05 ODER  07)
+ODER  Atemunterst GLEICH  05
+ODER
+Diagnose ENTHƒLT  1601 (Hypoglyk‰mie)";;
+Blutzuckerwert2;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"Blutzucker
+Messwert in mg/dl bzw. mmol/l Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet Blutzuckermessung durchgef¸hrt, wenn Angabe im Wertebereich, 997, 998 oder 999;"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Bei Auswahl 0 bis 900 bzw. 0.0 bis 50.0 wird BlutzuckerEinheit zum Pflichtfeld Pflicht wenn:
+Diagnose ENTHƒLT  1601
+Wenn Blutzuckerwert2 Pflicht, dann ist -2 unzul‰ssig.";-2;
+EtCO2Wert2;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;etCO2  Wert (zuletzt unter Beatmung in mmHg gemessen): Werteliste siehe Tabellenblatt Codes;NA + RD;"Bedeutet Kapnometrie durchgef¸hrt, wenn Angabe im  Wertebereich oder 999.
+Pflicht wenn Atemwegssicherung oder maschinelle invasive Beatmung (unterst¸tzt oder kontrolliert) dokumentiert.";"Pflicht wenn:
+Airway GLEICH  (03 ODER  05 ODER  07)
+ODER  Atemunterst GLEICH  05
+Wenn EtCO2Wert2 Pflicht, dann ist -2 unzul‰ssig.";-2;
+Kapitel: Zielklinik;;;;;"Pflicht f¸r NA-Protokolle, wenn es sich bei dem dokumentierenden Rettungsmittel um ein
+bodengebundenes notarztbesetztes Rettungsmittel handelt, ein Patiententransport stattfindet und der Notarzt den Transport begleitet oder der RTW den Transport ohne ‰rztliche Begleitung durchf¸hrt.
+Pflicht f¸r NA-Protokolle, wenn es sich bei dem dokumentierenden Rettungsmittel um ein luftgebundenes notarztbesetztes Rettungsmittel handelt, ein Patiententransport stattfindet und der Notarzt den Transport begleitet oder der RTW den Transport ohne ‰rztliche Begleitung durchf¸hrt.
+Pflicht f¸r RD-Protokolle, wenn ein Patiententransport stattfindet und der Transport nicht durch einen physisch anwesenden Notarzt, sondern allenfalls durch einen Telenotarzt begleitet wird";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  DokRM GLEICH  (01 ODER  04 ODER  07 ODER  13)
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit ENTHƒLT ( 00 ODER  01)
+ODER
+Protokolltyp GLEICH  NA
+UND  DokRM GLEICH  (05 ODER  06)
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit ENTHƒLT ( 00 ODER  02)
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit ENTHƒLT  (00 ODER  03)
+UND  AerztlBegleit ENTHƒLT NICHT  (01 ODER  02 ODER 04
+ODER  05 ODER  98)";;
+NummerZK;Ja;E;"Kennung der Zielklinik
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Standortnummer nach ß293 Absatz 6 SGB V aus dem bundesweiten Verzeichnis der Standorte der nach ß 108 SGB V zugelassenen Krankenh‰user und ihrer Ambulanzen.
+Falls nur die Standort-ID bekannt ist (= erste 6 Stellen der Standortnummer) ist diese nach der 6. Stelle  mit ""0"" (Null) auf 9 Stellen aufzuf¸llen: Standortnummer (9-stellig: 77nnnnnnn) oder Standort-ID (6-stellig: 77nnnn000) der Zielklinik.
+Einmalige Anlage aller regelhaft angefahrenen/angeflogenen Krankenh‰user der Akutversorgung in Stammdatenbank erforderlich.
+F¸r Einrichtungen ohne Standortnummer m¸ssen auf ˆrtlicher Ebene alternative Definitionen getroffen werden.";"Wenn Kapitel ""Zielklinik"" Pflicht, dann ist -2 unzul‰ssig.";-2;
+AnmeldungPatient;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"Wurde der Patient in der Zielklinik angemeldet?
+Muss bei Patiententransport angegeben werden, auch wenn die Anmeldung durch die Leitstelle erfolgt.
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Patientenanmeldung durch Fahrzeugbesatzung oder Leitstellenpersonal. Mindestens einmal pro Patient erforderlich.
+Pflicht f¸r NA-Protokolle, wenn ein Patiententransport stattgefunden hat, der durch den dokumentierenden NA begleitet wurde.
+Pflicht f¸r RD-Protokolle, wenn ein Patiententransport stattfindet und der Transport nicht durch einen physisch anwesenden Notarzt, sondern allenfalls durch einen Telenotarzt begleitet wird und es sich nicht um einen Krankentransport handelt..";"Wenn Kapitel ""Zielklinik"" Pflicht, dann ist -2 unzul‰ssig.
+Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  DokRM GLEICH  (01 ODER  04 ODER  07 ODER  13)
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit GLEICH  01
+ODER
+Protokolltyp GLEICH  NA
+UND  DokRM GLEICH  (05 ODER 06)
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER 98)
+UND  AerztlBegleit GLEICH  02
+ODER
+Protokolltyp GLEICH  RD
+UND  RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06
+ODER  07 ODER  08 ODER  09 ODER  98)
+UND  AerztlBegleit ENTHƒLT  (00 ODER  03)
+UND  AerztlBegleit ENTHƒLT NICHT  (01 ODER  02 ODER  04
+ODER  05 ODER  98)
+UND  EinsatzArt NICHT  10";-2;
+Kapitel: EinsatzBesonderheiten;;;;;;"Pflicht wenn:
+EinsatzArt NICHT  (11 ODER  12)";;
+Einsatzbesonderheiten;Ja;M;"Einsatzbesonderheiten
+Werteliste siehe Tabellenblatt Codes";NA + RD;"ï Abweichung von medizinischen Standards,
+ï Abweichung vom Zeitablauf,
+ï erhˆhter Aufwand.
+Ablehnung indizierter Maﬂnahmen (z.B. Diagnostik, Therapie) durch Patienten: 02. Transportverweigerung ist im Feld KeinTranspMitPat zu dokumentieren (04 = Patient lehnt Transport ab).
+Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze";Kombinationen mit 00 sind unzul‰ssig.;-2;
+PreEmergencyStatus;Nein;E;Werteliste siehe Tabellenblatt Codes;NA + RD;Schwere der Vorerkrankungen, Zustand vor Eintritt des Notfalls.;;-2;
+Kapitel: Reanimation;;;;;"Pflicht f¸r NA-Protokolle, wenn die Diagnose Herz-Kreislauf-Stillstand, ein SIDS, eine prim‰re Todesfeststellung (ohne CPR) oder ""Patient im Einsatzverlauf verstorben"" dokumentiert wurde.
+Pflicht f¸r RD-Protokolle, wenn die Diagnose Herz-Kreislauf-Stillstand dokumentiert wurde, oder bei einer Todesfeststellung bzw. einer Dokumentation des Todes im Einsatzverlauf, aber nur wenn eine Notfallrettung ohne erkennbare prim‰re NA-Beteiligung  vorliegt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  (Diagnose ENTHƒLT  (1220 ODER  1813)
+ODER  KeinTranspMitPat GLEICH  [02 ODER  03])
+ODER
+Protokolltyp GLEICH  RD
+UND  (Diagnose ENTHƒLT ( 1220 ODER  1813)
+ODER  KeinTranspMitPat GLEICH  [02 ODER  03])
+UND  EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)";;
+Reanimationssituation;Ja;E;Wurde eine Reanimation durchgef¸hrt? Werteliste siehe Tabellenblatt Codes;NA + RD;"Eine begonnene Reanimation ist mit 01 oder 02 oder 03 zu dokumentieren.
+Bei prim‰rer Todesfeststellung (ohne CPR) ist nur ""Reanimation nicht durchgef¸hrt..."" zul‰ssig.
+Ohne Patientenkontakt ist nur ""keine Reanimationssituation (kein Tod/kein Kreislaufstillstand)"" zul‰ssig.
+Bei Diagnose Herz-Kreislauf-Stillstand oder SIDS bzw. bei Dokumentation ""Patient im Einsatzverlauf verstorben"" ist ""keine Reanimationssituation (kein Tod/kein Kreislaufstillstand)"" unzul‰ssig.";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
+Wenn KeinTranspMitPat GLEICH  02, dann ist Reanimationssituation GLEICH  (00 ODER  01 ODER  02 ODER  03 ODER
+04) unzul‰ssig.
+Wenn RDTransport GLEICH  02, dann ist nur Reanimationssituation GLEICH  00 zul‰ssig.
+Wenn Diagnose ENTHƒLT ( 1220 ODER  1813) ODER  KeinTranspMitPat GLEICH  03 dann ist Reanimationssituation GLEICH  00 unzul‰ssig.";-2;
+Kapitel: ReanimationDetails;;;;;"Pflicht f¸r NA-Protokolle, wenn dokumentierendes Rettungsmittel Reanimation durchgef¸hrt hat.
+Pflicht f¸r RD-Protokolle, wenn dokumentierendes Rettungsmittel Reanimation durchgef¸hrt hat und eine Notfallrettung ohne erkennbare NA-Beteiligung bzw. -Nachforderung vorliegt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA
+UND  Reanimationssituation GLEICH  (01 ODER  02 ODER  03)
+ODER
+Protokolltyp GLEICH  RD
+UND  Reanimationssituation GLEICH  (01 ODER  02 ODER  03)
+UND  EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)
+UND  NotarztNachgefordert GLEICH  02";;
+Reanimationstechnik;Ja;M;Werteliste siehe Tabellenblatt Codes;NA + RD;;"Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.
+Kombinationen mit -1 sind unzul‰ssig.";-2;
+URKRSTST;Ja;E;"Vermutete Ursache des Kreislaufstillstandes
+Werteliste siehe Tabellenblatt Codes";NA + RD;Die internationalen Vorgaben des Utstein-Style Protokolls unterscheiden die Ursachen eines Kreislaufstillstandes in mehreren Sektionen. Gefragt ist die aus Sicht des Notarztes vermutliche Ursache.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;
+SPORT;Nein;E;"Zusammenhang mit sportlicher Aktivit‰t:
+Werteliste siehe Tabellenblatt Codes";NA + RD;Besteht ein Zusammenhang des Kreislaufstillstandes mit sportlicher Aktivit‰t?;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;
+ZEOFR;Nein;E;Zeitstempel Eintreffen First Responder Angabe von Datum und Uhrzeit;NA + RD;"Eintreffzeit eines First Responders als ""Vorausversorger"" neben dem regul‰ren Rettungsdienst am Einsatzort.";"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer ""1902-02-02T22:00:00.000+01:00"" unzul‰ssig.";"1902-02-
+02T22:00:
+00.000+0";
+ZCKB;Ja;E;"Person Kollaps beobachtet
+Werteliste siehe Tabellenblatt Codes";NA + RD;Wer hat den Kollaps beobachtet? Ersthelfer entspricht dem nichtmedizinischen Personal bzw. Laien.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;
+ZCHDM;Ja;E;Person Herzdruckmassage begonnen Werteliste siehe Tabellenblatt Codes;NA + RD;Wer hat mit der Herzdruckmassage begonnen bzw. den Beginn angeordnet? (Es ist die jeweils am hˆchsten qualifizierte anwesende Person zu dokumentieren);"Wenn Protokolltyp GLEICH  NA
+UND  Reanimationssituation GLEICH  (05 ODER  06 ODER  07 ODER  08), dann ist 06 unzul‰ssig.
+Wenn Protokolltyp GLEICH  RD
+UND  Reanimationssituation GLEICH  (05 ODER  06 ODER  07 ODER  08), dann sind 05 ODER  06 unzul‰ssig.
+Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;
+ZCDEFI;Ja;E;Person Defibrillation durchgef¸hrt Werteliste siehe Tabellenblatt Codes;NA + RD;Wer hat die erste Defibrillation durchgef¸hrt bzw. angeordnet? (Es ist die jeweils am hˆchsten qualifizierte anwesende Person zu kodieren.);"Wenn Protokolltyp GLEICH  NA
+UND  Reanimationssituation GLEICH  (05 ODER  06 ODER  07 ODER  08), dann ist 06 unzul‰ssig.
+Wenn Protokolltyp GLEICH  RD
+UND  Reanimationssituation GLEICH  (05 ODER  06 ODER  07 ODER  08), dann sind 05 ODER  06 unzul‰ssig.
+Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;
+ZHDM;Ja;E;Zeitpunkt Beginn Herzdruckmassage Angabe von Datum und Uhrzeit;NA + RD;Erster Zeitpunkt, zu dem mit der Herzdruckmassage begonnen wurde, ggf. sch‰tzen.;"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer ""1902-02-02T22:00:00.000+01:00"" unzul‰ssig.";"1902-02-
+02T22:00:
+00.000+0";
+ZDEFI1;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;Zeitpunkt erste Defibrillation Angabe von Datum und Uhrzeit;NA + RD;"Zeitpunkt der ersten Defibrillation.
+Pflicht f¸r NA-Protokolle, wenn eine Defibrillation durch den KTW, RTW oder NA dokumentiert wurde
+Pflicht f¸r RD-Protokolle, wenn eine Defibrillation durch den KTW oder RTW dokumentiert wurde und eine Notfallrettung ohne erkennbare NA-Beteiligung bzw. -Nachforderung vorliegt.";"Pflicht wenn:
+Protokolltyp GLEICH  NA UND ZCDEFI GLEICH  (04 ODER  05 ODER  06) ODER
+Protokolltyp GLEICH  RD UND  ZCDEFI GLEICH  (04 ODER  05)
+UND  EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)
+UND  NotarztNachgefordert GLEICH  02
+Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer ""1902-02-02T22:00:00.000+01:00"" unzul‰ssig.";"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ZROSC1;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;E;"Zeitpunkt 1. ROSC
+Angabe von Datum und Uhrzeit";NA + RD;Bei Wiedereintritt eines Eigenkreislaufs (ROSC) ist die Zeit zu notieren. Ab diesem Zeitpunkt hat der Patient einen eigenen Kreislauf mit einem messbaren Puls. Auch wenn dieser wieder zusammenbricht. ROSC = return of spontaneous circulation (Spontankreislauf);"Pflicht wenn:
+ROSC GLEICH  02
+Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer ""1902-02-02T00:00:00"" unzul‰ssig.";"1902-02-
+02T22:00:
+00.000+0
+1:00";
+ROSC;Ja;E;"Erreichen eines Spontankreislaufs
+Werteliste siehe Tabellenblatt Codes";NA + RD;"Konnte durch die Reanimationsmaﬂnahmen jemals ein spontaner Kreislauf > 20 Sekunden etabliert werden?
+Wenn laut Feld KHAUF ""Krankenhausaufnahme mit ROSC"", dann
+in Feld ROSC nur "" jemals ROSC"" zul‰ssig.";"Wenn KHAUF GLEICH  02, dann nur ROSC GLEICH  02 zul‰ssig.
+Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;
+KHAUF;Ja;E;Patientenzustand bei Krankenhausaufnahme Werteliste siehe Tabellenblatt Codes;NA + RD;Zustand bei ‹bergabe an die Zielklinik.;"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.
+Wenn Reanimationssituation GLEICH   (05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer 01 unzul‰ssig.";-2;
+ZTOD;Nein;E;"Zeitpunkt TOD
+Angabe von Datum und Uhrzeit";NA + RD;Beendigungszeitpunkt der Reanimationsmaﬂnahmen.;"Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer ""1902-02-02T00:00:00"" unzul‰ssig.";"1902-02-
+02T22:00:
+00.000+0
+1:00";

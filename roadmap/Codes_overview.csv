@@ -1,0 +1,1002 @@
+Feldname;Werteliste;Zugehörigkeit DIVI-MIND;Felder betreffen nur Baden-Württemberg;In FHIR umgesetzt?;Anmerkung zur Umsetzung
+Protokolltyp;"NA
+RD";DM;;;
+Standortkennung;"Amtlicher Gemeindeschlüssel des RM-Standortes
+-1 = nicht dokumentiert 99999999 = nicht bekannt";DM;;;
+EinsatzArt;"Einsatzart
+01 = Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA 02 = Notfallrettung - Primäreinsatz nur mit TNA
+03 = Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA 04 = Notfallrettung - Primäreinsatz ohne NA
+05 = Notfallrettung - Verlegung nur mit (physisch anwesendem) NA 06 = Notfallrettung - Verlegung nur mit TNA
+07 = Notfallrettung - Verlegung mit (physisch anwesendem) NA und TNA 08 = Notfallrettung - Verlegung ohne NA
+09 = Intensivtransport
+10 = Krankentransport
+11 = Dienstfahrt
+12 = Pause";DM;;;
+Gemeindeschlüssel;"Amtlicher Gemeindeschlüssel des Einsatzortes
+-1 = nicht dokumentiert
+99999998 = Einsatzort im Ausland 99999999 = nicht bekannt";DM;;;
+Postleitzahl;"Postleitzahl des Einsatzortes
+-1 = nicht dokumentiert 99999 = nicht bekannt";DM;;;
+EinsatzortTyp;"Beschreibung des Einsatzortes
+-1 = nicht dokumentiert 01 = Wohnung
+02 = Pflegeeinrichtung
+03 = Arbeitsplatz
+04 = Arztpraxis
+05 = Straße
+06 = öffentlicher Raum 07 = Krankenhaus
+08 = Massenveranstaltung
+09 = Bildungseinrichtung
+10 = Sportstätte
+11 = Geburtshaus/-einrichtung
+12 = unwegsames Gelände 98 = Sonstige";DM;;;
+RDTransport;"Rettungsdienstlicher Transport
+01 = kein Patiententransport, trotz Patientenkontakt  02 = kein Patiententransport, da kein Patientenkontakt 03 = Transport durch RTW
+04 = Transport durch NAW
+05 = Transport durch RTH / ITH 06 = Transport durch KTW
+07 = Transport durch N-KTW 08 = Transport durch S-RTW 09 = Transport durch ITW
+98 = Transport durch sonstige Rettungsmittel";DM;;;
+AerztlBegleit;"Ärztliche Transportbegleitung 00 = keine
+01 = Begleitung durch NA bodengebunden 02 = Begleitung durch NA RTH
+03 = Begleitung durch Telenotarzt
+04 = Begleitung durch Krankenhaus-Arzt
+05 = Begleitung durch niedergelassenen Arzt 98 = Begleitung durch sonstigen Arzt";DM;;;
+NotarztNachgefordert;"Physisch anwesender Notarzt wurde nachgefordert
+01 = Ja
+02 = Nein";DM;;;
+TNANachgefordert;"Tele-Notarzt wurde nachgefordert 01 = Ja
+02 = Nein";DM;;;
+KeinTranspMitPat;"Grund für Einsatz ohne Transport trotz Patientenkontakt
+01 = ambulante Versorgung, keine Klinikbehandlung notwendig
+02 = primäre Todesfeststellung (ohne CPR durch das dokumentierende RM) 03 = Patient im Einsatzverlauf verstorben
+04 = Patient lehnt Transport ab 05 = Hilfeleistung
+06 = an ambulanten Sektor verwiesen (ÄBD, Hausarzt etc.) 07 = Patientenübergabe an Polizei
+08 = Unterstützung eines anderen Rettungsmittels 09 = First Responder
+10 = Einsatzabbruch aus Wettergründen
+11 = Ausfall Rettungsmittel (Eigenunfall, technischer Defekt, Personal erkrankt)
+12 = Rettungsmittel für Transport nicht geeignet
+13 = Transport durch Dritte (z.B. Angehörige, Taxi) 98 = sonstige";DM;;;
+KeinTranspOhnePat;"Grund für Einsatz ohne Transport, da kein Patientenkontakt
+01 = Von Leitstelle abbestellt / Abbruch vor Erreichen des Notfallorts 02 = Kein Patient vorgefunden oder Patient bereits abtransportiert 03 = (Vorsorgliche) Bereitstellung
+04 = Gebietsabdeckung
+05 = Personaltransport (Notarztzubringer/LNA, OrgL,…) 06 = Materialtransport (Blut, spez. Devices,…)
+07 = Einsatzabbruch aus Wettergründen
+08 = Ausfall Rettungsmittel (Eigenunfall, technischer Defekt, Personal erkrankt) 98 = sonstige";DM;;;
+DokRM;"Typ des dokumentierenden Rettungsmittels
+01 = NEF
+02 = RTW
+03 = KTW
+04 = NAW
+05 = RTH
+06 = ITH
+07 = ITW
+08 = Langstreckenflugzeug
+09 = Ambulanzflugzeug
+10 = First Responder
+11 = Bergrettung
+12 = Wasserrettung
+13 = Selbstfahrender NA
+14 = Telenotarzt
+15 = Single Responder (Gemeinde-NotSan, REF, AEF,...)
+16 = LNA
+17 = OrgL
+18 = N-KTW
+19 = MIC
+20 = S-RTW (Schwerlast) 98 = Sonstige";DM;;;
+BeteilRM;"Typen der am Einsatz beteiligten Rettungsmittel 01 = NEF
+02 = RTW
+03 = KTW
+04 = NAW
+05 = RTH
+06 = ITH
+07 = ITW
+08 = Langstreckenflugzeug
+09 = Ambulanzflugzeug
+10 = First Responder
+11 = Bergrettung
+12 = Wasserrettung
+13 = Selbstfahrender NA
+14 = Telenotarzt
+15 = Single Responder (Gemeinde-NotSan, REF, AEF,...)
+16 = LNA
+17 = OrgL
+18 = N-KTW
+19 = MIC
+20 = S-RTW (Schwerlast)
+21 = Ersthelfer-App
+98 = Sonstige";DM;;;
+AerztlQualifikation;"Notärztl./Transportärztl.Fachgebiet/Qualifikation
+-1 = nicht dokumentiert 01 = Innere
+02 = Chirurgie
+03 = Anästhesie
+04 = Pädiatrie
+05 = Allgemeinmedizin
+06 = Neurologie
+07 = Zusatzbezeichnung Notfallmedizin 08 = Zusatzbezeichnung Intensivmedizin
+09 = Zusatzbezeichnung Klinische Akut- und Notfallmedizin
+10 = Ärztin/Arzt in Weiterbildung
+11 = Fachärztin/-arzt
+98 = Andere Fachrichtung";DM;;;
+StatusPersonal;"Status des Personals
+-1 = nicht dokumentiert 01 = Ärztin/Arzt
+02 = Notfallsanitäter/in
+03 = Rettungsassistent/in
+04 = Rettungssanitäter/in
+05 = Intensivpflegepersonal
+98 = Sonstige";DM;;;
+SymptombeginnVor24h;"Bestehen die Symptome länger als 24 Stunden? 00 = unbekannt
+01 = Ja
+02 = Nein";DM;;;
+SymptombeginnGesichert;"Ist der Symptombeginn gesichert oder geschätzt? 01 = Symptombeginn gesichert
+02 = Symptombeginn geschätzt";DM;;;
+Alter;"Patientenalter
+Wertebereich = 000:01 bis 125:00 (Jahre:Monate)
+999:00 = Neugeboren: Geburt bis 28. Tag";DM;;;
+ValiditaetAlter;"Ist das Alter gesichert oder geschätzt? 01 = gesichert
+02 = geschätzt";DM;;;
+Geschlecht;"Geschlecht des Patienten
+-1= nicht dokumentiert
+01 = männlich
+02 = weiblich
+03 = divers";DM;;;
+Bewusstsein1 Bewusstsein2;"Bewusstseinslage
+-1 = nicht untersucht
+01 = analgosediert/Narkose
+02 = wach
+03 = reagiert auf Ansprache 04 = reagiert auf Schmerzreiz 05 = bewusstlos
+98 = Sonstige
+99 = nicht beurteilbar";DM;;;
+GlasgowComaScale1 GlasgowComaScale2;"Glasgow Coma Scale
+Wertebereich = 3 bis 15
+-1 = nicht untersucht 99 = nicht beurteilbar";DM;;;
+NeurologischeAuffaelligkeiten1;"Akute neurologische Auffälligkeiten (ZNS, PNS)
+-1 = nicht untersucht 00 = keine
+01 = Gesichtslähmung (kein Lächeln/hängender Mundwinkel) F
+02 = Motorik Arme (einseitiges Absinken <10s/kein Anheben/keine Bewegung) A 03 = Motorik Beine (einseitiges Absinken <5s/kein Anheben/keine Bewegung)  04 = Sehstörung/Doppelbilder
+05 = Sprachstörung (Aphasie)/Sprechstörung (Dysarthrie) S 06 = Schluckstörung
+07 = Sensibilitätsstörung
+08 = Gangunsicherheit/Schwindel
+09 = Herdblick
+10 = Übelkeit/Erbrechen
+11 = Kopfschmerzen
+12 = Meningismus
+13 = Babinski Zeichen
+14 = Querschnittsymptomatik
+97 = vorbestehendes neurolog. Defizit
+98 = Sonstige
+99 = nicht beurteilbar";DM;;;
+SystolischerBlutdruck1 SystolischerBlutdruck2;"Systolischer Blutdruck - Messwert in mmHg
+Wertebereich = 0 bis 300
+-1 = nicht gemessen 999 = nicht messbar";DM;;;
+EKGBefund1 EKGBefund2;"EKG-Befund
+-1 = kein EKG durchgeführt 01 = Sinusrhythmus
+02 = absolute Arrhythmie 03 = AV-Block II
+04 = AV-Block III
+05 = schmale QRS-Tachykardie 06 = breite QRS-Tachykardie 07 = Kammerflimmern
+08 = pulslose elektrische Aktivität 09 = Asystolie
+10 = Schrittmacherrhythmus
+11 = signifikante ST-Hebungen
+12 = Schenkelblock
+98 = Sonstige
+99 = nicht durchführbar/nicht beurteilbar";DM;;;
+Herzfrequenz1 Herzfrequenz2;"Herzfrequenz - Messwert in /min
+Wertebereich = 0 bis 300
+-1 = nicht gemessen 999 = nicht beurteilbar";DM;;;
+Atemfrequenz1 Atemfrequenz2;"Atemfrequenz
+Wertebereich = 0 bis 98
+-1 = nicht gemessen 99 = nicht beurteilbar";DM;;;
+Sauerstoffsaettigung1 Sauerstoffsaettigung2;"Sauerstoffsättigung - Messwert in %
+Wertebereich = 0 bis 100
+-1 = nicht gemessen 999 = nicht messbar";DM;;;
+Rekapillarisierungszeit;"Rekapillarisierungszeit - Messwert in s
+Wertebereich = 1 bis 10
+-1 = nicht gemessen
+11 = größer 10 Sekunden";DM;;;
+"Schmerzempfinden1
+Schmerzempfinden2";"Schmerzempfinden - nach Numerischer Rating Scala (NRS)
+Wertebereich = 0 bis 10
+-1 = nicht gemessen 99 = nicht beurteilbar";DM;;;
+Schmerzerleben;"Schmerzerleben durch Patienten
+00 = tolerabel
+01 = nicht tolerabel";DM;;;
+Blutzuckerwert1 Blutzuckerwert2;"Blutzucker
+Messwert in mg/dl bzw. mmol/l
+Wertebereich = 0 bis 900 bei Einheit mg/dl bzw. Wertebereich = 0.0 bis 50.0 bei Einheit mmol/l
+-1 = nicht gemessen
+997 = ""low""
+998 = ""high""
+999 = nicht messbar";DM;;;
+BlutzuckerEinheit;"01 = mg/dl
+02 = mmol/l";DM;;;
+Temperatur;"Temperatur
+Messwert in Grad Celsius
+Wertebereich = 20.0 bis 50.0
+-1.0 = nicht gemessen
+99.9 = nicht messbar";DM;;;
+Atmung1 Atmung2;"Klinische Befunde Atmung
+-1 = nicht untersucht
+00 = unauffällige Spontanatmung 01 = Dyspnoe
+02 = Zyanose
+03 = Spastik
+04 = Rasselgeräusche
+05 = Stridor
+06 = Atemwegsverlegung
+07 = Schnappatmung
+08 = Apnoe
+09 = Beatmung
+10 = Hyperventilation
+98 = Sonstige
+99 = nicht beurteilbar";DM;;;
+Hautbefunde;"Hautbefunde
+-1 = nicht untersucht 00 = unauffällig
+01 = Kalt-Schweissigkeit 02 = Stehende Hautfalten 03 = Ödeme
+04 = blass/fahl
+05 = Dekubitus
+06 = Exanthem/Erythem
+07 = Marmorierung
+08 = Ikterus
+98 = Sonstige
+99 = nicht beurteilbar";DM;;;
+"Psyche1
+Psyche2";"Psychischer Zustand
+-1 = nicht untersucht 00 = unauffällig
+01 = aggressiv
+02 = depressiv
+03 = wahnhaft
+04 = verwirrt
+05 = verlangsamt
+06 = manisch
+07 = erregt
+08 = ängstlich
+09 = suizidal
+10 = motorisch unruhig
+98 = Sonstige
+99 = nicht beurteilbar";DM;;;
+Pupillenweite1 Pupillenweite2;"Pupillenweite
+-1 = nicht untersucht 01 = beidseits eng
+02 = beidseits mittelweit 03 = beidseits weit
+04 = Anisokorie
+05 = entrundet
+98 = Sonstige
+99 = nicht beurteilbar";DM;;;
+"Lichtreaktion1
+Lichtreaktion2";"Lichtreaktion
+-1 = nicht untersucht 00 = beidseits prompt 01 = beidseits träge 02 = beidseits keine 03 = Seitendifferenz
+98 = Sonstige
+99 = nicht beurteilbar";DM;;;
+EtCO2Wert1 EtCO2Wert2;"erster / letzter gemessener etCO2 Wert (unter Beatmung in mmHg gemessen)
+Wertebereich = 0 bis 120
+-1 = nicht gemessen 999 = nicht messbar";DM;;;
+VBeatmung;"Beatmung (außer Heimbeatmung)
+01 = Ja
+02 = Nein";DM;x;;
+VBeatmungDetail;"differenzierte Beatmung 01 = Ja
+02 = Nein";DM;x;;
+KatecholaminPflicht;"Katecholaminpflichtigkeit 01 = Ja
+02 = Nein";DM;x;;
+KatecholaminTherapie;"differenzierte Katecholamin-Therapie
+01 = Ja
+02 = Nein";DM;x;;
+FortlaufendSedierung;"fortlaufende Sedierung/Narkose 01 = Ja
+02 = Nein";DM;x;;
+VigilanzMinderung;"deutliche Vigilanzminderung mit Einschränkung von Schutzreflexen 01 = Ja
+02 = Nein";DM;x;;
+InvasivBlutdruck;"invasive Blutdruckmessung 01 = Ja
+02 = Nein";DM;x;;
+SpezDevices;"Spezielle Devices
+-1 = keine speziellen Devices eingesetzt 01 = Impella
+02 = externer Schrittmacher 03 = IABP
+04 = ECMO
+98 = Sonstige";DM;x;;
+AnzahlPerfusor;"Anzahl der Perfusoren
+Einstellige numerische Angabe (0 bis 9)";DM;x;;
+IndikationArztbegleitung;"Indikation Arztbegleitung gegeben 01 = Ja
+02 = Nein";DM;x;;
+ZDringlichkeit;"Zeitliche Dringlichkeit
+01 = Notfall - schnellstmöglich, vitale Indikation 02 = dringlich - zeitnah, keine vitale Indikation
+03 = planbar - Stunden oder Tage, nicht dringlich";DM;x;;
+IndikationIT;"Indikation Intensivtransport 00 = nein
+01 = ja, Patientenzustand
+02 = ja, intensivmedizinische Personalqualifikation erforderlich
+03 = ja, medizintechnische Ausstattung der Regelrettung nicht ausreichend 98 = ja, Sonstiges";DM;x;;
+Diagnose;"ZNS Erkrankungen
+1100 = Hirninfarkt, TIA, intrakranielle Blutung (1101 bis 1104)
+1101 = TIA
+1102 = Hirninfarkt
+1103 = ICB (klin. Diagn.) 1104 = SAB (klin. Diagn.) 1105 = Krampfanfall
+1106 = Fieberkrampf 1107 = Status Epilepticus
+1108 = Meningitis - Encephalitis 1198 = sonstige Erkrankung ZNS";DM;;;
+;"Herz/Kreislauf Erkrankungen 1201 = ACS
+1202 = STEMI VW
+1203 = STEMI HW
+1204 = Thoraxschmerz unklarer Genese 1205 = Kardiogener Schock
+1206 = tachykarde Rhythmusstörung 1207 = bradykarde Rhythmusstörung 1208 = PM-Fehlfunktion
+1209 = ICD-Fehlfunktion
+1210 = Lungenembolie
+1211 = Herzinsuffizienz
+1212 = Lungenödem
+1213 = hypertensive Entgleisung 1214 = hypertensiver Notfall
+1215 = Aortenaneurysma/-dissektion
+1216 = Hypotonie
+1217 = orthostatische Fehlregulation 1218 = Synkope
+1219 = Thrombose/arterieller Verschluss 1220 = Herz-Kreislauf-Stillstand
+1221 = hämorrhagischer Schock
+1298 = sonstige Erkrankung Herz-Kreislauf";DM;;;
+;"Atemwegserkrankungen 1301 = Asthma (Anfall) 1302 = Status Asthmaticus 1303 = exacerbierte COPD 1304 = Aspiration
+1305 = Pneumonie/Bronchitis
+1306 = Epiglottitis
+1307 = Pseudokrupp
+1308 = anderer respiratorischer Infekt 1309 = Hyperventilationssyndrom
+1310 = Spontanpneumothorax
+1311 = Hämoptysis
+1312 = Dyspnoe unklarer Ursache 1398 = sonstige Erkrankung Atmung";DM;;;
+;"Abdominelle Erkrankungen 1401 = akutes Abdomen 1402 = obere GI Blutung 1403 = untere GI Blutung 1404 = Kolik (Galle, Niere,...)
+1405 = (Infektiöse) Gastroenteritis 1406 = Mesenterialinfarkt
+1498 = sonstige Erkrankung Abdomen";DM;;;
+;"Psychiatrische Erkrankungen
+1501 = Depression, Angst 1502 = Manie, Psychose
+1503 = Entzugssymptomatik, Delir 1504 = Suizidalität
+1505 = psychosoziale Krise
+1598 = sonstige Erkrankung Psychiatrie";DM;;;
+;"Störungen des Stoffwechsels sowie des Wasser- und Elektrolythaushalts 1601 = Hypoglykämie
+1602 = Hyperglykämie
+1603 = Urämie/ANV
+1604 = Exsikkose
+1605 = Elektrolytstörungen
+1698 = sonstige Erkrankung Stoffwechsel";DM;;;
+;"Gyn-/Geburtshilfe Notfälle
+1701 = Schwangerschaft > 35. SSW (zur Entbindung in die Klinik) 1702 = Schwangerschaftskomplikation (z. B. Eklampsie)
+1703 = Präklinische Geburt 1704 = Extrauterine Gravidität 1705 = vaginale Blutung
+1798 = sonstige Erkrankung Gynäkologie";DM;;;
+;"Sonstige Erkrankungen  1801 = Anaphylaxie Grad 1/2 1802 = Anaphylaxie Grad 3/4 1803 = Intoxikation Alkohol 1804 = Intoxikation Drogen
+1805 = Intoxikation Medikamente 1806 = sonstige Intoxikation 1807 = akzidentelle Intoxikation 1808 = Sepsis/sept. Schock
+1809 = Hochkontagiöse Erreger (SARS, HKLE,...) 1810 = sonstige Infektionserkrankungen
+1811 = Hitzeerschöpfung, Hitzschlag 1812 = Unterkühlung/Erfrierung
+1813 = SIDS
+1814 = akute Lumbago 1815 = Palliative Situation
+1816 = medizinische Behandlungskomplikation 1817 = Epistaxis/HNO-Erkrankung
+1818 = urologische Erkrankung 1819 = Augenerkrankung
+1820 = sonstiger akuter Schmerzzustand 1821 = Schock unklarer Genese
+1822 = Erysipel
+1898 = sonstige Erkrankung
+1899 = führendes soziales Problem
+9999 = keine Erkrankung/Verletzung feststellbar";DM;;;
+;"SHT
+2001 = leicht
+2002 = mittel
+2003 = schwer
+2004 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma Gesicht/Kopf/Hals 2101 = leicht
+2102 = mittel
+2103 = schwer
+2104 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma HWS 2201 = leicht
+2202 = mittel
+2203 = schwer
+2204 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma Thorax 2301 = leicht
+2302 = mittel
+2303 = schwer
+2304 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma Abdomen 2401 = leicht
+2402 = mittel
+2403 = schwer
+2404 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma BWS/LWS 2501 = leicht
+2502 = mittel
+2503 = schwer
+2504 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma Becken 2601 = leicht
+2602 = mittel
+2603 = schwer
+2604 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma obere Extremität 2701 = leicht
+2702 = mittel
+2703 = schwer
+2704 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma untere Extremität 2801 = leicht
+2802 = mittel
+2803 = schwer
+2804 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma Weichteile 2901 = leicht
+2902 = mittel
+2903 = schwer
+2904 = lebensbedrohlich oder tödlich";DM;;;
+;"Trauma Gefäßverletzungen
+2911 = leicht
+2912 = mittel
+2913 = schwer
+2914 = lebensbedrohlich oder tödlich";DM;;;
+;"Spezielle Traumata
+3001 = Verbrennung/Verbrühung
+3002 = Inhalationstrauma/Rauchgasinhalation
+3003 = Elektrounfall
+3004 = Verätzung
+3005 = (Beinahe-) Ertrinken 3006 = Tauchunfall
+3098 = Sonstige";DM;;;
+Verletzungsmuster;"Verletzungsmuster 01 = Einzelverletzung
+02 = Mehrfachverletzung
+03 = Polytrauma (nach Tscherne)";DM;;;
+Unfallursache;"Unfallursache 01 = Unfall
+02 = Verdacht auf Gewaltanwendung 03 = Verdacht auf Suizid(versuch) 99 = nicht bekannt";DM;;;
+Unfallmechanismus;"Unfallmechanismus
+01 = stumpf
+02 = penetrierend
+03 = Amputation 99 = nicht bekannt";DM;;;
+Unfallhergang;"Unfallhergang
+01 = PKW-Insasse
+02 = LKW-Insasse
+03 = Bus-Insasse
+04 = Motorradfahrer/-sozius
+05 = Fahrrad
+06 = unterstütztes Fahrrad (E-Bike/Pedelec) 07 = E-Scooter
+08 = Fußgänger angefahren 09 = sonstiger Verkehrsunfall
+10 = (Ab)Sturz mit Fallhöhe mehr als 3m (Kinder jünger als 2 Jahre: Fallhöhe mehr als 90cm, Kinder 2-14 Jahre: Fallhöhe mehr als 1,5m)
+11 = (Ab)Sturz mit Fallhöhe maximal 3m (Kinder jünger als 2 Jahre: Fallhöhe maximal 90cm, Kinder 2-14 Jahre: Fallhöhe maximal 1,5m)
+12 = ebenerdiger Sturz
+13 = Schlagverletzung (Gegenstand, Ast,…)
+14 = Schussverletzung
+15 = Stichverletzung
+16 = Gewaltverbrechen
+17 = Explosion/Verpuffung (thermomech. Kombiverletzung)
+18 = Verschüttung
+19 = Arbeitsunfall
+20 = Sportunfall
+98 = andere Unfallarten
+99 = nicht bekannt";DM;;;
+HelmPat;"Helm Patient 00 = unbekannt
+01 = Ja
+02 = Nein";DM;;;
+NACAScore;"NACA-Score
+01 = geringfügige Störung 02 = ambulante Abklärung 03 = stationäre Behandlung
+04 = akute Lebensgefahr nicht auszuschließen 05 = akute Lebensgefahr
+06 = primär erfolgreiche Reanimation 07 = Tod
+99 = nicht beurteilbar";DM;;;
+MNACAScore;"M-NACA Score
+02 = leichte Störung 03 = mäßige Störung
+04 = drohende Lebensgefahr 05 = akute Lebensgefahr
+06 = erfolgreiche Reanimation
+07 = Biolog. Tod vorliegend - erfolglose Reanimation 99 = nicht errechenbar";DM;;;
+Airway;"Airway Maßnahmen
+-1 = keine Maßnahmen durchgeführt
+01 = Freimachen/Freihalten der Atemwege (z.B. Guedel/WendlTubus)/Absaugen 02 = Maskenbeatmung unmöglich
+03 = supraglott. Atemwegshilfe SGA 04 = Atemwegszugang erschwert  05 = Endotrachealtubus
+06 = Intubation erschwert, mehr als 2 Versuche 07 = Koniotomie/chir. Atemweg
+08 = Trachealkanülenwechsel
+98 = Sonstige";DM;;;
+Atemunterst;"Atemunterstützung - Beatmung
+-1 = keine Atemunterstützung durchgeführt 01 = Sauerstoffgabe (Sonde/Maske)
+02 = manuell unterstützte Spontanatmung (Maske/Beutel)
+03 = manuelle Beatmung bei fehlender Spontanatmung (Maske/Beutel) 04 = maschinell unterstützte Maskenbeatmung  (NIV)
+05 = maschinelle invasive Beatmung (unterstützt oder kontrolliert) 98 = Sonstige";DM;;;
+CirculationZugang;"Medikamentenzugang
+-1 = kein Zugang gelegt 01 = PVK
+02 = ZVK
+03 = Shaldon- oder anderer großlumiger Katheter 04 = IO Punktion
+97 = Zugang vorhanden/durch Andere
+98 = Sonstige";DM;;;
+SpezMassn;"Spezielle Maßnahmen
+-1 = keine speziellen Maßnahmen durchgeführt 01 = Kühlung lokal
+02 = Kühlung systemisch 03 = Wärmemanagement
+04 = Entbindung
+05 = Neugeborenenversorgung
+06 = Krisenintervention
+07 = Kardioversion
+08 = Notfallnarkose
+09 = Tourniquet
+10 = Hämostyptica
+11 = Thoraxdrainage/Entlastungspunktion
+12 = Thorakotomie
+13 = REBOA (resuscitative endovascular balloon occlusion of the aorta) 98 = Sonstige";DM;;;
+EKG12Kanal;"12-Kanal-EKG
+-1 = kein 12-Kanal-EKG durchgeführt 01 = durch eigenes RM vor Ort
+02 = durch Andere
+03 = telemetrische Übermittlung an Zielklinik 04 = nicht durchführbar";DM;;;
+Medizintechnik;"Medizintechnik
+-1 = keine Medizintechnik eingesetzt 01 = invasive RR-Messung
+02 = ZVD
+03 = ICP
+04 = Ultraschall (Sono/Echo) 05 = Notfallpacer
+06 = Spritzenpumpe(n)
+07 = Videolaryngoskopie
+08 = Transportinkubator
+98 = Sonstige";DM;;;
+LagTrans;"Lagerungs- und Rettungstechnik
+-1 = keine Lagerungs- und Rettungstechnik 01 = OK Hochlagerung
+02 = Flachlagerung
+03 = Schocklagerung 04 = stabile Seitenlage
+05 = sitzender Transport
+06 = Cervicalstütze/HWS-Immobilisation
+07 = Spineboard
+08 = Schaufeltrage
+09 = Vakuummatratze
+10 = (Extremitäten-)Schienung
+11 = Reposition
+12 = Verband
+13 = Beckenschlinge
+98 = Sonstige";DM;;;
+DurchfHeilkundlMassn;"Eigenständig oder eigenverantwortlich durchgeführte heilkundliche Maßnahmen durch Notfallsanitäterinnen/Notfallsanitäter
+01 = ja, Medikamentengabe 02 = ja, Maßnahmen
+03 = nein";DM;;;
+Behandlungspfad;diese Codes sind bundesland- und/oder regionalspezifisch;DM;;;
+Medikamentengabe;"Erläuterung Applikationsformen: iv=intravenös, io=intraossär, im=intramuskulär, sc=subcutan, nl=intranasal, ih=inhalativ,
+po=oral, sl=sublingual/buccal, rl=rectal, td=transdermal";DM;;;
+;"Analgetika
+Fentanyl: 1001iv, 1001io, 1001im, 1001sc, 1001nl, 1001sl, 1001td Morphin: 1002iv, 1002io, 1002im, 1002sc, 1002nl, 1002po, 1002td Piritramid: 1003iv, 1003io, 1003im, 1003sc
+Sufentanil: 1004iv, 1004io, 1004nl, 1004sl
+anderes Opioid: 1005iv, 1005io, 1005im, 1005sc, 1005nl, 1005po, 1005sl, 1005rl, 1005td Metamizol: 1006iv, 1006io, 1006po
+Paracetamol: 1007iv, 1007io, 1007po, 1007rl Oxycodon: 1008iv, 1008io, 1008sc, 1008po, 1008sl
+Ketamin/Esketamin: 1009iv, 1009io, 1009im, 1009sc, 1009nl, 1009ih, 1009rl NSAID (z.B. Ibuprofen, Diclofenac): 1010iv, 1010io, 1010po, 1010rl Lokalanästhetikum (z.B. Lidocain): 1011sc, 1011td
+vorbehandelt mit Analgetika (sämtliche Applikationsformen): 1097xx
+sonstiges Analgetikum: 1098iv, 1098io, 1098im, 1098sc, 1098nl, 1098ih, 1098po, 1098sl, 1098rl, 1098td";DM;;;
+;"Antiarrhythmika
+Betablocker: 1101iv, 1101io, 1101po Amiodaron: 1102iv, 1102io, 1102po Adenosin: 1103iv, 1103io
+Atropin: 1104iv, 1104io Verapamil: 1105iv, 1105io 1105po Ajmalin: 1106iv, 1106io Digitalisglykosid: 1107iv, 1107io Lidocain: 1108iv, 1108io
+vorbehandelt mit Antiarrhythmika (sämtliche Applikationsformen): 1197xx
+sonstiges Antiarrhythmikum: 1198iv, 1198io, 1198im, 1198sc, 1198nl, 1198ih, 1198po, 1198sl, 1198rl, 1198td";DM;;;
+;"Antidota
+Flumazenil: 1201iv, 1201io, 1201nl Carbo medicinalis (Kohle): 1202po
+Naloxon: 1203iv, 1203io, 1203im, 1203sc, 1203nl Physostigmin: 1204iv, 1204io
+Atropin (als Antidot):1205iv, 1205io Obidoxim: 1206iv, 1206io Hydroxocobalamin: 1207iv, 1207io Natriumthiosulfat: 1208iv, 1208io
+4-Dimethylaminophenol (4-DMAP): 1209iv, 1209io Toloniumchlorid (Toluidinblau):1210iv, 1210 io Methylthioniniumchlorid (Methylenblau): 1211iv, 1211io vorbehandelt mit Antidota (sämtliche Applikationsformen): 1297xx
+sonstiges Antidot: 1298iv, 1298io, 1298im, 1298sc, 1298nl, 1298ih, 1298po, 1298sl, 1298rl, 1298td";DM;;;
+;"Antiemetika
+Dimenhydrinat: 1301iv, 1301io, 1301po, 1301rl Metoclopramid: 1302iv, 1302io, 1302po
+5HT3 Antagonist (z. B. Ondansetron):1303iv, 1303io, 1303po, 1303rl vorbehandelt mit Antiemetika (sämtliche Applikationsformen): 1397xx
+sonstiges Antiemetikum: 1398iv, 1398io, 1398im, 1398sc, 1398nl, 1398ih, 1398po, 1398sl, 1398rl, 1398td";DM;;;
+;"Sedativa/Antiepileptika Clonazepam: 1401iv, 1401io
+Diazepam: 1402iv, 1402io, 1402im, 1402sc, 1402po, 1402sl, 1402nl, 1402rl Lorazepam: 1403iv, 1403io, 1403im, 1403sc, 1403po, 1403sl, 1403nl, 1403rl Midazolam: 1404iv, 1404io, 1404im, 1404sc, 1404po, 1404sl, 1404nl, 1404rl Phenytoin: 1405iv, 1405io
+Levetiracetam: 1406iv, 1406io
+vorbehandelt mit Sedativa/Antiepileptika (sämtliche Applikationsformen): 1497xx
+sonstiges Sedativum/Antiepileptikum: 1498iv, 1498io, 1498im, 1498sc, 1498nl, 1498ih, 1498po, 1498sl, 1498rl, 1498td";DM;;;
+;"Antihypertensiva/Vasodilatantien Urapidil: 1501iv, 1509io Glyceroltrinitrat: 1502iv, 1502io, 1502sl Clonidin: 1503iv, 1503io, 1503po
+vorbehandelt mit Antihypertensiva/Vasodilatantien (sämtliche Applikationsformen): 1597xx
+sonstiges Antihypertensivum/Vasodilatans: 1598iv, 1598io, 1598im, 1598sc, 1598nl, 1598ih, 1598po, 1598sl, 1598rl, 1598td";DM;;;
+;"Bronchodilatantien
+Salbutamol: 1601iv, 1601io, 1601ih Reproterol: 1602iv, 1602io, 1602ih
+Ipratropiumbromid: 1603iv, 1603io, 1603im, 1603sc, 1603ih Theophyllin: 1604iv, 1604io, 1604po
+vorbehandelt mit Brochodilatantien (sämtliche Applikationsformen): 1697xx
+sonstiges Bronchodilatans: 1698iv, 1698io, 1698im, 1698sc, 1698nl, 1698ih, 1698po, 1698sl, 1698rl, 1698td";DM;;;
+;"Diuretika
+Furosemid: 1701iv, 1701io
+vorbehandelt mit Diuretika (sämtliche Applikationsformen): 1797xx
+sonstiges Diuretikum: 1798iv, 1798io, 1798im, 1798sc, 1798nl, 1798ih, 1798po, 1798sl, 1798rl, 1798td";DM;;;
+;"Katecholamine/Vasopressoren
+Epinephrin: 1801iv, 1801io, 1801im, 1801sc, 1801nl, 1801ih Norepinephrin: 1802iv, 1802io
+Cafedrin/Theoadrenalin: 1803iv, 1803io Dobutamin: 1804iv, 1804io Vasopressin: 1805iv, 1805io
+vorbehandelt mit Katecholaminen (sämtliche Applikationsformen): 1897xx
+sonstige Katecholamine: 1898iv, 1898io, 1898im, 1898sc, 1898nl, 1898ih, 1898po, 1898sl, 1898rl, 1898td";DM;;;
+;"Kortikosteroide
+Dexametason: 1901iv, 1901io, 1901ih
+Methyl-/Prednisolon: 1902iv, 1902io, 1902ih, 1902rl
+vorbehandelt mit Kortikosteroiden (sämtliche Applikationsformen): 1997xx
+sonstiges Corticoid :1998iv, 1998io, 1998im, 1998sc, 1998nl, 1998ih, 1998po, 1998sl, 1998rl, 1998td";DM;;;
+;"Muskelrelaxantien
+Suxamethonium: 2001iv, 2001io, 2001im Rocuronium 2002iv, 2002io
+vorbehandelt mit Muskelrelaxantien (sämtliche Applikationsformen): 2097xx
+sonstiges Muskelrelaxans: 2098iv, 2098io, 2098im, 2098sc, 2098nl, 2098ih, 2098po, 2098sl, 2098rl, 2098td";DM;;;
+;"Narkotika
+Etomidat: 2101iv, 2101io Propofol: 2102iv, 2102io Thiopental: 2103iv, 2103io
+vorbehandelt mit Narkotika (sämtliche Applikationsformen): 2197xx
+sonstiges Narkotikum: 2198iv, 2198io, 2198im, 2198sc, 2198nl, 2198ih, 2198po, 2198sl, 2198rl, 2198td";DM;;;
+;"Psychopharmaka
+Haloperidol: 2201iv, 2201io, 2201im Promethazin: 2202iv, 2202io, 2202im
+vorbehandelt mit Psychopharmaka (sämtliche Applikationsformen): 2297xx
+sonstige Psychopharmaka: 2298iv, 2298io, 2298im, 2298sc, 2298nl, 2298ih, 2298po, 2298sl, 2298rl, 2298td";DM;;;
+;"Antikoagulanzien
+UF Heparin: 2301iv, 2301io, 2301sc NM Heparin: 2302sc
+vorbehandelt mit Antikoagluanzien (sämtliche Applikationsformen): 2397xx sonstige Antikoagulanzien: 2398iv, 2398io, 2398im, 2398sc, 2398po";DM;;;
+;"TZ-Aggregationshemmer Acetylsalicylsäure: 2401iv, 2401io, 2401po Clopidogrel o.a.: 2402iv, 2402io, 2402po
+vorbehandelt mitTZ-Aggregationshemmern (sämtliche Applikationsformen): 2497xx sonstige TZ-Aggregationshemmer: 2498iv, 2498io, 2498im, 2498sc, 2498po, 2498sl";DM;;;
+;"Thrombolytika
+Tenecteplase: 2601iv, 2601io Alteplase: 2602iv, 2602io Reteplase: 2603iv, 2603io
+vorbehandelt mit sonstigen Thrombolytika (sämtliche Applikationsformen): 2697xx sonstiges Thrombolytikum: 2698iv, 2698io, 2698im, 2698sc";DM;;;
+;"Sonstige Medikamente
+Glukose: 2501iv, 2501io, 2501po
+H1 Blocker (z.B. Dimetinden): 2502iv, 2502io, 2502po H2 Blocker (z.B. Ranitidin): 2503iv, 2503io, 2503po Butylscopolamin: 2504iv, 2504io, 2504po
+Antibiotikum (z. B. Ceftriaxon): 2505iv, 2505io, 2505po Biperiden: 2506iv, 2506io, 2506po
+Oxytocin: 2507iv, 2507io, 2507nl
+Fenoterol (als Tokolytikum): 2508iv, 2508io, 2508ih Kaliumchlorid: 2509iv, 2509io, 2509po Calciumgluconat: 2510iv, 2510io 2510td Magnesiumsulfat: 2511iv, 2511io
+Insulin: 2512iv, 2512io, 2512sc Tranexamsäure: 2513iv, 2513io, 2513nl Natriumhydrogencarbonat: 2514iv, 2514io Erythrozytenkonzentrat: 2515iv, 2515io FFP: 2516iv, 2516io
+PPSB: 2517iv, 2517io
+Fibronogen: 2518iv, 2518io Lyoplasma: 2519iv, 2519io Thiamin: 2520iv, 2520io Simethicon: 2521po
+abschwellende Nasentropfen (z.B. Xylometazolin): 2522nl
+vorbehandelt mit sonstigen Medikamenten (sämtliche Applikationsformen): 2597xx
+sonstige Medikamente: 2598iv, 2598io, 2598im, 2598sc, 2598nl, 2598ih, 2598po, 2598sl, 2598rl, 2598td kein Medikament: 999999";DM;;;
+Infusionsgabe;"Kristalloide Infusionen
+Isotone Kochsalzlösung.: 3001iv, 3001io, 3001sc Vollelektrolytlösung: 3002iv, 3002io, 3002sc
+vorbehandelt mit Kristalloid (sämtliche Applikationsformen): 3097xx sonstiges Kristalloid: 3098iv, 3098io, 3098sc";DM;;;
+;"Spezielle Infusionen
+HÄS: 3101iv, 3101io
+SVR/Hyperosmol. NaCl: 3102 iv, 3102io Gelatine: 3103iv, 3103io
+vorbehandelt mit Kolloid (sämtliche Applikationsformen): 3197xx sonstige: 3198iv, 3198io, 3198 sc";DM;;;
+;sonstige Angaben keine Infusion: 999999;DM;;;
+NeurologischeAuffaelligkeiten2;"Akute neurologische Auffälligkeiten (ZNS, PNS)
+-1 = nicht untersucht 00 = keine
+01 = Gesichtslähmung (kein Lächeln/hängender Mundwinkel) F
+02 = Motorik Arme (einseitiges Absinken <10s/kein Anheben/keine Bewegung) A 03 = Motorik Beine (einseitiges Absinken <5s/kein Anheben/keine Bewegung)  04 = Sehstörung/Doppelbilder
+05 = Sprachstörung (Aphasie)/Sprechstörung (Dysarthrie) S 06 = Schluckstörung
+07 = Sensibilitätsstörung
+08 = Gangunsicherheit/Schwindel
+09 = Herdblick
+10 = Übelkeit/Erbrechen
+11 = Kopfschmerzen
+12 = Meningismus
+13 = Babinski Zeichen
+14 = Querschnittsymptomatik
+96 = gegenüber Erstbefund keine Änderungen
+98 = Sonstige
+99 = nicht beurteilbar";DM;;;
+SoSiTransport;"Sondersignal bei Transport: 01 = Ja
+02 = Nein";DM;;;
+OrtPatUeberg;"Ort Patienten-Übergabe 01 = ZNA/INA/PINA
+02 = INZ/KINZ
+03 = Schockraum
+04 = Intensivstation
+05 = Allgemeinstation
+06 = Herzkatheterlabor (HKL) 07 = Stroke Unit
+08 = CT
+09 = OP direkt
+10 = Fachambulanz
+11 = Chest Pain Unit (CPU)
+12 = Kreisssaal
+13 = Arztpraxis
+14 = Notfall-/Bereitschaftspraxis
+15 = Einsatzstelle
+98 = Sonstige";DM;;;
+NummerZK;"Kennung der Zielklinik:
+000001001 bis 000009990 = ID aus Krankenhausverzeichnis (Transportziele) für die Datenlieferung an die SQR-BW 770000000 bis 779999999 = Standortnummer
+000009998 = sonstige Zielklinik
+000009999 = anderes Transportziel (z.B. Arztpraxis)";DM;;;
+AnmeldungPatient;"Patient in Zielklinik angemeldet 01 = Ja
+02 = Nein";DM;;;
+Einsatzbesonderheiten;"Einsatzbesonderheiten 00 = keine
+01 = nächste geeignete Klink nicht aufnahmebereit 02 = Pat. lehnt indizierte Maßnahmen ab
+03 = bewusster Therapieverzicht
+04 = indizierte Maßnahme aufgrund Kontraindikation nicht durchgeführt 05 = Infektionstransport (mit Desinfektionsmaßnahmen)
+06 = aufwendiger Infektionstransport - über die reguläre Ausstattung hinausgehende Infektionsschutzmaßnahmen/-ausrüstung erforderlich
+07 = Schwerlasttransport
+08 = Zwangsunterbringung
+09 = aufwendige technische Rettung
+10 = Einsatz mit LNA/OrgL
+11 = mehrere Patienten
+12 = MANV
+13 = kein Notarzt in angemessener Zeit verfügbar
+14 = erschwerter Patientenzugang
+15 = verzögerte Patientenübergabe
+16 = Gewalt gegen Einsatzkräfte
+17 = Wahl der Zielklinik durch Dritte (z.B. HA, Klinikarzt,...)
+18 = Wahl der Zielklinik verursacht durch Patientenwunsch
+19 = Einsatzabbruch (dieses Einsatzes) wegen Folgeeinsatz
+20 = dieser Einsatz ist ein Folgeeinsatz 98 = Sonstige";DM;;;
+PreEmergencyStatus;"Zustand vor Eintritt des Notfalls 01 = ohne Vorerkrankungen (VE)
+02 = VE ohne nennenswerte Einschränkung des tgl. Lebens 03 = VE mit nennenswerter Einschränkung des tgl. Lebens 04 = normales tgl. Leben unmöglich
+05 = Pat. wird in den nächsten 24 Std. sterben, mit und ohne medizinische/-r Hilfe 99 = nicht bekannt";DM;;;
+Reanimationssituation;"Lag eine Reanimationssituation vor / wurde von der Rettungsmittelbesatzung eine Reanimation begonnen? 00 = keine Reanimationssituation (kein Tod/kein Kreislaufstillstand)
+01 = Reanimation durchgeführt durch dokumentierendes Rettungsmittel
+02 = Reanimation durchgeführt und aufgrund nachträglicher Erkenntnis über fehlendes Therapieziel eingestellt
+03 = Reanimation durchgeführt und aufgrund nachträglicher Erkenntnis über mutmaßlichen Patientenwillen eingestellt 04 = Reanimation durch Andere durchgeführt mit fortbestehendem ROSC bei eigenem Eintreffen
+05 = Reanimation nicht durchgeführt, weil sichere Todeszeichen
+06 = Reanimation nicht durchgeführt, aufgrund mutmaßlichen Patientenwillens (z.B. DNR-Order) 07 = Reanimation nicht durchgeführt, weil aussichtslose Grunderkrankung bekannt
+08 = Reanimation nicht durchgeführt, wegen aussichtsloser sonstiger Faktoren (z.B. Zeit überschritten)";DM;;;
+Reanimationstechnik;"Reanimationstechnik
+-1 = keine
+01 = Einsatz eines public access AED 02 = Einsatz eines feedback-Systems
+03 = Mechanisches Thoraxkompressionsgerät 04 = extrakorporale CPR (eCPR)";DM;;;
+URKRSTST;"Vermutete Ursache des Kreislaufstillstandes 01 = kardial
+02 = Trauma
+03 = Ertrinken
+04 = Hypoxie
+05 = Intoxikation
+06 = ICB/SAB
+07 = SIDS
+08 = Verbluten
+09 = Stroke
+10 = metabolisch
+11 = Sepsis
+12 = Anaphylaxie
+13 = Stromschlag
+97 = sonstiges nicht medizinisch
+98 = sonstiges medizinisch
+99 = nicht bekannt";DM;;;
+SPORT;"Zusammenhang mit sportlicher Aktivität:
+01 = Ja
+02 = Nein";DM;;;
+ZCKB;"Kollaps beobachtet durch
+-1 = nicht beobachtet 01 = Ersthelfende
+02 = aktivierte Ersthelfende (z.B. App-Ersthelfende) 03 = First Responder
+04 = KTW-Besatzung
+05 = RTW-Besatzung
+06 = NA-Rettungsmittel
+98 = Sonstige
+99 = nicht bekannt";DM;;;
+ZCHDM;"Beginn der Herzdruckmassage durch
+-1 = keine Herzdruckmassage durchgeführt 01 = Ersthelfende
+02 = aktivierte Ersthelfende (z.B. App-Ersthelfende) 03 = First Responder
+04 = KTW-Besatzung
+05 = RTW-Besatzung
+06 = NA-Rettungsmittel
+98 = Sonstige
+99 = nicht bekannt";DM;;;
+ZCDEFI;"Erste Defibrillation durch
+-1 = keine Defibrillation durchgeführt 01 = Ersthelfende
+02 = aktivierte Ersthelfende (z.B. App-Ersthelfende) 03 = First Responder
+04 = KTW-Besatzung
+05 = RTW-Besatzung
+06 = NA-Rettungsmittel
+98 = Sonstige
+99 = nicht bekannt";DM;;;
+ROSC;"Erreichen eines Spontankreislaufs (ROSC) 01 = niemals ROSC
+02 = jemals ROSC";DM;;;
+KHAUF;"Patientenzustand bei Krankenhausaufnahme
+01 = keine Krankenhausaufnahme, Tod an der Einsatzstelle 02 = Krankenhausaufnahme mit ROSC
+03 = Krankenhausaufnahme unter laufender Reanimation";DM;;;
+FehleinsatzGrund;"Fehleinsatz
+-1 = kein Fehleinsatz 01 = kein Patient
+02 = Pat. bereits abtransportiert 03 = abbestellt
+04 = böswillige Alarmierung
+05 = Einsatzabbruch technisch 06 = Einsatzabbruch Wetter 99 = Einsatzabbruch Sonstige";M;;;
+Versorgungssituation;"Versorgungssituation
+-1 = nicht bekannt 01 = unabhängig
+02 = Pflege zuhause
+03 = Pflege in Institution";M;;;
+AntikoagulanzienVorEreignis;"Antikoagulanzien vor dem Notfallereignis
+-1 = nicht bekannt
+01 = TZ-Aggregationshemmer 02 = Vit.K Antagonist
+03 = Heparin(oide)
+04 = DOAK Thrombinhemmer 05 = DOAK Xa-Hemmer
+99 = Sonstige bzw. unklar welche";M;;;
+Ersthelfermassnahmen;"Ersthelfermaßnahmen
+-1 = nicht bekannt 01 = suffizient
+02 = insuffizient
+03 = Keine";M;;;
+VitalProblem;"Vitale Probleme nach ABCDE
+-1 = nicht erfasst 01 = A
+02 = B
+03 = C
+04 = D
+05 = E";M;;;
+GCSAugenOeffnen1;"Augen öffnen
+-1 = nicht untersucht 00 = nicht vorhanden 01 = auf Druck
+02 = auf Geräusch 03 = Spontan
+99 = nicht beurteilbar";M;;;
+GCSVerbaleReaktion1;"Beste verbale Reaktion
+-1 = nicht untersucht 00 = keine
+01 = Laute
+02 = Wörter
+03 = Koversationsfähig  verwirrt 04 = Koversationsfähig orientiert 99 = nicht beurteilbar";M;;;
+GCSMotorischArmRechts1;"Beste motorische Reaktion
+-1 = nicht untersucht 00 = keine
+01 = Streckt
+02 = Beugt abnormal 03 = Beugt normal 04 = lokalisiert
+05 = folgt Aufforderung
+99 = nicht beurteilbar";M;;;
+GCSMotorischArmLinks1;"Beste motorische Reaktion
+-1 = nicht untersucht 00 = keine
+01 = Streckt
+02 = Beugt abnormal 03 = Beugt normal 04 = lokalisiert
+05 = folgt Aufforderung
+99 = nicht beurteilbar";M;;;
+GCSMotorischBeinRechts1;"Beste motorische Reaktion
+-1 = nicht untersucht 00 = keine
+01 = Streckt
+02 = Beugt abnormal 03 = Beugt normal 04 = lokalisiert
+05 = folgt Aufforderung
+99 = nicht beurteilbar";M;;;
+GCSMotorischBeinLinks1;"Beste motorische Reaktion
+-1 = nicht untersucht 00 = keine
+01 = Streckt
+02 = Beugt abnormal 03 = Beugt normal 04 = lokalisiert
+05 = folgt Aufforderung
+99 = nicht beurteilbar";M;;;
+ExtremitaetenbewegungArmRechts1;"Extremitätenbewegung
+-1 = nicht untersucht 00 = keine Bewegung 01 = kein Anheben
+02 = einseitiges Absinken
+99 = nicht beurteilbar";M;;;
+ExtremitaetenbewegungArmLinks1;"Extremitätenbewegung
+-1 = nicht untersucht 00 = keine Bewegung 01 = kein Anheben
+02 = einseitiges Absinken
+99 = nicht beurteilbar";M;;;
+ExtremitaetenbewegungBeinRechts1;"Extremitätenbewegung
+-1 = nicht untersucht 00 = keine Bewegung 01 = kein Anheben
+02 = einseitiges Absinken
+99 = nicht beurteilbar";M;;;
+ExtremitaetenbewegungBeinLinks1;"Extremitätenbewegung
+-1 = nicht untersucht 00 = keine Bewegung 01 = kein Anheben
+02 = einseitiges Absinken
+99 = nicht beurteilbar";M;;;
+PupillenweiteRechts1;"Pupillenweite rechts
+-1 = nicht untersucht 00 = keine
+01 = eng
+02 = mittel
+03 = weit
+04 = entrundet
+99 = nicht beurteilbar";M;;;
+PupillenweiteLinks1;"Pupillenweite links
+-1 = nicht untersucht 00 = keine
+01 = eng
+02 = mittel
+03 = weit
+04 = entrundet
+99 = nicht beurteilbar";M;;;
+LichtreaktionRechts1;"Lichtreaktion rechts
+-1 = nicht untersucht 00 = keine
+01 = träge
+02 = prompt
+99 = nicht beurteilbar";M;;;
+LichtreaktionLinks1;"Lichtreaktion links
+-1 = nicht untersucht 00 = keine
+01 = träge
+02 = prompt
+99 = nicht beurteilbar";M;;;
+DiastolischerBlutdruck1;"Diastolischer Blutdruck Messwert in mmHg Wertebereich = 0 - 250
+-1 = nicht gemessen
+999 = nicht messbar";M;;;
+qSOFA;"qSOFA-Score
+Wertebereich = 00 bis 03
+99 = nicht errechenbar";M;;;
+NEWS2Score;"NEWS2-Score
+Wertebereich = 00 bis 20
+99 = nicht errechenbar";M;;;
+Penetrierend;"Penetrierende Verletzung
+-1 = nicht untersucht 00 = keine
+01 = Kopf, Gesicht, Hals 02 = Thorax
+03 = Abdomen
+99 = nicht beurteilbar";M;;;
+Instabil;"Instabile Verletzung
+-1 = nicht untersucht 00 = keine
+01 = Thorax
+02 = Becken
+99 = nicht beurteilbar";M;;;
+SensomotorDefizit;"Sensomotorisches Defizit
+-1 = nicht untersucht 00 = keine
+01 = HWS
+02 = BWS, LWS
+99 = nicht beurteilbar";M;;;
+Amputation;"Amputation
+-1 = nicht untersucht 00 = keine
+01 = Arm
+02 = Bein
+99 = nicht beurteilbar";M;;;
+Unfallhergang2;"Unfallart
+01 = Fraktur von > 2 gr. Röhrenknochen 02 = Verätzung
+03 = Einklemmung
+04 = Inhalationstrauma
+05 = Elektrounfall
+06 = (Beinahe-)Ertrinken
+07 = Tauchunfall
+08 = Hochrasanztrauma";M;;;
+Airway2;"Airway Maßnahmen2
+-1 = keine Maßnahmen durchgeführt
+01 = mechanisches Freimachen/Freihalten der Atemwege 02 = Absaugen
+03 = Präoxygenieren
+04 = Wendl-Tubus
+05 = Guedel-Tubus
+06 = Larynxmaske
+07 = Larynxtubus
+08 = Endotracheale Intubation oral 09 = Endotracheale Intubation nasal 98 = Sonstige";M;;;
+CirculationZugang2;"Circulation Zugang2
+-1 = keine Maßnahmen durchgeführt 01 = PVK vorhanden
+02 = ZVK vorhanden 03 = IO vorhanden
+04 = Transnasal-Applikator";M;;;
+ZugangArt;"Zugang Art 01 = PVK
+02 = ZVK
+03 = intraossär
+04 = arteriell
+98 = Sonstige";M;;;
+ZugangOrt;"Zugang Ort
+01 = Handrücken
+02 = Unterarm
+03 = Ellenbeuge
+04 = Oberarm
+05 = Hals
+06 = Kopf
+07 = Bein
+08 = Fuss
+09= V. basilica/cephalica
+10 = V. subclavia
+11 = V. jugularis int.
+12 = V. jugularis ext.
+13 = V. femoralis
+14 = Tibia proximal
+15 = Tibia distal
+16 = Humerus proximal
+17 = Sternum
+18 = A. radialis
+19 = A. femoralis 98 = Sonstige";M;;;
+ZugangSeite;"Zugang Seite 01 = links
+02 = rechts
+03 = keine Seite 97 = unbekannt";M;;;
+ZugangGroesse;"Zugang Größe 01 = 24G
+02 = 22G
+03 = 20G
+04 = 18G
+05 = 18G kurz 06 = 17G
+07 = 16G
+08 = 14G
+09= 15mm
+10 = 25mm
+11 = 45mm
+98 = Sonstige";M;;;
+ZugangErschwert;"Zugang erschwert
+01 = Zugang erschwert 02 = mehr als 2 Versuche
+03 = unmöglich - Verfahrenswechsel";M;;;
+Beatmung;"Beatmung
+-1 = keine Maßnahmen durchgeführt 01 = Manuell
+02 = Maschinell kontrolliert
+03 = Maschinell assistiert 04 = NIV";M;;;
+DefiArtGeraet;"Defi Geräteart
+01 = Defibrillation
+02 = Kardioversion
+03 = Defi
+04 = AED
+05 = publicAED";M;;;
+DefiSchockEnergie;"Defischock Energie Wertebereich
+gültiger Wertebereich = 10 bis 500 Joule";M;;;
+MassnahmenWeitere;"weitere Massnahmen 01 = Impella
+02 = IABP
+03 = ECMO
+04 = Thoraxdrainage rechts 05 = Thoraxdrainage links
+06 = Entlastungspunktion rechts 07 = Entlastungspunktion links 08 = Thorakotomie
+09 = Thoraxverschlusspflaster
+10 = Magensonde
+11 = Blasenkatheter
+12 = besondere Hygienemaßnahmen";M;;;
+Lysetherapie;"Ersthelfermaßnahmen
+-1 = keine Lyse
+01 = Lyse vor Kreislaufstillstand
+02 = Lyse während Kreislaufstillstand 03 = Lyse nach ROSC
+99 = Lysezeitpunkt nicht bekannt";M;;;
+NeurologieVerlauf;"Neurologie Verlauf
+-1 = nicht untersucht 01 = unverändert
+02 = neu erhoben";M;;;
+AnmeldungWo;"Anmeldung wo
+-1 = keine Anmeldung 01 = Stroke Unit
+02 = Herzkatheter
+03 = Traumazentrum
+04 = Schockraum
+99 = Sonstige benötigte Ressource";M;;;
+ReanimationJa;"Reanimation Ja
+01 = Reanimation erfolgt 02 = ROSC im Verlauf 03 = niemals ROSC
+04 = erfolglos";M;;;
+ReanimationNein;"Reanimation Nein
+01 = Patientenverfügung 02 = zu spät
+03 = aussichtslose Grunderkrankung
+04 = Reanimation im Vorfeld erfolgreich 05 = Sonstige";M;;;
+TodInfo;"Tod Info
+01 = vor Ort
+02 = auf dem Transport
+03 = Zeitpunkt bestimmbar
+04 = Zeitpunkt nicht bestimmbar";M;;;
+TodArt;"Todesart
+01 = natürlich
+02 = unklar
+03 = nicht natürlich";M;;;
+KollapsBeobachtet;"der Kollaps wurde beobachtet 01 = Ja
+02 = Nein";M;;;
+AnkunftVorRettungsdienst;"die Ankunft des notarztbesetzten Rettungsmittels erfolgte vor dem RTW 01 = Ja
+02 = Nein";M;;;
+PatPseudonym;"der Patientenname ist unbekannt und Pseudonym eingesetzt 01 = Ja
+02 = Nein";M;;;
+GebDatGeschaetzt;"das Geburtsdatum wurde geschätzt 01 = Ja
+02 = Nein";M;;;
+BMIunter40;"der BMI liegt unter 40 01 = Ja
+02 = Nein";M;;;
+Dialysepflichtigkeit;"der Patient ist dialysepflichtig 01 = Ja
+02 = Nein";M;;;
+Infektiositaet;"der Patient ist infektiös 01 = Ja
+02 = Nein";M;;;
+SauerstoffsaettigungRaumluft1;"die Sauerstoffsättigung wurde bei Raumluft gemessen 01 = Ja
+02 = Nein";M;;;
+HerzfrequenzRhythmisch1;"die Herzaktion ist rhythmisch 01 = Ja
+02 = Nein";M;;;
+Heimbeatmung;"Heimbeatmung ist verfügbar oder wurde genutzt 01 = Ja
+02 = Nein";M;;;
+Heimsauerstoff;"Heimsauerstoff ist verfügbar oder wurde genutzt 01 = Ja
+02 = Nein";M;;;
+UebergVerzoegert;"die Patientenübergabe wurde verzögert 01 = Ja
+02 = Nein";M;;;
+ReanimationFeedback;"ein Feedbacksystem wurde eingesetzt 01 = Ja
+02 = Nein";M;;;
+ReanimationTelefon;"eine Telefonreanimation wurde durchgeführt 01 = Ja
+02 = Nein";M;;;
+;;;;;
