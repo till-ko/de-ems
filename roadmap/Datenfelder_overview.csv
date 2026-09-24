@@ -7,16 +7,16 @@ Strukturdaten;Protokolltyp;Ja;Strukturdaten;Dokument-Header;DM;E;Werteliste sieh
 ï RD f¸r Rettungsdienstdokumentation
 Sollte in Stammdaten fest dem Rettungsmittel/Personal zugewiesen werden.
 Beim Wechsel von Dokumentations-Pads zwischen Fahrzeugen muss unbedingt darauf geachtet werden, dass das korrekte Rettungsmittel mit der ihm zugeordneten Projekt-ID und der richtige Protokolltyp ausgew‰hlt sind.";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen z.B. ProjektID, Rettungsmitteltyp, Einsatzart, Qualifikation
-Personal.";;;
+Personal.";;x;"Composition.type mit ValueSet Mind-Protokolltyp-VS (required; NA=na, RD=rd). Abweichung: Composition.title hardcodiert 'MIND 7.1 Rettungsdienstdokumentation', keine NA/RD-Differenzierung."
 Strukturdaten;Standortkennung;Nein;Strukturdaten;EinsatztechnischeDaten;DM;E;"Amtlicher Gemeindeschl¸ssel des RM-Standortes
 BL-LK (Bundesland-Landkreis-Rettungswache; Bundesland und Landkreis jeweils nach Vorgaben des Gemeindeschl¸ssels)
-Werteliste siehe Tabellenblatt Codes";NA + RD;Amtlicher Gemeindeschl¸ssel des Rettungsmittel-Standorts.;;-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Amtlicher Gemeindeschl¸ssel des Rettungsmittel-Standorts.;;-2;x;"Encounter.identifier[standortkennung] mit NamingSystem mind-standortkennung; Invariante mind-standortkennung-format ^[0-9]{8}$. MIND-Default -2 nicht abbildbar."
 Strukturdaten;ProjektID;Ja;Strukturdaten;;M;E;ProjektID;NA + RD;"Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird. Standortverantwortliche sind aufgefordert, sich dort um eine ID-Zuteilung zu bem¸hen.
-Einmalig in Stammdaten einzupflegen.";Pr¸fung auf Plausibilit‰t, z.B. Leitstelle, Einsatzart, Rettungsmitteltyp, Protokolltyp.;;;
+Einmalig in Stammdaten einzupflegen.";Pr¸fung auf Plausibilit‰t, z.B. Leitstelle, Einsatzart, Rettungsmitteltyp, Protokolltyp.;;x;"Encounter.identifier[projektid] mit NamingSystem mind-projektid; value 1..1."
 Strukturdaten;Leitstelle;Ja;Strukturdaten;PatStammdaten;DM;E;Landkreiskennung der Heimatleitstelle  (z.B. S f¸r Stuttgart, OG f¸r Offenburg);NA + RD;"F¸r einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden.
-Einmalig in Stammdaten einzupflegen.";Pr¸fung auf Plausibilit‰t, z.B. ProjektID und Leitstelle.;;;
+Einmalig in Stammdaten einzupflegen.";Pr¸fung auf Plausibilit‰t, z.B. ProjektID und Leitstelle.;;x;"Encounter.identifier[leitstelle] mit NamingSystem mind-leitstelle; value 1..1."
 Strukturdaten;Softwarekennung;"siehe Hinweise/ Plausibilit‰ten/
-Abh‰ngigkeiten";Strukturdaten;;M;E;Kennung des Dokumentationssystems des Rettungsmittels und der Software-Version;NA+RD;Identifikation des Dokumentationssystems und der Software-Version, mit der die Einsatzdaten erzeugt wurden.;Pflichtfeld in BW;-2;;
+Abh‰ngigkeiten";Strukturdaten;;M;E;Kennung des Dokumentationssystems des Rettungsmittels und der Software-Version;NA+RD;Identifikation des Dokumentationssystems und der Software-Version, mit der die Einsatzdaten erzeugt wurden.;Pflichtfeld in BW;-2;x;CompositionDeEmsMindR4.extension[softwarekennung] (MindSoftwarekennung, valueString).
 Strukturdaten;EinsatzNr;Nein;;PatStammdaten;D;E;"Text, je nach Zuordnung des Rettungsmittels zu Leitstelle/Standort bzw. nach Projekt festzulegen
 Zeichenlimit: 50";;Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes.;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 Strukturdaten;PatNr;Nein;;PatStammdaten;D;E;"Text, je nach Zuordnung des Rettungsmittels zu
@@ -27,7 +27,7 @@ RettungstechnischeDaten;Primaerschluessel;Ja;RettungstechnischeDaten;;M;E;"einde
 Zeichenlimit 20";NA + RD;"Innerhalb eines Leitstellenbereiches darf in einem Kalenderjahr kein Prim‰rschl¸ssel mehrfach vergeben werden.
 Es ist unbedingt darauf zu achten, dass im NA-Protokoll die NA-Auftragsnummer und im RD-Protokoll die RD-Auftragsnummer verwendet wird!
 Bei mehreren Patienten in einem Einsatz, soll von der ""Heimatleitstelle"" f¸r jeden Patienten eine separate Auftragsnummer zugeteilt werden. Diese ist ggf. anzufordern. Dort wo dies leitstellen-/abrechnungsseitig nicht mˆglich ist, soll der Prim‰rschl¸ssel im jeweiligen Datensatz durch ein eindeutiges Suffix gekennzeichnet werden (bspw.
-Auftragsnummer der Leitstelle erg‰nzt mit -01 bis -99 oder mit -A bis -Z)";;;;
+Auftragsnummer der Leitstelle erg‰nzt mit -01 bis -99 oder mit -A bis -Z)";;;x;"Encounter.identifier[primaerschluessel] mit NamingSystem mind-primaerschluessel; Invariante mind-primaerschluessel-laenge (max. 20 Zeichen)."
 RettungstechnischeDaten;EinsatzArt;Ja;RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Art des RD-Einsatzes/Notarzteinsatzes
 F¸r die Auswahl des zutreffenden Codes ist der Status zum Zeitpunkt der Alarmierung des dokumentierenden Rettungsmittels durch die Leitstelle maﬂgeblich.
 (d.h. in einem NA-Protokoll d¸rfen unter EinsatzArt nur Auspr‰gungen mit dem Inhalt ""mit (physisch anwesendem) NA"" dokumentiert werden, auch wenn der NA nachgefordert wurde und die prim‰re Alarmierung des RTW ohne NA erfolgte. Im RD-Protokoll d¸rfen - sofern bei Alarmierung des RTW (noch) keine Alarmierung eines NA/TNA erfolgt ist - unter EinsatzArt nur Auspr‰gungen mit dem Inhalt ""ohne NA"" dokumentiert werden, auch wenn es sp‰ter zu einer NA-Nachforderung kam.)
@@ -35,18 +35,18 @@ Einsatzarten ""mit (physisch anwesendem) NA"" (01, 03, 05, 07) bzw. ""mit...TNA"
 Dienstfahrt und Pause sind organisatorische Einsatzarten, die in keinem Bezug zu einem beabsichtigten oder tats‰chlichen Patientenkontakt stehen (beispielsweise Fahrt in die Kfz-Werkstatt). Ein Materialtransport, f¸r den ein Patientenbezug hergestellt werden kann (z.B. Transport eines Inkubators durch einen RTW zu einem anderen Einsatz) ist nicht mit Dienstfahrt zu kodieren.
 Wenn ein RTW von der Leitstelle einen Krankentransportauftrag erhalten hat, ist als EinsatzArt Krankentransport auszuw‰hlen.
 Codes 09-12 nicht im DIVI Protokoll abgebildet";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
-Wenn Protokolltyp NA, dann ist EinsatzArt GLEICH  (04 ODER 08 ODER  10) unzul‰ssig.";;;
+Wenn Protokolltyp NA, dann ist EinsatzArt GLEICH  (04 ODER 08 ODER  10) unzul‰ssig.";;x;"Encounter.type mit ValueSet Mind-Einsatzart-VS (required). Mind-Einsatzart-NA-VS/RD-VS definiert, aber nicht gebunden; NA-/RD-Plausibilit‰t nicht erzwungen."
 RettungstechnischeDaten;Gemeindeschluessel;Nein;RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;"Amtlicher Gemeindeschl¸ssel des Einsatzortes
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Quelle ist das Statistische Bundesamt. Der Amtliche Gemeindeschl¸ssel (AGS) ist ein 8-stelliger Schl¸ssel zur eindeutigen Identifizierung einer Gemeinde mit den Bestandteilen: Bundesland (2 Stellen), Regierungsbezirk (1 Stelle),
-Kreis (2 Stellen) und Gemeinde (3 Stellen)";;-2;;
+Kreis (2 Stellen) und Gemeinde (3 Stellen)";;-2;x;LocationDeEmsMindR4: address.city.extension[ags] mit Invariante mind-ags-format ^[0-9]{8}$. Sonderwerte -1/99999999 nicht darstellbar.
 RettungstechnischeDaten;Postleitzahl;Nein;RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;"Postleitzahl des Einsatzortes
-Werteliste siehe Tabellenblatt Codes";NA + RD;PLZ des Einsatzortes - diese ist bei Eins‰tzen am Wohnort des Patienten zumeist der Versichertenkarte zu entnehmen.;;-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;PLZ des Einsatzortes - diese ist bei Eins‰tzen am Wohnort des Patienten zumeist der Versichertenkarte zu entnehmen.;;-2;x;Location.address.postalCode. MIND-Sonderwerte (-1, 99999999, 99999998) nicht modellierbar.
 RettungstechnischeDaten;GeoEinsatzort;Nein;RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;"Geokoordinaten des Einsatzortes
-GPS Geo-Koordinaten im Dezimalformat [WGS 84]";NA + RD;Die Koordinaten werden in der Reihenfolge Breitengrad, L‰ngengrad mit Komma getrennt angegeben. Format: 99.999999,99.999999;;-2;;
+GPS Geo-Koordinaten im Dezimalformat [WGS 84]";NA + RD;Die Koordinaten werden in der Reihenfolge Breitengrad, L‰ngengrad mit Komma getrennt angegeben. Format: 99.999999,99.999999;;-2;x;LocationDeEmsMindR4: position.latitude/position.longitude (GPS-Koordinaten des Einsatzortes).
 RettungstechnischeDaten;EinsatzortTyp;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Beschreibung des Einsatzortes.
 Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze";"Pflicht wenn:
-EinsatzArt NICHT  (11 ODER  12)";-2;;
+EinsatzArt NICHT  (11 ODER  12)";-2;x;Location.extension[einsatzorttyp] (MindEinsatzortTyp) mit ValueSet Mind-Einsatzort-Typ-VS.
 RettungstechnischeDaten;RDTransport;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";RettungstechnischeDaten;Einsatzverlauf;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Welches Rettungsmittel hat den ¸berwiegenden Anteil des Transports des Patienten (hinsichtlich der Transportstrecke)
 durchgef¸hrt?
@@ -56,14 +56,14 @@ Bei gemeinsamem Einsatz von RTW und NA identische Dokumentation in RD- und NA-Pr
 ï Bei Auswahl 02 wird KeinTranspOhnePat zum Pflichtfeld
 Pflicht wenn:
 EinsatzArt NICHT  (11 ODER  12)
-Wenn EinsatzArt GLEICH  (11 ODER  12), sind s‰mtliche Inhalte in RDTransport auﬂer -2 unzul‰ssig.";-2;;
+Wenn EinsatzArt GLEICH  (11 ODER  12), sind s‰mtliche Inhalte in RDTransport auﬂer -2 unzul‰ssig.";-2;x;ObservationDeEmsMindRdTransport (mind-observationstyp-cs#rd-transport), ValueSet MindRdTransportVS.
 RettungstechnischeDaten;AerztlBegleit;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;RettungstechnischeDaten;Einsatzverlauf;DM;M;"ƒrztliche Begleitung
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Wurde der Transport ‰rztlich begleitet? Wenn ja, von wem?
 Pflicht f¸r NA- und RD-Protokolle bei Eins‰tzen mit durchgef¸hrtem Transport
 Bei gemeinsamem Einsatz von RTW und NA identische Dokumentation in RD- und NA-Protokoll";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
 Pflicht wenn:
 RDTransport GLEICH  (03 ODER  04 ODER  05 ODER  06 ODER 07 ODER  08 ODER  09 ODER  98)
-Kombinationen mit 00 sind unzul‰ssig";-2;;
+Kombinationen mit 00 sind unzul‰ssig";-2;x;ObservationDeEmsMindAerztlicheBegleitung (#aerztliche-begleitung), ValueSet MindAerztlicheBegleitungVS.
 RettungstechnischeDaten;NotarztNachgefordert;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;"Physisch anwesender Notarzt wurde nachgefordert
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Betrifft nur die Nachforderung eines physisch anwesenden Notarztes (nicht eines Telenotarztes).
@@ -74,14 +74,14 @@ wenn bei Protokolltyp RD eine Einsatzart ausgew‰hlt wurde, die eine prim‰re Alar
 Pflicht wenn:
 EinsatzArt NICHT  (11 ODER  12)
 Wenn Protokolltyp GLEICH  RD UND EinsatzArt GLEICH  (01 ODER  03 ODER  05 ODER  07), dann ist
-NotarztNachgefordert = 01 unzul‰ssig.";-2;;
+NotarztNachgefordert = 01 unzul‰ssig.";-2;x;ObservationDeEmsMindNotarztNachgefordert (#notarzt-nachgefordert), valueBoolean. 'unbekannt' wird wie 'nein' (false) ¸bermittelt.
 RettungstechnischeDaten;TNANachgefordert;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;Tele-Notarzt wurde nachgefordert Werteliste siehe Tabellenblatt Codes;NA + RD;"Betrifft nur die Nachforderung eines Telenotarztes (nicht eines physisch anwesenden Notarztes). NA/RD: Haben Sie einen TNA nachgefordert?
 Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze
 wenn bei Protokolltyp RD eine Einsatzart ausgew‰hlt wurde, die eine prim‰re Alarmierung eines TNA zum Ausdruck bringt (02, 03, 06, oder 07)  ist die Dokumentation TNANachgefordert=ja unzul‰ssig.";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
 Pflicht wenn:
 EinsatzArt NICHT  (11 ODER  12)
 Wenn Protokolltyp GLEICH  RD UND EinsatzArt GLEICH  (02 ODER  03 ODER  06 ODER  07), dann ist
-TNANachgefordert = 01 unzul‰ssig.";-2;;
+TNANachgefordert = 01 unzul‰ssig.";-2;x;"ObservationDeEmsMindTnaNachgefordert (#tna-nachgefordert), valueBoolean. 'unbekannt' wie 'nein'; Plausibilit‰t (nicht bei TNA-Alarmierung via Einsatzart) nicht erzwungen."
 RettungstechnischeDaten;KeinTranspMitPat;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";RettungstechnischeDaten;PatientenTransport;DM;E;"Grund f¸r Einsatz ohne Transport trotz Patientenkontakt
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Pflicht f¸r Eins‰tze ohne Transport trotz Patientenkontakt
@@ -95,39 +95,39 @@ Wenn Reanimationsmaﬂnahmen durch andere erfolgten und bei Eintreffen des eigenen
 Die Dokumentation ¸ber das Vorliegen eines Einsatzes ohne Transport trotz stattgehabtem Patientenkontakt erfolgt in Kombination mit dem Feld RDTransport (01 = kein Patiententransport, trotz Patientenkontakt).";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
 Pflicht wenn:
 RDTransport GLEICH  01
-Wenn RDTransport NICHT  01, sind s‰mtliche Inhalte in KeinTranspMitPat auﬂer -2 unzul‰ssig.";-2;;
+Wenn RDTransport NICHT  01, sind s‰mtliche Inhalte in KeinTranspMitPat auﬂer -2 unzul‰ssig.";-2;x;ObservationDeEmsMindKeinTransportMitPatient (#kein-transport-mit-patient), ValueSet MindKeinTransportMitPatientVS.
 RettungstechnischeDaten;KeinTranspOhnePat;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;RettungstechnischeDaten;Einsatzverlauf EinsatztechnischeDaten;DM;E;"Grund f¸r Einsatz ohne Transport, da kein Patientenkontakt
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Pflicht f¸r Eins‰tze ohne Transport wegen fehlendem Patientenkontakt
 nur f¸r Eins‰tze ohne Patientenkontakt; nicht f¸r Eins‰tze mit Patientenkontakt ohne Patiententransport (diese m¸ssen unter KeinTranspMitPat dokumentiert werden)
 Die Dokumentation ¸ber das Vorliegen eines Einsatzes ohne Transport aufgrund fehlenden Patientenkontakts erfolgt in Kombination mit dem Feld RDTransport (02 = kein Patiententransport, da kein Patientenkontakt).";"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
 Pflicht wenn:
 RDTransport GLEICH  02
-Wenn RDTransport NICHT  02, sind s‰mtliche Inhalte in KeinTranspOhnePat auﬂer -2 unzul‰ssig.";-2;;
+Wenn RDTransport NICHT  02, sind s‰mtliche Inhalte in KeinTranspOhnePat auﬂer -2 unzul‰ssig.";-2;x;ObservationDeEmsMindKeinTransportOhnePatient (#kein-transport-ohne-patient), ValueSet MindKeinTransportOhnePatientVS.
 RettungstechnischeDaten;DokRM;Ja;RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;"Rettungsmitteltyp des dokumentierenden
 Rettungsmittels
 Werteliste siehe Tabellenblatt Codes";NA + RD;Codierung des Rettungsmittels, welches den Einsatz abwickelt und dokumentiert.;"Wenn Protokolltyp NA dann sind DokRM  GLEICH  (02 ODER  03 ODER 10 ODER  11 ODER  12 ODER  15 ODER 17
 ODER 18 ODER 20) unzul‰ssig
 Wenn Protokolltyp RD dann sind DokRM  GLEICH  (01 ODER 04 ODER  05 ODER  06 ODER  07 ODER 08 ODER  09
-ODER 13 ODER  14 ODER  16 ODER 19) unzul‰ssig.";;;
+ODER 13 ODER  14 ODER  16 ODER 19) unzul‰ssig.";;x;ObservationDeEmsMindDokumentierendesRettungsmittel (#dokumentierendes-rettungsmittel), ValueSet MindDokumentierendesRettungsmittelVS.
 RettungstechnischeDaten;BeteilRM;Nein;RettungstechnischeDaten;EinsatztechnischeDaten;DM;M;"Rettungsmitteltyp/en des/der beteiligten Rettungsmittel/s
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Codierung der am Einsatz beteiligten Rettungsmittel
-Wird in der Regel durch die Leitstelle dokumentiert.";;-2;;
+Wird in der Regel durch die Leitstelle dokumentiert.";;-2;x;ObservationDeEmsMindBeteiligteRettungsmittel (#beteiligte-rettungsmittel), ValueSet MindBeteiligtesRettungsmittelVS.
 RettungstechnischeDaten;AerztlQualifikation;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";RettungstechnischeDaten;EinsatztechnischeDaten;DM;M;"Fachrichtung/Qualifikation des Notarztes/Transportarztes
 Werteliste siehe Tabellenblatt Codes";NA;"Pflicht f¸r NA-Protokolle, auﬂer f¸r Dienstfahrten oder Pauseneins‰tze
 Es ist immer die Fachrichtung/Qualifikation des dokumentierenden Arztes einzutragen";"Pflicht wenn:
 Protokolltyp GLEICH  NA
-UND EinsatzArt NICHT  (11 ODER  12)";-2;;
+UND EinsatzArt NICHT  (11 ODER  12)";-2;x;ObservationDeEmsMindAerztlicheQualifikation (#aerztliche-qualifikation), ValueSet MindAerztlicheQualifikationVS.
 RettungstechnischeDaten;StatusPersonal;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";RettungstechnischeDaten;EinsatztechnischeDaten;DM;E;"Status des Personals
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Qualifikation des hˆchstqualifizierten Mitarbeiters auf dem Rettungsmittel. Beim notarztbesetzten Rettungsmittel die des
 Notarztes, beim nicht NA-besetzten Rettungsmittel die des Rettungsdienstmitarbeitenden.
 Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze";"Pflicht wenn:
-EinsatzArt NICHT  (11 ODER  12)";-2;;
+EinsatzArt NICHT  (11 ODER  12)";-2;x;ObservationDeEmsMindPersonalstatus (#personalstatus), ValueSet MindPersonalstatusVS.
 RettungstechnischeDaten;EinsatzOrtName;Nein;;EinsatztechnischeDaten;D;E;Text, Zeichenlimit 50;;Bei Eins‰tzen in Ortschaften Ortsname, sonst Bezeichnung der Straﬂe (7.B. BAB98, B16) oder Name der Gemarkung (z.B. Chiemsee);F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 RettungstechnischeDaten;EinsatzStrasseName;Nein;;EinsatztechnischeDaten;D;E;Text, Zeichenlimit 100;;"Bei Eins‰tzen in Ortschaften Straﬂenname, sonst Wegekilometer der Straﬂe (z.B. Streckenkilometer 122) oder andere
 n‰here Bezeichnung (z.B. Ostufer)";F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
-RettungstechnischeDaten;KollapsBeobachtet;Nein;;EinsatztechnischeDaten;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;Ja, wenn der Moment des Kollapses / der Synkope / des akuten Ereignisses von Umstehnden beobachtet wurde. Nicht ausgef¸llt wird wie nein behandelt;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
+RettungstechnischeDaten;KollapsBeobachtet;Nein;;EinsatztechnischeDaten;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;Ja, wenn der Moment des Kollapses / der Synkope / des akuten Ereignisses von Umstehnden beobachtet wurde. Nicht ausgef¸llt wird wie nein behandelt;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;Nicht umgesetzt (Boolesches Feld). Das Begriffswerk 'Kollaps beobachtet durch' (mind-kollaps-beobachtet-durch-cs) existiert nur f¸r die ZCKB-Auspr‰gung.
 RettungstechnischeDaten;AnkunftVorRettungsdienst;Nein;;EinsatztechnischeDaten;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;"J/N, wenn Notarzt und Rettungsdienst zu getrennten Zeitpunkten am Einsatzort angekommen sind. Nicht ausgef¸llt wird gewertet,
 wie unbekannt gewertet.";F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 RettungstechnischeDaten;NotarztName;Nein;;EinsatztechnischeDaten;D;E;Text, Zeichenlimit 100;;Klartext Name des Notarztes, ggf. mit Vornamen und Titel;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
@@ -139,7 +139,7 @@ RettungstechnischeDaten;FehleinsatzGrund;Nein;;EinsatztechnischeDaten;D;E;Wertel
 RettungstechnischeDaten;Dokumentierend;Nein;;Bemerkungen;D;E;Text, Zeichenlimit 100;;"Vorname, Name + ggf. Titel und Funktion des Dokumentierenden/Dokumentationsverantwortlichen, ggf. auch siehe
 NotarztName oder siehe AssistenzName";F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 Kapitel: ZeitenEinsatzablauf;Kapitel: ZeitenEinsatzablauf;;;;;;;;;dieses Kapitel ist immer Pflicht;;;
-ZeitenEinsatzablauf;Einsatzdatum;Ja;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Einsatzdatum;NA + RD;Einsatzdatum bezieht sich auf den Zeitpunkt der Alarmierung.;;;;
+ZeitenEinsatzablauf;Einsatzdatum;Ja;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Einsatzdatum;NA + RD;Einsatzdatum bezieht sich auf den Zeitpunkt der Alarmierung.;;;x;‹ber Encounter.period.start abgebildet (Alarmzeitpunkt inkl. Uhrzeit).
 ZeitenEinsatzablauf;SymptombeginnVor24h;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Bestehen die Symptome l‰nger als 24 Stunden oder ist
 dies unbekannt?
@@ -157,7 +157,7 @@ UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05 ODER 06
 ODER  07 ODER  08 ODER  09 ODER  98)
 UND  EinsatzArt GLEICH  (02 ODER  04)
 UND  NotarztNachgefordert GLEICH  02
-UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)";-2;;
+UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)";-2;x;ObservationDeEmsMindSymptombeginnVor24h (#symptombeginn-vor-24h), valueBoolean. MIND 00 (unbekannt) via dataAbsentReason.
 ZeitenEinsatzablauf;Symptombeginn;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Ereigniszeitpunkt, Unfallzeitpunkt, Kollapszeitpunkt,
 Zeitpunkt Symptom-/Beschwerdebeginn";NA + RD;"Wenn der Symptombeginn bzw. Unfall-/Ereignis-/Kollapszeitpunkt (bekannt oder gesch‰tzt) innerhalb von 24 Stunden
@@ -166,32 +166,32 @@ SymptombeginnVor24h GLEICH  02
 UND EinsatzArt NICHT  (11 ODER  12)";"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindSymptombeginn (#symptombeginn), valueDateTime.
 ZeitenEinsatzablauf;SymptombeginnGesichert;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Ist der Symptombeginn gesichert oder gesch‰tzt?
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Gibt es belastbare Angaben zum Symptombeginn durch Patienten, Angehˆrige, Zeugen, etc.?
 Pflicht, wenn Symptombeginn innerhalb der letzten 24 Stunden.";"Pflicht wenn:
 SymptombeginnVor24h GLEICH  02
-UND EinsatzArt NICHT  (11 ODER  12)";-2;;
+UND EinsatzArt NICHT  (11 ODER  12)";-2;x;ObservationDeEmsMindSymptombeginnGesichert (#symptombeginn-gesichert). Boolesche Inversion: true = gesch‰tzt, false = gesichert.
 ZeitenEinsatzablauf;ZeitNotfallmeldung;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;M;E;"Zeitpunkt Eingang Notfallmeldung
 in LST";NA + RD;"Definition: Zeitpunkt des Anrufes (Aufschaltzeitpunkt aus Leitstellen-Datensatz)
 Wird in der Leitstelle dokumentiert.";;"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindZeitNotfallmeldung (#zeit-notfallmeldung), valueDateTime.
 ZeitenEinsatzablauf;ZeitAlarm;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Alarm/Auftragsvergabe;NA + RD;"Definition: Auslˆsung Alarm durch LST
 Wird in der Leitstelle dokumentiert.";;"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindZeitAlarm (#zeit-alarm), valueDateTime.
 ZeitenEinsatzablauf;ZeitAusruecken;Nein;ZeitenEinsatzablauf;;M;E;Zeitpunkt Abfahrt/Abflug Standort Status 3;NA + RD;Definition: Ausr¸cken des einsatzklaren Rettungsmittels (Besatzung komplett!) Wird in der Leitstelle dokumentiert.;;"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindZeitAusruecken (#zeit-ausruecken), valueDateTime.
 ZeitenEinsatzablauf;ZeitAnkunftEinsatzort;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Ankunft Einsatzort Status 4;NA + RD;Definition: Ankunft des dokumentierenden RM am Einsatzort. Wird in der Leitstelle dokumentiert.;;"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindZeitAnkunftEinsatzort (#zeit-ankunft-einsatzort), valueDateTime.
 ZeitenEinsatzablauf;ZeitAnkunftPatientPatientenkontakt;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Ankunft Patient;NA + RD;"Definition: Ankunft der Rettungsmittelbesatzung beim Patienten bzw. Beginn der ‹bernahme des Patienten bei Sekund‰reins‰tzen.
 Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um eine Hilfeleistung oder die Unterst¸tzung eines anderen RM handelt.
 Pflicht f¸r RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um einen Krankentransport oder um eine Hilfeleistung oder die Unterst¸tzung eines anderen RM handelt.";"Pflicht wenn:
@@ -207,19 +207,19 @@ UND NICHT  (EinsatzArt GLEICH  10
 ODER KeinTranspMitPat GLEICH  [05 ODER  08])";"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindZeitAnkunftPatient (#zeit-ankunft-patient), valueDateTime.
 ZeitenEinsatzablauf;ZeitTransportbeginn;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Zeitpunkt Transportbeginn
 Status 7";NA + RD;"Definition: Beginn des Patiententransportes.
 Wird in der Leitstelle dokumentiert.";;"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindZeitTransportbeginn (#zeit-transportbeginn), valueDateTime.
 ZeitenEinsatzablauf;ZeitEintreffenTransportziel;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Zeitpunkt Eintreffen Transportziel
 Status 8";NA + RD;"Definition: Fahrzeug trifft am Transportziel ein
 Wird in der Leitstelle dokumentiert.";;"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindZeitEintreffenTransportziel (#zeit-eintreffen-transportziel), valueDateTime.
 ZeitenEinsatzablauf;ZeitUebergabePatient;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;‹bergabe des Patienten an Weiterbehandler;NA + RD;"Definition: ‹bergabe an Personal der Zielklinik/Praxis oder ‹bergabe an anderes Rettungsmittel (‹bergang der
 Verantwortung f¸r den Patienten).
@@ -238,9 +238,9 @@ UND AerztlBegleit ENTHƒLT NICHT  (01 ODER 02 ODER 04
 ODER 05 ODER  98)";"1902-02-
 02T22:00
 :00.000+
-01:00";;
+01:00";x;ObservationDeEmsMindZeitUebergabePatient (#zeit-uebergabe-patient), valueDateTime.
 ZeitenEinsatzablauf;ZeitEinsatzende;Ja;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Einsatzende;NA + RD;"Definition: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenh‰ngenden Arbeiten wie z.B.
-Desinfektionst‰tigkeiten und Dokumentation).";;;;
+Desinfektionst‰tigkeiten und Dokumentation).";;;;"Nicht als eigenes Feld umgesetzt; nur im Beispiel ¸ber Encounter.period.end gesetzt."
 Kapitel: Patientendaten;Kapitel: Patientendaten;;;;;;;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich um eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.
 Pflicht f¸r RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, auﬂer wenn es sich beim dokumentierenden Rettungsmittel um einen Krankentransport, eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.";"Pflicht wenn:
 Protokolltyp GLEICH  NA
@@ -257,12 +257,12 @@ Patientendaten;Alter;Ja;Patientendaten;PatStammdaten;M;E;"Alter des Patienten
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Spezifische Dokumentation f¸r Kinder unter einem Monat (siehe Codes)
 Angabe in vollendeten Jahren und Lebensmonaten (Bezugspunkt ist die Eintreffzeit).
 Ab dem 29. Lebenstag gilt der erste Lebensmonat als vollendet. In diesem Fall ist der Wert 000:01 zu ¸bermitteln
-Wenn das Alter nicht bekannt ist, soll es gesch‰tzt werden. Auch in seltenen F‰llen, wenn die Sch‰tzung des Alters schwierig ist, soll trotzdem eine grobe Vermutung dokumentiert werden";"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist 222:00 unzul‰ssig.";222:00;;
+Wenn das Alter nicht bekannt ist, soll es gesch‰tzt werden. Auch in seltenen F‰llen, wenn die Sch‰tzung des Alters schwierig ist, soll trotzdem eine grobe Vermutung dokumentiert werden";"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist 222:00 unzul‰ssig.";222:00;x;"ObservationDeEmsMindAlter (#patientenalter) mit Komponenten alter-jahre/alter-monate (0..999 Jahre, 0..11 Monate; Mind-alter-jahre-/monate-bereich). Abweichung: jjj:mm-Kodierung und Max. 125:00 entfallen."
 Patientendaten;ValiditaetAlter;Ja;Patientendaten;PatStammdaten;M;E;"Ist das Alter gesichert oder gesch‰tzt?
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist -2 unzul‰ssig.";-2;x;"ObservationDeEmsMindAltersvaliditaet (#altersvaliditaet), valueBoolean; boolesche Inversion: true = gesch‰tzt, false = sicher bekannt."
 Patientendaten;Geschlecht;Ja;Patientendaten;PatStammdaten;DM;E;"Geschlecht des Patienten
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
-Patientendaten;PatName;Nein;;PatStammdaten;D;E;Text, Zeichenlimit 50;;Name des Patienten;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""Patientendaten"" Pflicht, dann ist -2 unzul‰ssig.";-2;x;"PatientDeEmsMindR4: Patient.gender 1..1 (MIND-Pflicht) mit Extension gender-amtlich-de; -1 -> unknown."
+Patientendaten;PatName;Nein;;PatStammdaten;D;E;Text, Zeichenlimit 50;;Name des Patienten;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;Bewusst nicht modelliert: PatientDeEmsMindR4 deaktiviert name/birthDate/address/identifier (Datenschutz, divi D).
 Patientendaten;PatPseudonym;Nein;;PatStammdaten;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;"Ja, wenn Patientenname nicht bekannt und ein Pseudonym (ggf. Z‰hlnummer bei MANV) gew‰hlt wurde.
 Keine Angabe wird wie Nein gewertet, sofern ein Name eingetragen ist";F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 Patientendaten;PatVorname;Nein;;PatStammdaten;D;E;Text, Zeichenlimit 50;;Vorname des Patienten;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
@@ -304,20 +304,20 @@ ODER 09 ODER  98)
 UND KeinTranspMitPat NICHT  (05 ODER 08)
 UND EinsatzArt NICHT  (05 ODER  07 ODER  10)";;;
 ErsteMesswerteUndBefunde;Bewusstsein1;Ja;ErsteMesswerteUndBefunde;ErsteBefundeNeuro;DM;E;"Bewusstseinslage
-Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die jeweils beste Auspr‰gung zu w‰hlen;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die jeweils beste Auspr‰gung zu w‰hlen;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-bewusstseinslage-cs / MindBewusstseinslageVS. Noch kein Profil.
 ErsteMesswerteUndBefunde;GlasgowComaScale1;Ja;ErsteMesswerteUndBefunde;ErsteBefundeNeuro;DM;E;"Glasgow Coma Scale
 Werteliste siehe Tabellenblatt Codes";NA + RD;Bei Seitendifferenz bessere Seite;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
 ErsteMesswerteUndBefunde;NeurologischeAuffaelligkeiten1;Ja;ErsteMesswerteUndBefunde;ErsteBefundeNeuro;DM;M;"Neurologische Auff‰lligkeiten
 Werteliste siehe Tabellenblatt";NA + RD;"ï sNIHSS-EMS Items und BEFAST werden abgebildet.
 ï die Dokumentation von Schweregraden und der Kˆrperseite ist im
 MIND nicht vorgesehen";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit 00, -1 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit 00, -1 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-neurologische-auffaelligkeit-cs (BEFAST/sNIHSS). Noch kein Profil.
 ErsteMesswerteUndBefunde;SystolischerBlutdruck1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Systolischer Blutdruck Messwert in mmHg
 Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet RR-Messung durchgef¸hrt, wenn Angabe im Wertebereich oder 999.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
 ErsteMesswerteUndBefunde;EKGBefund1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;M;"EKG-Befund
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Hier sollen nur die Auspr‰gungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren (nicht diejenigen im weiteren Verlauf).
 F¸r QS wird EKG als durchgef¸hrt gewertet, wenn Angabe ungleich -1.";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-ekg-befund-cs / MindEkgbefundVS. Noch kein Profil.
 ErsteMesswerteUndBefunde;Herzfrequenz1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Herzfrequenz Messwert in /min
 Werteliste siehe Tabellenblatt Codes";NA + RD;Vom Monitor abgelesene Herzfrequenz pro Minute (ggf. palpatorisch oder pulsoximetrisch bestimmte Pulsfrequenz, wenn kein EKG abgeleitet wurde).;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
 Werte GR÷SSER 0 bei EKGBefund1 GLEICH  09 sind unzul‰ssig.";-2;;
@@ -337,7 +337,7 @@ Numerischer Rating Scala (NRS)
 Werteliste siehe Tabellenblatt Codes";NA + RD;Erstbefund des Schmerzempfindens vor dem Einleiten von Maﬂnahmen.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
 Wenn Bewusstsein1 GLEICH  05, dann ist Schmerzempfinden GLEICH  (01 bis 10) unzul‰ssig.";-2;;
 ErsteMesswerteUndBefunde;Schmerzerleben;Nein;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Mit dem Schmerzerleben soll der subjektive Bedarf eines Patienten nach einer Schmerztherapie zum Ausdruck
-gebracht werden und damit deren Indikation dokumentiert werden.";;-2;;
+gebracht werden und damit deren Indikation dokumentiert werden.";;-2;T;Terminologie: mind-schmerzerleben-cs / MindSchmerzerlebenVS. Noch kein Profil.
 ErsteMesswerteUndBefunde;Blutzuckerwert1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Blutzucker
 Messwert in mg/dl bzw. mmol/l
 Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet Blutzuckermessung durchgef¸hrt, wenn Angabe im Wertebereich, 997, 998 oder 999;"Triggerfeld f¸r Dokumentationsumfang und Plausibilit‰tspr¸fungen.
@@ -352,17 +352,17 @@ Keine explizite Ortsangabe, wenn mˆglich zentral (Tympanon)";"Wenn Kapitel ""Ers
 ErsteMesswerteUndBefunde;Atmung1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;M;"Klinische Befunde Atmung
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Hier sollen nur die Auspr‰gungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren
 (nicht diejenigen im weiteren Verlauf).";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-atmung-cs / MindAtmungVS. Noch kein Profil.
 ErsteMesswerteUndBefunde;Hautbefunde;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;M;"Hautbefunde
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-hautbefund-cs / MindHautbefundVS. Noch kein Profil.
 ErsteMesswerteUndBefunde;Psyche1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;M;M;"Psychischer Zustand
 Werteliste siehe Tabellenblatt Codes";NA + RD;Hier sollen nur die Auspr‰gungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren (nicht diejenigen im weiteren Verlauf).;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-psychischer-zustand-cs / MindPsychischerZustandVS. Noch kein Profil.
 ErsteMesswerteUndBefunde;Pupillenweite1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;M;E;"Pupillenweite
-Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die klinisch relevanteste Auspr‰gung zu dokumentieren;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die klinisch relevanteste Auspr‰gung zu dokumentieren;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-pupillenweite-cs / MindPupillenweiteVS. Noch kein Profil.
 ErsteMesswerteUndBefunde;Lichtreaktion1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Lichtreaktion
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-lichtreaktion-cs / MindLichtreaktionVS. Noch kein Profil.
 ErsteMesswerteUndBefunde;EtCO2Wert1;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"erster gemessener etCO2  Wert (unter Beatmung in mmHg gemessen)
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Bedeutet Kapnometrie durchgef¸hrt, wenn Angabe im Wertebereich oder 999.
 Pflicht, wenn eine Atemwegssicherung oder eine maschinelle invasive Beatmung (unterst¸tzt oder kontrolliert) dokumentiert ist .";"Pflicht wenn:
@@ -418,7 +418,7 @@ ErstbefundeVerlegung;InvasivBlutdruck;Ja;;;M;E;"invasive Blutdruckmessung
 Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
 ErstbefundeVerlegung;SpezDevices;Ja;;;M;M;"spezielle Devices
 Werteliste siehe Tabellenblatt Codes";NA;"Siehe Exporthinweise zu Option ""Sonstige"".";"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-spezielle-devices-cs / MindSpezielleDevicesVS. Noch kein Profil (BW-bezogen).
 ErstbefundeVerlegung;AnzahlPerfusor;Ja;;;M;E;"Anzahl der Perfusoren
 Einstellige numerische Angabe (0 bis 9)";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
 Kapitel: EinschaetzungVerlegungsarzt;Kapitel: EinschaetzungVerlegungsarzt;;;;;;;;"Pflicht f¸r NA-Protokolle, wenn laut Feld EinsatzArt eine Verlegung mit physisch anwesendem NA oder ein
@@ -430,11 +430,11 @@ UND EinsatzArt GLEICH ( 05 ODER  07 ODER 09)";;;
 EinschaetzungVerlegungsarzt;IndikationArztbegleitung;Ja;;;M;E;"Indikation Arztbegleitung gegeben
 Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
 EinschaetzungVerlegungsarzt;ZDringlichkeit;Ja;;;M;E;"Einsch‰tzung der zeitlichen Dringlichkeit durch Transportarzt
-Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-zeitliche-dringlichkeit-cs / MindZeitlicheDringlichkeitVS. Noch kein Profil.
 EinschaetzungVerlegungsarzt;IndikationIT;Ja;;;M;M;"Indikation Intensivtransport
 Werteliste siehe Tabellenblatt Codes";NA;"Siehe Exporthinweise zu Option ""Sonstige"".
 Die Antwort NEIN ist implausibel, wenn im Kapitel ""ErstbefundeVerlegung"" sowohl eine Beatmung als auch eine Katecholaminpflichtigkeit dokumentiert sind.";"Wenn VBeatmung GLEICH  01 UND  KatecholaminPflicht GLEICH  01, dann ist Code 00 unzul‰ssig.
-Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 00 sind unzul‰ssig.";-2;;
+Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 00 sind unzul‰ssig.";-2;T;Terminologie: mind-indikation-intensivtransport-cs / MindIndikationIntensivtransportVS. Noch kein Profil.
 Kapitel: Diagnosen;Kapitel: Diagnosen;;;;;;;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um eine prim‰re
 Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.
 Pflicht f¸r RD Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um einen Krankentransport, eine prim‰re Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt oder ein physisch anwesender NA prim‰r mitalarmiert oder nachgefordert wurde.
@@ -458,7 +458,7 @@ Werteliste siehe Tabellenblatt Codes";NA + RD;"Hier sollen nur einsatzrelevante 
 ï Verstorbene Patienten kˆnnen mit 1220 = Herz-Kreislauf-Stillstand oder 1813 = SIDS codiert werden.
 ï Bei einer Anaphylaxie Grad 4 soll zus‰tzlich die Diagnose 1220 = Herz-Kreislauf-Stillstand dokumentiert werden.
 ï Bei tˆdlichen Verletzungen soll zus‰tzlich die Diagnose 1220 = Herz-Kreislauf-Stillstand dokumentiert werden.
-ï Bitte die Differenzierung zwischen hypertensivem Notfall (mit Organsch‰den und Lebensgefahr, z.B. AP- Beschwerden, Lungenˆdem, neurologische Symptome) und hypertensiver Entgleisung (ohne Organsch‰den/Lebensgefahr) beachten!";"Wenn Kapitel ""Diagnosen"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+ï Bitte die Differenzierung zwischen hypertensivem Notfall (mit Organsch‰den und Lebensgefahr, z.B. AP- Beschwerden, Lungenˆdem, neurologische Symptome) und hypertensiver Entgleisung (ohne Organsch‰den/Lebensgefahr) beachten!";"Wenn Kapitel ""Diagnosen"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie vollst‰ndig: mind-diagnose-cs (inkl. Trauma 1100-9999, 1x98 'sonstige Erkrankung') / MindDiagnoseVS. Verwendendes Profil offen.
 Diagnosen;DiagnoseSonstige_ZNS;Nein;;Erkrankungen;D;M;Text, Zeichenlimit 200;;"Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht w‰hlbaren Diagnose aus dem Bereich ZNS-
 Erkrankungen";F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 Diagnosen;DiagnoseSonstige_HerzKreislauf;Nein;;Erkrankungen;D;M;Text, Zeichenlimit 200;;Raum zur Erfassung einer im strukturierten Diagnosenbereich nicht w‰hlbaren Diagnose aus dem Bereich Herz/Kreislauf-Erkrankungen;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
@@ -480,15 +480,15 @@ Kapitel: VerletzungenDetails;Kapitel: VerletzungenDetails;;;;;;;;Pflicht f¸r NA-
 Mindestens ein Diagnose-Code GLEICH  2nnn";;;
 VerletzungenDetails;Verletzungsmuster;Ja;VerletzungenDetails;Verletzungen;DM;E;"Verletzungsmuster
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Polytrauma: Gleichzeitig entstandene Verletzungen mehrerer Kˆrperregionen oder Organsysteme, wobei wenigstens
-eine Verletzung oder die Kombination mehrerer lebensbedrohlich ist.";"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+eine Verletzung oder die Kombination mehrerer lebensbedrohlich ist.";"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-verletzungsmuster-cs / MindVerletzungsmusterVS. Noch kein Profil.
 VerletzungenDetails;Unfallursache;Ja;VerletzungenDetails;Verletzungen;DM;E;"Unfallursache
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-unfallursache-cs / MindUnfallursacheVS. Noch kein Profil.
 VerletzungenDetails;Unfallmechanismus;Ja;VerletzungenDetails;Verletzungen;DM;M;"Unfallmechanismus
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit 99 sind unzul‰ssig.";-2;;
+Kombinationen mit 99 sind unzul‰ssig.";-2;T;Terminologie: mind-unfallmechanismus-cs / MindUnfallmechanismusVS. Noch kein Profil.
 VerletzungenDetails;Unfallhergang;Ja;VerletzungenDetails;Verletzungen;DM;M;"Unfallhergang
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit 99 sind unzul‰ssig.";-2;;
+Kombinationen mit 99 sind unzul‰ssig.";-2;T;Terminologie: mind-unfallhergang-cs / MindUnfallhergangVS. Noch kein Profil.
 VerletzungenDetails;HelmPat;Nein;VerletzungenDetails;Verletzungen;DM;E;"Helm Patient
 Werteliste siehe Tabellenblatt Codes";NA + RD;Hat der/die Verunfallte zum Zeitpunkt des Unfalls einen Helm getragen?;;-2;;
 VerletzungenDetails;Penetrierend;Nein;;Verletzungen;D;M;Werteliste siehe Tabellenblatt Codes_DIVI;;Werteliste, ob und ggf. wo penetrierende Verletzungen vorliegen;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
@@ -514,10 +514,10 @@ ODER 09 ODER  98)
 UND KeinTranspMitPat NICHT  (05 ODER 08)
 UND EinsatzArt NICHT  (05 ODER  07 ODER  10)";;;
 Scores;NACAScore;Ja;Scores;Erstdiagnosen;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Subjektive Einsch‰tzung der Schwere der Erkrankung oder Verletzung durch das rettungsdienstliche Personal. Es gilt
-die jeweils schlimmste Auspr‰gung im Einsatzverlauf.";"Wenn Kapitel ""Scores"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+die jeweils schlimmste Auspr‰gung im Einsatzverlauf.";"Wenn Kapitel ""Scores"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-naca-score-cs / MindNacaScoreVS. Noch kein Profil.
 Scores;MNACAScore;Nein;Scores;;M;E;"M-NACAScore
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Objektivierung des NACA Scores.
-Soll aus dokumentierten Feldern berechnet werden!";;-2;;
+Soll aus dokumentierten Feldern berechnet werden!";;-2;T;Terminologie: mind-mnaca-score-cs / MindMnacaScoreVS. Noch kein Profil.
 Kapitel: RDMassnahmen;Kapitel: RDMassnahmen;;;;;;;;"Pflicht f¸r NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um eine prim‰re
 Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt.
 Pflicht f¸r RD Protokolle, wenn ein Patientenkontakt stattgefunden hat - auﬂer wenn es sich um einen Krankentransport, eine prim‰re Todesfeststellung (ohne CPR), eine Hilfeleistung oder eine Unterst¸tzung eines anderen Rettungsmittels handelt oder ein physisch anwesender NA prim‰r mitalarmiert oder nachgefordert wurde.";"Pflicht wenn:
@@ -536,31 +536,31 @@ UND NotarztNachgefordert GLEICH  02
 UND EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)";;;
 RDMassnahmen;Airway;Ja;RDMassnahmen;Massnahmen;DM;M;"Airway Maﬂnahmen
 Werteliste siehe Tabellenblatt Codes";NA + RD;"bei vorbestehendem Tracheostoma ohne eigene Maﬂnahmen soll ""keine Maﬂnahmen durchgef¸hrt"" codiert werden";"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-airway-massnahme-cs / MindAirwayMassnahmeVS. Noch kein Profil.
 RDMassnahmen;Atemunterst;Ja;RDMassnahmen;Massnahmen;DM;M;"Atemunterst¸tzung - Beatmung
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-atemunterstuetzung-cs / MindAtemunterstuetzungVS. Noch kein Profil.
 RDMassnahmen;CirculationZugang;Ja;RDMassnahmen;Massnahmen;DM;M;"Medikamentenzugang
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-circulation-zugang-cs / MindCirculationZugangVS. Noch kein Profil.
 RDMassnahmen;SpezMassn;Ja;RDMassnahmen;Massnahmen;DM;M;"Spezielle Maﬂnahmen
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-spezielle-massnahme-cs / MindSpezielleMassnahmeVS. Noch kein Profil.
 RDMassnahmen;EKG12Kanal;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";RDMassnahmen;ErsteMesswerte;DM;M;"Dokumentation eines 12-Kanal-EKGs
 Werteliste siehe Tabellenblatt Codes";NA + RD;Pflicht bei dokumentiertem ACS, STEMI oder Thoraxschmerz unklarer Genese;"Pflicht wenn:
 Diagnose ENTHƒLT  (1201 ODER  1202 ODER 1203 ODER 1 204)
-Wenn EKG12Kanal Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Wenn EKG12Kanal Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-ekg-12-kanal-cs / MindEkg12KanalVS. Noch kein Profil.
 RDMassnahmen;Medizintechnik;Ja;RDMassnahmen;Massnahmen;DM;M;"Medizintechnik
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-medizintechnik-cs / MindMedizintechnikVS. Noch kein Profil.
 RDMassnahmen;LagTrans;Ja;RDMassnahmen;Massnahmen;DM;M;"Lagerungs- und Rettungstechnik
 Werteliste siehe Tabellenblatt Codes";NA + RD;Mit HWS-Immobilisation ist nicht nur die Anlage einer Cervicalst¸tze gemeint, sondern auch andere Methoden der Immobilisation wie z.B. Headblocks.;"Wenn Kapitel ""RDMassnahmen"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-lagerungs-rettungstechnik-cs / MindLagerungsRettungstechnikVS. Noch kein Profil.
 RDMassnahmen;DurchfHeilkundlMassn;siehe Hinweise/ Plausibilit‰ten/ Abh‰ngigkeiten;RDMassnahmen;Medikation;DM;M;Durchf¸hrung heilkundlicher Maﬂnahmen Werteliste siehe Tabellenblatt Codes;RD;Hiermit sind durchgef¸hrte heilkundliche Maﬂnahmen durch Notfallsanit‰ter gemeint;"Pflicht wenn:
 Protokolltyp GLEICH  RD
 UND DokRM GLEICH  (02 ODER  15)
-Wenn DurchfHeilkundlMassn Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 03 sind unzul‰ssig.";-2;;
+Wenn DurchfHeilkundlMassn Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 03 sind unzul‰ssig.";-2;T;Terminologie: mind-heilkundliche-massnahme-cs / MindHeilkundlicheMassnahmeVS. Noch kein Profil.
 RDMassnahmen;Behandlungspfad;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";RDMassnahmen;;M;M;Werteliste siehe Tabellenblatt Codes;RD;"Hier soll dokumentiert werden, welcher Behandlungspfad genutzt wurde (sinngleich Standardarbeitsanweisungen,
 Algorithmen, Handlungsempfehlungen etc. nach ˆrtlicher Vorgabe)";"Pflicht wenn:
@@ -627,12 +627,12 @@ UND  EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)";;;
 MedikamentoeseTherapie;Medikamentengabe;Ja;MedikamentoeseTherapie;Medikation;DM;M;"Medikamentencodes f¸r Art des Medikaments und Applikationsweg
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Nur einsatzrelevante Medikamente dokumentieren.
 Auch eine Vorbehandlung durch Andere soll dokumentiert werden, da diese f¸r verschiedene Indikatoren relevant sein kann (f¸r jede Medikamenten-Gruppe separat dokumentierbar).
-Dauermedikation und Verabreichung durch Andere (Hausarzt, andere Rettungsmittel etc.): nn97xx";"Wenn Kapitel ""MedikamentoeseTherapie"" Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 999999 sind unzul‰ssig.";-2;;
+Dauermedikation und Verabreichung durch Andere (Hausarzt, andere Rettungsmittel etc.): nn97xx";"Wenn Kapitel ""MedikamentoeseTherapie"" Pflicht, dann ist -2 unzul‰ssig. Kombinationen mit 999999 sind unzul‰ssig.";-2;T;Terminologie: mind-medikamentengabe-cs (alle Gruppen inkl. Applikationsart io/iv/sc, nn97xx) / MindMedikamentengabeVS. Noch kein Profil. Hinweis: Urapidil #1509io und Thrombolytika #2601-2603 per Spez-TODO.
 MedikamentoeseTherapie;Infusionsgabe;Ja;MedikamentoeseTherapie;Medikation;DM;M;"Medikamentencodes f¸r Art der Infusion und
 Applikationsweg
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Nur einsatzrelevante Medikamente dokumentieren
 Dauermedikation und Verabreichung durch Andere (Hausarzt, andere Rettungsmittel etc.): nn97xx";"Wenn Kapitel ""MedikamentoeseTherapie"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit 999999 sind unzul‰ssig.";-2;;
+Kombinationen mit 999999 sind unzul‰ssig.";-2;T;"Infusionsgabe ¸ber Kombinationscodes (z. B. 3001io) im mind-medikamentengabe-cs; MindInfusionsgabeVS definiert. Noch kein Profil."
 MedikamentoeseTherapie;MedikamentengabeDosis;Nein;;Medikation;D;M;Text, Zeichenlimit 20;;Dosis der Medikamentengabe inklusive Einheit;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 MedikamentoeseTherapie;InfusionsgabeMenge;Nein;;Medikation;D;M;Text, Zeichenlimit 20;;Menge der Infusionsgabe in ml;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 MedikamentoeseTherapie;Lysetherapie;Nein;;Medikation;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;Werteliste;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
@@ -651,13 +651,13 @@ UND AerztlBegleit ENTHƒLT NICHT  (01 ODER 02 ODER  04
 ODER 05 ODER 98)
 UND EinsatzArt NICHT  10";;;
 AbschlussBefundeBT;Bewusstsein2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Bewusstseinslage
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-bewusstseinslage-cs / MindBewusstseinslageVS. Noch kein Profil.
 AbschlussBefundeBT;GlasgowComaScale2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Glasgow Coma Scale
 Werteliste siehe Tabellenblatt Codes";NA + RD;Bei Seitendifferenz bessere Seite.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
 AbschlussBefundeBT;NeurologischeAuffaelligkeiten2;Ja;AbschlussBefundeBT;Uebergabe;DM;M;"Neurologische Auff‰lligkeiten
 Werteliste siehe Tabellenblatt";NA + RD;"ï sNIHSS-EMS Items und BEFAST werden abgebildet.
 ï die Dokumentation von Schweregraden und der Kˆrperseite ist im MIND nicht vorgesehen";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit 00, -1 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit 00, -1 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-neurologische-auffaelligkeit-cs (Abschlussbefunde). Noch kein Profil.
 AbschlussBefundeBT;SystolischerBlutdruck2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Systolischer Blutdruck
 Messwert in mmHg
 Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet RR-Messung durchgef¸hrt, wenn Angabe im Wertebereich oder 999.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
@@ -665,7 +665,7 @@ AbschlussBefundeBT;EKGBefund2;Ja;AbschlussBefundeBT;Uebergabe;DM;M;"EKG-Befund
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl mˆglich (hier sollen
 keine Auspr‰gungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren und nicht mehr vorhanden sind!).
 F¸r QS wird EKG als durchgef¸hrt gewertet, wenn Angabe ungleich -1.";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig
-Kombinationen mit -1 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-ekg-befund-cs / MindEkgbefundVS. Noch kein Profil.
 AbschlussBefundeBT;Herzfrequenz2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Herzfrequenz
 Messwert in /min
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Vom Monitor abgelesene Herzfrequenz pro Minute (ggf. palpatorisch oder pulsoximetrisch bestimmte Pulsfrequenz,
@@ -681,15 +681,15 @@ Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeB
 AbschlussBefundeBT;Atmung2;Ja;AbschlussBefundeBT;Uebergabe;DM;M;"Klinische Befunde Atmung
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl mˆglich (hier sollen keine Auspr‰gungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren
 und nicht mehr vorhanden sind!).";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-atmung-cs / MindAtmungVS. Noch kein Profil.
 AbschlussBefundeBT;Psyche2;Ja;AbschlussBefundeBT;Uebergabe;DM;M;"Psychischer Zustand
 Werteliste siehe Tabellenblatt Codes";;"Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl mˆglich (hier sollen
 keine Auspr‰gungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren und nicht mehr vorhanden sind!).";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.
-Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;;
+Kombinationen mit -1, 00 oder 99 sind unzul‰ssig.";-2;T;Terminologie: mind-psychischer-zustand-cs / MindPsychischerZustandVS. Noch kein Profil.
 AbschlussBefundeBT;Pupillenweite2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Pupillenweite
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-pupillenweite-cs / MindPupillenweiteVS. Noch kein Profil.
 AbschlussBefundeBT;Lichtreaktion2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Lichtreaktion
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-lichtreaktion-cs / MindLichtreaktionVS. Noch kein Profil.
 AbschlussBefundeBT;SoSiTransport;"siehe Hinweise/
 Plausibilit‰ten/ Abh‰ngigkeiten";AbschlussBefundeBT;Einsatzverlauf;DM;E;"Sondersignal bei Transport:
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Sondersignalverwendung des transportierenden Rettungsmittels. Bei Patiententransport durch Hubschrauber: 01 = Ja
@@ -716,9 +716,9 @@ UND AerztlBegleit ENTH ƒLT NICHT  (01 ODER  02 ODER  04
 ODER 05 ODER  98)
 UND  EinsatzArt NICHT  10";-2;;
 AbschlussBefundeBT;OrtPatUeberg;Ja;AbschlussBefundeBT;Uebergabe;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Der Ort, an dem der Patient prim‰r ¸bergeben wird. Sollten mehrere Auswahlmˆglichkeiten zutreffen, ist die f¸r die Weiterversorgung des jeweiligen Patienten spezifischste anzugeben. Sofern der dokumentierende NA den Transport nicht begleitet, ist i.d.R.
-15 = Einsatzstelle zutreffend.";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;;
+15 = Einsatzstelle zutreffend.";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzul‰ssig.";-2;T;Terminologie: mind-ort-patientenuebergabe-cs / MindOrtPatientenuebergabeVS. Noch kein Profil.
 AbschlussBefundeBT;ZeitWerte2;Nein;;Uebergabe;D;E;Angabe von Datum und Uhrzeit;;Zeit zu der begonnen wurde, die die abschlieﬂenden Werte des Kapitels AbschlieﬂendeMesswerteNeuro erfasst wurden;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
-AbschlussBefundeBT;NeurologieVerlauf;Nein;;Uebergabe;D;M;Werteliste siehe Tabellenblatt Codes_DIVI;;Abschlieﬂende Werte: Werteliste zum Neurologischen Verlauf;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
+AbschlussBefundeBT;NeurologieVerlauf;Nein;;Uebergabe;D;M;Werteliste siehe Tabellenblatt Codes_DIVI;;Abschlieﬂende Werte: Werteliste zum Neurologischen Verlauf;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;T;Terminologie: mind-neurologische-auffaelligkeit-verlauf-cs / MindNeurologischeAuffaelligkeitVerlaufVS. Noch kein Profil.
 AbschlussBefundeBT;GCSWert2;Nein;;Uebergabe;D;E;Zahl;;Abschlieﬂende Werte: GCS-Summe;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 AbschlussBefundeBT;NeurologischeAuffaelligkeitenSonstige2;Nein;;Uebergabe;D;E;Text, Zeichenlimit 200;;Abschlieﬂende Werte: Text f¸r sonstige neurologische Auff‰lligkeiten, die im strukturierten Bereich nicht erfasst werden kˆnnen.;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
 AbschlussBefundeBT;ExtremitaetenbewegungArmRechts2;Nein;;Uebergabe;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;Abschlieﬂende Werte: GCS-Stadium f¸r Beste motorische Reaktion am rechten Arm;F¸r MIND-Datensatz: Feld nicht ¸bermitteln. Abweichungen f¸hren zu Abweisung von Datenlieferungen.;;;
@@ -820,8 +820,8 @@ Werteliste siehe Tabellenblatt Codes";NA + RD;"ï Abweichung von medizinischen St
 ï Abweichung vom Zeitablauf,
 ï erhˆhter Aufwand.
 Ablehnung indizierter Maﬂnahmen (z.B. Diagnostik, Therapie) durch Patienten: 02.   Transportverweigerung ist im Feld KeinTranspMitPat zu dokumentieren (04 = Patient lehnt Transport ab).
-Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze";Kombinationen mit 00 sind unzul‰ssig.;-2;;
-EinsatzBesonderheiten;PreEmergencyStatus;Nein;EinsatzBesonderheiten;Notfallgeschehen;DM;E;Werteliste siehe Tabellenblatt Codes_DIVI;NA + RD;Schwere der Vorerkrankungen, Zustand vor Eintritt des Notfalls.;;-2;;
+Pflicht, auﬂer f¸r Dienstfahrten und Pauseneins‰tze";Kombinationen mit 00 sind unzul‰ssig.;-2;T;Terminologie: mind-einsatzbesonderheit-cs / MindEinsatzbesonderheitVS. Noch kein Profil.
+EinsatzBesonderheiten;PreEmergencyStatus;Nein;EinsatzBesonderheiten;Notfallgeschehen;DM;E;Werteliste siehe Tabellenblatt Codes_DIVI;NA + RD;Schwere der Vorerkrankungen, Zustand vor Eintritt des Notfalls.;;-2;T;Terminologie: mind-pre-emergency-status-cs / MindPreEmergencyStatusVS. Noch kein Profil.
 Kapitel: Reanimation;Kapitel: Reanimation;;;;;;;;"Pflicht f¸r NA-Protokolle, wenn die Diagnose Herz-Kreislauf-Stillstand, ein SIDS, eine prim‰re Todesfeststellung (ohne CPR) oder ""Patient im Einsatzverlauf verstorben"" dokumentiert wurde.
 Pflicht f¸r RD-Protokolle, wenn die Diagnose Herz-Kreislauf-Stillstand dokumentiert wurde, oder bei einer Todesfeststellung bzw. einer Dokumentation des Todes im Einsatzverlauf, aber nur wenn eine Notfallrettung ohne erkennbare prim‰re NA-Beteiligung  vorliegt.";"Pflicht wenn:
 Protokolltyp GLEICH NA
@@ -840,7 +840,7 @@ Bei Diagnose Herz-Kreislauf-Stillstand oder SIDS bzw. bei Dokumentation ""Patien
 Wenn KeinTranspMitPat GLEICH  02, dann ist Reanimationssituation GLEICH  (00 ODER 01 ODER  02 ODER  03
 ODER 04) unzul‰ssig.
 Wenn RDTransport GLEICH  02, dann ist nur Reanimationssituation GLEICH  00 zul‰ssig.
-Wenn Diagnose ENTHƒLT ( 1220 ODER  1813) ODER KeinTranspMitPat GLEICH  03 dann ist Reanimationssituation GLEICH  00 unzul‰ssig.";-2;;
+Wenn Diagnose ENTHƒLT ( 1220 ODER  1813) ODER KeinTranspMitPat GLEICH  03 dann ist Reanimationssituation GLEICH  00 unzul‰ssig.";-2;T;Terminologie: mind-reanimationssituation-cs / MindReanimationssituationVS. Noch kein Profil.
 Kapitel: ReanimationDetails;Kapitel: ReanimationDetails;;;;;;;;"Pflicht f¸r NA-Protokolle, wenn dokumentierendes Rettungsmittel Reanimation durchgef¸hrt hat.
 Pflicht f¸r RD-Protokolle, wenn dokumentierendes Rettungsmittel Reanimation durchgef¸hrt hat und eine Notfallrettung ohne erkennbare NA-Beteiligung bzw. -Nachforderung vorliegt.";"Pflicht wenn:
 Protokolltyp GLEICH  NA
@@ -851,9 +851,9 @@ UND Reanimationssituation GLEICH  (01 ODER  02 ODER  03)
 UND EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)
 UND NotarztNachgefordert GLEICH  02";;;
 ReanimationDetails;Reanimationstechnik;Ja;ReanimationDetails;Massnahmen;DM;M;Werteliste siehe Tabellenblatt Codes;NA + RD;;"Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;;
+Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-reanimationstechnik-cs / MindReanimationstechnikVS. Noch kein Profil.
 ReanimationDetails;URKRSTST;Ja;ReanimationDetails;Massnahmen;DM;E;"Vermutete Ursache des Kreislaufstillstandes
-Werteliste siehe Tabellenblatt Codes";NA + RD;Die internationalen Vorgaben des Utstein-Style Protokolls unterscheiden die Ursachen eines Kreislaufstillstandes in mehreren Sektionen. Gefragt ist die aus Sicht des Notarztes vermutliche Ursache.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Die internationalen Vorgaben des Utstein-Style Protokolls unterscheiden die Ursachen eines Kreislaufstillstandes in mehreren Sektionen. Gefragt ist die aus Sicht des Notarztes vermutliche Ursache.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;T;Terminologie: mind-kreislaufstillstandursache-cs / MindKreislaufstillstandursacheVS. Noch kein Profil.
 ReanimationDetails;SPORT;Nein;ReanimationDetails;Massnahmen;DM;E;"Zusammenhang mit sportlicher Aktivit‰t:
 Werteliste siehe Tabellenblatt Codes";NA + RD;Besteht ein Zusammenhang des Kreislaufstillstandes mit sportlicher Aktivit‰t?;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;;
 ReanimationDetails;ZEOFR;Nein;ReanimationDetails;Notfallgeschehen;DM;E;Zeitstempel Eintreffen First Responder Angabe von Datum und Uhrzeit;NA + RD;"Eintreffzeit eines First Responders als ""Vorausversorger"" neben dem regul‰ren Rettungsdienst am Einsatzort.";"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer ""1902-02-02T22:00:00.000+01:00"" unzul‰ssig.";"1902-02-
@@ -861,19 +861,19 @@ ReanimationDetails;ZEOFR;Nein;ReanimationDetails;Notfallgeschehen;DM;E;Zeitstemp
 :00.000+
 01:00";;
 ReanimationDetails;ZCKB;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Kollaps beobachtet
-Werteliste siehe Tabellenblatt Codes";NA + RD;Wer hat den Kollaps beobachtet? Ersthelfer entspricht dem nichtmedizinischen Personal bzw. Laien.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Wer hat den Kollaps beobachtet? Ersthelfer entspricht dem nichtmedizinischen Personal bzw. Laien.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;T;Terminologie: mind-kollaps-beobachtet-durch-cs / MindKollapsBeobachtetDurchVS. Noch kein Profil.
 ReanimationDetails;ZCHDM;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Herzdruckmassage begonnen
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Wer hat mit der Herzdruckmassage begonnen bzw. den Beginn angeordnet? (Es ist die jeweils am hˆchsten
 qualifizierte anwesende Person zu dokumentieren)";"Wenn Protokolltyp GLEICH  NA
 UND Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER  08), dann ist 06 unzul‰ssig.
 Wenn Protokolltyp GLEICH  RD
-UND Reanimationssituation GLEICH  (05 ODER  06 ODER 07 ODER  08), dann sind 05 ODER  06 unzul‰ssig. Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;;
+UND Reanimationssituation GLEICH  (05 ODER  06 ODER 07 ODER  08), dann sind 05 ODER  06 unzul‰ssig. Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;T;Terminologie: mind-herzdruckmassage-durch-cs / MindHerzdruckmassageDurchVS. Noch kein Profil.
 ReanimationDetails;ZCDEFI;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Defibrillation durchgef¸hrt
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Wer hat die erste Defibrillation durchgef¸hrt bzw. angeordnet? (Es ist die jeweils am hˆchsten qualifizierte anwesende
 Person zu kodieren.)";"Wenn Protokolltyp GLEICH  NA
 UND Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER  08), dann ist 06 unzul‰ssig.
 Wenn Protokolltyp GLEICH  RD
-UND Reanimationssituation GLEICH  (05 ODER  06 ODER 07 ODER  08), dann sind 05 ODER  06 unzul‰ssig. Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;;
+UND Reanimationssituation GLEICH  (05 ODER  06 ODER 07 ODER  08), dann sind 05 ODER  06 unzul‰ssig. Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;T;Terminologie: mind-erste-defibrillation-durch-cs / MindErsteDefibrillationDurchVS. Noch kein Profil.
 ReanimationDetails;ZHDM;Ja;ReanimationDetails;Massnahmen;DM;E;"Zeitpunkt Beginn Herzdruckmassage
 Angabe von Datum und Uhrzeit";NA + RD;Erster Zeitpunkt, zu dem mit der Herzdruckmassage begonnen wurde, ggf. sch‰tzen.;"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer ""1902-02-02T22:00:00.000+01:00"" unzul‰ssig.";"1902-02-
 02T22:00
@@ -902,10 +902,10 @@ Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dan
 ReanimationDetails;ROSC;Ja;ReanimationDetails;Massnahmen;DM;E;"Erreichen eines Spontankreislaufs
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Konnte durch die Reanimationsmaﬂnahmen jemals ein spontaner Kreislauf > 20 Sekunden etabliert werden?
 Wenn laut Feld KHAUF ""Krankenhausaufnahme mit ROSC"", dann in Feld ROSC nur "" jemals ROSC"" zul‰ssig.";"Wenn KHAUF GLEICH  02, dann nur ROSC GLEICH  02 zul‰ssig.
-Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;;
+Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;T;Terminologie: mind-rosc-cs / MindRoscVS. Noch kein Profil.
 ReanimationDetails;KHAUF;Ja;ReanimationDetails;Reanimation;DM;E;"Patientenzustand bei Krankenhausaufnahme
 Werteliste siehe Tabellenblatt Codes";NA + RD;Zustand bei ‹bergabe an die Zielklinik.;"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.
-Wenn Reanimationssituation GLEICH   (05 ODER 06 ODER  07 ODER  08), dann sind alle Werte auﬂer 01 unzul‰ssig.";-2;;
+Wenn Reanimationssituation GLEICH   (05 ODER 06 ODER  07 ODER  08), dann sind alle Werte auﬂer 01 unzul‰ssig.";-2;T;Terminologie: mind-krankenhausaufnahme-zustand-cs / MindKrankenhausaufnahmeZustandVS. Noch kein Profil.
 ReanimationDetails;ZTOD;Nein;ReanimationDetails;Reanimation;DM;E;"Zeitpunkt TOD
 Angabe von Datum und Uhrzeit";NA + RD;Beendigungszeitpunkt der Reanimationsmaﬂnahmen.;"Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer ""1902-02-02T00:00:00"" unzul‰ssig.";"1902-02-
 02T22:00

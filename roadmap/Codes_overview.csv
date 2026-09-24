@@ -1,8 +1,8 @@
 Feldname;Werteliste;Zugehörigkeit DIVI-MIND;Felder betreffen nur Baden-Württemberg;In FHIR umgesetzt?;Anmerkung zur Umsetzung
 Protokolltyp;"NA
-RD";DM;;;
+RD";DM;;x;"CompositionDeEmsMindR4: Composition.type mit ValueSet Mind-Protokolltyp-VS (required; NA=na, RD=rd). Abweichung: Composition.title ist hardcodiert 'MIND 7.1 Rettungsdienstdokumentation', erfolgt keine NA/RD-Differenzierung des Titels."
 Standortkennung;"Amtlicher Gemeindeschlüssel des RM-Standortes
--1 = nicht dokumentiert 99999999 = nicht bekannt";DM;;;
+-1 = nicht dokumentiert 99999999 = nicht bekannt";DM;;x;"EncounterDeEmsMindR4: Encounter.identifier[standortkennung] mit NamingSystem mind-standortkennung; Invariante mind-standortkennung-format erzwingt ^[0-9]{8}$. Der MIND-Default -2 (unbekannt) ist damit nicht abbildbar."
 EinsatzArt;"Einsatzart
 01 = Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA 02 = Notfallrettung - Primäreinsatz nur mit TNA
 03 = Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA 04 = Notfallrettung - Primäreinsatz ohne NA
@@ -11,12 +11,12 @@ EinsatzArt;"Einsatzart
 09 = Intensivtransport
 10 = Krankentransport
 11 = Dienstfahrt
-12 = Pause";DM;;;
+12 = Pause";DM;;x;"EncounterDeEmsMindR4: Encounter.type mit ValueSet Mind-Einsatzart-VS (required). Abweichung: Mind-Einsatzart-NA-VS/RD-VS sind definiert, aber nicht gebunden; die NA-/RD-Plausibilität (NA erkennbar -> keine Einsatzart 04/08/10) wird nicht erzwungen."
 Gemeindeschlüssel;"Amtlicher Gemeindeschlüssel des Einsatzortes
 -1 = nicht dokumentiert
-99999998 = Einsatzort im Ausland 99999999 = nicht bekannt";DM;;;
+99999998 = Einsatzort im Ausland 99999999 = nicht bekannt";DM;;x;LocationDeEmsMindR4: address.city.extension[ags] (ExtensionDestatisAgs) mit Invariante mind-ags-format ^[0-9]{8}$. Die MIND-Sonderwerte -1 und 99999999 sind nicht darstellbar.
 Postleitzahl;"Postleitzahl des Einsatzortes
--1 = nicht dokumentiert 99999 = nicht bekannt";DM;;;
+-1 = nicht dokumentiert 99999 = nicht bekannt";DM;;x;"LocationDeEmsMindR4: address.postalCode. Abweichung: MIND-Sonderwerte -1, 99999999, 99999998 sind mit einer PLZ nicht modellierbar; Mapping-Regel fehlt."
 EinsatzortTyp;"Beschreibung des Einsatzortes
 -1 = nicht dokumentiert 01 = Wohnung
 02 = Pflegeeinrichtung
@@ -28,23 +28,23 @@ EinsatzortTyp;"Beschreibung des Einsatzortes
 09 = Bildungseinrichtung
 10 = Sportstätte
 11 = Geburtshaus/-einrichtung
-12 = unwegsames Gelände 98 = Sonstige";DM;;;
+12 = unwegsames Gelände 98 = Sonstige";DM;;x;LocationDeEmsMindR4: extension[einsatzorttyp] (MindEinsatzortTyp, valueCodeableConcept) mit ValueSet Mind-Einsatzort-Typ-VS.
 RDTransport;"Rettungsdienstlicher Transport
 01 = kein Patiententransport, trotz Patientenkontakt  02 = kein Patiententransport, da kein Patientenkontakt 03 = Transport durch RTW
 04 = Transport durch NAW
 05 = Transport durch RTH / ITH 06 = Transport durch KTW
 07 = Transport durch N-KTW 08 = Transport durch S-RTW 09 = Transport durch ITW
-98 = Transport durch sonstige Rettungsmittel";DM;;;
+98 = Transport durch sonstige Rettungsmittel";DM;;x;ObservationDeEmsMindRdTransport: code mind-observationstyp-cs#rd-transport, valueCodeableConcept an MindRdTransportVS gebunden.
 AerztlBegleit;"Ärztliche Transportbegleitung 00 = keine
 01 = Begleitung durch NA bodengebunden 02 = Begleitung durch NA RTH
 03 = Begleitung durch Telenotarzt
 04 = Begleitung durch Krankenhaus-Arzt
-05 = Begleitung durch niedergelassenen Arzt 98 = Begleitung durch sonstigen Arzt";DM;;;
+05 = Begleitung durch niedergelassenen Arzt 98 = Begleitung durch sonstigen Arzt";DM;;x;ObservationDeEmsMindAerztlicheBegleitung: code #aerztliche-begleitung, ValueSet MindAerztlicheBegleitungVS.
 NotarztNachgefordert;"Physisch anwesender Notarzt wurde nachgefordert
 01 = Ja
-02 = Nein";DM;;;
+02 = Nein";DM;;x;ObservationDeEmsMindNotarztNachgefordert: code #notarzt-nachgefordert, valueBoolean. Abweichung: MIND 'unbekannt' wird wie 'nein' (false) übermittelt, eine echte Dreifachwertigkeit existiert nicht.
 TNANachgefordert;"Tele-Notarzt wurde nachgefordert 01 = Ja
-02 = Nein";DM;;;
+02 = Nein";DM;;x;"ObservationDeEmsMindTnaNachgefordert: code #tna-nachgefordert, valueBoolean. Abweichung: 'unbekannt' wie 'nein'; Plausibilität (TNANachgefordert=ja unzulässig bei TNA-Alarmierung via Einsatzart) wird nicht erzwungen."
 KeinTranspMitPat;"Grund für Einsatz ohne Transport trotz Patientenkontakt
 01 = ambulante Versorgung, keine Klinikbehandlung notwendig
 02 = primäre Todesfeststellung (ohne CPR durch das dokumentierende RM) 03 = Patient im Einsatzverlauf verstorben
@@ -54,13 +54,13 @@ KeinTranspMitPat;"Grund für Einsatz ohne Transport trotz Patientenkontakt
 10 = Einsatzabbruch aus Wettergründen
 11 = Ausfall Rettungsmittel (Eigenunfall, technischer Defekt, Personal erkrankt)
 12 = Rettungsmittel für Transport nicht geeignet
-13 = Transport durch Dritte (z.B. Angehörige, Taxi) 98 = sonstige";DM;;;
+13 = Transport durch Dritte (z.B. Angehörige, Taxi) 98 = sonstige";DM;;x;ObservationDeEmsMindKeinTransportMitPatient: code #kein-transport-mit-patient, ValueSet MindKeinTransportMitPatientVS.
 KeinTranspOhnePat;"Grund für Einsatz ohne Transport, da kein Patientenkontakt
 01 = Von Leitstelle abbestellt / Abbruch vor Erreichen des Notfallorts 02 = Kein Patient vorgefunden oder Patient bereits abtransportiert 03 = (Vorsorgliche) Bereitstellung
 04 = Gebietsabdeckung
 05 = Personaltransport (Notarztzubringer/LNA, OrgL,…) 06 = Materialtransport (Blut, spez. Devices,…)
 07 = Einsatzabbruch aus Wettergründen
-08 = Ausfall Rettungsmittel (Eigenunfall, technischer Defekt, Personal erkrankt) 98 = sonstige";DM;;;
+08 = Ausfall Rettungsmittel (Eigenunfall, technischer Defekt, Personal erkrankt) 98 = sonstige";DM;;x;ObservationDeEmsMindKeinTransportOhnePatient: code #kein-transport-ohne-patient, ValueSet MindKeinTransportOhnePatientVS.
 DokRM;"Typ des dokumentierenden Rettungsmittels
 01 = NEF
 02 = RTW
@@ -81,7 +81,7 @@ DokRM;"Typ des dokumentierenden Rettungsmittels
 17 = OrgL
 18 = N-KTW
 19 = MIC
-20 = S-RTW (Schwerlast) 98 = Sonstige";DM;;;
+20 = S-RTW (Schwerlast) 98 = Sonstige";DM;;x;ObservationDeEmsMindDokumentierendesRettungsmittel: code #dokumentierendes-rettungsmittel, ValueSet MindDokumentierendesRettungsmittelVS.
 BeteilRM;"Typen der am Einsatz beteiligten Rettungsmittel 01 = NEF
 02 = RTW
 03 = KTW
@@ -103,7 +103,7 @@ BeteilRM;"Typen der am Einsatz beteiligten Rettungsmittel 01 = NEF
 19 = MIC
 20 = S-RTW (Schwerlast)
 21 = Ersthelfer-App
-98 = Sonstige";DM;;;
+98 = Sonstige";DM;;x;ObservationDeEmsMindBeteiligteRettungsmittel: code #beteiligte-rettungsmittel, ValueSet MindBeteiligtesRettungsmittelVS.
 AerztlQualifikation;"Notärztl./Transportärztl.Fachgebiet/Qualifikation
 -1 = nicht dokumentiert 01 = Innere
 02 = Chirurgie
@@ -115,36 +115,36 @@ AerztlQualifikation;"Notärztl./Transportärztl.Fachgebiet/Qualifikation
 09 = Zusatzbezeichnung Klinische Akut- und Notfallmedizin
 10 = Ärztin/Arzt in Weiterbildung
 11 = Fachärztin/-arzt
-98 = Andere Fachrichtung";DM;;;
+98 = Andere Fachrichtung";DM;;x;ObservationDeEmsMindAerztlicheQualifikation: code #aerztliche-qualifikation, ValueSet MindAerztlicheQualifikationVS.
 StatusPersonal;"Status des Personals
 -1 = nicht dokumentiert 01 = Ärztin/Arzt
 02 = Notfallsanitäter/in
 03 = Rettungsassistent/in
 04 = Rettungssanitäter/in
 05 = Intensivpflegepersonal
-98 = Sonstige";DM;;;
+98 = Sonstige";DM;;x;ObservationDeEmsMindPersonalstatus: code #personalstatus, ValueSet MindPersonalstatusVS.
 SymptombeginnVor24h;"Bestehen die Symptome länger als 24 Stunden? 00 = unbekannt
 01 = Ja
-02 = Nein";DM;;;
+02 = Nein";DM;;x;ObservationDeEmsMindSymptombeginnVor24h: code #symptombeginn-vor-24h, valueBoolean (true = 'Ja, > 24 h'). MIND-Wert 00 (unbekannt) wird über dataAbsentReason abgebildet.
 SymptombeginnGesichert;"Ist der Symptombeginn gesichert oder geschätzt? 01 = Symptombeginn gesichert
-02 = Symptombeginn geschätzt";DM;;;
+02 = Symptombeginn geschätzt";DM;;x;ObservationDeEmsMindSymptombeginnGesichert: code #symptombeginn-gesichert. Abweichung: boolesche Inversion gegenüber MIND - true = geschätzt, false = gesichert.
 Alter;"Patientenalter
 Wertebereich = 000:01 bis 125:00 (Jahre:Monate)
-999:00 = Neugeboren: Geburt bis 28. Tag";DM;;;
+999:00 = Neugeboren: Geburt bis 28. Tag";DM;;x;"ObservationDeEmsMindAlter: code #patientenalter mit Komponenten alter-jahre/alter-monate. Abweichung: MIND-Kodierung als jjj:mm sowie Maximalalter 125:00 entfallen; erlaubt sind 0..999 Jahre (mind-alter-jahre-bereich) und 0..11 Monate."
 ValiditaetAlter;"Ist das Alter gesichert oder geschätzt? 01 = gesichert
-02 = geschätzt";DM;;;
+02 = geschätzt";DM;;x;ObservationDeEmsMindAltersvaliditaet: code #altersvaliditaet, valueBoolean. Abweichung: boolesche Inversion - true = geschätzt, false = sicher bekannt.
 Geschlecht;"Geschlecht des Patienten
 -1= nicht dokumentiert
 01 = männlich
 02 = weiblich
-03 = divers";DM;;;
+03 = divers";DM;;x;"PatientDeEmsMindR4: Patient.gender 1..1 (MIND-Pflichtfeld) mit Extension gender-amtlich-de; MIND-Wert -1 (unbekannt) -> FHIR unknown. Abweichung: Name, Geburtsdatum, Adresse und Identifikatoren sind aus Datenschutzgründen auf 0..0 gesetzt."
 Bewusstsein1 Bewusstsein2;"Bewusstseinslage
 -1 = nicht untersucht
 01 = analgosediert/Narkose
 02 = wach
 03 = reagiert auf Ansprache 04 = reagiert auf Schmerzreiz 05 = bewusstlos
 98 = Sonstige
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-bewusstseinslage-cs und MindBewusstseinslageVS (in MIND-Klinische-Befunde-VS). Noch kein Observation-Profil.
 GlasgowComaScale1 GlasgowComaScale2;"Glasgow Coma Scale
 Wertebereich = 3 bis 15
 -1 = nicht untersucht 99 = nicht beurteilbar";DM;;;
@@ -163,7 +163,7 @@ NeurologischeAuffaelligkeiten1;"Akute neurologische Auffälligkeiten (ZNS, PNS)
 14 = Querschnittsymptomatik
 97 = vorbestehendes neurolog. Defizit
 98 = Sonstige
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-neurologische-auffaelligkeit-cs (BEFAST/sNIHSS-EMS-Items). Noch kein Observation-Profil.
 SystolischerBlutdruck1 SystolischerBlutdruck2;"Systolischer Blutdruck - Messwert in mmHg
 Wertebereich = 0 bis 300
 -1 = nicht gemessen 999 = nicht messbar";DM;;;
@@ -177,7 +177,7 @@ EKGBefund1 EKGBefund2;"EKG-Befund
 11 = signifikante ST-Hebungen
 12 = Schenkelblock
 98 = Sonstige
-99 = nicht durchführbar/nicht beurteilbar";DM;;;
+99 = nicht durchführbar/nicht beurteilbar";DM;;T;Terminologie definiert: mind-ekg-befund-cs und MindEkgbefundVS. Noch kein Observation-Profil.
 Herzfrequenz1 Herzfrequenz2;"Herzfrequenz - Messwert in /min
 Wertebereich = 0 bis 300
 -1 = nicht gemessen 999 = nicht beurteilbar";DM;;;
@@ -197,7 +197,7 @@ Wertebereich = 0 bis 10
 -1 = nicht gemessen 99 = nicht beurteilbar";DM;;;
 Schmerzerleben;"Schmerzerleben durch Patienten
 00 = tolerabel
-01 = nicht tolerabel";DM;;;
+01 = nicht tolerabel";DM;;T;Terminologie definiert: mind-schmerzerleben-cs und MindSchmerzerlebenVS (Kapitel Uebergabe). Noch kein Observation-Profil.
 Blutzuckerwert1 Blutzuckerwert2;"Blutzucker
 Messwert in mg/dl bzw. mmol/l
 Wertebereich = 0 bis 900 bei Einheit mg/dl bzw. Wertebereich = 0.0 bis 50.0 bei Einheit mmol/l
@@ -225,7 +225,7 @@ Atmung1 Atmung2;"Klinische Befunde Atmung
 09 = Beatmung
 10 = Hyperventilation
 98 = Sonstige
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-atmung-cs und MindAtmungVS. Noch kein Observation-Profil.
 Hautbefunde;"Hautbefunde
 -1 = nicht untersucht 00 = unauffällig
 01 = Kalt-Schweissigkeit 02 = Stehende Hautfalten 03 = Ödeme
@@ -235,7 +235,7 @@ Hautbefunde;"Hautbefunde
 07 = Marmorierung
 08 = Ikterus
 98 = Sonstige
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-hautbefund-cs und MindHautbefundVS. Noch kein Observation-Profil.
 "Psyche1
 Psyche2";"Psychischer Zustand
 -1 = nicht untersucht 00 = unauffällig
@@ -250,61 +250,61 @@ Psyche2";"Psychischer Zustand
 09 = suizidal
 10 = motorisch unruhig
 98 = Sonstige
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-psychischer-zustand-cs und MindPsychischerZustandVS. Noch kein Observation-Profil.
 Pupillenweite1 Pupillenweite2;"Pupillenweite
 -1 = nicht untersucht 01 = beidseits eng
 02 = beidseits mittelweit 03 = beidseits weit
 04 = Anisokorie
 05 = entrundet
 98 = Sonstige
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-pupillenweite-cs und MindPupillenweiteVS. Noch kein Observation-Profil.
 "Lichtreaktion1
 Lichtreaktion2";"Lichtreaktion
 -1 = nicht untersucht 00 = beidseits prompt 01 = beidseits träge 02 = beidseits keine 03 = Seitendifferenz
 98 = Sonstige
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-lichtreaktion-cs und MindLichtreaktionVS. Noch kein Observation-Profil.
 EtCO2Wert1 EtCO2Wert2;"erster / letzter gemessener etCO2 Wert (unter Beatmung in mmHg gemessen)
 Wertebereich = 0 bis 120
 -1 = nicht gemessen 999 = nicht messbar";DM;;;
 VBeatmung;"Beatmung (außer Heimbeatmung)
 01 = Ja
-02 = Nein";DM;x;;
+02 = Nein";DM;x;;"Betrifft nur Baden-Württemberg (BW-markiert); nicht umgesetzt."
 VBeatmungDetail;"differenzierte Beatmung 01 = Ja
-02 = Nein";DM;x;;
+02 = Nein";DM;x;;"Betrifft nur Baden-Württemberg (BW-markiert); nicht umgesetzt."
 KatecholaminPflicht;"Katecholaminpflichtigkeit 01 = Ja
-02 = Nein";DM;x;;
+02 = Nein";DM;x;;Nicht umgesetzt.
 KatecholaminTherapie;"differenzierte Katecholamin-Therapie
 01 = Ja
-02 = Nein";DM;x;;
+02 = Nein";DM;x;;Nicht umgesetzt.
 FortlaufendSedierung;"fortlaufende Sedierung/Narkose 01 = Ja
-02 = Nein";DM;x;;
+02 = Nein";DM;x;;Nicht umgesetzt.
 VigilanzMinderung;"deutliche Vigilanzminderung mit Einschränkung von Schutzreflexen 01 = Ja
-02 = Nein";DM;x;;
+02 = Nein";DM;x;;Nicht umgesetzt.
 InvasivBlutdruck;"invasive Blutdruckmessung 01 = Ja
-02 = Nein";DM;x;;
+02 = Nein";DM;x;;Nicht umgesetzt.
 SpezDevices;"Spezielle Devices
 -1 = keine speziellen Devices eingesetzt 01 = Impella
 02 = externer Schrittmacher 03 = IABP
 04 = ECMO
-98 = Sonstige";DM;x;;
+98 = Sonstige";DM;x;T;Terminologie definiert: mind-spezielle-devices-cs und MindSpezielleDevicesVS. Noch kein Profil.
 AnzahlPerfusor;"Anzahl der Perfusoren
-Einstellige numerische Angabe (0 bis 9)";DM;x;;
+Einstellige numerische Angabe (0 bis 9)";DM;x;;Nicht umgesetzt.
 IndikationArztbegleitung;"Indikation Arztbegleitung gegeben 01 = Ja
-02 = Nein";DM;x;;
+02 = Nein";DM;x;;Nicht umgesetzt.
 ZDringlichkeit;"Zeitliche Dringlichkeit
 01 = Notfall - schnellstmöglich, vitale Indikation 02 = dringlich - zeitnah, keine vitale Indikation
-03 = planbar - Stunden oder Tage, nicht dringlich";DM;x;;
+03 = planbar - Stunden oder Tage, nicht dringlich";DM;x;T;Terminologie definiert: mind-zeitliche-dringlichkeit-cs und MindZeitlicheDringlichkeitVS. Noch kein Profil.
 IndikationIT;"Indikation Intensivtransport 00 = nein
 01 = ja, Patientenzustand
 02 = ja, intensivmedizinische Personalqualifikation erforderlich
-03 = ja, medizintechnische Ausstattung der Regelrettung nicht ausreichend 98 = ja, Sonstiges";DM;x;;
+03 = ja, medizintechnische Ausstattung der Regelrettung nicht ausreichend 98 = ja, Sonstiges";DM;x;T;Terminologie definiert: mind-indikation-intensivtransport-cs und MindIndikationIntensivtransportVS. Noch kein Profil.
 Diagnose;"ZNS Erkrankungen
 1100 = Hirninfarkt, TIA, intrakranielle Blutung (1101 bis 1104)
 1101 = TIA
 1102 = Hirninfarkt
 1103 = ICB (klin. Diagn.) 1104 = SAB (klin. Diagn.) 1105 = Krampfanfall
 1106 = Fieberkrampf 1107 = Status Epilepticus
-1108 = Meningitis - Encephalitis 1198 = sonstige Erkrankung ZNS";DM;;;
+1108 = Meningitis - Encephalitis 1198 = sonstige Erkrankung ZNS";DM;;T;Terminologie vollständig definiert: mind-diagnose-cs (inkl. Trauma-Katalog 1100-9999 und DiagnoseSonstige-Hauptcodes 1x98) und MindDiagnoseVS. Verwendendes Profil (Observation/Kondition) noch offen.
 ;"Herz/Kreislauf Erkrankungen 1201 = ACS
 1202 = STEMI VW
 1203 = STEMI HW
@@ -320,7 +320,7 @@ Diagnose;"ZNS Erkrankungen
 1217 = orthostatische Fehlregulation 1218 = Synkope
 1219 = Thrombose/arterieller Verschluss 1220 = Herz-Kreislauf-Stillstand
 1221 = hämorrhagischer Schock
-1298 = sonstige Erkrankung Herz-Kreislauf";DM;;;
+1298 = sonstige Erkrankung Herz-Kreislauf";DM;;T;
 ;"Atemwegserkrankungen 1301 = Asthma (Anfall) 1302 = Status Asthmaticus 1303 = exacerbierte COPD 1304 = Aspiration
 1305 = Pneumonie/Bronchitis
 1306 = Epiglottitis
@@ -328,25 +328,25 @@ Diagnose;"ZNS Erkrankungen
 1308 = anderer respiratorischer Infekt 1309 = Hyperventilationssyndrom
 1310 = Spontanpneumothorax
 1311 = Hämoptysis
-1312 = Dyspnoe unklarer Ursache 1398 = sonstige Erkrankung Atmung";DM;;;
+1312 = Dyspnoe unklarer Ursache 1398 = sonstige Erkrankung Atmung";DM;;T;
 ;"Abdominelle Erkrankungen 1401 = akutes Abdomen 1402 = obere GI Blutung 1403 = untere GI Blutung 1404 = Kolik (Galle, Niere,...)
 1405 = (Infektiöse) Gastroenteritis 1406 = Mesenterialinfarkt
-1498 = sonstige Erkrankung Abdomen";DM;;;
+1498 = sonstige Erkrankung Abdomen";DM;;T;
 ;"Psychiatrische Erkrankungen
 1501 = Depression, Angst 1502 = Manie, Psychose
 1503 = Entzugssymptomatik, Delir 1504 = Suizidalität
 1505 = psychosoziale Krise
-1598 = sonstige Erkrankung Psychiatrie";DM;;;
+1598 = sonstige Erkrankung Psychiatrie";DM;;T;
 ;"Störungen des Stoffwechsels sowie des Wasser- und Elektrolythaushalts 1601 = Hypoglykämie
 1602 = Hyperglykämie
 1603 = Urämie/ANV
 1604 = Exsikkose
 1605 = Elektrolytstörungen
-1698 = sonstige Erkrankung Stoffwechsel";DM;;;
+1698 = sonstige Erkrankung Stoffwechsel";DM;;T;
 ;"Gyn-/Geburtshilfe Notfälle
 1701 = Schwangerschaft > 35. SSW (zur Entbindung in die Klinik) 1702 = Schwangerschaftskomplikation (z. B. Eklampsie)
 1703 = Präklinische Geburt 1704 = Extrauterine Gravidität 1705 = vaginale Blutung
-1798 = sonstige Erkrankung Gynäkologie";DM;;;
+1798 = sonstige Erkrankung Gynäkologie";DM;;T;
 ;"Sonstige Erkrankungen  1801 = Anaphylaxie Grad 1/2 1802 = Anaphylaxie Grad 3/4 1803 = Intoxikation Alkohol 1804 = Intoxikation Drogen
 1805 = Intoxikation Medikamente 1806 = sonstige Intoxikation 1807 = akzidentelle Intoxikation 1808 = Sepsis/sept. Schock
 1809 = Hochkontagiöse Erreger (SARS, HKLE,...) 1810 = sonstige Infektionserkrankungen
@@ -359,69 +359,69 @@ Diagnose;"ZNS Erkrankungen
 1822 = Erysipel
 1898 = sonstige Erkrankung
 1899 = führendes soziales Problem
-9999 = keine Erkrankung/Verletzung feststellbar";DM;;;
+9999 = keine Erkrankung/Verletzung feststellbar";DM;;T;
 ;"SHT
 2001 = leicht
 2002 = mittel
 2003 = schwer
-2004 = lebensbedrohlich oder tödlich";DM;;;
+2004 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma Gesicht/Kopf/Hals 2101 = leicht
 2102 = mittel
 2103 = schwer
-2104 = lebensbedrohlich oder tödlich";DM;;;
+2104 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma HWS 2201 = leicht
 2202 = mittel
 2203 = schwer
-2204 = lebensbedrohlich oder tödlich";DM;;;
+2204 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma Thorax 2301 = leicht
 2302 = mittel
 2303 = schwer
-2304 = lebensbedrohlich oder tödlich";DM;;;
+2304 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma Abdomen 2401 = leicht
 2402 = mittel
 2403 = schwer
-2404 = lebensbedrohlich oder tödlich";DM;;;
+2404 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma BWS/LWS 2501 = leicht
 2502 = mittel
 2503 = schwer
-2504 = lebensbedrohlich oder tödlich";DM;;;
+2504 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma Becken 2601 = leicht
 2602 = mittel
 2603 = schwer
-2604 = lebensbedrohlich oder tödlich";DM;;;
+2604 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma obere Extremität 2701 = leicht
 2702 = mittel
 2703 = schwer
-2704 = lebensbedrohlich oder tödlich";DM;;;
+2704 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma untere Extremität 2801 = leicht
 2802 = mittel
 2803 = schwer
-2804 = lebensbedrohlich oder tödlich";DM;;;
+2804 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma Weichteile 2901 = leicht
 2902 = mittel
 2903 = schwer
-2904 = lebensbedrohlich oder tödlich";DM;;;
+2904 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Trauma Gefäßverletzungen
 2911 = leicht
 2912 = mittel
 2913 = schwer
-2914 = lebensbedrohlich oder tödlich";DM;;;
+2914 = lebensbedrohlich oder tödlich";DM;;T;
 ;"Spezielle Traumata
 3001 = Verbrennung/Verbrühung
 3002 = Inhalationstrauma/Rauchgasinhalation
 3003 = Elektrounfall
 3004 = Verätzung
 3005 = (Beinahe-) Ertrinken 3006 = Tauchunfall
-3098 = Sonstige";DM;;;
+3098 = Sonstige";DM;;T;
 Verletzungsmuster;"Verletzungsmuster 01 = Einzelverletzung
 02 = Mehrfachverletzung
-03 = Polytrauma (nach Tscherne)";DM;;;
+03 = Polytrauma (nach Tscherne)";DM;;T;Terminologie definiert: mind-verletzungsmuster-cs und MindVerletzungsmusterVS. Noch kein Profil.
 Unfallursache;"Unfallursache 01 = Unfall
-02 = Verdacht auf Gewaltanwendung 03 = Verdacht auf Suizid(versuch) 99 = nicht bekannt";DM;;;
+02 = Verdacht auf Gewaltanwendung 03 = Verdacht auf Suizid(versuch) 99 = nicht bekannt";DM;;T;Terminologie definiert: mind-unfallursache-cs und MindUnfallursacheVS. Noch kein Profil.
 Unfallmechanismus;"Unfallmechanismus
 01 = stumpf
 02 = penetrierend
-03 = Amputation 99 = nicht bekannt";DM;;;
+03 = Amputation 99 = nicht bekannt";DM;;T;Terminologie definiert: mind-unfallmechanismus-cs und MindUnfallmechanismusVS. Noch kein Profil.
 Unfallhergang;"Unfallhergang
 01 = PKW-Insasse
 02 = LKW-Insasse
@@ -442,7 +442,7 @@ Unfallhergang;"Unfallhergang
 19 = Arbeitsunfall
 20 = Sportunfall
 98 = andere Unfallarten
-99 = nicht bekannt";DM;;;
+99 = nicht bekannt";DM;;T;Terminologie definiert: mind-unfallhergang-cs und MindUnfallhergangVS. Noch kein Profil.
 HelmPat;"Helm Patient 00 = unbekannt
 01 = Ja
 02 = Nein";DM;;;
@@ -450,30 +450,30 @@ NACAScore;"NACA-Score
 01 = geringfügige Störung 02 = ambulante Abklärung 03 = stationäre Behandlung
 04 = akute Lebensgefahr nicht auszuschließen 05 = akute Lebensgefahr
 06 = primär erfolgreiche Reanimation 07 = Tod
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-naca-score-cs und MindNacaScoreVS. Noch kein Profil.
 MNACAScore;"M-NACA Score
 02 = leichte Störung 03 = mäßige Störung
 04 = drohende Lebensgefahr 05 = akute Lebensgefahr
 06 = erfolgreiche Reanimation
-07 = Biolog. Tod vorliegend - erfolglose Reanimation 99 = nicht errechenbar";DM;;;
+07 = Biolog. Tod vorliegend - erfolglose Reanimation 99 = nicht errechenbar";DM;;T;Terminologie definiert: mind-mnaca-score-cs und MindMnacaScoreVS. Noch kein Profil.
 Airway;"Airway Maßnahmen
 -1 = keine Maßnahmen durchgeführt
 01 = Freimachen/Freihalten der Atemwege (z.B. Guedel/WendlTubus)/Absaugen 02 = Maskenbeatmung unmöglich
 03 = supraglott. Atemwegshilfe SGA 04 = Atemwegszugang erschwert  05 = Endotrachealtubus
 06 = Intubation erschwert, mehr als 2 Versuche 07 = Koniotomie/chir. Atemweg
 08 = Trachealkanülenwechsel
-98 = Sonstige";DM;;;
+98 = Sonstige";DM;;T;Terminologie definiert: mind-airway-massnahme-cs und MindAirwayMassnahmeVS. Noch kein Profil.
 Atemunterst;"Atemunterstützung - Beatmung
 -1 = keine Atemunterstützung durchgeführt 01 = Sauerstoffgabe (Sonde/Maske)
 02 = manuell unterstützte Spontanatmung (Maske/Beutel)
 03 = manuelle Beatmung bei fehlender Spontanatmung (Maske/Beutel) 04 = maschinell unterstützte Maskenbeatmung  (NIV)
-05 = maschinelle invasive Beatmung (unterstützt oder kontrolliert) 98 = Sonstige";DM;;;
+05 = maschinelle invasive Beatmung (unterstützt oder kontrolliert) 98 = Sonstige";DM;;T;Terminologie definiert: mind-atemunterstuetzung-cs und MindAtemunterstuetzungVS. Noch kein Profil.
 CirculationZugang;"Medikamentenzugang
 -1 = kein Zugang gelegt 01 = PVK
 02 = ZVK
 03 = Shaldon- oder anderer großlumiger Katheter 04 = IO Punktion
 97 = Zugang vorhanden/durch Andere
-98 = Sonstige";DM;;;
+98 = Sonstige";DM;;T;Terminologie definiert: mind-circulation-zugang-cs und MindCirculationZugangVS. Noch kein Profil.
 SpezMassn;"Spezielle Maßnahmen
 -1 = keine speziellen Maßnahmen durchgeführt 01 = Kühlung lokal
 02 = Kühlung systemisch 03 = Wärmemanagement
@@ -486,11 +486,11 @@ SpezMassn;"Spezielle Maßnahmen
 10 = Hämostyptica
 11 = Thoraxdrainage/Entlastungspunktion
 12 = Thorakotomie
-13 = REBOA (resuscitative endovascular balloon occlusion of the aorta) 98 = Sonstige";DM;;;
+13 = REBOA (resuscitative endovascular balloon occlusion of the aorta) 98 = Sonstige";DM;;T;Terminologie definiert: mind-spezielle-massnahme-cs und MindSpezielleMassnahmeVS. Noch kein Profil.
 EKG12Kanal;"12-Kanal-EKG
 -1 = kein 12-Kanal-EKG durchgeführt 01 = durch eigenes RM vor Ort
 02 = durch Andere
-03 = telemetrische Übermittlung an Zielklinik 04 = nicht durchführbar";DM;;;
+03 = telemetrische Übermittlung an Zielklinik 04 = nicht durchführbar";DM;;T;Terminologie definiert: mind-ekg-12-kanal-cs und MindEkg12KanalVS. Noch kein Profil.
 Medizintechnik;"Medizintechnik
 -1 = keine Medizintechnik eingesetzt 01 = invasive RR-Messung
 02 = ZVD
@@ -499,7 +499,7 @@ Medizintechnik;"Medizintechnik
 06 = Spritzenpumpe(n)
 07 = Videolaryngoskopie
 08 = Transportinkubator
-98 = Sonstige";DM;;;
+98 = Sonstige";DM;;T;Terminologie definiert: mind-medizintechnik-cs und MindMedizintechnikVS. Noch kein Profil.
 LagTrans;"Lagerungs- und Rettungstechnik
 -1 = keine Lagerungs- und Rettungstechnik 01 = OK Hochlagerung
 02 = Flachlagerung
@@ -513,13 +513,13 @@ LagTrans;"Lagerungs- und Rettungstechnik
 11 = Reposition
 12 = Verband
 13 = Beckenschlinge
-98 = Sonstige";DM;;;
+98 = Sonstige";DM;;T;Terminologie definiert: mind-lagerungs-rettungstechnik-cs und MindLagerungsRettungstechnikVS. Noch kein Profil.
 DurchfHeilkundlMassn;"Eigenständig oder eigenverantwortlich durchgeführte heilkundliche Maßnahmen durch Notfallsanitäterinnen/Notfallsanitäter
 01 = ja, Medikamentengabe 02 = ja, Maßnahmen
-03 = nein";DM;;;
+03 = nein";DM;;T;Terminologie definiert: mind-heilkundliche-massnahme-cs und MindHeilkundlicheMassnahmeVS. Noch kein Profil.
 Behandlungspfad;diese Codes sind bundesland- und/oder regionalspezifisch;DM;;;
 Medikamentengabe;"Erläuterung Applikationsformen: iv=intravenös, io=intraossär, im=intramuskulär, sc=subcutan, nl=intranasal, ih=inhalativ,
-po=oral, sl=sublingual/buccal, rl=rectal, td=transdermal";DM;;;
+po=oral, sl=sublingual/buccal, rl=rectal, td=transdermal";DM;;T;Terminologie vollständig definiert: mind-medikamentengabe-cs (alle Medikamentengruppen inkl. Zusatzkennung Applikationsart io/iv/sc und nn97xx Dauermedikation) sowie MindMedikamentengabeVS. Noch kein Profil. Hinweis: Urapidil #1509io und Thrombolytika #2601-2603 gemäß Spez-TODO.
 ;"Analgetika
 Fentanyl: 1001iv, 1001io, 1001im, 1001sc, 1001nl, 1001sl, 1001td Morphin: 1002iv, 1002io, 1002im, 1002sc, 1002nl, 1002po, 1002td Piritramid: 1003iv, 1003io, 1003im, 1003sc
 Sufentanil: 1004iv, 1004io, 1004nl, 1004sl
@@ -527,69 +527,69 @@ anderes Opioid: 1005iv, 1005io, 1005im, 1005sc, 1005nl, 1005po, 1005sl, 1005rl, 
 Paracetamol: 1007iv, 1007io, 1007po, 1007rl Oxycodon: 1008iv, 1008io, 1008sc, 1008po, 1008sl
 Ketamin/Esketamin: 1009iv, 1009io, 1009im, 1009sc, 1009nl, 1009ih, 1009rl NSAID (z.B. Ibuprofen, Diclofenac): 1010iv, 1010io, 1010po, 1010rl Lokalanästhetikum (z.B. Lidocain): 1011sc, 1011td
 vorbehandelt mit Analgetika (sämtliche Applikationsformen): 1097xx
-sonstiges Analgetikum: 1098iv, 1098io, 1098im, 1098sc, 1098nl, 1098ih, 1098po, 1098sl, 1098rl, 1098td";DM;;;
+sonstiges Analgetikum: 1098iv, 1098io, 1098im, 1098sc, 1098nl, 1098ih, 1098po, 1098sl, 1098rl, 1098td";DM;;T;
 ;"Antiarrhythmika
 Betablocker: 1101iv, 1101io, 1101po Amiodaron: 1102iv, 1102io, 1102po Adenosin: 1103iv, 1103io
 Atropin: 1104iv, 1104io Verapamil: 1105iv, 1105io 1105po Ajmalin: 1106iv, 1106io Digitalisglykosid: 1107iv, 1107io Lidocain: 1108iv, 1108io
 vorbehandelt mit Antiarrhythmika (sämtliche Applikationsformen): 1197xx
-sonstiges Antiarrhythmikum: 1198iv, 1198io, 1198im, 1198sc, 1198nl, 1198ih, 1198po, 1198sl, 1198rl, 1198td";DM;;;
+sonstiges Antiarrhythmikum: 1198iv, 1198io, 1198im, 1198sc, 1198nl, 1198ih, 1198po, 1198sl, 1198rl, 1198td";DM;;T;
 ;"Antidota
 Flumazenil: 1201iv, 1201io, 1201nl Carbo medicinalis (Kohle): 1202po
 Naloxon: 1203iv, 1203io, 1203im, 1203sc, 1203nl Physostigmin: 1204iv, 1204io
 Atropin (als Antidot):1205iv, 1205io Obidoxim: 1206iv, 1206io Hydroxocobalamin: 1207iv, 1207io Natriumthiosulfat: 1208iv, 1208io
 4-Dimethylaminophenol (4-DMAP): 1209iv, 1209io Toloniumchlorid (Toluidinblau):1210iv, 1210 io Methylthioniniumchlorid (Methylenblau): 1211iv, 1211io vorbehandelt mit Antidota (sämtliche Applikationsformen): 1297xx
-sonstiges Antidot: 1298iv, 1298io, 1298im, 1298sc, 1298nl, 1298ih, 1298po, 1298sl, 1298rl, 1298td";DM;;;
+sonstiges Antidot: 1298iv, 1298io, 1298im, 1298sc, 1298nl, 1298ih, 1298po, 1298sl, 1298rl, 1298td";DM;;T;
 ;"Antiemetika
 Dimenhydrinat: 1301iv, 1301io, 1301po, 1301rl Metoclopramid: 1302iv, 1302io, 1302po
 5HT3 Antagonist (z. B. Ondansetron):1303iv, 1303io, 1303po, 1303rl vorbehandelt mit Antiemetika (sämtliche Applikationsformen): 1397xx
-sonstiges Antiemetikum: 1398iv, 1398io, 1398im, 1398sc, 1398nl, 1398ih, 1398po, 1398sl, 1398rl, 1398td";DM;;;
+sonstiges Antiemetikum: 1398iv, 1398io, 1398im, 1398sc, 1398nl, 1398ih, 1398po, 1398sl, 1398rl, 1398td";DM;;T;
 ;"Sedativa/Antiepileptika Clonazepam: 1401iv, 1401io
 Diazepam: 1402iv, 1402io, 1402im, 1402sc, 1402po, 1402sl, 1402nl, 1402rl Lorazepam: 1403iv, 1403io, 1403im, 1403sc, 1403po, 1403sl, 1403nl, 1403rl Midazolam: 1404iv, 1404io, 1404im, 1404sc, 1404po, 1404sl, 1404nl, 1404rl Phenytoin: 1405iv, 1405io
 Levetiracetam: 1406iv, 1406io
 vorbehandelt mit Sedativa/Antiepileptika (sämtliche Applikationsformen): 1497xx
-sonstiges Sedativum/Antiepileptikum: 1498iv, 1498io, 1498im, 1498sc, 1498nl, 1498ih, 1498po, 1498sl, 1498rl, 1498td";DM;;;
+sonstiges Sedativum/Antiepileptikum: 1498iv, 1498io, 1498im, 1498sc, 1498nl, 1498ih, 1498po, 1498sl, 1498rl, 1498td";DM;;T;
 ;"Antihypertensiva/Vasodilatantien Urapidil: 1501iv, 1509io Glyceroltrinitrat: 1502iv, 1502io, 1502sl Clonidin: 1503iv, 1503io, 1503po
 vorbehandelt mit Antihypertensiva/Vasodilatantien (sämtliche Applikationsformen): 1597xx
-sonstiges Antihypertensivum/Vasodilatans: 1598iv, 1598io, 1598im, 1598sc, 1598nl, 1598ih, 1598po, 1598sl, 1598rl, 1598td";DM;;;
+sonstiges Antihypertensivum/Vasodilatans: 1598iv, 1598io, 1598im, 1598sc, 1598nl, 1598ih, 1598po, 1598sl, 1598rl, 1598td";DM;;T;
 ;"Bronchodilatantien
 Salbutamol: 1601iv, 1601io, 1601ih Reproterol: 1602iv, 1602io, 1602ih
 Ipratropiumbromid: 1603iv, 1603io, 1603im, 1603sc, 1603ih Theophyllin: 1604iv, 1604io, 1604po
 vorbehandelt mit Brochodilatantien (sämtliche Applikationsformen): 1697xx
-sonstiges Bronchodilatans: 1698iv, 1698io, 1698im, 1698sc, 1698nl, 1698ih, 1698po, 1698sl, 1698rl, 1698td";DM;;;
+sonstiges Bronchodilatans: 1698iv, 1698io, 1698im, 1698sc, 1698nl, 1698ih, 1698po, 1698sl, 1698rl, 1698td";DM;;T;
 ;"Diuretika
 Furosemid: 1701iv, 1701io
 vorbehandelt mit Diuretika (sämtliche Applikationsformen): 1797xx
-sonstiges Diuretikum: 1798iv, 1798io, 1798im, 1798sc, 1798nl, 1798ih, 1798po, 1798sl, 1798rl, 1798td";DM;;;
+sonstiges Diuretikum: 1798iv, 1798io, 1798im, 1798sc, 1798nl, 1798ih, 1798po, 1798sl, 1798rl, 1798td";DM;;T;
 ;"Katecholamine/Vasopressoren
 Epinephrin: 1801iv, 1801io, 1801im, 1801sc, 1801nl, 1801ih Norepinephrin: 1802iv, 1802io
 Cafedrin/Theoadrenalin: 1803iv, 1803io Dobutamin: 1804iv, 1804io Vasopressin: 1805iv, 1805io
 vorbehandelt mit Katecholaminen (sämtliche Applikationsformen): 1897xx
-sonstige Katecholamine: 1898iv, 1898io, 1898im, 1898sc, 1898nl, 1898ih, 1898po, 1898sl, 1898rl, 1898td";DM;;;
+sonstige Katecholamine: 1898iv, 1898io, 1898im, 1898sc, 1898nl, 1898ih, 1898po, 1898sl, 1898rl, 1898td";DM;;T;
 ;"Kortikosteroide
 Dexametason: 1901iv, 1901io, 1901ih
 Methyl-/Prednisolon: 1902iv, 1902io, 1902ih, 1902rl
 vorbehandelt mit Kortikosteroiden (sämtliche Applikationsformen): 1997xx
-sonstiges Corticoid :1998iv, 1998io, 1998im, 1998sc, 1998nl, 1998ih, 1998po, 1998sl, 1998rl, 1998td";DM;;;
+sonstiges Corticoid :1998iv, 1998io, 1998im, 1998sc, 1998nl, 1998ih, 1998po, 1998sl, 1998rl, 1998td";DM;;T;
 ;"Muskelrelaxantien
 Suxamethonium: 2001iv, 2001io, 2001im Rocuronium 2002iv, 2002io
 vorbehandelt mit Muskelrelaxantien (sämtliche Applikationsformen): 2097xx
-sonstiges Muskelrelaxans: 2098iv, 2098io, 2098im, 2098sc, 2098nl, 2098ih, 2098po, 2098sl, 2098rl, 2098td";DM;;;
+sonstiges Muskelrelaxans: 2098iv, 2098io, 2098im, 2098sc, 2098nl, 2098ih, 2098po, 2098sl, 2098rl, 2098td";DM;;T;
 ;"Narkotika
 Etomidat: 2101iv, 2101io Propofol: 2102iv, 2102io Thiopental: 2103iv, 2103io
 vorbehandelt mit Narkotika (sämtliche Applikationsformen): 2197xx
-sonstiges Narkotikum: 2198iv, 2198io, 2198im, 2198sc, 2198nl, 2198ih, 2198po, 2198sl, 2198rl, 2198td";DM;;;
+sonstiges Narkotikum: 2198iv, 2198io, 2198im, 2198sc, 2198nl, 2198ih, 2198po, 2198sl, 2198rl, 2198td";DM;;T;
 ;"Psychopharmaka
 Haloperidol: 2201iv, 2201io, 2201im Promethazin: 2202iv, 2202io, 2202im
 vorbehandelt mit Psychopharmaka (sämtliche Applikationsformen): 2297xx
-sonstige Psychopharmaka: 2298iv, 2298io, 2298im, 2298sc, 2298nl, 2298ih, 2298po, 2298sl, 2298rl, 2298td";DM;;;
+sonstige Psychopharmaka: 2298iv, 2298io, 2298im, 2298sc, 2298nl, 2298ih, 2298po, 2298sl, 2298rl, 2298td";DM;;T;
 ;"Antikoagulanzien
 UF Heparin: 2301iv, 2301io, 2301sc NM Heparin: 2302sc
-vorbehandelt mit Antikoagluanzien (sämtliche Applikationsformen): 2397xx sonstige Antikoagulanzien: 2398iv, 2398io, 2398im, 2398sc, 2398po";DM;;;
+vorbehandelt mit Antikoagluanzien (sämtliche Applikationsformen): 2397xx sonstige Antikoagulanzien: 2398iv, 2398io, 2398im, 2398sc, 2398po";DM;;T;
 ;"TZ-Aggregationshemmer Acetylsalicylsäure: 2401iv, 2401io, 2401po Clopidogrel o.a.: 2402iv, 2402io, 2402po
-vorbehandelt mitTZ-Aggregationshemmern (sämtliche Applikationsformen): 2497xx sonstige TZ-Aggregationshemmer: 2498iv, 2498io, 2498im, 2498sc, 2498po, 2498sl";DM;;;
+vorbehandelt mitTZ-Aggregationshemmern (sämtliche Applikationsformen): 2497xx sonstige TZ-Aggregationshemmer: 2498iv, 2498io, 2498im, 2498sc, 2498po, 2498sl";DM;;T;
 ;"Thrombolytika
 Tenecteplase: 2601iv, 2601io Alteplase: 2602iv, 2602io Reteplase: 2603iv, 2603io
-vorbehandelt mit sonstigen Thrombolytika (sämtliche Applikationsformen): 2697xx sonstiges Thrombolytikum: 2698iv, 2698io, 2698im, 2698sc";DM;;;
+vorbehandelt mit sonstigen Thrombolytika (sämtliche Applikationsformen): 2697xx sonstiges Thrombolytikum: 2698iv, 2698io, 2698im, 2698sc";DM;;T;
 ;"Sonstige Medikamente
 Glukose: 2501iv, 2501io, 2501po
 H1 Blocker (z.B. Dimetinden): 2502iv, 2502io, 2502po H2 Blocker (z.B. Ranitidin): 2503iv, 2503io, 2503po Butylscopolamin: 2504iv, 2504io, 2504po
@@ -601,15 +601,15 @@ PPSB: 2517iv, 2517io
 Fibronogen: 2518iv, 2518io Lyoplasma: 2519iv, 2519io Thiamin: 2520iv, 2520io Simethicon: 2521po
 abschwellende Nasentropfen (z.B. Xylometazolin): 2522nl
 vorbehandelt mit sonstigen Medikamenten (sämtliche Applikationsformen): 2597xx
-sonstige Medikamente: 2598iv, 2598io, 2598im, 2598sc, 2598nl, 2598ih, 2598po, 2598sl, 2598rl, 2598td kein Medikament: 999999";DM;;;
+sonstige Medikamente: 2598iv, 2598io, 2598im, 2598sc, 2598nl, 2598ih, 2598po, 2598sl, 2598rl, 2598td kein Medikament: 999999";DM;;T;
 Infusionsgabe;"Kristalloide Infusionen
 Isotone Kochsalzlösung.: 3001iv, 3001io, 3001sc Vollelektrolytlösung: 3002iv, 3002io, 3002sc
-vorbehandelt mit Kristalloid (sämtliche Applikationsformen): 3097xx sonstiges Kristalloid: 3098iv, 3098io, 3098sc";DM;;;
+vorbehandelt mit Kristalloid (sämtliche Applikationsformen): 3097xx sonstiges Kristalloid: 3098iv, 3098io, 3098sc";DM;;T;"Infusionsgabe über Kombinationscodes (z. B. 3001io) im mind-medikamentengabe-cs; MindInfusionsgabeVS definiert. Noch kein Profil."
 ;"Spezielle Infusionen
 HÄS: 3101iv, 3101io
 SVR/Hyperosmol. NaCl: 3102 iv, 3102io Gelatine: 3103iv, 3103io
-vorbehandelt mit Kolloid (sämtliche Applikationsformen): 3197xx sonstige: 3198iv, 3198io, 3198 sc";DM;;;
-;sonstige Angaben keine Infusion: 999999;DM;;;
+vorbehandelt mit Kolloid (sämtliche Applikationsformen): 3197xx sonstige: 3198iv, 3198io, 3198 sc";DM;;T;
+;sonstige Angaben keine Infusion: 999999;DM;;T;
 NeurologischeAuffaelligkeiten2;"Akute neurologische Auffälligkeiten (ZNS, PNS)
 -1 = nicht untersucht 00 = keine
 01 = Gesichtslähmung (kein Lächeln/hängender Mundwinkel) F
@@ -625,7 +625,7 @@ NeurologischeAuffaelligkeiten2;"Akute neurologische Auffälligkeiten (ZNS, PNS)
 14 = Querschnittsymptomatik
 96 = gegenüber Erstbefund keine Änderungen
 98 = Sonstige
-99 = nicht beurteilbar";DM;;;
+99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-neurologische-auffaelligkeit-cs (Abschlussbefunde). Noch kein Observation-Profil.
 SoSiTransport;"Sondersignal bei Transport: 01 = Ja
 02 = Nein";DM;;;
 OrtPatUeberg;"Ort Patienten-Übergabe 01 = ZNA/INA/PINA
@@ -642,11 +642,11 @@ OrtPatUeberg;"Ort Patienten-Übergabe 01 = ZNA/INA/PINA
 13 = Arztpraxis
 14 = Notfall-/Bereitschaftspraxis
 15 = Einsatzstelle
-98 = Sonstige";DM;;;
+98 = Sonstige";DM;;T;Terminologie definiert: mind-ort-patientenuebergabe-cs und MindOrtPatientenuebergabeVS. Noch kein Profil.
 NummerZK;"Kennung der Zielklinik:
 000001001 bis 000009990 = ID aus Krankenhausverzeichnis (Transportziele) für die Datenlieferung an die SQR-BW 770000000 bis 779999999 = Standortnummer
 000009998 = sonstige Zielklinik
-000009999 = anderes Transportziel (z.B. Arztpraxis)";DM;;;
+000009999 = anderes Transportziel (z.B. Arztpraxis)";DM;;;Nicht umgesetzt. Modellierungsvorschlag: Organization (Zielklinik) bzw. Encounter.hospitalization.destination.
 AnmeldungPatient;"Patient in Zielklinik angemeldet 01 = Ja
 02 = Nein";DM;;;
 Einsatzbesonderheiten;"Einsatzbesonderheiten 00 = keine
@@ -667,21 +667,21 @@ Einsatzbesonderheiten;"Einsatzbesonderheiten 00 = keine
 17 = Wahl der Zielklinik durch Dritte (z.B. HA, Klinikarzt,...)
 18 = Wahl der Zielklinik verursacht durch Patientenwunsch
 19 = Einsatzabbruch (dieses Einsatzes) wegen Folgeeinsatz
-20 = dieser Einsatz ist ein Folgeeinsatz 98 = Sonstige";DM;;;
+20 = dieser Einsatz ist ein Folgeeinsatz 98 = Sonstige";DM;;T;Terminologie definiert: mind-einsatzbesonderheit-cs und MindEinsatzbesonderheitVS. Noch kein Profil.
 PreEmergencyStatus;"Zustand vor Eintritt des Notfalls 01 = ohne Vorerkrankungen (VE)
 02 = VE ohne nennenswerte Einschränkung des tgl. Lebens 03 = VE mit nennenswerter Einschränkung des tgl. Lebens 04 = normales tgl. Leben unmöglich
-05 = Pat. wird in den nächsten 24 Std. sterben, mit und ohne medizinische/-r Hilfe 99 = nicht bekannt";DM;;;
+05 = Pat. wird in den nächsten 24 Std. sterben, mit und ohne medizinische/-r Hilfe 99 = nicht bekannt";DM;;T;Terminologie definiert: mind-pre-emergency-status-cs und MindPreEmergencyStatusVS. Noch kein Profil.
 Reanimationssituation;"Lag eine Reanimationssituation vor / wurde von der Rettungsmittelbesatzung eine Reanimation begonnen? 00 = keine Reanimationssituation (kein Tod/kein Kreislaufstillstand)
 01 = Reanimation durchgeführt durch dokumentierendes Rettungsmittel
 02 = Reanimation durchgeführt und aufgrund nachträglicher Erkenntnis über fehlendes Therapieziel eingestellt
 03 = Reanimation durchgeführt und aufgrund nachträglicher Erkenntnis über mutmaßlichen Patientenwillen eingestellt 04 = Reanimation durch Andere durchgeführt mit fortbestehendem ROSC bei eigenem Eintreffen
 05 = Reanimation nicht durchgeführt, weil sichere Todeszeichen
 06 = Reanimation nicht durchgeführt, aufgrund mutmaßlichen Patientenwillens (z.B. DNR-Order) 07 = Reanimation nicht durchgeführt, weil aussichtslose Grunderkrankung bekannt
-08 = Reanimation nicht durchgeführt, wegen aussichtsloser sonstiger Faktoren (z.B. Zeit überschritten)";DM;;;
+08 = Reanimation nicht durchgeführt, wegen aussichtsloser sonstiger Faktoren (z.B. Zeit überschritten)";DM;;T;Terminologie definiert: mind-reanimationssituation-cs und MindReanimationssituationVS. Noch kein Profil.
 Reanimationstechnik;"Reanimationstechnik
 -1 = keine
 01 = Einsatz eines public access AED 02 = Einsatz eines feedback-Systems
-03 = Mechanisches Thoraxkompressionsgerät 04 = extrakorporale CPR (eCPR)";DM;;;
+03 = Mechanisches Thoraxkompressionsgerät 04 = extrakorporale CPR (eCPR)";DM;;T;Terminologie definiert: mind-reanimationstechnik-cs und MindReanimationstechnikVS. Noch kein Profil.
 URKRSTST;"Vermutete Ursache des Kreislaufstillstandes 01 = kardial
 02 = Trauma
 03 = Ertrinken
@@ -697,7 +697,7 @@ URKRSTST;"Vermutete Ursache des Kreislaufstillstandes 01 = kardial
 13 = Stromschlag
 97 = sonstiges nicht medizinisch
 98 = sonstiges medizinisch
-99 = nicht bekannt";DM;;;
+99 = nicht bekannt";DM;;T;Terminologie definiert: mind-kreislaufstillstandursache-cs und MindKreislaufstillstandursacheVS. Noch kein Profil.
 SPORT;"Zusammenhang mit sportlicher Aktivität:
 01 = Ja
 02 = Nein";DM;;;
@@ -708,7 +708,7 @@ ZCKB;"Kollaps beobachtet durch
 05 = RTW-Besatzung
 06 = NA-Rettungsmittel
 98 = Sonstige
-99 = nicht bekannt";DM;;;
+99 = nicht bekannt";DM;;T;Terminologie definiert: mind-kollaps-beobachtet-durch-cs und MindKollapsBeobachtetDurchVS. Noch kein Profil.
 ZCHDM;"Beginn der Herzdruckmassage durch
 -1 = keine Herzdruckmassage durchgeführt 01 = Ersthelfende
 02 = aktivierte Ersthelfende (z.B. App-Ersthelfende) 03 = First Responder
@@ -716,7 +716,7 @@ ZCHDM;"Beginn der Herzdruckmassage durch
 05 = RTW-Besatzung
 06 = NA-Rettungsmittel
 98 = Sonstige
-99 = nicht bekannt";DM;;;
+99 = nicht bekannt";DM;;T;Terminologie definiert: mind-herzdruckmassage-durch-cs und MindHerzdruckmassageDurchVS. Noch kein Profil.
 ZCDEFI;"Erste Defibrillation durch
 -1 = keine Defibrillation durchgeführt 01 = Ersthelfende
 02 = aktivierte Ersthelfende (z.B. App-Ersthelfende) 03 = First Responder
@@ -724,37 +724,37 @@ ZCDEFI;"Erste Defibrillation durch
 05 = RTW-Besatzung
 06 = NA-Rettungsmittel
 98 = Sonstige
-99 = nicht bekannt";DM;;;
+99 = nicht bekannt";DM;;T;Terminologie definiert: mind-erste-defibrillation-durch-cs und MindErsteDefibrillationDurchVS. Noch kein Profil.
 ROSC;"Erreichen eines Spontankreislaufs (ROSC) 01 = niemals ROSC
-02 = jemals ROSC";DM;;;
+02 = jemals ROSC";DM;;T;Terminologie definiert: mind-rosc-cs und MindRoscVS. Noch kein Profil.
 KHAUF;"Patientenzustand bei Krankenhausaufnahme
 01 = keine Krankenhausaufnahme, Tod an der Einsatzstelle 02 = Krankenhausaufnahme mit ROSC
-03 = Krankenhausaufnahme unter laufender Reanimation";DM;;;
+03 = Krankenhausaufnahme unter laufender Reanimation";DM;;T;Terminologie definiert: mind-krankenhausaufnahme-zustand-cs und MindKrankenhausaufnahmeZustandVS. Noch kein Profil.
 FehleinsatzGrund;"Fehleinsatz
 -1 = kein Fehleinsatz 01 = kein Patient
 02 = Pat. bereits abtransportiert 03 = abbestellt
 04 = böswillige Alarmierung
-05 = Einsatzabbruch technisch 06 = Einsatzabbruch Wetter 99 = Einsatzabbruch Sonstige";M;;;
+05 = Einsatzabbruch technisch 06 = Einsatzabbruch Wetter 99 = Einsatzabbruch Sonstige";M;;;"Nur DIVI (Zugehörigkeit M); nicht umgesetzt."
 Versorgungssituation;"Versorgungssituation
 -1 = nicht bekannt 01 = unabhängig
 02 = Pflege zuhause
-03 = Pflege in Institution";M;;;
+03 = Pflege in Institution";M;;;Nicht umgesetzt.
 AntikoagulanzienVorEreignis;"Antikoagulanzien vor dem Notfallereignis
 -1 = nicht bekannt
 01 = TZ-Aggregationshemmer 02 = Vit.K Antagonist
 03 = Heparin(oide)
 04 = DOAK Thrombinhemmer 05 = DOAK Xa-Hemmer
-99 = Sonstige bzw. unklar welche";M;;;
+99 = Sonstige bzw. unklar welche";M;;;Nicht umgesetzt.
 Ersthelfermassnahmen;"Ersthelfermaßnahmen
 -1 = nicht bekannt 01 = suffizient
 02 = insuffizient
-03 = Keine";M;;;
+03 = Keine";M;;;Nicht umgesetzt.
 VitalProblem;"Vitale Probleme nach ABCDE
 -1 = nicht erfasst 01 = A
 02 = B
 03 = C
 04 = D
-05 = E";M;;;
+05 = E";M;;;Nicht umgesetzt.
 GCSAugenOeffnen1;"Augen öffnen
 -1 = nicht untersucht 00 = nicht vorhanden 01 = auf Druck
 02 = auf Geräusch 03 = Spontan
@@ -948,7 +948,7 @@ Lysetherapie;"Ersthelfermaßnahmen
 99 = Lysezeitpunkt nicht bekannt";M;;;
 NeurologieVerlauf;"Neurologie Verlauf
 -1 = nicht untersucht 01 = unverändert
-02 = neu erhoben";M;;;
+02 = neu erhoben";M;;T;Terminologie definiert: mind-neurologische-auffaelligkeit-verlauf-cs und MindNeurologischeAuffaelligkeitVerlaufVS. Noch kein Profil.
 AnmeldungWo;"Anmeldung wo
 -1 = keine Anmeldung 01 = Stroke Unit
 02 = Herzkatheter
@@ -972,7 +972,7 @@ TodArt;"Todesart
 02 = unklar
 03 = nicht natürlich";M;;;
 KollapsBeobachtet;"der Kollaps wurde beobachtet 01 = Ja
-02 = Nein";M;;;
+02 = Nein";M;;T;"Terminologie 'Kollaps beobachtet durch' definiert (mind-kollaps-beobachtet-durch-cs). Das Boolesche Feld selbst ist nicht umgesetzt; abgedeckt ist nur die ZCKB-Ausprägung (T)."
 AnkunftVorRettungsdienst;"die Ankunft des notarztbesetzten Rettungsmittels erfolgte vor dem RTW 01 = Ja
 02 = Nein";M;;;
 PatPseudonym;"der Patientenname ist unbekannt und Pseudonym eingesetzt 01 = Ja
