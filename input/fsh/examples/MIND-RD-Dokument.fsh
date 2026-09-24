@@ -61,6 +61,8 @@ Usage: #example
 * identifier[projektid].value = "PRJ-2026-0001"
 * identifier[leitstelle].value = "HI"
 * identifier[primaerschluessel].value = "HI-2026-00042"
+* identifier[einsatznr].value = "E-2026-0412"
+* identifier[auftragnr].value = "RK-2026-3321"
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER
 * type.coding = MindEinsatzartCS#04
 * location.location = Reference(MindRdLocationExample)

@@ -14,7 +14,7 @@ Description: "Encounter-Ressource für den MIND 7.1 Datensatz"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier contains standortkennung 0..1 and projektid 1..1 and leitstelle 1..1 and primaerschluessel 1..1
+* identifier contains standortkennung 0..1 and projektid 1..1 and leitstelle 1..1 and primaerschluessel 1..1 and einsatznr 0..1 and auftragnr 0..1
 * identifier[standortkennung].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-standortkennung"
 * identifier[standortkennung].value 1..1
 * identifier[standortkennung].value obeys mind-standortkennung-format
@@ -25,6 +25,10 @@ Description: "Encounter-Ressource für den MIND 7.1 Datensatz"
 * identifier[primaerschluessel].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-primaerschluessel"
 * identifier[primaerschluessel].value 1..1
 * identifier[primaerschluessel].value obeys mind-primaerschluessel-laenge
+* identifier[einsatznr].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-einsatznr"
+* identifier[einsatznr].value 1..1
+* identifier[auftragnr].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-auftragnr"
+* identifier[auftragnr].value 1..1
 
 // --- EinsatzArt als Binding auf Encounter.type ---
 * type 1..1

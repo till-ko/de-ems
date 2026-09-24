@@ -12,13 +12,13 @@ _Legende: `x` = vollständig umgesetzt · `T` = Terminologie vorhanden (CS/VS de
 
 ██░░░░░░░░░░░░░░░░░░░░ `11%` · **Codes:** 21 von 185 vollständig, 102 inkl. Terminologie
 
-███░░░░░░░░░░░░░░░░░░░ `14%` · **Datenfelder:** 36 von 262 vollständig, 84 inkl. Terminologie
+███░░░░░░░░░░░░░░░░░░░ `15%` · **Datenfelder:** 39 von 262 vollständig, 87 inkl. Terminologie
 
 ### Fortschritt je Kapitel (Datenfelder)
 
 | Kapitel | x | T | leer | Σ | Fortschritt |
 |---|---:|---:|---:|---:|---|
-| Strukturdaten | 5 | 0 | 3 | 8 | `██████████████░░░░░░░░ 62%` |
+| Strukturdaten | 8 | 0 | 0 | 8 | `██████████████████████ 100%` |
 | RettungstechnischeDaten | 16 | 0 | 10 | 26 | `██████████████░░░░░░░░ 62%` |
 | ZeitenEinsatzablauf | 12 | 0 | 1 | 13 | `████████████████████░░ 92%` |
 | Patientendaten | 3 | 0 | 19 | 22 | `███░░░░░░░░░░░░░░░░░░░ 14%` |

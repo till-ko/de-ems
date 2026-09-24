@@ -1,7 +1,7 @@
 # Roadmap — MIND 7.1 → FHIR-Umsetzungsstand
 
 Dieses Dokument erklärt, wie die Roadmap des Projekts funktioniert und wie der
-Umsetzungsstand der MIND-7.1-Spezifikation in einem FHIR-IG gepflegt wird.
+Umsetzungsstand der MIND-7.1-Spezifikation in diesem FHIR-IG gepflegt wird.
 
 Der aktuelle Stand (Fortschrittsbalken, Badges, Zahlen) wird automatisch aus
 den Roadmap-CSVs generiert und ist in der [README](../README.md) zu sehen.
@@ -44,7 +44,7 @@ Fortsetzungszeilen (leerer Feldname) erben den Status des zugehörigen Blocks.
   - `progress-codes.json` — Codes vollständig (`x`)
   - `progress-codes-full.json` — Codes inkl. Terminologie (`x` + `T`)
 
-Aufruf (nur Python-Standardbibliothek):
+Manueller Aufruf:
 
 ```bash
 python3 roadmap/update_roadmap_readme.py
