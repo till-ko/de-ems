@@ -10,7 +10,7 @@ Description: "Vollständiges deutsches Patientprofil für das DIVI-Notfalleinsat
 * identifier contains patnr 0..1
 * identifier[patnr].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-patnr"
 * identifier[patnr].value 1..1
-* name 1..1
+* name 0..1
 * name only http://fhir.de/StructureDefinition/humanname-de-basis
 * gender 1..1
 * gender.extension contains http://fhir.de/StructureDefinition/gender-amtlich-de named genderAmtlich 0..1

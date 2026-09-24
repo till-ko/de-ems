@@ -1,38 +1,22 @@
 Profile: EncounterDeEmsMindR4
-Parent: Encounter
+Parent: EncounterDeEmsDiviR4
 Id: encounter-de-ems-mind-r4
 Title: "MIND 7.1 Einsatz / Encounter"
-Description: "Encounter-Ressource für den MIND 7.1 Datensatz"
+Description: "Constraint-Ableitung des DIVI-Einsatz-Encounters (EncounterDeEmsDiviR4) für den MIND-7.1-Datensatz. Erweitert das Basisprofil um die MIND-spezifischen Strukturdaten (ProjektID, Primärschlüssel), macht Leitstelle und Referenzen auf die MIND-Patienten-/Einsatzort-Profile verbindlich."
 
-* status 1..1
-* class 1..1
-* subject 1..1
-* subject only Reference(Patient)
+* subject only Reference(PatientDeEmsMindR4)
 * period 1..1
 
-// --- Identifier-Slices für Strukturdaten ---
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains standortkennung 0..1 and projektid 1..1 and leitstelle 1..1 and primaerschluessel 1..1 and einsatznr 0..1 and auftragnr 0..1
-* identifier[standortkennung].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-standortkennung"
-* identifier[standortkennung].value 1..1
-* identifier[standortkennung].value obeys mind-standortkennung-format
+// --- Zusätzliche MIND-only Identifier-Slices ---
+* identifier contains projektid 1..1 and primaerschluessel 1..1
 * identifier[projektid].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-projektid"
 * identifier[projektid].value 1..1
-* identifier[leitstelle].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-leitstelle"
-* identifier[leitstelle].value 1..1
 * identifier[primaerschluessel].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-primaerschluessel"
 * identifier[primaerschluessel].value 1..1
 * identifier[primaerschluessel].value obeys mind-primaerschluessel-laenge
-* identifier[einsatznr].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-einsatznr"
-* identifier[einsatznr].value 1..1
-* identifier[auftragnr].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-auftragnr"
-* identifier[auftragnr].value 1..1
 
-// --- EinsatzArt als Binding auf Encounter.type ---
-* type 1..1
-* type from MindEinsatzartVS (required)
+// --- Verbindlich für MIND: Leitstelle und MIND-Referenzen ---
+* identifier[leitstelle] 1..1
 
 * location 1..1
 * location.location 1..1

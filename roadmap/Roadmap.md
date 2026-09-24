@@ -79,7 +79,43 @@ korrekt.
 4. `python3 roadmap/update_roadmap_readme.py` ausführen (oder einfach pushen —
    die Action erledigt das).
 
-## 6. Bekannte Abweichungen (Kurzfassung)
+## 6. Modellierungskonvention: DIVI-Basis und MIND-Ableitung
+
+Die DIVI-Spezifikation beschreibt **mehr** Datenfelder als MIND. Deshalb
+gilt folgende Profil-Hierarchie (Constraint-Derivation, keine separate
+Modellierung beider Datensätze):
+
+- **`*DeEmsDiviR4`-Profile sind die Superset-Basen** (mappen *alle* DIVI- und
+  gemeinsamen Felder), z. B. `PatientDeEmsDiviR4`, `EncounterDeEmsDiviR4`,
+  `LocationDeEmsDiviR4`.
+- **`*DeEmsMindR4`-Profile sind konstraint-Ableitungen davon** (`Parent:` =
+  DIVI-Pendant) und enthalten nur MIND-relevante Verschärfungen bzw.
+  MIND-spezifische Felder (z. B. `ProjektID`, `Primärschlüssel`).
+- Instanzen deklarieren ihre Konformität über `meta.profile`; kompatible
+  Referenzen (z. B. `Encounter.subject` auf das MIND- oder DIVI-Profil) werden
+  im jeweiligen Profil verschärft.
+
+### Umgang mit DIVI-only Feldern
+
+Der Vererbungs-Check von FHIR erlaubt nur `min(erbt) ≥ min(Basis)` und
+`max(erbt) ≤ max(Basis)` — ein **Pflichtfeld der Basis kann MIND nicht mehr
+absenken**. Daraus folgt die Konvention:
+
+1. **DIVI-only Felder werden in der Basis mit `0..1` (optional) modelliert,
+   nie `1..1`.**
+2. **Im MIND-Profil wird jedes DIVI-only Feld explizit auf `0..0` gesetzt**
+   (wie bereits `PatNr` bzw. `Patient.identifier`), damit Validatoren
+   erzwingen, dass keine DIVI-only Daten in MIND-Dokumente einfließen.
+3. **Ausnahme:** `EinsatzNr` und `AuftrNr` bleiben in `EncounterDeEmsMindR4`
+   bewusst als `0..1` erhalten (MIND-Dokumente dürfen sie optional tragen).
+   Nur diese beiden—weitere Ausnahmen dürfen nicht hinzukommen, ohne begründet
+   und in „Bekannte Abweichungen" ergänzt zu werden.
+
+Konsequenz für neue DIVI-only Felder (z. B. `EinsatzStrasseName` im
+Einsatzort): **jedes** neue Feld bekommt zusätzlich zur Basis-`0..1` einen
+Gegenbefehl `* <Feld> 0..0` im zugehörigen MIND-Profil.
+
+## 7. Bekannte Abweichungen (Kurzfassung)
 
 Ausführliche Begründungen stehen feldweise in der jeweiligen
 „Anmerkung zur Umsetzung". Die wichtigsten wiederkehrenden Punkte:
