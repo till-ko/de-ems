@@ -1,0 +1,32 @@
+name: update-roadmap-progress
+
+on:
+  push:
+    branches: [master, develop]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-README:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Generate README section and badge JSONs
+        run: python3 roadmap/update_roadmap_readme.py
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md roadmap/progress-df.json roadmap/progress-df-full.json \
+                  roadmap/progress-codes.json roadmap/progress-codes-full.json
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(roadmap): regenerate progress status"
+            git push
+          else
+            echo "No changes — nothing to commit."
+          fi
