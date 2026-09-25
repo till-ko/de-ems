@@ -4,6 +4,7 @@ Id: patient-de-ems-mind-r4
 Title: "MIND 7.1 Patient"
 Description: "Constraint-Ableitung vom vollständigen DIVI-Patientprofil (PatientDeEmsDiviR4) für den MIND-7.1-Export. Identifizierende Patientendaten (Name, Geburtsdatum, Adresse, Kennungen) werden nicht übermittelt."
 
+* identifier[patnr] 0..0
 * identifier 0..0
 * name 0..0
 * gender 1..1
