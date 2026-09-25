@@ -6,6 +6,7 @@ Description: "Composition für ein deutsches MIND-7.1-RD-Dokument."
 
 * status = #final
 * extension contains MindSoftwarekennung named softwarekennung 0..1
+* extension[softwarekennung] obeys mind-wert-oder-undokumentiert
 * extension[softwarekennung].valueString 0..1
 * type 1..1
 * type from MindProtokolltypVS (required)

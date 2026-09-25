@@ -120,10 +120,16 @@ Gegenbefehl `* <Feld> 0..0` im zugehörigen MIND-Profil.
 Ausführliche Begründungen stehen feldweise in der jeweiligen
 „Anmerkung zur Umsetzung". Die wichtigsten wiederkehrenden Punkte:
 
-- **Minus-/Sonderwerte** (−1, −2, 999, 99999999 …) werden über
-  `Observation.dataAbsentReason` (CH-EMS-Konzept) abgebildet, nicht als eigene
-  Codes; AGS/PLZ-Sonderwerte sind durch `^[0-9]{8}$`-Invarianten nicht
-  darstellbar.
+- **Minus-/Sonderwerte** (−1, −2, 999, 99999999 …) werden nach dem
+  CH-EMS-Konzept über **`Observation.dataAbsentReason`** bzw. (bei
+  Identifier-/Textfeldern wie `Standortkennung` oder `Softwarekennung`) über
+  die **`data-absent-reason`-Extension** auf dem Wertelement abgebildet
+  (XOR-Invariante `mind-wert-oder-undokumentiert`); AGS/PLZ-Sonderwerte sind
+  dadurch ebenfalls darstellbar, die `^[0-9]{8}$`-Invarianten bleiben rein
+  numerisch gültig.
+- **Zeichenlimits** (z. B. *Zeichenlimit 50* bei `EinsatzNr`, `PatNr`,
+  `AuftrNr`) sind als Invarianten modelliert (z. B.
+  `mind-identifier-laenge-50`).
 - **EinsatzArt**: NA-/RD-spezifische ValueSets sind definiert, aber nicht
   gebunden — die NA-/RD-Plausibilität wird nicht erzwungen.
 - **Boolesche Inversionen**: `SymptombeginnGesichert` und `ValiditaetAlter`

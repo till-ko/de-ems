@@ -5,7 +5,7 @@ Usage: #definition
 * status = #active
 * kind = #identifier
 * responsible = ""
-* description = "Standortkennung des Rettungsmittelstandorts vergeben durch die zuständige behörde"
+* description = "Amtlicher Gemeindeschlüssel des Rettungsmittel-Standorts (Gliederung BL-LK: Bundesland und Landkreis nach Vorgaben des Gemeindeschlüssels; Rettungswache). Sonderwerte der MIND-Spezifikation (-1 = nicht dokumentiert, 99999999 = nicht bekannt) werden nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf identifier[standortkennung].value abgebildet (CH-EMS-Konzept)."
 * date = "2026-09-10"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-standortkennung"

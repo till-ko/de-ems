@@ -2,7 +2,7 @@ Feldname;Werteliste;Zugehörigkeit DIVI-MIND;Felder betreffen nur Baden-Württembe
 Protokolltyp;"NA
 RD";DM;;x;"CompositionDeEmsMindR4: Composition.type mit ValueSet Mind-Protokolltyp-VS (required; NA=na, RD=rd). Abweichung: Composition.title ist hardcodiert 'MIND 7.1 Rettungsdienstdokumentation', erfolgt keine NA/RD-Differenzierung des Titels."
 Standortkennung;"Amtlicher Gemeindeschlüssel des RM-Standortes
--1 = nicht dokumentiert 99999999 = nicht bekannt";DM;;x;"EncounterDeEmsMindR4: Encounter.identifier[standortkennung] mit NamingSystem mind-standortkennung; Invariante mind-standortkennung-format erzwingt ^[0-9]{8}$. Der MIND-Default -2 (unbekannt) ist damit nicht abbildbar."
+-1 = nicht dokumentiert 99999999 = nicht bekannt";DM;;x;"EncounterDeEmsDiviR4 (Basis; MIND erbt): Encounter.identifier[standortkennung] mit NamingSystem mind-standortkennung; Invariante mind-standortkennung-format erzwingt ^[0-9]{8}$. Sonderwerte -1 (nicht dokumentiert) und 99999999 (nicht bekannt) werden über die data-absent-reason-Extension abgebildet (XOR-Invariante mind-wert-oder-undokumentiert, CH-EMS-Konzept)."
 EinsatzArt;"Einsatzart
 01 = Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA 02 = Notfallrettung - Primäreinsatz nur mit TNA
 03 = Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA 04 = Notfallrettung - Primäreinsatz ohne NA
