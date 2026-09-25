@@ -11,6 +11,8 @@ Description: "MIND-Alter zum maßgeblichen Zeitpunkt des Einsatzes als Jahre (co
 * code.coding.code = #patientenalter (exactly)
 * subject 1..1
 * subject only Reference(PatientDeEmsMindR4)
+* encounter 1..1
+* encounter only Reference(EncounterDeEmsMindR4)
 * effectiveDateTime 1..1
 * value[x] 0..0
 

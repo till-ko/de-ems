@@ -94,6 +94,7 @@ Usage: #example
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #patientenalter
 * subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * component[jahre].code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * component[jahre].code.coding.code = #alter-jahre
@@ -109,6 +110,7 @@ Usage: #example
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #altersvaliditaet
 * subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * valueBoolean = false
 
@@ -121,6 +123,7 @@ Description: "Altersvalidität als not-asked (nicht dokumentiert) über dataAbse
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #altersvaliditaet
 * subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-asked
 
@@ -133,6 +136,7 @@ Description: "RDTransport: Transport durch RTW."
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #rd-transport
 * subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindRdTransportCS#03
 
@@ -145,6 +149,7 @@ Description: "NotarztNachgefordert: kein Notarzt nachgefordert."
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #notarzt-nachgefordert
 * subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueBoolean = false
 
@@ -157,6 +162,7 @@ Description: "ZeitAlarm: Alarmierung durch die Leitstelle."
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #zeit-alarm
 * subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * valueDateTime = "2026-09-16T09:15:00+02:00"
 
@@ -169,5 +175,6 @@ Description: "ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.perio
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #zeit-einsatzende
 * subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T10:00:00+02:00"
 * valueDateTime = "2026-09-16T10:00:00+02:00"

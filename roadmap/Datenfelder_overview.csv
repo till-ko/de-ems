@@ -240,7 +240,7 @@ ODER 05 ODER  98)";"1902-02-
 :00.000+
 01:00";x;"ObservationDeEmsMindZeitUebergabePatient (#zeit-uebergabe-patient), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitEinsatzende;Ja;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Einsatzende;NA + RD;"Definition: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenhängenden Arbeiten wie z.B.
-Desinfektionstätigkeiten und Dokumentation).";;;x;ObservationDeEmsMindZeitEinsatzende (#zeit-einsatzende), valueDateTime. Zusätzlich im Beispiel über Encounter.period.end abgebildet.
+Desinfektionstätigkeiten und Dokumentation).";;;x;ObservationDeEmsMindZeitEinsatzende (#zeit-einsatzende), valueDateTime. Encounter.period.end ist verpflichtend (1..1) und die Observation referenziert den Einsatz über Observation.encounter (EncounterDeEmsMindR4).
 Kapitel: Patientendaten;Kapitel: Patientendaten;;;;;;;;"Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels handelt.
 Pflicht für RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich beim dokumentierenden Rettungsmittel um einen Krankentransport, eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels handelt.";"Pflicht wenn:
 Protokolltyp GLEICH  NA

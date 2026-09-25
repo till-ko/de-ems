@@ -135,6 +135,24 @@ Ausführliche Begründungen stehen feldweise in der jeweiligen
   cross-Resource-Plausibilitäten und werden in FHIR **nicht** erzwungen —
   die Felder stehen feldweise optional (`0..1`) mit Wert-oder-
   dataAbsentReason-XOR. Die Bedingungen sind feldweise in der CSV dokumentiert.
+- **Zeit-Observations ↔ `Encounter.period`**: die Verbindung wird strukturell
+  über **`Observation.encounter` (1..1, `EncounterDeEmsMindR4`)** und
+  **`Encounter.period.end` (1..1, Einsatzende)** hergestellt. Eine
+  *Wert-Gleichheit* (z. B. `ZeitEinsatzende.valueDateTime` ≡
+  `Encounter.period.end`) ist als FSH-Invariante **nicht** darstellbar —
+  Invarianten werden nur innerhalb einer Resource ausgewertet, Referenzen
+  werden nicht aufgelöst. Beispiel-Instances halten die Gleichheit ein.
+- **CH-EMS-Bezug (Zeiten)**: Die Zeit-Observations folgen dem Muster des
+  Schweizer CH-EMS-Profils *Mission Time Status* (eCH-0207): der Zeitpunkt liegt
+  im `valueDateTime`, die Beobachtung ist über `encounter` (1..1) verbindlich
+  am Einsatz verankert, und `effectiveDateTime` ist — wie in CH-EMS — optional
+  (`0..1` in `ObservationDeEmsMind`; bei `Alter`/`Altersvaliditaet` weiterhin
+  `1..1`). Die zeitbezogenen MIND-Codes sind in der ConceptMap
+  **`mind-observationstyp-2-ivr`** den IVR-Zeit-Rollen
+  (1000033 alarm … 1000042 operational readiness) zugeordnet — umgesetzt als
+  FSH-Instance mit `Usage: #definition`, da SUSHI keine `ConceptMap`-Regel
+  kennt. Nicht zuordenbar: Symptombeginn-Felder (MIND) sowie IVR
+  `departure from target`/Notarzt-Zeiten (kein MIND-Feld).
 - **Kapitel-Pflichtigkeit**: die CSV-Kapitelhinweise (z. B. *Zeiten-
   Einsatzablauf ist immer Pflicht*) werden über `Composition.section` nicht
   erzwungen; die Beobachtungen sind freistehende Bundle-Einträge

@@ -2,10 +2,11 @@ Profile: EncounterDeEmsMindR4
 Parent: EncounterDeEmsDiviR4
 Id: encounter-de-ems-mind-r4
 Title: "MIND 7.1 Einsatz / Encounter"
-Description: "Constraint-Ableitung des DIVI-Einsatz-Encounters (EncounterDeEmsDiviR4) für den MIND-7.1-Datensatz. Erweitert das Basisprofil um die MIND-spezifischen Strukturdaten (ProjektID, Primärschlüssel), macht Leitstelle und Referenzen auf die MIND-Patienten-/Einsatzort-Profile verbindlich."
+Description: "Constraint-Ableitung des DIVI-Einsatz-Encounters (EncounterDeEmsDiviR4) für den MIND-7.1-Datensatz. Erweitert das Basisprofil um die MIND-spezifischen Strukturdaten (ProjektID, Primärschlüssel), macht Leitstelle und Referenzen auf die MIND-Patienten-/Einsatzort-Profile verbindlich. period.end (Einsatzende) ist verpflichtend; die Zeit-Observations des Kapitels ZeitenEinsatzablauf referenzieren diesen Encounter über Observation.encounter."
 
 * subject only Reference(PatientDeEmsMindR4)
 * period 1..1
+* period.end 1..1
 
 // --- Zusätzliche MIND-only Identifier-Slices ---
 * identifier contains projektid 1..1 and primaerschluessel 1..1

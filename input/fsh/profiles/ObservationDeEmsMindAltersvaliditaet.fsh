@@ -11,6 +11,8 @@ Description: "Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoole
 * code.coding.code = #altersvaliditaet (exactly)
 * subject 1..1
 * subject only Reference(PatientDeEmsMindR4)
+* encounter 1..1
+* encounter only Reference(EncounterDeEmsMindR4)
 * effectiveDateTime 1..1
 * value[x] only boolean
 * valueBoolean 0..1
