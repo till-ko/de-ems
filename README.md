@@ -12,7 +12,7 @@ _Legende: `x` = vollständig umgesetzt · `T` = Terminologie vorhanden (CS/VS de
 
 ██░░░░░░░░░░░░░░░░░░░░ `11%` · **Codes:** 21 von 185 vollständig, 102 inkl. Terminologie
 
-███░░░░░░░░░░░░░░░░░░░ `15%` · **Datenfelder:** 39 von 262 vollständig, 87 inkl. Terminologie
+███░░░░░░░░░░░░░░░░░░░ `15%` · **Datenfelder:** 40 von 262 vollständig, 88 inkl. Terminologie
 
 ### Fortschritt je Kapitel (Datenfelder)
 
@@ -20,7 +20,7 @@ _Legende: `x` = vollständig umgesetzt · `T` = Terminologie vorhanden (CS/VS de
 |---|---:|---:|---:|---:|---|
 | Strukturdaten | 8 | 0 | 0 | 8 | `██████████████████████ 100%` |
 | RettungstechnischeDaten | 16 | 0 | 10 | 26 | `██████████████░░░░░░░░ 62%` |
-| ZeitenEinsatzablauf | 12 | 0 | 1 | 13 | `████████████████████░░ 92%` |
+| ZeitenEinsatzablauf | 13 | 0 | 0 | 13 | `██████████████████████ 100%` |
 | Patientendaten | 3 | 0 | 19 | 22 | `███░░░░░░░░░░░░░░░░░░░ 14%` |
 | ErsteMesswerteUndBefunde | 0 | 9 | 32 | 41 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
 | ErstbefundeVerlegung | 0 | 1 | 8 | 9 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |

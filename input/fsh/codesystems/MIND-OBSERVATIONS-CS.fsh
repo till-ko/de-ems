@@ -32,3 +32,4 @@ Description: "Beobachtungstypen (Observation.code) und zugehörige Komponenten-C
 * #zeit-transportbeginn "Zeitpunkt Transportbeginn"
 * #zeit-eintreffen-transportziel "Zeitpunkt Eintreffen Transportziel"
 * #zeit-uebergabe-patient "Zeitpunkt Übergabe Patient"
+* #zeit-einsatzende "Zeitpunkt Einsatzende"

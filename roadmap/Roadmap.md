@@ -108,8 +108,8 @@ absenken**. Daraus folgt die Konvention:
    erzwingen, dass keine DIVI-only Daten in MIND-Dokumente einfließen.
 3. **Ausnahme:** `EinsatzNr` und `AuftrNr` bleiben in `EncounterDeEmsMindR4`
    bewusst als `0..1` erhalten (MIND-Dokumente dürfen sie optional tragen).
-   Nur diese beiden—weitere Ausnahmen dürfen nicht hinzukommen, ohne begründet
-   und in „Bekannte Abweichungen" ergänzt zu werden.
+    Nur diese beiden — weitere Ausnahmen dürfen nicht hinzukommen, ohne
+    begründet und in „Bekannte Abweichungen" ergänzt zu werden.
 
 Konsequenz für neue DIVI-only Felder (z. B. `EinsatzStrasseName` im
 Einsatzort): **jedes** neue Feld bekommt zusätzlich zur Basis-`0..1` einen
@@ -126,7 +126,19 @@ Ausführliche Begründungen stehen feldweise in der jeweiligen
   die **`data-absent-reason`-Extension** auf dem Wertelement abgebildet
   (XOR-Invariante `mind-wert-oder-undokumentiert`); AGS/PLZ-Sonderwerte sind
   dadurch ebenfalls darstellbar, die `^[0-9]{8}$`-Invarianten bleiben rein
-  numerisch gültig.
+  numerisch gültig. Auch der MIND-**Datums-Sonderwert
+  `1902-02-02T22:00:00.000+01:00`** (Zeitfelder des Kapitels
+  *ZeitenEinsatzablauf*) wird so abgebildet — nicht als echter Zeitpunkt
+  übertragen.
+- **„Pflicht wenn"-Bedingungen** (z. B. *ZeitenEinsatzablauf*: Pflicht bei
+  bestimmten Kombinationen aus Protokolltyp/RDTransport/EinsatzArt) sind
+  cross-Resource-Plausibilitäten und werden in FHIR **nicht** erzwungen —
+  die Felder stehen feldweise optional (`0..1`) mit Wert-oder-
+  dataAbsentReason-XOR. Die Bedingungen sind feldweise in der CSV dokumentiert.
+- **Kapitel-Pflichtigkeit**: die CSV-Kapitelhinweise (z. B. *Zeiten-
+  Einsatzablauf ist immer Pflicht*) werden über `Composition.section` nicht
+  erzwungen; die Beobachtungen sind freistehende Bundle-Einträge
+  (`Composition.section` bleibt `0..*`).
 - **Zeichenlimits** (z. B. *Zeichenlimit 50* bei `EinsatzNr`, `PatNr`,
   `AuftrNr`) sind als Invarianten modelliert (z. B.
   `mind-identifier-laenge-50`).
@@ -138,6 +150,6 @@ Ausführliche Begründungen stehen feldweise in der jeweiligen
 - **Composition.title** ist hardcodiert (keine NA/RD-Differenzierung).
 - Personendaten (Name, Geburtsdatum, Adresse) sind aus Datenschutzgründen
   in `PatientDeEmsMindR4` auf `0..0` gesetzt.
-- Noch offen u. a.: `ZeitEinsatzende`, `NummerZK`
+- Noch offen u. a.: `NummerZK`
   (Vorschlag: Organization/`Encounter.hospitalization.destination`),
   Reanimations-Zeitfelder und alle numerischen Vitalwerte.

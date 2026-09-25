@@ -157,7 +157,7 @@ UND  RDTransport GLEICH  (01 ODER  03 ODER  04 ODER  05 ODER 06
 ODER  07 ODER  08 ODER  09 ODER  98)
 UND  EinsatzArt GLEICH  (02 ODER  04)
 UND  NotarztNachgefordert GLEICH  02
-UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)";-2;x;ObservationDeEmsMindSymptombeginnVor24h (#symptombeginn-vor-24h), valueBoolean. MIND 00 (unbekannt) via dataAbsentReason.
+UND  KeinTranspMitPat NICHT  (02 ODER  05 ODER  08)";-2;x;ObservationDeEmsMindSymptombeginnVor24h (#symptombeginn-vor-24h), valueBoolean. MIND 00 (unbekannt) bzw. Sonderwert -2 über dataAbsentReason (CH-EMS-Konzept).
 ZeitenEinsatzablauf;Symptombeginn;"siehe Hinweise/
 Plausibilitäten/ Abhängigkeiten";ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Ereigniszeitpunkt, Unfallzeitpunkt, Kollapszeitpunkt,
 Zeitpunkt Symptom-/Beschwerdebeginn";NA + RD;"Wenn der Symptombeginn bzw. Unfall-/Ereignis-/Kollapszeitpunkt (bekannt oder geschätzt) innerhalb von 24 Stunden
@@ -166,32 +166,32 @@ SymptombeginnVor24h GLEICH  02
 UND EinsatzArt NICHT  (11 ODER  12)";"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindSymptombeginn (#symptombeginn), valueDateTime.
+01:00";x;"ObservationDeEmsMindSymptombeginn (#symptombeginn), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;SymptombeginnGesichert;"siehe Hinweise/
 Plausibilitäten/ Abhängigkeiten";ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Ist der Symptombeginn gesichert oder geschätzt?
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Gibt es belastbare Angaben zum Symptombeginn durch Patienten, Angehörige, Zeugen, etc.?
 Pflicht, wenn Symptombeginn innerhalb der letzten 24 Stunden.";"Pflicht wenn:
 SymptombeginnVor24h GLEICH  02
-UND EinsatzArt NICHT  (11 ODER  12)";-2;x;ObservationDeEmsMindSymptombeginnGesichert (#symptombeginn-gesichert). Boolesche Inversion: true = geschätzt, false = gesichert.
+UND EinsatzArt NICHT  (11 ODER  12)";-2;x;ObservationDeEmsMindSymptombeginnGesichert (#symptombeginn-gesichert). Boolesche Inversion: true = geschätzt, false = gesichert. MIND-Sonderwert -2 über dataAbsentReason (CH-EMS-Konzept).
 ZeitenEinsatzablauf;ZeitNotfallmeldung;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;M;E;"Zeitpunkt Eingang Notfallmeldung
 in LST";NA + RD;"Definition: Zeitpunkt des Anrufes (Aufschaltzeitpunkt aus Leitstellen-Datensatz)
 Wird in der Leitstelle dokumentiert.";;"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindZeitNotfallmeldung (#zeit-notfallmeldung), valueDateTime.
+01:00";x;"ObservationDeEmsMindZeitNotfallmeldung (#zeit-notfallmeldung), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitAlarm;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Alarm/Auftragsvergabe;NA + RD;"Definition: Auslösung Alarm durch LST
 Wird in der Leitstelle dokumentiert.";;"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindZeitAlarm (#zeit-alarm), valueDateTime.
+01:00";x;"ObservationDeEmsMindZeitAlarm (#zeit-alarm), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitAusruecken;Nein;ZeitenEinsatzablauf;;M;E;Zeitpunkt Abfahrt/Abflug Standort Status 3;NA + RD;Definition: Ausrücken des einsatzklaren Rettungsmittels (Besatzung komplett!) Wird in der Leitstelle dokumentiert.;;"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindZeitAusruecken (#zeit-ausruecken), valueDateTime.
+01:00";x;"ObservationDeEmsMindZeitAusruecken (#zeit-ausruecken), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitAnkunftEinsatzort;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Ankunft Einsatzort Status 4;NA + RD;Definition: Ankunft des dokumentierenden RM am Einsatzort. Wird in der Leitstelle dokumentiert.;;"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindZeitAnkunftEinsatzort (#zeit-ankunft-einsatzort), valueDateTime.
+01:00";x;"ObservationDeEmsMindZeitAnkunftEinsatzort (#zeit-ankunft-einsatzort), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitAnkunftPatientPatientenkontakt;siehe Hinweise/ Plausibilitäten/ Abhängigkeiten;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Ankunft Patient;NA + RD;"Definition: Ankunft der Rettungsmittelbesatzung beim Patienten bzw. Beginn der Übernahme des Patienten bei Sekundäreinsätzen.
 Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um eine Hilfeleistung oder die Unterstützung eines anderen RM handelt.
 Pflicht für RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um einen Krankentransport oder um eine Hilfeleistung oder die Unterstützung eines anderen RM handelt.";"Pflicht wenn:
@@ -207,19 +207,19 @@ UND NICHT  (EinsatzArt GLEICH  10
 ODER KeinTranspMitPat GLEICH  [05 ODER  08])";"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindZeitAnkunftPatient (#zeit-ankunft-patient), valueDateTime.
+01:00";x;"ObservationDeEmsMindZeitAnkunftPatient (#zeit-ankunft-patient), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitTransportbeginn;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Zeitpunkt Transportbeginn
 Status 7";NA + RD;"Definition: Beginn des Patiententransportes.
 Wird in der Leitstelle dokumentiert.";;"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindZeitTransportbeginn (#zeit-transportbeginn), valueDateTime.
+01:00";x;"ObservationDeEmsMindZeitTransportbeginn (#zeit-transportbeginn), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitEintreffenTransportziel;Nein;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;"Zeitpunkt Eintreffen Transportziel
 Status 8";NA + RD;"Definition: Fahrzeug trifft am Transportziel ein
 Wird in der Leitstelle dokumentiert.";;"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindZeitEintreffenTransportziel (#zeit-eintreffen-transportziel), valueDateTime.
+01:00";x;"ObservationDeEmsMindZeitEintreffenTransportziel (#zeit-eintreffen-transportziel), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitUebergabePatient;"siehe Hinweise/
 Plausibilitäten/ Abhängigkeiten";ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Übergabe des Patienten an Weiterbehandler;NA + RD;"Definition: Übergabe an Personal der Zielklinik/Praxis oder Übergabe an anderes Rettungsmittel (Übergang der
 Verantwortung für den Patienten).
@@ -238,9 +238,9 @@ UND AerztlBegleit ENTHÄLT NICHT  (01 ODER 02 ODER 04
 ODER 05 ODER  98)";"1902-02-
 02T22:00
 :00.000+
-01:00";x;ObservationDeEmsMindZeitUebergabePatient (#zeit-uebergabe-patient), valueDateTime.
+01:00";x;"ObservationDeEmsMindZeitUebergabePatient (#zeit-uebergabe-patient), valueDateTime.; MIND-Datumssonderwert 1902-02-02T22:00:00.000+01:00 wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason (CH-EMS-Konzept)."
 ZeitenEinsatzablauf;ZeitEinsatzende;Ja;ZeitenEinsatzablauf;EinsatztechnischeDaten;DM;E;Zeitpunkt Einsatzende;NA + RD;"Definition: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenhängenden Arbeiten wie z.B.
-Desinfektionstätigkeiten und Dokumentation).";;;;"Nicht als eigenes Feld umgesetzt; nur im Beispiel über Encounter.period.end gesetzt."
+Desinfektionstätigkeiten und Dokumentation).";;;x;ObservationDeEmsMindZeitEinsatzende (#zeit-einsatzende), valueDateTime. Zusätzlich im Beispiel über Encounter.period.end abgebildet.
 Kapitel: Patientendaten;Kapitel: Patientendaten;;;;;;;;"Pflicht für NA-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich um eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels handelt.
 Pflicht für RD-Protokolle, wenn ein Patientenkontakt stattgefunden hat, außer wenn es sich beim dokumentierenden Rettungsmittel um einen Krankentransport, eine Hilfeleistung oder eine Unterstützung eines anderen Rettungsmittels handelt.";"Pflicht wenn:
 Protokolltyp GLEICH  NA

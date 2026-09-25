@@ -2,7 +2,7 @@ Profile: ObservationDeEmsMind
 Parent: ObservationDeEmsBase
 Id: observation-de-ems-mind
 Title: "de EMS MIND Observation Basisprofil"
-Description: "Basisprofil für alle MIND-7.1-Feld-Beobachtungen dieses IG. Erbt von ObservationDeEmsBase das CH-EMS-Konzept 'nicht dokumentiert' (dataAbsentReason) und legt die gemeinsame MIND-Konvention fest: status, code aus MindObservationstypCS, subject und effectiveDateTime."
+Description: "Basisprofil für alle MIND-7.1-Feld-Beobachtungen dieses IG. Erbt von ObservationDeEmsBase das CH-EMS-Konzept 'nicht dokumentiert' (dataAbsentReason) und legt die gemeinsame MIND-Konvention fest: status, code aus MindObservationstypCS, subject und effectiveDateTime. Auch der MIND-Datumssonderwert (1902-02-02T22:00:00.000+01:00) wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason abgebildet."
 
 * obeys mind-observation-xor-undokumentiert
 * status = #final

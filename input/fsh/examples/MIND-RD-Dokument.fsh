@@ -27,6 +27,8 @@ Description: "Minimales deutsches MIND-7.1-Dokument mit Patient, Einsatz, Einsat
 * entry[8].resource = MindNotarztNachgefordertExample
 * entry[9].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-zeit-alarm-example"
 * entry[9].resource = MindZeitAlarmExample
+* entry[10].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-zeit-einsatzende-example"
+* entry[10].resource = MindZeitEinsatzendeExample
 
 Instance: MindRdPatientExample
 InstanceOf: PatientDeEmsMindR4
@@ -157,3 +159,15 @@ Description: "ZeitAlarm: Alarmierung durch die Leitstelle."
 * subject = Reference(MindRdPatientExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * valueDateTime = "2026-09-16T09:15:00+02:00"
+
+Instance: MindZeitEinsatzendeExample
+InstanceOf: ObservationDeEmsMindZeitEinsatzende
+Usage: #example
+Title: "MIND 7.1 Zeitpunkt Einsatzende"
+Description: "ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.period.end)."
+* id = "mind-zeit-einsatzende-example"
+* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.code = #zeit-einsatzende
+* subject = Reference(MindRdPatientExample)
+* effectiveDateTime = "2026-09-16T10:00:00+02:00"
+* valueDateTime = "2026-09-16T10:00:00+02:00"

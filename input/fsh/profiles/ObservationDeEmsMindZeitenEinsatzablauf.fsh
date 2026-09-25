@@ -96,3 +96,12 @@ Description: "ZeitUebergabePatient: Übergabe des Patienten an Weiterbehandler."
 * code.coding.code = #zeit-uebergabe-patient (exactly)
 * value[x] only dateTime
 * valueDateTime 0..1
+
+Profile: ObservationDeEmsMindZeitEinsatzende
+Parent: ObservationDeEmsMind
+Id: observation-de-ems-mind-zeit-einsatzende
+Title: "MIND 7.1 Zeitpunkt Einsatzende"
+Description: "ZeitEinsatzende: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenhängenden Arbeiten wie z. B. Desinfektionstätigkeiten und Dokumentation)."
+* code.coding.code = #zeit-einsatzende (exactly)
+* value[x] only dateTime
+* valueDateTime 0..1
