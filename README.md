@@ -37,5 +37,5 @@ _Legende: `x` = vollständig umgesetzt · `T` = Terminologie vorhanden (CS/VS de
 | Reanimation | 0 | 1 | 0 | 1 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
 | ReanimationDetails | 0 | 7 | 18 | 25 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
 
-_Generiert am 2026-09-24 von `roadmap/update_roadmap_readme.py` aus den Roadmap-CSVs._
+_Generiert am 2026-09-25 von `roadmap/update_roadmap_readme.py` aus den Roadmap-CSVs._
 <!-- ROADMAP-END -->
