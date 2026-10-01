@@ -11,6 +11,7 @@ Description: "Bewusstseinslage gemäß MIND 7.1."
 ValueSet: MindNeurologischeAuffaelligkeitVS
 Id: mind-neurologische-auffaelligkeit-vs
 Title: "MIND Neurologische Auffälligkeit ValueSet"
+Description: "Akute neurologische Auffälligkeiten (ZNS, PNS) gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-neurologische-auffaelligkeit-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -20,6 +21,7 @@ Title: "MIND Neurologische Auffälligkeit ValueSet"
 ValueSet: MindEkgbefundVS
 Id: mind-ekg-befund-vs
 Title: "MIND EKG-Befund ValueSet"
+Description: "EKG-Befund gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-ekg-befund-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -29,6 +31,7 @@ Title: "MIND EKG-Befund ValueSet"
 ValueSet: MindAtmungVS
 Id: mind-atmung-vs
 Title: "MIND Atembefund ValueSet"
+Description: "Klinische Befunde der Atmung gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-atmung-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -38,6 +41,7 @@ Title: "MIND Atembefund ValueSet"
 ValueSet: MindHautbefundVS
 Id: mind-hautbefund-vs
 Title: "MIND Hautbefund ValueSet"
+Description: "Hautbefunde gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-hautbefund-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -47,6 +51,7 @@ Title: "MIND Hautbefund ValueSet"
 ValueSet: MindPsychischerZustandVS
 Id: mind-psychischer-zustand-vs
 Title: "MIND Psychischer Zustand ValueSet"
+Description: "Psychischer Zustand gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-psychischer-zustand-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -56,6 +61,7 @@ Title: "MIND Psychischer Zustand ValueSet"
 ValueSet: MindPupillenweiteVS
 Id: mind-pupillenweite-vs
 Title: "MIND Pupillenweite ValueSet"
+Description: "Pupillenweite gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-pupillenweite-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -65,6 +71,7 @@ Title: "MIND Pupillenweite ValueSet"
 ValueSet: MindLichtreaktionVS
 Id: mind-lichtreaktion-vs
 Title: "MIND Lichtreaktion ValueSet"
+Description: "Lichtreaktion der Pupillen gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-lichtreaktion-vs"
 * ^version = "7.1.0"
 * ^status = #active

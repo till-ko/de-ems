@@ -11,6 +11,7 @@ Description: "Zustand vor Eintritt des Notfalls gemäß MIND 7.1."
 ValueSet: MindReanimationssituationVS
 Id: mind-reanimationssituation-vs
 Title: "MIND Reanimationssituation ValueSet"
+Description: "Lag eine Reanimationssituation vor bzw. wurde eine solche durch die Rettungsmittelbesatzung erkannt, gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-reanimationssituation-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -20,6 +21,7 @@ Title: "MIND Reanimationssituation ValueSet"
 ValueSet: MindReanimationstechnikVS
 Id: mind-reanimationstechnik-vs
 Title: "MIND Reanimationstechnik ValueSet"
+Description: "Eingesetzte Reanimationstechnik gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-reanimationstechnik-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -29,6 +31,7 @@ Title: "MIND Reanimationstechnik ValueSet"
 ValueSet: MindKreislaufstillstandursacheVS
 Id: mind-kreislaufstillstandursache-vs
 Title: "MIND Kreislaufstillstandursache ValueSet"
+Description: "Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-kreislaufstillstandursache-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -38,6 +41,7 @@ Title: "MIND Kreislaufstillstandursache ValueSet"
 ValueSet: MindKollapsBeobachtetDurchVS
 Id: mind-kollaps-beobachtet-durch-vs
 Title: "MIND Kollaps beobachtet durch ValueSet"
+Description: "Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-kollaps-beobachtet-durch-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -47,6 +51,7 @@ Title: "MIND Kollaps beobachtet durch ValueSet"
 ValueSet: MindHerzdruckmassageDurchVS
 Id: mind-herzdruckmassage-durch-vs
 Title: "MIND Herzdruckmassage durch ValueSet"
+Description: "Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-herzdruckmassage-durch-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -56,6 +61,7 @@ Title: "MIND Herzdruckmassage durch ValueSet"
 ValueSet: MindErsteDefibrillationDurchVS
 Id: mind-erste-defibrillation-durch-vs
 Title: "MIND Erste Defibrillation durch ValueSet"
+Description: "Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-erste-defibrillation-durch-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -65,6 +71,7 @@ Title: "MIND Erste Defibrillation durch ValueSet"
 ValueSet: MindRoscVS
 Id: mind-rosc-vs
 Title: "MIND ROSC ValueSet"
+Description: "Erreichen eines Spontankreislaufs (ROSC) gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-rosc-vs"
 * ^version = "7.1.0"
 * ^status = #active
@@ -74,6 +81,7 @@ Title: "MIND ROSC ValueSet"
 ValueSet: MindKrankenhausaufnahmeZustandVS
 Id: mind-krankenhausaufnahme-zustand-vs
 Title: "MIND Krankenhausaufnahmezustand ValueSet"
+Description: "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-krankenhausaufnahme-zustand-vs"
 * ^version = "7.1.0"
 * ^status = #active
