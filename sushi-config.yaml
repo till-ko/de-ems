@@ -72,6 +72,11 @@ dependencies:
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
+# Aktiviert input/ignoreWarnings.txt (Suppression fremder Publisher-Meldungen).
+# Der Publisher liest diese Datei nur, wenn der Parameter gesetzt ist.
+parameters:
+  path-suppressed-warnings: input/ignoreWarnings.txt
+#
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │

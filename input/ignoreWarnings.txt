@@ -3,3 +3,19 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+#
+# Syntax: bare text = exact match, "text%" = starts with, "%text" = ends with, "%text%" = contains.
+# Matching is case-insensitive.
+
+# Fehlerhaftes Beispiel im externen Basisprofil de.basisprofil.r4 (HL7 Deutschland e.V.).
+# StructureDefinition/address-de-basis setzt in Address.country.extension:countryCode
+# example[0].valueCoding.display = "Deutschland", waehrend das ISO-3166-CodeSystem nur den
+# englischen Display "Germany" kennt. Wir uebernehmen das Beispiel unveraendert ueber
+# "address only AddressDeBasis" (LocationDeEmsDiviR4 / LocationDeEmsMindR4) und koennen es
+# lokal nicht korrigieren.
+#
+# Upstream ist der Fix bereits gemerget, aber noch in keinem Release: 1.6.0 (29.06.2026) ist
+# weiterhin die neueste publizierte Version. Sobald eine neue Version mit dem Fix erscheint,
+# diese Zeile und den Parameter "path-suppressed-warnings" in sushi-config.yaml entfernen.
+# https://github.com/hl7germany/basisprofil-de-r4
+%Wrong Display Name 'Deutschland' for urn:iso:std:iso:3166#DE%

@@ -21,4 +21,4 @@ Description: "Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoole
 Invariant: mind-altersvaliditaet-xor-undokumentiert
 Description: "Es muss entweder valueBoolean (gesichert/geschätzt) oder dataAbsentReason (nicht dokumentiert) angegeben sein."
 Severity: #error
-Expression: "(valueBoolean.exists() and dataAbsentReason.empty()) or (valueBoolean.empty() and dataAbsentReason.exists())"
+Expression: "(value.exists() and dataAbsentReason.empty()) or (value.empty() and dataAbsentReason.exists())"
