@@ -47,14 +47,20 @@ jobs:
           distribution: temurin
           java-version: "21"
 
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
       - name: Install Jekyll
+        # Der IG Publisher ruft nach dem Generieren von temp/pages ein
+        # "jekyll build --destination output" auf. Fehlt jekyll im Runner-PATH,
+        # bricht der Build mit "Cannot run program jekyll" ab.
+        # ruby/setup-ruby statt System-Ruby (/usr/bin/ruby, gem home
+        # /var/lib/gems/3.2.0): dort hat der "runner"-User keine Schreibrechte.
         run: |
-          if ! command -v gem >/dev/null; then
-            sudo apt-get update -qq
-            sudo apt-get install -y --no-install-recommends ruby-full build-essential
-          fi
           gem install --no-document jekyll -v "${JEKYLL_VERSION}"
-          jekyll --version
+          echo "$(gem env home)/bin" >> "$GITHUB_PATH"
+          "$(gem env home)/bin/jekyll" --version
 
       - name: Cache FHIR packages
         uses: actions/cache@v4
