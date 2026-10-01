@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-lichtreaktion-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-lichtreaktion-cs</b></p><a name=\"mind-lichtreaktion-cs\"> </a><a name=\"hcmind-lichtreaktion-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-lichtreaktion-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">-1<a name=\"mind-lichtreaktion-cs--1\"> </a></td><td>nicht untersucht</td></tr><tr><td style=\"white-space:nowrap\">00<a name=\"mind-lichtreaktion-cs-00\"> </a></td><td>beidseits prompt</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-lichtreaktion-cs-01\"> </a></td><td>beidseits träge</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-lichtreaktion-cs-02\"> </a></td><td>beidseits keine</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-lichtreaktion-cs-03\"> </a></td><td>Seitendifferenz</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"mind-lichtreaktion-cs-98\"> </a></td><td>Sonstige</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"mind-lichtreaktion-cs-99\"> </a></td><td>nicht beurteilbar</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-lichtreaktion-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.27"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindLichtreaktionCS",
+  "title" : "MIND Lichtreaktion",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Lichtreaktion der Pupillen gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "-1",
+    "display" : "nicht untersucht"
+  },
+  {
+    "code" : "00",
+    "display" : "beidseits prompt"
+  },
+  {
+    "code" : "01",
+    "display" : "beidseits träge"
+  },
+  {
+    "code" : "02",
+    "display" : "beidseits keine"
+  },
+  {
+    "code" : "03",
+    "display" : "Seitendifferenz"
+  },
+  {
+    "code" : "98",
+    "display" : "Sonstige"
+  },
+  {
+    "code" : "99",
+    "display" : "nicht beurteilbar"
+  }]
+}

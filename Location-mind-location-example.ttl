@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/Location/mind-location-example> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-location-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4" ;
+       fhir:index 0 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location mind-location-example</b></p><a name=\"mind-location-example\"> </a><a name=\"hcmind-location-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-de-ems-mind-r4.html\">MIND 7.1 Einsatzort / Location</a></p></div><p><b>MIND Einsatzorttyp</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs 01}\">Wohnung</span></p><p><b>status</b>: Active</p><p><b>name</b>: Einsatzort Beispiel</p><p><b>address</b>: Musterstraße 1 Hildesheim 31134 DE </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>9.951083</td><td>52.150823</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs" ] ;
+         fhir:Coding.code [ fhir:value "01" ]
+       ]
+     ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Einsatzort Beispiel"] ;
+  fhir:Location.address [
+     fhir:Address.line [
+       fhir:value "Musterstraße 1" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [
+       fhir:value "Hildesheim" ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://fhir.de/StructureDefinition/destatis/ags" ] ;
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://fhir.de/sid/destatis/ags" ] ;
+           fhir:Coding.code [ fhir:value "03254021" ]
+         ]
+       ]
+     ] ;
+     fhir:Address.postalCode [ fhir:value "31134" ] ;
+     fhir:Address.country [ fhir:value "DE" ]
+  ] ;
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "9.951083"^^xsd:decimal ] ;
+     fhir:Location.position.latitude [ fhir:value "52.150823"^^xsd:decimal ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/Location/mind-location-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

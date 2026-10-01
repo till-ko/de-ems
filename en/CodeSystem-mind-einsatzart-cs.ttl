@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-einsatzart-cs"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-einsatzart-cs</b></p><a name=\"mind-einsatzart-cs\"> </a><a name=\"hcmind-einsatzart-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-einsatzart-cs-01\"> </a></td><td>Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-einsatzart-cs-02\"> </a></td><td>Notfallrettung - Primäreinsatz nur mit TNA</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-einsatzart-cs-03\"> </a></td><td>Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-einsatzart-cs-04\"> </a></td><td>Notfallrettung - Primäreinsatz ohne NA</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"mind-einsatzart-cs-05\"> </a></td><td>Notfallrettung - Verlegung nur mit (physisch anwesendem) NA</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"mind-einsatzart-cs-06\"> </a></td><td>Notfallrettung - Verlegung nur mit TNA</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"mind-einsatzart-cs-07\"> </a></td><td>Notfallrettung - Verlegung mit (physisch anwesendem) NA und TNA</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"mind-einsatzart-cs-08\"> </a></td><td>Notfallrettung - Verlegung ohne NA</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"mind-einsatzart-cs-09\"> </a></td><td>Intensivtransport</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"mind-einsatzart-cs-10\"> </a></td><td>Krankentransport</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"mind-einsatzart-cs-11\"> </a></td><td>Dienstfahrt</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"mind-einsatzart-cs-12\"> </a></td><td>Pause</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.169126619167380341660016816424527320624.16.11" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "MindEinsatzartCS"] ;
+  fhir:CodeSystem.title [ fhir:value "MIND Einsatzart"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-01T18:52:47+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Till Koch"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Till Koch" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/till-ko" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Einsatzart gemäß MIND 7.1 Spezifikation. Beschreibt die Art des Einsatzes (Notfallrettung, Verlegung, Intensivtransport, Krankentransport, Dienstfahrt, Pause)."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "12"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "01" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "02" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notfallrettung - Primäreinsatz nur mit TNA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "03" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "04" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notfallrettung - Primäreinsatz ohne NA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "05" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notfallrettung - Verlegung nur mit (physisch anwesendem) NA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "06" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notfallrettung - Verlegung nur mit TNA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "07" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notfallrettung - Verlegung mit (physisch anwesendem) NA und TNA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "08" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notfallrettung - Verlegung ohne NA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "09" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intensivtransport" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Krankentransport" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dienstfahrt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pause" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

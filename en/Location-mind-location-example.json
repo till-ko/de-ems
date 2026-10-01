@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Location",
+  "id" : "mind-location-example",
+  "meta" : {
+    "profile" : ["https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location mind-location-example</b></p><a name=\"mind-location-example\"> </a><a name=\"hcmind-location-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-de-ems-mind-r4.html\">MIND 7.1 Einsatzort / Location</a></p></div><p><b>MIND Einsatzorttyp</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs 01}\">Wohnung</span></p><p><b>status</b>: Active</p><p><b>name</b>: Einsatzort Beispiel</p><p><b>address</b>: Musterstraße 1 Hildesheim 31134 DE </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>9.951083</td><td>52.150823</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs",
+        "code" : "01"
+      }]
+    }
+  }],
+  "status" : "active",
+  "name" : "Einsatzort Beispiel",
+  "address" : {
+    "line" : ["Musterstraße 1"],
+    "city" : "Hildesheim",
+    "_city" : {
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/destatis/ags",
+        "valueCoding" : {
+          "system" : "http://fhir.de/sid/destatis/ags",
+          "code" : "03254021"
+        }
+      }]
+    },
+    "postalCode" : "31134",
+    "country" : "DE"
+  },
+  "position" : {
+    "longitude" : 9.951083,
+    "latitude" : 52.150823
+  }
+}

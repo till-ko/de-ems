@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-kreislaufstillstandursache-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-kreislaufstillstandursache-cs</b></p><a name="mind-kreislaufstillstandursache-cs"> </a><a name="hcmind-kreislaufstillstandursache-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-kreislaufstillstandursache-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="mind-kreislaufstillstandursache-cs-01"> </a></td><td>kardial</td></tr><tr><td style="white-space:nowrap">02<a name="mind-kreislaufstillstandursache-cs-02"> </a></td><td>Trauma</td></tr><tr><td style="white-space:nowrap">03<a name="mind-kreislaufstillstandursache-cs-03"> </a></td><td>Ertrinken</td></tr><tr><td style="white-space:nowrap">04<a name="mind-kreislaufstillstandursache-cs-04"> </a></td><td>Hypoxie</td></tr><tr><td style="white-space:nowrap">05<a name="mind-kreislaufstillstandursache-cs-05"> </a></td><td>Intoxikation</td></tr><tr><td style="white-space:nowrap">06<a name="mind-kreislaufstillstandursache-cs-06"> </a></td><td>ICB/SAB</td></tr><tr><td style="white-space:nowrap">07<a name="mind-kreislaufstillstandursache-cs-07"> </a></td><td>SIDS</td></tr><tr><td style="white-space:nowrap">08<a name="mind-kreislaufstillstandursache-cs-08"> </a></td><td>Verbluten</td></tr><tr><td style="white-space:nowrap">09<a name="mind-kreislaufstillstandursache-cs-09"> </a></td><td>Stroke</td></tr><tr><td style="white-space:nowrap">10<a name="mind-kreislaufstillstandursache-cs-10"> </a></td><td>metabolisch</td></tr><tr><td style="white-space:nowrap">11<a name="mind-kreislaufstillstandursache-cs-11"> </a></td><td>Sepsis</td></tr><tr><td style="white-space:nowrap">12<a name="mind-kreislaufstillstandursache-cs-12"> </a></td><td>Anaphylaxie</td></tr><tr><td style="white-space:nowrap">13<a name="mind-kreislaufstillstandursache-cs-13"> </a></td><td>Stromschlag</td></tr><tr><td style="white-space:nowrap">97<a name="mind-kreislaufstillstandursache-cs-97"> </a></td><td>sonstiges nicht medizinisch</td></tr><tr><td style="white-space:nowrap">98<a name="mind-kreislaufstillstandursache-cs-98"> </a></td><td>sonstiges medizinisch</td></tr><tr><td style="white-space:nowrap">99<a name="mind-kreislaufstillstandursache-cs-99"> </a></td><td>nicht bekannt</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-kreislaufstillstandursache-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.25"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindKreislaufstillstandursacheCS"/>
+  <title value="MIND Vermutete Ursache des Kreislaufstillstands"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="01"/>
+    <display value="kardial"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Trauma"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Ertrinken"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Hypoxie"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Intoxikation"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="ICB/SAB"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="SIDS"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Verbluten"/>
+  </concept>
+  <concept>
+    <code value="09"/>
+    <display value="Stroke"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="metabolisch"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Sepsis"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Anaphylaxie"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="Stromschlag"/>
+  </concept>
+  <concept>
+    <code value="97"/>
+    <display value="sonstiges nicht medizinisch"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="sonstiges medizinisch"/>
+  </concept>
+  <concept>
+    <code value="99"/>
+    <display value="nicht bekannt"/>
+  </concept>
+</CodeSystem>

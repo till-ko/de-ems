@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mind-einsatzart-na-vs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet mind-einsatzart-na-vs</b></p><a name="mind-einsatzart-na-vs"> </a><a name="hcmind-einsatzart-na-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-mind-einsatzart-cs.html"><code>https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-mind-einsatzart-cs.html#mind-einsatzart-cs-01">01</a></td><td style="color: #cccccc">Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA</td></tr><tr><td><a href="CodeSystem-mind-einsatzart-cs.html#mind-einsatzart-cs-03">03</a></td><td style="color: #cccccc">Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA</td></tr><tr><td><a href="CodeSystem-mind-einsatzart-cs.html#mind-einsatzart-cs-05">05</a></td><td style="color: #cccccc">Notfallrettung - Verlegung nur mit (physisch anwesendem) NA</td></tr><tr><td><a href="CodeSystem-mind-einsatzart-cs.html#mind-einsatzart-cs-07">07</a></td><td style="color: #cccccc">Notfallrettung - Verlegung mit (physisch anwesendem) NA und TNA</td></tr><tr><td><a href="CodeSystem-mind-einsatzart-cs.html#mind-einsatzart-cs-09">09</a></td><td style="color: #cccccc">Intensivtransport</td></tr><tr><td><a href="CodeSystem-mind-einsatzart-cs.html#mind-einsatzart-cs-11">11</a></td><td style="color: #cccccc">Dienstfahrt</td></tr><tr><td><a href="CodeSystem-mind-einsatzart-cs.html#mind-einsatzart-cs-12">12</a></td><td style="color: #cccccc">Pause</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/ValueSet/mind-einsatzart-na-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.48.11"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindEinsatzartNaVS"/>
+  <title value="MIND Einsatzart ValueSet für NA-Protokolle"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Zulässige Einsatzarten für MIND 7.1 NA-Protokolle."/>
+  <compose>
+    <include>
+      <system value="https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs"/>
+      <concept>
+        <code value="01"/>
+      </concept>
+      <concept>
+        <code value="03"/>
+      </concept>
+      <concept>
+        <code value="05"/>
+      </concept>
+      <concept>
+        <code value="07"/>
+      </concept>
+      <concept>
+        <code value="09"/>
+      </concept>
+      <concept>
+        <code value="11"/>
+      </concept>
+      <concept>
+        <code value="12"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

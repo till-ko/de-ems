@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mind-indikation-intensivtransport-vs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet mind-indikation-intensivtransport-vs</b></p><a name="mind-indikation-intensivtransport-vs"> </a><a name="hcmind-indikation-intensivtransport-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-mind-indikation-intensivtransport-cs.html"><code>https://till-ko.github.io/de-ems/CodeSystem/mind-indikation-intensivtransport-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/ValueSet/mind-indikation-intensivtransport-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.48.22"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindIndikationIntensivtransportVS"/>
+  <title value="MIND Indikation Intensivtransport ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Indikation für einen Intensivtransport gemäß MIND 7.1."/>
+  <compose>
+    <include>
+      <system value="https://till-ko.github.io/de-ems/CodeSystem/mind-indikation-intensivtransport-cs"/>
+    </include>
+  </compose>
+</ValueSet>

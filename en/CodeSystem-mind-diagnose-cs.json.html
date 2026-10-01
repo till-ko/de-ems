@@ -1,0 +1,896 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MIND Diagnose - JSON Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.99"}
+    h3,h4,h5,h6{--heading-prefix:"2.99"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MIND Diagnose</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-format -->
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">deems - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://till-ko.github.io/de-ems/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-mind-diagnose-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mind-diagnose-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mind-diagnose-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+
+<h2 id="root">: MIND Diagnose</h2>
+
+  <table class="colsi" data-fhir="generated">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+
+            as of 
+2026-10-01
+
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-mind-diagnose-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-mind-diagnose-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "mind-diagnose-cs",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.language">language</a>" : "en",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem mind-diagnose-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mind-diagnose-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmind-diagnose-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1100&lt;a name=\&quot;mind-diagnose-cs-1100\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hirninfarkt, TIA, intrakranielle Blutung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1101&lt;a name=\&quot;mind-diagnose-cs-1101\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1102&lt;a name=\&quot;mind-diagnose-cs-1102\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hirninfarkt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1103&lt;a name=\&quot;mind-diagnose-cs-1103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICB (klinische Diagnose)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1104&lt;a name=\&quot;mind-diagnose-cs-1104\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SAB (klinische Diagnose)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1105&lt;a name=\&quot;mind-diagnose-cs-1105\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Krampfanfall&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1106&lt;a name=\&quot;mind-diagnose-cs-1106\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fieberkrampf&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1107&lt;a name=\&quot;mind-diagnose-cs-1107\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Status epilepticus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1108&lt;a name=\&quot;mind-diagnose-cs-1108\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningitis/Enzephalitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1198&lt;a name=\&quot;mind-diagnose-cs-1198\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Erkrankung ZNS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1201&lt;a name=\&quot;mind-diagnose-cs-1201\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1202&lt;a name=\&quot;mind-diagnose-cs-1202\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;STEMI Vorderwand&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1203&lt;a name=\&quot;mind-diagnose-cs-1203\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;STEMI Hinterwand&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1204&lt;a name=\&quot;mind-diagnose-cs-1204\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thoraxschmerz unklarer Genese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1205&lt;a name=\&quot;mind-diagnose-cs-1205\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;kardiogener Schock&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1206&lt;a name=\&quot;mind-diagnose-cs-1206\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;tachykarde Rhythmusstörung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1207&lt;a name=\&quot;mind-diagnose-cs-1207\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bradykarde Rhythmusstörung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1208&lt;a name=\&quot;mind-diagnose-cs-1208\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schrittmacher-Fehlfunktion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1209&lt;a name=\&quot;mind-diagnose-cs-1209\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICD-Fehlfunktion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1210&lt;a name=\&quot;mind-diagnose-cs-1210\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lungenembolie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1211&lt;a name=\&quot;mind-diagnose-cs-1211\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Herzinsuffizienz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1212&lt;a name=\&quot;mind-diagnose-cs-1212\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lungenödem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1213&lt;a name=\&quot;mind-diagnose-cs-1213\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;hypertensive Entgleisung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1214&lt;a name=\&quot;mind-diagnose-cs-1214\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;hypertensiver Notfall&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1215&lt;a name=\&quot;mind-diagnose-cs-1215\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aortenaneurysma/-dissektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1216&lt;a name=\&quot;mind-diagnose-cs-1216\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypotonie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1217&lt;a name=\&quot;mind-diagnose-cs-1217\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;orthostatische Fehlregulation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1218&lt;a name=\&quot;mind-diagnose-cs-1218\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Synkope&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1219&lt;a name=\&quot;mind-diagnose-cs-1219\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thrombose/arterieller Verschluss&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1220&lt;a name=\&quot;mind-diagnose-cs-1220\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Herz-Kreislauf-Stillstand&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1221&lt;a name=\&quot;mind-diagnose-cs-1221\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;hämorrhagischer Schock&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1298&lt;a name=\&quot;mind-diagnose-cs-1298\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Erkrankung Herz-Kreislauf&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1301&lt;a name=\&quot;mind-diagnose-cs-1301\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Asthma (Anfall)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1302&lt;a name=\&quot;mind-diagnose-cs-1302\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Status asthmaticus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1303&lt;a name=\&quot;mind-diagnose-cs-1303\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;exazerbierte COPD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1304&lt;a name=\&quot;mind-diagnose-cs-1304\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aspiration&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1305&lt;a name=\&quot;mind-diagnose-cs-1305\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pneumonie/Bronchitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1306&lt;a name=\&quot;mind-diagnose-cs-1306\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epiglottitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1307&lt;a name=\&quot;mind-diagnose-cs-1307\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pseudokrupp&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1308&lt;a name=\&quot;mind-diagnose-cs-1308\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;anderer respiratorischer Infekt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1309&lt;a name=\&quot;mind-diagnose-cs-1309\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hyperventilationssyndrom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1310&lt;a name=\&quot;mind-diagnose-cs-1310\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spontanpneumothorax&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1311&lt;a name=\&quot;mind-diagnose-cs-1311\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hämoptysis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1312&lt;a name=\&quot;mind-diagnose-cs-1312\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dyspnoe unklarer Ursache&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1398&lt;a name=\&quot;mind-diagnose-cs-1398\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Erkrankung Atmung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1401&lt;a name=\&quot;mind-diagnose-cs-1401\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akutes Abdomen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1402&lt;a name=\&quot;mind-diagnose-cs-1402\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;obere GI-Blutung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1403&lt;a name=\&quot;mind-diagnose-cs-1403\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;untere GI-Blutung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404&lt;a name=\&quot;mind-diagnose-cs-1404\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kolik (Galle, Niere, ...)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1405&lt;a name=\&quot;mind-diagnose-cs-1405\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;(infektiöse) Gastroenteritis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1406&lt;a name=\&quot;mind-diagnose-cs-1406\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesenterialinfarkt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1498&lt;a name=\&quot;mind-diagnose-cs-1498\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Erkrankung Abdomen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1501&lt;a name=\&quot;mind-diagnose-cs-1501\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Depression, Angst&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1502&lt;a name=\&quot;mind-diagnose-cs-1502\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Manie, Psychose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1503&lt;a name=\&quot;mind-diagnose-cs-1503\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Entzugssymptomatik, Delir&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1504&lt;a name=\&quot;mind-diagnose-cs-1504\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suizidalität&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1505&lt;a name=\&quot;mind-diagnose-cs-1505\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;psychosoziale Krise&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1598&lt;a name=\&quot;mind-diagnose-cs-1598\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Erkrankung Psychiatrie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1601&lt;a name=\&quot;mind-diagnose-cs-1601\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypoglykämie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1602&lt;a name=\&quot;mind-diagnose-cs-1602\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hyperglykämie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1603&lt;a name=\&quot;mind-diagnose-cs-1603\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urämie/akutes Nierenversagen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1604&lt;a name=\&quot;mind-diagnose-cs-1604\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Exsikkose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1605&lt;a name=\&quot;mind-diagnose-cs-1605\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elektrolytstörungen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1698&lt;a name=\&quot;mind-diagnose-cs-1698\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Erkrankung Stoffwechsel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1701&lt;a name=\&quot;mind-diagnose-cs-1701\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwangerschaft über 35. SSW (zur Entbindung in die Klinik)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1702&lt;a name=\&quot;mind-diagnose-cs-1702\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwangerschaftskomplikation (z. B. Eklampsie)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1703&lt;a name=\&quot;mind-diagnose-cs-1703\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;präklinische Geburt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1704&lt;a name=\&quot;mind-diagnose-cs-1704\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;extrauterine Gravidität&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1705&lt;a name=\&quot;mind-diagnose-cs-1705\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;vaginale Blutung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1798&lt;a name=\&quot;mind-diagnose-cs-1798\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Erkrankung Gynäkologie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1801&lt;a name=\&quot;mind-diagnose-cs-1801\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anaphylaxie Grad 1/2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1802&lt;a name=\&quot;mind-diagnose-cs-1802\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anaphylaxie Grad 3/4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1803&lt;a name=\&quot;mind-diagnose-cs-1803\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intoxikation Alkohol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1804&lt;a name=\&quot;mind-diagnose-cs-1804\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intoxikation Drogen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1805&lt;a name=\&quot;mind-diagnose-cs-1805\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intoxikation Medikamente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1806&lt;a name=\&quot;mind-diagnose-cs-1806\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Intoxikation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1807&lt;a name=\&quot;mind-diagnose-cs-1807\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akzidentelle Intoxikation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1808&lt;a name=\&quot;mind-diagnose-cs-1808\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sepsis/septischer Schock&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1809&lt;a name=\&quot;mind-diagnose-cs-1809\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;hochkontagiöse Erreger&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1810&lt;a name=\&quot;mind-diagnose-cs-1810\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Infektionserkrankungen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1811&lt;a name=\&quot;mind-diagnose-cs-1811\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hitzeerschöpfung/Hitzschlag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1812&lt;a name=\&quot;mind-diagnose-cs-1812\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unterkühlung/Erfrierung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1813&lt;a name=\&quot;mind-diagnose-cs-1813\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SIDS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1814&lt;a name=\&quot;mind-diagnose-cs-1814\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akute Lumbago&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1815&lt;a name=\&quot;mind-diagnose-cs-1815\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;palliative Situation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1816&lt;a name=\&quot;mind-diagnose-cs-1816\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;medizinische Behandlungskomplikation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1817&lt;a name=\&quot;mind-diagnose-cs-1817\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epistaxis/HNO-Erkrankung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1818&lt;a name=\&quot;mind-diagnose-cs-1818\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;urologische Erkrankung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1819&lt;a name=\&quot;mind-diagnose-cs-1819\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Augenerkrankung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1820&lt;a name=\&quot;mind-diagnose-cs-1820\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstiger akuter Schmerzzustand&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1821&lt;a name=\&quot;mind-diagnose-cs-1821\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schock unklarer Genese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1822&lt;a name=\&quot;mind-diagnose-cs-1822\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erysipel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1898&lt;a name=\&quot;mind-diagnose-cs-1898\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;sonstige Erkrankung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1899&lt;a name=\&quot;mind-diagnose-cs-1899\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;führendes soziales Problem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9999&lt;a name=\&quot;mind-diagnose-cs-9999\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;keine Erkrankung/Verletzung feststellbar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2001&lt;a name=\&quot;mind-diagnose-cs-2001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHT leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2002&lt;a name=\&quot;mind-diagnose-cs-2002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHT mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2003&lt;a name=\&quot;mind-diagnose-cs-2003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHT schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2004&lt;a name=\&quot;mind-diagnose-cs-2004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHT lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2101&lt;a name=\&quot;mind-diagnose-cs-2101\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Gesicht/Kopf/Hals leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2102&lt;a name=\&quot;mind-diagnose-cs-2102\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Gesicht/Kopf/Hals mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2103&lt;a name=\&quot;mind-diagnose-cs-2103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Gesicht/Kopf/Hals schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2104&lt;a name=\&quot;mind-diagnose-cs-2104\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Gesicht/Kopf/Hals lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2201&lt;a name=\&quot;mind-diagnose-cs-2201\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma HWS leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2202&lt;a name=\&quot;mind-diagnose-cs-2202\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma HWS mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2203&lt;a name=\&quot;mind-diagnose-cs-2203\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma HWS schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2204&lt;a name=\&quot;mind-diagnose-cs-2204\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma HWS lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2301&lt;a name=\&quot;mind-diagnose-cs-2301\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Thorax leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2302&lt;a name=\&quot;mind-diagnose-cs-2302\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Thorax mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2303&lt;a name=\&quot;mind-diagnose-cs-2303\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Thorax schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2304&lt;a name=\&quot;mind-diagnose-cs-2304\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Thorax lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2401&lt;a name=\&quot;mind-diagnose-cs-2401\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Abdomen leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2402&lt;a name=\&quot;mind-diagnose-cs-2402\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Abdomen mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2403&lt;a name=\&quot;mind-diagnose-cs-2403\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Abdomen schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2404&lt;a name=\&quot;mind-diagnose-cs-2404\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Abdomen lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2501&lt;a name=\&quot;mind-diagnose-cs-2501\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma BWS/LWS leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2502&lt;a name=\&quot;mind-diagnose-cs-2502\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma BWS/LWS mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2503&lt;a name=\&quot;mind-diagnose-cs-2503\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma BWS/LWS schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2504&lt;a name=\&quot;mind-diagnose-cs-2504\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma BWS/LWS lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2601&lt;a name=\&quot;mind-diagnose-cs-2601\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Becken leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2602&lt;a name=\&quot;mind-diagnose-cs-2602\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Becken mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2603&lt;a name=\&quot;mind-diagnose-cs-2603\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Becken schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2604&lt;a name=\&quot;mind-diagnose-cs-2604\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Becken lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2701&lt;a name=\&quot;mind-diagnose-cs-2701\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma obere Extremität leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2702&lt;a name=\&quot;mind-diagnose-cs-2702\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma obere Extremität mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2703&lt;a name=\&quot;mind-diagnose-cs-2703\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma obere Extremität schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2704&lt;a name=\&quot;mind-diagnose-cs-2704\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma obere Extremität lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2801&lt;a name=\&quot;mind-diagnose-cs-2801\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma untere Extremität leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2802&lt;a name=\&quot;mind-diagnose-cs-2802\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma untere Extremität mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2803&lt;a name=\&quot;mind-diagnose-cs-2803\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma untere Extremität schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2804&lt;a name=\&quot;mind-diagnose-cs-2804\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma untere Extremität lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2901&lt;a name=\&quot;mind-diagnose-cs-2901\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Weichteile leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2902&lt;a name=\&quot;mind-diagnose-cs-2902\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Weichteile mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2903&lt;a name=\&quot;mind-diagnose-cs-2903\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Weichteile schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2904&lt;a name=\&quot;mind-diagnose-cs-2904\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Weichteile lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2911&lt;a name=\&quot;mind-diagnose-cs-2911\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Gefäßverletzungen leicht&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2912&lt;a name=\&quot;mind-diagnose-cs-2912\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Gefäßverletzungen mittel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2913&lt;a name=\&quot;mind-diagnose-cs-2913\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Gefäßverletzungen schwer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2914&lt;a name=\&quot;mind-diagnose-cs-2914\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Gefäßverletzungen lebensbedrohlich oder tödlich&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3001&lt;a name=\&quot;mind-diagnose-cs-3001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Verbrennung/Verbrühung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3002&lt;a name=\&quot;mind-diagnose-cs-3002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inhalationstrauma/Rauchgasinhalation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3003&lt;a name=\&quot;mind-diagnose-cs-3003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elektrounfall&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3004&lt;a name=\&quot;mind-diagnose-cs-3004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Verätzung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3005&lt;a name=\&quot;mind-diagnose-cs-3005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;(Beinahe-)Ertrinken&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3006&lt;a name=\&quot;mind-diagnose-cs-3006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tauchunfall&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3098&lt;a name=\&quot;mind-diagnose-cs-3098\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sonstige spezielle Traumata&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:oid:2.25.169126619167380341660016816424527320624.16.9"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "MindDiagnoseCS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "MIND Diagnose",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-10-01T18:52:47+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Till Koch",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Till Koch",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://github.com/till-ko"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "MIND-7.1-Diagnosecodes für präklinische Erkrankungen und Verletzungen.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 146,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1100",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hirninfarkt, TIA, intrakranielle Blutung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1101",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TIA"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1102",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hirninfarkt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICB (klinische Diagnose)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1104",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SAB (klinische Diagnose)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1105",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Krampfanfall"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1106",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fieberkrampf"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1107",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Status epilepticus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1108",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningitis/Enzephalitis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1198",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Erkrankung ZNS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1201",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ACS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1202",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "STEMI Vorderwand"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1203",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "STEMI Hinterwand"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1204",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Thoraxschmerz unklarer Genese"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1205",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "kardiogener Schock"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1206",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "tachykarde Rhythmusstörung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1207",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bradykarde Rhythmusstörung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1208",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schrittmacher-Fehlfunktion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1209",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICD-Fehlfunktion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1210",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lungenembolie"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1211",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Herzinsuffizienz"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1212",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lungenödem"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1213",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "hypertensive Entgleisung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1214",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "hypertensiver Notfall"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1215",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Aortenaneurysma/-dissektion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1216",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hypotonie"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1217",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "orthostatische Fehlregulation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1218",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Synkope"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1219",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Thrombose/arterieller Verschluss"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1220",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Herz-Kreislauf-Stillstand"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1221",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "hämorrhagischer Schock"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1298",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Erkrankung Herz-Kreislauf"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1301",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Asthma (Anfall)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1302",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Status asthmaticus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1303",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "exazerbierte COPD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1304",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Aspiration"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1305",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pneumonie/Bronchitis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1306",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Epiglottitis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1307",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pseudokrupp"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1308",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "anderer respiratorischer Infekt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1309",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hyperventilationssyndrom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1310",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Spontanpneumothorax"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1311",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hämoptysis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1312",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dyspnoe unklarer Ursache"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1398",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Erkrankung Atmung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1401",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akutes Abdomen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1402",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "obere GI-Blutung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1403",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "untere GI-Blutung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1404",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kolik (Galle, Niere, ...)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1405",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "(infektiöse) Gastroenteritis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1406",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesenterialinfarkt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1498",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Erkrankung Abdomen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1501",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Depression, Angst"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1502",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Manie, Psychose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1503",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Entzugssymptomatik, Delir"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1504",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Suizidalität"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1505",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "psychosoziale Krise"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1598",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Erkrankung Psychiatrie"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1601",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hypoglykämie"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1602",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hyperglykämie"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1603",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urämie/akutes Nierenversagen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1604",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Exsikkose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1605",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Elektrolytstörungen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1698",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Erkrankung Stoffwechsel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1701",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwangerschaft über 35. SSW (zur Entbindung in die Klinik)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1702",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwangerschaftskomplikation (z. B. Eklampsie)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1703",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "präklinische Geburt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1704",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "extrauterine Gravidität"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1705",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "vaginale Blutung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1798",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Erkrankung Gynäkologie"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1801",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anaphylaxie Grad 1/2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1802",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anaphylaxie Grad 3/4"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1803",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intoxikation Alkohol"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1804",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intoxikation Drogen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1805",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intoxikation Medikamente"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1806",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Intoxikation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1807",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akzidentelle Intoxikation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1808",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sepsis/septischer Schock"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1809",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "hochkontagiöse Erreger"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1810",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Infektionserkrankungen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1811",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hitzeerschöpfung/Hitzschlag"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1812",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Unterkühlung/Erfrierung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1813",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SIDS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1814",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akute Lumbago"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1815",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "palliative Situation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1816",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "medizinische Behandlungskomplikation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1817",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Epistaxis/HNO-Erkrankung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1818",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "urologische Erkrankung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1819",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Augenerkrankung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1820",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstiger akuter Schmerzzustand"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1821",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schock unklarer Genese"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1822",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Erysipel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1898",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "sonstige Erkrankung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1899",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "führendes soziales Problem"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9999",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "keine Erkrankung/Verletzung feststellbar"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SHT leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SHT mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SHT schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SHT lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2101",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Gesicht/Kopf/Hals leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2102",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Gesicht/Kopf/Hals mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Gesicht/Kopf/Hals schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2104",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Gesicht/Kopf/Hals lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2201",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma HWS leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2202",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma HWS mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2203",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma HWS schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2204",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma HWS lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2301",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Thorax leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2302",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Thorax mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2303",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Thorax schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2304",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Thorax lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2401",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Abdomen leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2402",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Abdomen mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2403",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Abdomen schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2404",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Abdomen lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2501",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma BWS/LWS leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2502",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma BWS/LWS mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2503",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma BWS/LWS schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2504",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma BWS/LWS lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2601",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Becken leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2602",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Becken mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2603",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Becken schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2604",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Becken lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2701",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma obere Extremität leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2702",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma obere Extremität mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2703",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma obere Extremität schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2704",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma obere Extremität lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2801",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma untere Extremität leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2802",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma untere Extremität mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2803",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma untere Extremität schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2804",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma untere Extremität lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2901",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Weichteile leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2902",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Weichteile mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2903",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Weichteile schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2904",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Weichteile lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2911",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Gefäßverletzungen leicht"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2912",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Gefäßverletzungen mittel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2913",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Gefäßverletzungen schwer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2914",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Gefäßverletzungen lebensbedrohlich oder tödlich"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Verbrennung/Verbrühung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Inhalationstrauma/Rauchgasinhalation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Elektrounfall"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Verätzung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3005",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "(Beinahe-)Ertrinken"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tauchunfall"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3098",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sonstige spezielle Traumata"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/till-ko">Till Koch</a>.  
+          Package de.ems.mind.r4#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-10-01 18:52:00 +0000">
+    2026-10-01
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

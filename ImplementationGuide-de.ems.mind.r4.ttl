@@ -1,0 +1,3166 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/ImplementationGuide/de.ems.mind.r4> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "de.ems.mind.r4"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide de.ems.mind.r4</b></p><a name=\"de.ems.mind.r4\"> </a><a name=\"hcde.ems.mind.r4\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>deems</h2><p>The official URL for this implementation guide is: </p><pre>https://till-ko.github.io/de-ems/ImplementationGuide/de.ems.mind.r4</pre></div>"
+  ] ;
+  fhir:ImplementationGuide.url [ fhir:value "https://till-ko.github.io/de-ems/ImplementationGuide/de.ems.mind.r4"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"] ;
+  fhir:ImplementationGuide.name [ fhir:value "deems"] ;
+  fhir:ImplementationGuide.status [ fhir:value "draft"] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-10-01T18:52:47+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.publisher [ fhir:value "Till Koch"] ;
+  fhir:ImplementationGuide.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Till Koch" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/till-ko" ]
+     ]
+  ] ;
+  fhir:ImplementationGuide.packageId [ fhir:value "de.ems.mind.r4"] ;
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1" ;
+     fhir:index 0
+  ] ;
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0 ;
+     fhir:Element.id [ fhir:value "hl7tx" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.4.0" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.id [ fhir:value "hl7ext" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.id [ fhir:value "de_basisprofil_r4" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://fhir.de/ImplementationGuide/hl7.fhir.r4.de.basis" ;
+       fhir:link <http://fhir.de/ImplementationGuide/hl7.fhir.r4.de.basis>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.basisprofil.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.6.0" ]
+  ] ;
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2026+" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "auto-oid-root" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2.25.169126619167380341660016816424527320624" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-liquid-template" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-liquid-template" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://till-ko.github.io/de-ems/history.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-wg" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
+       fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.1.2" ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2026+" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "auto-oid-root" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2.25.169126619167380341660016816424527320624" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://till-ko.github.io/de-ems/history.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 48 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-wg" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 54 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ] ;
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "de EMS MIND Observation Basisprofil" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Basisprofil für alle MIND-7.1-Feld-Beobachtungen dieses IG. Erbt von ObservationDeEmsBase das CH-EMS-Konzept 'nicht dokumentiert' (dataAbsentReason) und legt die gemeinsame MIND-Konvention fest: status, code aus MindObservationstypCS, subject, encounter (verbindlicher Bezug zum Einsatz-Encounter, dessen period.end das Einsatzende trägt) und effectiveDateTime. effectiveDateTime ist wie in CH-EMS optional; bei Zeit-Beobachtungen trägt valueDateTime den Zeitpunkt. Auch der MIND-Datumssonderwert (1902-02-02T22:00:00.000+01:00) wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason abgebildet." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-base> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-base" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "de EMS Observation Basisprofil" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Basisprofil für alle Observations in diesem IG. Stellt das CH-EMS-Konzept 'nicht dokumentiert' über Observation.dataAbsentReason bereit: Fehlt der Wert einer Beobachtung, wird statt value[x] ein dataAbsentReason-Code übermittelt (z. B. not-asked, unknown). Konkrete MIND-/DIVI-Observation-Profile erben diese Konvention." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-divi-r4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/encounter-de-ems-divi-r4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIVI 7.1 Einsatz / Encounter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vollständiges deutsches Encounter-Profil für das DIVI-Notfalleinsatzprotokoll (Einsatztechnische Daten). Die MIND-Einsatz-Ressource (EncounterDeEmsMindR4) ist eine Constraint-Ableitung dieses Basisprofils." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-divi-r4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/location-de-ems-divi-r4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIVI 7.1 Einsatzort / Location" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vollständiges deutsches Location-Profil für den DIVI-Notfalleinsatzprotokoll-Einsatzort. Die MIND-Einsatzort-Ressource (LocationDeEmsMindR4) ist eine Constraint-Ableitung dieses Basisprofils." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-de-ems-divi-r4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIVI 7.1 Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vollständiges deutsches Patientprofil für das DIVI-Notfalleinsatzprotokoll." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-ekg-12-kanal-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-ekg-12-kanal-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 12-Kanal-EKG" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Durchführung eines 12-Kanal-EKG gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-ekg-12-kanal-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-ekg-12-kanal-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 12-Kanal-EKG ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Durchführung eines 12-Kanal-EKG gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-altersvaliditaet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Altersvalidität" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoolean = true bedeutet 'Alter geschätzt', valueBoolean = false bedeutet 'Alter gesichert'. Ist die Angabe nicht dokumentiert (CH-EMS-Konzept), wird statt valueBoolean der dataAbsentReason gesetzt (vom Basisprofil ObservationDeEmsBase geerbt)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Observation/mind-altersvaliditaet-undokumentiert-example> ;
+         fhir:Reference.reference [ fhir:value "Observation/mind-altersvaliditaet-undokumentiert-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Altersvalidität nicht dokumentiert" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Altersvalidität als not-asked (nicht dokumentiert) über dataAbsentReason nach CH-EMS-Konzept." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet>
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-beteiligte-rettungsmittel> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-beteiligte-rettungsmittel" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Beteiligte Rettungsmittel" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "BeteilRM: Rettungsmitteltyp/en der am Einsatz beteiligten Rettungsmittel. Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/bundle-de-ems-mind-r4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Dokument-Bundle" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FHIR-Dokument-Bundle für ein deutsches MIND-7.1-RD-Dokument." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-dokumentierendes-rettungsmittel> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-dokumentierendes-rettungsmittel" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Dokumentierendes Rettungsmittel" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DokRM: Rettungsmitteltyp des dokumentierenden Rettungsmittels. Abhängig vom Protokolltyp sind bestimmte Codes unzulässig (siehe MIND-Spezifikation)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/encounter-de-ems-mind-r4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Einsatz / Encounter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Constraint-Ableitung des DIVI-Einsatz-Encounters (EncounterDeEmsDiviR4) für den MIND-7.1-Datensatz. Erweitert das Basisprofil um die MIND-spezifischen Strukturdaten (ProjektID, Primärschlüssel), macht Leitstelle und Referenzen auf die MIND-Patienten-/Einsatzort-Profile verbindlich. period.end (Einsatzende) ist verpflichtend; die Zeit-Observations des Kapitels ZeitenEinsatzablauf referenzieren diesen Encounter über Observation.encounter." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/composition-de-ems-mind-r4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Einsatzdokument" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Composition für ein deutsches MIND-7.1-RD-Dokument." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/location-de-ems-mind-r4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Einsatzort / Location" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Constraint-Ableitung des DIVI-Einsatzortes (LocationDeEmsDiviR4) für ein deutsches MIND-7.1-RD-Dokument. Derzeit identische Feldmenge wie das Basisprofil; die MIND-Ressource dient als eigenständiger Konformitäts-Target für den MIND-Code." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-mit-patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-kein-transport-mit-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Grund für Einsatz ohne Transport trotz Patientenkontakt" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "KeinTranspMitPat: Pflicht für Einsätze ohne Transport trotz Patientenkontakt (RDTransport = 01)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-ohne-patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-kein-transport-ohne-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Grund für Einsatz ohne Transport, da kein Patientenkontakt" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "KeinTranspOhnePat: Pflicht für Einsätze ohne Transport wegen fehlendem Patientenkontakt (RDTransport = 02)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Notarzt nachgefordert" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NotarztNachgefordert: Physisch anwesender Notarzt wurde nachgefordert. valueBoolean = true bedeutet 'nachgefordert', valueBoolean = false bedeutet 'nicht nachgefordert'. Falls unbekannt, ist in MIND 'Nein' zu dokumentieren." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-de-ems-mind-r4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Constraint-Ableitung vom vollständigen DIVI-Patientprofil (PatientDeEmsDiviR4) für den MIND-7.1-Export. Identifizierende Patientendaten (Name, Geburtsdatum, Adresse, Kennungen) werden nicht übermittelt." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-alter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Patientenalter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MIND-Alter zum maßgeblichen Zeitpunkt des Einsatzes als Jahre (component[jahre]) und Monate (component[monate]). Der Export formt daraus das MIND-Format 'jjj:mm' (z. B. 51 Jahre 4 Monate = '051:04')." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Bundle/mind-rd-dokument-example> ;
+         fhir:Reference.reference [ fhir:value "Bundle/mind-rd-dokument-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 RD-Dokument" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimales deutsches MIND-7.1-Dokument mit Patient, Einsatz, Einsatzort und Composition." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4>
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Composition/mind-composition-example> ;
+         fhir:Reference.reference [ fhir:value "Composition/mind-composition-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Rettungsdienstdokumentation" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4>
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-rd-transport" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Rettungsdienstlicher Transport" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RDTransport: Welches Rettungsmittel hat den überwiegenden Anteil des Transports des Patienten durchgeführt? Pflicht, außer für Dienstfahrten und Pauseneinsätze (EinsatzArt 11/12)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-personalstatus> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-personalstatus" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Status des Personals" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "StatusPersonal: Qualifikation des höchstqualifizierten Mitarbeiters auf dem Rettungsmittel. Pflicht, außer für Dienstfahrten und Pauseneinsätze." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-gesichert> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-symptombeginn-gesichert" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Symptombeginn gesichert oder geschätzt" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SymptombeginnGesichert: Ist der Symptombeginn gesichert oder geschätzt? valueBoolean = true bedeutet 'geschätzt', valueBoolean = false bedeutet 'gesichert'." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-vor-24h> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-symptombeginn-vor-24h" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Symptombeginn innerhalb der letzten 24 Stunden" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SymptombeginnVor24h: Bestehen die Symptome länger als 24 Stunden? valueBoolean = true bedeutet 'Ja (> 24 Stunden)', valueBoolean = false bedeutet 'Nein (innerhalb 24 Stunden)'. 'unbekannt' (00) wird nach CH-EMS-Konzept über dataAbsentReason abgebildet." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-tna-nachgefordert> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-tna-nachgefordert" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Tele-Notarzt nachgefordert" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "TNANachgefordert: Tele-Notarzt wurde nachgefordert. valueBoolean = true bedeutet 'nachgefordert', valueBoolean = false bedeutet 'nicht nachgefordert'." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-alarm" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Alarm" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitAlarm: Zeitpunkt Alarm/Auftragsvergabe." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-einsatzort> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-ankunft-einsatzort" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Ankunft Einsatzort" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitAnkunftEinsatzort: Ankunft des dokumentierenden Rettungsmittels am Einsatzort." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-ankunft-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Ankunft Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitAnkunftPatient: Ankunft der Rettungsmittelbesatzung beim Patienten bzw. Beginn der Übernahme des Patienten bei Sekundäreinsätzen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ausruecken> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-ausruecken" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Ausrücken" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitAusruecken: Zeitpunkt Abfahrt/Abflug Standort (einsatzklarer Besatzung)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-notfallmeldung> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-notfallmeldung" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Eingang Notfallmeldung" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitNotfallmeldung: Zeitpunkt des Anrufs (Aufschaltzeitpunkt aus Leitstellen-Datensatz)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-einsatzende" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Einsatzende" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitEinsatzende: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenhängenden Arbeiten wie z. B. Desinfektionstätigkeiten und Dokumentation)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-eintreffen-transportziel> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-eintreffen-transportziel" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Eintreffen Transportziel" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitEintreffenTransportziel: Fahrzeug trifft am Transportziel ein." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-symptombeginn" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Symptombeginn" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptombeginn: Ereigniszeitpunkt, Unfallzeitpunkt, Kollapszeitpunkt, Zeitpunkt Symptom-/Beschwerdebeginn, wenn dieser innerhalb von 24 Stunden vor Alarmierung liegt." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-transportbeginn> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-transportbeginn" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Transportbeginn" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitTransportbeginn: Beginn des Patiententransportes." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-uebergabe-patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-zeit-uebergabe-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkt Übergabe Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitUebergabePatient: Übergabe des Patienten an Weiterbehandler." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ConceptMap/mind-observationstyp-2-ivr> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/mind-observationstyp-2-ivr" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Zeitpunkte → CH-EMS IVR Mission Time Roles" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ordnet die zeitbezogenen MIND-7.1-Codes aus MindObservationstypCS den Zeit-Rollen (Mission Time Roles) des Schweizer CH-EMS-CodeSystems IVR zu, die im CH-EMS-IG im Profil 'Mission Time Status' gebunden sind. Symptombeginn-Felder haben keine IVR-Entsprechung; die IVR-Rollen 'departure from target' (1000041) sowie die Notarzt-Zeiten (1000171/1000172) haben keine MIND-Entsprechung. Umsetzung als FSH-Instance, da SUSHI keine ConceptMap-Regel kennt." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-qualifikation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-aerztliche-qualifikation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Ärztliche Qualifikation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AerztlQualifikation: Fachrichtung/Qualifikation des Notarztes/Transportarztes. Pflicht für NA-Protokolle, außer für Dienstfahrten oder Pauseneinsätze. Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-begleitung> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-de-ems-mind-aerztliche-begleitung" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND 7.1 Ärztliche Transportbegleitung" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AerztlBegleit: Wurde der Transport ärztlich begleitet und wenn ja, von wem? Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-airway-massnahme-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-airway-massnahme-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Airway-Maßnahme" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-airway-massnahme-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-airway-massnahme-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Airway-Maßnahme ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-atmung-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-atmung-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Atembefund ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klinische Befunde der Atmung gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-atemunterstuetzung-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-atemunterstuetzung-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Atemunterstützung" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Atemunterstützung und Beatmung gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-atemunterstuetzung-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-atemunterstuetzung-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Atemunterstützung ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Atemunterstützung und Beatmung gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-herzdruckmassage-durch-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-herzdruckmassage-durch-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Beginn der Herzdruckmassage durch" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-observationstyp-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Beobachtungstypen" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-observationstyp-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-observationstyp-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Beobachtungstypen ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alle Beobachtungstypen (Observation.code) der MIND-7.1-Spezifikation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-beteiligtes-rettungsmittel-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-beteiligtes-rettungsmittel-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Beteiligtes Rettungsmittel" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-beteiligtes-rettungsmittel-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-beteiligtes-rettungsmittel-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Beteiligtes Rettungsmittel ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-bewusstseinslage-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-bewusstseinslage-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Bewusstseinslage" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bewusstseinslage gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-bewusstseinslage-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-bewusstseinslage-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Bewusstseinslage ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bewusstseinslage gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-diagnose-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Diagnose" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MIND-7.1-Diagnosecodes für präklinische Erkrankungen und Verletzungen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-diagnose-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-diagnose-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Diagnose ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnosecodes für MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-dokumentierendes-rettungsmittel-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-dokumentierendes-rettungsmittel-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Dokumentierendes Rettungsmittel" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-dokumentierendes-rettungsmittel-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-dokumentierendes-rettungsmittel-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Dokumentierendes Rettungsmittel ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-heilkundliche-massnahme-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-heilkundliche-massnahme-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Eigenständige heilkundliche Maßnahme" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eigenständig oder eigenverantwortlich durch Notfallsanitäterinnen und Notfallsanitäter durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-einsatzart-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzart" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Einsatzart gemäß MIND 7.1 Spezifikation. Beschreibt die Art des Einsatzes (Notfallrettung, Verlegung, Intensivtransport, Krankentransport, Dienstfahrt, Pause)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-einsatzart-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-einsatzart-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzart ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet für die Einsatzart gemäß MIND 7.1 Spezifikation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-einsatzart-na-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-einsatzart-na-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzart ValueSet für NA-Protokolle" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Zulässige Einsatzarten für MIND 7.1 NA-Protokolle." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-einsatzart-rd-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-einsatzart-rd-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzart ValueSet für RD-Protokolle" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Zulässige Einsatzarten für MIND 7.1 RD-Protokolle." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzbesonderheit-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-einsatzbesonderheit-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzbesonderheit" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Einsatzbesonderheiten gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-einsatzbesonderheit-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-einsatzbesonderheit-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzbesonderheit ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Einsatzbesonderheiten gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mind-einsatzort-typ" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzorttyp" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beschreibung des Einsatzortes (EinsatzortTyp) gemäß MIND 7.1. Pflicht, außer für Dienstfahrten und Pauseneinsätze." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-einsatzort-typ-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzorttyp CodeSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Einsatzorttyp gemäß MIND 7.1 Spezifikation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-einsatzort-typ-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-einsatzort-typ-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Einsatzorttyp ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet für den Einsatzorttyp gemäß MIND 7.1 Spezifikation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-ekg-befund-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-ekg-befund-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND EKG-Befund" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EKG-Befund gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-ekg-befund-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-ekg-befund-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND EKG-Befund ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EKG-Befund gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-erste-defibrillation-durch-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-erste-defibrillation-durch-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Erste Defibrillation durch" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-erste-defibrillation-durch-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-erste-defibrillation-durch-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Erste Defibrillation durch ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-kein-transport-ohne-patient-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-kein-transport-ohne-patient-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Grund für Einsatz ohne Patientenkontakt" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-kein-transport-mit-patient-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-kein-transport-mit-patient-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Grund für Einsatz ohne Transport bei Patientenkontakt" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-hautbefund-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-hautbefund-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Hautbefund" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hautbefunde gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-hautbefund-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-hautbefund-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Hautbefund ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hautbefunde gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-heilkundliche-massnahme-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-heilkundliche-massnahme-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Heilkundliche Maßnahme ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eigenständig oder eigenverantwortlich durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-herzdruckmassage-durch-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-herzdruckmassage-durch-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Herzdruckmassage durch ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-indikation-intensivtransport-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-indikation-intensivtransport-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Indikation Intensivtransport" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indikation für einen Intensivtransport gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-indikation-intensivtransport-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-indikation-intensivtransport-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Indikation Intensivtransport ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indikation für einen Intensivtransport gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-infusionsgabe-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-infusionsgabe-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Infusionsgabe ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gültige MIND-7.1-Codes für die Gabe von Kristalloiden und speziellen Infusionen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-atmung-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-atmung-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Klinischer Atembefund" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klinische Befunde der Atmung gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-kollaps-beobachtet-durch-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-kollaps-beobachtet-durch-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Kollaps beobachtet durch" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-kollaps-beobachtet-durch-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-kollaps-beobachtet-durch-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Kollaps beobachtet durch ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-krankenhausaufnahme-zustand-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-krankenhausaufnahme-zustand-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Krankenhausaufnahmezustand ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-kreislaufstillstandursache-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-kreislaufstillstandursache-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Kreislaufstillstandursache ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-lagerungs-rettungstechnik-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-lagerungs-rettungstechnik-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Lagerungs- und Rettungstechnik" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-lagerungs-rettungstechnik-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-lagerungs-rettungstechnik-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Lagerungs- und Rettungstechnik ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-lichtreaktion-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-lichtreaktion-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Lichtreaktion" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lichtreaktion der Pupillen gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-lichtreaktion-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-lichtreaktion-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Lichtreaktion ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lichtreaktion der Pupillen gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 88 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-mnaca-score-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-mnaca-score-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND M-NACA-Score" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "M-NACA-Score gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 89 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-mnaca-score-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-mnaca-score-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND M-NACA-Score ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "M-NACA-Score gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 90 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-medikamentengabe-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Medikamentengabe" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gültige Kombinationen aus Wirkstoffcode und Applikationsweg gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 91 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-medikamentengabe-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-medikamentengabe-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Medikamentengabe ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alle in MIND 7.1 gültigen Kombinationen aus Wirkstoffcode und Applikationsweg." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 92 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-circulation-zugang-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-circulation-zugang-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Medikamentenzugang" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Angelegter Medikamentenzugang gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 93 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-circulation-zugang-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-circulation-zugang-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Medikamentenzugang ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Angelegter Medikamentenzugang gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 94 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-medizintechnik-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-medizintechnik-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Medizintechnik" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eingesetzte Medizintechnik gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-medizintechnik-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-medizintechnik-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Medizintechnik ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eingesetzte Medizintechnik gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 96 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-naca-score-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-naca-score-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND NACA-Score" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NACA-Score gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 97 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-naca-score-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-naca-score-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND NACA-Score ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NACA-Score gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 98 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-neurologische-auffaelligkeit-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-neurologische-auffaelligkeit-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Neurologische Auffälligkeit" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Akute neurologische Auffälligkeiten gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 99 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-neurologische-auffaelligkeit-verlauf-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-neurologische-auffaelligkeit-verlauf-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Neurologische Auffälligkeit im Verlauf" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Akute neurologische Auffälligkeiten im Verlaufsbefund gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 100 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-neurologische-auffaelligkeit-verlauf-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-neurologische-auffaelligkeit-verlauf-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Neurologische Auffälligkeit im Verlauf ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Akute neurologische Auffälligkeiten (ZNS, PNS) im Verlaufsbefund gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 101 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-neurologische-auffaelligkeit-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-neurologische-auffaelligkeit-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Neurologische Auffälligkeit ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Akute neurologische Auffälligkeiten (ZNS, PNS) gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 102 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-kein-transport-mit-patient-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-kein-transport-mit-patient-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Nichttransport bei Patientenkontakt ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 103 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-kein-transport-ohne-patient-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-kein-transport-ohne-patient-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Nichttransport ohne Patientenkontakt ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 104 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-ort-patientenuebergabe-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-ort-patientenuebergabe-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Ort der Patientenübergabe" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ort der Patientenübergabe gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 105 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-ort-patientenuebergabe-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-ort-patientenuebergabe-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Ort der Patientenübergabe ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ort der Patientenübergabe gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 106 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-krankenhausaufnahme-zustand-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-krankenhausaufnahme-zustand-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Patientenzustand bei Krankenhausaufnahme" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 107 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-personalstatus-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-personalstatus-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Personalstatus" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Status des am Einsatz beteiligten Personals gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 108 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-personalstatus-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-personalstatus-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Personalstatus ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Status des am Einsatz beteiligten Personals gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 109 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-protokolltyp-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-protokolltyp-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Protokolltyp" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typ des verwendeten Protokolls: NA für Notarztdokumentation, RD für Rettungsdienstdokumentation. Sollte in den Stammdaten fest dem Rettungsmittel/Personal zugewiesen werden; beim Wechsel von Dokumentations-Pads zwischen Fahrzeugen muss das korrekte Rettungsmittel (mit zugeordneter Projekt-ID) und der richtige Protokolltyp ausgewählt sein. Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen (z. B. ProjektID, Rettungsmitteltyp, Einsatzart, Qualifikation Personal)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 110 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-protokolltyp-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-protokolltyp-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Protokolltyp ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet für den Protokolltyp (NA oder RD) gemäß MIND-Spezifikation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 111 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-psychischer-zustand-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-psychischer-zustand-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Psychischer Zustand" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Psychischer Zustand gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 112 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-psychischer-zustand-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-psychischer-zustand-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Psychischer Zustand ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Psychischer Zustand gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 113 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-pupillenweite-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-pupillenweite-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Pupillenweite" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pupillenweite gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 114 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-pupillenweite-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-pupillenweite-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Pupillenweite ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pupillenweite gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 115 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-reanimationssituation-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-reanimationssituation-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Reanimationssituation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Reanimationssituation gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 116 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-reanimationssituation-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-reanimationssituation-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Reanimationssituation ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lag eine Reanimationssituation vor bzw. wurde eine solche durch die Rettungsmittelbesatzung erkannt, gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 117 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-reanimationstechnik-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-reanimationstechnik-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Reanimationstechnik" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eingesetzte Reanimationstechnik gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 118 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-reanimationstechnik-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-reanimationstechnik-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Reanimationstechnik ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eingesetzte Reanimationstechnik gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 119 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-rd-transport-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-rd-transport-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Rettungsdienstlicher Transport" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rettungsdienstlicher Transport gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 120 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-rd-transport-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-rd-transport-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Rettungsdienstlicher Transport ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rettungsdienstlicher Transport gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 121 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-rosc-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-rosc-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND ROSC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Erreichen eines Spontankreislaufs gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 122 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-rosc-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-rosc-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND ROSC ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Erreichen eines Spontankreislaufs (ROSC) gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 123 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-schmerzerleben-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-schmerzerleben-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Schmerzerleben" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Schmerzerleben durch die Patientin oder den Patienten gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 124 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-schmerzerleben-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-schmerzerleben-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Schmerzerleben ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Schmerzerleben durch die Patientin oder den Patienten gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 125 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/mind-softwarekennung> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mind-softwarekennung" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Softwarekennung" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Kennung des Dokumentationssystems und der Software-Version, mit der die Einsatzdaten erzeugt wurden. Pflichtfeld in Baden-Württemberg laut MIND-Exporthinweisen. Der MIND-Sonderwert -2 (nicht anwendbar) wird nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf valueString abgebildet (CH-EMS-Konzept)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 126 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-spezielle-devices-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-spezielle-devices-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Spezielle Devices" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Spezielle Devices gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 127 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-spezielle-devices-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-spezielle-devices-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Spezielle Devices ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Spezielle Devices gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 128 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-spezielle-massnahme-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-spezielle-massnahme-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Spezielle Maßnahme" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Spezielle Maßnahmen gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 129 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-spezielle-massnahme-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-spezielle-massnahme-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Spezielle Maßnahme ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Spezielle Maßnahmen gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 130 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-unfallhergang-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-unfallhergang-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Unfallhergang" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unfallhergang gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 131 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-unfallhergang-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-unfallhergang-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Unfallhergang ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unfallhergang gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 132 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-unfallmechanismus-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-unfallmechanismus-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Unfallmechanismus" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unfallmechanismus gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 133 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-unfallmechanismus-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-unfallmechanismus-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Unfallmechanismus ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unfallmechanismus gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 134 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-unfallursache-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-unfallursache-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Unfallursache" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unfallursache gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 135 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-unfallursache-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-unfallursache-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Unfallursache ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unfallursache gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 136 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-verletzungsmuster-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-verletzungsmuster-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Verletzungsmuster" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Verletzungsmuster gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 137 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-verletzungsmuster-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-verletzungsmuster-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Verletzungsmuster ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Verletzungsmuster gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 138 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-kreislaufstillstandursache-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-kreislaufstillstandursache-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Vermutete Ursache des Kreislaufstillstands" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 139 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-zeitliche-dringlichkeit-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-zeitliche-dringlichkeit-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Zeitliche Dringlichkeit" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Zeitliche Dringlichkeit gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 140 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-zeitliche-dringlichkeit-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-zeitliche-dringlichkeit-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Zeitliche Dringlichkeit ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Zeitliche Dringlichkeit gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 141 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-pre-emergency-status-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-pre-emergency-status-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Zustand vor Eintritt des Notfalls" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Zustand vor Eintritt des Notfalls gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 142 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-pre-emergency-status-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-pre-emergency-status-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Zustand vor Eintritt des Notfalls ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Zustand vor Eintritt des Notfalls gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 143 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-qualifikation-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-aerztliche-qualifikation-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Ärztliche Qualifikation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 144 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-aerztliche-qualifikation-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-aerztliche-qualifikation-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Ärztliche Qualifikation ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 145 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-begleitung-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mind-aerztliche-begleitung-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Ärztliche Transportbegleitung" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ärztliche Transportbegleitung gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 146 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/ValueSet/mind-aerztliche-begleitung-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/mind-aerztliche-begleitung-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MIND Ärztliche Transportbegleitung ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ärztliche Transportbegleitung gemäß MIND 7.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 147 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Observation/mind-alter-example> ;
+         fhir:Reference.reference [ fhir:value "Observation/mind-alter-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindAlterExample" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter>
+       ]
+     ], [
+       fhir:index 148 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Observation/mind-altersvaliditaet-example> ;
+         fhir:Reference.reference [ fhir:value "Observation/mind-altersvaliditaet-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindAltersvaliditaetExample" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet>
+       ]
+     ], [
+       fhir:index 149 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/NamingSystem/MindAuftragNrNamingSystem> ;
+         fhir:Reference.reference [ fhir:value "NamingSystem/MindAuftragNrNamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindAuftragNrNamingSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des RD-Auftrages (DIVI-Feld AuftrNr)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 150 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/NamingSystem/MindEinsatznrNamingSystem> ;
+         fhir:Reference.reference [ fhir:value "NamingSystem/MindEinsatznrNamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindEinsatznrNamingSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes (DIVI-Feld EinsatzNr)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 151 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/NamingSystem/MindLeitstelleNamingSystem> ;
+         fhir:Reference.reference [ fhir:value "NamingSystem/MindLeitstelleNamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindLeitstelleNamingSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Landkreiskennung der Heimatleitstelle (z. B. S für Stuttgart, OG für Offenburg). Für einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden; einmalig in den Stammdaten einzupflegen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 152 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Observation/mind-notarzt-nachgefordert-example> ;
+         fhir:Reference.reference [ fhir:value "Observation/mind-notarzt-nachgefordert-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindNotarztNachgefordertExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NotarztNachgefordert: kein Notarzt nachgefordert." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert>
+       ]
+     ], [
+       fhir:index 153 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/NamingSystem/MindPatNrNamingSystem> ;
+         fhir:Reference.reference [ fhir:value "NamingSystem/MindPatNrNamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindPatNrNamingSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Patienten (DIVI-Feld PatNr)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 154 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/NamingSystem/MindPrimaerschluesselNamingSystem> ;
+         fhir:Reference.reference [ fhir:value "NamingSystem/MindPrimaerschluesselNamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindPrimaerschluesselNamingSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eindeutiger Primärschlüssel für alle Fälle eines Kalenderjahres innerhalb eines Leitstellenbereiches gemäß MIND-Spezifikation. NA-Auftragsnummer im NA-Protokoll, RD-Auftragsnummer im RD-Protokoll." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 155 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/NamingSystem/MindProjektIdNamingSystem> ;
+         fhir:Reference.reference [ fhir:value "NamingSystem/MindProjektIdNamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindProjektIdNamingSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird (Einmalig in den Stammdaten einzupflegen) gemäß MIND-Spezifikation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 156 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> ;
+         fhir:Reference.reference [ fhir:value "Encounter/mind-encounter-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindRdEncounterExample" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4>
+       ]
+     ], [
+       fhir:index 157 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Location/mind-location-example> ;
+         fhir:Reference.reference [ fhir:value "Location/mind-location-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindRdLocationExample" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4>
+       ]
+     ], [
+       fhir:index 158 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+         fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindRdPatientExample" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4>
+       ]
+     ], [
+       fhir:index 159 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Practitioner/mind-practitioner-example> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/mind-practitioner-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindRdPractitionerExample" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 160 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Observation/mind-rdtransport-example> ;
+         fhir:Reference.reference [ fhir:value "Observation/mind-rdtransport-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindRdTransportExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RDTransport: Transport durch RTW." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport>
+       ]
+     ], [
+       fhir:index 161 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/NamingSystem/MindStandortkennungNamingSystem> ;
+         fhir:Reference.reference [ fhir:value "NamingSystem/MindStandortkennungNamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindStandortkennungNamingSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amtlicher Gemeindeschlüssel des Rettungsmittel-Standorts (Gliederung BL-LK: Bundesland und Landkreis nach Vorgaben des Gemeindeschlüssels; Rettungswache). Sonderwerte der MIND-Spezifikation (-1 = nicht dokumentiert, 99999999 = nicht bekannt) werden nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf identifier[standortkennung].value abgebildet (CH-EMS-Konzept)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 162 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Observation/mind-zeit-alarm-example> ;
+         fhir:Reference.reference [ fhir:value "Observation/mind-zeit-alarm-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindZeitAlarmExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitAlarm: Alarmierung durch die Leitstelle." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm>
+       ]
+     ], [
+       fhir:index 163 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Observation/mind-zeit-einsatzende-example> ;
+         fhir:Reference.reference [ fhir:value "Observation/mind-zeit-einsatzende-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MindZeitEinsatzendeExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.period.end)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende>
+       ]
+     ], [
+       fhir:index 164 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://till-ko.github.io/de-ems/Patient/divi-patient-example> ;
+         fhir:Reference.reference [ fhir:value "Patient/divi-patient-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vollständiger DIVI-Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel eines vollständigen deutschen Patientendatensatzes für das DIVI-Dokument." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4" ;
+         fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4>
+       ]
+     ] ;
+     fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ] ;
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ] ;
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ] ;
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ] ;
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ] ;
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/assets" ]
+     ], [
+       fhir:index 14 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 15 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/ImplementationGuide/de.ems.mind.r4.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

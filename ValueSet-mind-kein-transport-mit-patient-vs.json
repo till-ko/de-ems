@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mind-kein-transport-mit-patient-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mind-kein-transport-mit-patient-vs</b></p><a name=\"mind-kein-transport-mit-patient-vs\"> </a><a name=\"hcmind-kein-transport-mit-patient-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-mind-kein-transport-mit-patient-cs.html\"><code>https://till-ko.github.io/de-ems/CodeSystem/mind-kein-transport-mit-patient-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-kein-transport-mit-patient-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.48.24"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindKeinTransportMitPatientVS",
+  "title" : "MIND Nichttransport bei Patientenkontakt ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kein-transport-mit-patient-cs"
+    }]
+  }
+}

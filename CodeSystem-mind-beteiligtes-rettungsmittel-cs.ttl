@@ -1,0 +1,137 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-beteiligtes-rettungsmittel-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-beteiligtes-rettungsmittel-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-beteiligtes-rettungsmittel-cs</b></p><a name=\"mind-beteiligtes-rettungsmittel-cs\"> </a><a name=\"hcmind-beteiligtes-rettungsmittel-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-beteiligtes-rettungsmittel-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-beteiligtes-rettungsmittel-cs-01\"> </a></td><td>NEF</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-beteiligtes-rettungsmittel-cs-02\"> </a></td><td>RTW</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-beteiligtes-rettungsmittel-cs-03\"> </a></td><td>KTW</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-beteiligtes-rettungsmittel-cs-04\"> </a></td><td>NAW</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"mind-beteiligtes-rettungsmittel-cs-05\"> </a></td><td>RTH</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"mind-beteiligtes-rettungsmittel-cs-06\"> </a></td><td>ITH</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"mind-beteiligtes-rettungsmittel-cs-07\"> </a></td><td>ITW</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"mind-beteiligtes-rettungsmittel-cs-08\"> </a></td><td>Langstreckenflugzeug</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"mind-beteiligtes-rettungsmittel-cs-09\"> </a></td><td>Ambulanzflugzeug</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"mind-beteiligtes-rettungsmittel-cs-10\"> </a></td><td>First Responder</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"mind-beteiligtes-rettungsmittel-cs-11\"> </a></td><td>Bergrettung</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"mind-beteiligtes-rettungsmittel-cs-12\"> </a></td><td>Wasserrettung</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"mind-beteiligtes-rettungsmittel-cs-13\"> </a></td><td>Selbstfahrender NA</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"mind-beteiligtes-rettungsmittel-cs-14\"> </a></td><td>Telenotarzt</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"mind-beteiligtes-rettungsmittel-cs-15\"> </a></td><td>Single Responder (Gemeinde-NotSan, REF, AEF, ...)</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"mind-beteiligtes-rettungsmittel-cs-16\"> </a></td><td>LNA</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"mind-beteiligtes-rettungsmittel-cs-17\"> </a></td><td>OrgL</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"mind-beteiligtes-rettungsmittel-cs-18\"> </a></td><td>N-KTW</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"mind-beteiligtes-rettungsmittel-cs-19\"> </a></td><td>MIC</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"mind-beteiligtes-rettungsmittel-cs-20\"> </a></td><td>S-RTW (Schwerlast)</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"mind-beteiligtes-rettungsmittel-cs-21\"> </a></td><td>Ersthelfer-App</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"mind-beteiligtes-rettungsmittel-cs-98\"> </a></td><td>Sonstige</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-beteiligtes-rettungsmittel-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.169126619167380341660016816424527320624.16.6" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "MindBeteiligtesRettungsmittelCS"] ;
+  fhir:CodeSystem.title [ fhir:value "MIND Beteiligtes Rettungsmittel"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-01T18:52:47+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Till Koch"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Till Koch" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/till-ko" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "22"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "01" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NEF" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "02" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RTW" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "03" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "KTW" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "04" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NAW" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "05" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RTH" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "06" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ITH" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "07" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ITW" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "08" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Langstreckenflugzeug" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "09" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ambulanzflugzeug" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bergrettung" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wasserrettung" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Selbstfahrender NA" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Telenotarzt" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Single Responder (Gemeinde-NotSan, REF, AEF, ...)" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "LNA" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "OrgL" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "18" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "N-KTW" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "19" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MIC" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "S-RTW (Schwerlast)" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ersthelfer-App" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sonstige" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-beteiligtes-rettungsmittel-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

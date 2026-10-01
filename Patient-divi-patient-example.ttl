@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/Patient/divi-patient-example> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "divi-patient-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4" ;
+       fhir:index 0 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient divi-patient-example</b></p><a name=\"divi-patient-example\"> </a><a name=\"hcdivi-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-de-ems-divi-r4.html\">DIVI 7.1 Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Erika Mustermann  Female, DoB: 1975-04-12 ( https://till-ko.github.io/de-ems/NamingSystem/mind-patnr#MindPatNr#PAT-2026-001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Musterstraße 1 Hildesheim 31134 DE </td></tr></table></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-patnr" ] ;
+     fhir:Identifier.value [ fhir:value "PAT-2026-001" ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Mustermann" ] ;
+     fhir:HumanName.given [
+       fhir:value "Erika" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1975-04-12"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.line [
+       fhir:value "Musterstraße 1" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Hildesheim" ] ;
+     fhir:Address.postalCode [ fhir:value "31134" ] ;
+     fhir:Address.country [ fhir:value "DE" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/Patient/divi-patient-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

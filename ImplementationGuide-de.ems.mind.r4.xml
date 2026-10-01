@@ -1,0 +1,2371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="de.ems.mind.r4"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide de.ems.mind.r4</b></p><a name="de.ems.mind.r4"> </a><a name="hcde.ems.mind.r4"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>deems</h2><p>The official URL for this implementation guide is: </p><pre>https://till-ko.github.io/de-ems/ImplementationGuide/de.ems.mind.r4</pre></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/ImplementationGuide/de.ems.mind.r4"/>
+  <version value="0.1.0"/>
+  <name value="deems"/>
+  <status value="draft"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <packageId value="de.ems.mind.r4"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.4.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="de_basisprofil_r4">
+    <uri value="http://fhir.de/ImplementationGuide/hl7.fhir.r4.de.basis"/>
+    <packageId value="de.basisprofil.r4"/>
+    <version value="1.6.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2026+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="auto-oid-root"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.25.169126619167380341660016816424527320624"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://till-ko.github.io/de-ems/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2026+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="auto-oid-root"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.25.169126619167380341660016816424527320624"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://till-ko.github.io/de-ems/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind"/>
+      </reference>
+      <name value="de EMS MIND Observation Basisprofil"/>
+      <description value="Basisprofil für alle MIND-7.1-Feld-Beobachtungen dieses IG. Erbt von ObservationDeEmsBase das CH-EMS-Konzept 'nicht dokumentiert' (dataAbsentReason) und legt die gemeinsame MIND-Konvention fest: status, code aus MindObservationstypCS, subject, encounter (verbindlicher Bezug zum Einsatz-Encounter, dessen period.end das Einsatzende trägt) und effectiveDateTime. effectiveDateTime ist wie in CH-EMS optional; bei Zeit-Beobachtungen trägt valueDateTime den Zeitpunkt. Auch der MIND-Datumssonderwert (1902-02-02T22:00:00.000+01:00) wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason abgebildet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-base"/>
+      </reference>
+      <name value="de EMS Observation Basisprofil"/>
+      <description value="Basisprofil für alle Observations in diesem IG. Stellt das CH-EMS-Konzept 'nicht dokumentiert' über Observation.dataAbsentReason bereit: Fehlt der Wert einer Beobachtung, wird statt value[x] ein dataAbsentReason-Code übermittelt (z. B. not-asked, unknown). Konkrete MIND-/DIVI-Observation-Profile erben diese Konvention."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/encounter-de-ems-divi-r4"/>
+      </reference>
+      <name value="DIVI 7.1 Einsatz / Encounter"/>
+      <description value="Vollständiges deutsches Encounter-Profil für das DIVI-Notfalleinsatzprotokoll (Einsatztechnische Daten). Die MIND-Einsatz-Ressource (EncounterDeEmsMindR4) ist eine Constraint-Ableitung dieses Basisprofils."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/location-de-ems-divi-r4"/>
+      </reference>
+      <name value="DIVI 7.1 Einsatzort / Location"/>
+      <description value="Vollständiges deutsches Location-Profil für den DIVI-Notfalleinsatzprotokoll-Einsatzort. Die MIND-Einsatzort-Ressource (LocationDeEmsMindR4) ist eine Constraint-Ableitung dieses Basisprofils."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-de-ems-divi-r4"/>
+      </reference>
+      <name value="DIVI 7.1 Patient"/>
+      <description value="Vollständiges deutsches Patientprofil für das DIVI-Notfalleinsatzprotokoll."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-ekg-12-kanal-cs"/>
+      </reference>
+      <name value="MIND 12-Kanal-EKG"/>
+      <description value="Durchführung eines 12-Kanal-EKG gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-ekg-12-kanal-vs"/>
+      </reference>
+      <name value="MIND 12-Kanal-EKG ValueSet"/>
+      <description value="Durchführung eines 12-Kanal-EKG gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-altersvaliditaet"/>
+      </reference>
+      <name value="MIND 7.1 Altersvalidität"/>
+      <description value="Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoolean = true bedeutet 'Alter geschätzt', valueBoolean = false bedeutet 'Alter gesichert'. Ist die Angabe nicht dokumentiert (CH-EMS-Konzept), wird statt valueBoolean der dataAbsentReason gesetzt (vom Basisprofil ObservationDeEmsBase geerbt)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mind-altersvaliditaet-undokumentiert-example"/>
+      </reference>
+      <name value="MIND 7.1 Altersvalidität nicht dokumentiert"/>
+      <description value="Altersvalidität als not-asked (nicht dokumentiert) über dataAbsentReason nach CH-EMS-Konzept."/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-beteiligte-rettungsmittel"/>
+      </reference>
+      <name value="MIND 7.1 Beteiligte Rettungsmittel"/>
+      <description value="BeteilRM: Rettungsmitteltyp/en der am Einsatz beteiligten Rettungsmittel. Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/bundle-de-ems-mind-r4"/>
+      </reference>
+      <name value="MIND 7.1 Dokument-Bundle"/>
+      <description value="FHIR-Dokument-Bundle für ein deutsches MIND-7.1-RD-Dokument."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-dokumentierendes-rettungsmittel"/>
+      </reference>
+      <name value="MIND 7.1 Dokumentierendes Rettungsmittel"/>
+      <description value="DokRM: Rettungsmitteltyp des dokumentierenden Rettungsmittels. Abhängig vom Protokolltyp sind bestimmte Codes unzulässig (siehe MIND-Spezifikation)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/encounter-de-ems-mind-r4"/>
+      </reference>
+      <name value="MIND 7.1 Einsatz / Encounter"/>
+      <description value="Constraint-Ableitung des DIVI-Einsatz-Encounters (EncounterDeEmsDiviR4) für den MIND-7.1-Datensatz. Erweitert das Basisprofil um die MIND-spezifischen Strukturdaten (ProjektID, Primärschlüssel), macht Leitstelle und Referenzen auf die MIND-Patienten-/Einsatzort-Profile verbindlich. period.end (Einsatzende) ist verpflichtend; die Zeit-Observations des Kapitels ZeitenEinsatzablauf referenzieren diesen Encounter über Observation.encounter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/composition-de-ems-mind-r4"/>
+      </reference>
+      <name value="MIND 7.1 Einsatzdokument"/>
+      <description value="Composition für ein deutsches MIND-7.1-RD-Dokument."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/location-de-ems-mind-r4"/>
+      </reference>
+      <name value="MIND 7.1 Einsatzort / Location"/>
+      <description value="Constraint-Ableitung des DIVI-Einsatzortes (LocationDeEmsDiviR4) für ein deutsches MIND-7.1-RD-Dokument. Derzeit identische Feldmenge wie das Basisprofil; die MIND-Ressource dient als eigenständiger Konformitäts-Target für den MIND-Code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-kein-transport-mit-patient"/>
+      </reference>
+      <name value="MIND 7.1 Grund für Einsatz ohne Transport trotz Patientenkontakt"/>
+      <description value="KeinTranspMitPat: Pflicht für Einsätze ohne Transport trotz Patientenkontakt (RDTransport = 01)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-kein-transport-ohne-patient"/>
+      </reference>
+      <name value="MIND 7.1 Grund für Einsatz ohne Transport, da kein Patientenkontakt"/>
+      <description value="KeinTranspOhnePat: Pflicht für Einsätze ohne Transport wegen fehlendem Patientenkontakt (RDTransport = 02)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert"/>
+      </reference>
+      <name value="MIND 7.1 Notarzt nachgefordert"/>
+      <description value="NotarztNachgefordert: Physisch anwesender Notarzt wurde nachgefordert. valueBoolean = true bedeutet 'nachgefordert', valueBoolean = false bedeutet 'nicht nachgefordert'. Falls unbekannt, ist in MIND 'Nein' zu dokumentieren."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-de-ems-mind-r4"/>
+      </reference>
+      <name value="MIND 7.1 Patient"/>
+      <description value="Constraint-Ableitung vom vollständigen DIVI-Patientprofil (PatientDeEmsDiviR4) für den MIND-7.1-Export. Identifizierende Patientendaten (Name, Geburtsdatum, Adresse, Kennungen) werden nicht übermittelt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-alter"/>
+      </reference>
+      <name value="MIND 7.1 Patientenalter"/>
+      <description value="MIND-Alter zum maßgeblichen Zeitpunkt des Einsatzes als Jahre (component[jahre]) und Monate (component[monate]). Der Export formt daraus das MIND-Format 'jjj:mm' (z. B. 51 Jahre 4 Monate = '051:04')."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/mind-rd-dokument-example"/>
+      </reference>
+      <name value="MIND 7.1 RD-Dokument"/>
+      <description value="Minimales deutsches MIND-7.1-Dokument mit Patient, Einsatz, Einsatzort und Composition."/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/mind-composition-example"/>
+      </reference>
+      <name value="MIND 7.1 Rettungsdienstdokumentation"/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-rd-transport"/>
+      </reference>
+      <name value="MIND 7.1 Rettungsdienstlicher Transport"/>
+      <description value="RDTransport: Welches Rettungsmittel hat den überwiegenden Anteil des Transports des Patienten durchgeführt? Pflicht, außer für Dienstfahrten und Pauseneinsätze (EinsatzArt 11/12)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-personalstatus"/>
+      </reference>
+      <name value="MIND 7.1 Status des Personals"/>
+      <description value="StatusPersonal: Qualifikation des höchstqualifizierten Mitarbeiters auf dem Rettungsmittel. Pflicht, außer für Dienstfahrten und Pauseneinsätze."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-symptombeginn-gesichert"/>
+      </reference>
+      <name value="MIND 7.1 Symptombeginn gesichert oder geschätzt"/>
+      <description value="SymptombeginnGesichert: Ist der Symptombeginn gesichert oder geschätzt? valueBoolean = true bedeutet 'geschätzt', valueBoolean = false bedeutet 'gesichert'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-symptombeginn-vor-24h"/>
+      </reference>
+      <name value="MIND 7.1 Symptombeginn innerhalb der letzten 24 Stunden"/>
+      <description value="SymptombeginnVor24h: Bestehen die Symptome länger als 24 Stunden? valueBoolean = true bedeutet 'Ja (&gt; 24 Stunden)', valueBoolean = false bedeutet 'Nein (innerhalb 24 Stunden)'. 'unbekannt' (00) wird nach CH-EMS-Konzept über dataAbsentReason abgebildet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-tna-nachgefordert"/>
+      </reference>
+      <name value="MIND 7.1 Tele-Notarzt nachgefordert"/>
+      <description value="TNANachgefordert: Tele-Notarzt wurde nachgefordert. valueBoolean = true bedeutet 'nachgefordert', valueBoolean = false bedeutet 'nicht nachgefordert'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-alarm"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Alarm"/>
+      <description value="ZeitAlarm: Zeitpunkt Alarm/Auftragsvergabe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-ankunft-einsatzort"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Ankunft Einsatzort"/>
+      <description value="ZeitAnkunftEinsatzort: Ankunft des dokumentierenden Rettungsmittels am Einsatzort."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-ankunft-patient"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Ankunft Patient"/>
+      <description value="ZeitAnkunftPatient: Ankunft der Rettungsmittelbesatzung beim Patienten bzw. Beginn der Übernahme des Patienten bei Sekundäreinsätzen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-ausruecken"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Ausrücken"/>
+      <description value="ZeitAusruecken: Zeitpunkt Abfahrt/Abflug Standort (einsatzklarer Besatzung)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-notfallmeldung"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Eingang Notfallmeldung"/>
+      <description value="ZeitNotfallmeldung: Zeitpunkt des Anrufs (Aufschaltzeitpunkt aus Leitstellen-Datensatz)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-einsatzende"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Einsatzende"/>
+      <description value="ZeitEinsatzende: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenhängenden Arbeiten wie z. B. Desinfektionstätigkeiten und Dokumentation)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-eintreffen-transportziel"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Eintreffen Transportziel"/>
+      <description value="ZeitEintreffenTransportziel: Fahrzeug trifft am Transportziel ein."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-symptombeginn"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Symptombeginn"/>
+      <description value="Symptombeginn: Ereigniszeitpunkt, Unfallzeitpunkt, Kollapszeitpunkt, Zeitpunkt Symptom-/Beschwerdebeginn, wenn dieser innerhalb von 24 Stunden vor Alarmierung liegt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-transportbeginn"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Transportbeginn"/>
+      <description value="ZeitTransportbeginn: Beginn des Patiententransportes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-zeit-uebergabe-patient"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkt Übergabe Patient"/>
+      <description value="ZeitUebergabePatient: Übergabe des Patienten an Weiterbehandler."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mind-observationstyp-2-ivr"/>
+      </reference>
+      <name value="MIND 7.1 Zeitpunkte → CH-EMS IVR Mission Time Roles"/>
+      <description value="Ordnet die zeitbezogenen MIND-7.1-Codes aus MindObservationstypCS den Zeit-Rollen (Mission Time Roles) des Schweizer CH-EMS-CodeSystems IVR zu, die im CH-EMS-IG im Profil 'Mission Time Status' gebunden sind. Symptombeginn-Felder haben keine IVR-Entsprechung; die IVR-Rollen 'departure from target' (1000041) sowie die Notarzt-Zeiten (1000171/1000172) haben keine MIND-Entsprechung. Umsetzung als FSH-Instance, da SUSHI keine ConceptMap-Regel kennt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-aerztliche-qualifikation"/>
+      </reference>
+      <name value="MIND 7.1 Ärztliche Qualifikation"/>
+      <description value="AerztlQualifikation: Fachrichtung/Qualifikation des Notarztes/Transportarztes. Pflicht für NA-Protokolle, außer für Dienstfahrten oder Pauseneinsätze. Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-de-ems-mind-aerztliche-begleitung"/>
+      </reference>
+      <name value="MIND 7.1 Ärztliche Transportbegleitung"/>
+      <description value="AerztlBegleit: Wurde der Transport ärztlich begleitet und wenn ja, von wem? Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-airway-massnahme-cs"/>
+      </reference>
+      <name value="MIND Airway-Maßnahme"/>
+      <description value="Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-airway-massnahme-vs"/>
+      </reference>
+      <name value="MIND Airway-Maßnahme ValueSet"/>
+      <description value="Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-atmung-vs"/>
+      </reference>
+      <name value="MIND Atembefund ValueSet"/>
+      <description value="Klinische Befunde der Atmung gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-atemunterstuetzung-cs"/>
+      </reference>
+      <name value="MIND Atemunterstützung"/>
+      <description value="Atemunterstützung und Beatmung gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-atemunterstuetzung-vs"/>
+      </reference>
+      <name value="MIND Atemunterstützung ValueSet"/>
+      <description value="Atemunterstützung und Beatmung gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-herzdruckmassage-durch-cs"/>
+      </reference>
+      <name value="MIND Beginn der Herzdruckmassage durch"/>
+      <description value="Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-observationstyp-cs"/>
+      </reference>
+      <name value="MIND Beobachtungstypen"/>
+      <description value="Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-observationstyp-vs"/>
+      </reference>
+      <name value="MIND Beobachtungstypen ValueSet"/>
+      <description value="Alle Beobachtungstypen (Observation.code) der MIND-7.1-Spezifikation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-beteiligtes-rettungsmittel-cs"/>
+      </reference>
+      <name value="MIND Beteiligtes Rettungsmittel"/>
+      <description value="Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-beteiligtes-rettungsmittel-vs"/>
+      </reference>
+      <name value="MIND Beteiligtes Rettungsmittel ValueSet"/>
+      <description value="Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-bewusstseinslage-cs"/>
+      </reference>
+      <name value="MIND Bewusstseinslage"/>
+      <description value="Bewusstseinslage gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-bewusstseinslage-vs"/>
+      </reference>
+      <name value="MIND Bewusstseinslage ValueSet"/>
+      <description value="Bewusstseinslage gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-diagnose-cs"/>
+      </reference>
+      <name value="MIND Diagnose"/>
+      <description value="MIND-7.1-Diagnosecodes für präklinische Erkrankungen und Verletzungen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-diagnose-vs"/>
+      </reference>
+      <name value="MIND Diagnose ValueSet"/>
+      <description value="Diagnosecodes für MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-dokumentierendes-rettungsmittel-cs"/>
+      </reference>
+      <name value="MIND Dokumentierendes Rettungsmittel"/>
+      <description value="Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-dokumentierendes-rettungsmittel-vs"/>
+      </reference>
+      <name value="MIND Dokumentierendes Rettungsmittel ValueSet"/>
+      <description value="Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-heilkundliche-massnahme-cs"/>
+      </reference>
+      <name value="MIND Eigenständige heilkundliche Maßnahme"/>
+      <description value="Eigenständig oder eigenverantwortlich durch Notfallsanitäterinnen und Notfallsanitäter durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-einsatzart-cs"/>
+      </reference>
+      <name value="MIND Einsatzart"/>
+      <description value="Einsatzart gemäß MIND 7.1 Spezifikation. Beschreibt die Art des Einsatzes (Notfallrettung, Verlegung, Intensivtransport, Krankentransport, Dienstfahrt, Pause)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-einsatzart-vs"/>
+      </reference>
+      <name value="MIND Einsatzart ValueSet"/>
+      <description value="ValueSet für die Einsatzart gemäß MIND 7.1 Spezifikation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-einsatzart-na-vs"/>
+      </reference>
+      <name value="MIND Einsatzart ValueSet für NA-Protokolle"/>
+      <description value="Zulässige Einsatzarten für MIND 7.1 NA-Protokolle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-einsatzart-rd-vs"/>
+      </reference>
+      <name value="MIND Einsatzart ValueSet für RD-Protokolle"/>
+      <description value="Zulässige Einsatzarten für MIND 7.1 RD-Protokolle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-einsatzbesonderheit-cs"/>
+      </reference>
+      <name value="MIND Einsatzbesonderheit"/>
+      <description value="Einsatzbesonderheiten gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-einsatzbesonderheit-vs"/>
+      </reference>
+      <name value="MIND Einsatzbesonderheit ValueSet"/>
+      <description value="Einsatzbesonderheiten gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mind-einsatzort-typ"/>
+      </reference>
+      <name value="MIND Einsatzorttyp"/>
+      <description value="Beschreibung des Einsatzortes (EinsatzortTyp) gemäß MIND 7.1. Pflicht, außer für Dienstfahrten und Pauseneinsätze."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-einsatzort-typ-cs"/>
+      </reference>
+      <name value="MIND Einsatzorttyp CodeSystem"/>
+      <description value="Einsatzorttyp gemäß MIND 7.1 Spezifikation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-einsatzort-typ-vs"/>
+      </reference>
+      <name value="MIND Einsatzorttyp ValueSet"/>
+      <description value="ValueSet für den Einsatzorttyp gemäß MIND 7.1 Spezifikation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-ekg-befund-cs"/>
+      </reference>
+      <name value="MIND EKG-Befund"/>
+      <description value="EKG-Befund gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-ekg-befund-vs"/>
+      </reference>
+      <name value="MIND EKG-Befund ValueSet"/>
+      <description value="EKG-Befund gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-erste-defibrillation-durch-cs"/>
+      </reference>
+      <name value="MIND Erste Defibrillation durch"/>
+      <description value="Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-erste-defibrillation-durch-vs"/>
+      </reference>
+      <name value="MIND Erste Defibrillation durch ValueSet"/>
+      <description value="Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-kein-transport-ohne-patient-cs"/>
+      </reference>
+      <name value="MIND Grund für Einsatz ohne Patientenkontakt"/>
+      <description value="Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-kein-transport-mit-patient-cs"/>
+      </reference>
+      <name value="MIND Grund für Einsatz ohne Transport bei Patientenkontakt"/>
+      <description value="Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-hautbefund-cs"/>
+      </reference>
+      <name value="MIND Hautbefund"/>
+      <description value="Hautbefunde gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-hautbefund-vs"/>
+      </reference>
+      <name value="MIND Hautbefund ValueSet"/>
+      <description value="Hautbefunde gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-heilkundliche-massnahme-vs"/>
+      </reference>
+      <name value="MIND Heilkundliche Maßnahme ValueSet"/>
+      <description value="Eigenständig oder eigenverantwortlich durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-herzdruckmassage-durch-vs"/>
+      </reference>
+      <name value="MIND Herzdruckmassage durch ValueSet"/>
+      <description value="Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-indikation-intensivtransport-cs"/>
+      </reference>
+      <name value="MIND Indikation Intensivtransport"/>
+      <description value="Indikation für einen Intensivtransport gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-indikation-intensivtransport-vs"/>
+      </reference>
+      <name value="MIND Indikation Intensivtransport ValueSet"/>
+      <description value="Indikation für einen Intensivtransport gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-infusionsgabe-vs"/>
+      </reference>
+      <name value="MIND Infusionsgabe ValueSet"/>
+      <description value="Gültige MIND-7.1-Codes für die Gabe von Kristalloiden und speziellen Infusionen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-atmung-cs"/>
+      </reference>
+      <name value="MIND Klinischer Atembefund"/>
+      <description value="Klinische Befunde der Atmung gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-kollaps-beobachtet-durch-cs"/>
+      </reference>
+      <name value="MIND Kollaps beobachtet durch"/>
+      <description value="Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-kollaps-beobachtet-durch-vs"/>
+      </reference>
+      <name value="MIND Kollaps beobachtet durch ValueSet"/>
+      <description value="Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-krankenhausaufnahme-zustand-vs"/>
+      </reference>
+      <name value="MIND Krankenhausaufnahmezustand ValueSet"/>
+      <description value="Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-kreislaufstillstandursache-vs"/>
+      </reference>
+      <name value="MIND Kreislaufstillstandursache ValueSet"/>
+      <description value="Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-lagerungs-rettungstechnik-cs"/>
+      </reference>
+      <name value="MIND Lagerungs- und Rettungstechnik"/>
+      <description value="Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-lagerungs-rettungstechnik-vs"/>
+      </reference>
+      <name value="MIND Lagerungs- und Rettungstechnik ValueSet"/>
+      <description value="Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-lichtreaktion-cs"/>
+      </reference>
+      <name value="MIND Lichtreaktion"/>
+      <description value="Lichtreaktion der Pupillen gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-lichtreaktion-vs"/>
+      </reference>
+      <name value="MIND Lichtreaktion ValueSet"/>
+      <description value="Lichtreaktion der Pupillen gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-mnaca-score-cs"/>
+      </reference>
+      <name value="MIND M-NACA-Score"/>
+      <description value="M-NACA-Score gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-mnaca-score-vs"/>
+      </reference>
+      <name value="MIND M-NACA-Score ValueSet"/>
+      <description value="M-NACA-Score gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-medikamentengabe-cs"/>
+      </reference>
+      <name value="MIND Medikamentengabe"/>
+      <description value="Gültige Kombinationen aus Wirkstoffcode und Applikationsweg gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-medikamentengabe-vs"/>
+      </reference>
+      <name value="MIND Medikamentengabe ValueSet"/>
+      <description value="Alle in MIND 7.1 gültigen Kombinationen aus Wirkstoffcode und Applikationsweg."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-circulation-zugang-cs"/>
+      </reference>
+      <name value="MIND Medikamentenzugang"/>
+      <description value="Angelegter Medikamentenzugang gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-circulation-zugang-vs"/>
+      </reference>
+      <name value="MIND Medikamentenzugang ValueSet"/>
+      <description value="Angelegter Medikamentenzugang gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-medizintechnik-cs"/>
+      </reference>
+      <name value="MIND Medizintechnik"/>
+      <description value="Eingesetzte Medizintechnik gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-medizintechnik-vs"/>
+      </reference>
+      <name value="MIND Medizintechnik ValueSet"/>
+      <description value="Eingesetzte Medizintechnik gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-naca-score-cs"/>
+      </reference>
+      <name value="MIND NACA-Score"/>
+      <description value="NACA-Score gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-naca-score-vs"/>
+      </reference>
+      <name value="MIND NACA-Score ValueSet"/>
+      <description value="NACA-Score gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-neurologische-auffaelligkeit-cs"/>
+      </reference>
+      <name value="MIND Neurologische Auffälligkeit"/>
+      <description value="Akute neurologische Auffälligkeiten gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-neurologische-auffaelligkeit-verlauf-cs"/>
+      </reference>
+      <name value="MIND Neurologische Auffälligkeit im Verlauf"/>
+      <description value="Akute neurologische Auffälligkeiten im Verlaufsbefund gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-neurologische-auffaelligkeit-verlauf-vs"/>
+      </reference>
+      <name value="MIND Neurologische Auffälligkeit im Verlauf ValueSet"/>
+      <description value="Akute neurologische Auffälligkeiten (ZNS, PNS) im Verlaufsbefund gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-neurologische-auffaelligkeit-vs"/>
+      </reference>
+      <name value="MIND Neurologische Auffälligkeit ValueSet"/>
+      <description value="Akute neurologische Auffälligkeiten (ZNS, PNS) gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-kein-transport-mit-patient-vs"/>
+      </reference>
+      <name value="MIND Nichttransport bei Patientenkontakt ValueSet"/>
+      <description value="Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-kein-transport-ohne-patient-vs"/>
+      </reference>
+      <name value="MIND Nichttransport ohne Patientenkontakt ValueSet"/>
+      <description value="Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-ort-patientenuebergabe-cs"/>
+      </reference>
+      <name value="MIND Ort der Patientenübergabe"/>
+      <description value="Ort der Patientenübergabe gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-ort-patientenuebergabe-vs"/>
+      </reference>
+      <name value="MIND Ort der Patientenübergabe ValueSet"/>
+      <description value="Ort der Patientenübergabe gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-krankenhausaufnahme-zustand-cs"/>
+      </reference>
+      <name value="MIND Patientenzustand bei Krankenhausaufnahme"/>
+      <description value="Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-personalstatus-cs"/>
+      </reference>
+      <name value="MIND Personalstatus"/>
+      <description value="Status des am Einsatz beteiligten Personals gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-personalstatus-vs"/>
+      </reference>
+      <name value="MIND Personalstatus ValueSet"/>
+      <description value="Status des am Einsatz beteiligten Personals gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-protokolltyp-cs"/>
+      </reference>
+      <name value="MIND Protokolltyp"/>
+      <description value="Typ des verwendeten Protokolls: NA für Notarztdokumentation, RD für Rettungsdienstdokumentation. Sollte in den Stammdaten fest dem Rettungsmittel/Personal zugewiesen werden; beim Wechsel von Dokumentations-Pads zwischen Fahrzeugen muss das korrekte Rettungsmittel (mit zugeordneter Projekt-ID) und der richtige Protokolltyp ausgewählt sein. Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen (z. B. ProjektID, Rettungsmitteltyp, Einsatzart, Qualifikation Personal)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-protokolltyp-vs"/>
+      </reference>
+      <name value="MIND Protokolltyp ValueSet"/>
+      <description value="ValueSet für den Protokolltyp (NA oder RD) gemäß MIND-Spezifikation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-psychischer-zustand-cs"/>
+      </reference>
+      <name value="MIND Psychischer Zustand"/>
+      <description value="Psychischer Zustand gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-psychischer-zustand-vs"/>
+      </reference>
+      <name value="MIND Psychischer Zustand ValueSet"/>
+      <description value="Psychischer Zustand gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-pupillenweite-cs"/>
+      </reference>
+      <name value="MIND Pupillenweite"/>
+      <description value="Pupillenweite gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-pupillenweite-vs"/>
+      </reference>
+      <name value="MIND Pupillenweite ValueSet"/>
+      <description value="Pupillenweite gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-reanimationssituation-cs"/>
+      </reference>
+      <name value="MIND Reanimationssituation"/>
+      <description value="Reanimationssituation gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-reanimationssituation-vs"/>
+      </reference>
+      <name value="MIND Reanimationssituation ValueSet"/>
+      <description value="Lag eine Reanimationssituation vor bzw. wurde eine solche durch die Rettungsmittelbesatzung erkannt, gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-reanimationstechnik-cs"/>
+      </reference>
+      <name value="MIND Reanimationstechnik"/>
+      <description value="Eingesetzte Reanimationstechnik gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-reanimationstechnik-vs"/>
+      </reference>
+      <name value="MIND Reanimationstechnik ValueSet"/>
+      <description value="Eingesetzte Reanimationstechnik gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-rd-transport-cs"/>
+      </reference>
+      <name value="MIND Rettungsdienstlicher Transport"/>
+      <description value="Rettungsdienstlicher Transport gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-rd-transport-vs"/>
+      </reference>
+      <name value="MIND Rettungsdienstlicher Transport ValueSet"/>
+      <description value="Rettungsdienstlicher Transport gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-rosc-cs"/>
+      </reference>
+      <name value="MIND ROSC"/>
+      <description value="Erreichen eines Spontankreislaufs gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-rosc-vs"/>
+      </reference>
+      <name value="MIND ROSC ValueSet"/>
+      <description value="Erreichen eines Spontankreislaufs (ROSC) gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-schmerzerleben-cs"/>
+      </reference>
+      <name value="MIND Schmerzerleben"/>
+      <description value="Schmerzerleben durch die Patientin oder den Patienten gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-schmerzerleben-vs"/>
+      </reference>
+      <name value="MIND Schmerzerleben ValueSet"/>
+      <description value="Schmerzerleben durch die Patientin oder den Patienten gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mind-softwarekennung"/>
+      </reference>
+      <name value="MIND Softwarekennung"/>
+      <description value="Kennung des Dokumentationssystems und der Software-Version, mit der die Einsatzdaten erzeugt wurden. Pflichtfeld in Baden-Württemberg laut MIND-Exporthinweisen. Der MIND-Sonderwert -2 (nicht anwendbar) wird nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf valueString abgebildet (CH-EMS-Konzept)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-spezielle-devices-cs"/>
+      </reference>
+      <name value="MIND Spezielle Devices"/>
+      <description value="Spezielle Devices gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-spezielle-devices-vs"/>
+      </reference>
+      <name value="MIND Spezielle Devices ValueSet"/>
+      <description value="Spezielle Devices gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-spezielle-massnahme-cs"/>
+      </reference>
+      <name value="MIND Spezielle Maßnahme"/>
+      <description value="Spezielle Maßnahmen gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-spezielle-massnahme-vs"/>
+      </reference>
+      <name value="MIND Spezielle Maßnahme ValueSet"/>
+      <description value="Spezielle Maßnahmen gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-unfallhergang-cs"/>
+      </reference>
+      <name value="MIND Unfallhergang"/>
+      <description value="Unfallhergang gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-unfallhergang-vs"/>
+      </reference>
+      <name value="MIND Unfallhergang ValueSet"/>
+      <description value="Unfallhergang gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-unfallmechanismus-cs"/>
+      </reference>
+      <name value="MIND Unfallmechanismus"/>
+      <description value="Unfallmechanismus gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-unfallmechanismus-vs"/>
+      </reference>
+      <name value="MIND Unfallmechanismus ValueSet"/>
+      <description value="Unfallmechanismus gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-unfallursache-cs"/>
+      </reference>
+      <name value="MIND Unfallursache"/>
+      <description value="Unfallursache gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-unfallursache-vs"/>
+      </reference>
+      <name value="MIND Unfallursache ValueSet"/>
+      <description value="Unfallursache gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-verletzungsmuster-cs"/>
+      </reference>
+      <name value="MIND Verletzungsmuster"/>
+      <description value="Verletzungsmuster gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-verletzungsmuster-vs"/>
+      </reference>
+      <name value="MIND Verletzungsmuster ValueSet"/>
+      <description value="Verletzungsmuster gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-kreislaufstillstandursache-cs"/>
+      </reference>
+      <name value="MIND Vermutete Ursache des Kreislaufstillstands"/>
+      <description value="Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-zeitliche-dringlichkeit-cs"/>
+      </reference>
+      <name value="MIND Zeitliche Dringlichkeit"/>
+      <description value="Zeitliche Dringlichkeit gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-zeitliche-dringlichkeit-vs"/>
+      </reference>
+      <name value="MIND Zeitliche Dringlichkeit ValueSet"/>
+      <description value="Zeitliche Dringlichkeit gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-pre-emergency-status-cs"/>
+      </reference>
+      <name value="MIND Zustand vor Eintritt des Notfalls"/>
+      <description value="Zustand vor Eintritt des Notfalls gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-pre-emergency-status-vs"/>
+      </reference>
+      <name value="MIND Zustand vor Eintritt des Notfalls ValueSet"/>
+      <description value="Zustand vor Eintritt des Notfalls gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-aerztliche-qualifikation-cs"/>
+      </reference>
+      <name value="MIND Ärztliche Qualifikation"/>
+      <description value="Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-aerztliche-qualifikation-vs"/>
+      </reference>
+      <name value="MIND Ärztliche Qualifikation ValueSet"/>
+      <description value="Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mind-aerztliche-begleitung-cs"/>
+      </reference>
+      <name value="MIND Ärztliche Transportbegleitung"/>
+      <description value="Ärztliche Transportbegleitung gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mind-aerztliche-begleitung-vs"/>
+      </reference>
+      <name value="MIND Ärztliche Transportbegleitung ValueSet"/>
+      <description value="Ärztliche Transportbegleitung gemäß MIND 7.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mind-alter-example"/>
+      </reference>
+      <name value="MindAlterExample"/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mind-altersvaliditaet-example"/>
+      </reference>
+      <name value="MindAltersvaliditaetExample"/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/MindAuftragNrNamingSystem"/>
+      </reference>
+      <name value="MindAuftragNrNamingSystem"/>
+      <description value="Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des RD-Auftrages (DIVI-Feld AuftrNr)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/MindEinsatznrNamingSystem"/>
+      </reference>
+      <name value="MindEinsatznrNamingSystem"/>
+      <description value="Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes (DIVI-Feld EinsatzNr)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/MindLeitstelleNamingSystem"/>
+      </reference>
+      <name value="MindLeitstelleNamingSystem"/>
+      <description value="Landkreiskennung der Heimatleitstelle (z. B. S für Stuttgart, OG für Offenburg). Für einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden; einmalig in den Stammdaten einzupflegen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mind-notarzt-nachgefordert-example"/>
+      </reference>
+      <name value="MindNotarztNachgefordertExample"/>
+      <description value="NotarztNachgefordert: kein Notarzt nachgefordert."/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/MindPatNrNamingSystem"/>
+      </reference>
+      <name value="MindPatNrNamingSystem"/>
+      <description value="Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Patienten (DIVI-Feld PatNr)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/MindPrimaerschluesselNamingSystem"/>
+      </reference>
+      <name value="MindPrimaerschluesselNamingSystem"/>
+      <description value="Eindeutiger Primärschlüssel für alle Fälle eines Kalenderjahres innerhalb eines Leitstellenbereiches gemäß MIND-Spezifikation. NA-Auftragsnummer im NA-Protokoll, RD-Auftragsnummer im RD-Protokoll."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/MindProjektIdNamingSystem"/>
+      </reference>
+      <name value="MindProjektIdNamingSystem"/>
+      <description value="Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird (Einmalig in den Stammdaten einzupflegen) gemäß MIND-Spezifikation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/mind-encounter-example"/>
+      </reference>
+      <name value="MindRdEncounterExample"/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/mind-location-example"/>
+      </reference>
+      <name value="MindRdLocationExample"/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/mind-patient-example"/>
+      </reference>
+      <name value="MindRdPatientExample"/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/mind-practitioner-example"/>
+      </reference>
+      <name value="MindRdPractitionerExample"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mind-rdtransport-example"/>
+      </reference>
+      <name value="MindRdTransportExample"/>
+      <description value="RDTransport: Transport durch RTW."/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/MindStandortkennungNamingSystem"/>
+      </reference>
+      <name value="MindStandortkennungNamingSystem"/>
+      <description value="Amtlicher Gemeindeschlüssel des Rettungsmittel-Standorts (Gliederung BL-LK: Bundesland und Landkreis nach Vorgaben des Gemeindeschlüssels; Rettungswache). Sonderwerte der MIND-Spezifikation (-1 = nicht dokumentiert, 99999999 = nicht bekannt) werden nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf identifier[standortkennung].value abgebildet (CH-EMS-Konzept)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mind-zeit-alarm-example"/>
+      </reference>
+      <name value="MindZeitAlarmExample"/>
+      <description value="ZeitAlarm: Alarmierung durch die Leitstelle."/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mind-zeit-einsatzende-example"/>
+      </reference>
+      <name value="MindZeitEinsatzendeExample"/>
+      <description value="ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.period.end)."/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/divi-patient-example"/>
+      </reference>
+      <name value="Vollständiger DIVI-Patient"/>
+      <description value="Beispiel eines vollständigen deutschen Patientendatensatzes für das DIVI-Dokument."/>
+      <exampleCanonical value="https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/assets"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

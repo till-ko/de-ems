@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-aerztliche-qualifikation-cs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-aerztliche-qualifikation-cs</b></p><a name="mind-aerztliche-qualifikation-cs"> </a><a name="hcmind-aerztliche-qualifikation-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-qualifikation-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">-1<a name="mind-aerztliche-qualifikation-cs--1"> </a></td><td>nicht dokumentiert</td></tr><tr><td style="white-space:nowrap">01<a name="mind-aerztliche-qualifikation-cs-01"> </a></td><td>Innere</td></tr><tr><td style="white-space:nowrap">02<a name="mind-aerztliche-qualifikation-cs-02"> </a></td><td>Chirurgie</td></tr><tr><td style="white-space:nowrap">03<a name="mind-aerztliche-qualifikation-cs-03"> </a></td><td>Anästhesie</td></tr><tr><td style="white-space:nowrap">04<a name="mind-aerztliche-qualifikation-cs-04"> </a></td><td>Pädiatrie</td></tr><tr><td style="white-space:nowrap">05<a name="mind-aerztliche-qualifikation-cs-05"> </a></td><td>Allgemeinmedizin</td></tr><tr><td style="white-space:nowrap">06<a name="mind-aerztliche-qualifikation-cs-06"> </a></td><td>Neurologie</td></tr><tr><td style="white-space:nowrap">07<a name="mind-aerztliche-qualifikation-cs-07"> </a></td><td>Zusatzbezeichnung Notfallmedizin</td></tr><tr><td style="white-space:nowrap">08<a name="mind-aerztliche-qualifikation-cs-08"> </a></td><td>Zusatzbezeichnung Intensivmedizin</td></tr><tr><td style="white-space:nowrap">09<a name="mind-aerztliche-qualifikation-cs-09"> </a></td><td>Zusatzbezeichnung Klinische Akut- und Notfallmedizin</td></tr><tr><td style="white-space:nowrap">10<a name="mind-aerztliche-qualifikation-cs-10"> </a></td><td>Ärztin/Arzt in Weiterbildung</td></tr><tr><td style="white-space:nowrap">11<a name="mind-aerztliche-qualifikation-cs-11"> </a></td><td>Fachärztin/-arzt</td></tr><tr><td style="white-space:nowrap">98<a name="mind-aerztliche-qualifikation-cs-98"> </a></td><td>Andere Fachrichtung</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-qualifikation-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.2"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindAerztlicheQualifikationCS"/>
+  <title value="MIND Ärztliche Qualifikation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="-1"/>
+    <display value="nicht dokumentiert"/>
+  </concept>
+  <concept>
+    <code value="01"/>
+    <display value="Innere"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Chirurgie"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Anästhesie"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Pädiatrie"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Allgemeinmedizin"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Neurologie"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="Zusatzbezeichnung Notfallmedizin"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Zusatzbezeichnung Intensivmedizin"/>
+  </concept>
+  <concept>
+    <code value="09"/>
+    <display value="Zusatzbezeichnung Klinische Akut- und Notfallmedizin"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Ärztin/Arzt in Weiterbildung"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Fachärztin/-arzt"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="Andere Fachrichtung"/>
+  </concept>
+</CodeSystem>

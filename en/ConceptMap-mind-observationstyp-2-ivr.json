@@ -1,0 +1,105 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mind-observationstyp-2-ivr",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mind-observationstyp-2-ivr</b></p><a name=\"mind-observationstyp-2-ivr\"> </a><a name=\"hcmind-observationstyp-2-ivr\"> </a><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping from <a href=\"CodeSystem-mind-observationstyp-cs.html\">MIND Beobachtungstypen</a> to <code>http://fhir.ch/ig/ch-ems/CodeSystem/IVR</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>zeit-notfallmeldung (Zeitpunkt Eingang Notfallmeldung)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000033 (alarm)</td><td>Eingang/Anrufaufschaltung der Notfallmeldung bei der Leitstelle (IVR 'alarm': Zeitpunkt des Eingangs des Notrufs bei der Sanitätsnotrufzentrale).</td></tr><tr><td>zeit-alarm (Zeitpunkt Alarm)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000034 (disposition)</td><td>Alarmierung/Auftragsvergabe an das Rettungsmittel (IVR 'disposition': Zeitpunkt, zu dem der Rettungsdienst von der SNZ alarmiert wurde).</td></tr><tr><td>zeit-ausruecken (Zeitpunkt Ausrücken)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000035 (rollout)</td><td>Abfahrt/Abflug vom Standort, einsatzklare Besatzung (IVR 'rollout': Ausrücken der ersten Einheit des Rettungsdienstes).</td></tr><tr><td>zeit-ankunft-einsatzort (Zeitpunkt Ankunft Einsatzort)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000036 (arrival on scene)</td><td>Ankunft des dokumentierenden Rettungsmittels am Einsatzort (IVR 'arrival on scene').</td></tr><tr><td>zeit-ankunft-patient (Zeitpunkt Ankunft Patient)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000037 (arrival patient)</td><td>Ankunft beim Patienten (IVR 'arrival patient'; in CH-EMS derzeit nicht verwendet, Code jedoch definiert).</td></tr><tr><td>zeit-transportbeginn (Zeitpunkt Transportbeginn)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>1000038 (departure from scene)</td><td>MIND: Beginn des Patiententransportes; IVR 'departure from scene': Zeit der Abfahrt vom Ereignisort. Meist identisch, aber nicht deckungsgleich definiert.</td></tr><tr><td>zeit-eintreffen-transportziel (Zeitpunkt Eintreffen Transportziel)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000039 (arrival at target)</td><td>Eintreffen am Transportziel (IVR 'arrival at target').</td></tr><tr><td>zeit-uebergabe-patient (Zeitpunkt Übergabe Patient)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000040 (handover patient)</td><td>Übergabe des Patienten an den Weiterbehandler (IVR 'handover patient').</td></tr><tr><td>zeit-einsatzende (Zeitpunkt Einsatzende)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>1000042 (operational readiness)</td><td>MIND: Einsatzende inkl. aller Nacharbeiten (Desinfektion, Dokumentation); IVR 'operational readiness': Zeitpunkt, an dem das Team wieder voll einsatzbereit ist. Inhaltlich eng beieinander, unterschiedlich formuliert.</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/ConceptMap/mind-observationstyp-2-ivr",
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.18.1"
+  },
+  "version" : "0.1.0",
+  "name" : "MindObservationstyp2Ivr",
+  "title" : "MIND 7.1 Zeitpunkte → CH-EMS IVR Mission Time Roles",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Ordnet die zeitbezogenen MIND-7.1-Codes aus MindObservationstypCS den Zeit-Rollen (Mission Time Roles) des Schweizer CH-EMS-CodeSystems IVR zu (CH-EMS-IG, Profil 'Mission Time Status').",
+  "group" : [{
+    "source" : "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs",
+    "target" : "http://fhir.ch/ig/ch-ems/CodeSystem/IVR",
+    "element" : [{
+      "code" : "zeit-notfallmeldung",
+      "target" : [{
+        "code" : "1000033",
+        "equivalence" : "equivalent",
+        "comment" : "Eingang/Anrufaufschaltung der Notfallmeldung bei der Leitstelle (IVR 'alarm': Zeitpunkt des Eingangs des Notrufs bei der Sanitätsnotrufzentrale)."
+      }]
+    },
+    {
+      "code" : "zeit-alarm",
+      "target" : [{
+        "code" : "1000034",
+        "equivalence" : "equivalent",
+        "comment" : "Alarmierung/Auftragsvergabe an das Rettungsmittel (IVR 'disposition': Zeitpunkt, zu dem der Rettungsdienst von der SNZ alarmiert wurde)."
+      }]
+    },
+    {
+      "code" : "zeit-ausruecken",
+      "target" : [{
+        "code" : "1000035",
+        "equivalence" : "equivalent",
+        "comment" : "Abfahrt/Abflug vom Standort, einsatzklare Besatzung (IVR 'rollout': Ausrücken der ersten Einheit des Rettungsdienstes)."
+      }]
+    },
+    {
+      "code" : "zeit-ankunft-einsatzort",
+      "target" : [{
+        "code" : "1000036",
+        "equivalence" : "equivalent",
+        "comment" : "Ankunft des dokumentierenden Rettungsmittels am Einsatzort (IVR 'arrival on scene')."
+      }]
+    },
+    {
+      "code" : "zeit-ankunft-patient",
+      "target" : [{
+        "code" : "1000037",
+        "equivalence" : "equivalent",
+        "comment" : "Ankunft beim Patienten (IVR 'arrival patient'; in CH-EMS derzeit nicht verwendet, Code jedoch definiert)."
+      }]
+    },
+    {
+      "code" : "zeit-transportbeginn",
+      "target" : [{
+        "code" : "1000038",
+        "equivalence" : "inexact",
+        "comment" : "MIND: Beginn des Patiententransportes; IVR 'departure from scene': Zeit der Abfahrt vom Ereignisort. Meist identisch, aber nicht deckungsgleich definiert."
+      }]
+    },
+    {
+      "code" : "zeit-eintreffen-transportziel",
+      "target" : [{
+        "code" : "1000039",
+        "equivalence" : "equivalent",
+        "comment" : "Eintreffen am Transportziel (IVR 'arrival at target')."
+      }]
+    },
+    {
+      "code" : "zeit-uebergabe-patient",
+      "target" : [{
+        "code" : "1000040",
+        "equivalence" : "equivalent",
+        "comment" : "Übergabe des Patienten an den Weiterbehandler (IVR 'handover patient')."
+      }]
+    },
+    {
+      "code" : "zeit-einsatzende",
+      "target" : [{
+        "code" : "1000042",
+        "equivalence" : "inexact",
+        "comment" : "MIND: Einsatzende inkl. aller Nacharbeiten (Desinfektion, Dokumentation); IVR 'operational readiness': Zeitpunkt, an dem das Team wieder voll einsatzbereit ist. Inhaltlich eng beieinander, unterschiedlich formuliert."
+      }]
+    }]
+  }]
+}

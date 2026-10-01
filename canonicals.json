@@ -1,0 +1,1216 @@
+[{
+  "id" : "mind-aerztliche-begleitung-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-begleitung-cs",
+  "version" : "0.1.0",
+  "name" : "MindAerztlicheBegleitungCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.1"]
+},
+{
+  "id" : "mind-aerztliche-qualifikation-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-qualifikation-cs",
+  "version" : "0.1.0",
+  "name" : "MindAerztlicheQualifikationCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.2"]
+},
+{
+  "id" : "mind-airway-massnahme-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-airway-massnahme-cs",
+  "version" : "0.1.0",
+  "name" : "MindAirwayMassnahmeCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.3"]
+},
+{
+  "id" : "mind-atemunterstuetzung-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-atemunterstuetzung-cs",
+  "version" : "0.1.0",
+  "name" : "MindAtemunterstuetzungCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.4"]
+},
+{
+  "id" : "mind-atmung-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-atmung-cs",
+  "version" : "0.1.0",
+  "name" : "MindAtmungCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.5"]
+},
+{
+  "id" : "mind-beteiligtes-rettungsmittel-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-beteiligtes-rettungsmittel-cs",
+  "version" : "0.1.0",
+  "name" : "MindBeteiligtesRettungsmittelCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.6"]
+},
+{
+  "id" : "mind-bewusstseinslage-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-bewusstseinslage-cs",
+  "version" : "0.1.0",
+  "name" : "MindBewusstseinslageCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.7"]
+},
+{
+  "id" : "mind-circulation-zugang-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-circulation-zugang-cs",
+  "version" : "0.1.0",
+  "name" : "MindCirculationZugangCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.8"]
+},
+{
+  "id" : "mind-diagnose-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs",
+  "version" : "0.1.0",
+  "name" : "MindDiagnoseCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.9"]
+},
+{
+  "id" : "mind-dokumentierendes-rettungsmittel-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-dokumentierendes-rettungsmittel-cs",
+  "version" : "0.1.0",
+  "name" : "MindDokumentierendesRettungsmittelCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.10"]
+},
+{
+  "id" : "mind-einsatzart-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzartCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.11"]
+},
+{
+  "id" : "mind-einsatzbesonderheit-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzbesonderheit-cs",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzbesonderheitCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.12"]
+},
+{
+  "id" : "mind-einsatzort-typ-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzortTypCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.13"]
+},
+{
+  "id" : "mind-ekg-12-kanal-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-ekg-12-kanal-cs",
+  "version" : "0.1.0",
+  "name" : "MindEkg12KanalCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.14"]
+},
+{
+  "id" : "mind-ekg-befund-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-ekg-befund-cs",
+  "version" : "0.1.0",
+  "name" : "MindEkgbefundCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.15"]
+},
+{
+  "id" : "mind-erste-defibrillation-durch-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-erste-defibrillation-durch-cs",
+  "version" : "0.1.0",
+  "name" : "MindErsteDefibrillationDurchCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.16"]
+},
+{
+  "id" : "mind-hautbefund-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-hautbefund-cs",
+  "version" : "0.1.0",
+  "name" : "MindHautbefundCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.17"]
+},
+{
+  "id" : "mind-heilkundliche-massnahme-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-heilkundliche-massnahme-cs",
+  "version" : "0.1.0",
+  "name" : "MindHeilkundlicheMassnahmeCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.18"]
+},
+{
+  "id" : "mind-herzdruckmassage-durch-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-herzdruckmassage-durch-cs",
+  "version" : "0.1.0",
+  "name" : "MindHerzdruckmassageDurchCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.19"]
+},
+{
+  "id" : "mind-indikation-intensivtransport-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-indikation-intensivtransport-cs",
+  "version" : "0.1.0",
+  "name" : "MindIndikationIntensivtransportCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.20"]
+},
+{
+  "id" : "mind-kein-transport-mit-patient-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kein-transport-mit-patient-cs",
+  "version" : "0.1.0",
+  "name" : "MindKeinTransportMitPatientCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.21"]
+},
+{
+  "id" : "mind-kein-transport-ohne-patient-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kein-transport-ohne-patient-cs",
+  "version" : "0.1.0",
+  "name" : "MindKeinTransportOhnePatientCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.22"]
+},
+{
+  "id" : "mind-kollaps-beobachtet-durch-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kollaps-beobachtet-durch-cs",
+  "version" : "0.1.0",
+  "name" : "MindKollapsBeobachtetDurchCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.23"]
+},
+{
+  "id" : "mind-krankenhausaufnahme-zustand-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-krankenhausaufnahme-zustand-cs",
+  "version" : "0.1.0",
+  "name" : "MindKrankenhausaufnahmeZustandCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.24"]
+},
+{
+  "id" : "mind-kreislaufstillstandursache-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kreislaufstillstandursache-cs",
+  "version" : "0.1.0",
+  "name" : "MindKreislaufstillstandursacheCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.25"]
+},
+{
+  "id" : "mind-lagerungs-rettungstechnik-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-lagerungs-rettungstechnik-cs",
+  "version" : "0.1.0",
+  "name" : "MindLagerungsRettungstechnikCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.26"]
+},
+{
+  "id" : "mind-lichtreaktion-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-lichtreaktion-cs",
+  "version" : "0.1.0",
+  "name" : "MindLichtreaktionCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.27"]
+},
+{
+  "id" : "mind-medikamentengabe-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs",
+  "version" : "0.1.0",
+  "name" : "MindMedikamentengabeCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.28"]
+},
+{
+  "id" : "mind-medizintechnik-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-medizintechnik-cs",
+  "version" : "0.1.0",
+  "name" : "MindMedizintechnikCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.29"]
+},
+{
+  "id" : "mind-mnaca-score-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-mnaca-score-cs",
+  "version" : "0.1.0",
+  "name" : "MindMnacaScoreCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.30"]
+},
+{
+  "id" : "mind-naca-score-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-naca-score-cs",
+  "version" : "0.1.0",
+  "name" : "MindNacaScoreCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.31"]
+},
+{
+  "id" : "mind-neurologische-auffaelligkeit-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-neurologische-auffaelligkeit-cs",
+  "version" : "0.1.0",
+  "name" : "MindNeurologischeAuffaelligkeitCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.32"]
+},
+{
+  "id" : "mind-neurologische-auffaelligkeit-verlauf-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-neurologische-auffaelligkeit-verlauf-cs",
+  "version" : "0.1.0",
+  "name" : "MindNeurologischeAuffaelligkeitVerlaufCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.33"]
+},
+{
+  "id" : "mind-observationstyp-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs",
+  "version" : "0.1.0",
+  "name" : "MindObservationstypCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.34"]
+},
+{
+  "id" : "mind-ort-patientenuebergabe-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-ort-patientenuebergabe-cs",
+  "version" : "0.1.0",
+  "name" : "MindOrtPatientenuebergabeCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.35"]
+},
+{
+  "id" : "mind-personalstatus-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-personalstatus-cs",
+  "version" : "0.1.0",
+  "name" : "MindPersonalstatusCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.36"]
+},
+{
+  "id" : "mind-pre-emergency-status-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-pre-emergency-status-cs",
+  "version" : "0.1.0",
+  "name" : "MindPreEmergencyStatusCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.37"]
+},
+{
+  "id" : "mind-protokolltyp-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-protokolltyp-cs",
+  "version" : "0.1.0",
+  "name" : "MindProtokolltypCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.38"]
+},
+{
+  "id" : "mind-psychischer-zustand-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-psychischer-zustand-cs",
+  "version" : "0.1.0",
+  "name" : "MindPsychischerZustandCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.39"]
+},
+{
+  "id" : "mind-pupillenweite-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-pupillenweite-cs",
+  "version" : "0.1.0",
+  "name" : "MindPupillenweiteCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.40"]
+},
+{
+  "id" : "mind-rd-transport-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-rd-transport-cs",
+  "version" : "0.1.0",
+  "name" : "MindRdTransportCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.41"]
+},
+{
+  "id" : "mind-reanimationssituation-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-reanimationssituation-cs",
+  "version" : "0.1.0",
+  "name" : "MindReanimationssituationCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.42"]
+},
+{
+  "id" : "mind-reanimationstechnik-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-reanimationstechnik-cs",
+  "version" : "0.1.0",
+  "name" : "MindReanimationstechnikCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.43"]
+},
+{
+  "id" : "mind-rosc-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-rosc-cs",
+  "version" : "0.1.0",
+  "name" : "MindRoscCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.44"]
+},
+{
+  "id" : "mind-schmerzerleben-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-schmerzerleben-cs",
+  "version" : "0.1.0",
+  "name" : "MindSchmerzerlebenCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.45"]
+},
+{
+  "id" : "mind-spezielle-devices-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-spezielle-devices-cs",
+  "version" : "0.1.0",
+  "name" : "MindSpezielleDevicesCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.46"]
+},
+{
+  "id" : "mind-spezielle-massnahme-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-spezielle-massnahme-cs",
+  "version" : "0.1.0",
+  "name" : "MindSpezielleMassnahmeCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.47"]
+},
+{
+  "id" : "mind-unfallhergang-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-unfallhergang-cs",
+  "version" : "0.1.0",
+  "name" : "MindUnfallhergangCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.48"]
+},
+{
+  "id" : "mind-unfallmechanismus-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-unfallmechanismus-cs",
+  "version" : "0.1.0",
+  "name" : "MindUnfallmechanismusCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.49"]
+},
+{
+  "id" : "mind-unfallursache-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-unfallursache-cs",
+  "version" : "0.1.0",
+  "name" : "MindUnfallursacheCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.50"]
+},
+{
+  "id" : "mind-verletzungsmuster-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-verletzungsmuster-cs",
+  "version" : "0.1.0",
+  "name" : "MindVerletzungsmusterCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.51"]
+},
+{
+  "id" : "mind-zeitliche-dringlichkeit-cs",
+  "type" : "CodeSystem",
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-zeitliche-dringlichkeit-cs",
+  "version" : "0.1.0",
+  "name" : "MindZeitlicheDringlichkeitCS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.16.52"]
+},
+{
+  "id" : "mind-observationstyp-2-ivr",
+  "type" : "ConceptMap",
+  "url" : "https://till-ko.github.io/de-ems/ConceptMap/mind-observationstyp-2-ivr",
+  "version" : "0.1.0",
+  "name" : "MindObservationstyp2Ivr",
+  "oids" : ["2.25.169126619167380341660016816424527320624.18.1"]
+},
+{
+  "id" : "de.ems.mind.r4",
+  "type" : "ImplementationGuide",
+  "url" : "https://till-ko.github.io/de-ems/ImplementationGuide/de.ems.mind.r4",
+  "version" : "0.1.0",
+  "name" : "deems",
+  "oids" : ["2.25.169126619167380341660016816424527320624"]
+},
+{
+  "id" : "MindAuftragNrNamingSystem",
+  "type" : "NamingSystem",
+  "url" : "https://till-ko.github.io/de-ems/NamingSystem/MindAuftragNrNamingSystem",
+  "version" : "0.1.0",
+  "name" : "MindAuftragNr",
+  "oids" : ["2.25.169126619167380341660016816424527320624.31.1"]
+},
+{
+  "id" : "MindEinsatznrNamingSystem",
+  "type" : "NamingSystem",
+  "url" : "https://till-ko.github.io/de-ems/NamingSystem/MindEinsatznrNamingSystem",
+  "version" : "0.1.0",
+  "name" : "MindEinsatznr",
+  "oids" : ["2.25.169126619167380341660016816424527320624.31.2"]
+},
+{
+  "id" : "MindLeitstelleNamingSystem",
+  "type" : "NamingSystem",
+  "url" : "https://till-ko.github.io/de-ems/NamingSystem/MindLeitstelleNamingSystem",
+  "version" : "0.1.0",
+  "name" : "MindLeitstelle",
+  "oids" : ["2.25.169126619167380341660016816424527320624.31.3"]
+},
+{
+  "id" : "MindPatNrNamingSystem",
+  "type" : "NamingSystem",
+  "url" : "https://till-ko.github.io/de-ems/NamingSystem/MindPatNrNamingSystem",
+  "version" : "0.1.0",
+  "name" : "MindPatNr",
+  "oids" : ["2.25.169126619167380341660016816424527320624.31.4"]
+},
+{
+  "id" : "MindPrimaerschluesselNamingSystem",
+  "type" : "NamingSystem",
+  "url" : "https://till-ko.github.io/de-ems/NamingSystem/MindPrimaerschluesselNamingSystem",
+  "version" : "0.1.0",
+  "name" : "MindPrimaerschluessel",
+  "oids" : ["2.25.169126619167380341660016816424527320624.31.5"]
+},
+{
+  "id" : "MindProjektIdNamingSystem",
+  "type" : "NamingSystem",
+  "url" : "https://till-ko.github.io/de-ems/NamingSystem/MindProjektIdNamingSystem",
+  "version" : "0.1.0",
+  "name" : "MindProjektId",
+  "oids" : ["2.25.169126619167380341660016816424527320624.31.6"]
+},
+{
+  "id" : "MindStandortkennungNamingSystem",
+  "type" : "NamingSystem",
+  "url" : "https://till-ko.github.io/de-ems/NamingSystem/MindStandortkennungNamingSystem",
+  "version" : "0.1.0",
+  "name" : "MindStandortkennung",
+  "oids" : ["2.25.169126619167380341660016816424527320624.31.7"]
+},
+{
+  "id" : "bundle-de-ems-mind-r4",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4",
+  "version" : "0.1.0",
+  "name" : "BundleDeEmsMindR4",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.1"]
+},
+{
+  "id" : "composition-de-ems-mind-r4",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4",
+  "version" : "0.1.0",
+  "name" : "CompositionDeEmsMindR4",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.2"]
+},
+{
+  "id" : "encounter-de-ems-divi-r4",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-divi-r4",
+  "version" : "0.1.0",
+  "name" : "EncounterDeEmsDiviR4",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.3"]
+},
+{
+  "id" : "encounter-de-ems-mind-r4",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4",
+  "version" : "0.1.0",
+  "name" : "EncounterDeEmsMindR4",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.4"]
+},
+{
+  "id" : "location-de-ems-divi-r4",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-divi-r4",
+  "version" : "0.1.0",
+  "name" : "LocationDeEmsDiviR4",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.5"]
+},
+{
+  "id" : "location-de-ems-mind-r4",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4",
+  "version" : "0.1.0",
+  "name" : "LocationDeEmsMindR4",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.6"]
+},
+{
+  "id" : "mind-einsatzort-typ",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzortTyp",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.7"]
+},
+{
+  "id" : "mind-softwarekennung",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/mind-softwarekennung",
+  "version" : "0.1.0",
+  "name" : "MindSoftwarekennung",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.8"]
+},
+{
+  "id" : "observation-de-ems-base",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-base",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsBase",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.9"]
+},
+{
+  "id" : "observation-de-ems-mind",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMind",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.34"]
+},
+{
+  "id" : "observation-de-ems-mind-aerztliche-begleitung",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-begleitung",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindAerztlicheBegleitung",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.10"]
+},
+{
+  "id" : "observation-de-ems-mind-aerztliche-qualifikation",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-qualifikation",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindAerztlicheQualifikation",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.11"]
+},
+{
+  "id" : "observation-de-ems-mind-alter",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindAlter",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.12"]
+},
+{
+  "id" : "observation-de-ems-mind-altersvaliditaet",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindAltersvaliditaet",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.13"]
+},
+{
+  "id" : "observation-de-ems-mind-beteiligte-rettungsmittel",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-beteiligte-rettungsmittel",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindBeteiligteRettungsmittel",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.14"]
+},
+{
+  "id" : "observation-de-ems-mind-dokumentierendes-rettungsmittel",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-dokumentierendes-rettungsmittel",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindDokumentierendesRettungsmittel",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.15"]
+},
+{
+  "id" : "observation-de-ems-mind-kein-transport-mit-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-mit-patient",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindKeinTransportMitPatient",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.16"]
+},
+{
+  "id" : "observation-de-ems-mind-kein-transport-ohne-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-ohne-patient",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindKeinTransportOhnePatient",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.17"]
+},
+{
+  "id" : "observation-de-ems-mind-notarzt-nachgefordert",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindNotarztNachgefordert",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.18"]
+},
+{
+  "id" : "observation-de-ems-mind-personalstatus",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-personalstatus",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindPersonalstatus",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.19"]
+},
+{
+  "id" : "observation-de-ems-mind-rd-transport",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindRdTransport",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.20"]
+},
+{
+  "id" : "observation-de-ems-mind-symptombeginn",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindSymptombeginn",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.23"]
+},
+{
+  "id" : "observation-de-ems-mind-symptombeginn-gesichert",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-gesichert",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindSymptombeginnGesichert",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.21"]
+},
+{
+  "id" : "observation-de-ems-mind-symptombeginn-vor-24h",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-vor-24h",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindSymptombeginnVor24h",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.22"]
+},
+{
+  "id" : "observation-de-ems-mind-tna-nachgefordert",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-tna-nachgefordert",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindTNANachgefordert",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.24"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-alarm",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitAlarm",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.25"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-ankunft-einsatzort",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-einsatzort",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitAnkunftEinsatzort",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.26"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-ankunft-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-patient",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitAnkunftPatient",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.27"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-ausruecken",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ausruecken",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitAusruecken",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.28"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-einsatzende",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitEinsatzende",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.29"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-eintreffen-transportziel",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-eintreffen-transportziel",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitEintreffenTransportziel",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.30"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-notfallmeldung",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-notfallmeldung",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitNotfallmeldung",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.31"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-transportbeginn",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-transportbeginn",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitTransportbeginn",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.32"]
+},
+{
+  "id" : "observation-de-ems-mind-zeit-uebergabe-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-uebergabe-patient",
+  "version" : "0.1.0",
+  "name" : "ObservationDeEmsMindZeitUebergabePatient",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.33"]
+},
+{
+  "id" : "patient-de-ems-divi-r4",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4",
+  "version" : "0.1.0",
+  "name" : "PatientDeEmsDiviR4",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.35"]
+},
+{
+  "id" : "patient-de-ems-mind-r4",
+  "type" : "StructureDefinition",
+  "url" : "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4",
+  "version" : "0.1.0",
+  "name" : "PatientDeEmsMindR4",
+  "oids" : ["2.25.169126619167380341660016816424527320624.42.36"]
+},
+{
+  "id" : "mind-aerztliche-begleitung-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-aerztliche-begleitung-vs",
+  "version" : "0.1.0",
+  "name" : "MindAerztlicheBegleitungVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.1"]
+},
+{
+  "id" : "mind-aerztliche-qualifikation-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-aerztliche-qualifikation-vs",
+  "version" : "0.1.0",
+  "name" : "MindAerztlicheQualifikationVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.2"]
+},
+{
+  "id" : "mind-airway-massnahme-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-airway-massnahme-vs",
+  "version" : "0.1.0",
+  "name" : "MindAirwayMassnahmeVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.3"]
+},
+{
+  "id" : "mind-atemunterstuetzung-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-atemunterstuetzung-vs",
+  "version" : "0.1.0",
+  "name" : "MindAtemunterstuetzungVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.4"]
+},
+{
+  "id" : "mind-atmung-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-atmung-vs",
+  "version" : "0.1.0",
+  "name" : "MindAtmungVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.5"]
+},
+{
+  "id" : "mind-beteiligtes-rettungsmittel-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-beteiligtes-rettungsmittel-vs",
+  "version" : "0.1.0",
+  "name" : "MindBeteiligtesRettungsmittelVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.6"]
+},
+{
+  "id" : "mind-bewusstseinslage-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-bewusstseinslage-vs",
+  "version" : "0.1.0",
+  "name" : "MindBewusstseinslageVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.7"]
+},
+{
+  "id" : "mind-circulation-zugang-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-circulation-zugang-vs",
+  "version" : "0.1.0",
+  "name" : "MindCirculationZugangVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.8"]
+},
+{
+  "id" : "mind-diagnose-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-diagnose-vs",
+  "version" : "0.1.0",
+  "name" : "MindDiagnoseVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.9"]
+},
+{
+  "id" : "mind-dokumentierendes-rettungsmittel-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-dokumentierendes-rettungsmittel-vs",
+  "version" : "0.1.0",
+  "name" : "MindDokumentierendesRettungsmittelVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.10"]
+},
+{
+  "id" : "mind-einsatzart-na-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-einsatzart-na-vs",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzartNaVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.11"]
+},
+{
+  "id" : "mind-einsatzart-rd-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-einsatzart-rd-vs",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzartRdVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.12"]
+},
+{
+  "id" : "mind-einsatzart-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-einsatzart-vs",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzartVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.13"]
+},
+{
+  "id" : "mind-einsatzbesonderheit-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-einsatzbesonderheit-vs",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzbesonderheitVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.14"]
+},
+{
+  "id" : "mind-einsatzort-typ-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-einsatzort-typ-vs",
+  "version" : "0.1.0",
+  "name" : "MindEinsatzortTypVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.15"]
+},
+{
+  "id" : "mind-ekg-12-kanal-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-ekg-12-kanal-vs",
+  "version" : "0.1.0",
+  "name" : "MindEkg12KanalVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.16"]
+},
+{
+  "id" : "mind-ekg-befund-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-ekg-befund-vs",
+  "version" : "0.1.0",
+  "name" : "MindEkgbefundVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.17"]
+},
+{
+  "id" : "mind-erste-defibrillation-durch-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-erste-defibrillation-durch-vs",
+  "version" : "0.1.0",
+  "name" : "MindErsteDefibrillationDurchVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.18"]
+},
+{
+  "id" : "mind-hautbefund-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-hautbefund-vs",
+  "version" : "0.1.0",
+  "name" : "MindHautbefundVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.19"]
+},
+{
+  "id" : "mind-heilkundliche-massnahme-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-heilkundliche-massnahme-vs",
+  "version" : "0.1.0",
+  "name" : "MindHeilkundlicheMassnahmeVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.20"]
+},
+{
+  "id" : "mind-herzdruckmassage-durch-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-herzdruckmassage-durch-vs",
+  "version" : "0.1.0",
+  "name" : "MindHerzdruckmassageDurchVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.21"]
+},
+{
+  "id" : "mind-indikation-intensivtransport-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-indikation-intensivtransport-vs",
+  "version" : "0.1.0",
+  "name" : "MindIndikationIntensivtransportVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.22"]
+},
+{
+  "id" : "mind-infusionsgabe-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-infusionsgabe-vs",
+  "version" : "0.1.0",
+  "name" : "MindInfusionsgabeVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.23"]
+},
+{
+  "id" : "mind-kein-transport-mit-patient-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-kein-transport-mit-patient-vs",
+  "version" : "0.1.0",
+  "name" : "MindKeinTransportMitPatientVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.24"]
+},
+{
+  "id" : "mind-kein-transport-ohne-patient-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-kein-transport-ohne-patient-vs",
+  "version" : "0.1.0",
+  "name" : "MindKeinTransportOhnePatientVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.25"]
+},
+{
+  "id" : "mind-kollaps-beobachtet-durch-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-kollaps-beobachtet-durch-vs",
+  "version" : "0.1.0",
+  "name" : "MindKollapsBeobachtetDurchVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.26"]
+},
+{
+  "id" : "mind-krankenhausaufnahme-zustand-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-krankenhausaufnahme-zustand-vs",
+  "version" : "0.1.0",
+  "name" : "MindKrankenhausaufnahmeZustandVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.27"]
+},
+{
+  "id" : "mind-kreislaufstillstandursache-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-kreislaufstillstandursache-vs",
+  "version" : "0.1.0",
+  "name" : "MindKreislaufstillstandursacheVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.28"]
+},
+{
+  "id" : "mind-lagerungs-rettungstechnik-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-lagerungs-rettungstechnik-vs",
+  "version" : "0.1.0",
+  "name" : "MindLagerungsRettungstechnikVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.29"]
+},
+{
+  "id" : "mind-lichtreaktion-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-lichtreaktion-vs",
+  "version" : "0.1.0",
+  "name" : "MindLichtreaktionVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.30"]
+},
+{
+  "id" : "mind-medikamentengabe-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-medikamentengabe-vs",
+  "version" : "0.1.0",
+  "name" : "MindMedikamentengabeVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.31"]
+},
+{
+  "id" : "mind-medizintechnik-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-medizintechnik-vs",
+  "version" : "0.1.0",
+  "name" : "MindMedizintechnikVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.32"]
+},
+{
+  "id" : "mind-mnaca-score-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-mnaca-score-vs",
+  "version" : "0.1.0",
+  "name" : "MindMnacaScoreVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.33"]
+},
+{
+  "id" : "mind-naca-score-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-naca-score-vs",
+  "version" : "0.1.0",
+  "name" : "MindNacaScoreVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.34"]
+},
+{
+  "id" : "mind-neurologische-auffaelligkeit-verlauf-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-neurologische-auffaelligkeit-verlauf-vs",
+  "version" : "0.1.0",
+  "name" : "MindNeurologischeAuffaelligkeitVerlaufVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.35"]
+},
+{
+  "id" : "mind-neurologische-auffaelligkeit-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-neurologische-auffaelligkeit-vs",
+  "version" : "0.1.0",
+  "name" : "MindNeurologischeAuffaelligkeitVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.36"]
+},
+{
+  "id" : "mind-observationstyp-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-observationstyp-vs",
+  "version" : "0.1.0",
+  "name" : "MindObservationstypVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.37"]
+},
+{
+  "id" : "mind-ort-patientenuebergabe-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-ort-patientenuebergabe-vs",
+  "version" : "0.1.0",
+  "name" : "MindOrtPatientenuebergabeVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.38"]
+},
+{
+  "id" : "mind-personalstatus-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-personalstatus-vs",
+  "version" : "0.1.0",
+  "name" : "MindPersonalstatusVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.39"]
+},
+{
+  "id" : "mind-pre-emergency-status-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-pre-emergency-status-vs",
+  "version" : "0.1.0",
+  "name" : "MindPreEmergencyStatusVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.40"]
+},
+{
+  "id" : "mind-protokolltyp-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-protokolltyp-vs",
+  "version" : "0.1.0",
+  "name" : "MindProtokolltypVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.41"]
+},
+{
+  "id" : "mind-psychischer-zustand-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-psychischer-zustand-vs",
+  "version" : "0.1.0",
+  "name" : "MindPsychischerZustandVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.42"]
+},
+{
+  "id" : "mind-pupillenweite-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-pupillenweite-vs",
+  "version" : "0.1.0",
+  "name" : "MindPupillenweiteVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.43"]
+},
+{
+  "id" : "mind-rd-transport-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-rd-transport-vs",
+  "version" : "0.1.0",
+  "name" : "MindRdTransportVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.44"]
+},
+{
+  "id" : "mind-reanimationssituation-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-reanimationssituation-vs",
+  "version" : "0.1.0",
+  "name" : "MindReanimationssituationVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.45"]
+},
+{
+  "id" : "mind-reanimationstechnik-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-reanimationstechnik-vs",
+  "version" : "0.1.0",
+  "name" : "MindReanimationstechnikVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.46"]
+},
+{
+  "id" : "mind-rosc-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-rosc-vs",
+  "version" : "0.1.0",
+  "name" : "MindRoscVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.47"]
+},
+{
+  "id" : "mind-schmerzerleben-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-schmerzerleben-vs",
+  "version" : "0.1.0",
+  "name" : "MindSchmerzerlebenVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.48"]
+},
+{
+  "id" : "mind-spezielle-devices-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-spezielle-devices-vs",
+  "version" : "0.1.0",
+  "name" : "MindSpezielleDevicesVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.49"]
+},
+{
+  "id" : "mind-spezielle-massnahme-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-spezielle-massnahme-vs",
+  "version" : "0.1.0",
+  "name" : "MindSpezielleMassnahmeVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.50"]
+},
+{
+  "id" : "mind-unfallhergang-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-unfallhergang-vs",
+  "version" : "0.1.0",
+  "name" : "MindUnfallhergangVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.51"]
+},
+{
+  "id" : "mind-unfallmechanismus-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-unfallmechanismus-vs",
+  "version" : "0.1.0",
+  "name" : "MindUnfallmechanismusVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.52"]
+},
+{
+  "id" : "mind-unfallursache-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-unfallursache-vs",
+  "version" : "0.1.0",
+  "name" : "MindUnfallursacheVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.53"]
+},
+{
+  "id" : "mind-verletzungsmuster-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-verletzungsmuster-vs",
+  "version" : "0.1.0",
+  "name" : "MindVerletzungsmusterVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.54"]
+},
+{
+  "id" : "mind-zeitliche-dringlichkeit-vs",
+  "type" : "ValueSet",
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-zeitliche-dringlichkeit-vs",
+  "version" : "0.1.0",
+  "name" : "MindZeitlicheDringlichkeitVS",
+  "oids" : ["2.25.169126619167380341660016816424527320624.48.55"]
+}]

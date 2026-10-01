@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-einsatzart-cs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-einsatzart-cs</b></p><a name="mind-einsatzart-cs"> </a><a name="hcmind-einsatzart-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="mind-einsatzart-cs-01"> </a></td><td>Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA</td></tr><tr><td style="white-space:nowrap">02<a name="mind-einsatzart-cs-02"> </a></td><td>Notfallrettung - Primäreinsatz nur mit TNA</td></tr><tr><td style="white-space:nowrap">03<a name="mind-einsatzart-cs-03"> </a></td><td>Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA</td></tr><tr><td style="white-space:nowrap">04<a name="mind-einsatzart-cs-04"> </a></td><td>Notfallrettung - Primäreinsatz ohne NA</td></tr><tr><td style="white-space:nowrap">05<a name="mind-einsatzart-cs-05"> </a></td><td>Notfallrettung - Verlegung nur mit (physisch anwesendem) NA</td></tr><tr><td style="white-space:nowrap">06<a name="mind-einsatzart-cs-06"> </a></td><td>Notfallrettung - Verlegung nur mit TNA</td></tr><tr><td style="white-space:nowrap">07<a name="mind-einsatzart-cs-07"> </a></td><td>Notfallrettung - Verlegung mit (physisch anwesendem) NA und TNA</td></tr><tr><td style="white-space:nowrap">08<a name="mind-einsatzart-cs-08"> </a></td><td>Notfallrettung - Verlegung ohne NA</td></tr><tr><td style="white-space:nowrap">09<a name="mind-einsatzart-cs-09"> </a></td><td>Intensivtransport</td></tr><tr><td style="white-space:nowrap">10<a name="mind-einsatzart-cs-10"> </a></td><td>Krankentransport</td></tr><tr><td style="white-space:nowrap">11<a name="mind-einsatzart-cs-11"> </a></td><td>Dienstfahrt</td></tr><tr><td style="white-space:nowrap">12<a name="mind-einsatzart-cs-12"> </a></td><td>Pause</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.11"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindEinsatzartCS"/>
+  <title value="MIND Einsatzart"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Einsatzart gemäß MIND 7.1 Spezifikation. Beschreibt die Art des Einsatzes (Notfallrettung, Verlegung, Intensivtransport, Krankentransport, Dienstfahrt, Pause)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="01"/>
+    <display value="Notfallrettung - Primäreinsatz nur mit (physisch anwesendem) NA"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Notfallrettung - Primäreinsatz nur mit TNA"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Notfallrettung - Primäreinsatz mit (physisch anwesendem) NA und TNA"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Notfallrettung - Primäreinsatz ohne NA"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Notfallrettung - Verlegung nur mit (physisch anwesendem) NA"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Notfallrettung - Verlegung nur mit TNA"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="Notfallrettung - Verlegung mit (physisch anwesendem) NA und TNA"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Notfallrettung - Verlegung ohne NA"/>
+  </concept>
+  <concept>
+    <code value="09"/>
+    <display value="Intensivtransport"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Krankentransport"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Dienstfahrt"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Pause"/>
+  </concept>
+</CodeSystem>

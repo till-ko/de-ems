@@ -1,0 +1,58 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "mind-encounter-example",
+  "meta" : {
+    "profile" : ["https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter mind-encounter-example</b></p><a name=\"mind-encounter-example\"> </a><a name=\"hcmind-encounter-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-de-ems-mind-r4.html\">MIND 7.1 Einsatz / Encounter</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-MindStandortkennungNamingSystem.html\" title=\"Amtlicher Gemeindeschlüssel des Rettungsmittel-Standorts (Gliederung BL-LK: Bundesland und Landkreis nach Vorgaben des Gemeindeschlüssels; Rettungswache). Sonderwerte der MIND-Spezifikation (-1 = nicht dokumentiert, 99999999 = nicht bekannt) werden nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf identifier[standortkennung].value abgebildet (CH-EMS-Konzept).\">MindStandortkennung</a>/03254021, <a href=\"NamingSystem-MindProjektIdNamingSystem.html\" title=\"Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird (Einmalig in den Stammdaten einzupflegen) gemäß MIND-Spezifikation.\">MindProjektId</a>/PRJ-2026-0001, <a href=\"NamingSystem-MindLeitstelleNamingSystem.html\" title=\"Landkreiskennung der Heimatleitstelle (z. B. S für Stuttgart, OG für Offenburg). Für einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden; einmalig in den Stammdaten einzupflegen.\">MindLeitstelle</a>/HI, <a href=\"NamingSystem-MindPrimaerschluesselNamingSystem.html\" title=\"Eindeutiger Primärschlüssel für alle Fälle eines Kalenderjahres innerhalb eines Leitstellenbereiches gemäß MIND-Spezifikation. NA-Auftragsnummer im NA-Protokoll, RD-Auftragsnummer im RD-Protokoll.\">MindPrimaerschluessel</a>/HI-2026-00042, <a href=\"NamingSystem-MindEinsatznrNamingSystem.html\" title=\"Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes (DIVI-Feld EinsatzNr).\">MindEinsatznr</a>/E-2026-0412, <a href=\"NamingSystem-MindAuftragNrNamingSystem.html\" title=\"Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des RD-Auftrages (DIVI-Feld AuftrNr).\">MindAuftragNr</a>/RK-2026-3321</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER\">ActCode: EMER</a> (emergency)</p><p><b>type</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs 04}\">Notfallrettung - Primäreinsatz ohne NA</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>period</b>: 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-mind-location-example.html\">Location Einsatzort Beispiel</a></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung",
+    "value" : "03254021"
+  },
+  {
+    "system" : "https://till-ko.github.io/de-ems/NamingSystem/mind-projektid",
+    "value" : "PRJ-2026-0001"
+  },
+  {
+    "system" : "https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle",
+    "value" : "HI"
+  },
+  {
+    "system" : "https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel",
+    "value" : "HI-2026-00042"
+  },
+  {
+    "system" : "https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr",
+    "value" : "E-2026-0412"
+  },
+  {
+    "system" : "https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr",
+    "value" : "RK-2026-3321"
+  }],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "EMER"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs",
+      "code" : "04"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/mind-patient-example"
+  },
+  "period" : {
+    "start" : "2026-09-16T09:15:00+02:00",
+    "end" : "2026-09-16T10:00:00+02:00"
+  },
+  "location" : [{
+    "location" : {
+      "reference" : "Location/mind-location-example"
+    }
+  }]
+}

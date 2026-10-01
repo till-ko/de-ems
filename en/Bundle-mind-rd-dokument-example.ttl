@@ -1,0 +1,495 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/Bundle/mind-rd-dokument-example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-rd-dokument-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-dokument" ] ;
+     fhir:Identifier.value [ fhir:value "MIND-RD-EXAMPLE-001" ]
+  ] ;
+  fhir:Bundle.type [ fhir:value "document"] ;
+  fhir:Bundle.timestamp [ fhir:value "2026-09-16T10:00:00+02:00"^^xsd:dateTime] ;
+  fhir:Bundle.entry [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Composition/mind-composition-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Composition/mind-composition-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Patient/mind-patient-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Patient/mind-patient-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Encounter/mind-encounter-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Location/mind-location-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Location/mind-location-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Practitioner/mind-practitioner-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Practitioner/mind-practitioner-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Observation/mind-alter-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Observation/mind-alter-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Observation/mind-altersvaliditaet-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Observation/mind-altersvaliditaet-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Observation/mind-rdtransport-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Observation/mind-rdtransport-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Observation/mind-notarzt-nachgefordert-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Observation/mind-notarzt-nachgefordert-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Observation/mind-zeit-alarm-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Observation/mind-zeit-alarm-example>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://till-ko.github.io/de-ems/Observation/mind-zeit-einsatzende-example" ] ;
+     fhir:Bundle.entry.resource <https://till-ko.github.io/de-ems/Observation/mind-zeit-einsatzende-example>
+  ] .
+
+<https://till-ko.github.io/de-ems/Composition/mind-composition-example> a fhir:Composition ;
+  fhir:Resource.id [ fhir:value "mind-composition-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_mind-composition-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition mind-composition-example</b></p><a name=\"mind-composition-example\"> </a><a name=\"hcmind-composition-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-composition-de-ems-mind-r4.html\">MIND 7.1 Einsatzdokument</a></p></div><p><b>MIND Softwarekennung</b>: MIND-LOGIK 7.0.1</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-protokolltyp-cs RD}\">Rettungsdienstdokumentation</span></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>date</b>: 2026-09-16 10:00:00+0200</p><p><b>author</b>: <a href=\"Practitioner-mind-practitioner-example.html\">Practitioner Rettungsdienst Beispiel </a></p><p><b>title</b>: MIND 7.1 Rettungsdienstdokumentation</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/mind-softwarekennung" ] ;
+     fhir:Extension.valueString [ fhir:value "MIND-LOGIK 7.0.1" ]
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-protokolltyp-cs" ] ;
+       fhir:Coding.code [ fhir:value "RD" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Composition.encounter [
+     fhir:link <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/mind-encounter-example" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2026-09-16T10:00:00+02:00"^^xsd:dateTime] ;
+  fhir:Composition.author [
+     fhir:index -1 ;
+     fhir:link <https://till-ko.github.io/de-ems/Practitioner/mind-practitioner-example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/mind-practitioner-example" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "MIND 7.1 Rettungsdienstdokumentation"] .
+
+<https://till-ko.github.io/de-ems/Patient/mind-patient-example> a fhir:Patient ;
+  fhir:Resource.id [ fhir:value "mind-patient-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mind-patient-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mind-patient-example</b></p><a name=\"mind-patient-example\"> </a><a name=\"hcmind-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-de-ems-mind-r4.html\">MIND 7.1 Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/></div>"
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] .
+
+<https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> a fhir:Encounter ;
+  fhir:Resource.id [ fhir:value "mind-encounter-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mind-encounter-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mind-encounter-example</b></p><a name=\"mind-encounter-example\"> </a><a name=\"hcmind-encounter-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-de-ems-mind-r4.html\">MIND 7.1 Einsatz / Encounter</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-MindStandortkennungNamingSystem.html\" title=\"Amtlicher Gemeindeschlüssel des Rettungsmittel-Standorts (Gliederung BL-LK: Bundesland und Landkreis nach Vorgaben des Gemeindeschlüssels; Rettungswache). Sonderwerte der MIND-Spezifikation (-1 = nicht dokumentiert, 99999999 = nicht bekannt) werden nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf identifier[standortkennung].value abgebildet (CH-EMS-Konzept).\">MindStandortkennung</a>/03254021, <a href=\"NamingSystem-MindProjektIdNamingSystem.html\" title=\"Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird (Einmalig in den Stammdaten einzupflegen) gemäß MIND-Spezifikation.\">MindProjektId</a>/PRJ-2026-0001, <a href=\"NamingSystem-MindLeitstelleNamingSystem.html\" title=\"Landkreiskennung der Heimatleitstelle (z. B. S für Stuttgart, OG für Offenburg). Für einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden; einmalig in den Stammdaten einzupflegen.\">MindLeitstelle</a>/HI, <a href=\"NamingSystem-MindPrimaerschluesselNamingSystem.html\" title=\"Eindeutiger Primärschlüssel für alle Fälle eines Kalenderjahres innerhalb eines Leitstellenbereiches gemäß MIND-Spezifikation. NA-Auftragsnummer im NA-Protokoll, RD-Auftragsnummer im RD-Protokoll.\">MindPrimaerschluessel</a>/HI-2026-00042, <a href=\"NamingSystem-MindEinsatznrNamingSystem.html\" title=\"Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes (DIVI-Feld EinsatzNr).\">MindEinsatznr</a>/E-2026-0412, <a href=\"NamingSystem-MindAuftragNrNamingSystem.html\" title=\"Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des RD-Auftrages (DIVI-Feld AuftrNr).\">MindAuftragNr</a>/RK-2026-3321</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER\">ActCode: EMER</a> (emergency)</p><p><b>type</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs 04}\">Notfallrettung - Primäreinsatz ohne NA</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>period</b>: 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-mind-location-example.html\">Location Einsatzort Beispiel</a></td></tr></table></div>"
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung" ] ;
+     fhir:Identifier.value [ fhir:value "03254021" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-projektid" ] ;
+     fhir:Identifier.value [ fhir:value "PRJ-2026-0001" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle" ] ;
+     fhir:Identifier.value [ fhir:value "HI" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel" ] ;
+     fhir:Identifier.value [ fhir:value "HI-2026-00042" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr" ] ;
+     fhir:Identifier.value [ fhir:value "E-2026-0412" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr" ] ;
+     fhir:Identifier.value [ fhir:value "RK-2026-3321" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "EMER" ]
+  ] ;
+  fhir:Encounter.type [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs" ] ;
+       fhir:Coding.code [ fhir:value "04" ]
+     ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-09-16T09:15:00+02:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-09-16T10:00:00+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.location [
+     fhir:index -1 ;
+     fhir:Encounter.location.location [
+       fhir:link <https://till-ko.github.io/de-ems/Location/mind-location-example> ;
+       fhir:Reference.reference [ fhir:value "Location/mind-location-example" ]
+     ]
+  ] .
+
+<https://till-ko.github.io/de-ems/Location/mind-location-example> a fhir:Location ;
+  fhir:Resource.id [ fhir:value "mind-location-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_mind-location-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location mind-location-example</b></p><a name=\"mind-location-example\"> </a><a name=\"hcmind-location-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-de-ems-mind-r4.html\">MIND 7.1 Einsatzort / Location</a></p></div><p><b>MIND Einsatzorttyp</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs 01}\">Wohnung</span></p><p><b>status</b>: Active</p><p><b>name</b>: Einsatzort Beispiel</p><p><b>address</b>: Musterstraße 1 Hildesheim 31134 DE </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>9.951083</td><td>52.150823</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs" ] ;
+         fhir:Coding.code [ fhir:value "01" ]
+       ]
+     ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Einsatzort Beispiel"] ;
+  fhir:Location.address [
+     fhir:Address.line [
+       fhir:value "Musterstraße 1" ;
+       fhir:index -1
+     ] ;
+     fhir:Address.city [
+       fhir:value "Hildesheim" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://fhir.de/StructureDefinition/destatis/ags" ] ;
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://fhir.de/sid/destatis/ags" ] ;
+           fhir:Coding.code [ fhir:value "03254021" ]
+         ]
+       ]
+     ] ;
+     fhir:Address.postalCode [ fhir:value "31134" ] ;
+     fhir:Address.country [ fhir:value "DE" ]
+  ] ;
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "9.951083"^^xsd:decimal ] ;
+     fhir:Location.position.latitude [ fhir:value "52.150823"^^xsd:decimal ]
+  ] .
+
+<https://till-ko.github.io/de-ems/Practitioner/mind-practitioner-example> a fhir:Practitioner ;
+  fhir:Resource.id [ fhir:value "mind-practitioner-example"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_mind-practitioner-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner mind-practitioner-example</b></p><a name=\"mind-practitioner-example\"> </a><a name=\"hcmind-practitioner-example\"> </a><p><b>name</b>: Rettungsdienst Beispiel </p></div>"
+  ] ;
+  fhir:Practitioner.name [
+     fhir:index -1 ;
+     fhir:HumanName.family [ fhir:value "Beispiel" ] ;
+     fhir:HumanName.given [
+       fhir:value "Rettungsdienst" ;
+       fhir:index -1
+     ]
+  ] .
+
+<https://till-ko.github.io/de-ems/Observation/mind-alter-example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "mind-alter-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mind-alter-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mind-alter-example</b></p><a name=\"mind-alter-example\"> </a><a name=\"hcmind-alter-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-observation-de-ems-mind-alter.html\">MIND 7.1 Patientenalter</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs patientenalter}\">Patientenalter</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>effective</b>: 2026-09-16 09:15:00+0200</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs alter-jahre}\">Alter in Jahren</span></p><p><b>value</b>: 51</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs alter-monate}\">Alter in Monaten</span></p><p><b>value</b>: 4</p></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+       fhir:Coding.code [ fhir:value "patientenalter" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/mind-encounter-example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-16T09:15:00+02:00"^^xsd:dateTime] ;
+  fhir:Observation.component [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+         fhir:Coding.code [ fhir:value "alter-jahre" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueInteger [ fhir:value "51"^^xsd:integer ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+         fhir:Coding.code [ fhir:value "alter-monate" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueInteger [ fhir:value "4"^^xsd:integer ]
+  ] .
+
+<https://till-ko.github.io/de-ems/Observation/mind-altersvaliditaet-example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "mind-altersvaliditaet-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mind-altersvaliditaet-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mind-altersvaliditaet-example</b></p><a name=\"mind-altersvaliditaet-example\"> </a><a name=\"hcmind-altersvaliditaet-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-observation-de-ems-mind-altersvaliditaet.html\">MIND 7.1 Altersvalidität</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs altersvaliditaet}\">Altersvalidität</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>effective</b>: 2026-09-16 09:15:00+0200</p><p><b>value</b>: false</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+       fhir:Coding.code [ fhir:value "altersvaliditaet" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/mind-encounter-example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-16T09:15:00+02:00"^^xsd:dateTime] ;
+  fhir:Observation.valueBoolean [ fhir:value "false"^^xsd:boolean] .
+
+<https://till-ko.github.io/de-ems/Observation/mind-rdtransport-example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "mind-rdtransport-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mind-rdtransport-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mind-rdtransport-example</b></p><a name=\"mind-rdtransport-example\"> </a><a name=\"hcmind-rdtransport-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-observation-de-ems-mind-rd-transport.html\">MIND 7.1 Rettungsdienstlicher Transport</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs rd-transport}\">Rettungsdienstlicher Transport</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>effective</b>: 2026-09-16 09:30:00+0200</p><p><b>value</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-rd-transport-cs 03}\">Transport durch RTW</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+       fhir:Coding.code [ fhir:value "rd-transport" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/mind-encounter-example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-16T09:30:00+02:00"^^xsd:dateTime] ;
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-rd-transport-cs" ] ;
+       fhir:Coding.code [ fhir:value "03" ]
+     ]
+  ] .
+
+<https://till-ko.github.io/de-ems/Observation/mind-notarzt-nachgefordert-example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "mind-notarzt-nachgefordert-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mind-notarzt-nachgefordert-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mind-notarzt-nachgefordert-example</b></p><a name=\"mind-notarzt-nachgefordert-example\"> </a><a name=\"hcmind-notarzt-nachgefordert-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-observation-de-ems-mind-notarzt-nachgefordert.html\">MIND 7.1 Notarzt nachgefordert</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs notarzt-nachgefordert}\">Notarzt nachgefordert</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>effective</b>: 2026-09-16 09:30:00+0200</p><p><b>value</b>: false</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+       fhir:Coding.code [ fhir:value "notarzt-nachgefordert" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/mind-encounter-example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-16T09:30:00+02:00"^^xsd:dateTime] ;
+  fhir:Observation.valueBoolean [ fhir:value "false"^^xsd:boolean] .
+
+<https://till-ko.github.io/de-ems/Observation/mind-zeit-alarm-example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "mind-zeit-alarm-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mind-zeit-alarm-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mind-zeit-alarm-example</b></p><a name=\"mind-zeit-alarm-example\"> </a><a name=\"hcmind-zeit-alarm-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-observation-de-ems-mind-zeit-alarm.html\">MIND 7.1 Zeitpunkt Alarm</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs zeit-alarm}\">Zeitpunkt Alarm</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>effective</b>: 2026-09-16 09:15:00+0200</p><p><b>value</b>: 2026-09-16 09:15:00+0200</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+       fhir:Coding.code [ fhir:value "zeit-alarm" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/mind-encounter-example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-16T09:15:00+02:00"^^xsd:dateTime] ;
+  fhir:Observation.valueDateTime [ fhir:value "2026-09-16T09:15:00+02:00"^^xsd:dateTime] .
+
+<https://till-ko.github.io/de-ems/Observation/mind-zeit-einsatzende-example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "mind-zeit-einsatzende-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mind-zeit-einsatzende-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mind-zeit-einsatzende-example</b></p><a name=\"mind-zeit-einsatzende-example\"> </a><a name=\"hcmind-zeit-einsatzende-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-observation-de-ems-mind-zeit-einsatzende.html\">MIND 7.1 Zeitpunkt Einsatzende</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs zeit-einsatzende}\">Zeitpunkt Einsatzende</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>effective</b>: 2026-09-16 10:00:00+0200</p><p><b>value</b>: 2026-09-16 10:00:00+0200</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+       fhir:Coding.code [ fhir:value "zeit-einsatzende" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/mind-encounter-example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-16T10:00:00+02:00"^^xsd:dateTime] ;
+  fhir:Observation.valueDateTime [ fhir:value "2026-09-16T10:00:00+02:00"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/Bundle/mind-rd-dokument-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

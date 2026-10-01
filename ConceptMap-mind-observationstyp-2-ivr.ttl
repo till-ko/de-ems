@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/ConceptMap/mind-observationstyp-2-ivr> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-observationstyp-2-ivr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mind-observationstyp-2-ivr</b></p><a name=\"mind-observationstyp-2-ivr\"> </a><a name=\"hcmind-observationstyp-2-ivr\"> </a><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping from <a href=\"CodeSystem-mind-observationstyp-cs.html\">MIND Beobachtungstypen</a> to <code>http://fhir.ch/ig/ch-ems/CodeSystem/IVR</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>zeit-notfallmeldung (Zeitpunkt Eingang Notfallmeldung)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000033 (alarm)</td><td>Eingang/Anrufaufschaltung der Notfallmeldung bei der Leitstelle (IVR 'alarm': Zeitpunkt des Eingangs des Notrufs bei der Sanitätsnotrufzentrale).</td></tr><tr><td>zeit-alarm (Zeitpunkt Alarm)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000034 (disposition)</td><td>Alarmierung/Auftragsvergabe an das Rettungsmittel (IVR 'disposition': Zeitpunkt, zu dem der Rettungsdienst von der SNZ alarmiert wurde).</td></tr><tr><td>zeit-ausruecken (Zeitpunkt Ausrücken)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000035 (rollout)</td><td>Abfahrt/Abflug vom Standort, einsatzklare Besatzung (IVR 'rollout': Ausrücken der ersten Einheit des Rettungsdienstes).</td></tr><tr><td>zeit-ankunft-einsatzort (Zeitpunkt Ankunft Einsatzort)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000036 (arrival on scene)</td><td>Ankunft des dokumentierenden Rettungsmittels am Einsatzort (IVR 'arrival on scene').</td></tr><tr><td>zeit-ankunft-patient (Zeitpunkt Ankunft Patient)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000037 (arrival patient)</td><td>Ankunft beim Patienten (IVR 'arrival patient'; in CH-EMS derzeit nicht verwendet, Code jedoch definiert).</td></tr><tr><td>zeit-transportbeginn (Zeitpunkt Transportbeginn)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>1000038 (departure from scene)</td><td>MIND: Beginn des Patiententransportes; IVR 'departure from scene': Zeit der Abfahrt vom Ereignisort. Meist identisch, aber nicht deckungsgleich definiert.</td></tr><tr><td>zeit-eintreffen-transportziel (Zeitpunkt Eintreffen Transportziel)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000039 (arrival at target)</td><td>Eintreffen am Transportziel (IVR 'arrival at target').</td></tr><tr><td>zeit-uebergabe-patient (Zeitpunkt Übergabe Patient)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1000040 (handover patient)</td><td>Übergabe des Patienten an den Weiterbehandler (IVR 'handover patient').</td></tr><tr><td>zeit-einsatzende (Zeitpunkt Einsatzende)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>1000042 (operational readiness)</td><td>MIND: Einsatzende inkl. aller Nacharbeiten (Desinfektion, Dokumentation); IVR 'operational readiness': Zeitpunkt, an dem das Team wieder voll einsatzbereit ist. Inhaltlich eng beieinander, unterschiedlich formuliert.</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://till-ko.github.io/de-ems/ConceptMap/mind-observationstyp-2-ivr"] ;
+  fhir:ConceptMap.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.169126619167380341660016816424527320624.18.1" ]
+  ] ;
+  fhir:ConceptMap.version [ fhir:value "0.1.0"] ;
+  fhir:ConceptMap.name [ fhir:value "MindObservationstyp2Ivr"] ;
+  fhir:ConceptMap.title [ fhir:value "MIND 7.1 Zeitpunkte → CH-EMS IVR Mission Time Roles"] ;
+  fhir:ConceptMap.status [ fhir:value "active"] ;
+  fhir:ConceptMap.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-10-01T18:52:47+00:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "Till Koch"] ;
+  fhir:ConceptMap.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Till Koch" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/till-ko" ]
+     ]
+  ] ;
+  fhir:ConceptMap.description [ fhir:value "Ordnet die zeitbezogenen MIND-7.1-Codes aus MindObservationstypCS den Zeit-Rollen (Mission Time Roles) des Schweizer CH-EMS-CodeSystems IVR zu (CH-EMS-IG, Profil 'Mission Time Status')."] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "http://fhir.ch/ig/ch-ems/CodeSystem/IVR" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-notfallmeldung" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000033" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Eingang/Anrufaufschaltung der Notfallmeldung bei der Leitstelle (IVR 'alarm': Zeitpunkt des Eingangs des Notrufs bei der Sanitätsnotrufzentrale)." ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-alarm" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000034" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Alarmierung/Auftragsvergabe an das Rettungsmittel (IVR 'disposition': Zeitpunkt, zu dem der Rettungsdienst von der SNZ alarmiert wurde)." ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-ausruecken" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000035" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Abfahrt/Abflug vom Standort, einsatzklare Besatzung (IVR 'rollout': Ausrücken der ersten Einheit des Rettungsdienstes)." ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-ankunft-einsatzort" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000036" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Ankunft des dokumentierenden Rettungsmittels am Einsatzort (IVR 'arrival on scene')." ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-ankunft-patient" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000037" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Ankunft beim Patienten (IVR 'arrival patient'; in CH-EMS derzeit nicht verwendet, Code jedoch definiert)." ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-transportbeginn" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000038" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "MIND: Beginn des Patiententransportes; IVR 'departure from scene': Zeit der Abfahrt vom Ereignisort. Meist identisch, aber nicht deckungsgleich definiert." ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-eintreffen-transportziel" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000039" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Eintreffen am Transportziel (IVR 'arrival at target')." ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-uebergabe-patient" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000040" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Übergabe des Patienten an den Weiterbehandler (IVR 'handover patient')." ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "zeit-einsatzende" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "1000042" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "MIND: Einsatzende inkl. aller Nacharbeiten (Desinfektion, Dokumentation); IVR 'operational readiness': Zeitpunkt, an dem das Team wieder voll einsatzbereit ist. Inhaltlich eng beieinander, unterschiedlich formuliert." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/ConceptMap/mind-observationstyp-2-ivr.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

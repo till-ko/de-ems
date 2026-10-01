@@ -1,0 +1,35 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "MindEinsatznrNamingSystem",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem MindEinsatznrNamingSystem</b></p><a name=\"MindEinsatznrNamingSystem\"> </a><a name=\"hcMindEinsatznrNamingSystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://till-ko.github.io/de-ems/NamingSystem/MindEinsatznrNamingSystem</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>MindEinsatznr</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes (DIVI-Feld EinsatzNr).</p>\n</div></td></tr><tr><td>Publisher</td><td>Till Koch</td></tr><tr><td>OID</td><td>2.25.169126619167380341660016816424527320624.31.2 (for OID based terminology systems)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr</td><td>true</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "https://till-ko.github.io/de-ems/NamingSystem/MindEinsatznrNamingSystem"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.1.0"
+  }],
+  "name" : "MindEinsatznr",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2026-09-24",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes (DIVI-Feld EinsatzNr).",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr",
+    "preferred" : true
+  }]
+}

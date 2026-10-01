@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-heilkundliche-massnahme-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-heilkundliche-massnahme-cs</b></p><a name=\"mind-heilkundliche-massnahme-cs\"> </a><a name=\"hcmind-heilkundliche-massnahme-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-heilkundliche-massnahme-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-heilkundliche-massnahme-cs-01\"> </a></td><td>ja, Medikamentengabe</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-heilkundliche-massnahme-cs-02\"> </a></td><td>ja, Maßnahmen</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-heilkundliche-massnahme-cs-03\"> </a></td><td>nein</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-heilkundliche-massnahme-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.18"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindHeilkundlicheMassnahmeCS",
+  "title" : "MIND Eigenständige heilkundliche Maßnahme",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Eigenständig oder eigenverantwortlich durch Notfallsanitäterinnen und Notfallsanitäter durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "01",
+    "display" : "ja, Medikamentengabe"
+  },
+  {
+    "code" : "02",
+    "display" : "ja, Maßnahmen"
+  },
+  {
+    "code" : "03",
+    "display" : "nein"
+  }]
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-observationstyp-cs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-observationstyp-cs</b></p><a name="mind-observationstyp-cs"> </a><a name="hcmind-observationstyp-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">patientenalter<a name="mind-observationstyp-cs-patientenalter"> </a></td><td>Patientenalter</td></tr><tr><td style="white-space:nowrap">altersvaliditaet<a name="mind-observationstyp-cs-altersvaliditaet"> </a></td><td>Altersvalidität</td></tr><tr><td style="white-space:nowrap">alter-jahre<a name="mind-observationstyp-cs-alter-jahre"> </a></td><td>Alter in Jahren</td></tr><tr><td style="white-space:nowrap">alter-monate<a name="mind-observationstyp-cs-alter-monate"> </a></td><td>Alter in Monaten</td></tr><tr><td style="white-space:nowrap">rd-transport<a name="mind-observationstyp-cs-rd-transport"> </a></td><td>Rettungsdienstlicher Transport</td></tr><tr><td style="white-space:nowrap">aerztliche-begleitung<a name="mind-observationstyp-cs-aerztliche-begleitung"> </a></td><td>Ärztliche Transportbegleitung</td></tr><tr><td style="white-space:nowrap">notarzt-nachgefordert<a name="mind-observationstyp-cs-notarzt-nachgefordert"> </a></td><td>Notarzt nachgefordert</td></tr><tr><td style="white-space:nowrap">tna-nachgefordert<a name="mind-observationstyp-cs-tna-nachgefordert"> </a></td><td>Tele-Notarzt nachgefordert</td></tr><tr><td style="white-space:nowrap">kein-transport-mit-patient<a name="mind-observationstyp-cs-kein-transport-mit-patient"> </a></td><td>Grund für Einsatz ohne Transport trotz Patientenkontakt</td></tr><tr><td style="white-space:nowrap">kein-transport-ohne-patient<a name="mind-observationstyp-cs-kein-transport-ohne-patient"> </a></td><td>Grund für Einsatz ohne Transport, da kein Patientenkontakt</td></tr><tr><td style="white-space:nowrap">dokumentierendes-rettungsmittel<a name="mind-observationstyp-cs-dokumentierendes-rettungsmittel"> </a></td><td>Dokumentierendes Rettungsmittel</td></tr><tr><td style="white-space:nowrap">beteiligte-rettungsmittel<a name="mind-observationstyp-cs-beteiligte-rettungsmittel"> </a></td><td>Beteiligte Rettungsmittel</td></tr><tr><td style="white-space:nowrap">aerztliche-qualifikation<a name="mind-observationstyp-cs-aerztliche-qualifikation"> </a></td><td>Ärztliche Qualifikation</td></tr><tr><td style="white-space:nowrap">personalstatus<a name="mind-observationstyp-cs-personalstatus"> </a></td><td>Status des Personals</td></tr><tr><td style="white-space:nowrap">symptombeginn-vor-24h<a name="mind-observationstyp-cs-symptombeginn-vor-24h"> </a></td><td>Symptombeginn innerhalb der letzten 24 Stunden</td></tr><tr><td style="white-space:nowrap">symptombeginn<a name="mind-observationstyp-cs-symptombeginn"> </a></td><td>Zeitpunkt Symptombeginn</td></tr><tr><td style="white-space:nowrap">symptombeginn-gesichert<a name="mind-observationstyp-cs-symptombeginn-gesichert"> </a></td><td>Symptombeginn gesichert oder geschätzt</td></tr><tr><td style="white-space:nowrap">zeit-notfallmeldung<a name="mind-observationstyp-cs-zeit-notfallmeldung"> </a></td><td>Zeitpunkt Eingang Notfallmeldung</td></tr><tr><td style="white-space:nowrap">zeit-alarm<a name="mind-observationstyp-cs-zeit-alarm"> </a></td><td>Zeitpunkt Alarm</td></tr><tr><td style="white-space:nowrap">zeit-ausruecken<a name="mind-observationstyp-cs-zeit-ausruecken"> </a></td><td>Zeitpunkt Ausrücken</td></tr><tr><td style="white-space:nowrap">zeit-ankunft-einsatzort<a name="mind-observationstyp-cs-zeit-ankunft-einsatzort"> </a></td><td>Zeitpunkt Ankunft Einsatzort</td></tr><tr><td style="white-space:nowrap">zeit-ankunft-patient<a name="mind-observationstyp-cs-zeit-ankunft-patient"> </a></td><td>Zeitpunkt Ankunft Patient</td></tr><tr><td style="white-space:nowrap">zeit-transportbeginn<a name="mind-observationstyp-cs-zeit-transportbeginn"> </a></td><td>Zeitpunkt Transportbeginn</td></tr><tr><td style="white-space:nowrap">zeit-eintreffen-transportziel<a name="mind-observationstyp-cs-zeit-eintreffen-transportziel"> </a></td><td>Zeitpunkt Eintreffen Transportziel</td></tr><tr><td style="white-space:nowrap">zeit-uebergabe-patient<a name="mind-observationstyp-cs-zeit-uebergabe-patient"> </a></td><td>Zeitpunkt Übergabe Patient</td></tr><tr><td style="white-space:nowrap">zeit-einsatzende<a name="mind-observationstyp-cs-zeit-einsatzende"> </a></td><td>Zeitpunkt Einsatzende</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.34"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindObservationstypCS"/>
+  <title value="MIND Beobachtungstypen"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="26"/>
+  <concept>
+    <code value="patientenalter"/>
+    <display value="Patientenalter"/>
+  </concept>
+  <concept>
+    <code value="altersvaliditaet"/>
+    <display value="Altersvalidität"/>
+  </concept>
+  <concept>
+    <code value="alter-jahre"/>
+    <display value="Alter in Jahren"/>
+  </concept>
+  <concept>
+    <code value="alter-monate"/>
+    <display value="Alter in Monaten"/>
+  </concept>
+  <concept>
+    <code value="rd-transport"/>
+    <display value="Rettungsdienstlicher Transport"/>
+  </concept>
+  <concept>
+    <code value="aerztliche-begleitung"/>
+    <display value="Ärztliche Transportbegleitung"/>
+  </concept>
+  <concept>
+    <code value="notarzt-nachgefordert"/>
+    <display value="Notarzt nachgefordert"/>
+  </concept>
+  <concept>
+    <code value="tna-nachgefordert"/>
+    <display value="Tele-Notarzt nachgefordert"/>
+  </concept>
+  <concept>
+    <code value="kein-transport-mit-patient"/>
+    <display value="Grund für Einsatz ohne Transport trotz Patientenkontakt"/>
+  </concept>
+  <concept>
+    <code value="kein-transport-ohne-patient"/>
+    <display value="Grund für Einsatz ohne Transport, da kein Patientenkontakt"/>
+  </concept>
+  <concept>
+    <code value="dokumentierendes-rettungsmittel"/>
+    <display value="Dokumentierendes Rettungsmittel"/>
+  </concept>
+  <concept>
+    <code value="beteiligte-rettungsmittel"/>
+    <display value="Beteiligte Rettungsmittel"/>
+  </concept>
+  <concept>
+    <code value="aerztliche-qualifikation"/>
+    <display value="Ärztliche Qualifikation"/>
+  </concept>
+  <concept>
+    <code value="personalstatus"/>
+    <display value="Status des Personals"/>
+  </concept>
+  <concept>
+    <code value="symptombeginn-vor-24h"/>
+    <display value="Symptombeginn innerhalb der letzten 24 Stunden"/>
+  </concept>
+  <concept>
+    <code value="symptombeginn"/>
+    <display value="Zeitpunkt Symptombeginn"/>
+  </concept>
+  <concept>
+    <code value="symptombeginn-gesichert"/>
+    <display value="Symptombeginn gesichert oder geschätzt"/>
+  </concept>
+  <concept>
+    <code value="zeit-notfallmeldung"/>
+    <display value="Zeitpunkt Eingang Notfallmeldung"/>
+  </concept>
+  <concept>
+    <code value="zeit-alarm"/>
+    <display value="Zeitpunkt Alarm"/>
+  </concept>
+  <concept>
+    <code value="zeit-ausruecken"/>
+    <display value="Zeitpunkt Ausrücken"/>
+  </concept>
+  <concept>
+    <code value="zeit-ankunft-einsatzort"/>
+    <display value="Zeitpunkt Ankunft Einsatzort"/>
+  </concept>
+  <concept>
+    <code value="zeit-ankunft-patient"/>
+    <display value="Zeitpunkt Ankunft Patient"/>
+  </concept>
+  <concept>
+    <code value="zeit-transportbeginn"/>
+    <display value="Zeitpunkt Transportbeginn"/>
+  </concept>
+  <concept>
+    <code value="zeit-eintreffen-transportziel"/>
+    <display value="Zeitpunkt Eintreffen Transportziel"/>
+  </concept>
+  <concept>
+    <code value="zeit-uebergabe-patient"/>
+    <display value="Zeitpunkt Übergabe Patient"/>
+  </concept>
+  <concept>
+    <code value="zeit-einsatzende"/>
+    <display value="Zeitpunkt Einsatzende"/>
+  </concept>
+</CodeSystem>

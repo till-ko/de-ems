@@ -1,0 +1,263 @@
+{
+  "package": "de.ems.mind.r4",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ",
+      "title": "MIND Einsatzorttyp",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://till-ko.github.io/de-ems/StructureDefinition/mind-softwarekennung",
+      "title": "MIND Softwarekennung",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4",
+        "title": "MIND 7.1 Dokument-Bundle"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4",
+        "title": "MIND 7.1 Einsatzdokument"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-divi-r4",
+        "title": "DIVI 7.1 Einsatz / Encounter"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4",
+        "title": "MIND 7.1 Einsatz / Encounter"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-divi-r4",
+        "title": "DIVI 7.1 Einsatzort / Location"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4",
+        "title": "MIND 7.1 Einsatzort / Location"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-base",
+        "title": "de EMS Observation Basisprofil"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind",
+        "title": "de EMS MIND Observation Basisprofil"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-begleitung",
+        "title": "MIND 7.1 Ärztliche Transportbegleitung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-qualifikation",
+        "title": "MIND 7.1 Ärztliche Qualifikation"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter",
+        "title": "MIND 7.1 Patientenalter"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet",
+        "title": "MIND 7.1 Altersvalidität"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-beteiligte-rettungsmittel",
+        "title": "MIND 7.1 Beteiligte Rettungsmittel"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-dokumentierendes-rettungsmittel",
+        "title": "MIND 7.1 Dokumentierendes Rettungsmittel"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-mit-patient",
+        "title": "MIND 7.1 Grund für Einsatz ohne Transport trotz Patientenkontakt"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-ohne-patient",
+        "title": "MIND 7.1 Grund für Einsatz ohne Transport, da kein Patientenkontakt"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert",
+        "title": "MIND 7.1 Notarzt nachgefordert"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-personalstatus",
+        "title": "MIND 7.1 Status des Personals"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport",
+        "title": "MIND 7.1 Rettungsdienstlicher Transport"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn",
+        "title": "MIND 7.1 Zeitpunkt Symptombeginn"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-gesichert",
+        "title": "MIND 7.1 Symptombeginn gesichert oder geschätzt"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-vor-24h",
+        "title": "MIND 7.1 Symptombeginn innerhalb der letzten 24 Stunden"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-tna-nachgefordert",
+        "title": "MIND 7.1 Tele-Notarzt nachgefordert"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm",
+        "title": "MIND 7.1 Zeitpunkt Alarm"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-einsatzort",
+        "title": "MIND 7.1 Zeitpunkt Ankunft Einsatzort"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-patient",
+        "title": "MIND 7.1 Zeitpunkt Ankunft Patient"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ausruecken",
+        "title": "MIND 7.1 Zeitpunkt Ausrücken"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende",
+        "title": "MIND 7.1 Zeitpunkt Einsatzende"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-eintreffen-transportziel",
+        "title": "MIND 7.1 Zeitpunkt Eintreffen Transportziel"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-notfallmeldung",
+        "title": "MIND 7.1 Zeitpunkt Eingang Notfallmeldung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-transportbeginn",
+        "title": "MIND 7.1 Zeitpunkt Transportbeginn"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-uebergabe-patient",
+        "title": "MIND 7.1 Zeitpunkt Übergabe Patient"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4",
+        "title": "DIVI 7.1 Patient"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4",
+        "title": "MIND 7.1 Patient"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.de/StructureDefinition/destatis/ags": [
+      "Bundle.entry.resource.address.city",
+      "Location.address.city"
+    ],
+    "http://fhir.de/StructureDefinition/gender-amtlich-de": [
+      "Patient.gender"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Location.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Location.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Location.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
+      "Location.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Location.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-codedString": [
+      "Location.address.country"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/binding-definition": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ": [
+      "Bundle.entry.resource",
+      "Location"
+    ],
+    "https://till-ko.github.io/de-ems/StructureDefinition/mind-softwarekennung": [
+      "Bundle.entry.resource",
+      "Composition"
+    ]
+  }
+}

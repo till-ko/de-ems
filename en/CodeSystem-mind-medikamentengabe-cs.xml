@@ -1,0 +1,1888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-medikamentengabe-cs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-medikamentengabe-cs</b></p><a name="mind-medikamentengabe-cs"> </a><a name="hcmind-medikamentengabe-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1001im<a name="mind-medikamentengabe-cs-1001im"> </a></td><td>Fentanyl - intramuskulär</td></tr><tr><td style="white-space:nowrap">1001io<a name="mind-medikamentengabe-cs-1001io"> </a></td><td>Fentanyl - intraossär</td></tr><tr><td style="white-space:nowrap">1001iv<a name="mind-medikamentengabe-cs-1001iv"> </a></td><td>Fentanyl - intravenös</td></tr><tr><td style="white-space:nowrap">1001nl<a name="mind-medikamentengabe-cs-1001nl"> </a></td><td>Fentanyl - intranasal</td></tr><tr><td style="white-space:nowrap">1001sc<a name="mind-medikamentengabe-cs-1001sc"> </a></td><td>Fentanyl - subkutan</td></tr><tr><td style="white-space:nowrap">1001sl<a name="mind-medikamentengabe-cs-1001sl"> </a></td><td>Fentanyl - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1001td<a name="mind-medikamentengabe-cs-1001td"> </a></td><td>Fentanyl - transdermal</td></tr><tr><td style="white-space:nowrap">1002im<a name="mind-medikamentengabe-cs-1002im"> </a></td><td>Morphin - intramuskulär</td></tr><tr><td style="white-space:nowrap">1002io<a name="mind-medikamentengabe-cs-1002io"> </a></td><td>Morphin - intraossär</td></tr><tr><td style="white-space:nowrap">1002iv<a name="mind-medikamentengabe-cs-1002iv"> </a></td><td>Morphin - intravenös</td></tr><tr><td style="white-space:nowrap">1002nl<a name="mind-medikamentengabe-cs-1002nl"> </a></td><td>Morphin - intranasal</td></tr><tr><td style="white-space:nowrap">1002po<a name="mind-medikamentengabe-cs-1002po"> </a></td><td>Morphin - oral</td></tr><tr><td style="white-space:nowrap">1002sc<a name="mind-medikamentengabe-cs-1002sc"> </a></td><td>Morphin - subkutan</td></tr><tr><td style="white-space:nowrap">1002td<a name="mind-medikamentengabe-cs-1002td"> </a></td><td>Morphin - transdermal</td></tr><tr><td style="white-space:nowrap">1003im<a name="mind-medikamentengabe-cs-1003im"> </a></td><td>Piritramid - intramuskulär</td></tr><tr><td style="white-space:nowrap">1003io<a name="mind-medikamentengabe-cs-1003io"> </a></td><td>Piritramid - intraossär</td></tr><tr><td style="white-space:nowrap">1003iv<a name="mind-medikamentengabe-cs-1003iv"> </a></td><td>Piritramid - intravenös</td></tr><tr><td style="white-space:nowrap">1003sc<a name="mind-medikamentengabe-cs-1003sc"> </a></td><td>Piritramid - subkutan</td></tr><tr><td style="white-space:nowrap">1004io<a name="mind-medikamentengabe-cs-1004io"> </a></td><td>Sufentanil - intraossär</td></tr><tr><td style="white-space:nowrap">1004iv<a name="mind-medikamentengabe-cs-1004iv"> </a></td><td>Sufentanil - intravenös</td></tr><tr><td style="white-space:nowrap">1004nl<a name="mind-medikamentengabe-cs-1004nl"> </a></td><td>Sufentanil - intranasal</td></tr><tr><td style="white-space:nowrap">1004sl<a name="mind-medikamentengabe-cs-1004sl"> </a></td><td>Sufentanil - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1005im<a name="mind-medikamentengabe-cs-1005im"> </a></td><td>anderes Opioid - intramuskulär</td></tr><tr><td style="white-space:nowrap">1005io<a name="mind-medikamentengabe-cs-1005io"> </a></td><td>anderes Opioid - intraossär</td></tr><tr><td style="white-space:nowrap">1005iv<a name="mind-medikamentengabe-cs-1005iv"> </a></td><td>anderes Opioid - intravenös</td></tr><tr><td style="white-space:nowrap">1005nl<a name="mind-medikamentengabe-cs-1005nl"> </a></td><td>anderes Opioid - intranasal</td></tr><tr><td style="white-space:nowrap">1005po<a name="mind-medikamentengabe-cs-1005po"> </a></td><td>anderes Opioid - oral</td></tr><tr><td style="white-space:nowrap">1005rl<a name="mind-medikamentengabe-cs-1005rl"> </a></td><td>anderes Opioid - rektal</td></tr><tr><td style="white-space:nowrap">1005sc<a name="mind-medikamentengabe-cs-1005sc"> </a></td><td>anderes Opioid - subkutan</td></tr><tr><td style="white-space:nowrap">1005sl<a name="mind-medikamentengabe-cs-1005sl"> </a></td><td>anderes Opioid - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1005td<a name="mind-medikamentengabe-cs-1005td"> </a></td><td>anderes Opioid - transdermal</td></tr><tr><td style="white-space:nowrap">1006io<a name="mind-medikamentengabe-cs-1006io"> </a></td><td>Metamizol - intraossär</td></tr><tr><td style="white-space:nowrap">1006iv<a name="mind-medikamentengabe-cs-1006iv"> </a></td><td>Metamizol - intravenös</td></tr><tr><td style="white-space:nowrap">1006po<a name="mind-medikamentengabe-cs-1006po"> </a></td><td>Metamizol - oral</td></tr><tr><td style="white-space:nowrap">1007io<a name="mind-medikamentengabe-cs-1007io"> </a></td><td>Paracetamol - intraossär</td></tr><tr><td style="white-space:nowrap">1007iv<a name="mind-medikamentengabe-cs-1007iv"> </a></td><td>Paracetamol - intravenös</td></tr><tr><td style="white-space:nowrap">1007po<a name="mind-medikamentengabe-cs-1007po"> </a></td><td>Paracetamol - oral</td></tr><tr><td style="white-space:nowrap">1007rl<a name="mind-medikamentengabe-cs-1007rl"> </a></td><td>Paracetamol - rektal</td></tr><tr><td style="white-space:nowrap">1008io<a name="mind-medikamentengabe-cs-1008io"> </a></td><td>Oxycodon - intraossär</td></tr><tr><td style="white-space:nowrap">1008iv<a name="mind-medikamentengabe-cs-1008iv"> </a></td><td>Oxycodon - intravenös</td></tr><tr><td style="white-space:nowrap">1008po<a name="mind-medikamentengabe-cs-1008po"> </a></td><td>Oxycodon - oral</td></tr><tr><td style="white-space:nowrap">1008sc<a name="mind-medikamentengabe-cs-1008sc"> </a></td><td>Oxycodon - subkutan</td></tr><tr><td style="white-space:nowrap">1008sl<a name="mind-medikamentengabe-cs-1008sl"> </a></td><td>Oxycodon - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1009ih<a name="mind-medikamentengabe-cs-1009ih"> </a></td><td>Ketamin/Esketamin - inhalativ</td></tr><tr><td style="white-space:nowrap">1009im<a name="mind-medikamentengabe-cs-1009im"> </a></td><td>Ketamin/Esketamin - intramuskulär</td></tr><tr><td style="white-space:nowrap">1009io<a name="mind-medikamentengabe-cs-1009io"> </a></td><td>Ketamin/Esketamin - intraossär</td></tr><tr><td style="white-space:nowrap">1009iv<a name="mind-medikamentengabe-cs-1009iv"> </a></td><td>Ketamin/Esketamin - intravenös</td></tr><tr><td style="white-space:nowrap">1009nl<a name="mind-medikamentengabe-cs-1009nl"> </a></td><td>Ketamin/Esketamin - intranasal</td></tr><tr><td style="white-space:nowrap">1009rl<a name="mind-medikamentengabe-cs-1009rl"> </a></td><td>Ketamin/Esketamin - rektal</td></tr><tr><td style="white-space:nowrap">1009sc<a name="mind-medikamentengabe-cs-1009sc"> </a></td><td>Ketamin/Esketamin - subkutan</td></tr><tr><td style="white-space:nowrap">1010io<a name="mind-medikamentengabe-cs-1010io"> </a></td><td>NSAID - intraossär</td></tr><tr><td style="white-space:nowrap">1010iv<a name="mind-medikamentengabe-cs-1010iv"> </a></td><td>NSAID - intravenös</td></tr><tr><td style="white-space:nowrap">1010po<a name="mind-medikamentengabe-cs-1010po"> </a></td><td>NSAID - oral</td></tr><tr><td style="white-space:nowrap">1010rl<a name="mind-medikamentengabe-cs-1010rl"> </a></td><td>NSAID - rektal</td></tr><tr><td style="white-space:nowrap">1011sc<a name="mind-medikamentengabe-cs-1011sc"> </a></td><td>Lokalanästhetikum - subkutan</td></tr><tr><td style="white-space:nowrap">1011td<a name="mind-medikamentengabe-cs-1011td"> </a></td><td>Lokalanästhetikum - transdermal</td></tr><tr><td style="white-space:nowrap">1097xx<a name="mind-medikamentengabe-cs-1097xx"> </a></td><td>vorbehandelt mit Analgetika - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1098ih<a name="mind-medikamentengabe-cs-1098ih"> </a></td><td>sonstiges Analgetikum - inhalativ</td></tr><tr><td style="white-space:nowrap">1098im<a name="mind-medikamentengabe-cs-1098im"> </a></td><td>sonstiges Analgetikum - intramuskulär</td></tr><tr><td style="white-space:nowrap">1098io<a name="mind-medikamentengabe-cs-1098io"> </a></td><td>sonstiges Analgetikum - intraossär</td></tr><tr><td style="white-space:nowrap">1098iv<a name="mind-medikamentengabe-cs-1098iv"> </a></td><td>sonstiges Analgetikum - intravenös</td></tr><tr><td style="white-space:nowrap">1098nl<a name="mind-medikamentengabe-cs-1098nl"> </a></td><td>sonstiges Analgetikum - intranasal</td></tr><tr><td style="white-space:nowrap">1098po<a name="mind-medikamentengabe-cs-1098po"> </a></td><td>sonstiges Analgetikum - oral</td></tr><tr><td style="white-space:nowrap">1098rl<a name="mind-medikamentengabe-cs-1098rl"> </a></td><td>sonstiges Analgetikum - rektal</td></tr><tr><td style="white-space:nowrap">1098sc<a name="mind-medikamentengabe-cs-1098sc"> </a></td><td>sonstiges Analgetikum - subkutan</td></tr><tr><td style="white-space:nowrap">1098sl<a name="mind-medikamentengabe-cs-1098sl"> </a></td><td>sonstiges Analgetikum - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1098td<a name="mind-medikamentengabe-cs-1098td"> </a></td><td>sonstiges Analgetikum - transdermal</td></tr><tr><td style="white-space:nowrap">1101io<a name="mind-medikamentengabe-cs-1101io"> </a></td><td>Betablocker - intraossär</td></tr><tr><td style="white-space:nowrap">1101iv<a name="mind-medikamentengabe-cs-1101iv"> </a></td><td>Betablocker - intravenös</td></tr><tr><td style="white-space:nowrap">1101po<a name="mind-medikamentengabe-cs-1101po"> </a></td><td>Betablocker - oral</td></tr><tr><td style="white-space:nowrap">1102io<a name="mind-medikamentengabe-cs-1102io"> </a></td><td>Amiodaron - intraossär</td></tr><tr><td style="white-space:nowrap">1102iv<a name="mind-medikamentengabe-cs-1102iv"> </a></td><td>Amiodaron - intravenös</td></tr><tr><td style="white-space:nowrap">1102po<a name="mind-medikamentengabe-cs-1102po"> </a></td><td>Amiodaron - oral</td></tr><tr><td style="white-space:nowrap">1103io<a name="mind-medikamentengabe-cs-1103io"> </a></td><td>Adenosin - intraossär</td></tr><tr><td style="white-space:nowrap">1103iv<a name="mind-medikamentengabe-cs-1103iv"> </a></td><td>Adenosin - intravenös</td></tr><tr><td style="white-space:nowrap">1104io<a name="mind-medikamentengabe-cs-1104io"> </a></td><td>Atropin - intraossär</td></tr><tr><td style="white-space:nowrap">1104iv<a name="mind-medikamentengabe-cs-1104iv"> </a></td><td>Atropin - intravenös</td></tr><tr><td style="white-space:nowrap">1105io<a name="mind-medikamentengabe-cs-1105io"> </a></td><td>Verapamil - intraossär</td></tr><tr><td style="white-space:nowrap">1105iv<a name="mind-medikamentengabe-cs-1105iv"> </a></td><td>Verapamil - intravenös</td></tr><tr><td style="white-space:nowrap">1105po<a name="mind-medikamentengabe-cs-1105po"> </a></td><td>Verapamil - oral</td></tr><tr><td style="white-space:nowrap">1106io<a name="mind-medikamentengabe-cs-1106io"> </a></td><td>Ajmalin - intraossär</td></tr><tr><td style="white-space:nowrap">1106iv<a name="mind-medikamentengabe-cs-1106iv"> </a></td><td>Ajmalin - intravenös</td></tr><tr><td style="white-space:nowrap">1107io<a name="mind-medikamentengabe-cs-1107io"> </a></td><td>Digitalisglykosid - intraossär</td></tr><tr><td style="white-space:nowrap">1107iv<a name="mind-medikamentengabe-cs-1107iv"> </a></td><td>Digitalisglykosid - intravenös</td></tr><tr><td style="white-space:nowrap">1108io<a name="mind-medikamentengabe-cs-1108io"> </a></td><td>Lidocain - intraossär</td></tr><tr><td style="white-space:nowrap">1108iv<a name="mind-medikamentengabe-cs-1108iv"> </a></td><td>Lidocain - intravenös</td></tr><tr><td style="white-space:nowrap">1197xx<a name="mind-medikamentengabe-cs-1197xx"> </a></td><td>vorbehandelt mit Antiarrhythmika - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1198ih<a name="mind-medikamentengabe-cs-1198ih"> </a></td><td>sonstiges Antiarrhythmikum - inhalativ</td></tr><tr><td style="white-space:nowrap">1198im<a name="mind-medikamentengabe-cs-1198im"> </a></td><td>sonstiges Antiarrhythmikum - intramuskulär</td></tr><tr><td style="white-space:nowrap">1198io<a name="mind-medikamentengabe-cs-1198io"> </a></td><td>sonstiges Antiarrhythmikum - intraossär</td></tr><tr><td style="white-space:nowrap">1198iv<a name="mind-medikamentengabe-cs-1198iv"> </a></td><td>sonstiges Antiarrhythmikum - intravenös</td></tr><tr><td style="white-space:nowrap">1198nl<a name="mind-medikamentengabe-cs-1198nl"> </a></td><td>sonstiges Antiarrhythmikum - intranasal</td></tr><tr><td style="white-space:nowrap">1198po<a name="mind-medikamentengabe-cs-1198po"> </a></td><td>sonstiges Antiarrhythmikum - oral</td></tr><tr><td style="white-space:nowrap">1198rl<a name="mind-medikamentengabe-cs-1198rl"> </a></td><td>sonstiges Antiarrhythmikum - rektal</td></tr><tr><td style="white-space:nowrap">1198sc<a name="mind-medikamentengabe-cs-1198sc"> </a></td><td>sonstiges Antiarrhythmikum - subkutan</td></tr><tr><td style="white-space:nowrap">1198sl<a name="mind-medikamentengabe-cs-1198sl"> </a></td><td>sonstiges Antiarrhythmikum - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1198td<a name="mind-medikamentengabe-cs-1198td"> </a></td><td>sonstiges Antiarrhythmikum - transdermal</td></tr><tr><td style="white-space:nowrap">1201io<a name="mind-medikamentengabe-cs-1201io"> </a></td><td>Flumazenil - intraossär</td></tr><tr><td style="white-space:nowrap">1201iv<a name="mind-medikamentengabe-cs-1201iv"> </a></td><td>Flumazenil - intravenös</td></tr><tr><td style="white-space:nowrap">1201nl<a name="mind-medikamentengabe-cs-1201nl"> </a></td><td>Flumazenil - intranasal</td></tr><tr><td style="white-space:nowrap">1202po<a name="mind-medikamentengabe-cs-1202po"> </a></td><td>Carbo medicinalis (Kohle) - oral</td></tr><tr><td style="white-space:nowrap">1203im<a name="mind-medikamentengabe-cs-1203im"> </a></td><td>Naloxon - intramuskulär</td></tr><tr><td style="white-space:nowrap">1203io<a name="mind-medikamentengabe-cs-1203io"> </a></td><td>Naloxon - intraossär</td></tr><tr><td style="white-space:nowrap">1203iv<a name="mind-medikamentengabe-cs-1203iv"> </a></td><td>Naloxon - intravenös</td></tr><tr><td style="white-space:nowrap">1203nl<a name="mind-medikamentengabe-cs-1203nl"> </a></td><td>Naloxon - intranasal</td></tr><tr><td style="white-space:nowrap">1203sc<a name="mind-medikamentengabe-cs-1203sc"> </a></td><td>Naloxon - subkutan</td></tr><tr><td style="white-space:nowrap">1204io<a name="mind-medikamentengabe-cs-1204io"> </a></td><td>Physostigmin - intraossär</td></tr><tr><td style="white-space:nowrap">1204iv<a name="mind-medikamentengabe-cs-1204iv"> </a></td><td>Physostigmin - intravenös</td></tr><tr><td style="white-space:nowrap">1205io<a name="mind-medikamentengabe-cs-1205io"> </a></td><td>Atropin (als Antidot) - intraossär</td></tr><tr><td style="white-space:nowrap">1205iv<a name="mind-medikamentengabe-cs-1205iv"> </a></td><td>Atropin (als Antidot) - intravenös</td></tr><tr><td style="white-space:nowrap">1206io<a name="mind-medikamentengabe-cs-1206io"> </a></td><td>Obidoxim - intraossär</td></tr><tr><td style="white-space:nowrap">1206iv<a name="mind-medikamentengabe-cs-1206iv"> </a></td><td>Obidoxim - intravenös</td></tr><tr><td style="white-space:nowrap">1207io<a name="mind-medikamentengabe-cs-1207io"> </a></td><td>Hydroxocobalamin - intraossär</td></tr><tr><td style="white-space:nowrap">1207iv<a name="mind-medikamentengabe-cs-1207iv"> </a></td><td>Hydroxocobalamin - intravenös</td></tr><tr><td style="white-space:nowrap">1208io<a name="mind-medikamentengabe-cs-1208io"> </a></td><td>Natriumthiosulfat - intraossär</td></tr><tr><td style="white-space:nowrap">1208iv<a name="mind-medikamentengabe-cs-1208iv"> </a></td><td>Natriumthiosulfat - intravenös</td></tr><tr><td style="white-space:nowrap">1209io<a name="mind-medikamentengabe-cs-1209io"> </a></td><td>4-Dimethylaminophenol (4-DMAP) - intraossär</td></tr><tr><td style="white-space:nowrap">1209iv<a name="mind-medikamentengabe-cs-1209iv"> </a></td><td>4-Dimethylaminophenol (4-DMAP) - intravenös</td></tr><tr><td style="white-space:nowrap">1210iv<a name="mind-medikamentengabe-cs-1210iv"> </a></td><td>Toloniumchlorid (Toluidinblau) - intravenös</td></tr><tr><td style="white-space:nowrap">1211io<a name="mind-medikamentengabe-cs-1211io"> </a></td><td>Methylthioniniumchlorid (Methylenblau) - intraossär</td></tr><tr><td style="white-space:nowrap">1211iv<a name="mind-medikamentengabe-cs-1211iv"> </a></td><td>Methylthioniniumchlorid (Methylenblau) - intravenös</td></tr><tr><td style="white-space:nowrap">1297xx<a name="mind-medikamentengabe-cs-1297xx"> </a></td><td>vorbehandelt mit Antidota - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1298ih<a name="mind-medikamentengabe-cs-1298ih"> </a></td><td>sonstiges Antidot - inhalativ</td></tr><tr><td style="white-space:nowrap">1298im<a name="mind-medikamentengabe-cs-1298im"> </a></td><td>sonstiges Antidot - intramuskulär</td></tr><tr><td style="white-space:nowrap">1298io<a name="mind-medikamentengabe-cs-1298io"> </a></td><td>sonstiges Antidot - intraossär</td></tr><tr><td style="white-space:nowrap">1298iv<a name="mind-medikamentengabe-cs-1298iv"> </a></td><td>sonstiges Antidot - intravenös</td></tr><tr><td style="white-space:nowrap">1298nl<a name="mind-medikamentengabe-cs-1298nl"> </a></td><td>sonstiges Antidot - intranasal</td></tr><tr><td style="white-space:nowrap">1298po<a name="mind-medikamentengabe-cs-1298po"> </a></td><td>sonstiges Antidot - oral</td></tr><tr><td style="white-space:nowrap">1298rl<a name="mind-medikamentengabe-cs-1298rl"> </a></td><td>sonstiges Antidot - rektal</td></tr><tr><td style="white-space:nowrap">1298sc<a name="mind-medikamentengabe-cs-1298sc"> </a></td><td>sonstiges Antidot - subkutan</td></tr><tr><td style="white-space:nowrap">1298sl<a name="mind-medikamentengabe-cs-1298sl"> </a></td><td>sonstiges Antidot - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1298td<a name="mind-medikamentengabe-cs-1298td"> </a></td><td>sonstiges Antidot - transdermal</td></tr><tr><td style="white-space:nowrap">1301io<a name="mind-medikamentengabe-cs-1301io"> </a></td><td>Dimenhydrinat - intraossär</td></tr><tr><td style="white-space:nowrap">1301iv<a name="mind-medikamentengabe-cs-1301iv"> </a></td><td>Dimenhydrinat - intravenös</td></tr><tr><td style="white-space:nowrap">1301po<a name="mind-medikamentengabe-cs-1301po"> </a></td><td>Dimenhydrinat - oral</td></tr><tr><td style="white-space:nowrap">1301rl<a name="mind-medikamentengabe-cs-1301rl"> </a></td><td>Dimenhydrinat - rektal</td></tr><tr><td style="white-space:nowrap">1302io<a name="mind-medikamentengabe-cs-1302io"> </a></td><td>Metoclopramid - intraossär</td></tr><tr><td style="white-space:nowrap">1302iv<a name="mind-medikamentengabe-cs-1302iv"> </a></td><td>Metoclopramid - intravenös</td></tr><tr><td style="white-space:nowrap">1302po<a name="mind-medikamentengabe-cs-1302po"> </a></td><td>Metoclopramid - oral</td></tr><tr><td style="white-space:nowrap">1303io<a name="mind-medikamentengabe-cs-1303io"> </a></td><td>5HT3-Antagonist - intraossär</td></tr><tr><td style="white-space:nowrap">1303iv<a name="mind-medikamentengabe-cs-1303iv"> </a></td><td>5HT3-Antagonist - intravenös</td></tr><tr><td style="white-space:nowrap">1303po<a name="mind-medikamentengabe-cs-1303po"> </a></td><td>5HT3-Antagonist - oral</td></tr><tr><td style="white-space:nowrap">1303rl<a name="mind-medikamentengabe-cs-1303rl"> </a></td><td>5HT3-Antagonist - rektal</td></tr><tr><td style="white-space:nowrap">1397xx<a name="mind-medikamentengabe-cs-1397xx"> </a></td><td>vorbehandelt mit Antiemetika - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1398ih<a name="mind-medikamentengabe-cs-1398ih"> </a></td><td>sonstiges Antiemetikum - inhalativ</td></tr><tr><td style="white-space:nowrap">1398im<a name="mind-medikamentengabe-cs-1398im"> </a></td><td>sonstiges Antiemetikum - intramuskulär</td></tr><tr><td style="white-space:nowrap">1398io<a name="mind-medikamentengabe-cs-1398io"> </a></td><td>sonstiges Antiemetikum - intraossär</td></tr><tr><td style="white-space:nowrap">1398iv<a name="mind-medikamentengabe-cs-1398iv"> </a></td><td>sonstiges Antiemetikum - intravenös</td></tr><tr><td style="white-space:nowrap">1398nl<a name="mind-medikamentengabe-cs-1398nl"> </a></td><td>sonstiges Antiemetikum - intranasal</td></tr><tr><td style="white-space:nowrap">1398po<a name="mind-medikamentengabe-cs-1398po"> </a></td><td>sonstiges Antiemetikum - oral</td></tr><tr><td style="white-space:nowrap">1398rl<a name="mind-medikamentengabe-cs-1398rl"> </a></td><td>sonstiges Antiemetikum - rektal</td></tr><tr><td style="white-space:nowrap">1398sc<a name="mind-medikamentengabe-cs-1398sc"> </a></td><td>sonstiges Antiemetikum - subkutan</td></tr><tr><td style="white-space:nowrap">1398sl<a name="mind-medikamentengabe-cs-1398sl"> </a></td><td>sonstiges Antiemetikum - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1398td<a name="mind-medikamentengabe-cs-1398td"> </a></td><td>sonstiges Antiemetikum - transdermal</td></tr><tr><td style="white-space:nowrap">1401io<a name="mind-medikamentengabe-cs-1401io"> </a></td><td>Clonazepam - intraossär</td></tr><tr><td style="white-space:nowrap">1401iv<a name="mind-medikamentengabe-cs-1401iv"> </a></td><td>Clonazepam - intravenös</td></tr><tr><td style="white-space:nowrap">1402im<a name="mind-medikamentengabe-cs-1402im"> </a></td><td>Diazepam - intramuskulär</td></tr><tr><td style="white-space:nowrap">1402io<a name="mind-medikamentengabe-cs-1402io"> </a></td><td>Diazepam - intraossär</td></tr><tr><td style="white-space:nowrap">1402iv<a name="mind-medikamentengabe-cs-1402iv"> </a></td><td>Diazepam - intravenös</td></tr><tr><td style="white-space:nowrap">1402nl<a name="mind-medikamentengabe-cs-1402nl"> </a></td><td>Diazepam - intranasal</td></tr><tr><td style="white-space:nowrap">1402po<a name="mind-medikamentengabe-cs-1402po"> </a></td><td>Diazepam - oral</td></tr><tr><td style="white-space:nowrap">1402rl<a name="mind-medikamentengabe-cs-1402rl"> </a></td><td>Diazepam - rektal</td></tr><tr><td style="white-space:nowrap">1402sc<a name="mind-medikamentengabe-cs-1402sc"> </a></td><td>Diazepam - subkutan</td></tr><tr><td style="white-space:nowrap">1402sl<a name="mind-medikamentengabe-cs-1402sl"> </a></td><td>Diazepam - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1403im<a name="mind-medikamentengabe-cs-1403im"> </a></td><td>Lorazepam - intramuskulär</td></tr><tr><td style="white-space:nowrap">1403io<a name="mind-medikamentengabe-cs-1403io"> </a></td><td>Lorazepam - intraossär</td></tr><tr><td style="white-space:nowrap">1403iv<a name="mind-medikamentengabe-cs-1403iv"> </a></td><td>Lorazepam - intravenös</td></tr><tr><td style="white-space:nowrap">1403nl<a name="mind-medikamentengabe-cs-1403nl"> </a></td><td>Lorazepam - intranasal</td></tr><tr><td style="white-space:nowrap">1403po<a name="mind-medikamentengabe-cs-1403po"> </a></td><td>Lorazepam - oral</td></tr><tr><td style="white-space:nowrap">1403rl<a name="mind-medikamentengabe-cs-1403rl"> </a></td><td>Lorazepam - rektal</td></tr><tr><td style="white-space:nowrap">1403sc<a name="mind-medikamentengabe-cs-1403sc"> </a></td><td>Lorazepam - subkutan</td></tr><tr><td style="white-space:nowrap">1403sl<a name="mind-medikamentengabe-cs-1403sl"> </a></td><td>Lorazepam - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1404im<a name="mind-medikamentengabe-cs-1404im"> </a></td><td>Midazolam - intramuskulär</td></tr><tr><td style="white-space:nowrap">1404io<a name="mind-medikamentengabe-cs-1404io"> </a></td><td>Midazolam - intraossär</td></tr><tr><td style="white-space:nowrap">1404iv<a name="mind-medikamentengabe-cs-1404iv"> </a></td><td>Midazolam - intravenös</td></tr><tr><td style="white-space:nowrap">1404nl<a name="mind-medikamentengabe-cs-1404nl"> </a></td><td>Midazolam - intranasal</td></tr><tr><td style="white-space:nowrap">1404po<a name="mind-medikamentengabe-cs-1404po"> </a></td><td>Midazolam - oral</td></tr><tr><td style="white-space:nowrap">1404rl<a name="mind-medikamentengabe-cs-1404rl"> </a></td><td>Midazolam - rektal</td></tr><tr><td style="white-space:nowrap">1404sc<a name="mind-medikamentengabe-cs-1404sc"> </a></td><td>Midazolam - subkutan</td></tr><tr><td style="white-space:nowrap">1404sl<a name="mind-medikamentengabe-cs-1404sl"> </a></td><td>Midazolam - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1405io<a name="mind-medikamentengabe-cs-1405io"> </a></td><td>Phenytoin - intraossär</td></tr><tr><td style="white-space:nowrap">1405iv<a name="mind-medikamentengabe-cs-1405iv"> </a></td><td>Phenytoin - intravenös</td></tr><tr><td style="white-space:nowrap">1406io<a name="mind-medikamentengabe-cs-1406io"> </a></td><td>Levetiracetam - intraossär</td></tr><tr><td style="white-space:nowrap">1406iv<a name="mind-medikamentengabe-cs-1406iv"> </a></td><td>Levetiracetam - intravenös</td></tr><tr><td style="white-space:nowrap">1497xx<a name="mind-medikamentengabe-cs-1497xx"> </a></td><td>vorbehandelt mit Sedativa/Antiepileptika - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1498ih<a name="mind-medikamentengabe-cs-1498ih"> </a></td><td>sonstiges Sedativum/Antiepileptikum - inhalativ</td></tr><tr><td style="white-space:nowrap">1498im<a name="mind-medikamentengabe-cs-1498im"> </a></td><td>sonstiges Sedativum/Antiepileptikum - intramuskulär</td></tr><tr><td style="white-space:nowrap">1498io<a name="mind-medikamentengabe-cs-1498io"> </a></td><td>sonstiges Sedativum/Antiepileptikum - intraossär</td></tr><tr><td style="white-space:nowrap">1498iv<a name="mind-medikamentengabe-cs-1498iv"> </a></td><td>sonstiges Sedativum/Antiepileptikum - intravenös</td></tr><tr><td style="white-space:nowrap">1498nl<a name="mind-medikamentengabe-cs-1498nl"> </a></td><td>sonstiges Sedativum/Antiepileptikum - intranasal</td></tr><tr><td style="white-space:nowrap">1498po<a name="mind-medikamentengabe-cs-1498po"> </a></td><td>sonstiges Sedativum/Antiepileptikum - oral</td></tr><tr><td style="white-space:nowrap">1498rl<a name="mind-medikamentengabe-cs-1498rl"> </a></td><td>sonstiges Sedativum/Antiepileptikum - rektal</td></tr><tr><td style="white-space:nowrap">1498sc<a name="mind-medikamentengabe-cs-1498sc"> </a></td><td>sonstiges Sedativum/Antiepileptikum - subkutan</td></tr><tr><td style="white-space:nowrap">1498sl<a name="mind-medikamentengabe-cs-1498sl"> </a></td><td>sonstiges Sedativum/Antiepileptikum - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1498td<a name="mind-medikamentengabe-cs-1498td"> </a></td><td>sonstiges Sedativum/Antiepileptikum - transdermal</td></tr><tr><td style="white-space:nowrap">1501iv<a name="mind-medikamentengabe-cs-1501iv"> </a></td><td>Urapidil - intravenös</td></tr><tr><td style="white-space:nowrap">1502io<a name="mind-medikamentengabe-cs-1502io"> </a></td><td>Glyceroltrinitrat - intraossär</td></tr><tr><td style="white-space:nowrap">1502iv<a name="mind-medikamentengabe-cs-1502iv"> </a></td><td>Glyceroltrinitrat - intravenös</td></tr><tr><td style="white-space:nowrap">1502sl<a name="mind-medikamentengabe-cs-1502sl"> </a></td><td>Glyceroltrinitrat - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1503io<a name="mind-medikamentengabe-cs-1503io"> </a></td><td>Clonidin - intraossär</td></tr><tr><td style="white-space:nowrap">1503iv<a name="mind-medikamentengabe-cs-1503iv"> </a></td><td>Clonidin - intravenös</td></tr><tr><td style="white-space:nowrap">1503po<a name="mind-medikamentengabe-cs-1503po"> </a></td><td>Clonidin - oral</td></tr><tr><td style="white-space:nowrap">1509io<a name="mind-medikamentengabe-cs-1509io"> </a></td><td>Urapidil - intraossär</td></tr><tr><td style="white-space:nowrap">1597xx<a name="mind-medikamentengabe-cs-1597xx"> </a></td><td>vorbehandelt mit Antihypertensiva/Vasodilatantien - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1598ih<a name="mind-medikamentengabe-cs-1598ih"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - inhalativ</td></tr><tr><td style="white-space:nowrap">1598im<a name="mind-medikamentengabe-cs-1598im"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - intramuskulär</td></tr><tr><td style="white-space:nowrap">1598io<a name="mind-medikamentengabe-cs-1598io"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - intraossär</td></tr><tr><td style="white-space:nowrap">1598iv<a name="mind-medikamentengabe-cs-1598iv"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - intravenös</td></tr><tr><td style="white-space:nowrap">1598nl<a name="mind-medikamentengabe-cs-1598nl"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - intranasal</td></tr><tr><td style="white-space:nowrap">1598po<a name="mind-medikamentengabe-cs-1598po"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - oral</td></tr><tr><td style="white-space:nowrap">1598rl<a name="mind-medikamentengabe-cs-1598rl"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - rektal</td></tr><tr><td style="white-space:nowrap">1598sc<a name="mind-medikamentengabe-cs-1598sc"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - subkutan</td></tr><tr><td style="white-space:nowrap">1598sl<a name="mind-medikamentengabe-cs-1598sl"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1598td<a name="mind-medikamentengabe-cs-1598td"> </a></td><td>sonstiges Antihypertensivum/Vasodilatans - transdermal</td></tr><tr><td style="white-space:nowrap">1601ih<a name="mind-medikamentengabe-cs-1601ih"> </a></td><td>Salbutamol - inhalativ</td></tr><tr><td style="white-space:nowrap">1601io<a name="mind-medikamentengabe-cs-1601io"> </a></td><td>Salbutamol - intraossär</td></tr><tr><td style="white-space:nowrap">1601iv<a name="mind-medikamentengabe-cs-1601iv"> </a></td><td>Salbutamol - intravenös</td></tr><tr><td style="white-space:nowrap">1602ih<a name="mind-medikamentengabe-cs-1602ih"> </a></td><td>Reproterol - inhalativ</td></tr><tr><td style="white-space:nowrap">1602io<a name="mind-medikamentengabe-cs-1602io"> </a></td><td>Reproterol - intraossär</td></tr><tr><td style="white-space:nowrap">1602iv<a name="mind-medikamentengabe-cs-1602iv"> </a></td><td>Reproterol - intravenös</td></tr><tr><td style="white-space:nowrap">1603ih<a name="mind-medikamentengabe-cs-1603ih"> </a></td><td>Ipratropiumbromid - inhalativ</td></tr><tr><td style="white-space:nowrap">1603im<a name="mind-medikamentengabe-cs-1603im"> </a></td><td>Ipratropiumbromid - intramuskulär</td></tr><tr><td style="white-space:nowrap">1603io<a name="mind-medikamentengabe-cs-1603io"> </a></td><td>Ipratropiumbromid - intraossär</td></tr><tr><td style="white-space:nowrap">1603iv<a name="mind-medikamentengabe-cs-1603iv"> </a></td><td>Ipratropiumbromid - intravenös</td></tr><tr><td style="white-space:nowrap">1603sc<a name="mind-medikamentengabe-cs-1603sc"> </a></td><td>Ipratropiumbromid - subkutan</td></tr><tr><td style="white-space:nowrap">1604io<a name="mind-medikamentengabe-cs-1604io"> </a></td><td>Theophyllin - intraossär</td></tr><tr><td style="white-space:nowrap">1604iv<a name="mind-medikamentengabe-cs-1604iv"> </a></td><td>Theophyllin - intravenös</td></tr><tr><td style="white-space:nowrap">1604po<a name="mind-medikamentengabe-cs-1604po"> </a></td><td>Theophyllin - oral</td></tr><tr><td style="white-space:nowrap">1697xx<a name="mind-medikamentengabe-cs-1697xx"> </a></td><td>vorbehandelt mit Bronchodilatantien - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1698ih<a name="mind-medikamentengabe-cs-1698ih"> </a></td><td>sonstiges Bronchodilatans - inhalativ</td></tr><tr><td style="white-space:nowrap">1698im<a name="mind-medikamentengabe-cs-1698im"> </a></td><td>sonstiges Bronchodilatans - intramuskulär</td></tr><tr><td style="white-space:nowrap">1698io<a name="mind-medikamentengabe-cs-1698io"> </a></td><td>sonstiges Bronchodilatans - intraossär</td></tr><tr><td style="white-space:nowrap">1698iv<a name="mind-medikamentengabe-cs-1698iv"> </a></td><td>sonstiges Bronchodilatans - intravenös</td></tr><tr><td style="white-space:nowrap">1698nl<a name="mind-medikamentengabe-cs-1698nl"> </a></td><td>sonstiges Bronchodilatans - intranasal</td></tr><tr><td style="white-space:nowrap">1698po<a name="mind-medikamentengabe-cs-1698po"> </a></td><td>sonstiges Bronchodilatans - oral</td></tr><tr><td style="white-space:nowrap">1698rl<a name="mind-medikamentengabe-cs-1698rl"> </a></td><td>sonstiges Bronchodilatans - rektal</td></tr><tr><td style="white-space:nowrap">1698sc<a name="mind-medikamentengabe-cs-1698sc"> </a></td><td>sonstiges Bronchodilatans - subkutan</td></tr><tr><td style="white-space:nowrap">1698sl<a name="mind-medikamentengabe-cs-1698sl"> </a></td><td>sonstiges Bronchodilatans - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1698td<a name="mind-medikamentengabe-cs-1698td"> </a></td><td>sonstiges Bronchodilatans - transdermal</td></tr><tr><td style="white-space:nowrap">1701io<a name="mind-medikamentengabe-cs-1701io"> </a></td><td>Furosemid - intraossär</td></tr><tr><td style="white-space:nowrap">1701iv<a name="mind-medikamentengabe-cs-1701iv"> </a></td><td>Furosemid - intravenös</td></tr><tr><td style="white-space:nowrap">1797xx<a name="mind-medikamentengabe-cs-1797xx"> </a></td><td>vorbehandelt mit Diuretika - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1798ih<a name="mind-medikamentengabe-cs-1798ih"> </a></td><td>sonstiges Diuretikum - inhalativ</td></tr><tr><td style="white-space:nowrap">1798im<a name="mind-medikamentengabe-cs-1798im"> </a></td><td>sonstiges Diuretikum - intramuskulär</td></tr><tr><td style="white-space:nowrap">1798io<a name="mind-medikamentengabe-cs-1798io"> </a></td><td>sonstiges Diuretikum - intraossär</td></tr><tr><td style="white-space:nowrap">1798iv<a name="mind-medikamentengabe-cs-1798iv"> </a></td><td>sonstiges Diuretikum - intravenös</td></tr><tr><td style="white-space:nowrap">1798nl<a name="mind-medikamentengabe-cs-1798nl"> </a></td><td>sonstiges Diuretikum - intranasal</td></tr><tr><td style="white-space:nowrap">1798po<a name="mind-medikamentengabe-cs-1798po"> </a></td><td>sonstiges Diuretikum - oral</td></tr><tr><td style="white-space:nowrap">1798rl<a name="mind-medikamentengabe-cs-1798rl"> </a></td><td>sonstiges Diuretikum - rektal</td></tr><tr><td style="white-space:nowrap">1798sc<a name="mind-medikamentengabe-cs-1798sc"> </a></td><td>sonstiges Diuretikum - subkutan</td></tr><tr><td style="white-space:nowrap">1798sl<a name="mind-medikamentengabe-cs-1798sl"> </a></td><td>sonstiges Diuretikum - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1798td<a name="mind-medikamentengabe-cs-1798td"> </a></td><td>sonstiges Diuretikum - transdermal</td></tr><tr><td style="white-space:nowrap">1801ih<a name="mind-medikamentengabe-cs-1801ih"> </a></td><td>Epinephrin - inhalativ</td></tr><tr><td style="white-space:nowrap">1801im<a name="mind-medikamentengabe-cs-1801im"> </a></td><td>Epinephrin - intramuskulär</td></tr><tr><td style="white-space:nowrap">1801io<a name="mind-medikamentengabe-cs-1801io"> </a></td><td>Epinephrin - intraossär</td></tr><tr><td style="white-space:nowrap">1801iv<a name="mind-medikamentengabe-cs-1801iv"> </a></td><td>Epinephrin - intravenös</td></tr><tr><td style="white-space:nowrap">1801nl<a name="mind-medikamentengabe-cs-1801nl"> </a></td><td>Epinephrin - intranasal</td></tr><tr><td style="white-space:nowrap">1801sc<a name="mind-medikamentengabe-cs-1801sc"> </a></td><td>Epinephrin - subkutan</td></tr><tr><td style="white-space:nowrap">1802io<a name="mind-medikamentengabe-cs-1802io"> </a></td><td>Norepinephrin - intraossär</td></tr><tr><td style="white-space:nowrap">1802iv<a name="mind-medikamentengabe-cs-1802iv"> </a></td><td>Norepinephrin - intravenös</td></tr><tr><td style="white-space:nowrap">1803io<a name="mind-medikamentengabe-cs-1803io"> </a></td><td>Cafedrin/Theoadrenalin - intraossär</td></tr><tr><td style="white-space:nowrap">1803iv<a name="mind-medikamentengabe-cs-1803iv"> </a></td><td>Cafedrin/Theoadrenalin - intravenös</td></tr><tr><td style="white-space:nowrap">1804io<a name="mind-medikamentengabe-cs-1804io"> </a></td><td>Dobutamin - intraossär</td></tr><tr><td style="white-space:nowrap">1804iv<a name="mind-medikamentengabe-cs-1804iv"> </a></td><td>Dobutamin - intravenös</td></tr><tr><td style="white-space:nowrap">1805io<a name="mind-medikamentengabe-cs-1805io"> </a></td><td>Vasopressin - intraossär</td></tr><tr><td style="white-space:nowrap">1805iv<a name="mind-medikamentengabe-cs-1805iv"> </a></td><td>Vasopressin - intravenös</td></tr><tr><td style="white-space:nowrap">1897xx<a name="mind-medikamentengabe-cs-1897xx"> </a></td><td>vorbehandelt mit Katecholaminen - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1898ih<a name="mind-medikamentengabe-cs-1898ih"> </a></td><td>sonstige Katecholamine - inhalativ</td></tr><tr><td style="white-space:nowrap">1898im<a name="mind-medikamentengabe-cs-1898im"> </a></td><td>sonstige Katecholamine - intramuskulär</td></tr><tr><td style="white-space:nowrap">1898io<a name="mind-medikamentengabe-cs-1898io"> </a></td><td>sonstige Katecholamine - intraossär</td></tr><tr><td style="white-space:nowrap">1898iv<a name="mind-medikamentengabe-cs-1898iv"> </a></td><td>sonstige Katecholamine - intravenös</td></tr><tr><td style="white-space:nowrap">1898nl<a name="mind-medikamentengabe-cs-1898nl"> </a></td><td>sonstige Katecholamine - intranasal</td></tr><tr><td style="white-space:nowrap">1898po<a name="mind-medikamentengabe-cs-1898po"> </a></td><td>sonstige Katecholamine - oral</td></tr><tr><td style="white-space:nowrap">1898rl<a name="mind-medikamentengabe-cs-1898rl"> </a></td><td>sonstige Katecholamine - rektal</td></tr><tr><td style="white-space:nowrap">1898sc<a name="mind-medikamentengabe-cs-1898sc"> </a></td><td>sonstige Katecholamine - subkutan</td></tr><tr><td style="white-space:nowrap">1898sl<a name="mind-medikamentengabe-cs-1898sl"> </a></td><td>sonstige Katecholamine - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1898td<a name="mind-medikamentengabe-cs-1898td"> </a></td><td>sonstige Katecholamine - transdermal</td></tr><tr><td style="white-space:nowrap">1901ih<a name="mind-medikamentengabe-cs-1901ih"> </a></td><td>Dexametason - inhalativ</td></tr><tr><td style="white-space:nowrap">1901io<a name="mind-medikamentengabe-cs-1901io"> </a></td><td>Dexametason - intraossär</td></tr><tr><td style="white-space:nowrap">1901iv<a name="mind-medikamentengabe-cs-1901iv"> </a></td><td>Dexametason - intravenös</td></tr><tr><td style="white-space:nowrap">1902ih<a name="mind-medikamentengabe-cs-1902ih"> </a></td><td>Methyl-/Prednisolon - inhalativ</td></tr><tr><td style="white-space:nowrap">1902io<a name="mind-medikamentengabe-cs-1902io"> </a></td><td>Methyl-/Prednisolon - intraossär</td></tr><tr><td style="white-space:nowrap">1902iv<a name="mind-medikamentengabe-cs-1902iv"> </a></td><td>Methyl-/Prednisolon - intravenös</td></tr><tr><td style="white-space:nowrap">1902rl<a name="mind-medikamentengabe-cs-1902rl"> </a></td><td>Methyl-/Prednisolon - rektal</td></tr><tr><td style="white-space:nowrap">1997xx<a name="mind-medikamentengabe-cs-1997xx"> </a></td><td>vorbehandelt mit Kortikosteroiden - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">1998ih<a name="mind-medikamentengabe-cs-1998ih"> </a></td><td>sonstiges Corticoid - inhalativ</td></tr><tr><td style="white-space:nowrap">1998im<a name="mind-medikamentengabe-cs-1998im"> </a></td><td>sonstiges Corticoid - intramuskulär</td></tr><tr><td style="white-space:nowrap">1998io<a name="mind-medikamentengabe-cs-1998io"> </a></td><td>sonstiges Corticoid - intraossär</td></tr><tr><td style="white-space:nowrap">1998iv<a name="mind-medikamentengabe-cs-1998iv"> </a></td><td>sonstiges Corticoid - intravenös</td></tr><tr><td style="white-space:nowrap">1998nl<a name="mind-medikamentengabe-cs-1998nl"> </a></td><td>sonstiges Corticoid - intranasal</td></tr><tr><td style="white-space:nowrap">1998po<a name="mind-medikamentengabe-cs-1998po"> </a></td><td>sonstiges Corticoid - oral</td></tr><tr><td style="white-space:nowrap">1998rl<a name="mind-medikamentengabe-cs-1998rl"> </a></td><td>sonstiges Corticoid - rektal</td></tr><tr><td style="white-space:nowrap">1998sc<a name="mind-medikamentengabe-cs-1998sc"> </a></td><td>sonstiges Corticoid - subkutan</td></tr><tr><td style="white-space:nowrap">1998sl<a name="mind-medikamentengabe-cs-1998sl"> </a></td><td>sonstiges Corticoid - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">1998td<a name="mind-medikamentengabe-cs-1998td"> </a></td><td>sonstiges Corticoid - transdermal</td></tr><tr><td style="white-space:nowrap">2001im<a name="mind-medikamentengabe-cs-2001im"> </a></td><td>Suxamethonium - intramuskulär</td></tr><tr><td style="white-space:nowrap">2001io<a name="mind-medikamentengabe-cs-2001io"> </a></td><td>Suxamethonium - intraossär</td></tr><tr><td style="white-space:nowrap">2001iv<a name="mind-medikamentengabe-cs-2001iv"> </a></td><td>Suxamethonium - intravenös</td></tr><tr><td style="white-space:nowrap">2002io<a name="mind-medikamentengabe-cs-2002io"> </a></td><td>Rocuronium - intraossär</td></tr><tr><td style="white-space:nowrap">2002iv<a name="mind-medikamentengabe-cs-2002iv"> </a></td><td>Rocuronium - intravenös</td></tr><tr><td style="white-space:nowrap">2097xx<a name="mind-medikamentengabe-cs-2097xx"> </a></td><td>vorbehandelt mit Muskelrelaxantien - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">2098ih<a name="mind-medikamentengabe-cs-2098ih"> </a></td><td>sonstiges Muskelrelaxans - inhalativ</td></tr><tr><td style="white-space:nowrap">2098im<a name="mind-medikamentengabe-cs-2098im"> </a></td><td>sonstiges Muskelrelaxans - intramuskulär</td></tr><tr><td style="white-space:nowrap">2098io<a name="mind-medikamentengabe-cs-2098io"> </a></td><td>sonstiges Muskelrelaxans - intraossär</td></tr><tr><td style="white-space:nowrap">2098iv<a name="mind-medikamentengabe-cs-2098iv"> </a></td><td>sonstiges Muskelrelaxans - intravenös</td></tr><tr><td style="white-space:nowrap">2098nl<a name="mind-medikamentengabe-cs-2098nl"> </a></td><td>sonstiges Muskelrelaxans - intranasal</td></tr><tr><td style="white-space:nowrap">2098po<a name="mind-medikamentengabe-cs-2098po"> </a></td><td>sonstiges Muskelrelaxans - oral</td></tr><tr><td style="white-space:nowrap">2098rl<a name="mind-medikamentengabe-cs-2098rl"> </a></td><td>sonstiges Muskelrelaxans - rektal</td></tr><tr><td style="white-space:nowrap">2098sc<a name="mind-medikamentengabe-cs-2098sc"> </a></td><td>sonstiges Muskelrelaxans - subkutan</td></tr><tr><td style="white-space:nowrap">2098sl<a name="mind-medikamentengabe-cs-2098sl"> </a></td><td>sonstiges Muskelrelaxans - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">2098td<a name="mind-medikamentengabe-cs-2098td"> </a></td><td>sonstiges Muskelrelaxans - transdermal</td></tr><tr><td style="white-space:nowrap">2101io<a name="mind-medikamentengabe-cs-2101io"> </a></td><td>Etomidat - intraossär</td></tr><tr><td style="white-space:nowrap">2101iv<a name="mind-medikamentengabe-cs-2101iv"> </a></td><td>Etomidat - intravenös</td></tr><tr><td style="white-space:nowrap">2102io<a name="mind-medikamentengabe-cs-2102io"> </a></td><td>Propofol - intraossär</td></tr><tr><td style="white-space:nowrap">2102iv<a name="mind-medikamentengabe-cs-2102iv"> </a></td><td>Propofol - intravenös</td></tr><tr><td style="white-space:nowrap">2103io<a name="mind-medikamentengabe-cs-2103io"> </a></td><td>Thiopental - intraossär</td></tr><tr><td style="white-space:nowrap">2103iv<a name="mind-medikamentengabe-cs-2103iv"> </a></td><td>Thiopental - intravenös</td></tr><tr><td style="white-space:nowrap">2197xx<a name="mind-medikamentengabe-cs-2197xx"> </a></td><td>vorbehandelt mit Narkotika - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">2198ih<a name="mind-medikamentengabe-cs-2198ih"> </a></td><td>sonstiges Narkotikum - inhalativ</td></tr><tr><td style="white-space:nowrap">2198im<a name="mind-medikamentengabe-cs-2198im"> </a></td><td>sonstiges Narkotikum - intramuskulär</td></tr><tr><td style="white-space:nowrap">2198io<a name="mind-medikamentengabe-cs-2198io"> </a></td><td>sonstiges Narkotikum - intraossär</td></tr><tr><td style="white-space:nowrap">2198iv<a name="mind-medikamentengabe-cs-2198iv"> </a></td><td>sonstiges Narkotikum - intravenös</td></tr><tr><td style="white-space:nowrap">2198nl<a name="mind-medikamentengabe-cs-2198nl"> </a></td><td>sonstiges Narkotikum - intranasal</td></tr><tr><td style="white-space:nowrap">2198po<a name="mind-medikamentengabe-cs-2198po"> </a></td><td>sonstiges Narkotikum - oral</td></tr><tr><td style="white-space:nowrap">2198rl<a name="mind-medikamentengabe-cs-2198rl"> </a></td><td>sonstiges Narkotikum - rektal</td></tr><tr><td style="white-space:nowrap">2198sc<a name="mind-medikamentengabe-cs-2198sc"> </a></td><td>sonstiges Narkotikum - subkutan</td></tr><tr><td style="white-space:nowrap">2198sl<a name="mind-medikamentengabe-cs-2198sl"> </a></td><td>sonstiges Narkotikum - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">2198td<a name="mind-medikamentengabe-cs-2198td"> </a></td><td>sonstiges Narkotikum - transdermal</td></tr><tr><td style="white-space:nowrap">2201im<a name="mind-medikamentengabe-cs-2201im"> </a></td><td>Haloperidol - intramuskulär</td></tr><tr><td style="white-space:nowrap">2201io<a name="mind-medikamentengabe-cs-2201io"> </a></td><td>Haloperidol - intraossär</td></tr><tr><td style="white-space:nowrap">2201iv<a name="mind-medikamentengabe-cs-2201iv"> </a></td><td>Haloperidol - intravenös</td></tr><tr><td style="white-space:nowrap">2202im<a name="mind-medikamentengabe-cs-2202im"> </a></td><td>Promethazin - intramuskulär</td></tr><tr><td style="white-space:nowrap">2202io<a name="mind-medikamentengabe-cs-2202io"> </a></td><td>Promethazin - intraossär</td></tr><tr><td style="white-space:nowrap">2202iv<a name="mind-medikamentengabe-cs-2202iv"> </a></td><td>Promethazin - intravenös</td></tr><tr><td style="white-space:nowrap">2297xx<a name="mind-medikamentengabe-cs-2297xx"> </a></td><td>vorbehandelt mit Psychopharmaka - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">2298ih<a name="mind-medikamentengabe-cs-2298ih"> </a></td><td>sonstige Psychopharmaka - inhalativ</td></tr><tr><td style="white-space:nowrap">2298im<a name="mind-medikamentengabe-cs-2298im"> </a></td><td>sonstige Psychopharmaka - intramuskulär</td></tr><tr><td style="white-space:nowrap">2298io<a name="mind-medikamentengabe-cs-2298io"> </a></td><td>sonstige Psychopharmaka - intraossär</td></tr><tr><td style="white-space:nowrap">2298iv<a name="mind-medikamentengabe-cs-2298iv"> </a></td><td>sonstige Psychopharmaka - intravenös</td></tr><tr><td style="white-space:nowrap">2298nl<a name="mind-medikamentengabe-cs-2298nl"> </a></td><td>sonstige Psychopharmaka - intranasal</td></tr><tr><td style="white-space:nowrap">2298po<a name="mind-medikamentengabe-cs-2298po"> </a></td><td>sonstige Psychopharmaka - oral</td></tr><tr><td style="white-space:nowrap">2298rl<a name="mind-medikamentengabe-cs-2298rl"> </a></td><td>sonstige Psychopharmaka - rektal</td></tr><tr><td style="white-space:nowrap">2298sc<a name="mind-medikamentengabe-cs-2298sc"> </a></td><td>sonstige Psychopharmaka - subkutan</td></tr><tr><td style="white-space:nowrap">2298sl<a name="mind-medikamentengabe-cs-2298sl"> </a></td><td>sonstige Psychopharmaka - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">2298td<a name="mind-medikamentengabe-cs-2298td"> </a></td><td>sonstige Psychopharmaka - transdermal</td></tr><tr><td style="white-space:nowrap">2301io<a name="mind-medikamentengabe-cs-2301io"> </a></td><td>UF Heparin - intraossär</td></tr><tr><td style="white-space:nowrap">2301iv<a name="mind-medikamentengabe-cs-2301iv"> </a></td><td>UF Heparin - intravenös</td></tr><tr><td style="white-space:nowrap">2301sc<a name="mind-medikamentengabe-cs-2301sc"> </a></td><td>UF Heparin - subkutan</td></tr><tr><td style="white-space:nowrap">2302sc<a name="mind-medikamentengabe-cs-2302sc"> </a></td><td>NM Heparin - subkutan</td></tr><tr><td style="white-space:nowrap">2397xx<a name="mind-medikamentengabe-cs-2397xx"> </a></td><td>vorbehandelt mit Antikoagulanzien - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">2398im<a name="mind-medikamentengabe-cs-2398im"> </a></td><td>sonstige Antikoagulanzien - intramuskulär</td></tr><tr><td style="white-space:nowrap">2398io<a name="mind-medikamentengabe-cs-2398io"> </a></td><td>sonstige Antikoagulanzien - intraossär</td></tr><tr><td style="white-space:nowrap">2398iv<a name="mind-medikamentengabe-cs-2398iv"> </a></td><td>sonstige Antikoagulanzien - intravenös</td></tr><tr><td style="white-space:nowrap">2398po<a name="mind-medikamentengabe-cs-2398po"> </a></td><td>sonstige Antikoagulanzien - oral</td></tr><tr><td style="white-space:nowrap">2398sc<a name="mind-medikamentengabe-cs-2398sc"> </a></td><td>sonstige Antikoagulanzien - subkutan</td></tr><tr><td style="white-space:nowrap">2401io<a name="mind-medikamentengabe-cs-2401io"> </a></td><td>Acetylsalicylsäure - intraossär</td></tr><tr><td style="white-space:nowrap">2401iv<a name="mind-medikamentengabe-cs-2401iv"> </a></td><td>Acetylsalicylsäure - intravenös</td></tr><tr><td style="white-space:nowrap">2401po<a name="mind-medikamentengabe-cs-2401po"> </a></td><td>Acetylsalicylsäure - oral</td></tr><tr><td style="white-space:nowrap">2402io<a name="mind-medikamentengabe-cs-2402io"> </a></td><td>Clopidogrel o. a. - intraossär</td></tr><tr><td style="white-space:nowrap">2402iv<a name="mind-medikamentengabe-cs-2402iv"> </a></td><td>Clopidogrel o. a. - intravenös</td></tr><tr><td style="white-space:nowrap">2402po<a name="mind-medikamentengabe-cs-2402po"> </a></td><td>Clopidogrel o. a. - oral</td></tr><tr><td style="white-space:nowrap">2497xx<a name="mind-medikamentengabe-cs-2497xx"> </a></td><td>vorbehandelt mit Thrombozytenaggregationshemmern - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">2498im<a name="mind-medikamentengabe-cs-2498im"> </a></td><td>sonstige Thrombozytenaggregationshemmer - intramuskulär</td></tr><tr><td style="white-space:nowrap">2498io<a name="mind-medikamentengabe-cs-2498io"> </a></td><td>sonstige Thrombozytenaggregationshemmer - intraossär</td></tr><tr><td style="white-space:nowrap">2498iv<a name="mind-medikamentengabe-cs-2498iv"> </a></td><td>sonstige Thrombozytenaggregationshemmer - intravenös</td></tr><tr><td style="white-space:nowrap">2498po<a name="mind-medikamentengabe-cs-2498po"> </a></td><td>sonstige Thrombozytenaggregationshemmer - oral</td></tr><tr><td style="white-space:nowrap">2498sc<a name="mind-medikamentengabe-cs-2498sc"> </a></td><td>sonstige Thrombozytenaggregationshemmer - subkutan</td></tr><tr><td style="white-space:nowrap">2498sl<a name="mind-medikamentengabe-cs-2498sl"> </a></td><td>sonstige Thrombozytenaggregationshemmer - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">2501io<a name="mind-medikamentengabe-cs-2501io"> </a></td><td>Glukose - intraossär</td></tr><tr><td style="white-space:nowrap">2501iv<a name="mind-medikamentengabe-cs-2501iv"> </a></td><td>Glukose - intravenös</td></tr><tr><td style="white-space:nowrap">2501po<a name="mind-medikamentengabe-cs-2501po"> </a></td><td>Glukose - oral</td></tr><tr><td style="white-space:nowrap">2502io<a name="mind-medikamentengabe-cs-2502io"> </a></td><td>H1-Blocker - intraossär</td></tr><tr><td style="white-space:nowrap">2502iv<a name="mind-medikamentengabe-cs-2502iv"> </a></td><td>H1-Blocker - intravenös</td></tr><tr><td style="white-space:nowrap">2502po<a name="mind-medikamentengabe-cs-2502po"> </a></td><td>H1-Blocker - oral</td></tr><tr><td style="white-space:nowrap">2503io<a name="mind-medikamentengabe-cs-2503io"> </a></td><td>H2-Blocker - intraossär</td></tr><tr><td style="white-space:nowrap">2503iv<a name="mind-medikamentengabe-cs-2503iv"> </a></td><td>H2-Blocker - intravenös</td></tr><tr><td style="white-space:nowrap">2503po<a name="mind-medikamentengabe-cs-2503po"> </a></td><td>H2-Blocker - oral</td></tr><tr><td style="white-space:nowrap">2504io<a name="mind-medikamentengabe-cs-2504io"> </a></td><td>Butylscopolamin - intraossär</td></tr><tr><td style="white-space:nowrap">2504iv<a name="mind-medikamentengabe-cs-2504iv"> </a></td><td>Butylscopolamin - intravenös</td></tr><tr><td style="white-space:nowrap">2504po<a name="mind-medikamentengabe-cs-2504po"> </a></td><td>Butylscopolamin - oral</td></tr><tr><td style="white-space:nowrap">2505io<a name="mind-medikamentengabe-cs-2505io"> </a></td><td>Antibiotikum - intraossär</td></tr><tr><td style="white-space:nowrap">2505iv<a name="mind-medikamentengabe-cs-2505iv"> </a></td><td>Antibiotikum - intravenös</td></tr><tr><td style="white-space:nowrap">2505po<a name="mind-medikamentengabe-cs-2505po"> </a></td><td>Antibiotikum - oral</td></tr><tr><td style="white-space:nowrap">2506io<a name="mind-medikamentengabe-cs-2506io"> </a></td><td>Biperiden - intraossär</td></tr><tr><td style="white-space:nowrap">2506iv<a name="mind-medikamentengabe-cs-2506iv"> </a></td><td>Biperiden - intravenös</td></tr><tr><td style="white-space:nowrap">2506po<a name="mind-medikamentengabe-cs-2506po"> </a></td><td>Biperiden - oral</td></tr><tr><td style="white-space:nowrap">2507io<a name="mind-medikamentengabe-cs-2507io"> </a></td><td>Oxytocin - intraossär</td></tr><tr><td style="white-space:nowrap">2507iv<a name="mind-medikamentengabe-cs-2507iv"> </a></td><td>Oxytocin - intravenös</td></tr><tr><td style="white-space:nowrap">2507nl<a name="mind-medikamentengabe-cs-2507nl"> </a></td><td>Oxytocin - intranasal</td></tr><tr><td style="white-space:nowrap">2508ih<a name="mind-medikamentengabe-cs-2508ih"> </a></td><td>Fenoterol (als Tokolytikum) - inhalativ</td></tr><tr><td style="white-space:nowrap">2508io<a name="mind-medikamentengabe-cs-2508io"> </a></td><td>Fenoterol (als Tokolytikum) - intraossär</td></tr><tr><td style="white-space:nowrap">2508iv<a name="mind-medikamentengabe-cs-2508iv"> </a></td><td>Fenoterol (als Tokolytikum) - intravenös</td></tr><tr><td style="white-space:nowrap">2509io<a name="mind-medikamentengabe-cs-2509io"> </a></td><td>Kaliumchlorid - intraossär</td></tr><tr><td style="white-space:nowrap">2509iv<a name="mind-medikamentengabe-cs-2509iv"> </a></td><td>Kaliumchlorid - intravenös</td></tr><tr><td style="white-space:nowrap">2509po<a name="mind-medikamentengabe-cs-2509po"> </a></td><td>Kaliumchlorid - oral</td></tr><tr><td style="white-space:nowrap">2510io<a name="mind-medikamentengabe-cs-2510io"> </a></td><td>Calciumgluconat - intraossär</td></tr><tr><td style="white-space:nowrap">2510iv<a name="mind-medikamentengabe-cs-2510iv"> </a></td><td>Calciumgluconat - intravenös</td></tr><tr><td style="white-space:nowrap">2510td<a name="mind-medikamentengabe-cs-2510td"> </a></td><td>Calciumgluconat - transdermal</td></tr><tr><td style="white-space:nowrap">2511io<a name="mind-medikamentengabe-cs-2511io"> </a></td><td>Magnesiumsulfat - intraossär</td></tr><tr><td style="white-space:nowrap">2511iv<a name="mind-medikamentengabe-cs-2511iv"> </a></td><td>Magnesiumsulfat - intravenös</td></tr><tr><td style="white-space:nowrap">2512io<a name="mind-medikamentengabe-cs-2512io"> </a></td><td>Insulin - intraossär</td></tr><tr><td style="white-space:nowrap">2512iv<a name="mind-medikamentengabe-cs-2512iv"> </a></td><td>Insulin - intravenös</td></tr><tr><td style="white-space:nowrap">2512sc<a name="mind-medikamentengabe-cs-2512sc"> </a></td><td>Insulin - subkutan</td></tr><tr><td style="white-space:nowrap">2513io<a name="mind-medikamentengabe-cs-2513io"> </a></td><td>Tranexamsäure - intraossär</td></tr><tr><td style="white-space:nowrap">2513iv<a name="mind-medikamentengabe-cs-2513iv"> </a></td><td>Tranexamsäure - intravenös</td></tr><tr><td style="white-space:nowrap">2513nl<a name="mind-medikamentengabe-cs-2513nl"> </a></td><td>Tranexamsäure - intranasal</td></tr><tr><td style="white-space:nowrap">2514io<a name="mind-medikamentengabe-cs-2514io"> </a></td><td>Natriumhydrogencarbonat - intraossär</td></tr><tr><td style="white-space:nowrap">2514iv<a name="mind-medikamentengabe-cs-2514iv"> </a></td><td>Natriumhydrogencarbonat - intravenös</td></tr><tr><td style="white-space:nowrap">2515io<a name="mind-medikamentengabe-cs-2515io"> </a></td><td>Erythrozytenkonzentrat - intraossär</td></tr><tr><td style="white-space:nowrap">2515iv<a name="mind-medikamentengabe-cs-2515iv"> </a></td><td>Erythrozytenkonzentrat - intravenös</td></tr><tr><td style="white-space:nowrap">2516io<a name="mind-medikamentengabe-cs-2516io"> </a></td><td>FFP - intraossär</td></tr><tr><td style="white-space:nowrap">2516iv<a name="mind-medikamentengabe-cs-2516iv"> </a></td><td>FFP - intravenös</td></tr><tr><td style="white-space:nowrap">2517io<a name="mind-medikamentengabe-cs-2517io"> </a></td><td>PPSB - intraossär</td></tr><tr><td style="white-space:nowrap">2517iv<a name="mind-medikamentengabe-cs-2517iv"> </a></td><td>PPSB - intravenös</td></tr><tr><td style="white-space:nowrap">2518io<a name="mind-medikamentengabe-cs-2518io"> </a></td><td>Fibrinogen - intraossär</td></tr><tr><td style="white-space:nowrap">2518iv<a name="mind-medikamentengabe-cs-2518iv"> </a></td><td>Fibrinogen - intravenös</td></tr><tr><td style="white-space:nowrap">2519io<a name="mind-medikamentengabe-cs-2519io"> </a></td><td>Lyoplasma - intraossär</td></tr><tr><td style="white-space:nowrap">2519iv<a name="mind-medikamentengabe-cs-2519iv"> </a></td><td>Lyoplasma - intravenös</td></tr><tr><td style="white-space:nowrap">2520io<a name="mind-medikamentengabe-cs-2520io"> </a></td><td>Thiamin - intraossär</td></tr><tr><td style="white-space:nowrap">2520iv<a name="mind-medikamentengabe-cs-2520iv"> </a></td><td>Thiamin - intravenös</td></tr><tr><td style="white-space:nowrap">2521po<a name="mind-medikamentengabe-cs-2521po"> </a></td><td>Simeticon - oral</td></tr><tr><td style="white-space:nowrap">2522nl<a name="mind-medikamentengabe-cs-2522nl"> </a></td><td>abschwellende Nasentropfen - intranasal</td></tr><tr><td style="white-space:nowrap">2597xx<a name="mind-medikamentengabe-cs-2597xx"> </a></td><td>vorbehandelt mit sonstigen Medikamenten - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">2598ih<a name="mind-medikamentengabe-cs-2598ih"> </a></td><td>sonstige Medikamente - inhalativ</td></tr><tr><td style="white-space:nowrap">2598im<a name="mind-medikamentengabe-cs-2598im"> </a></td><td>sonstige Medikamente - intramuskulär</td></tr><tr><td style="white-space:nowrap">2598io<a name="mind-medikamentengabe-cs-2598io"> </a></td><td>sonstige Medikamente - intraossär</td></tr><tr><td style="white-space:nowrap">2598iv<a name="mind-medikamentengabe-cs-2598iv"> </a></td><td>sonstige Medikamente - intravenös</td></tr><tr><td style="white-space:nowrap">2598nl<a name="mind-medikamentengabe-cs-2598nl"> </a></td><td>sonstige Medikamente - intranasal</td></tr><tr><td style="white-space:nowrap">2598po<a name="mind-medikamentengabe-cs-2598po"> </a></td><td>sonstige Medikamente - oral</td></tr><tr><td style="white-space:nowrap">2598rl<a name="mind-medikamentengabe-cs-2598rl"> </a></td><td>sonstige Medikamente - rektal</td></tr><tr><td style="white-space:nowrap">2598sc<a name="mind-medikamentengabe-cs-2598sc"> </a></td><td>sonstige Medikamente - subkutan</td></tr><tr><td style="white-space:nowrap">2598sl<a name="mind-medikamentengabe-cs-2598sl"> </a></td><td>sonstige Medikamente - sublingual/bukkal</td></tr><tr><td style="white-space:nowrap">2598td<a name="mind-medikamentengabe-cs-2598td"> </a></td><td>sonstige Medikamente - transdermal</td></tr><tr><td style="white-space:nowrap">2601io<a name="mind-medikamentengabe-cs-2601io"> </a></td><td>MIND Medikamentencode 2601 - intraossär</td></tr><tr><td style="white-space:nowrap">2601iv<a name="mind-medikamentengabe-cs-2601iv"> </a></td><td>MIND Medikamentencode 2601 - intravenös</td></tr><tr><td style="white-space:nowrap">2602io<a name="mind-medikamentengabe-cs-2602io"> </a></td><td>MIND Medikamentencode 2602 - intraossär</td></tr><tr><td style="white-space:nowrap">2602iv<a name="mind-medikamentengabe-cs-2602iv"> </a></td><td>MIND Medikamentencode 2602 - intravenös</td></tr><tr><td style="white-space:nowrap">2603io<a name="mind-medikamentengabe-cs-2603io"> </a></td><td>MIND Medikamentencode 2603 - intraossär</td></tr><tr><td style="white-space:nowrap">2603iv<a name="mind-medikamentengabe-cs-2603iv"> </a></td><td>MIND Medikamentencode 2603 - intravenös</td></tr><tr><td style="white-space:nowrap">2697xx<a name="mind-medikamentengabe-cs-2697xx"> </a></td><td>MIND Medikamentencode 2697 - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">2698im<a name="mind-medikamentengabe-cs-2698im"> </a></td><td>MIND Medikamentencode 2698 - intramuskulär</td></tr><tr><td style="white-space:nowrap">2698io<a name="mind-medikamentengabe-cs-2698io"> </a></td><td>MIND Medikamentencode 2698 - intraossär</td></tr><tr><td style="white-space:nowrap">2698iv<a name="mind-medikamentengabe-cs-2698iv"> </a></td><td>MIND Medikamentencode 2698 - intravenös</td></tr><tr><td style="white-space:nowrap">2698sc<a name="mind-medikamentengabe-cs-2698sc"> </a></td><td>MIND Medikamentencode 2698 - subkutan</td></tr><tr><td style="white-space:nowrap">3001io<a name="mind-medikamentengabe-cs-3001io"> </a></td><td>isotone Kochsalzlösung - intraossär</td></tr><tr><td style="white-space:nowrap">3001iv<a name="mind-medikamentengabe-cs-3001iv"> </a></td><td>isotone Kochsalzlösung - intravenös</td></tr><tr><td style="white-space:nowrap">3001sc<a name="mind-medikamentengabe-cs-3001sc"> </a></td><td>isotone Kochsalzlösung - subkutan</td></tr><tr><td style="white-space:nowrap">3002io<a name="mind-medikamentengabe-cs-3002io"> </a></td><td>Vollelektrolytlösung - intraossär</td></tr><tr><td style="white-space:nowrap">3002iv<a name="mind-medikamentengabe-cs-3002iv"> </a></td><td>Vollelektrolytlösung - intravenös</td></tr><tr><td style="white-space:nowrap">3002sc<a name="mind-medikamentengabe-cs-3002sc"> </a></td><td>Vollelektrolytlösung - subkutan</td></tr><tr><td style="white-space:nowrap">3097xx<a name="mind-medikamentengabe-cs-3097xx"> </a></td><td>vorbehandelt mit Kristalloid - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">3098io<a name="mind-medikamentengabe-cs-3098io"> </a></td><td>sonstiges Kristalloid - intraossär</td></tr><tr><td style="white-space:nowrap">3098iv<a name="mind-medikamentengabe-cs-3098iv"> </a></td><td>sonstiges Kristalloid - intravenös</td></tr><tr><td style="white-space:nowrap">3098sc<a name="mind-medikamentengabe-cs-3098sc"> </a></td><td>sonstiges Kristalloid - subkutan</td></tr><tr><td style="white-space:nowrap">3101io<a name="mind-medikamentengabe-cs-3101io"> </a></td><td>HÄS - intraossär</td></tr><tr><td style="white-space:nowrap">3101iv<a name="mind-medikamentengabe-cs-3101iv"> </a></td><td>HÄS - intravenös</td></tr><tr><td style="white-space:nowrap">3102io<a name="mind-medikamentengabe-cs-3102io"> </a></td><td>SVR/Hyperosmol. NaCl - intraossär</td></tr><tr><td style="white-space:nowrap">3102iv<a name="mind-medikamentengabe-cs-3102iv"> </a></td><td>SVR/Hyperosmol. NaCl - intravenös</td></tr><tr><td style="white-space:nowrap">3103io<a name="mind-medikamentengabe-cs-3103io"> </a></td><td>Gelatine - intraossär</td></tr><tr><td style="white-space:nowrap">3103iv<a name="mind-medikamentengabe-cs-3103iv"> </a></td><td>Gelatine - intravenös</td></tr><tr><td style="white-space:nowrap">3197xx<a name="mind-medikamentengabe-cs-3197xx"> </a></td><td>vorbehandelt mit Kolloid - sämtliche Applikationsformen</td></tr><tr><td style="white-space:nowrap">3198io<a name="mind-medikamentengabe-cs-3198io"> </a></td><td>sonstige spezielle Infusion - intraossär</td></tr><tr><td style="white-space:nowrap">3198iv<a name="mind-medikamentengabe-cs-3198iv"> </a></td><td>sonstige spezielle Infusion - intravenös</td></tr><tr><td style="white-space:nowrap">999999<a name="mind-medikamentengabe-cs-999999"> </a></td><td>kein Medikament / keine Infusion</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.28"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindMedikamentengabeCS"/>
+  <title value="MIND Medikamentengabe"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Gültige Kombinationen aus Wirkstoffcode und Applikationsweg gemäß MIND 7.1."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="464"/>
+  <concept>
+    <code value="1001im"/>
+    <display value="Fentanyl - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1001io"/>
+    <display value="Fentanyl - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1001iv"/>
+    <display value="Fentanyl - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1001nl"/>
+    <display value="Fentanyl - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1001sc"/>
+    <display value="Fentanyl - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1001sl"/>
+    <display value="Fentanyl - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1001td"/>
+    <display value="Fentanyl - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1002im"/>
+    <display value="Morphin - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1002io"/>
+    <display value="Morphin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1002iv"/>
+    <display value="Morphin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1002nl"/>
+    <display value="Morphin - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1002po"/>
+    <display value="Morphin - oral"/>
+  </concept>
+  <concept>
+    <code value="1002sc"/>
+    <display value="Morphin - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1002td"/>
+    <display value="Morphin - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1003im"/>
+    <display value="Piritramid - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1003io"/>
+    <display value="Piritramid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1003iv"/>
+    <display value="Piritramid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1003sc"/>
+    <display value="Piritramid - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1004io"/>
+    <display value="Sufentanil - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1004iv"/>
+    <display value="Sufentanil - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1004nl"/>
+    <display value="Sufentanil - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1004sl"/>
+    <display value="Sufentanil - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1005im"/>
+    <display value="anderes Opioid - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1005io"/>
+    <display value="anderes Opioid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1005iv"/>
+    <display value="anderes Opioid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1005nl"/>
+    <display value="anderes Opioid - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1005po"/>
+    <display value="anderes Opioid - oral"/>
+  </concept>
+  <concept>
+    <code value="1005rl"/>
+    <display value="anderes Opioid - rektal"/>
+  </concept>
+  <concept>
+    <code value="1005sc"/>
+    <display value="anderes Opioid - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1005sl"/>
+    <display value="anderes Opioid - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1005td"/>
+    <display value="anderes Opioid - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1006io"/>
+    <display value="Metamizol - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1006iv"/>
+    <display value="Metamizol - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1006po"/>
+    <display value="Metamizol - oral"/>
+  </concept>
+  <concept>
+    <code value="1007io"/>
+    <display value="Paracetamol - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1007iv"/>
+    <display value="Paracetamol - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1007po"/>
+    <display value="Paracetamol - oral"/>
+  </concept>
+  <concept>
+    <code value="1007rl"/>
+    <display value="Paracetamol - rektal"/>
+  </concept>
+  <concept>
+    <code value="1008io"/>
+    <display value="Oxycodon - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1008iv"/>
+    <display value="Oxycodon - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1008po"/>
+    <display value="Oxycodon - oral"/>
+  </concept>
+  <concept>
+    <code value="1008sc"/>
+    <display value="Oxycodon - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1008sl"/>
+    <display value="Oxycodon - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1009ih"/>
+    <display value="Ketamin/Esketamin - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1009im"/>
+    <display value="Ketamin/Esketamin - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1009io"/>
+    <display value="Ketamin/Esketamin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1009iv"/>
+    <display value="Ketamin/Esketamin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1009nl"/>
+    <display value="Ketamin/Esketamin - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1009rl"/>
+    <display value="Ketamin/Esketamin - rektal"/>
+  </concept>
+  <concept>
+    <code value="1009sc"/>
+    <display value="Ketamin/Esketamin - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1010io"/>
+    <display value="NSAID - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1010iv"/>
+    <display value="NSAID - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1010po"/>
+    <display value="NSAID - oral"/>
+  </concept>
+  <concept>
+    <code value="1010rl"/>
+    <display value="NSAID - rektal"/>
+  </concept>
+  <concept>
+    <code value="1011sc"/>
+    <display value="Lokalanästhetikum - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1011td"/>
+    <display value="Lokalanästhetikum - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1097xx"/>
+    <display value="vorbehandelt mit Analgetika - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1098ih"/>
+    <display value="sonstiges Analgetikum - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1098im"/>
+    <display value="sonstiges Analgetikum - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1098io"/>
+    <display value="sonstiges Analgetikum - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1098iv"/>
+    <display value="sonstiges Analgetikum - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1098nl"/>
+    <display value="sonstiges Analgetikum - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1098po"/>
+    <display value="sonstiges Analgetikum - oral"/>
+  </concept>
+  <concept>
+    <code value="1098rl"/>
+    <display value="sonstiges Analgetikum - rektal"/>
+  </concept>
+  <concept>
+    <code value="1098sc"/>
+    <display value="sonstiges Analgetikum - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1098sl"/>
+    <display value="sonstiges Analgetikum - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1098td"/>
+    <display value="sonstiges Analgetikum - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1101io"/>
+    <display value="Betablocker - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1101iv"/>
+    <display value="Betablocker - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1101po"/>
+    <display value="Betablocker - oral"/>
+  </concept>
+  <concept>
+    <code value="1102io"/>
+    <display value="Amiodaron - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1102iv"/>
+    <display value="Amiodaron - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1102po"/>
+    <display value="Amiodaron - oral"/>
+  </concept>
+  <concept>
+    <code value="1103io"/>
+    <display value="Adenosin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1103iv"/>
+    <display value="Adenosin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1104io"/>
+    <display value="Atropin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1104iv"/>
+    <display value="Atropin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1105io"/>
+    <display value="Verapamil - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1105iv"/>
+    <display value="Verapamil - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1105po"/>
+    <display value="Verapamil - oral"/>
+  </concept>
+  <concept>
+    <code value="1106io"/>
+    <display value="Ajmalin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1106iv"/>
+    <display value="Ajmalin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1107io"/>
+    <display value="Digitalisglykosid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1107iv"/>
+    <display value="Digitalisglykosid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1108io"/>
+    <display value="Lidocain - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1108iv"/>
+    <display value="Lidocain - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1197xx"/>
+    <display value="vorbehandelt mit Antiarrhythmika - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1198ih"/>
+    <display value="sonstiges Antiarrhythmikum - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1198im"/>
+    <display value="sonstiges Antiarrhythmikum - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1198io"/>
+    <display value="sonstiges Antiarrhythmikum - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1198iv"/>
+    <display value="sonstiges Antiarrhythmikum - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1198nl"/>
+    <display value="sonstiges Antiarrhythmikum - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1198po"/>
+    <display value="sonstiges Antiarrhythmikum - oral"/>
+  </concept>
+  <concept>
+    <code value="1198rl"/>
+    <display value="sonstiges Antiarrhythmikum - rektal"/>
+  </concept>
+  <concept>
+    <code value="1198sc"/>
+    <display value="sonstiges Antiarrhythmikum - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1198sl"/>
+    <display value="sonstiges Antiarrhythmikum - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1198td"/>
+    <display value="sonstiges Antiarrhythmikum - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1201io"/>
+    <display value="Flumazenil - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1201iv"/>
+    <display value="Flumazenil - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1201nl"/>
+    <display value="Flumazenil - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1202po"/>
+    <display value="Carbo medicinalis (Kohle) - oral"/>
+  </concept>
+  <concept>
+    <code value="1203im"/>
+    <display value="Naloxon - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1203io"/>
+    <display value="Naloxon - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1203iv"/>
+    <display value="Naloxon - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1203nl"/>
+    <display value="Naloxon - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1203sc"/>
+    <display value="Naloxon - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1204io"/>
+    <display value="Physostigmin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1204iv"/>
+    <display value="Physostigmin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1205io"/>
+    <display value="Atropin (als Antidot) - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1205iv"/>
+    <display value="Atropin (als Antidot) - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1206io"/>
+    <display value="Obidoxim - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1206iv"/>
+    <display value="Obidoxim - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1207io"/>
+    <display value="Hydroxocobalamin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1207iv"/>
+    <display value="Hydroxocobalamin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1208io"/>
+    <display value="Natriumthiosulfat - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1208iv"/>
+    <display value="Natriumthiosulfat - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1209io"/>
+    <display value="4-Dimethylaminophenol (4-DMAP) - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1209iv"/>
+    <display value="4-Dimethylaminophenol (4-DMAP) - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1210iv"/>
+    <display value="Toloniumchlorid (Toluidinblau) - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1211io"/>
+    <display value="Methylthioniniumchlorid (Methylenblau) - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1211iv"/>
+    <display value="Methylthioniniumchlorid (Methylenblau) - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1297xx"/>
+    <display value="vorbehandelt mit Antidota - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1298ih"/>
+    <display value="sonstiges Antidot - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1298im"/>
+    <display value="sonstiges Antidot - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1298io"/>
+    <display value="sonstiges Antidot - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1298iv"/>
+    <display value="sonstiges Antidot - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1298nl"/>
+    <display value="sonstiges Antidot - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1298po"/>
+    <display value="sonstiges Antidot - oral"/>
+  </concept>
+  <concept>
+    <code value="1298rl"/>
+    <display value="sonstiges Antidot - rektal"/>
+  </concept>
+  <concept>
+    <code value="1298sc"/>
+    <display value="sonstiges Antidot - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1298sl"/>
+    <display value="sonstiges Antidot - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1298td"/>
+    <display value="sonstiges Antidot - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1301io"/>
+    <display value="Dimenhydrinat - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1301iv"/>
+    <display value="Dimenhydrinat - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1301po"/>
+    <display value="Dimenhydrinat - oral"/>
+  </concept>
+  <concept>
+    <code value="1301rl"/>
+    <display value="Dimenhydrinat - rektal"/>
+  </concept>
+  <concept>
+    <code value="1302io"/>
+    <display value="Metoclopramid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1302iv"/>
+    <display value="Metoclopramid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1302po"/>
+    <display value="Metoclopramid - oral"/>
+  </concept>
+  <concept>
+    <code value="1303io"/>
+    <display value="5HT3-Antagonist - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1303iv"/>
+    <display value="5HT3-Antagonist - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1303po"/>
+    <display value="5HT3-Antagonist - oral"/>
+  </concept>
+  <concept>
+    <code value="1303rl"/>
+    <display value="5HT3-Antagonist - rektal"/>
+  </concept>
+  <concept>
+    <code value="1397xx"/>
+    <display value="vorbehandelt mit Antiemetika - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1398ih"/>
+    <display value="sonstiges Antiemetikum - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1398im"/>
+    <display value="sonstiges Antiemetikum - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1398io"/>
+    <display value="sonstiges Antiemetikum - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1398iv"/>
+    <display value="sonstiges Antiemetikum - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1398nl"/>
+    <display value="sonstiges Antiemetikum - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1398po"/>
+    <display value="sonstiges Antiemetikum - oral"/>
+  </concept>
+  <concept>
+    <code value="1398rl"/>
+    <display value="sonstiges Antiemetikum - rektal"/>
+  </concept>
+  <concept>
+    <code value="1398sc"/>
+    <display value="sonstiges Antiemetikum - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1398sl"/>
+    <display value="sonstiges Antiemetikum - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1398td"/>
+    <display value="sonstiges Antiemetikum - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1401io"/>
+    <display value="Clonazepam - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1401iv"/>
+    <display value="Clonazepam - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1402im"/>
+    <display value="Diazepam - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1402io"/>
+    <display value="Diazepam - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1402iv"/>
+    <display value="Diazepam - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1402nl"/>
+    <display value="Diazepam - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1402po"/>
+    <display value="Diazepam - oral"/>
+  </concept>
+  <concept>
+    <code value="1402rl"/>
+    <display value="Diazepam - rektal"/>
+  </concept>
+  <concept>
+    <code value="1402sc"/>
+    <display value="Diazepam - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1402sl"/>
+    <display value="Diazepam - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1403im"/>
+    <display value="Lorazepam - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1403io"/>
+    <display value="Lorazepam - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1403iv"/>
+    <display value="Lorazepam - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1403nl"/>
+    <display value="Lorazepam - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1403po"/>
+    <display value="Lorazepam - oral"/>
+  </concept>
+  <concept>
+    <code value="1403rl"/>
+    <display value="Lorazepam - rektal"/>
+  </concept>
+  <concept>
+    <code value="1403sc"/>
+    <display value="Lorazepam - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1403sl"/>
+    <display value="Lorazepam - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1404im"/>
+    <display value="Midazolam - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1404io"/>
+    <display value="Midazolam - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1404iv"/>
+    <display value="Midazolam - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1404nl"/>
+    <display value="Midazolam - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1404po"/>
+    <display value="Midazolam - oral"/>
+  </concept>
+  <concept>
+    <code value="1404rl"/>
+    <display value="Midazolam - rektal"/>
+  </concept>
+  <concept>
+    <code value="1404sc"/>
+    <display value="Midazolam - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1404sl"/>
+    <display value="Midazolam - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1405io"/>
+    <display value="Phenytoin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1405iv"/>
+    <display value="Phenytoin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1406io"/>
+    <display value="Levetiracetam - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1406iv"/>
+    <display value="Levetiracetam - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1497xx"/>
+    <display value="vorbehandelt mit Sedativa/Antiepileptika - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1498ih"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1498im"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1498io"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1498iv"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1498nl"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1498po"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - oral"/>
+  </concept>
+  <concept>
+    <code value="1498rl"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - rektal"/>
+  </concept>
+  <concept>
+    <code value="1498sc"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1498sl"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1498td"/>
+    <display value="sonstiges Sedativum/Antiepileptikum - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1501iv"/>
+    <display value="Urapidil - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1502io"/>
+    <display value="Glyceroltrinitrat - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1502iv"/>
+    <display value="Glyceroltrinitrat - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1502sl"/>
+    <display value="Glyceroltrinitrat - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1503io"/>
+    <display value="Clonidin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1503iv"/>
+    <display value="Clonidin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1503po"/>
+    <display value="Clonidin - oral"/>
+  </concept>
+  <concept>
+    <code value="1509io"/>
+    <display value="Urapidil - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1597xx"/>
+    <display value="vorbehandelt mit Antihypertensiva/Vasodilatantien - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1598ih"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1598im"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1598io"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1598iv"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1598nl"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1598po"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - oral"/>
+  </concept>
+  <concept>
+    <code value="1598rl"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - rektal"/>
+  </concept>
+  <concept>
+    <code value="1598sc"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1598sl"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1598td"/>
+    <display value="sonstiges Antihypertensivum/Vasodilatans - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1601ih"/>
+    <display value="Salbutamol - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1601io"/>
+    <display value="Salbutamol - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1601iv"/>
+    <display value="Salbutamol - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1602ih"/>
+    <display value="Reproterol - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1602io"/>
+    <display value="Reproterol - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1602iv"/>
+    <display value="Reproterol - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1603ih"/>
+    <display value="Ipratropiumbromid - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1603im"/>
+    <display value="Ipratropiumbromid - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1603io"/>
+    <display value="Ipratropiumbromid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1603iv"/>
+    <display value="Ipratropiumbromid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1603sc"/>
+    <display value="Ipratropiumbromid - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1604io"/>
+    <display value="Theophyllin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1604iv"/>
+    <display value="Theophyllin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1604po"/>
+    <display value="Theophyllin - oral"/>
+  </concept>
+  <concept>
+    <code value="1697xx"/>
+    <display value="vorbehandelt mit Bronchodilatantien - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1698ih"/>
+    <display value="sonstiges Bronchodilatans - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1698im"/>
+    <display value="sonstiges Bronchodilatans - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1698io"/>
+    <display value="sonstiges Bronchodilatans - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1698iv"/>
+    <display value="sonstiges Bronchodilatans - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1698nl"/>
+    <display value="sonstiges Bronchodilatans - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1698po"/>
+    <display value="sonstiges Bronchodilatans - oral"/>
+  </concept>
+  <concept>
+    <code value="1698rl"/>
+    <display value="sonstiges Bronchodilatans - rektal"/>
+  </concept>
+  <concept>
+    <code value="1698sc"/>
+    <display value="sonstiges Bronchodilatans - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1698sl"/>
+    <display value="sonstiges Bronchodilatans - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1698td"/>
+    <display value="sonstiges Bronchodilatans - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1701io"/>
+    <display value="Furosemid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1701iv"/>
+    <display value="Furosemid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1797xx"/>
+    <display value="vorbehandelt mit Diuretika - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1798ih"/>
+    <display value="sonstiges Diuretikum - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1798im"/>
+    <display value="sonstiges Diuretikum - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1798io"/>
+    <display value="sonstiges Diuretikum - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1798iv"/>
+    <display value="sonstiges Diuretikum - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1798nl"/>
+    <display value="sonstiges Diuretikum - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1798po"/>
+    <display value="sonstiges Diuretikum - oral"/>
+  </concept>
+  <concept>
+    <code value="1798rl"/>
+    <display value="sonstiges Diuretikum - rektal"/>
+  </concept>
+  <concept>
+    <code value="1798sc"/>
+    <display value="sonstiges Diuretikum - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1798sl"/>
+    <display value="sonstiges Diuretikum - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1798td"/>
+    <display value="sonstiges Diuretikum - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1801ih"/>
+    <display value="Epinephrin - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1801im"/>
+    <display value="Epinephrin - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1801io"/>
+    <display value="Epinephrin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1801iv"/>
+    <display value="Epinephrin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1801nl"/>
+    <display value="Epinephrin - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1801sc"/>
+    <display value="Epinephrin - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1802io"/>
+    <display value="Norepinephrin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1802iv"/>
+    <display value="Norepinephrin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1803io"/>
+    <display value="Cafedrin/Theoadrenalin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1803iv"/>
+    <display value="Cafedrin/Theoadrenalin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1804io"/>
+    <display value="Dobutamin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1804iv"/>
+    <display value="Dobutamin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1805io"/>
+    <display value="Vasopressin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1805iv"/>
+    <display value="Vasopressin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1897xx"/>
+    <display value="vorbehandelt mit Katecholaminen - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1898ih"/>
+    <display value="sonstige Katecholamine - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1898im"/>
+    <display value="sonstige Katecholamine - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1898io"/>
+    <display value="sonstige Katecholamine - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1898iv"/>
+    <display value="sonstige Katecholamine - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1898nl"/>
+    <display value="sonstige Katecholamine - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1898po"/>
+    <display value="sonstige Katecholamine - oral"/>
+  </concept>
+  <concept>
+    <code value="1898rl"/>
+    <display value="sonstige Katecholamine - rektal"/>
+  </concept>
+  <concept>
+    <code value="1898sc"/>
+    <display value="sonstige Katecholamine - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1898sl"/>
+    <display value="sonstige Katecholamine - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1898td"/>
+    <display value="sonstige Katecholamine - transdermal"/>
+  </concept>
+  <concept>
+    <code value="1901ih"/>
+    <display value="Dexametason - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1901io"/>
+    <display value="Dexametason - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1901iv"/>
+    <display value="Dexametason - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1902ih"/>
+    <display value="Methyl-/Prednisolon - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1902io"/>
+    <display value="Methyl-/Prednisolon - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1902iv"/>
+    <display value="Methyl-/Prednisolon - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1902rl"/>
+    <display value="Methyl-/Prednisolon - rektal"/>
+  </concept>
+  <concept>
+    <code value="1997xx"/>
+    <display value="vorbehandelt mit Kortikosteroiden - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="1998ih"/>
+    <display value="sonstiges Corticoid - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="1998im"/>
+    <display value="sonstiges Corticoid - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="1998io"/>
+    <display value="sonstiges Corticoid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="1998iv"/>
+    <display value="sonstiges Corticoid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="1998nl"/>
+    <display value="sonstiges Corticoid - intranasal"/>
+  </concept>
+  <concept>
+    <code value="1998po"/>
+    <display value="sonstiges Corticoid - oral"/>
+  </concept>
+  <concept>
+    <code value="1998rl"/>
+    <display value="sonstiges Corticoid - rektal"/>
+  </concept>
+  <concept>
+    <code value="1998sc"/>
+    <display value="sonstiges Corticoid - subkutan"/>
+  </concept>
+  <concept>
+    <code value="1998sl"/>
+    <display value="sonstiges Corticoid - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="1998td"/>
+    <display value="sonstiges Corticoid - transdermal"/>
+  </concept>
+  <concept>
+    <code value="2001im"/>
+    <display value="Suxamethonium - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2001io"/>
+    <display value="Suxamethonium - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2001iv"/>
+    <display value="Suxamethonium - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2002io"/>
+    <display value="Rocuronium - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2002iv"/>
+    <display value="Rocuronium - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2097xx"/>
+    <display value="vorbehandelt mit Muskelrelaxantien - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="2098ih"/>
+    <display value="sonstiges Muskelrelaxans - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="2098im"/>
+    <display value="sonstiges Muskelrelaxans - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2098io"/>
+    <display value="sonstiges Muskelrelaxans - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2098iv"/>
+    <display value="sonstiges Muskelrelaxans - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2098nl"/>
+    <display value="sonstiges Muskelrelaxans - intranasal"/>
+  </concept>
+  <concept>
+    <code value="2098po"/>
+    <display value="sonstiges Muskelrelaxans - oral"/>
+  </concept>
+  <concept>
+    <code value="2098rl"/>
+    <display value="sonstiges Muskelrelaxans - rektal"/>
+  </concept>
+  <concept>
+    <code value="2098sc"/>
+    <display value="sonstiges Muskelrelaxans - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2098sl"/>
+    <display value="sonstiges Muskelrelaxans - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="2098td"/>
+    <display value="sonstiges Muskelrelaxans - transdermal"/>
+  </concept>
+  <concept>
+    <code value="2101io"/>
+    <display value="Etomidat - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2101iv"/>
+    <display value="Etomidat - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2102io"/>
+    <display value="Propofol - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2102iv"/>
+    <display value="Propofol - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2103io"/>
+    <display value="Thiopental - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2103iv"/>
+    <display value="Thiopental - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2197xx"/>
+    <display value="vorbehandelt mit Narkotika - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="2198ih"/>
+    <display value="sonstiges Narkotikum - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="2198im"/>
+    <display value="sonstiges Narkotikum - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2198io"/>
+    <display value="sonstiges Narkotikum - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2198iv"/>
+    <display value="sonstiges Narkotikum - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2198nl"/>
+    <display value="sonstiges Narkotikum - intranasal"/>
+  </concept>
+  <concept>
+    <code value="2198po"/>
+    <display value="sonstiges Narkotikum - oral"/>
+  </concept>
+  <concept>
+    <code value="2198rl"/>
+    <display value="sonstiges Narkotikum - rektal"/>
+  </concept>
+  <concept>
+    <code value="2198sc"/>
+    <display value="sonstiges Narkotikum - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2198sl"/>
+    <display value="sonstiges Narkotikum - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="2198td"/>
+    <display value="sonstiges Narkotikum - transdermal"/>
+  </concept>
+  <concept>
+    <code value="2201im"/>
+    <display value="Haloperidol - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2201io"/>
+    <display value="Haloperidol - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2201iv"/>
+    <display value="Haloperidol - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2202im"/>
+    <display value="Promethazin - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2202io"/>
+    <display value="Promethazin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2202iv"/>
+    <display value="Promethazin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2297xx"/>
+    <display value="vorbehandelt mit Psychopharmaka - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="2298ih"/>
+    <display value="sonstige Psychopharmaka - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="2298im"/>
+    <display value="sonstige Psychopharmaka - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2298io"/>
+    <display value="sonstige Psychopharmaka - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2298iv"/>
+    <display value="sonstige Psychopharmaka - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2298nl"/>
+    <display value="sonstige Psychopharmaka - intranasal"/>
+  </concept>
+  <concept>
+    <code value="2298po"/>
+    <display value="sonstige Psychopharmaka - oral"/>
+  </concept>
+  <concept>
+    <code value="2298rl"/>
+    <display value="sonstige Psychopharmaka - rektal"/>
+  </concept>
+  <concept>
+    <code value="2298sc"/>
+    <display value="sonstige Psychopharmaka - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2298sl"/>
+    <display value="sonstige Psychopharmaka - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="2298td"/>
+    <display value="sonstige Psychopharmaka - transdermal"/>
+  </concept>
+  <concept>
+    <code value="2301io"/>
+    <display value="UF Heparin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2301iv"/>
+    <display value="UF Heparin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2301sc"/>
+    <display value="UF Heparin - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2302sc"/>
+    <display value="NM Heparin - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2397xx"/>
+    <display value="vorbehandelt mit Antikoagulanzien - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="2398im"/>
+    <display value="sonstige Antikoagulanzien - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2398io"/>
+    <display value="sonstige Antikoagulanzien - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2398iv"/>
+    <display value="sonstige Antikoagulanzien - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2398po"/>
+    <display value="sonstige Antikoagulanzien - oral"/>
+  </concept>
+  <concept>
+    <code value="2398sc"/>
+    <display value="sonstige Antikoagulanzien - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2401io"/>
+    <display value="Acetylsalicylsäure - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2401iv"/>
+    <display value="Acetylsalicylsäure - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2401po"/>
+    <display value="Acetylsalicylsäure - oral"/>
+  </concept>
+  <concept>
+    <code value="2402io"/>
+    <display value="Clopidogrel o. a. - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2402iv"/>
+    <display value="Clopidogrel o. a. - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2402po"/>
+    <display value="Clopidogrel o. a. - oral"/>
+  </concept>
+  <concept>
+    <code value="2497xx"/>
+    <display value="vorbehandelt mit Thrombozytenaggregationshemmern - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="2498im"/>
+    <display value="sonstige Thrombozytenaggregationshemmer - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2498io"/>
+    <display value="sonstige Thrombozytenaggregationshemmer - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2498iv"/>
+    <display value="sonstige Thrombozytenaggregationshemmer - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2498po"/>
+    <display value="sonstige Thrombozytenaggregationshemmer - oral"/>
+  </concept>
+  <concept>
+    <code value="2498sc"/>
+    <display value="sonstige Thrombozytenaggregationshemmer - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2498sl"/>
+    <display value="sonstige Thrombozytenaggregationshemmer - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="2501io"/>
+    <display value="Glukose - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2501iv"/>
+    <display value="Glukose - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2501po"/>
+    <display value="Glukose - oral"/>
+  </concept>
+  <concept>
+    <code value="2502io"/>
+    <display value="H1-Blocker - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2502iv"/>
+    <display value="H1-Blocker - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2502po"/>
+    <display value="H1-Blocker - oral"/>
+  </concept>
+  <concept>
+    <code value="2503io"/>
+    <display value="H2-Blocker - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2503iv"/>
+    <display value="H2-Blocker - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2503po"/>
+    <display value="H2-Blocker - oral"/>
+  </concept>
+  <concept>
+    <code value="2504io"/>
+    <display value="Butylscopolamin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2504iv"/>
+    <display value="Butylscopolamin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2504po"/>
+    <display value="Butylscopolamin - oral"/>
+  </concept>
+  <concept>
+    <code value="2505io"/>
+    <display value="Antibiotikum - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2505iv"/>
+    <display value="Antibiotikum - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2505po"/>
+    <display value="Antibiotikum - oral"/>
+  </concept>
+  <concept>
+    <code value="2506io"/>
+    <display value="Biperiden - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2506iv"/>
+    <display value="Biperiden - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2506po"/>
+    <display value="Biperiden - oral"/>
+  </concept>
+  <concept>
+    <code value="2507io"/>
+    <display value="Oxytocin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2507iv"/>
+    <display value="Oxytocin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2507nl"/>
+    <display value="Oxytocin - intranasal"/>
+  </concept>
+  <concept>
+    <code value="2508ih"/>
+    <display value="Fenoterol (als Tokolytikum) - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="2508io"/>
+    <display value="Fenoterol (als Tokolytikum) - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2508iv"/>
+    <display value="Fenoterol (als Tokolytikum) - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2509io"/>
+    <display value="Kaliumchlorid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2509iv"/>
+    <display value="Kaliumchlorid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2509po"/>
+    <display value="Kaliumchlorid - oral"/>
+  </concept>
+  <concept>
+    <code value="2510io"/>
+    <display value="Calciumgluconat - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2510iv"/>
+    <display value="Calciumgluconat - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2510td"/>
+    <display value="Calciumgluconat - transdermal"/>
+  </concept>
+  <concept>
+    <code value="2511io"/>
+    <display value="Magnesiumsulfat - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2511iv"/>
+    <display value="Magnesiumsulfat - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2512io"/>
+    <display value="Insulin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2512iv"/>
+    <display value="Insulin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2512sc"/>
+    <display value="Insulin - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2513io"/>
+    <display value="Tranexamsäure - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2513iv"/>
+    <display value="Tranexamsäure - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2513nl"/>
+    <display value="Tranexamsäure - intranasal"/>
+  </concept>
+  <concept>
+    <code value="2514io"/>
+    <display value="Natriumhydrogencarbonat - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2514iv"/>
+    <display value="Natriumhydrogencarbonat - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2515io"/>
+    <display value="Erythrozytenkonzentrat - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2515iv"/>
+    <display value="Erythrozytenkonzentrat - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2516io"/>
+    <display value="FFP - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2516iv"/>
+    <display value="FFP - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2517io"/>
+    <display value="PPSB - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2517iv"/>
+    <display value="PPSB - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2518io"/>
+    <display value="Fibrinogen - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2518iv"/>
+    <display value="Fibrinogen - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2519io"/>
+    <display value="Lyoplasma - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2519iv"/>
+    <display value="Lyoplasma - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2520io"/>
+    <display value="Thiamin - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2520iv"/>
+    <display value="Thiamin - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2521po"/>
+    <display value="Simeticon - oral"/>
+  </concept>
+  <concept>
+    <code value="2522nl"/>
+    <display value="abschwellende Nasentropfen - intranasal"/>
+  </concept>
+  <concept>
+    <code value="2597xx"/>
+    <display value="vorbehandelt mit sonstigen Medikamenten - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="2598ih"/>
+    <display value="sonstige Medikamente - inhalativ"/>
+  </concept>
+  <concept>
+    <code value="2598im"/>
+    <display value="sonstige Medikamente - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2598io"/>
+    <display value="sonstige Medikamente - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2598iv"/>
+    <display value="sonstige Medikamente - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2598nl"/>
+    <display value="sonstige Medikamente - intranasal"/>
+  </concept>
+  <concept>
+    <code value="2598po"/>
+    <display value="sonstige Medikamente - oral"/>
+  </concept>
+  <concept>
+    <code value="2598rl"/>
+    <display value="sonstige Medikamente - rektal"/>
+  </concept>
+  <concept>
+    <code value="2598sc"/>
+    <display value="sonstige Medikamente - subkutan"/>
+  </concept>
+  <concept>
+    <code value="2598sl"/>
+    <display value="sonstige Medikamente - sublingual/bukkal"/>
+  </concept>
+  <concept>
+    <code value="2598td"/>
+    <display value="sonstige Medikamente - transdermal"/>
+  </concept>
+  <concept>
+    <code value="2601io"/>
+    <display value="MIND Medikamentencode 2601 - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2601iv"/>
+    <display value="MIND Medikamentencode 2601 - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2602io"/>
+    <display value="MIND Medikamentencode 2602 - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2602iv"/>
+    <display value="MIND Medikamentencode 2602 - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2603io"/>
+    <display value="MIND Medikamentencode 2603 - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2603iv"/>
+    <display value="MIND Medikamentencode 2603 - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2697xx"/>
+    <display value="MIND Medikamentencode 2697 - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="2698im"/>
+    <display value="MIND Medikamentencode 2698 - intramuskulär"/>
+  </concept>
+  <concept>
+    <code value="2698io"/>
+    <display value="MIND Medikamentencode 2698 - intraossär"/>
+  </concept>
+  <concept>
+    <code value="2698iv"/>
+    <display value="MIND Medikamentencode 2698 - intravenös"/>
+  </concept>
+  <concept>
+    <code value="2698sc"/>
+    <display value="MIND Medikamentencode 2698 - subkutan"/>
+  </concept>
+  <concept>
+    <code value="3001io"/>
+    <display value="isotone Kochsalzlösung - intraossär"/>
+  </concept>
+  <concept>
+    <code value="3001iv"/>
+    <display value="isotone Kochsalzlösung - intravenös"/>
+  </concept>
+  <concept>
+    <code value="3001sc"/>
+    <display value="isotone Kochsalzlösung - subkutan"/>
+  </concept>
+  <concept>
+    <code value="3002io"/>
+    <display value="Vollelektrolytlösung - intraossär"/>
+  </concept>
+  <concept>
+    <code value="3002iv"/>
+    <display value="Vollelektrolytlösung - intravenös"/>
+  </concept>
+  <concept>
+    <code value="3002sc"/>
+    <display value="Vollelektrolytlösung - subkutan"/>
+  </concept>
+  <concept>
+    <code value="3097xx"/>
+    <display value="vorbehandelt mit Kristalloid - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="3098io"/>
+    <display value="sonstiges Kristalloid - intraossär"/>
+  </concept>
+  <concept>
+    <code value="3098iv"/>
+    <display value="sonstiges Kristalloid - intravenös"/>
+  </concept>
+  <concept>
+    <code value="3098sc"/>
+    <display value="sonstiges Kristalloid - subkutan"/>
+  </concept>
+  <concept>
+    <code value="3101io"/>
+    <display value="HÄS - intraossär"/>
+  </concept>
+  <concept>
+    <code value="3101iv"/>
+    <display value="HÄS - intravenös"/>
+  </concept>
+  <concept>
+    <code value="3102io"/>
+    <display value="SVR/Hyperosmol. NaCl - intraossär"/>
+  </concept>
+  <concept>
+    <code value="3102iv"/>
+    <display value="SVR/Hyperosmol. NaCl - intravenös"/>
+  </concept>
+  <concept>
+    <code value="3103io"/>
+    <display value="Gelatine - intraossär"/>
+  </concept>
+  <concept>
+    <code value="3103iv"/>
+    <display value="Gelatine - intravenös"/>
+  </concept>
+  <concept>
+    <code value="3197xx"/>
+    <display value="vorbehandelt mit Kolloid - sämtliche Applikationsformen"/>
+  </concept>
+  <concept>
+    <code value="3198io"/>
+    <display value="sonstige spezielle Infusion - intraossär"/>
+  </concept>
+  <concept>
+    <code value="3198iv"/>
+    <display value="sonstige spezielle Infusion - intravenös"/>
+  </concept>
+  <concept>
+    <code value="999999"/>
+    <display value="kein Medikament / keine Infusion"/>
+  </concept>
+</CodeSystem>

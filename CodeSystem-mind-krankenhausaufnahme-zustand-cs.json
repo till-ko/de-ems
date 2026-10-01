@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-krankenhausaufnahme-zustand-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-krankenhausaufnahme-zustand-cs</b></p><a name=\"mind-krankenhausaufnahme-zustand-cs\"> </a><a name=\"hcmind-krankenhausaufnahme-zustand-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-krankenhausaufnahme-zustand-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-krankenhausaufnahme-zustand-cs-01\"> </a></td><td>keine Krankenhausaufnahme, Tod an der Einsatzstelle</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-krankenhausaufnahme-zustand-cs-02\"> </a></td><td>Krankenhausaufnahme mit ROSC</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-krankenhausaufnahme-zustand-cs-03\"> </a></td><td>Krankenhausaufnahme unter laufender Reanimation</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-krankenhausaufnahme-zustand-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.24"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindKrankenhausaufnahmeZustandCS",
+  "title" : "MIND Patientenzustand bei Krankenhausaufnahme",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "01",
+    "display" : "keine Krankenhausaufnahme, Tod an der Einsatzstelle"
+  },
+  {
+    "code" : "02",
+    "display" : "Krankenhausaufnahme mit ROSC"
+  },
+  {
+    "code" : "03",
+    "display" : "Krankenhausaufnahme unter laufender Reanimation"
+  }]
+}

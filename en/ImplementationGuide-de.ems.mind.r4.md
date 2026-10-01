@@ -1,0 +1,3371 @@
+# Resource deems
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "de.ems.mind.r4",
+  "language" : "en",
+  "url" : "https://till-ko.github.io/de-ems/ImplementationGuide/de.ems.mind.r4",
+  "version" : "0.1.0",
+  "name" : "deems",
+  "status" : "draft",
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "packageId" : "de.ems.mind.r4",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "7.4.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "de_basisprofil_r4",
+    "uri" : "http://fhir.de/ImplementationGuide/hl7.fhir.r4.de.basis",
+    "packageId" : "de.basisprofil.r4",
+    "version" : "1.6.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "auto-oid-root"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2.25.169126619167380341660016816424527320624"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://till-ko.github.io/de-ems/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "auto-oid-root"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2.25.169126619167380341660016816424527320624"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://till-ko.github.io/de-ems/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind"
+      },
+      "name" : "de EMS MIND Observation Basisprofil",
+      "description" : "Basisprofil für alle MIND-7.1-Feld-Beobachtungen dieses IG. Erbt von ObservationDeEmsBase das CH-EMS-Konzept 'nicht dokumentiert' (dataAbsentReason) und legt die gemeinsame MIND-Konvention fest: status, code aus MindObservationstypCS, subject, encounter (verbindlicher Bezug zum Einsatz-Encounter, dessen period.end das Einsatzende trägt) und effectiveDateTime. effectiveDateTime ist wie in CH-EMS optional; bei Zeit-Beobachtungen trägt valueDateTime den Zeitpunkt. Auch der MIND-Datumssonderwert (1902-02-02T22:00:00.000+01:00) wird nicht als echter Zeitpunkt übertragen, sondern über dataAbsentReason abgebildet.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-base.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-base"
+      },
+      "name" : "de EMS Observation Basisprofil",
+      "description" : "Basisprofil für alle Observations in diesem IG. Stellt das CH-EMS-Konzept 'nicht dokumentiert' über Observation.dataAbsentReason bereit: Fehlt der Wert einer Beobachtung, wird statt value[x] ein dataAbsentReason-Code übermittelt (z. B. not-asked, unknown). Konkrete MIND-/DIVI-Observation-Profile erben diese Konvention.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-encounter-de-ems-divi-r4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/encounter-de-ems-divi-r4"
+      },
+      "name" : "DIVI 7.1 Einsatz / Encounter",
+      "description" : "Vollständiges deutsches Encounter-Profil für das DIVI-Notfalleinsatzprotokoll (Einsatztechnische Daten). Die MIND-Einsatz-Ressource (EncounterDeEmsMindR4) ist eine Constraint-Ableitung dieses Basisprofils.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-location-de-ems-divi-r4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/location-de-ems-divi-r4"
+      },
+      "name" : "DIVI 7.1 Einsatzort / Location",
+      "description" : "Vollständiges deutsches Location-Profil für den DIVI-Notfalleinsatzprotokoll-Einsatzort. Die MIND-Einsatzort-Ressource (LocationDeEmsMindR4) ist eine Constraint-Ableitung dieses Basisprofils.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-patient-de-ems-divi-r4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-de-ems-divi-r4"
+      },
+      "name" : "DIVI 7.1 Patient",
+      "description" : "Vollständiges deutsches Patientprofil für das DIVI-Notfalleinsatzprotokoll.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-ekg-12-kanal-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-ekg-12-kanal-cs"
+      },
+      "name" : "MIND 12-Kanal-EKG",
+      "description" : "Durchführung eines 12-Kanal-EKG gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-ekg-12-kanal-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-ekg-12-kanal-vs"
+      },
+      "name" : "MIND 12-Kanal-EKG ValueSet",
+      "description" : "Durchführung eines 12-Kanal-EKG gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-altersvaliditaet.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-altersvaliditaet"
+      },
+      "name" : "MIND 7.1 Altersvalidität",
+      "description" : "Angabe, ob das dokumentierte MIND-Alter geschätzt ist. valueBoolean = true bedeutet 'Alter geschätzt', valueBoolean = false bedeutet 'Alter gesichert'. Ist die Angabe nicht dokumentiert (CH-EMS-Konzept), wird statt valueBoolean der dataAbsentReason gesetzt (vom Basisprofil ObservationDeEmsBase geerbt).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mind-altersvaliditaet-undokumentiert-example.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mind-altersvaliditaet-undokumentiert-example"
+      },
+      "name" : "MIND 7.1 Altersvalidität nicht dokumentiert",
+      "description" : "Altersvalidität als not-asked (nicht dokumentiert) über dataAbsentReason nach CH-EMS-Konzept.",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-beteiligte-rettungsmittel.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-beteiligte-rettungsmittel"
+      },
+      "name" : "MIND 7.1 Beteiligte Rettungsmittel",
+      "description" : "BeteilRM: Rettungsmitteltyp/en der am Einsatz beteiligten Rettungsmittel. Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-bundle-de-ems-mind-r4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/bundle-de-ems-mind-r4"
+      },
+      "name" : "MIND 7.1 Dokument-Bundle",
+      "description" : "FHIR-Dokument-Bundle für ein deutsches MIND-7.1-RD-Dokument.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-dokumentierendes-rettungsmittel.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-dokumentierendes-rettungsmittel"
+      },
+      "name" : "MIND 7.1 Dokumentierendes Rettungsmittel",
+      "description" : "DokRM: Rettungsmitteltyp des dokumentierenden Rettungsmittels. Abhängig vom Protokolltyp sind bestimmte Codes unzulässig (siehe MIND-Spezifikation).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-encounter-de-ems-mind-r4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/encounter-de-ems-mind-r4"
+      },
+      "name" : "MIND 7.1 Einsatz / Encounter",
+      "description" : "Constraint-Ableitung des DIVI-Einsatz-Encounters (EncounterDeEmsDiviR4) für den MIND-7.1-Datensatz. Erweitert das Basisprofil um die MIND-spezifischen Strukturdaten (ProjektID, Primärschlüssel), macht Leitstelle und Referenzen auf die MIND-Patienten-/Einsatzort-Profile verbindlich. period.end (Einsatzende) ist verpflichtend; die Zeit-Observations des Kapitels ZeitenEinsatzablauf referenzieren diesen Encounter über Observation.encounter.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-composition-de-ems-mind-r4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/composition-de-ems-mind-r4"
+      },
+      "name" : "MIND 7.1 Einsatzdokument",
+      "description" : "Composition für ein deutsches MIND-7.1-RD-Dokument.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-location-de-ems-mind-r4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/location-de-ems-mind-r4"
+      },
+      "name" : "MIND 7.1 Einsatzort / Location",
+      "description" : "Constraint-Ableitung des DIVI-Einsatzortes (LocationDeEmsDiviR4) für ein deutsches MIND-7.1-RD-Dokument. Derzeit identische Feldmenge wie das Basisprofil; die MIND-Ressource dient als eigenständiger Konformitäts-Target für den MIND-Code.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-kein-transport-mit-patient.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-kein-transport-mit-patient"
+      },
+      "name" : "MIND 7.1 Grund für Einsatz ohne Transport trotz Patientenkontakt",
+      "description" : "KeinTranspMitPat: Pflicht für Einsätze ohne Transport trotz Patientenkontakt (RDTransport = 01).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-kein-transport-ohne-patient.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-kein-transport-ohne-patient"
+      },
+      "name" : "MIND 7.1 Grund für Einsatz ohne Transport, da kein Patientenkontakt",
+      "description" : "KeinTranspOhnePat: Pflicht für Einsätze ohne Transport wegen fehlendem Patientenkontakt (RDTransport = 02).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-notarzt-nachgefordert.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert"
+      },
+      "name" : "MIND 7.1 Notarzt nachgefordert",
+      "description" : "NotarztNachgefordert: Physisch anwesender Notarzt wurde nachgefordert. valueBoolean = true bedeutet 'nachgefordert', valueBoolean = false bedeutet 'nicht nachgefordert'. Falls unbekannt, ist in MIND 'Nein' zu dokumentieren.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-patient-de-ems-mind-r4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-de-ems-mind-r4"
+      },
+      "name" : "MIND 7.1 Patient",
+      "description" : "Constraint-Ableitung vom vollständigen DIVI-Patientprofil (PatientDeEmsDiviR4) für den MIND-7.1-Export. Identifizierende Patientendaten (Name, Geburtsdatum, Adresse, Kennungen) werden nicht übermittelt.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-alter.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-alter"
+      },
+      "name" : "MIND 7.1 Patientenalter",
+      "description" : "MIND-Alter zum maßgeblichen Zeitpunkt des Einsatzes als Jahre (component[jahre]) und Monate (component[monate]). Der Export formt daraus das MIND-Format 'jjj:mm' (z. B. 51 Jahre 4 Monate = '051:04').",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-mind-rd-dokument-example.html"
+      }],
+      "reference" : {
+        "reference" : "Bundle/mind-rd-dokument-example"
+      },
+      "name" : "MIND 7.1 RD-Dokument",
+      "description" : "Minimales deutsches MIND-7.1-Dokument mit Patient, Einsatz, Einsatzort und Composition.",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Composition-mind-composition-example.html"
+      }],
+      "reference" : {
+        "reference" : "Composition/mind-composition-example"
+      },
+      "name" : "MIND 7.1 Rettungsdienstdokumentation",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-rd-transport.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-rd-transport"
+      },
+      "name" : "MIND 7.1 Rettungsdienstlicher Transport",
+      "description" : "RDTransport: Welches Rettungsmittel hat den überwiegenden Anteil des Transports des Patienten durchgeführt? Pflicht, außer für Dienstfahrten und Pauseneinsätze (EinsatzArt 11/12).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-personalstatus.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-personalstatus"
+      },
+      "name" : "MIND 7.1 Status des Personals",
+      "description" : "StatusPersonal: Qualifikation des höchstqualifizierten Mitarbeiters auf dem Rettungsmittel. Pflicht, außer für Dienstfahrten und Pauseneinsätze.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-symptombeginn-gesichert.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-symptombeginn-gesichert"
+      },
+      "name" : "MIND 7.1 Symptombeginn gesichert oder geschätzt",
+      "description" : "SymptombeginnGesichert: Ist der Symptombeginn gesichert oder geschätzt? valueBoolean = true bedeutet 'geschätzt', valueBoolean = false bedeutet 'gesichert'.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-symptombeginn-vor-24h.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-symptombeginn-vor-24h"
+      },
+      "name" : "MIND 7.1 Symptombeginn innerhalb der letzten 24 Stunden",
+      "description" : "SymptombeginnVor24h: Bestehen die Symptome länger als 24 Stunden? valueBoolean = true bedeutet 'Ja (> 24 Stunden)', valueBoolean = false bedeutet 'Nein (innerhalb 24 Stunden)'. 'unbekannt' (00) wird nach CH-EMS-Konzept über dataAbsentReason abgebildet.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-tna-nachgefordert.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-tna-nachgefordert"
+      },
+      "name" : "MIND 7.1 Tele-Notarzt nachgefordert",
+      "description" : "TNANachgefordert: Tele-Notarzt wurde nachgefordert. valueBoolean = true bedeutet 'nachgefordert', valueBoolean = false bedeutet 'nicht nachgefordert'.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-alarm.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-alarm"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Alarm",
+      "description" : "ZeitAlarm: Zeitpunkt Alarm/Auftragsvergabe.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-ankunft-einsatzort.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-ankunft-einsatzort"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Ankunft Einsatzort",
+      "description" : "ZeitAnkunftEinsatzort: Ankunft des dokumentierenden Rettungsmittels am Einsatzort.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-ankunft-patient.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-ankunft-patient"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Ankunft Patient",
+      "description" : "ZeitAnkunftPatient: Ankunft der Rettungsmittelbesatzung beim Patienten bzw. Beginn der Übernahme des Patienten bei Sekundäreinsätzen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-ausruecken.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-ausruecken"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Ausrücken",
+      "description" : "ZeitAusruecken: Zeitpunkt Abfahrt/Abflug Standort (einsatzklarer Besatzung).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-notfallmeldung.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-notfallmeldung"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Eingang Notfallmeldung",
+      "description" : "ZeitNotfallmeldung: Zeitpunkt des Anrufs (Aufschaltzeitpunkt aus Leitstellen-Datensatz).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-einsatzende.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-einsatzende"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Einsatzende",
+      "description" : "ZeitEinsatzende: Einsatz ist abgeschlossen (inkl. aller mit dem Einsatz zusammenhängenden Arbeiten wie z. B. Desinfektionstätigkeiten und Dokumentation).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-eintreffen-transportziel.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-eintreffen-transportziel"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Eintreffen Transportziel",
+      "description" : "ZeitEintreffenTransportziel: Fahrzeug trifft am Transportziel ein.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-symptombeginn.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-symptombeginn"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Symptombeginn",
+      "description" : "Symptombeginn: Ereigniszeitpunkt, Unfallzeitpunkt, Kollapszeitpunkt, Zeitpunkt Symptom-/Beschwerdebeginn, wenn dieser innerhalb von 24 Stunden vor Alarmierung liegt.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-transportbeginn.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-transportbeginn"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Transportbeginn",
+      "description" : "ZeitTransportbeginn: Beginn des Patiententransportes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-zeit-uebergabe-patient.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-zeit-uebergabe-patient"
+      },
+      "name" : "MIND 7.1 Zeitpunkt Übergabe Patient",
+      "description" : "ZeitUebergabePatient: Übergabe des Patienten an Weiterbehandler.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-mind-observationstyp-2-ivr.html"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/mind-observationstyp-2-ivr"
+      },
+      "name" : "MIND 7.1 Zeitpunkte → CH-EMS IVR Mission Time Roles",
+      "description" : "Ordnet die zeitbezogenen MIND-7.1-Codes aus MindObservationstypCS den Zeit-Rollen (Mission Time Roles) des Schweizer CH-EMS-CodeSystems IVR zu, die im CH-EMS-IG im Profil 'Mission Time Status' gebunden sind. Symptombeginn-Felder haben keine IVR-Entsprechung; die IVR-Rollen 'departure from target' (1000041) sowie die Notarzt-Zeiten (1000171/1000172) haben keine MIND-Entsprechung. Umsetzung als FSH-Instance, da SUSHI keine ConceptMap-Regel kennt.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-aerztliche-qualifikation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-aerztliche-qualifikation"
+      },
+      "name" : "MIND 7.1 Ärztliche Qualifikation",
+      "description" : "AerztlQualifikation: Fachrichtung/Qualifikation des Notarztes/Transportarztes. Pflicht für NA-Protokolle, außer für Dienstfahrten oder Pauseneinsätze. Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-observation-de-ems-mind-aerztliche-begleitung.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-de-ems-mind-aerztliche-begleitung"
+      },
+      "name" : "MIND 7.1 Ärztliche Transportbegleitung",
+      "description" : "AerztlBegleit: Wurde der Transport ärztlich begleitet und wenn ja, von wem? Bei Mehrfachausprägung wird je Ausprägung eine Observation dieses Typs übermittelt.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-airway-massnahme-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-airway-massnahme-cs"
+      },
+      "name" : "MIND Airway-Maßnahme",
+      "description" : "Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-airway-massnahme-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-airway-massnahme-vs"
+      },
+      "name" : "MIND Airway-Maßnahme ValueSet",
+      "description" : "Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-atmung-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-atmung-vs"
+      },
+      "name" : "MIND Atembefund ValueSet",
+      "description" : "Klinische Befunde der Atmung gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-atemunterstuetzung-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-atemunterstuetzung-cs"
+      },
+      "name" : "MIND Atemunterstützung",
+      "description" : "Atemunterstützung und Beatmung gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-atemunterstuetzung-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-atemunterstuetzung-vs"
+      },
+      "name" : "MIND Atemunterstützung ValueSet",
+      "description" : "Atemunterstützung und Beatmung gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-herzdruckmassage-durch-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-herzdruckmassage-durch-cs"
+      },
+      "name" : "MIND Beginn der Herzdruckmassage durch",
+      "description" : "Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-observationstyp-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-observationstyp-cs"
+      },
+      "name" : "MIND Beobachtungstypen",
+      "description" : "Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-observationstyp-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-observationstyp-vs"
+      },
+      "name" : "MIND Beobachtungstypen ValueSet",
+      "description" : "Alle Beobachtungstypen (Observation.code) der MIND-7.1-Spezifikation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-beteiligtes-rettungsmittel-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-beteiligtes-rettungsmittel-cs"
+      },
+      "name" : "MIND Beteiligtes Rettungsmittel",
+      "description" : "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-beteiligtes-rettungsmittel-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-beteiligtes-rettungsmittel-vs"
+      },
+      "name" : "MIND Beteiligtes Rettungsmittel ValueSet",
+      "description" : "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-bewusstseinslage-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-bewusstseinslage-cs"
+      },
+      "name" : "MIND Bewusstseinslage",
+      "description" : "Bewusstseinslage gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-bewusstseinslage-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-bewusstseinslage-vs"
+      },
+      "name" : "MIND Bewusstseinslage ValueSet",
+      "description" : "Bewusstseinslage gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-diagnose-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-diagnose-cs"
+      },
+      "name" : "MIND Diagnose",
+      "description" : "MIND-7.1-Diagnosecodes für präklinische Erkrankungen und Verletzungen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-diagnose-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-diagnose-vs"
+      },
+      "name" : "MIND Diagnose ValueSet",
+      "description" : "Diagnosecodes für MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-dokumentierendes-rettungsmittel-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-dokumentierendes-rettungsmittel-cs"
+      },
+      "name" : "MIND Dokumentierendes Rettungsmittel",
+      "description" : "Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-dokumentierendes-rettungsmittel-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-dokumentierendes-rettungsmittel-vs"
+      },
+      "name" : "MIND Dokumentierendes Rettungsmittel ValueSet",
+      "description" : "Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-heilkundliche-massnahme-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-heilkundliche-massnahme-cs"
+      },
+      "name" : "MIND Eigenständige heilkundliche Maßnahme",
+      "description" : "Eigenständig oder eigenverantwortlich durch Notfallsanitäterinnen und Notfallsanitäter durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-einsatzart-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-einsatzart-cs"
+      },
+      "name" : "MIND Einsatzart",
+      "description" : "Einsatzart gemäß MIND 7.1 Spezifikation. Beschreibt die Art des Einsatzes (Notfallrettung, Verlegung, Intensivtransport, Krankentransport, Dienstfahrt, Pause).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-einsatzart-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-einsatzart-vs"
+      },
+      "name" : "MIND Einsatzart ValueSet",
+      "description" : "ValueSet für die Einsatzart gemäß MIND 7.1 Spezifikation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-einsatzart-na-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-einsatzart-na-vs"
+      },
+      "name" : "MIND Einsatzart ValueSet für NA-Protokolle",
+      "description" : "Zulässige Einsatzarten für MIND 7.1 NA-Protokolle.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-einsatzart-rd-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-einsatzart-rd-vs"
+      },
+      "name" : "MIND Einsatzart ValueSet für RD-Protokolle",
+      "description" : "Zulässige Einsatzarten für MIND 7.1 RD-Protokolle.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-einsatzbesonderheit-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-einsatzbesonderheit-cs"
+      },
+      "name" : "MIND Einsatzbesonderheit",
+      "description" : "Einsatzbesonderheiten gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-einsatzbesonderheit-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-einsatzbesonderheit-vs"
+      },
+      "name" : "MIND Einsatzbesonderheit ValueSet",
+      "description" : "Einsatzbesonderheiten gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-mind-einsatzort-typ.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mind-einsatzort-typ"
+      },
+      "name" : "MIND Einsatzorttyp",
+      "description" : "Beschreibung des Einsatzortes (EinsatzortTyp) gemäß MIND 7.1. Pflicht, außer für Dienstfahrten und Pauseneinsätze.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-einsatzort-typ-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-einsatzort-typ-cs"
+      },
+      "name" : "MIND Einsatzorttyp CodeSystem",
+      "description" : "Einsatzorttyp gemäß MIND 7.1 Spezifikation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-einsatzort-typ-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-einsatzort-typ-vs"
+      },
+      "name" : "MIND Einsatzorttyp ValueSet",
+      "description" : "ValueSet für den Einsatzorttyp gemäß MIND 7.1 Spezifikation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-ekg-befund-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-ekg-befund-cs"
+      },
+      "name" : "MIND EKG-Befund",
+      "description" : "EKG-Befund gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-ekg-befund-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-ekg-befund-vs"
+      },
+      "name" : "MIND EKG-Befund ValueSet",
+      "description" : "EKG-Befund gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-erste-defibrillation-durch-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-erste-defibrillation-durch-cs"
+      },
+      "name" : "MIND Erste Defibrillation durch",
+      "description" : "Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-erste-defibrillation-durch-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-erste-defibrillation-durch-vs"
+      },
+      "name" : "MIND Erste Defibrillation durch ValueSet",
+      "description" : "Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-kein-transport-ohne-patient-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-kein-transport-ohne-patient-cs"
+      },
+      "name" : "MIND Grund für Einsatz ohne Patientenkontakt",
+      "description" : "Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-kein-transport-mit-patient-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-kein-transport-mit-patient-cs"
+      },
+      "name" : "MIND Grund für Einsatz ohne Transport bei Patientenkontakt",
+      "description" : "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-hautbefund-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-hautbefund-cs"
+      },
+      "name" : "MIND Hautbefund",
+      "description" : "Hautbefunde gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-hautbefund-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-hautbefund-vs"
+      },
+      "name" : "MIND Hautbefund ValueSet",
+      "description" : "Hautbefunde gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-heilkundliche-massnahme-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-heilkundliche-massnahme-vs"
+      },
+      "name" : "MIND Heilkundliche Maßnahme ValueSet",
+      "description" : "Eigenständig oder eigenverantwortlich durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-herzdruckmassage-durch-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-herzdruckmassage-durch-vs"
+      },
+      "name" : "MIND Herzdruckmassage durch ValueSet",
+      "description" : "Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-indikation-intensivtransport-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-indikation-intensivtransport-cs"
+      },
+      "name" : "MIND Indikation Intensivtransport",
+      "description" : "Indikation für einen Intensivtransport gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-indikation-intensivtransport-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-indikation-intensivtransport-vs"
+      },
+      "name" : "MIND Indikation Intensivtransport ValueSet",
+      "description" : "Indikation für einen Intensivtransport gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-infusionsgabe-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-infusionsgabe-vs"
+      },
+      "name" : "MIND Infusionsgabe ValueSet",
+      "description" : "Gültige MIND-7.1-Codes für die Gabe von Kristalloiden und speziellen Infusionen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-atmung-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-atmung-cs"
+      },
+      "name" : "MIND Klinischer Atembefund",
+      "description" : "Klinische Befunde der Atmung gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-kollaps-beobachtet-durch-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-kollaps-beobachtet-durch-cs"
+      },
+      "name" : "MIND Kollaps beobachtet durch",
+      "description" : "Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-kollaps-beobachtet-durch-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-kollaps-beobachtet-durch-vs"
+      },
+      "name" : "MIND Kollaps beobachtet durch ValueSet",
+      "description" : "Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-krankenhausaufnahme-zustand-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-krankenhausaufnahme-zustand-vs"
+      },
+      "name" : "MIND Krankenhausaufnahmezustand ValueSet",
+      "description" : "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-kreislaufstillstandursache-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-kreislaufstillstandursache-vs"
+      },
+      "name" : "MIND Kreislaufstillstandursache ValueSet",
+      "description" : "Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-lagerungs-rettungstechnik-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-lagerungs-rettungstechnik-cs"
+      },
+      "name" : "MIND Lagerungs- und Rettungstechnik",
+      "description" : "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-lagerungs-rettungstechnik-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-lagerungs-rettungstechnik-vs"
+      },
+      "name" : "MIND Lagerungs- und Rettungstechnik ValueSet",
+      "description" : "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-lichtreaktion-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-lichtreaktion-cs"
+      },
+      "name" : "MIND Lichtreaktion",
+      "description" : "Lichtreaktion der Pupillen gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-lichtreaktion-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-lichtreaktion-vs"
+      },
+      "name" : "MIND Lichtreaktion ValueSet",
+      "description" : "Lichtreaktion der Pupillen gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-mnaca-score-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-mnaca-score-cs"
+      },
+      "name" : "MIND M-NACA-Score",
+      "description" : "M-NACA-Score gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-mnaca-score-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-mnaca-score-vs"
+      },
+      "name" : "MIND M-NACA-Score ValueSet",
+      "description" : "M-NACA-Score gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-medikamentengabe-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-medikamentengabe-cs"
+      },
+      "name" : "MIND Medikamentengabe",
+      "description" : "Gültige Kombinationen aus Wirkstoffcode und Applikationsweg gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-medikamentengabe-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-medikamentengabe-vs"
+      },
+      "name" : "MIND Medikamentengabe ValueSet",
+      "description" : "Alle in MIND 7.1 gültigen Kombinationen aus Wirkstoffcode und Applikationsweg.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-circulation-zugang-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-circulation-zugang-cs"
+      },
+      "name" : "MIND Medikamentenzugang",
+      "description" : "Angelegter Medikamentenzugang gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-circulation-zugang-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-circulation-zugang-vs"
+      },
+      "name" : "MIND Medikamentenzugang ValueSet",
+      "description" : "Angelegter Medikamentenzugang gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-medizintechnik-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-medizintechnik-cs"
+      },
+      "name" : "MIND Medizintechnik",
+      "description" : "Eingesetzte Medizintechnik gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-medizintechnik-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-medizintechnik-vs"
+      },
+      "name" : "MIND Medizintechnik ValueSet",
+      "description" : "Eingesetzte Medizintechnik gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-naca-score-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-naca-score-cs"
+      },
+      "name" : "MIND NACA-Score",
+      "description" : "NACA-Score gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-naca-score-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-naca-score-vs"
+      },
+      "name" : "MIND NACA-Score ValueSet",
+      "description" : "NACA-Score gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-neurologische-auffaelligkeit-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-neurologische-auffaelligkeit-cs"
+      },
+      "name" : "MIND Neurologische Auffälligkeit",
+      "description" : "Akute neurologische Auffälligkeiten gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-neurologische-auffaelligkeit-verlauf-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-neurologische-auffaelligkeit-verlauf-cs"
+      },
+      "name" : "MIND Neurologische Auffälligkeit im Verlauf",
+      "description" : "Akute neurologische Auffälligkeiten im Verlaufsbefund gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-neurologische-auffaelligkeit-verlauf-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-neurologische-auffaelligkeit-verlauf-vs"
+      },
+      "name" : "MIND Neurologische Auffälligkeit im Verlauf ValueSet",
+      "description" : "Akute neurologische Auffälligkeiten (ZNS, PNS) im Verlaufsbefund gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-neurologische-auffaelligkeit-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-neurologische-auffaelligkeit-vs"
+      },
+      "name" : "MIND Neurologische Auffälligkeit ValueSet",
+      "description" : "Akute neurologische Auffälligkeiten (ZNS, PNS) gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-kein-transport-mit-patient-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-kein-transport-mit-patient-vs"
+      },
+      "name" : "MIND Nichttransport bei Patientenkontakt ValueSet",
+      "description" : "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-kein-transport-ohne-patient-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-kein-transport-ohne-patient-vs"
+      },
+      "name" : "MIND Nichttransport ohne Patientenkontakt ValueSet",
+      "description" : "Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-ort-patientenuebergabe-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-ort-patientenuebergabe-cs"
+      },
+      "name" : "MIND Ort der Patientenübergabe",
+      "description" : "Ort der Patientenübergabe gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-ort-patientenuebergabe-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-ort-patientenuebergabe-vs"
+      },
+      "name" : "MIND Ort der Patientenübergabe ValueSet",
+      "description" : "Ort der Patientenübergabe gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-krankenhausaufnahme-zustand-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-krankenhausaufnahme-zustand-cs"
+      },
+      "name" : "MIND Patientenzustand bei Krankenhausaufnahme",
+      "description" : "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-personalstatus-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-personalstatus-cs"
+      },
+      "name" : "MIND Personalstatus",
+      "description" : "Status des am Einsatz beteiligten Personals gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-personalstatus-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-personalstatus-vs"
+      },
+      "name" : "MIND Personalstatus ValueSet",
+      "description" : "Status des am Einsatz beteiligten Personals gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-protokolltyp-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-protokolltyp-cs"
+      },
+      "name" : "MIND Protokolltyp",
+      "description" : "Typ des verwendeten Protokolls: NA für Notarztdokumentation, RD für Rettungsdienstdokumentation. Sollte in den Stammdaten fest dem Rettungsmittel/Personal zugewiesen werden; beim Wechsel von Dokumentations-Pads zwischen Fahrzeugen muss das korrekte Rettungsmittel (mit zugeordneter Projekt-ID) und der richtige Protokolltyp ausgewählt sein. Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen (z. B. ProjektID, Rettungsmitteltyp, Einsatzart, Qualifikation Personal).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-protokolltyp-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-protokolltyp-vs"
+      },
+      "name" : "MIND Protokolltyp ValueSet",
+      "description" : "ValueSet für den Protokolltyp (NA oder RD) gemäß MIND-Spezifikation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-psychischer-zustand-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-psychischer-zustand-cs"
+      },
+      "name" : "MIND Psychischer Zustand",
+      "description" : "Psychischer Zustand gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-psychischer-zustand-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-psychischer-zustand-vs"
+      },
+      "name" : "MIND Psychischer Zustand ValueSet",
+      "description" : "Psychischer Zustand gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-pupillenweite-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-pupillenweite-cs"
+      },
+      "name" : "MIND Pupillenweite",
+      "description" : "Pupillenweite gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-pupillenweite-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-pupillenweite-vs"
+      },
+      "name" : "MIND Pupillenweite ValueSet",
+      "description" : "Pupillenweite gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-reanimationssituation-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-reanimationssituation-cs"
+      },
+      "name" : "MIND Reanimationssituation",
+      "description" : "Reanimationssituation gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-reanimationssituation-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-reanimationssituation-vs"
+      },
+      "name" : "MIND Reanimationssituation ValueSet",
+      "description" : "Lag eine Reanimationssituation vor bzw. wurde eine solche durch die Rettungsmittelbesatzung erkannt, gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-reanimationstechnik-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-reanimationstechnik-cs"
+      },
+      "name" : "MIND Reanimationstechnik",
+      "description" : "Eingesetzte Reanimationstechnik gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-reanimationstechnik-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-reanimationstechnik-vs"
+      },
+      "name" : "MIND Reanimationstechnik ValueSet",
+      "description" : "Eingesetzte Reanimationstechnik gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-rd-transport-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-rd-transport-cs"
+      },
+      "name" : "MIND Rettungsdienstlicher Transport",
+      "description" : "Rettungsdienstlicher Transport gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-rd-transport-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-rd-transport-vs"
+      },
+      "name" : "MIND Rettungsdienstlicher Transport ValueSet",
+      "description" : "Rettungsdienstlicher Transport gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-rosc-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-rosc-cs"
+      },
+      "name" : "MIND ROSC",
+      "description" : "Erreichen eines Spontankreislaufs gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-rosc-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-rosc-vs"
+      },
+      "name" : "MIND ROSC ValueSet",
+      "description" : "Erreichen eines Spontankreislaufs (ROSC) gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-schmerzerleben-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-schmerzerleben-cs"
+      },
+      "name" : "MIND Schmerzerleben",
+      "description" : "Schmerzerleben durch die Patientin oder den Patienten gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-schmerzerleben-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-schmerzerleben-vs"
+      },
+      "name" : "MIND Schmerzerleben ValueSet",
+      "description" : "Schmerzerleben durch die Patientin oder den Patienten gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-mind-softwarekennung.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mind-softwarekennung"
+      },
+      "name" : "MIND Softwarekennung",
+      "description" : "Kennung des Dokumentationssystems und der Software-Version, mit der die Einsatzdaten erzeugt wurden. Pflichtfeld in Baden-Württemberg laut MIND-Exporthinweisen. Der MIND-Sonderwert -2 (nicht anwendbar) wird nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf valueString abgebildet (CH-EMS-Konzept).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-spezielle-devices-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-spezielle-devices-cs"
+      },
+      "name" : "MIND Spezielle Devices",
+      "description" : "Spezielle Devices gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-spezielle-devices-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-spezielle-devices-vs"
+      },
+      "name" : "MIND Spezielle Devices ValueSet",
+      "description" : "Spezielle Devices gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-spezielle-massnahme-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-spezielle-massnahme-cs"
+      },
+      "name" : "MIND Spezielle Maßnahme",
+      "description" : "Spezielle Maßnahmen gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-spezielle-massnahme-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-spezielle-massnahme-vs"
+      },
+      "name" : "MIND Spezielle Maßnahme ValueSet",
+      "description" : "Spezielle Maßnahmen gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-unfallhergang-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-unfallhergang-cs"
+      },
+      "name" : "MIND Unfallhergang",
+      "description" : "Unfallhergang gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-unfallhergang-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-unfallhergang-vs"
+      },
+      "name" : "MIND Unfallhergang ValueSet",
+      "description" : "Unfallhergang gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-unfallmechanismus-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-unfallmechanismus-cs"
+      },
+      "name" : "MIND Unfallmechanismus",
+      "description" : "Unfallmechanismus gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-unfallmechanismus-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-unfallmechanismus-vs"
+      },
+      "name" : "MIND Unfallmechanismus ValueSet",
+      "description" : "Unfallmechanismus gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-unfallursache-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-unfallursache-cs"
+      },
+      "name" : "MIND Unfallursache",
+      "description" : "Unfallursache gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-unfallursache-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-unfallursache-vs"
+      },
+      "name" : "MIND Unfallursache ValueSet",
+      "description" : "Unfallursache gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-verletzungsmuster-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-verletzungsmuster-cs"
+      },
+      "name" : "MIND Verletzungsmuster",
+      "description" : "Verletzungsmuster gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-verletzungsmuster-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-verletzungsmuster-vs"
+      },
+      "name" : "MIND Verletzungsmuster ValueSet",
+      "description" : "Verletzungsmuster gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-kreislaufstillstandursache-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-kreislaufstillstandursache-cs"
+      },
+      "name" : "MIND Vermutete Ursache des Kreislaufstillstands",
+      "description" : "Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-zeitliche-dringlichkeit-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-zeitliche-dringlichkeit-cs"
+      },
+      "name" : "MIND Zeitliche Dringlichkeit",
+      "description" : "Zeitliche Dringlichkeit gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-zeitliche-dringlichkeit-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-zeitliche-dringlichkeit-vs"
+      },
+      "name" : "MIND Zeitliche Dringlichkeit ValueSet",
+      "description" : "Zeitliche Dringlichkeit gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-pre-emergency-status-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-pre-emergency-status-cs"
+      },
+      "name" : "MIND Zustand vor Eintritt des Notfalls",
+      "description" : "Zustand vor Eintritt des Notfalls gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-pre-emergency-status-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-pre-emergency-status-vs"
+      },
+      "name" : "MIND Zustand vor Eintritt des Notfalls ValueSet",
+      "description" : "Zustand vor Eintritt des Notfalls gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-aerztliche-qualifikation-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-aerztliche-qualifikation-cs"
+      },
+      "name" : "MIND Ärztliche Qualifikation",
+      "description" : "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-aerztliche-qualifikation-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-aerztliche-qualifikation-vs"
+      },
+      "name" : "MIND Ärztliche Qualifikation ValueSet",
+      "description" : "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mind-aerztliche-begleitung-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mind-aerztliche-begleitung-cs"
+      },
+      "name" : "MIND Ärztliche Transportbegleitung",
+      "description" : "Ärztliche Transportbegleitung gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mind-aerztliche-begleitung-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mind-aerztliche-begleitung-vs"
+      },
+      "name" : "MIND Ärztliche Transportbegleitung ValueSet",
+      "description" : "Ärztliche Transportbegleitung gemäß MIND 7.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mind-alter-example.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mind-alter-example"
+      },
+      "name" : "MindAlterExample",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mind-altersvaliditaet-example.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mind-altersvaliditaet-example"
+      },
+      "name" : "MindAltersvaliditaetExample",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-MindAuftragNrNamingSystem.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/MindAuftragNrNamingSystem"
+      },
+      "name" : "MindAuftragNrNamingSystem",
+      "description" : "Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des RD-Auftrages (DIVI-Feld AuftrNr).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-MindEinsatznrNamingSystem.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/MindEinsatznrNamingSystem"
+      },
+      "name" : "MindEinsatznrNamingSystem",
+      "description" : "Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes (DIVI-Feld EinsatzNr).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-MindLeitstelleNamingSystem.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/MindLeitstelleNamingSystem"
+      },
+      "name" : "MindLeitstelleNamingSystem",
+      "description" : "Landkreiskennung der Heimatleitstelle (z. B. S für Stuttgart, OG für Offenburg). Für einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden; einmalig in den Stammdaten einzupflegen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mind-notarzt-nachgefordert-example.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mind-notarzt-nachgefordert-example"
+      },
+      "name" : "MindNotarztNachgefordertExample",
+      "description" : "NotarztNachgefordert: kein Notarzt nachgefordert.",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-MindPatNrNamingSystem.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/MindPatNrNamingSystem"
+      },
+      "name" : "MindPatNrNamingSystem",
+      "description" : "Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Patienten (DIVI-Feld PatNr).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-MindPrimaerschluesselNamingSystem.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/MindPrimaerschluesselNamingSystem"
+      },
+      "name" : "MindPrimaerschluesselNamingSystem",
+      "description" : "Eindeutiger Primärschlüssel für alle Fälle eines Kalenderjahres innerhalb eines Leitstellenbereiches gemäß MIND-Spezifikation. NA-Auftragsnummer im NA-Protokoll, RD-Auftragsnummer im RD-Protokoll.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-MindProjektIdNamingSystem.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/MindProjektIdNamingSystem"
+      },
+      "name" : "MindProjektIdNamingSystem",
+      "description" : "Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird (Einmalig in den Stammdaten einzupflegen) gemäß MIND-Spezifikation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-mind-encounter-example.html"
+      }],
+      "reference" : {
+        "reference" : "Encounter/mind-encounter-example"
+      },
+      "name" : "MindRdEncounterExample",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Location-mind-location-example.html"
+      }],
+      "reference" : {
+        "reference" : "Location/mind-location-example"
+      },
+      "name" : "MindRdLocationExample",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-mind-patient-example.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/mind-patient-example"
+      },
+      "name" : "MindRdPatientExample",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-mind-practitioner-example.html"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/mind-practitioner-example"
+      },
+      "name" : "MindRdPractitionerExample",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mind-rdtransport-example.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mind-rdtransport-example"
+      },
+      "name" : "MindRdTransportExample",
+      "description" : "RDTransport: Transport durch RTW.",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-MindStandortkennungNamingSystem.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/MindStandortkennungNamingSystem"
+      },
+      "name" : "MindStandortkennungNamingSystem",
+      "description" : "Amtlicher Gemeindeschlüssel des Rettungsmittel-Standorts (Gliederung BL-LK: Bundesland und Landkreis nach Vorgaben des Gemeindeschlüssels; Rettungswache). Sonderwerte der MIND-Spezifikation (-1 = nicht dokumentiert, 99999999 = nicht bekannt) werden nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf identifier[standortkennung].value abgebildet (CH-EMS-Konzept).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mind-zeit-alarm-example.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mind-zeit-alarm-example"
+      },
+      "name" : "MindZeitAlarmExample",
+      "description" : "ZeitAlarm: Alarmierung durch die Leitstelle.",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mind-zeit-einsatzende-example.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mind-zeit-einsatzende-example"
+      },
+      "name" : "MindZeitEinsatzendeExample",
+      "description" : "ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.period.end).",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-divi-patient-example.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/divi-patient-example"
+      },
+      "name" : "Vollständiger DIVI-Patient",
+      "description" : "Beispiel eines vollständigen deutschen Patientendatensatzes für das DIVI-Dokument.",
+      "exampleCanonical" : "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4"
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/assets"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}
+
+```

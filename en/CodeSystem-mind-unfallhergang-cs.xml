@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-unfallhergang-cs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-unfallhergang-cs</b></p><a name="mind-unfallhergang-cs"> </a><a name="hcmind-unfallhergang-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-unfallhergang-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="mind-unfallhergang-cs-01"> </a></td><td>PKW-Insasse</td></tr><tr><td style="white-space:nowrap">02<a name="mind-unfallhergang-cs-02"> </a></td><td>LKW-Insasse</td></tr><tr><td style="white-space:nowrap">03<a name="mind-unfallhergang-cs-03"> </a></td><td>Bus-Insasse</td></tr><tr><td style="white-space:nowrap">04<a name="mind-unfallhergang-cs-04"> </a></td><td>Motorradfahrer/-sozius</td></tr><tr><td style="white-space:nowrap">05<a name="mind-unfallhergang-cs-05"> </a></td><td>Fahrrad</td></tr><tr><td style="white-space:nowrap">06<a name="mind-unfallhergang-cs-06"> </a></td><td>unterstütztes Fahrrad (E-Bike/Pedelec)</td></tr><tr><td style="white-space:nowrap">07<a name="mind-unfallhergang-cs-07"> </a></td><td>E-Scooter</td></tr><tr><td style="white-space:nowrap">08<a name="mind-unfallhergang-cs-08"> </a></td><td>Fußgänger angefahren</td></tr><tr><td style="white-space:nowrap">09<a name="mind-unfallhergang-cs-09"> </a></td><td>sonstiger Verkehrsunfall</td></tr><tr><td style="white-space:nowrap">10<a name="mind-unfallhergang-cs-10"> </a></td><td>(Ab)Sturz mit Fallhöhe mehr als 3 m</td></tr><tr><td style="white-space:nowrap">11<a name="mind-unfallhergang-cs-11"> </a></td><td>(Ab)Sturz mit Fallhöhe maximal 3 m</td></tr><tr><td style="white-space:nowrap">12<a name="mind-unfallhergang-cs-12"> </a></td><td>ebenerdiger Sturz</td></tr><tr><td style="white-space:nowrap">13<a name="mind-unfallhergang-cs-13"> </a></td><td>Schlagverletzung (Gegenstand, Ast, ...)</td></tr><tr><td style="white-space:nowrap">14<a name="mind-unfallhergang-cs-14"> </a></td><td>Schussverletzung</td></tr><tr><td style="white-space:nowrap">15<a name="mind-unfallhergang-cs-15"> </a></td><td>Stichverletzung</td></tr><tr><td style="white-space:nowrap">16<a name="mind-unfallhergang-cs-16"> </a></td><td>Gewaltverbrechen</td></tr><tr><td style="white-space:nowrap">17<a name="mind-unfallhergang-cs-17"> </a></td><td>Explosion/Verpuffung (thermomechanische Kombiverletzung)</td></tr><tr><td style="white-space:nowrap">18<a name="mind-unfallhergang-cs-18"> </a></td><td>Verschüttung</td></tr><tr><td style="white-space:nowrap">19<a name="mind-unfallhergang-cs-19"> </a></td><td>Arbeitsunfall</td></tr><tr><td style="white-space:nowrap">20<a name="mind-unfallhergang-cs-20"> </a></td><td>Sportunfall</td></tr><tr><td style="white-space:nowrap">98<a name="mind-unfallhergang-cs-98"> </a></td><td>andere Unfallarten</td></tr><tr><td style="white-space:nowrap">99<a name="mind-unfallhergang-cs-99"> </a></td><td>nicht bekannt</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-unfallhergang-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.48"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindUnfallhergangCS"/>
+  <title value="MIND Unfallhergang"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Unfallhergang gemäß MIND 7.1."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="22"/>
+  <concept>
+    <code value="01"/>
+    <display value="PKW-Insasse"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="LKW-Insasse"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Bus-Insasse"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Motorradfahrer/-sozius"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Fahrrad"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="unterstütztes Fahrrad (E-Bike/Pedelec)"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="E-Scooter"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Fußgänger angefahren"/>
+  </concept>
+  <concept>
+    <code value="09"/>
+    <display value="sonstiger Verkehrsunfall"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="(Ab)Sturz mit Fallhöhe mehr als 3 m"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="(Ab)Sturz mit Fallhöhe maximal 3 m"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="ebenerdiger Sturz"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="Schlagverletzung (Gegenstand, Ast, ...)"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="Schussverletzung"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="Stichverletzung"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="Gewaltverbrechen"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="Explosion/Verpuffung (thermomechanische Kombiverletzung)"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="Verschüttung"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="Arbeitsunfall"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="Sportunfall"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="andere Unfallarten"/>
+  </concept>
+  <concept>
+    <code value="99"/>
+    <display value="nicht bekannt"/>
+  </concept>
+</CodeSystem>

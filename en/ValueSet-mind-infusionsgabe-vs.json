@@ -1,0 +1,94 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mind-infusionsgabe-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mind-infusionsgabe-vs</b></p><a name=\"mind-infusionsgabe-vs\"> </a><a name=\"hcmind-infusionsgabe-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-mind-medikamentengabe-cs.html\"><code>https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3001io\">3001io</a></td><td style=\"color: #cccccc\">isotone Kochsalzlösung - intraossär</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3001iv\">3001iv</a></td><td style=\"color: #cccccc\">isotone Kochsalzlösung - intravenös</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3001sc\">3001sc</a></td><td style=\"color: #cccccc\">isotone Kochsalzlösung - subkutan</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3002io\">3002io</a></td><td style=\"color: #cccccc\">Vollelektrolytlösung - intraossär</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3002iv\">3002iv</a></td><td style=\"color: #cccccc\">Vollelektrolytlösung - intravenös</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3002sc\">3002sc</a></td><td style=\"color: #cccccc\">Vollelektrolytlösung - subkutan</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3097xx\">3097xx</a></td><td style=\"color: #cccccc\">vorbehandelt mit Kristalloid - sämtliche Applikationsformen</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3098io\">3098io</a></td><td style=\"color: #cccccc\">sonstiges Kristalloid - intraossär</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3098iv\">3098iv</a></td><td style=\"color: #cccccc\">sonstiges Kristalloid - intravenös</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3098sc\">3098sc</a></td><td style=\"color: #cccccc\">sonstiges Kristalloid - subkutan</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3101io\">3101io</a></td><td style=\"color: #cccccc\">HÄS - intraossär</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3101iv\">3101iv</a></td><td style=\"color: #cccccc\">HÄS - intravenös</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3102io\">3102io</a></td><td style=\"color: #cccccc\">SVR/Hyperosmol. NaCl - intraossär</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3102iv\">3102iv</a></td><td style=\"color: #cccccc\">SVR/Hyperosmol. NaCl - intravenös</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3103io\">3103io</a></td><td style=\"color: #cccccc\">Gelatine - intraossär</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3103iv\">3103iv</a></td><td style=\"color: #cccccc\">Gelatine - intravenös</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3197xx\">3197xx</a></td><td style=\"color: #cccccc\">vorbehandelt mit Kolloid - sämtliche Applikationsformen</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3198io\">3198io</a></td><td style=\"color: #cccccc\">sonstige spezielle Infusion - intraossär</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-3198iv\">3198iv</a></td><td style=\"color: #cccccc\">sonstige spezielle Infusion - intravenös</td></tr><tr><td><a href=\"CodeSystem-mind-medikamentengabe-cs.html#mind-medikamentengabe-cs-999999\">999999</a></td><td style=\"color: #cccccc\">kein Medikament / keine Infusion</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-infusionsgabe-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.48.23"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindInfusionsgabeVS",
+  "title" : "MIND Infusionsgabe ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Gültige MIND-7.1-Codes für die Gabe von Kristalloiden und speziellen Infusionen.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs",
+      "concept" : [{
+        "code" : "3001io"
+      },
+      {
+        "code" : "3001iv"
+      },
+      {
+        "code" : "3001sc"
+      },
+      {
+        "code" : "3002io"
+      },
+      {
+        "code" : "3002iv"
+      },
+      {
+        "code" : "3002sc"
+      },
+      {
+        "code" : "3097xx"
+      },
+      {
+        "code" : "3098io"
+      },
+      {
+        "code" : "3098iv"
+      },
+      {
+        "code" : "3098sc"
+      },
+      {
+        "code" : "3101io"
+      },
+      {
+        "code" : "3101iv"
+      },
+      {
+        "code" : "3102io"
+      },
+      {
+        "code" : "3102iv"
+      },
+      {
+        "code" : "3103io"
+      },
+      {
+        "code" : "3103iv"
+      },
+      {
+        "code" : "3197xx"
+      },
+      {
+        "code" : "3198io"
+      },
+      {
+        "code" : "3198iv"
+      },
+      {
+        "code" : "999999"
+      }]
+    }]
+  }
+}

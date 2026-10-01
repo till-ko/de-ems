@@ -1,0 +1,84 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-aerztliche-qualifikation-cs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-aerztliche-qualifikation-cs</b></p><a name=\"mind-aerztliche-qualifikation-cs\"> </a><a name=\"hcmind-aerztliche-qualifikation-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-qualifikation-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">-1<a name=\"mind-aerztliche-qualifikation-cs--1\"> </a></td><td>nicht dokumentiert</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-aerztliche-qualifikation-cs-01\"> </a></td><td>Innere</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-aerztliche-qualifikation-cs-02\"> </a></td><td>Chirurgie</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-aerztliche-qualifikation-cs-03\"> </a></td><td>Anästhesie</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-aerztliche-qualifikation-cs-04\"> </a></td><td>Pädiatrie</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"mind-aerztliche-qualifikation-cs-05\"> </a></td><td>Allgemeinmedizin</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"mind-aerztliche-qualifikation-cs-06\"> </a></td><td>Neurologie</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"mind-aerztliche-qualifikation-cs-07\"> </a></td><td>Zusatzbezeichnung Notfallmedizin</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"mind-aerztliche-qualifikation-cs-08\"> </a></td><td>Zusatzbezeichnung Intensivmedizin</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"mind-aerztliche-qualifikation-cs-09\"> </a></td><td>Zusatzbezeichnung Klinische Akut- und Notfallmedizin</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"mind-aerztliche-qualifikation-cs-10\"> </a></td><td>Ärztin/Arzt in Weiterbildung</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"mind-aerztliche-qualifikation-cs-11\"> </a></td><td>Fachärztin/-arzt</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"mind-aerztliche-qualifikation-cs-98\"> </a></td><td>Andere Fachrichtung</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-qualifikation-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.2"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindAerztlicheQualifikationCS",
+  "title" : "MIND Ärztliche Qualifikation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 13,
+  "concept" : [{
+    "code" : "-1",
+    "display" : "nicht dokumentiert"
+  },
+  {
+    "code" : "01",
+    "display" : "Innere"
+  },
+  {
+    "code" : "02",
+    "display" : "Chirurgie"
+  },
+  {
+    "code" : "03",
+    "display" : "Anästhesie"
+  },
+  {
+    "code" : "04",
+    "display" : "Pädiatrie"
+  },
+  {
+    "code" : "05",
+    "display" : "Allgemeinmedizin"
+  },
+  {
+    "code" : "06",
+    "display" : "Neurologie"
+  },
+  {
+    "code" : "07",
+    "display" : "Zusatzbezeichnung Notfallmedizin"
+  },
+  {
+    "code" : "08",
+    "display" : "Zusatzbezeichnung Intensivmedizin"
+  },
+  {
+    "code" : "09",
+    "display" : "Zusatzbezeichnung Klinische Akut- und Notfallmedizin"
+  },
+  {
+    "code" : "10",
+    "display" : "Ärztin/Arzt in Weiterbildung"
+  },
+  {
+    "code" : "11",
+    "display" : "Fachärztin/-arzt"
+  },
+  {
+    "code" : "98",
+    "display" : "Andere Fachrichtung"
+  }]
+}

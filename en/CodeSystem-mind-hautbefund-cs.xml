@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-hautbefund-cs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-hautbefund-cs</b></p><a name="mind-hautbefund-cs"> </a><a name="hcmind-hautbefund-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-hautbefund-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">-1<a name="mind-hautbefund-cs--1"> </a></td><td>nicht untersucht</td></tr><tr><td style="white-space:nowrap">00<a name="mind-hautbefund-cs-00"> </a></td><td>unauffällig</td></tr><tr><td style="white-space:nowrap">01<a name="mind-hautbefund-cs-01"> </a></td><td>Kalt-Schweissigkeit</td></tr><tr><td style="white-space:nowrap">02<a name="mind-hautbefund-cs-02"> </a></td><td>Stehende Hautfalten</td></tr><tr><td style="white-space:nowrap">03<a name="mind-hautbefund-cs-03"> </a></td><td>Ödeme</td></tr><tr><td style="white-space:nowrap">04<a name="mind-hautbefund-cs-04"> </a></td><td>blass/fahl</td></tr><tr><td style="white-space:nowrap">05<a name="mind-hautbefund-cs-05"> </a></td><td>Dekubitus</td></tr><tr><td style="white-space:nowrap">06<a name="mind-hautbefund-cs-06"> </a></td><td>Exanthem/Erythem</td></tr><tr><td style="white-space:nowrap">07<a name="mind-hautbefund-cs-07"> </a></td><td>Marmorierung</td></tr><tr><td style="white-space:nowrap">08<a name="mind-hautbefund-cs-08"> </a></td><td>Ikterus</td></tr><tr><td style="white-space:nowrap">98<a name="mind-hautbefund-cs-98"> </a></td><td>Sonstige</td></tr><tr><td style="white-space:nowrap">99<a name="mind-hautbefund-cs-99"> </a></td><td>nicht beurteilbar</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-hautbefund-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.17"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindHautbefundCS"/>
+  <title value="MIND Hautbefund"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Hautbefunde gemäß MIND 7.1."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="-1"/>
+    <display value="nicht untersucht"/>
+  </concept>
+  <concept>
+    <code value="00"/>
+    <display value="unauffällig"/>
+  </concept>
+  <concept>
+    <code value="01"/>
+    <display value="Kalt-Schweissigkeit"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Stehende Hautfalten"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Ödeme"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="blass/fahl"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Dekubitus"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Exanthem/Erythem"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="Marmorierung"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Ikterus"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="Sonstige"/>
+  </concept>
+  <concept>
+    <code value="99"/>
+    <display value="nicht beurteilbar"/>
+  </concept>
+</CodeSystem>

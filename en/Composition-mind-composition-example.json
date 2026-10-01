@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Composition",
+  "id" : "mind-composition-example",
+  "meta" : {
+    "profile" : ["https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition mind-composition-example</b></p><a name=\"mind-composition-example\"> </a><a name=\"hcmind-composition-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-composition-de-ems-mind-r4.html\">MIND 7.1 Einsatzdokument</a></p></div><p><b>MIND Softwarekennung</b>: MIND-LOGIK 7.0.1</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-protokolltyp-cs RD}\">Rettungsdienstdokumentation</span></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>date</b>: 2026-09-16 10:00:00+0200</p><p><b>author</b>: <a href=\"Practitioner-mind-practitioner-example.html\">Practitioner Rettungsdienst Beispiel </a></p><p><b>title</b>: MIND 7.1 Rettungsdienstdokumentation</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://till-ko.github.io/de-ems/StructureDefinition/mind-softwarekennung",
+    "valueString" : "MIND-LOGIK 7.0.1"
+  }],
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "https://till-ko.github.io/de-ems/CodeSystem/mind-protokolltyp-cs",
+      "code" : "RD"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mind-patient-example"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mind-encounter-example"
+  },
+  "date" : "2026-09-16T10:00:00+02:00",
+  "author" : [{
+    "reference" : "Practitioner/mind-practitioner-example"
+  }],
+  "title" : "MIND 7.1 Rettungsdienstdokumentation"
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mind-lichtreaktion-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mind-lichtreaktion-vs</b></p><a name=\"mind-lichtreaktion-vs\"> </a><a name=\"hcmind-lichtreaktion-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-mind-lichtreaktion-cs.html\"><code>https://till-ko.github.io/de-ems/CodeSystem/mind-lichtreaktion-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-lichtreaktion-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.48.30"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindLichtreaktionVS",
+  "title" : "MIND Lichtreaktion ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Lichtreaktion der Pupillen gemäß MIND 7.1.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://till-ko.github.io/de-ems/CodeSystem/mind-lichtreaktion-cs"
+    }]
+  }
+}

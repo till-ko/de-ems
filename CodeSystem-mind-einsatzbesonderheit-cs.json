@@ -1,0 +1,119 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-einsatzbesonderheit-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-einsatzbesonderheit-cs</b></p><a name=\"mind-einsatzbesonderheit-cs\"> </a><a name=\"hcmind-einsatzbesonderheit-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzbesonderheit-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">00<a name=\"mind-einsatzbesonderheit-cs-00\"> </a></td><td>keine</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-einsatzbesonderheit-cs-01\"> </a></td><td>nächste geeignete Klinik nicht aufnahmebereit</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-einsatzbesonderheit-cs-02\"> </a></td><td>Patient lehnt indizierte Maßnahmen ab</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-einsatzbesonderheit-cs-03\"> </a></td><td>bewusster Therapieverzicht</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-einsatzbesonderheit-cs-04\"> </a></td><td>indizierte Maßnahme wegen Kontraindikation nicht durchgeführt</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"mind-einsatzbesonderheit-cs-05\"> </a></td><td>Infektionstransport mit Desinfektionsmaßnahmen</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"mind-einsatzbesonderheit-cs-06\"> </a></td><td>aufwendiger Infektionstransport mit erweiterten Schutzmaßnahmen</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"mind-einsatzbesonderheit-cs-07\"> </a></td><td>Schwerlasttransport</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"mind-einsatzbesonderheit-cs-08\"> </a></td><td>Zwangsunterbringung</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"mind-einsatzbesonderheit-cs-09\"> </a></td><td>aufwendige technische Rettung</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"mind-einsatzbesonderheit-cs-10\"> </a></td><td>Einsatz mit LNA/OrgL</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"mind-einsatzbesonderheit-cs-11\"> </a></td><td>mehrere Patienten</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"mind-einsatzbesonderheit-cs-12\"> </a></td><td>MANV</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"mind-einsatzbesonderheit-cs-13\"> </a></td><td>kein Notarzt in angemessener Zeit verfügbar</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"mind-einsatzbesonderheit-cs-14\"> </a></td><td>erschwerter Patientenzugang</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"mind-einsatzbesonderheit-cs-15\"> </a></td><td>verzögerte Patientenübergabe</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"mind-einsatzbesonderheit-cs-16\"> </a></td><td>Gewalt gegen Einsatzkräfte</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"mind-einsatzbesonderheit-cs-17\"> </a></td><td>Wahl der Zielklinik durch Dritte</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"mind-einsatzbesonderheit-cs-18\"> </a></td><td>Wahl der Zielklinik durch Patientenwunsch</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"mind-einsatzbesonderheit-cs-19\"> </a></td><td>Einsatzabbruch wegen Folgeeinsatz</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"mind-einsatzbesonderheit-cs-20\"> </a></td><td>dieser Einsatz ist ein Folgeeinsatz</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"mind-einsatzbesonderheit-cs-98\"> </a></td><td>Sonstige</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzbesonderheit-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.12"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindEinsatzbesonderheitCS",
+  "title" : "MIND Einsatzbesonderheit",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Einsatzbesonderheiten gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 22,
+  "concept" : [{
+    "code" : "00",
+    "display" : "keine"
+  },
+  {
+    "code" : "01",
+    "display" : "nächste geeignete Klinik nicht aufnahmebereit"
+  },
+  {
+    "code" : "02",
+    "display" : "Patient lehnt indizierte Maßnahmen ab"
+  },
+  {
+    "code" : "03",
+    "display" : "bewusster Therapieverzicht"
+  },
+  {
+    "code" : "04",
+    "display" : "indizierte Maßnahme wegen Kontraindikation nicht durchgeführt"
+  },
+  {
+    "code" : "05",
+    "display" : "Infektionstransport mit Desinfektionsmaßnahmen"
+  },
+  {
+    "code" : "06",
+    "display" : "aufwendiger Infektionstransport mit erweiterten Schutzmaßnahmen"
+  },
+  {
+    "code" : "07",
+    "display" : "Schwerlasttransport"
+  },
+  {
+    "code" : "08",
+    "display" : "Zwangsunterbringung"
+  },
+  {
+    "code" : "09",
+    "display" : "aufwendige technische Rettung"
+  },
+  {
+    "code" : "10",
+    "display" : "Einsatz mit LNA/OrgL"
+  },
+  {
+    "code" : "11",
+    "display" : "mehrere Patienten"
+  },
+  {
+    "code" : "12",
+    "display" : "MANV"
+  },
+  {
+    "code" : "13",
+    "display" : "kein Notarzt in angemessener Zeit verfügbar"
+  },
+  {
+    "code" : "14",
+    "display" : "erschwerter Patientenzugang"
+  },
+  {
+    "code" : "15",
+    "display" : "verzögerte Patientenübergabe"
+  },
+  {
+    "code" : "16",
+    "display" : "Gewalt gegen Einsatzkräfte"
+  },
+  {
+    "code" : "17",
+    "display" : "Wahl der Zielklinik durch Dritte"
+  },
+  {
+    "code" : "18",
+    "display" : "Wahl der Zielklinik durch Patientenwunsch"
+  },
+  {
+    "code" : "19",
+    "display" : "Einsatzabbruch wegen Folgeeinsatz"
+  },
+  {
+    "code" : "20",
+    "display" : "dieser Einsatz ist ein Folgeeinsatz"
+  },
+  {
+    "code" : "98",
+    "display" : "Sonstige"
+  }]
+}

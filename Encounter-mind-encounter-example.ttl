@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/Encounter/mind-encounter-example> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-encounter-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4" ;
+       fhir:index 0 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter mind-encounter-example</b></p><a name=\"mind-encounter-example\"> </a><a name=\"hcmind-encounter-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-de-ems-mind-r4.html\">MIND 7.1 Einsatz / Encounter</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-MindStandortkennungNamingSystem.html\" title=\"Amtlicher Gemeindeschlüssel des Rettungsmittel-Standorts (Gliederung BL-LK: Bundesland und Landkreis nach Vorgaben des Gemeindeschlüssels; Rettungswache). Sonderwerte der MIND-Spezifikation (-1 = nicht dokumentiert, 99999999 = nicht bekannt) werden nicht als Wert übertragen, sondern über die data-absent-reason-Extension auf identifier[standortkennung].value abgebildet (CH-EMS-Konzept).\">MindStandortkennung</a>/03254021, <a href=\"NamingSystem-MindProjektIdNamingSystem.html\" title=\"Standortspezifische Nummer, die von einer zentralen Stelle vergeben und verwaltet wird (Einmalig in den Stammdaten einzupflegen) gemäß MIND-Spezifikation.\">MindProjektId</a>/PRJ-2026-0001, <a href=\"NamingSystem-MindLeitstelleNamingSystem.html\" title=\"Landkreiskennung der Heimatleitstelle (z. B. S für Stuttgart, OG für Offenburg). Für einen Standort immer konstant und sollte automatisiert beim Export zugeordnet werden; einmalig in den Stammdaten einzupflegen.\">MindLeitstelle</a>/HI, <a href=\"NamingSystem-MindPrimaerschluesselNamingSystem.html\" title=\"Eindeutiger Primärschlüssel für alle Fälle eines Kalenderjahres innerhalb eines Leitstellenbereiches gemäß MIND-Spezifikation. NA-Auftragsnummer im NA-Protokoll, RD-Auftragsnummer im RD-Protokoll.\">MindPrimaerschluessel</a>/HI-2026-00042, <a href=\"NamingSystem-MindEinsatznrNamingSystem.html\" title=\"Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des Einsatzes (DIVI-Feld EinsatzNr).\">MindEinsatznr</a>/E-2026-0412, <a href=\"NamingSystem-MindAuftragNrNamingSystem.html\" title=\"Je nach Bundesland / Rettungszweckverband festgelegtes eineindeutiges Kennzeichen des RD-Auftrages (DIVI-Feld AuftrNr).\">MindAuftragNr</a>/RK-2026-3321</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER\">ActCode: EMER</a> (emergency)</p><p><b>type</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs 04}\">Notfallrettung - Primäreinsatz ohne NA</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>period</b>: 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-mind-location-example.html\">Location Einsatzort Beispiel</a></td></tr></table></div>"
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung" ] ;
+     fhir:Identifier.value [ fhir:value "03254021" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-projektid" ] ;
+     fhir:Identifier.value [ fhir:value "PRJ-2026-0001" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle" ] ;
+     fhir:Identifier.value [ fhir:value "HI" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel" ] ;
+     fhir:Identifier.value [ fhir:value "HI-2026-00042" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr" ] ;
+     fhir:Identifier.value [ fhir:value "E-2026-0412" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Identifier.system [ fhir:value "https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr" ] ;
+     fhir:Identifier.value [ fhir:value "RK-2026-3321" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "EMER" ]
+  ] ;
+  fhir:Encounter.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs" ] ;
+       fhir:Coding.code [ fhir:value "04" ]
+     ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <https://till-ko.github.io/de-ems/Patient/mind-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/mind-patient-example" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-09-16T09:15:00+02:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-09-16T10:00:00+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.location [
+     fhir:index 0 ;
+     fhir:Encounter.location.location [
+       fhir:link <https://till-ko.github.io/de-ems/Location/mind-location-example> ;
+       fhir:Reference.reference [ fhir:value "Location/mind-location-example" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/Encounter/mind-encounter-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

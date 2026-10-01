@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-verletzungsmuster-cs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-verletzungsmuster-cs</b></p><a name=\"mind-verletzungsmuster-cs\"> </a><a name=\"hcmind-verletzungsmuster-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-verletzungsmuster-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-verletzungsmuster-cs-01\"> </a></td><td>Einzelverletzung</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-verletzungsmuster-cs-02\"> </a></td><td>Mehrfachverletzung</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-verletzungsmuster-cs-03\"> </a></td><td>Polytrauma (nach Tscherne)</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-verletzungsmuster-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.51"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindVerletzungsmusterCS",
+  "title" : "MIND Verletzungsmuster",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Verletzungsmuster gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "01",
+    "display" : "Einzelverletzung"
+  },
+  {
+    "code" : "02",
+    "display" : "Mehrfachverletzung"
+  },
+  {
+    "code" : "03",
+    "display" : "Polytrauma (nach Tscherne)"
+  }]
+}

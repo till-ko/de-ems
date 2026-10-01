@@ -1,0 +1,91 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-lagerungs-rettungstechnik-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-lagerungs-rettungstechnik-cs</b></p><a name=\"mind-lagerungs-rettungstechnik-cs\"> </a><a name=\"hcmind-lagerungs-rettungstechnik-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-lagerungs-rettungstechnik-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">-1<a name=\"mind-lagerungs-rettungstechnik-cs--1\"> </a></td><td>keine Lagerungs- und Rettungstechnik</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-lagerungs-rettungstechnik-cs-01\"> </a></td><td>OK-Hochlagerung</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-lagerungs-rettungstechnik-cs-02\"> </a></td><td>Flachlagerung</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-lagerungs-rettungstechnik-cs-03\"> </a></td><td>Schocklagerung</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-lagerungs-rettungstechnik-cs-04\"> </a></td><td>stabile Seitenlage</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"mind-lagerungs-rettungstechnik-cs-05\"> </a></td><td>sitzender Transport</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"mind-lagerungs-rettungstechnik-cs-06\"> </a></td><td>Cervicalstütze/HWS-Immobilisation</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"mind-lagerungs-rettungstechnik-cs-07\"> </a></td><td>Spineboard</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"mind-lagerungs-rettungstechnik-cs-08\"> </a></td><td>Schaufeltrage</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"mind-lagerungs-rettungstechnik-cs-09\"> </a></td><td>Vakuummatratze</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"mind-lagerungs-rettungstechnik-cs-10\"> </a></td><td>Extremitätenschienung</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"mind-lagerungs-rettungstechnik-cs-11\"> </a></td><td>Reposition</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"mind-lagerungs-rettungstechnik-cs-12\"> </a></td><td>Verband</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"mind-lagerungs-rettungstechnik-cs-13\"> </a></td><td>Beckenschlinge</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"mind-lagerungs-rettungstechnik-cs-98\"> </a></td><td>Sonstige</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-lagerungs-rettungstechnik-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.26"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindLagerungsRettungstechnikCS",
+  "title" : "MIND Lagerungs- und Rettungstechnik",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 15,
+  "concept" : [{
+    "code" : "-1",
+    "display" : "keine Lagerungs- und Rettungstechnik"
+  },
+  {
+    "code" : "01",
+    "display" : "OK-Hochlagerung"
+  },
+  {
+    "code" : "02",
+    "display" : "Flachlagerung"
+  },
+  {
+    "code" : "03",
+    "display" : "Schocklagerung"
+  },
+  {
+    "code" : "04",
+    "display" : "stabile Seitenlage"
+  },
+  {
+    "code" : "05",
+    "display" : "sitzender Transport"
+  },
+  {
+    "code" : "06",
+    "display" : "Cervicalstütze/HWS-Immobilisation"
+  },
+  {
+    "code" : "07",
+    "display" : "Spineboard"
+  },
+  {
+    "code" : "08",
+    "display" : "Schaufeltrage"
+  },
+  {
+    "code" : "09",
+    "display" : "Vakuummatratze"
+  },
+  {
+    "code" : "10",
+    "display" : "Extremitätenschienung"
+  },
+  {
+    "code" : "11",
+    "display" : "Reposition"
+  },
+  {
+    "code" : "12",
+    "display" : "Verband"
+  },
+  {
+    "code" : "13",
+    "display" : "Beckenschlinge"
+  },
+  {
+    "code" : "98",
+    "display" : "Sonstige"
+  }]
+}

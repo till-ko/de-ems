@@ -1,0 +1,634 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-diagnose-cs"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-diagnose-cs</b></p><a name=\"mind-diagnose-cs\"> </a><a name=\"hcmind-diagnose-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1100<a name=\"mind-diagnose-cs-1100\"> </a></td><td>Hirninfarkt, TIA, intrakranielle Blutung</td></tr><tr><td style=\"white-space:nowrap\">1101<a name=\"mind-diagnose-cs-1101\"> </a></td><td>TIA</td></tr><tr><td style=\"white-space:nowrap\">1102<a name=\"mind-diagnose-cs-1102\"> </a></td><td>Hirninfarkt</td></tr><tr><td style=\"white-space:nowrap\">1103<a name=\"mind-diagnose-cs-1103\"> </a></td><td>ICB (klinische Diagnose)</td></tr><tr><td style=\"white-space:nowrap\">1104<a name=\"mind-diagnose-cs-1104\"> </a></td><td>SAB (klinische Diagnose)</td></tr><tr><td style=\"white-space:nowrap\">1105<a name=\"mind-diagnose-cs-1105\"> </a></td><td>Krampfanfall</td></tr><tr><td style=\"white-space:nowrap\">1106<a name=\"mind-diagnose-cs-1106\"> </a></td><td>Fieberkrampf</td></tr><tr><td style=\"white-space:nowrap\">1107<a name=\"mind-diagnose-cs-1107\"> </a></td><td>Status epilepticus</td></tr><tr><td style=\"white-space:nowrap\">1108<a name=\"mind-diagnose-cs-1108\"> </a></td><td>Meningitis/Enzephalitis</td></tr><tr><td style=\"white-space:nowrap\">1198<a name=\"mind-diagnose-cs-1198\"> </a></td><td>sonstige Erkrankung ZNS</td></tr><tr><td style=\"white-space:nowrap\">1201<a name=\"mind-diagnose-cs-1201\"> </a></td><td>ACS</td></tr><tr><td style=\"white-space:nowrap\">1202<a name=\"mind-diagnose-cs-1202\"> </a></td><td>STEMI Vorderwand</td></tr><tr><td style=\"white-space:nowrap\">1203<a name=\"mind-diagnose-cs-1203\"> </a></td><td>STEMI Hinterwand</td></tr><tr><td style=\"white-space:nowrap\">1204<a name=\"mind-diagnose-cs-1204\"> </a></td><td>Thoraxschmerz unklarer Genese</td></tr><tr><td style=\"white-space:nowrap\">1205<a name=\"mind-diagnose-cs-1205\"> </a></td><td>kardiogener Schock</td></tr><tr><td style=\"white-space:nowrap\">1206<a name=\"mind-diagnose-cs-1206\"> </a></td><td>tachykarde Rhythmusstörung</td></tr><tr><td style=\"white-space:nowrap\">1207<a name=\"mind-diagnose-cs-1207\"> </a></td><td>bradykarde Rhythmusstörung</td></tr><tr><td style=\"white-space:nowrap\">1208<a name=\"mind-diagnose-cs-1208\"> </a></td><td>Schrittmacher-Fehlfunktion</td></tr><tr><td style=\"white-space:nowrap\">1209<a name=\"mind-diagnose-cs-1209\"> </a></td><td>ICD-Fehlfunktion</td></tr><tr><td style=\"white-space:nowrap\">1210<a name=\"mind-diagnose-cs-1210\"> </a></td><td>Lungenembolie</td></tr><tr><td style=\"white-space:nowrap\">1211<a name=\"mind-diagnose-cs-1211\"> </a></td><td>Herzinsuffizienz</td></tr><tr><td style=\"white-space:nowrap\">1212<a name=\"mind-diagnose-cs-1212\"> </a></td><td>Lungenödem</td></tr><tr><td style=\"white-space:nowrap\">1213<a name=\"mind-diagnose-cs-1213\"> </a></td><td>hypertensive Entgleisung</td></tr><tr><td style=\"white-space:nowrap\">1214<a name=\"mind-diagnose-cs-1214\"> </a></td><td>hypertensiver Notfall</td></tr><tr><td style=\"white-space:nowrap\">1215<a name=\"mind-diagnose-cs-1215\"> </a></td><td>Aortenaneurysma/-dissektion</td></tr><tr><td style=\"white-space:nowrap\">1216<a name=\"mind-diagnose-cs-1216\"> </a></td><td>Hypotonie</td></tr><tr><td style=\"white-space:nowrap\">1217<a name=\"mind-diagnose-cs-1217\"> </a></td><td>orthostatische Fehlregulation</td></tr><tr><td style=\"white-space:nowrap\">1218<a name=\"mind-diagnose-cs-1218\"> </a></td><td>Synkope</td></tr><tr><td style=\"white-space:nowrap\">1219<a name=\"mind-diagnose-cs-1219\"> </a></td><td>Thrombose/arterieller Verschluss</td></tr><tr><td style=\"white-space:nowrap\">1220<a name=\"mind-diagnose-cs-1220\"> </a></td><td>Herz-Kreislauf-Stillstand</td></tr><tr><td style=\"white-space:nowrap\">1221<a name=\"mind-diagnose-cs-1221\"> </a></td><td>hämorrhagischer Schock</td></tr><tr><td style=\"white-space:nowrap\">1298<a name=\"mind-diagnose-cs-1298\"> </a></td><td>sonstige Erkrankung Herz-Kreislauf</td></tr><tr><td style=\"white-space:nowrap\">1301<a name=\"mind-diagnose-cs-1301\"> </a></td><td>Asthma (Anfall)</td></tr><tr><td style=\"white-space:nowrap\">1302<a name=\"mind-diagnose-cs-1302\"> </a></td><td>Status asthmaticus</td></tr><tr><td style=\"white-space:nowrap\">1303<a name=\"mind-diagnose-cs-1303\"> </a></td><td>exazerbierte COPD</td></tr><tr><td style=\"white-space:nowrap\">1304<a name=\"mind-diagnose-cs-1304\"> </a></td><td>Aspiration</td></tr><tr><td style=\"white-space:nowrap\">1305<a name=\"mind-diagnose-cs-1305\"> </a></td><td>Pneumonie/Bronchitis</td></tr><tr><td style=\"white-space:nowrap\">1306<a name=\"mind-diagnose-cs-1306\"> </a></td><td>Epiglottitis</td></tr><tr><td style=\"white-space:nowrap\">1307<a name=\"mind-diagnose-cs-1307\"> </a></td><td>Pseudokrupp</td></tr><tr><td style=\"white-space:nowrap\">1308<a name=\"mind-diagnose-cs-1308\"> </a></td><td>anderer respiratorischer Infekt</td></tr><tr><td style=\"white-space:nowrap\">1309<a name=\"mind-diagnose-cs-1309\"> </a></td><td>Hyperventilationssyndrom</td></tr><tr><td style=\"white-space:nowrap\">1310<a name=\"mind-diagnose-cs-1310\"> </a></td><td>Spontanpneumothorax</td></tr><tr><td style=\"white-space:nowrap\">1311<a name=\"mind-diagnose-cs-1311\"> </a></td><td>Hämoptysis</td></tr><tr><td style=\"white-space:nowrap\">1312<a name=\"mind-diagnose-cs-1312\"> </a></td><td>Dyspnoe unklarer Ursache</td></tr><tr><td style=\"white-space:nowrap\">1398<a name=\"mind-diagnose-cs-1398\"> </a></td><td>sonstige Erkrankung Atmung</td></tr><tr><td style=\"white-space:nowrap\">1401<a name=\"mind-diagnose-cs-1401\"> </a></td><td>akutes Abdomen</td></tr><tr><td style=\"white-space:nowrap\">1402<a name=\"mind-diagnose-cs-1402\"> </a></td><td>obere GI-Blutung</td></tr><tr><td style=\"white-space:nowrap\">1403<a name=\"mind-diagnose-cs-1403\"> </a></td><td>untere GI-Blutung</td></tr><tr><td style=\"white-space:nowrap\">1404<a name=\"mind-diagnose-cs-1404\"> </a></td><td>Kolik (Galle, Niere, ...)</td></tr><tr><td style=\"white-space:nowrap\">1405<a name=\"mind-diagnose-cs-1405\"> </a></td><td>(infektiöse) Gastroenteritis</td></tr><tr><td style=\"white-space:nowrap\">1406<a name=\"mind-diagnose-cs-1406\"> </a></td><td>Mesenterialinfarkt</td></tr><tr><td style=\"white-space:nowrap\">1498<a name=\"mind-diagnose-cs-1498\"> </a></td><td>sonstige Erkrankung Abdomen</td></tr><tr><td style=\"white-space:nowrap\">1501<a name=\"mind-diagnose-cs-1501\"> </a></td><td>Depression, Angst</td></tr><tr><td style=\"white-space:nowrap\">1502<a name=\"mind-diagnose-cs-1502\"> </a></td><td>Manie, Psychose</td></tr><tr><td style=\"white-space:nowrap\">1503<a name=\"mind-diagnose-cs-1503\"> </a></td><td>Entzugssymptomatik, Delir</td></tr><tr><td style=\"white-space:nowrap\">1504<a name=\"mind-diagnose-cs-1504\"> </a></td><td>Suizidalität</td></tr><tr><td style=\"white-space:nowrap\">1505<a name=\"mind-diagnose-cs-1505\"> </a></td><td>psychosoziale Krise</td></tr><tr><td style=\"white-space:nowrap\">1598<a name=\"mind-diagnose-cs-1598\"> </a></td><td>sonstige Erkrankung Psychiatrie</td></tr><tr><td style=\"white-space:nowrap\">1601<a name=\"mind-diagnose-cs-1601\"> </a></td><td>Hypoglykämie</td></tr><tr><td style=\"white-space:nowrap\">1602<a name=\"mind-diagnose-cs-1602\"> </a></td><td>Hyperglykämie</td></tr><tr><td style=\"white-space:nowrap\">1603<a name=\"mind-diagnose-cs-1603\"> </a></td><td>Urämie/akutes Nierenversagen</td></tr><tr><td style=\"white-space:nowrap\">1604<a name=\"mind-diagnose-cs-1604\"> </a></td><td>Exsikkose</td></tr><tr><td style=\"white-space:nowrap\">1605<a name=\"mind-diagnose-cs-1605\"> </a></td><td>Elektrolytstörungen</td></tr><tr><td style=\"white-space:nowrap\">1698<a name=\"mind-diagnose-cs-1698\"> </a></td><td>sonstige Erkrankung Stoffwechsel</td></tr><tr><td style=\"white-space:nowrap\">1701<a name=\"mind-diagnose-cs-1701\"> </a></td><td>Schwangerschaft über 35. SSW (zur Entbindung in die Klinik)</td></tr><tr><td style=\"white-space:nowrap\">1702<a name=\"mind-diagnose-cs-1702\"> </a></td><td>Schwangerschaftskomplikation (z. B. Eklampsie)</td></tr><tr><td style=\"white-space:nowrap\">1703<a name=\"mind-diagnose-cs-1703\"> </a></td><td>präklinische Geburt</td></tr><tr><td style=\"white-space:nowrap\">1704<a name=\"mind-diagnose-cs-1704\"> </a></td><td>extrauterine Gravidität</td></tr><tr><td style=\"white-space:nowrap\">1705<a name=\"mind-diagnose-cs-1705\"> </a></td><td>vaginale Blutung</td></tr><tr><td style=\"white-space:nowrap\">1798<a name=\"mind-diagnose-cs-1798\"> </a></td><td>sonstige Erkrankung Gynäkologie</td></tr><tr><td style=\"white-space:nowrap\">1801<a name=\"mind-diagnose-cs-1801\"> </a></td><td>Anaphylaxie Grad 1/2</td></tr><tr><td style=\"white-space:nowrap\">1802<a name=\"mind-diagnose-cs-1802\"> </a></td><td>Anaphylaxie Grad 3/4</td></tr><tr><td style=\"white-space:nowrap\">1803<a name=\"mind-diagnose-cs-1803\"> </a></td><td>Intoxikation Alkohol</td></tr><tr><td style=\"white-space:nowrap\">1804<a name=\"mind-diagnose-cs-1804\"> </a></td><td>Intoxikation Drogen</td></tr><tr><td style=\"white-space:nowrap\">1805<a name=\"mind-diagnose-cs-1805\"> </a></td><td>Intoxikation Medikamente</td></tr><tr><td style=\"white-space:nowrap\">1806<a name=\"mind-diagnose-cs-1806\"> </a></td><td>sonstige Intoxikation</td></tr><tr><td style=\"white-space:nowrap\">1807<a name=\"mind-diagnose-cs-1807\"> </a></td><td>akzidentelle Intoxikation</td></tr><tr><td style=\"white-space:nowrap\">1808<a name=\"mind-diagnose-cs-1808\"> </a></td><td>Sepsis/septischer Schock</td></tr><tr><td style=\"white-space:nowrap\">1809<a name=\"mind-diagnose-cs-1809\"> </a></td><td>hochkontagiöse Erreger</td></tr><tr><td style=\"white-space:nowrap\">1810<a name=\"mind-diagnose-cs-1810\"> </a></td><td>sonstige Infektionserkrankungen</td></tr><tr><td style=\"white-space:nowrap\">1811<a name=\"mind-diagnose-cs-1811\"> </a></td><td>Hitzeerschöpfung/Hitzschlag</td></tr><tr><td style=\"white-space:nowrap\">1812<a name=\"mind-diagnose-cs-1812\"> </a></td><td>Unterkühlung/Erfrierung</td></tr><tr><td style=\"white-space:nowrap\">1813<a name=\"mind-diagnose-cs-1813\"> </a></td><td>SIDS</td></tr><tr><td style=\"white-space:nowrap\">1814<a name=\"mind-diagnose-cs-1814\"> </a></td><td>akute Lumbago</td></tr><tr><td style=\"white-space:nowrap\">1815<a name=\"mind-diagnose-cs-1815\"> </a></td><td>palliative Situation</td></tr><tr><td style=\"white-space:nowrap\">1816<a name=\"mind-diagnose-cs-1816\"> </a></td><td>medizinische Behandlungskomplikation</td></tr><tr><td style=\"white-space:nowrap\">1817<a name=\"mind-diagnose-cs-1817\"> </a></td><td>Epistaxis/HNO-Erkrankung</td></tr><tr><td style=\"white-space:nowrap\">1818<a name=\"mind-diagnose-cs-1818\"> </a></td><td>urologische Erkrankung</td></tr><tr><td style=\"white-space:nowrap\">1819<a name=\"mind-diagnose-cs-1819\"> </a></td><td>Augenerkrankung</td></tr><tr><td style=\"white-space:nowrap\">1820<a name=\"mind-diagnose-cs-1820\"> </a></td><td>sonstiger akuter Schmerzzustand</td></tr><tr><td style=\"white-space:nowrap\">1821<a name=\"mind-diagnose-cs-1821\"> </a></td><td>Schock unklarer Genese</td></tr><tr><td style=\"white-space:nowrap\">1822<a name=\"mind-diagnose-cs-1822\"> </a></td><td>Erysipel</td></tr><tr><td style=\"white-space:nowrap\">1898<a name=\"mind-diagnose-cs-1898\"> </a></td><td>sonstige Erkrankung</td></tr><tr><td style=\"white-space:nowrap\">1899<a name=\"mind-diagnose-cs-1899\"> </a></td><td>führendes soziales Problem</td></tr><tr><td style=\"white-space:nowrap\">9999<a name=\"mind-diagnose-cs-9999\"> </a></td><td>keine Erkrankung/Verletzung feststellbar</td></tr><tr><td style=\"white-space:nowrap\">2001<a name=\"mind-diagnose-cs-2001\"> </a></td><td>SHT leicht</td></tr><tr><td style=\"white-space:nowrap\">2002<a name=\"mind-diagnose-cs-2002\"> </a></td><td>SHT mittel</td></tr><tr><td style=\"white-space:nowrap\">2003<a name=\"mind-diagnose-cs-2003\"> </a></td><td>SHT schwer</td></tr><tr><td style=\"white-space:nowrap\">2004<a name=\"mind-diagnose-cs-2004\"> </a></td><td>SHT lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2101<a name=\"mind-diagnose-cs-2101\"> </a></td><td>Trauma Gesicht/Kopf/Hals leicht</td></tr><tr><td style=\"white-space:nowrap\">2102<a name=\"mind-diagnose-cs-2102\"> </a></td><td>Trauma Gesicht/Kopf/Hals mittel</td></tr><tr><td style=\"white-space:nowrap\">2103<a name=\"mind-diagnose-cs-2103\"> </a></td><td>Trauma Gesicht/Kopf/Hals schwer</td></tr><tr><td style=\"white-space:nowrap\">2104<a name=\"mind-diagnose-cs-2104\"> </a></td><td>Trauma Gesicht/Kopf/Hals lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2201<a name=\"mind-diagnose-cs-2201\"> </a></td><td>Trauma HWS leicht</td></tr><tr><td style=\"white-space:nowrap\">2202<a name=\"mind-diagnose-cs-2202\"> </a></td><td>Trauma HWS mittel</td></tr><tr><td style=\"white-space:nowrap\">2203<a name=\"mind-diagnose-cs-2203\"> </a></td><td>Trauma HWS schwer</td></tr><tr><td style=\"white-space:nowrap\">2204<a name=\"mind-diagnose-cs-2204\"> </a></td><td>Trauma HWS lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2301<a name=\"mind-diagnose-cs-2301\"> </a></td><td>Trauma Thorax leicht</td></tr><tr><td style=\"white-space:nowrap\">2302<a name=\"mind-diagnose-cs-2302\"> </a></td><td>Trauma Thorax mittel</td></tr><tr><td style=\"white-space:nowrap\">2303<a name=\"mind-diagnose-cs-2303\"> </a></td><td>Trauma Thorax schwer</td></tr><tr><td style=\"white-space:nowrap\">2304<a name=\"mind-diagnose-cs-2304\"> </a></td><td>Trauma Thorax lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2401<a name=\"mind-diagnose-cs-2401\"> </a></td><td>Trauma Abdomen leicht</td></tr><tr><td style=\"white-space:nowrap\">2402<a name=\"mind-diagnose-cs-2402\"> </a></td><td>Trauma Abdomen mittel</td></tr><tr><td style=\"white-space:nowrap\">2403<a name=\"mind-diagnose-cs-2403\"> </a></td><td>Trauma Abdomen schwer</td></tr><tr><td style=\"white-space:nowrap\">2404<a name=\"mind-diagnose-cs-2404\"> </a></td><td>Trauma Abdomen lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2501<a name=\"mind-diagnose-cs-2501\"> </a></td><td>Trauma BWS/LWS leicht</td></tr><tr><td style=\"white-space:nowrap\">2502<a name=\"mind-diagnose-cs-2502\"> </a></td><td>Trauma BWS/LWS mittel</td></tr><tr><td style=\"white-space:nowrap\">2503<a name=\"mind-diagnose-cs-2503\"> </a></td><td>Trauma BWS/LWS schwer</td></tr><tr><td style=\"white-space:nowrap\">2504<a name=\"mind-diagnose-cs-2504\"> </a></td><td>Trauma BWS/LWS lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2601<a name=\"mind-diagnose-cs-2601\"> </a></td><td>Trauma Becken leicht</td></tr><tr><td style=\"white-space:nowrap\">2602<a name=\"mind-diagnose-cs-2602\"> </a></td><td>Trauma Becken mittel</td></tr><tr><td style=\"white-space:nowrap\">2603<a name=\"mind-diagnose-cs-2603\"> </a></td><td>Trauma Becken schwer</td></tr><tr><td style=\"white-space:nowrap\">2604<a name=\"mind-diagnose-cs-2604\"> </a></td><td>Trauma Becken lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2701<a name=\"mind-diagnose-cs-2701\"> </a></td><td>Trauma obere Extremität leicht</td></tr><tr><td style=\"white-space:nowrap\">2702<a name=\"mind-diagnose-cs-2702\"> </a></td><td>Trauma obere Extremität mittel</td></tr><tr><td style=\"white-space:nowrap\">2703<a name=\"mind-diagnose-cs-2703\"> </a></td><td>Trauma obere Extremität schwer</td></tr><tr><td style=\"white-space:nowrap\">2704<a name=\"mind-diagnose-cs-2704\"> </a></td><td>Trauma obere Extremität lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2801<a name=\"mind-diagnose-cs-2801\"> </a></td><td>Trauma untere Extremität leicht</td></tr><tr><td style=\"white-space:nowrap\">2802<a name=\"mind-diagnose-cs-2802\"> </a></td><td>Trauma untere Extremität mittel</td></tr><tr><td style=\"white-space:nowrap\">2803<a name=\"mind-diagnose-cs-2803\"> </a></td><td>Trauma untere Extremität schwer</td></tr><tr><td style=\"white-space:nowrap\">2804<a name=\"mind-diagnose-cs-2804\"> </a></td><td>Trauma untere Extremität lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2901<a name=\"mind-diagnose-cs-2901\"> </a></td><td>Trauma Weichteile leicht</td></tr><tr><td style=\"white-space:nowrap\">2902<a name=\"mind-diagnose-cs-2902\"> </a></td><td>Trauma Weichteile mittel</td></tr><tr><td style=\"white-space:nowrap\">2903<a name=\"mind-diagnose-cs-2903\"> </a></td><td>Trauma Weichteile schwer</td></tr><tr><td style=\"white-space:nowrap\">2904<a name=\"mind-diagnose-cs-2904\"> </a></td><td>Trauma Weichteile lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">2911<a name=\"mind-diagnose-cs-2911\"> </a></td><td>Trauma Gefäßverletzungen leicht</td></tr><tr><td style=\"white-space:nowrap\">2912<a name=\"mind-diagnose-cs-2912\"> </a></td><td>Trauma Gefäßverletzungen mittel</td></tr><tr><td style=\"white-space:nowrap\">2913<a name=\"mind-diagnose-cs-2913\"> </a></td><td>Trauma Gefäßverletzungen schwer</td></tr><tr><td style=\"white-space:nowrap\">2914<a name=\"mind-diagnose-cs-2914\"> </a></td><td>Trauma Gefäßverletzungen lebensbedrohlich oder tödlich</td></tr><tr><td style=\"white-space:nowrap\">3001<a name=\"mind-diagnose-cs-3001\"> </a></td><td>Verbrennung/Verbrühung</td></tr><tr><td style=\"white-space:nowrap\">3002<a name=\"mind-diagnose-cs-3002\"> </a></td><td>Inhalationstrauma/Rauchgasinhalation</td></tr><tr><td style=\"white-space:nowrap\">3003<a name=\"mind-diagnose-cs-3003\"> </a></td><td>Elektrounfall</td></tr><tr><td style=\"white-space:nowrap\">3004<a name=\"mind-diagnose-cs-3004\"> </a></td><td>Verätzung</td></tr><tr><td style=\"white-space:nowrap\">3005<a name=\"mind-diagnose-cs-3005\"> </a></td><td>(Beinahe-)Ertrinken</td></tr><tr><td style=\"white-space:nowrap\">3006<a name=\"mind-diagnose-cs-3006\"> </a></td><td>Tauchunfall</td></tr><tr><td style=\"white-space:nowrap\">3098<a name=\"mind-diagnose-cs-3098\"> </a></td><td>Sonstige spezielle Traumata</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.169126619167380341660016816424527320624.16.9" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "MindDiagnoseCS"] ;
+  fhir:CodeSystem.title [ fhir:value "MIND Diagnose"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-01T18:52:47+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Till Koch"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Till Koch" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/till-ko" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "MIND-7.1-Diagnosecodes für präklinische Erkrankungen und Verletzungen."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "146"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1100" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hirninfarkt, TIA, intrakranielle Blutung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1101" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TIA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1102" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hirninfarkt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1103" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ICB (klinische Diagnose)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1104" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SAB (klinische Diagnose)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1105" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Krampfanfall" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1106" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fieberkrampf" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1107" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Status epilepticus" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1108" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Meningitis/Enzephalitis" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1198" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Erkrankung ZNS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1201" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ACS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1202" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI Vorderwand" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1203" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI Hinterwand" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1204" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Thoraxschmerz unklarer Genese" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1205" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "kardiogener Schock" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1206" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "tachykarde Rhythmusstörung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1207" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "bradykarde Rhythmusstörung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1208" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schrittmacher-Fehlfunktion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1209" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ICD-Fehlfunktion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1210" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lungenembolie" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1211" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Herzinsuffizienz" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1212" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lungenödem" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1213" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "hypertensive Entgleisung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1214" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "hypertensiver Notfall" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1215" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aortenaneurysma/-dissektion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1216" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypotonie" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1217" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "orthostatische Fehlregulation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1218" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Synkope" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1219" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Thrombose/arterieller Verschluss" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1220" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Herz-Kreislauf-Stillstand" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1221" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "hämorrhagischer Schock" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1298" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Erkrankung Herz-Kreislauf" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1301" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Asthma (Anfall)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1302" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Status asthmaticus" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1303" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "exazerbierte COPD" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1304" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aspiration" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1305" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pneumonie/Bronchitis" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1306" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Epiglottitis" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1307" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pseudokrupp" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1308" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "anderer respiratorischer Infekt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1309" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hyperventilationssyndrom" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1310" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spontanpneumothorax" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1311" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hämoptysis" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1312" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dyspnoe unklarer Ursache" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1398" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Erkrankung Atmung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1401" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "akutes Abdomen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1402" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "obere GI-Blutung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1403" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "untere GI-Blutung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kolik (Galle, Niere, ...)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1405" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "(infektiöse) Gastroenteritis" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1406" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesenterialinfarkt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1498" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Erkrankung Abdomen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1501" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depression, Angst" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1502" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Manie, Psychose" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1503" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Entzugssymptomatik, Delir" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1504" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suizidalität" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1505" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "psychosoziale Krise" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1598" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Erkrankung Psychiatrie" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1601" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypoglykämie" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1602" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hyperglykämie" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1603" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urämie/akutes Nierenversagen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1604" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exsikkose" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1605" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Elektrolytstörungen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1698" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Erkrankung Stoffwechsel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1701" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwangerschaft über 35. SSW (zur Entbindung in die Klinik)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1702" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwangerschaftskomplikation (z. B. Eklampsie)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1703" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "präklinische Geburt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1704" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "extrauterine Gravidität" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1705" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "vaginale Blutung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1798" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Erkrankung Gynäkologie" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1801" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anaphylaxie Grad 1/2" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1802" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anaphylaxie Grad 3/4" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1803" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intoxikation Alkohol" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1804" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intoxikation Drogen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1805" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intoxikation Medikamente" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1806" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Intoxikation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1807" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "akzidentelle Intoxikation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1808" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sepsis/septischer Schock" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1809" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "hochkontagiöse Erreger" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1810" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Infektionserkrankungen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1811" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hitzeerschöpfung/Hitzschlag" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1812" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unterkühlung/Erfrierung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1813" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SIDS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1814" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "akute Lumbago" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1815" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "palliative Situation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1816" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "medizinische Behandlungskomplikation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1817" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Epistaxis/HNO-Erkrankung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1818" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "urologische Erkrankung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1819" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Augenerkrankung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1820" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstiger akuter Schmerzzustand" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1821" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schock unklarer Genese" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1822" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Erysipel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1898" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sonstige Erkrankung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1899" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "führendes soziales Problem" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9999" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "keine Erkrankung/Verletzung feststellbar" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SHT leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SHT mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SHT schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SHT lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2101" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Gesicht/Kopf/Hals leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2102" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Gesicht/Kopf/Hals mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2103" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Gesicht/Kopf/Hals schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2104" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Gesicht/Kopf/Hals lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2201" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma HWS leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2202" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma HWS mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2203" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma HWS schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2204" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma HWS lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2301" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Thorax leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2302" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Thorax mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2303" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Thorax schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2304" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Thorax lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2401" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Abdomen leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2402" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Abdomen mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2403" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Abdomen schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2404" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Abdomen lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2501" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma BWS/LWS leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2502" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma BWS/LWS mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2503" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma BWS/LWS schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2504" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma BWS/LWS lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Becken leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2602" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Becken mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2603" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Becken schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2604" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Becken lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2701" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma obere Extremität leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2702" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma obere Extremität mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2703" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma obere Extremität schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2704" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma obere Extremität lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2801" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma untere Extremität leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2802" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma untere Extremität mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2803" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma untere Extremität schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2804" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma untere Extremität lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2901" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Weichteile leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2902" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Weichteile mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Weichteile schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Weichteile lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2911" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Gefäßverletzungen leicht" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2912" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Gefäßverletzungen mittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2913" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Gefäßverletzungen schwer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2914" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Gefäßverletzungen lebensbedrohlich oder tödlich" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Verbrennung/Verbrühung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalationstrauma/Rauchgasinhalation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Elektrounfall" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Verätzung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "(Beinahe-)Ertrinken" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tauchunfall" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3098" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sonstige spezielle Traumata" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

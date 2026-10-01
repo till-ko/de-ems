@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mind-aerztliche-begleitung-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mind-aerztliche-begleitung-vs</b></p><a name=\"mind-aerztliche-begleitung-vs\"> </a><a name=\"hcmind-aerztliche-begleitung-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-mind-aerztliche-begleitung-cs.html\"><code>https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-begleitung-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/mind-aerztliche-begleitung-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.48.1"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindAerztlicheBegleitungVS",
+  "title" : "MIND Ärztliche Transportbegleitung ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Ärztliche Transportbegleitung gemäß MIND 7.1.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-begleitung-cs"
+    }]
+  }
+}

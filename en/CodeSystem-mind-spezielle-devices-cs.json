@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-spezielle-devices-cs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-spezielle-devices-cs</b></p><a name=\"mind-spezielle-devices-cs\"> </a><a name=\"hcmind-spezielle-devices-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-spezielle-devices-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">-1<a name=\"mind-spezielle-devices-cs--1\"> </a></td><td>keine speziellen Devices eingesetzt</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-spezielle-devices-cs-01\"> </a></td><td>Impella</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-spezielle-devices-cs-02\"> </a></td><td>externer Schrittmacher</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-spezielle-devices-cs-03\"> </a></td><td>IABP</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-spezielle-devices-cs-04\"> </a></td><td>ECMO</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"mind-spezielle-devices-cs-98\"> </a></td><td>Sonstige</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-spezielle-devices-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.46"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindSpezielleDevicesCS",
+  "title" : "MIND Spezielle Devices",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Spezielle Devices gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "-1",
+    "display" : "keine speziellen Devices eingesetzt"
+  },
+  {
+    "code" : "01",
+    "display" : "Impella"
+  },
+  {
+    "code" : "02",
+    "display" : "externer Schrittmacher"
+  },
+  {
+    "code" : "03",
+    "display" : "IABP"
+  },
+  {
+    "code" : "04",
+    "display" : "ECMO"
+  },
+  {
+    "code" : "98",
+    "display" : "Sonstige"
+  }]
+}

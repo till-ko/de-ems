@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-neurologische-auffaelligkeit-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-neurologische-auffaelligkeit-cs</b></p><a name="mind-neurologische-auffaelligkeit-cs"> </a><a name="hcmind-neurologische-auffaelligkeit-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-neurologische-auffaelligkeit-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">-1<a name="mind-neurologische-auffaelligkeit-cs--1"> </a></td><td>nicht untersucht</td></tr><tr><td style="white-space:nowrap">00<a name="mind-neurologische-auffaelligkeit-cs-00"> </a></td><td>keine</td></tr><tr><td style="white-space:nowrap">01<a name="mind-neurologische-auffaelligkeit-cs-01"> </a></td><td>Gesichtslähmung (kein Lächeln/hängender Mundwinkel)</td></tr><tr><td style="white-space:nowrap">02<a name="mind-neurologische-auffaelligkeit-cs-02"> </a></td><td>Motorik Arme (einseitiges Absinken oder keine Bewegung)</td></tr><tr><td style="white-space:nowrap">03<a name="mind-neurologische-auffaelligkeit-cs-03"> </a></td><td>Motorik Beine (einseitiges Absinken oder keine Bewegung)</td></tr><tr><td style="white-space:nowrap">04<a name="mind-neurologische-auffaelligkeit-cs-04"> </a></td><td>Sehstörung/Doppelbilder</td></tr><tr><td style="white-space:nowrap">05<a name="mind-neurologische-auffaelligkeit-cs-05"> </a></td><td>Sprachstörung (Aphasie)/Sprechstörung (Dysarthrie)</td></tr><tr><td style="white-space:nowrap">06<a name="mind-neurologische-auffaelligkeit-cs-06"> </a></td><td>Schluckstörung</td></tr><tr><td style="white-space:nowrap">07<a name="mind-neurologische-auffaelligkeit-cs-07"> </a></td><td>Sensibilitätsstörung</td></tr><tr><td style="white-space:nowrap">08<a name="mind-neurologische-auffaelligkeit-cs-08"> </a></td><td>Gangunsicherheit/Schwindel</td></tr><tr><td style="white-space:nowrap">09<a name="mind-neurologische-auffaelligkeit-cs-09"> </a></td><td>Herdblick</td></tr><tr><td style="white-space:nowrap">10<a name="mind-neurologische-auffaelligkeit-cs-10"> </a></td><td>Übelkeit/Erbrechen</td></tr><tr><td style="white-space:nowrap">11<a name="mind-neurologische-auffaelligkeit-cs-11"> </a></td><td>Kopfschmerzen</td></tr><tr><td style="white-space:nowrap">12<a name="mind-neurologische-auffaelligkeit-cs-12"> </a></td><td>Meningismus</td></tr><tr><td style="white-space:nowrap">13<a name="mind-neurologische-auffaelligkeit-cs-13"> </a></td><td>Babinski-Zeichen</td></tr><tr><td style="white-space:nowrap">14<a name="mind-neurologische-auffaelligkeit-cs-14"> </a></td><td>Querschnittsymptomatik</td></tr><tr><td style="white-space:nowrap">97<a name="mind-neurologische-auffaelligkeit-cs-97"> </a></td><td>vorbestehendes neurologisches Defizit</td></tr><tr><td style="white-space:nowrap">98<a name="mind-neurologische-auffaelligkeit-cs-98"> </a></td><td>Sonstige</td></tr><tr><td style="white-space:nowrap">99<a name="mind-neurologische-auffaelligkeit-cs-99"> </a></td><td>nicht beurteilbar</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-neurologische-auffaelligkeit-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.32"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindNeurologischeAuffaelligkeitCS"/>
+  <title value="MIND Neurologische Auffälligkeit"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Akute neurologische Auffälligkeiten gemäß MIND 7.1."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="19"/>
+  <concept>
+    <code value="-1"/>
+    <display value="nicht untersucht"/>
+  </concept>
+  <concept>
+    <code value="00"/>
+    <display value="keine"/>
+  </concept>
+  <concept>
+    <code value="01"/>
+    <display value="Gesichtslähmung (kein Lächeln/hängender Mundwinkel)"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Motorik Arme (einseitiges Absinken oder keine Bewegung)"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Motorik Beine (einseitiges Absinken oder keine Bewegung)"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Sehstörung/Doppelbilder"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Sprachstörung (Aphasie)/Sprechstörung (Dysarthrie)"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Schluckstörung"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="Sensibilitätsstörung"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Gangunsicherheit/Schwindel"/>
+  </concept>
+  <concept>
+    <code value="09"/>
+    <display value="Herdblick"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Übelkeit/Erbrechen"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Kopfschmerzen"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Meningismus"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="Babinski-Zeichen"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="Querschnittsymptomatik"/>
+  </concept>
+  <concept>
+    <code value="97"/>
+    <display value="vorbestehendes neurologisches Defizit"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="Sonstige"/>
+  </concept>
+  <concept>
+    <code value="99"/>
+    <display value="nicht beurteilbar"/>
+  </concept>
+</CodeSystem>

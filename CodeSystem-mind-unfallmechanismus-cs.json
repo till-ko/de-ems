@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-unfallmechanismus-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-unfallmechanismus-cs</b></p><a name=\"mind-unfallmechanismus-cs\"> </a><a name=\"hcmind-unfallmechanismus-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-unfallmechanismus-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-unfallmechanismus-cs-01\"> </a></td><td>stumpf</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-unfallmechanismus-cs-02\"> </a></td><td>penetrierend</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-unfallmechanismus-cs-03\"> </a></td><td>Amputation</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"mind-unfallmechanismus-cs-99\"> </a></td><td>nicht bekannt</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-unfallmechanismus-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.49"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindUnfallmechanismusCS",
+  "title" : "MIND Unfallmechanismus",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Unfallmechanismus gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "01",
+    "display" : "stumpf"
+  },
+  {
+    "code" : "02",
+    "display" : "penetrierend"
+  },
+  {
+    "code" : "03",
+    "display" : "Amputation"
+  },
+  {
+    "code" : "99",
+    "display" : "nicht bekannt"
+  }]
+}

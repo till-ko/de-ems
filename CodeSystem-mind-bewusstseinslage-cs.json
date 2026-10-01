@@ -1,0 +1,63 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-bewusstseinslage-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-bewusstseinslage-cs</b></p><a name=\"mind-bewusstseinslage-cs\"> </a><a name=\"hcmind-bewusstseinslage-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-bewusstseinslage-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">-1<a name=\"mind-bewusstseinslage-cs--1\"> </a></td><td>nicht untersucht</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-bewusstseinslage-cs-01\"> </a></td><td>analgosediert/Narkose</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-bewusstseinslage-cs-02\"> </a></td><td>wach</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-bewusstseinslage-cs-03\"> </a></td><td>reagiert auf Ansprache</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-bewusstseinslage-cs-04\"> </a></td><td>reagiert auf Schmerzreiz</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"mind-bewusstseinslage-cs-05\"> </a></td><td>bewusstlos</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"mind-bewusstseinslage-cs-98\"> </a></td><td>Sonstige</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"mind-bewusstseinslage-cs-99\"> </a></td><td>nicht beurteilbar</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-bewusstseinslage-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.7"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindBewusstseinslageCS",
+  "title" : "MIND Bewusstseinslage",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Bewusstseinslage gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "-1",
+    "display" : "nicht untersucht"
+  },
+  {
+    "code" : "01",
+    "display" : "analgosediert/Narkose"
+  },
+  {
+    "code" : "02",
+    "display" : "wach"
+  },
+  {
+    "code" : "03",
+    "display" : "reagiert auf Ansprache"
+  },
+  {
+    "code" : "04",
+    "display" : "reagiert auf Schmerzreiz"
+  },
+  {
+    "code" : "05",
+    "display" : "bewusstlos"
+  },
+  {
+    "code" : "98",
+    "display" : "Sonstige"
+  },
+  {
+    "code" : "99",
+    "display" : "nicht beurteilbar"
+  }]
+}

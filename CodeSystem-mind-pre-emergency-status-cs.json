@@ -1,0 +1,55 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-pre-emergency-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-pre-emergency-status-cs</b></p><a name=\"mind-pre-emergency-status-cs\"> </a><a name=\"hcmind-pre-emergency-status-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-pre-emergency-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-pre-emergency-status-cs-01\"> </a></td><td>ohne Vorerkrankungen</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-pre-emergency-status-cs-02\"> </a></td><td>Vorerkrankungen ohne nennenswerte Einschränkung des täglichen Lebens</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-pre-emergency-status-cs-03\"> </a></td><td>Vorerkrankungen mit nennenswerter Einschränkung des täglichen Lebens</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-pre-emergency-status-cs-04\"> </a></td><td>normales tägliches Leben unmöglich</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"mind-pre-emergency-status-cs-05\"> </a></td><td>Patient wird in den nächsten 24 Stunden sterben, mit oder ohne medizinische Hilfe</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"mind-pre-emergency-status-cs-99\"> </a></td><td>nicht bekannt</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-pre-emergency-status-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.37"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindPreEmergencyStatusCS",
+  "title" : "MIND Zustand vor Eintritt des Notfalls",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Zustand vor Eintritt des Notfalls gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "01",
+    "display" : "ohne Vorerkrankungen"
+  },
+  {
+    "code" : "02",
+    "display" : "Vorerkrankungen ohne nennenswerte Einschränkung des täglichen Lebens"
+  },
+  {
+    "code" : "03",
+    "display" : "Vorerkrankungen mit nennenswerter Einschränkung des täglichen Lebens"
+  },
+  {
+    "code" : "04",
+    "display" : "normales tägliches Leben unmöglich"
+  },
+  {
+    "code" : "05",
+    "display" : "Patient wird in den nächsten 24 Stunden sterben, mit oder ohne medizinische Hilfe"
+  },
+  {
+    "code" : "99",
+    "display" : "nicht bekannt"
+  }]
+}

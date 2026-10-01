@@ -1,0 +1,615 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MIND Diagnose -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.99"}
+    h3,h4,h5,h6{--heading-prefix:"2.99"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MIND Diagnose</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-codesystem -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">deems - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://till-ko.github.io/de-ems/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mind-diagnose-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mind-diagnose-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mind-diagnose-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CodeSystem: MIND Diagnose
+
+  </h2>
+
+  <table class="colsi" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs|0.1.0"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Active
+          
+
+            as of 
+2026-10-01
+
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MindDiagnoseCS</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="6">
+        <i>Other Identifiers:</i> OID:2.25.169126619167380341660016816424527320624.16.9
+      </td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>MIND-7.1-Diagnosecodes für präklinische Erkrankungen und Verletzungen.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>This Code system is referenced in the definition of the following value sets:</p>
+
+  
+<ul>
+ <li><a href="ValueSet-mind-diagnose-vs.html">MIND Diagnose ValueSet</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="mind-diagnose-cs"> </a><a name="hcmind-diagnose-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">1100<a name="mind-diagnose-cs-1100"> </a></td>
+<td>Hirninfarkt, TIA, intrakranielle Blutung</td></tr>
+<tr><td style="white-space:nowrap">1101<a name="mind-diagnose-cs-1101"> </a></td>
+<td>TIA</td></tr>
+<tr><td style="white-space:nowrap">1102<a name="mind-diagnose-cs-1102"> </a></td>
+<td>Hirninfarkt</td></tr>
+<tr><td style="white-space:nowrap">1103<a name="mind-diagnose-cs-1103"> </a></td>
+<td>ICB (klinische Diagnose)</td></tr>
+<tr><td style="white-space:nowrap">1104<a name="mind-diagnose-cs-1104"> </a></td>
+<td>SAB (klinische Diagnose)</td></tr>
+<tr><td style="white-space:nowrap">1105<a name="mind-diagnose-cs-1105"> </a></td>
+<td>Krampfanfall</td></tr>
+<tr><td style="white-space:nowrap">1106<a name="mind-diagnose-cs-1106"> </a></td>
+<td>Fieberkrampf</td></tr>
+<tr><td style="white-space:nowrap">1107<a name="mind-diagnose-cs-1107"> </a></td>
+<td>Status epilepticus</td></tr>
+<tr><td style="white-space:nowrap">1108<a name="mind-diagnose-cs-1108"> </a></td>
+<td>Meningitis/Enzephalitis</td></tr>
+<tr><td style="white-space:nowrap">1198<a name="mind-diagnose-cs-1198"> </a></td>
+<td>sonstige Erkrankung ZNS</td></tr>
+<tr><td style="white-space:nowrap">1201<a name="mind-diagnose-cs-1201"> </a></td>
+<td>ACS</td></tr>
+<tr><td style="white-space:nowrap">1202<a name="mind-diagnose-cs-1202"> </a></td>
+<td>STEMI Vorderwand</td></tr>
+<tr><td style="white-space:nowrap">1203<a name="mind-diagnose-cs-1203"> </a></td>
+<td>STEMI Hinterwand</td></tr>
+<tr><td style="white-space:nowrap">1204<a name="mind-diagnose-cs-1204"> </a></td>
+<td>Thoraxschmerz unklarer Genese</td></tr>
+<tr><td style="white-space:nowrap">1205<a name="mind-diagnose-cs-1205"> </a></td>
+<td>kardiogener Schock</td></tr>
+<tr><td style="white-space:nowrap">1206<a name="mind-diagnose-cs-1206"> </a></td>
+<td>tachykarde Rhythmusstörung</td></tr>
+<tr><td style="white-space:nowrap">1207<a name="mind-diagnose-cs-1207"> </a></td>
+<td>bradykarde Rhythmusstörung</td></tr>
+<tr><td style="white-space:nowrap">1208<a name="mind-diagnose-cs-1208"> </a></td>
+<td>Schrittmacher-Fehlfunktion</td></tr>
+<tr><td style="white-space:nowrap">1209<a name="mind-diagnose-cs-1209"> </a></td>
+<td>ICD-Fehlfunktion</td></tr>
+<tr><td style="white-space:nowrap">1210<a name="mind-diagnose-cs-1210"> </a></td>
+<td>Lungenembolie</td></tr>
+<tr><td style="white-space:nowrap">1211<a name="mind-diagnose-cs-1211"> </a></td>
+<td>Herzinsuffizienz</td></tr>
+<tr><td style="white-space:nowrap">1212<a name="mind-diagnose-cs-1212"> </a></td>
+<td>Lungenödem</td></tr>
+<tr><td style="white-space:nowrap">1213<a name="mind-diagnose-cs-1213"> </a></td>
+<td>hypertensive Entgleisung</td></tr>
+<tr><td style="white-space:nowrap">1214<a name="mind-diagnose-cs-1214"> </a></td>
+<td>hypertensiver Notfall</td></tr>
+<tr><td style="white-space:nowrap">1215<a name="mind-diagnose-cs-1215"> </a></td>
+<td>Aortenaneurysma/-dissektion</td></tr>
+<tr><td style="white-space:nowrap">1216<a name="mind-diagnose-cs-1216"> </a></td>
+<td>Hypotonie</td></tr>
+<tr><td style="white-space:nowrap">1217<a name="mind-diagnose-cs-1217"> </a></td>
+<td>orthostatische Fehlregulation</td></tr>
+<tr><td style="white-space:nowrap">1218<a name="mind-diagnose-cs-1218"> </a></td>
+<td>Synkope</td></tr>
+<tr><td style="white-space:nowrap">1219<a name="mind-diagnose-cs-1219"> </a></td>
+<td>Thrombose/arterieller Verschluss</td></tr>
+<tr><td style="white-space:nowrap">1220<a name="mind-diagnose-cs-1220"> </a></td>
+<td>Herz-Kreislauf-Stillstand</td></tr>
+<tr><td style="white-space:nowrap">1221<a name="mind-diagnose-cs-1221"> </a></td>
+<td>hämorrhagischer Schock</td></tr>
+<tr><td style="white-space:nowrap">1298<a name="mind-diagnose-cs-1298"> </a></td>
+<td>sonstige Erkrankung Herz-Kreislauf</td></tr>
+<tr><td style="white-space:nowrap">1301<a name="mind-diagnose-cs-1301"> </a></td>
+<td>Asthma (Anfall)</td></tr>
+<tr><td style="white-space:nowrap">1302<a name="mind-diagnose-cs-1302"> </a></td>
+<td>Status asthmaticus</td></tr>
+<tr><td style="white-space:nowrap">1303<a name="mind-diagnose-cs-1303"> </a></td>
+<td>exazerbierte COPD</td></tr>
+<tr><td style="white-space:nowrap">1304<a name="mind-diagnose-cs-1304"> </a></td>
+<td>Aspiration</td></tr>
+<tr><td style="white-space:nowrap">1305<a name="mind-diagnose-cs-1305"> </a></td>
+<td>Pneumonie/Bronchitis</td></tr>
+<tr><td style="white-space:nowrap">1306<a name="mind-diagnose-cs-1306"> </a></td>
+<td>Epiglottitis</td></tr>
+<tr><td style="white-space:nowrap">1307<a name="mind-diagnose-cs-1307"> </a></td>
+<td>Pseudokrupp</td></tr>
+<tr><td style="white-space:nowrap">1308<a name="mind-diagnose-cs-1308"> </a></td>
+<td>anderer respiratorischer Infekt</td></tr>
+<tr><td style="white-space:nowrap">1309<a name="mind-diagnose-cs-1309"> </a></td>
+<td>Hyperventilationssyndrom</td></tr>
+<tr><td style="white-space:nowrap">1310<a name="mind-diagnose-cs-1310"> </a></td>
+<td>Spontanpneumothorax</td></tr>
+<tr><td style="white-space:nowrap">1311<a name="mind-diagnose-cs-1311"> </a></td>
+<td>Hämoptysis</td></tr>
+<tr><td style="white-space:nowrap">1312<a name="mind-diagnose-cs-1312"> </a></td>
+<td>Dyspnoe unklarer Ursache</td></tr>
+<tr><td style="white-space:nowrap">1398<a name="mind-diagnose-cs-1398"> </a></td>
+<td>sonstige Erkrankung Atmung</td></tr>
+<tr><td style="white-space:nowrap">1401<a name="mind-diagnose-cs-1401"> </a></td>
+<td>akutes Abdomen</td></tr>
+<tr><td style="white-space:nowrap">1402<a name="mind-diagnose-cs-1402"> </a></td>
+<td>obere GI-Blutung</td></tr>
+<tr><td style="white-space:nowrap">1403<a name="mind-diagnose-cs-1403"> </a></td>
+<td>untere GI-Blutung</td></tr>
+<tr><td style="white-space:nowrap">1404<a name="mind-diagnose-cs-1404"> </a></td>
+<td>Kolik (Galle, Niere, ...)</td></tr>
+<tr><td style="white-space:nowrap">1405<a name="mind-diagnose-cs-1405"> </a></td>
+<td>(infektiöse) Gastroenteritis</td></tr>
+<tr><td style="white-space:nowrap">1406<a name="mind-diagnose-cs-1406"> </a></td>
+<td>Mesenterialinfarkt</td></tr>
+<tr><td style="white-space:nowrap">1498<a name="mind-diagnose-cs-1498"> </a></td>
+<td>sonstige Erkrankung Abdomen</td></tr>
+<tr><td style="white-space:nowrap">1501<a name="mind-diagnose-cs-1501"> </a></td>
+<td>Depression, Angst</td></tr>
+<tr><td style="white-space:nowrap">1502<a name="mind-diagnose-cs-1502"> </a></td>
+<td>Manie, Psychose</td></tr>
+<tr><td style="white-space:nowrap">1503<a name="mind-diagnose-cs-1503"> </a></td>
+<td>Entzugssymptomatik, Delir</td></tr>
+<tr><td style="white-space:nowrap">1504<a name="mind-diagnose-cs-1504"> </a></td>
+<td>Suizidalität</td></tr>
+<tr><td style="white-space:nowrap">1505<a name="mind-diagnose-cs-1505"> </a></td>
+<td>psychosoziale Krise</td></tr>
+<tr><td style="white-space:nowrap">1598<a name="mind-diagnose-cs-1598"> </a></td>
+<td>sonstige Erkrankung Psychiatrie</td></tr>
+<tr><td style="white-space:nowrap">1601<a name="mind-diagnose-cs-1601"> </a></td>
+<td>Hypoglykämie</td></tr>
+<tr><td style="white-space:nowrap">1602<a name="mind-diagnose-cs-1602"> </a></td>
+<td>Hyperglykämie</td></tr>
+<tr><td style="white-space:nowrap">1603<a name="mind-diagnose-cs-1603"> </a></td>
+<td>Urämie/akutes Nierenversagen</td></tr>
+<tr><td style="white-space:nowrap">1604<a name="mind-diagnose-cs-1604"> </a></td>
+<td>Exsikkose</td></tr>
+<tr><td style="white-space:nowrap">1605<a name="mind-diagnose-cs-1605"> </a></td>
+<td>Elektrolytstörungen</td></tr>
+<tr><td style="white-space:nowrap">1698<a name="mind-diagnose-cs-1698"> </a></td>
+<td>sonstige Erkrankung Stoffwechsel</td></tr>
+<tr><td style="white-space:nowrap">1701<a name="mind-diagnose-cs-1701"> </a></td>
+<td>Schwangerschaft über 35. SSW (zur Entbindung in die Klinik)</td></tr>
+<tr><td style="white-space:nowrap">1702<a name="mind-diagnose-cs-1702"> </a></td>
+<td>Schwangerschaftskomplikation (z. B. Eklampsie)</td></tr>
+<tr><td style="white-space:nowrap">1703<a name="mind-diagnose-cs-1703"> </a></td>
+<td>präklinische Geburt</td></tr>
+<tr><td style="white-space:nowrap">1704<a name="mind-diagnose-cs-1704"> </a></td>
+<td>extrauterine Gravidität</td></tr>
+<tr><td style="white-space:nowrap">1705<a name="mind-diagnose-cs-1705"> </a></td>
+<td>vaginale Blutung</td></tr>
+<tr><td style="white-space:nowrap">1798<a name="mind-diagnose-cs-1798"> </a></td>
+<td>sonstige Erkrankung Gynäkologie</td></tr>
+<tr><td style="white-space:nowrap">1801<a name="mind-diagnose-cs-1801"> </a></td>
+<td>Anaphylaxie Grad 1/2</td></tr>
+<tr><td style="white-space:nowrap">1802<a name="mind-diagnose-cs-1802"> </a></td>
+<td>Anaphylaxie Grad 3/4</td></tr>
+<tr><td style="white-space:nowrap">1803<a name="mind-diagnose-cs-1803"> </a></td>
+<td>Intoxikation Alkohol</td></tr>
+<tr><td style="white-space:nowrap">1804<a name="mind-diagnose-cs-1804"> </a></td>
+<td>Intoxikation Drogen</td></tr>
+<tr><td style="white-space:nowrap">1805<a name="mind-diagnose-cs-1805"> </a></td>
+<td>Intoxikation Medikamente</td></tr>
+<tr><td style="white-space:nowrap">1806<a name="mind-diagnose-cs-1806"> </a></td>
+<td>sonstige Intoxikation</td></tr>
+<tr><td style="white-space:nowrap">1807<a name="mind-diagnose-cs-1807"> </a></td>
+<td>akzidentelle Intoxikation</td></tr>
+<tr><td style="white-space:nowrap">1808<a name="mind-diagnose-cs-1808"> </a></td>
+<td>Sepsis/septischer Schock</td></tr>
+<tr><td style="white-space:nowrap">1809<a name="mind-diagnose-cs-1809"> </a></td>
+<td>hochkontagiöse Erreger</td></tr>
+<tr><td style="white-space:nowrap">1810<a name="mind-diagnose-cs-1810"> </a></td>
+<td>sonstige Infektionserkrankungen</td></tr>
+<tr><td style="white-space:nowrap">1811<a name="mind-diagnose-cs-1811"> </a></td>
+<td>Hitzeerschöpfung/Hitzschlag</td></tr>
+<tr><td style="white-space:nowrap">1812<a name="mind-diagnose-cs-1812"> </a></td>
+<td>Unterkühlung/Erfrierung</td></tr>
+<tr><td style="white-space:nowrap">1813<a name="mind-diagnose-cs-1813"> </a></td>
+<td>SIDS</td></tr>
+<tr><td style="white-space:nowrap">1814<a name="mind-diagnose-cs-1814"> </a></td>
+<td>akute Lumbago</td></tr>
+<tr><td style="white-space:nowrap">1815<a name="mind-diagnose-cs-1815"> </a></td>
+<td>palliative Situation</td></tr>
+<tr><td style="white-space:nowrap">1816<a name="mind-diagnose-cs-1816"> </a></td>
+<td>medizinische Behandlungskomplikation</td></tr>
+<tr><td style="white-space:nowrap">1817<a name="mind-diagnose-cs-1817"> </a></td>
+<td>Epistaxis/HNO-Erkrankung</td></tr>
+<tr><td style="white-space:nowrap">1818<a name="mind-diagnose-cs-1818"> </a></td>
+<td>urologische Erkrankung</td></tr>
+<tr><td style="white-space:nowrap">1819<a name="mind-diagnose-cs-1819"> </a></td>
+<td>Augenerkrankung</td></tr>
+<tr><td style="white-space:nowrap">1820<a name="mind-diagnose-cs-1820"> </a></td>
+<td>sonstiger akuter Schmerzzustand</td></tr>
+<tr><td style="white-space:nowrap">1821<a name="mind-diagnose-cs-1821"> </a></td>
+<td>Schock unklarer Genese</td></tr>
+<tr><td style="white-space:nowrap">1822<a name="mind-diagnose-cs-1822"> </a></td>
+<td>Erysipel</td></tr>
+<tr><td style="white-space:nowrap">1898<a name="mind-diagnose-cs-1898"> </a></td>
+<td>sonstige Erkrankung</td></tr>
+<tr><td style="white-space:nowrap">1899<a name="mind-diagnose-cs-1899"> </a></td>
+<td>führendes soziales Problem</td></tr>
+<tr><td style="white-space:nowrap">9999<a name="mind-diagnose-cs-9999"> </a></td>
+<td>keine Erkrankung/Verletzung feststellbar</td></tr>
+<tr><td style="white-space:nowrap">2001<a name="mind-diagnose-cs-2001"> </a></td>
+<td>SHT leicht</td></tr>
+<tr><td style="white-space:nowrap">2002<a name="mind-diagnose-cs-2002"> </a></td>
+<td>SHT mittel</td></tr>
+<tr><td style="white-space:nowrap">2003<a name="mind-diagnose-cs-2003"> </a></td>
+<td>SHT schwer</td></tr>
+<tr><td style="white-space:nowrap">2004<a name="mind-diagnose-cs-2004"> </a></td>
+<td>SHT lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2101<a name="mind-diagnose-cs-2101"> </a></td>
+<td>Trauma Gesicht/Kopf/Hals leicht</td></tr>
+<tr><td style="white-space:nowrap">2102<a name="mind-diagnose-cs-2102"> </a></td>
+<td>Trauma Gesicht/Kopf/Hals mittel</td></tr>
+<tr><td style="white-space:nowrap">2103<a name="mind-diagnose-cs-2103"> </a></td>
+<td>Trauma Gesicht/Kopf/Hals schwer</td></tr>
+<tr><td style="white-space:nowrap">2104<a name="mind-diagnose-cs-2104"> </a></td>
+<td>Trauma Gesicht/Kopf/Hals lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2201<a name="mind-diagnose-cs-2201"> </a></td>
+<td>Trauma HWS leicht</td></tr>
+<tr><td style="white-space:nowrap">2202<a name="mind-diagnose-cs-2202"> </a></td>
+<td>Trauma HWS mittel</td></tr>
+<tr><td style="white-space:nowrap">2203<a name="mind-diagnose-cs-2203"> </a></td>
+<td>Trauma HWS schwer</td></tr>
+<tr><td style="white-space:nowrap">2204<a name="mind-diagnose-cs-2204"> </a></td>
+<td>Trauma HWS lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2301<a name="mind-diagnose-cs-2301"> </a></td>
+<td>Trauma Thorax leicht</td></tr>
+<tr><td style="white-space:nowrap">2302<a name="mind-diagnose-cs-2302"> </a></td>
+<td>Trauma Thorax mittel</td></tr>
+<tr><td style="white-space:nowrap">2303<a name="mind-diagnose-cs-2303"> </a></td>
+<td>Trauma Thorax schwer</td></tr>
+<tr><td style="white-space:nowrap">2304<a name="mind-diagnose-cs-2304"> </a></td>
+<td>Trauma Thorax lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2401<a name="mind-diagnose-cs-2401"> </a></td>
+<td>Trauma Abdomen leicht</td></tr>
+<tr><td style="white-space:nowrap">2402<a name="mind-diagnose-cs-2402"> </a></td>
+<td>Trauma Abdomen mittel</td></tr>
+<tr><td style="white-space:nowrap">2403<a name="mind-diagnose-cs-2403"> </a></td>
+<td>Trauma Abdomen schwer</td></tr>
+<tr><td style="white-space:nowrap">2404<a name="mind-diagnose-cs-2404"> </a></td>
+<td>Trauma Abdomen lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2501<a name="mind-diagnose-cs-2501"> </a></td>
+<td>Trauma BWS/LWS leicht</td></tr>
+<tr><td style="white-space:nowrap">2502<a name="mind-diagnose-cs-2502"> </a></td>
+<td>Trauma BWS/LWS mittel</td></tr>
+<tr><td style="white-space:nowrap">2503<a name="mind-diagnose-cs-2503"> </a></td>
+<td>Trauma BWS/LWS schwer</td></tr>
+<tr><td style="white-space:nowrap">2504<a name="mind-diagnose-cs-2504"> </a></td>
+<td>Trauma BWS/LWS lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2601<a name="mind-diagnose-cs-2601"> </a></td>
+<td>Trauma Becken leicht</td></tr>
+<tr><td style="white-space:nowrap">2602<a name="mind-diagnose-cs-2602"> </a></td>
+<td>Trauma Becken mittel</td></tr>
+<tr><td style="white-space:nowrap">2603<a name="mind-diagnose-cs-2603"> </a></td>
+<td>Trauma Becken schwer</td></tr>
+<tr><td style="white-space:nowrap">2604<a name="mind-diagnose-cs-2604"> </a></td>
+<td>Trauma Becken lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2701<a name="mind-diagnose-cs-2701"> </a></td>
+<td>Trauma obere Extremität leicht</td></tr>
+<tr><td style="white-space:nowrap">2702<a name="mind-diagnose-cs-2702"> </a></td>
+<td>Trauma obere Extremität mittel</td></tr>
+<tr><td style="white-space:nowrap">2703<a name="mind-diagnose-cs-2703"> </a></td>
+<td>Trauma obere Extremität schwer</td></tr>
+<tr><td style="white-space:nowrap">2704<a name="mind-diagnose-cs-2704"> </a></td>
+<td>Trauma obere Extremität lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2801<a name="mind-diagnose-cs-2801"> </a></td>
+<td>Trauma untere Extremität leicht</td></tr>
+<tr><td style="white-space:nowrap">2802<a name="mind-diagnose-cs-2802"> </a></td>
+<td>Trauma untere Extremität mittel</td></tr>
+<tr><td style="white-space:nowrap">2803<a name="mind-diagnose-cs-2803"> </a></td>
+<td>Trauma untere Extremität schwer</td></tr>
+<tr><td style="white-space:nowrap">2804<a name="mind-diagnose-cs-2804"> </a></td>
+<td>Trauma untere Extremität lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2901<a name="mind-diagnose-cs-2901"> </a></td>
+<td>Trauma Weichteile leicht</td></tr>
+<tr><td style="white-space:nowrap">2902<a name="mind-diagnose-cs-2902"> </a></td>
+<td>Trauma Weichteile mittel</td></tr>
+<tr><td style="white-space:nowrap">2903<a name="mind-diagnose-cs-2903"> </a></td>
+<td>Trauma Weichteile schwer</td></tr>
+<tr><td style="white-space:nowrap">2904<a name="mind-diagnose-cs-2904"> </a></td>
+<td>Trauma Weichteile lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">2911<a name="mind-diagnose-cs-2911"> </a></td>
+<td>Trauma Gefäßverletzungen leicht</td></tr>
+<tr><td style="white-space:nowrap">2912<a name="mind-diagnose-cs-2912"> </a></td>
+<td>Trauma Gefäßverletzungen mittel</td></tr>
+<tr><td style="white-space:nowrap">2913<a name="mind-diagnose-cs-2913"> </a></td>
+<td>Trauma Gefäßverletzungen schwer</td></tr>
+<tr><td style="white-space:nowrap">2914<a name="mind-diagnose-cs-2914"> </a></td>
+<td>Trauma Gefäßverletzungen lebensbedrohlich oder tödlich</td></tr>
+<tr><td style="white-space:nowrap">3001<a name="mind-diagnose-cs-3001"> </a></td>
+<td>Verbrennung/Verbrühung</td></tr>
+<tr><td style="white-space:nowrap">3002<a name="mind-diagnose-cs-3002"> </a></td>
+<td>Inhalationstrauma/Rauchgasinhalation</td></tr>
+<tr><td style="white-space:nowrap">3003<a name="mind-diagnose-cs-3003"> </a></td>
+<td>Elektrounfall</td></tr>
+<tr><td style="white-space:nowrap">3004<a name="mind-diagnose-cs-3004"> </a></td>
+<td>Verätzung</td></tr>
+<tr><td style="white-space:nowrap">3005<a name="mind-diagnose-cs-3005"> </a></td>
+<td>(Beinahe-)Ertrinken</td></tr>
+<tr><td style="white-space:nowrap">3006<a name="mind-diagnose-cs-3006"> </a></td>
+<td>Tauchunfall</td></tr>
+<tr><td style="white-space:nowrap">3098<a name="mind-diagnose-cs-3098"> </a></td>
+<td>Sonstige spezielle Traumata</td></tr></table></div>
+
+  <hr/>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology">Description of the above table(s)</a>.
+  </p>
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/till-ko">Till Koch</a>.  
+          Package de.ems.mind.r4#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-10-01 18:52:00 +0000">
+    2026-10-01
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-circulation-zugang-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-circulation-zugang-cs</b></p><a name=\"mind-circulation-zugang-cs\"> </a><a name=\"hcmind-circulation-zugang-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-circulation-zugang-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">-1<a name=\"mind-circulation-zugang-cs--1\"> </a></td><td>kein Zugang gelegt</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-circulation-zugang-cs-01\"> </a></td><td>PVK</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-circulation-zugang-cs-02\"> </a></td><td>ZVK</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-circulation-zugang-cs-03\"> </a></td><td>Shaldon- oder anderer großlumiger Katheter</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"mind-circulation-zugang-cs-04\"> </a></td><td>IO-Punktion</td></tr><tr><td style=\"white-space:nowrap\">97<a name=\"mind-circulation-zugang-cs-97\"> </a></td><td>Zugang vorhanden/durch Andere</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"mind-circulation-zugang-cs-98\"> </a></td><td>Sonstige</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-circulation-zugang-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.8"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindCirculationZugangCS",
+  "title" : "MIND Medikamentenzugang",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Angelegter Medikamentenzugang gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "-1",
+    "display" : "kein Zugang gelegt"
+  },
+  {
+    "code" : "01",
+    "display" : "PVK"
+  },
+  {
+    "code" : "02",
+    "display" : "ZVK"
+  },
+  {
+    "code" : "03",
+    "display" : "Shaldon- oder anderer großlumiger Katheter"
+  },
+  {
+    "code" : "04",
+    "display" : "IO-Punktion"
+  },
+  {
+    "code" : "97",
+    "display" : "Zugang vorhanden/durch Andere"
+  },
+  {
+    "code" : "98",
+    "display" : "Sonstige"
+  }]
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mind-altersvaliditaet-example",
+  "meta" : {
+    "profile" : ["https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mind-altersvaliditaet-example</b></p><a name=\"mind-altersvaliditaet-example\"> </a><a name=\"hcmind-altersvaliditaet-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-observation-de-ems-mind-altersvaliditaet.html\">MIND 7.1 Altersvalidität</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs altersvaliditaet}\">Altersvalidität</span></p><p><b>subject</b>: <a href=\"Patient-mind-patient-example.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-mind-encounter-example.html\">Encounter: identifier = https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung#MindStandortkennung#03254021,https://till-ko.github.io/de-ems/NamingSystem/mind-projektid#MindProjektId#PRJ-2026-0001,https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle#MindLeitstelle#HI,https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel#MindPrimaerschluessel#HI-2026-00042,https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr#MindEinsatznr#E-2026-0412,https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr#MindAuftragNr#RK-2026-3321; status = finished; class = emergency (ActCode#EMER); type = Notfallrettung - Primäreinsatz ohne NA; period = 2026-09-16 09:15:00+0200 --&gt; 2026-09-16 10:00:00+0200</a></p><p><b>effective</b>: 2026-09-16 09:15:00+0200</p><p><b>value</b>: false</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs",
+      "code" : "altersvaliditaet"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mind-patient-example"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mind-encounter-example"
+  },
+  "effectiveDateTime" : "2026-09-16T09:15:00+02:00",
+  "valueBoolean" : false
+}

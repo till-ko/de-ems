@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-personalstatus-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-personalstatus-cs</b></p><a name="mind-personalstatus-cs"> </a><a name="hcmind-personalstatus-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-personalstatus-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">-1<a name="mind-personalstatus-cs--1"> </a></td><td>nicht dokumentiert</td></tr><tr><td style="white-space:nowrap">01<a name="mind-personalstatus-cs-01"> </a></td><td>Ärztin/Arzt</td></tr><tr><td style="white-space:nowrap">02<a name="mind-personalstatus-cs-02"> </a></td><td>Notfallsanitäter/in</td></tr><tr><td style="white-space:nowrap">03<a name="mind-personalstatus-cs-03"> </a></td><td>Rettungsassistent/in</td></tr><tr><td style="white-space:nowrap">04<a name="mind-personalstatus-cs-04"> </a></td><td>Rettungssanitäter/in</td></tr><tr><td style="white-space:nowrap">05<a name="mind-personalstatus-cs-05"> </a></td><td>Intensivpflegepersonal</td></tr><tr><td style="white-space:nowrap">98<a name="mind-personalstatus-cs-98"> </a></td><td>Sonstige</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-personalstatus-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.36"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindPersonalstatusCS"/>
+  <title value="MIND Personalstatus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Status des am Einsatz beteiligten Personals gemäß MIND 7.1."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="-1"/>
+    <display value="nicht dokumentiert"/>
+  </concept>
+  <concept>
+    <code value="01"/>
+    <display value="Ärztin/Arzt"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Notfallsanitäter/in"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Rettungsassistent/in"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Rettungssanitäter/in"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Intensivpflegepersonal"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="Sonstige"/>
+  </concept>
+</CodeSystem>

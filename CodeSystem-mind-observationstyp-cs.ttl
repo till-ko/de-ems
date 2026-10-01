@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-observationstyp-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-observationstyp-cs</b></p><a name=\"mind-observationstyp-cs\"> </a><a name=\"hcmind-observationstyp-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">patientenalter<a name=\"mind-observationstyp-cs-patientenalter\"> </a></td><td>Patientenalter</td></tr><tr><td style=\"white-space:nowrap\">altersvaliditaet<a name=\"mind-observationstyp-cs-altersvaliditaet\"> </a></td><td>Altersvalidität</td></tr><tr><td style=\"white-space:nowrap\">alter-jahre<a name=\"mind-observationstyp-cs-alter-jahre\"> </a></td><td>Alter in Jahren</td></tr><tr><td style=\"white-space:nowrap\">alter-monate<a name=\"mind-observationstyp-cs-alter-monate\"> </a></td><td>Alter in Monaten</td></tr><tr><td style=\"white-space:nowrap\">rd-transport<a name=\"mind-observationstyp-cs-rd-transport\"> </a></td><td>Rettungsdienstlicher Transport</td></tr><tr><td style=\"white-space:nowrap\">aerztliche-begleitung<a name=\"mind-observationstyp-cs-aerztliche-begleitung\"> </a></td><td>Ärztliche Transportbegleitung</td></tr><tr><td style=\"white-space:nowrap\">notarzt-nachgefordert<a name=\"mind-observationstyp-cs-notarzt-nachgefordert\"> </a></td><td>Notarzt nachgefordert</td></tr><tr><td style=\"white-space:nowrap\">tna-nachgefordert<a name=\"mind-observationstyp-cs-tna-nachgefordert\"> </a></td><td>Tele-Notarzt nachgefordert</td></tr><tr><td style=\"white-space:nowrap\">kein-transport-mit-patient<a name=\"mind-observationstyp-cs-kein-transport-mit-patient\"> </a></td><td>Grund für Einsatz ohne Transport trotz Patientenkontakt</td></tr><tr><td style=\"white-space:nowrap\">kein-transport-ohne-patient<a name=\"mind-observationstyp-cs-kein-transport-ohne-patient\"> </a></td><td>Grund für Einsatz ohne Transport, da kein Patientenkontakt</td></tr><tr><td style=\"white-space:nowrap\">dokumentierendes-rettungsmittel<a name=\"mind-observationstyp-cs-dokumentierendes-rettungsmittel\"> </a></td><td>Dokumentierendes Rettungsmittel</td></tr><tr><td style=\"white-space:nowrap\">beteiligte-rettungsmittel<a name=\"mind-observationstyp-cs-beteiligte-rettungsmittel\"> </a></td><td>Beteiligte Rettungsmittel</td></tr><tr><td style=\"white-space:nowrap\">aerztliche-qualifikation<a name=\"mind-observationstyp-cs-aerztliche-qualifikation\"> </a></td><td>Ärztliche Qualifikation</td></tr><tr><td style=\"white-space:nowrap\">personalstatus<a name=\"mind-observationstyp-cs-personalstatus\"> </a></td><td>Status des Personals</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn-vor-24h<a name=\"mind-observationstyp-cs-symptombeginn-vor-24h\"> </a></td><td>Symptombeginn innerhalb der letzten 24 Stunden</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn<a name=\"mind-observationstyp-cs-symptombeginn\"> </a></td><td>Zeitpunkt Symptombeginn</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn-gesichert<a name=\"mind-observationstyp-cs-symptombeginn-gesichert\"> </a></td><td>Symptombeginn gesichert oder geschätzt</td></tr><tr><td style=\"white-space:nowrap\">zeit-notfallmeldung<a name=\"mind-observationstyp-cs-zeit-notfallmeldung\"> </a></td><td>Zeitpunkt Eingang Notfallmeldung</td></tr><tr><td style=\"white-space:nowrap\">zeit-alarm<a name=\"mind-observationstyp-cs-zeit-alarm\"> </a></td><td>Zeitpunkt Alarm</td></tr><tr><td style=\"white-space:nowrap\">zeit-ausruecken<a name=\"mind-observationstyp-cs-zeit-ausruecken\"> </a></td><td>Zeitpunkt Ausrücken</td></tr><tr><td style=\"white-space:nowrap\">zeit-ankunft-einsatzort<a name=\"mind-observationstyp-cs-zeit-ankunft-einsatzort\"> </a></td><td>Zeitpunkt Ankunft Einsatzort</td></tr><tr><td style=\"white-space:nowrap\">zeit-ankunft-patient<a name=\"mind-observationstyp-cs-zeit-ankunft-patient\"> </a></td><td>Zeitpunkt Ankunft Patient</td></tr><tr><td style=\"white-space:nowrap\">zeit-transportbeginn<a name=\"mind-observationstyp-cs-zeit-transportbeginn\"> </a></td><td>Zeitpunkt Transportbeginn</td></tr><tr><td style=\"white-space:nowrap\">zeit-eintreffen-transportziel<a name=\"mind-observationstyp-cs-zeit-eintreffen-transportziel\"> </a></td><td>Zeitpunkt Eintreffen Transportziel</td></tr><tr><td style=\"white-space:nowrap\">zeit-uebergabe-patient<a name=\"mind-observationstyp-cs-zeit-uebergabe-patient\"> </a></td><td>Zeitpunkt Übergabe Patient</td></tr><tr><td style=\"white-space:nowrap\">zeit-einsatzende<a name=\"mind-observationstyp-cs-zeit-einsatzende\"> </a></td><td>Zeitpunkt Einsatzende</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.169126619167380341660016816424527320624.16.34" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "MindObservationstypCS"] ;
+  fhir:CodeSystem.title [ fhir:value "MIND Beobachtungstypen"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-01T18:52:47+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Till Koch"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Till Koch" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/till-ko" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "26"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patientenalter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patientenalter" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "altersvaliditaet" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Altersvalidität" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "alter-jahre" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alter in Jahren" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "alter-monate" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alter in Monaten" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rd-transport" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rettungsdienstlicher Transport" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aerztliche-begleitung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ärztliche Transportbegleitung" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "notarzt-nachgefordert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notarzt nachgefordert" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tna-nachgefordert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tele-Notarzt nachgefordert" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kein-transport-mit-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grund für Einsatz ohne Transport trotz Patientenkontakt" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kein-transport-ohne-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grund für Einsatz ohne Transport, da kein Patientenkontakt" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dokumentierendes-rettungsmittel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dokumentierendes Rettungsmittel" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "beteiligte-rettungsmittel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Beteiligte Rettungsmittel" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aerztliche-qualifikation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ärztliche Qualifikation" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "personalstatus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Status des Personals" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "symptombeginn-vor-24h" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Symptombeginn innerhalb der letzten 24 Stunden" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "symptombeginn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Symptombeginn" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "symptombeginn-gesichert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Symptombeginn gesichert oder geschätzt" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-notfallmeldung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Eingang Notfallmeldung" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-alarm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Alarm" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-ausruecken" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Ausrücken" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-ankunft-einsatzort" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Ankunft Einsatzort" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-ankunft-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Ankunft Patient" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-transportbeginn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Transportbeginn" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-eintreffen-transportziel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Eintreffen Transportziel" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-uebergabe-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Übergabe Patient" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-einsatzende" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Einsatzende" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

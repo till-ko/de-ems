@@ -1,0 +1,470 @@
+{
+  "codeSystems" : [{
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-begleitung-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindAerztlicheBegleitungCS",
+    "title" : "MIND Ärztliche Transportbegleitung",
+    "description" : "Ärztliche Transportbegleitung gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.1"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-aerztliche-qualifikation-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindAerztlicheQualifikationCS",
+    "title" : "MIND Ärztliche Qualifikation",
+    "description" : "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.2"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-airway-massnahme-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindAirwayMassnahmeCS",
+    "title" : "MIND Airway-Maßnahme",
+    "description" : "Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.3"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-atemunterstuetzung-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindAtemunterstuetzungCS",
+    "title" : "MIND Atemunterstützung",
+    "description" : "Atemunterstützung und Beatmung gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.4"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-atmung-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindAtmungCS",
+    "title" : "MIND Klinischer Atembefund",
+    "description" : "Klinische Befunde der Atmung gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.5"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-beteiligtes-rettungsmittel-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindBeteiligtesRettungsmittelCS",
+    "title" : "MIND Beteiligtes Rettungsmittel",
+    "description" : "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.6"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-bewusstseinslage-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindBewusstseinslageCS",
+    "title" : "MIND Bewusstseinslage",
+    "description" : "Bewusstseinslage gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.7"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-circulation-zugang-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindCirculationZugangCS",
+    "title" : "MIND Medikamentenzugang",
+    "description" : "Angelegter Medikamentenzugang gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.8"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindDiagnoseCS",
+    "title" : "MIND Diagnose",
+    "description" : "MIND-7.1-Diagnosecodes für präklinische Erkrankungen und Verletzungen.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.9"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-dokumentierendes-rettungsmittel-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindDokumentierendesRettungsmittelCS",
+    "title" : "MIND Dokumentierendes Rettungsmittel",
+    "description" : "Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.10"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzart-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindEinsatzartCS",
+    "title" : "MIND Einsatzart",
+    "description" : "Einsatzart gemäß MIND 7.1 Spezifikation. Beschreibt die Art des Einsatzes (Notfallrettung, Verlegung, Intensivtransport, Krankentransport, Dienstfahrt, Pause).",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.11"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzbesonderheit-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindEinsatzbesonderheitCS",
+    "title" : "MIND Einsatzbesonderheit",
+    "description" : "Einsatzbesonderheiten gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.12"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-einsatzort-typ-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindEinsatzortTypCS",
+    "title" : "MIND Einsatzorttyp CodeSystem",
+    "description" : "Einsatzorttyp gemäß MIND 7.1 Spezifikation.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.13"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-ekg-12-kanal-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindEkg12KanalCS",
+    "title" : "MIND 12-Kanal-EKG",
+    "description" : "Durchführung eines 12-Kanal-EKG gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.14"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-ekg-befund-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindEkgbefundCS",
+    "title" : "MIND EKG-Befund",
+    "description" : "EKG-Befund gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.15"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-erste-defibrillation-durch-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindErsteDefibrillationDurchCS",
+    "title" : "MIND Erste Defibrillation durch",
+    "description" : "Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.16"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-hautbefund-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindHautbefundCS",
+    "title" : "MIND Hautbefund",
+    "description" : "Hautbefunde gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.17"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-heilkundliche-massnahme-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindHeilkundlicheMassnahmeCS",
+    "title" : "MIND Eigenständige heilkundliche Maßnahme",
+    "description" : "Eigenständig oder eigenverantwortlich durch Notfallsanitäterinnen und Notfallsanitäter durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.18"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-herzdruckmassage-durch-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindHerzdruckmassageDurchCS",
+    "title" : "MIND Beginn der Herzdruckmassage durch",
+    "description" : "Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.19"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-indikation-intensivtransport-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindIndikationIntensivtransportCS",
+    "title" : "MIND Indikation Intensivtransport",
+    "description" : "Indikation für einen Intensivtransport gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.20"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kein-transport-mit-patient-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindKeinTransportMitPatientCS",
+    "title" : "MIND Grund für Einsatz ohne Transport bei Patientenkontakt",
+    "description" : "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.21"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kein-transport-ohne-patient-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindKeinTransportOhnePatientCS",
+    "title" : "MIND Grund für Einsatz ohne Patientenkontakt",
+    "description" : "Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.22"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kollaps-beobachtet-durch-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindKollapsBeobachtetDurchCS",
+    "title" : "MIND Kollaps beobachtet durch",
+    "description" : "Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.23"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-krankenhausaufnahme-zustand-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindKrankenhausaufnahmeZustandCS",
+    "title" : "MIND Patientenzustand bei Krankenhausaufnahme",
+    "description" : "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.24"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-kreislaufstillstandursache-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindKreislaufstillstandursacheCS",
+    "title" : "MIND Vermutete Ursache des Kreislaufstillstands",
+    "description" : "Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.25"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-lagerungs-rettungstechnik-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindLagerungsRettungstechnikCS",
+    "title" : "MIND Lagerungs- und Rettungstechnik",
+    "description" : "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.26"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-lichtreaktion-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindLichtreaktionCS",
+    "title" : "MIND Lichtreaktion",
+    "description" : "Lichtreaktion der Pupillen gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.27"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindMedikamentengabeCS",
+    "title" : "MIND Medikamentengabe",
+    "description" : "Gültige Kombinationen aus Wirkstoffcode und Applikationsweg gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.28"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-medizintechnik-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindMedizintechnikCS",
+    "title" : "MIND Medizintechnik",
+    "description" : "Eingesetzte Medizintechnik gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.29"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-mnaca-score-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindMnacaScoreCS",
+    "title" : "MIND M-NACA-Score",
+    "description" : "M-NACA-Score gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.30"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-naca-score-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindNacaScoreCS",
+    "title" : "MIND NACA-Score",
+    "description" : "NACA-Score gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.31"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-neurologische-auffaelligkeit-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindNeurologischeAuffaelligkeitCS",
+    "title" : "MIND Neurologische Auffälligkeit",
+    "description" : "Akute neurologische Auffälligkeiten gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.32"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-neurologische-auffaelligkeit-verlauf-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindNeurologischeAuffaelligkeitVerlaufCS",
+    "title" : "MIND Neurologische Auffälligkeit im Verlauf",
+    "description" : "Akute neurologische Auffälligkeiten im Verlaufsbefund gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.33"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindObservationstypCS",
+    "title" : "MIND Beobachtungstypen",
+    "description" : "Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.34"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-ort-patientenuebergabe-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindOrtPatientenuebergabeCS",
+    "title" : "MIND Ort der Patientenübergabe",
+    "description" : "Ort der Patientenübergabe gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.35"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-personalstatus-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindPersonalstatusCS",
+    "title" : "MIND Personalstatus",
+    "description" : "Status des am Einsatz beteiligten Personals gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.36"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-pre-emergency-status-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindPreEmergencyStatusCS",
+    "title" : "MIND Zustand vor Eintritt des Notfalls",
+    "description" : "Zustand vor Eintritt des Notfalls gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.37"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-protokolltyp-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindProtokolltypCS",
+    "title" : "MIND Protokolltyp",
+    "description" : "Typ des verwendeten Protokolls: NA für Notarztdokumentation, RD für Rettungsdienstdokumentation. Sollte in den Stammdaten fest dem Rettungsmittel/Personal zugewiesen werden; beim Wechsel von Dokumentations-Pads zwischen Fahrzeugen muss das korrekte Rettungsmittel (mit zugeordneter Projekt-ID) und der richtige Protokolltyp ausgewählt sein. Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen (z. B. ProjektID, Rettungsmitteltyp, Einsatzart, Qualifikation Personal).",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.38"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-psychischer-zustand-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindPsychischerZustandCS",
+    "title" : "MIND Psychischer Zustand",
+    "description" : "Psychischer Zustand gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.39"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-pupillenweite-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindPupillenweiteCS",
+    "title" : "MIND Pupillenweite",
+    "description" : "Pupillenweite gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.40"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-rd-transport-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindRdTransportCS",
+    "title" : "MIND Rettungsdienstlicher Transport",
+    "description" : "Rettungsdienstlicher Transport gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.41"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-reanimationssituation-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindReanimationssituationCS",
+    "title" : "MIND Reanimationssituation",
+    "description" : "Reanimationssituation gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.42"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-reanimationstechnik-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindReanimationstechnikCS",
+    "title" : "MIND Reanimationstechnik",
+    "description" : "Eingesetzte Reanimationstechnik gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.43"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-rosc-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindRoscCS",
+    "title" : "MIND ROSC",
+    "description" : "Erreichen eines Spontankreislaufs gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.44"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-schmerzerleben-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindSchmerzerlebenCS",
+    "title" : "MIND Schmerzerleben",
+    "description" : "Schmerzerleben durch die Patientin oder den Patienten gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.45"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-spezielle-devices-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindSpezielleDevicesCS",
+    "title" : "MIND Spezielle Devices",
+    "description" : "Spezielle Devices gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.46"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-spezielle-massnahme-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindSpezielleMassnahmeCS",
+    "title" : "MIND Spezielle Maßnahme",
+    "description" : "Spezielle Maßnahmen gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.47"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-unfallhergang-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindUnfallhergangCS",
+    "title" : "MIND Unfallhergang",
+    "description" : "Unfallhergang gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.48"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-unfallmechanismus-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindUnfallmechanismusCS",
+    "title" : "MIND Unfallmechanismus",
+    "description" : "Unfallmechanismus gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.49"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-unfallursache-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindUnfallursacheCS",
+    "title" : "MIND Unfallursache",
+    "description" : "Unfallursache gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.50"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-verletzungsmuster-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindVerletzungsmusterCS",
+    "title" : "MIND Verletzungsmuster",
+    "description" : "Verletzungsmuster gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.51"]
+  },
+  {
+    "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-zeitliche-dringlichkeit-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MindZeitlicheDringlichkeitCS",
+    "title" : "MIND Zeitliche Dringlichkeit",
+    "description" : "Zeitliche Dringlichkeit gemäß MIND 7.1.",
+    "oids" : ["2.25.169126619167380341660016816424527320624.16.52"]
+  }]
+}

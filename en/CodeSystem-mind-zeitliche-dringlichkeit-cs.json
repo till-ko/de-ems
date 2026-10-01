@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-zeitliche-dringlichkeit-cs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-zeitliche-dringlichkeit-cs</b></p><a name=\"mind-zeitliche-dringlichkeit-cs\"> </a><a name=\"hcmind-zeitliche-dringlichkeit-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-zeitliche-dringlichkeit-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mind-zeitliche-dringlichkeit-cs-01\"> </a></td><td>Notfall - schnellstmöglich, vitale Indikation</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mind-zeitliche-dringlichkeit-cs-02\"> </a></td><td>dringlich - zeitnah, keine vitale Indikation</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"mind-zeitliche-dringlichkeit-cs-03\"> </a></td><td>planbar - Stunden oder Tage, nicht dringlich</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-zeitliche-dringlichkeit-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.52"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindZeitlicheDringlichkeitCS",
+  "title" : "MIND Zeitliche Dringlichkeit",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-01T18:52:47+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Zeitliche Dringlichkeit gemäß MIND 7.1.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "01",
+    "display" : "Notfall - schnellstmöglich, vitale Indikation"
+  },
+  {
+    "code" : "02",
+    "display" : "dringlich - zeitnah, keine vitale Indikation"
+  },
+  {
+    "code" : "03",
+    "display" : "planbar - Stunden oder Tage, nicht dringlich"
+  }]
+}

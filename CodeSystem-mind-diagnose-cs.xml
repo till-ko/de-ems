@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-diagnose-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-diagnose-cs</b></p><a name="mind-diagnose-cs"> </a><a name="hcmind-diagnose-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1100<a name="mind-diagnose-cs-1100"> </a></td><td>Hirninfarkt, TIA, intrakranielle Blutung</td></tr><tr><td style="white-space:nowrap">1101<a name="mind-diagnose-cs-1101"> </a></td><td>TIA</td></tr><tr><td style="white-space:nowrap">1102<a name="mind-diagnose-cs-1102"> </a></td><td>Hirninfarkt</td></tr><tr><td style="white-space:nowrap">1103<a name="mind-diagnose-cs-1103"> </a></td><td>ICB (klinische Diagnose)</td></tr><tr><td style="white-space:nowrap">1104<a name="mind-diagnose-cs-1104"> </a></td><td>SAB (klinische Diagnose)</td></tr><tr><td style="white-space:nowrap">1105<a name="mind-diagnose-cs-1105"> </a></td><td>Krampfanfall</td></tr><tr><td style="white-space:nowrap">1106<a name="mind-diagnose-cs-1106"> </a></td><td>Fieberkrampf</td></tr><tr><td style="white-space:nowrap">1107<a name="mind-diagnose-cs-1107"> </a></td><td>Status epilepticus</td></tr><tr><td style="white-space:nowrap">1108<a name="mind-diagnose-cs-1108"> </a></td><td>Meningitis/Enzephalitis</td></tr><tr><td style="white-space:nowrap">1198<a name="mind-diagnose-cs-1198"> </a></td><td>sonstige Erkrankung ZNS</td></tr><tr><td style="white-space:nowrap">1201<a name="mind-diagnose-cs-1201"> </a></td><td>ACS</td></tr><tr><td style="white-space:nowrap">1202<a name="mind-diagnose-cs-1202"> </a></td><td>STEMI Vorderwand</td></tr><tr><td style="white-space:nowrap">1203<a name="mind-diagnose-cs-1203"> </a></td><td>STEMI Hinterwand</td></tr><tr><td style="white-space:nowrap">1204<a name="mind-diagnose-cs-1204"> </a></td><td>Thoraxschmerz unklarer Genese</td></tr><tr><td style="white-space:nowrap">1205<a name="mind-diagnose-cs-1205"> </a></td><td>kardiogener Schock</td></tr><tr><td style="white-space:nowrap">1206<a name="mind-diagnose-cs-1206"> </a></td><td>tachykarde Rhythmusstörung</td></tr><tr><td style="white-space:nowrap">1207<a name="mind-diagnose-cs-1207"> </a></td><td>bradykarde Rhythmusstörung</td></tr><tr><td style="white-space:nowrap">1208<a name="mind-diagnose-cs-1208"> </a></td><td>Schrittmacher-Fehlfunktion</td></tr><tr><td style="white-space:nowrap">1209<a name="mind-diagnose-cs-1209"> </a></td><td>ICD-Fehlfunktion</td></tr><tr><td style="white-space:nowrap">1210<a name="mind-diagnose-cs-1210"> </a></td><td>Lungenembolie</td></tr><tr><td style="white-space:nowrap">1211<a name="mind-diagnose-cs-1211"> </a></td><td>Herzinsuffizienz</td></tr><tr><td style="white-space:nowrap">1212<a name="mind-diagnose-cs-1212"> </a></td><td>Lungenödem</td></tr><tr><td style="white-space:nowrap">1213<a name="mind-diagnose-cs-1213"> </a></td><td>hypertensive Entgleisung</td></tr><tr><td style="white-space:nowrap">1214<a name="mind-diagnose-cs-1214"> </a></td><td>hypertensiver Notfall</td></tr><tr><td style="white-space:nowrap">1215<a name="mind-diagnose-cs-1215"> </a></td><td>Aortenaneurysma/-dissektion</td></tr><tr><td style="white-space:nowrap">1216<a name="mind-diagnose-cs-1216"> </a></td><td>Hypotonie</td></tr><tr><td style="white-space:nowrap">1217<a name="mind-diagnose-cs-1217"> </a></td><td>orthostatische Fehlregulation</td></tr><tr><td style="white-space:nowrap">1218<a name="mind-diagnose-cs-1218"> </a></td><td>Synkope</td></tr><tr><td style="white-space:nowrap">1219<a name="mind-diagnose-cs-1219"> </a></td><td>Thrombose/arterieller Verschluss</td></tr><tr><td style="white-space:nowrap">1220<a name="mind-diagnose-cs-1220"> </a></td><td>Herz-Kreislauf-Stillstand</td></tr><tr><td style="white-space:nowrap">1221<a name="mind-diagnose-cs-1221"> </a></td><td>hämorrhagischer Schock</td></tr><tr><td style="white-space:nowrap">1298<a name="mind-diagnose-cs-1298"> </a></td><td>sonstige Erkrankung Herz-Kreislauf</td></tr><tr><td style="white-space:nowrap">1301<a name="mind-diagnose-cs-1301"> </a></td><td>Asthma (Anfall)</td></tr><tr><td style="white-space:nowrap">1302<a name="mind-diagnose-cs-1302"> </a></td><td>Status asthmaticus</td></tr><tr><td style="white-space:nowrap">1303<a name="mind-diagnose-cs-1303"> </a></td><td>exazerbierte COPD</td></tr><tr><td style="white-space:nowrap">1304<a name="mind-diagnose-cs-1304"> </a></td><td>Aspiration</td></tr><tr><td style="white-space:nowrap">1305<a name="mind-diagnose-cs-1305"> </a></td><td>Pneumonie/Bronchitis</td></tr><tr><td style="white-space:nowrap">1306<a name="mind-diagnose-cs-1306"> </a></td><td>Epiglottitis</td></tr><tr><td style="white-space:nowrap">1307<a name="mind-diagnose-cs-1307"> </a></td><td>Pseudokrupp</td></tr><tr><td style="white-space:nowrap">1308<a name="mind-diagnose-cs-1308"> </a></td><td>anderer respiratorischer Infekt</td></tr><tr><td style="white-space:nowrap">1309<a name="mind-diagnose-cs-1309"> </a></td><td>Hyperventilationssyndrom</td></tr><tr><td style="white-space:nowrap">1310<a name="mind-diagnose-cs-1310"> </a></td><td>Spontanpneumothorax</td></tr><tr><td style="white-space:nowrap">1311<a name="mind-diagnose-cs-1311"> </a></td><td>Hämoptysis</td></tr><tr><td style="white-space:nowrap">1312<a name="mind-diagnose-cs-1312"> </a></td><td>Dyspnoe unklarer Ursache</td></tr><tr><td style="white-space:nowrap">1398<a name="mind-diagnose-cs-1398"> </a></td><td>sonstige Erkrankung Atmung</td></tr><tr><td style="white-space:nowrap">1401<a name="mind-diagnose-cs-1401"> </a></td><td>akutes Abdomen</td></tr><tr><td style="white-space:nowrap">1402<a name="mind-diagnose-cs-1402"> </a></td><td>obere GI-Blutung</td></tr><tr><td style="white-space:nowrap">1403<a name="mind-diagnose-cs-1403"> </a></td><td>untere GI-Blutung</td></tr><tr><td style="white-space:nowrap">1404<a name="mind-diagnose-cs-1404"> </a></td><td>Kolik (Galle, Niere, ...)</td></tr><tr><td style="white-space:nowrap">1405<a name="mind-diagnose-cs-1405"> </a></td><td>(infektiöse) Gastroenteritis</td></tr><tr><td style="white-space:nowrap">1406<a name="mind-diagnose-cs-1406"> </a></td><td>Mesenterialinfarkt</td></tr><tr><td style="white-space:nowrap">1498<a name="mind-diagnose-cs-1498"> </a></td><td>sonstige Erkrankung Abdomen</td></tr><tr><td style="white-space:nowrap">1501<a name="mind-diagnose-cs-1501"> </a></td><td>Depression, Angst</td></tr><tr><td style="white-space:nowrap">1502<a name="mind-diagnose-cs-1502"> </a></td><td>Manie, Psychose</td></tr><tr><td style="white-space:nowrap">1503<a name="mind-diagnose-cs-1503"> </a></td><td>Entzugssymptomatik, Delir</td></tr><tr><td style="white-space:nowrap">1504<a name="mind-diagnose-cs-1504"> </a></td><td>Suizidalität</td></tr><tr><td style="white-space:nowrap">1505<a name="mind-diagnose-cs-1505"> </a></td><td>psychosoziale Krise</td></tr><tr><td style="white-space:nowrap">1598<a name="mind-diagnose-cs-1598"> </a></td><td>sonstige Erkrankung Psychiatrie</td></tr><tr><td style="white-space:nowrap">1601<a name="mind-diagnose-cs-1601"> </a></td><td>Hypoglykämie</td></tr><tr><td style="white-space:nowrap">1602<a name="mind-diagnose-cs-1602"> </a></td><td>Hyperglykämie</td></tr><tr><td style="white-space:nowrap">1603<a name="mind-diagnose-cs-1603"> </a></td><td>Urämie/akutes Nierenversagen</td></tr><tr><td style="white-space:nowrap">1604<a name="mind-diagnose-cs-1604"> </a></td><td>Exsikkose</td></tr><tr><td style="white-space:nowrap">1605<a name="mind-diagnose-cs-1605"> </a></td><td>Elektrolytstörungen</td></tr><tr><td style="white-space:nowrap">1698<a name="mind-diagnose-cs-1698"> </a></td><td>sonstige Erkrankung Stoffwechsel</td></tr><tr><td style="white-space:nowrap">1701<a name="mind-diagnose-cs-1701"> </a></td><td>Schwangerschaft über 35. SSW (zur Entbindung in die Klinik)</td></tr><tr><td style="white-space:nowrap">1702<a name="mind-diagnose-cs-1702"> </a></td><td>Schwangerschaftskomplikation (z. B. Eklampsie)</td></tr><tr><td style="white-space:nowrap">1703<a name="mind-diagnose-cs-1703"> </a></td><td>präklinische Geburt</td></tr><tr><td style="white-space:nowrap">1704<a name="mind-diagnose-cs-1704"> </a></td><td>extrauterine Gravidität</td></tr><tr><td style="white-space:nowrap">1705<a name="mind-diagnose-cs-1705"> </a></td><td>vaginale Blutung</td></tr><tr><td style="white-space:nowrap">1798<a name="mind-diagnose-cs-1798"> </a></td><td>sonstige Erkrankung Gynäkologie</td></tr><tr><td style="white-space:nowrap">1801<a name="mind-diagnose-cs-1801"> </a></td><td>Anaphylaxie Grad 1/2</td></tr><tr><td style="white-space:nowrap">1802<a name="mind-diagnose-cs-1802"> </a></td><td>Anaphylaxie Grad 3/4</td></tr><tr><td style="white-space:nowrap">1803<a name="mind-diagnose-cs-1803"> </a></td><td>Intoxikation Alkohol</td></tr><tr><td style="white-space:nowrap">1804<a name="mind-diagnose-cs-1804"> </a></td><td>Intoxikation Drogen</td></tr><tr><td style="white-space:nowrap">1805<a name="mind-diagnose-cs-1805"> </a></td><td>Intoxikation Medikamente</td></tr><tr><td style="white-space:nowrap">1806<a name="mind-diagnose-cs-1806"> </a></td><td>sonstige Intoxikation</td></tr><tr><td style="white-space:nowrap">1807<a name="mind-diagnose-cs-1807"> </a></td><td>akzidentelle Intoxikation</td></tr><tr><td style="white-space:nowrap">1808<a name="mind-diagnose-cs-1808"> </a></td><td>Sepsis/septischer Schock</td></tr><tr><td style="white-space:nowrap">1809<a name="mind-diagnose-cs-1809"> </a></td><td>hochkontagiöse Erreger</td></tr><tr><td style="white-space:nowrap">1810<a name="mind-diagnose-cs-1810"> </a></td><td>sonstige Infektionserkrankungen</td></tr><tr><td style="white-space:nowrap">1811<a name="mind-diagnose-cs-1811"> </a></td><td>Hitzeerschöpfung/Hitzschlag</td></tr><tr><td style="white-space:nowrap">1812<a name="mind-diagnose-cs-1812"> </a></td><td>Unterkühlung/Erfrierung</td></tr><tr><td style="white-space:nowrap">1813<a name="mind-diagnose-cs-1813"> </a></td><td>SIDS</td></tr><tr><td style="white-space:nowrap">1814<a name="mind-diagnose-cs-1814"> </a></td><td>akute Lumbago</td></tr><tr><td style="white-space:nowrap">1815<a name="mind-diagnose-cs-1815"> </a></td><td>palliative Situation</td></tr><tr><td style="white-space:nowrap">1816<a name="mind-diagnose-cs-1816"> </a></td><td>medizinische Behandlungskomplikation</td></tr><tr><td style="white-space:nowrap">1817<a name="mind-diagnose-cs-1817"> </a></td><td>Epistaxis/HNO-Erkrankung</td></tr><tr><td style="white-space:nowrap">1818<a name="mind-diagnose-cs-1818"> </a></td><td>urologische Erkrankung</td></tr><tr><td style="white-space:nowrap">1819<a name="mind-diagnose-cs-1819"> </a></td><td>Augenerkrankung</td></tr><tr><td style="white-space:nowrap">1820<a name="mind-diagnose-cs-1820"> </a></td><td>sonstiger akuter Schmerzzustand</td></tr><tr><td style="white-space:nowrap">1821<a name="mind-diagnose-cs-1821"> </a></td><td>Schock unklarer Genese</td></tr><tr><td style="white-space:nowrap">1822<a name="mind-diagnose-cs-1822"> </a></td><td>Erysipel</td></tr><tr><td style="white-space:nowrap">1898<a name="mind-diagnose-cs-1898"> </a></td><td>sonstige Erkrankung</td></tr><tr><td style="white-space:nowrap">1899<a name="mind-diagnose-cs-1899"> </a></td><td>führendes soziales Problem</td></tr><tr><td style="white-space:nowrap">9999<a name="mind-diagnose-cs-9999"> </a></td><td>keine Erkrankung/Verletzung feststellbar</td></tr><tr><td style="white-space:nowrap">2001<a name="mind-diagnose-cs-2001"> </a></td><td>SHT leicht</td></tr><tr><td style="white-space:nowrap">2002<a name="mind-diagnose-cs-2002"> </a></td><td>SHT mittel</td></tr><tr><td style="white-space:nowrap">2003<a name="mind-diagnose-cs-2003"> </a></td><td>SHT schwer</td></tr><tr><td style="white-space:nowrap">2004<a name="mind-diagnose-cs-2004"> </a></td><td>SHT lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2101<a name="mind-diagnose-cs-2101"> </a></td><td>Trauma Gesicht/Kopf/Hals leicht</td></tr><tr><td style="white-space:nowrap">2102<a name="mind-diagnose-cs-2102"> </a></td><td>Trauma Gesicht/Kopf/Hals mittel</td></tr><tr><td style="white-space:nowrap">2103<a name="mind-diagnose-cs-2103"> </a></td><td>Trauma Gesicht/Kopf/Hals schwer</td></tr><tr><td style="white-space:nowrap">2104<a name="mind-diagnose-cs-2104"> </a></td><td>Trauma Gesicht/Kopf/Hals lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2201<a name="mind-diagnose-cs-2201"> </a></td><td>Trauma HWS leicht</td></tr><tr><td style="white-space:nowrap">2202<a name="mind-diagnose-cs-2202"> </a></td><td>Trauma HWS mittel</td></tr><tr><td style="white-space:nowrap">2203<a name="mind-diagnose-cs-2203"> </a></td><td>Trauma HWS schwer</td></tr><tr><td style="white-space:nowrap">2204<a name="mind-diagnose-cs-2204"> </a></td><td>Trauma HWS lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2301<a name="mind-diagnose-cs-2301"> </a></td><td>Trauma Thorax leicht</td></tr><tr><td style="white-space:nowrap">2302<a name="mind-diagnose-cs-2302"> </a></td><td>Trauma Thorax mittel</td></tr><tr><td style="white-space:nowrap">2303<a name="mind-diagnose-cs-2303"> </a></td><td>Trauma Thorax schwer</td></tr><tr><td style="white-space:nowrap">2304<a name="mind-diagnose-cs-2304"> </a></td><td>Trauma Thorax lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2401<a name="mind-diagnose-cs-2401"> </a></td><td>Trauma Abdomen leicht</td></tr><tr><td style="white-space:nowrap">2402<a name="mind-diagnose-cs-2402"> </a></td><td>Trauma Abdomen mittel</td></tr><tr><td style="white-space:nowrap">2403<a name="mind-diagnose-cs-2403"> </a></td><td>Trauma Abdomen schwer</td></tr><tr><td style="white-space:nowrap">2404<a name="mind-diagnose-cs-2404"> </a></td><td>Trauma Abdomen lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2501<a name="mind-diagnose-cs-2501"> </a></td><td>Trauma BWS/LWS leicht</td></tr><tr><td style="white-space:nowrap">2502<a name="mind-diagnose-cs-2502"> </a></td><td>Trauma BWS/LWS mittel</td></tr><tr><td style="white-space:nowrap">2503<a name="mind-diagnose-cs-2503"> </a></td><td>Trauma BWS/LWS schwer</td></tr><tr><td style="white-space:nowrap">2504<a name="mind-diagnose-cs-2504"> </a></td><td>Trauma BWS/LWS lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2601<a name="mind-diagnose-cs-2601"> </a></td><td>Trauma Becken leicht</td></tr><tr><td style="white-space:nowrap">2602<a name="mind-diagnose-cs-2602"> </a></td><td>Trauma Becken mittel</td></tr><tr><td style="white-space:nowrap">2603<a name="mind-diagnose-cs-2603"> </a></td><td>Trauma Becken schwer</td></tr><tr><td style="white-space:nowrap">2604<a name="mind-diagnose-cs-2604"> </a></td><td>Trauma Becken lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2701<a name="mind-diagnose-cs-2701"> </a></td><td>Trauma obere Extremität leicht</td></tr><tr><td style="white-space:nowrap">2702<a name="mind-diagnose-cs-2702"> </a></td><td>Trauma obere Extremität mittel</td></tr><tr><td style="white-space:nowrap">2703<a name="mind-diagnose-cs-2703"> </a></td><td>Trauma obere Extremität schwer</td></tr><tr><td style="white-space:nowrap">2704<a name="mind-diagnose-cs-2704"> </a></td><td>Trauma obere Extremität lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2801<a name="mind-diagnose-cs-2801"> </a></td><td>Trauma untere Extremität leicht</td></tr><tr><td style="white-space:nowrap">2802<a name="mind-diagnose-cs-2802"> </a></td><td>Trauma untere Extremität mittel</td></tr><tr><td style="white-space:nowrap">2803<a name="mind-diagnose-cs-2803"> </a></td><td>Trauma untere Extremität schwer</td></tr><tr><td style="white-space:nowrap">2804<a name="mind-diagnose-cs-2804"> </a></td><td>Trauma untere Extremität lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2901<a name="mind-diagnose-cs-2901"> </a></td><td>Trauma Weichteile leicht</td></tr><tr><td style="white-space:nowrap">2902<a name="mind-diagnose-cs-2902"> </a></td><td>Trauma Weichteile mittel</td></tr><tr><td style="white-space:nowrap">2903<a name="mind-diagnose-cs-2903"> </a></td><td>Trauma Weichteile schwer</td></tr><tr><td style="white-space:nowrap">2904<a name="mind-diagnose-cs-2904"> </a></td><td>Trauma Weichteile lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">2911<a name="mind-diagnose-cs-2911"> </a></td><td>Trauma Gefäßverletzungen leicht</td></tr><tr><td style="white-space:nowrap">2912<a name="mind-diagnose-cs-2912"> </a></td><td>Trauma Gefäßverletzungen mittel</td></tr><tr><td style="white-space:nowrap">2913<a name="mind-diagnose-cs-2913"> </a></td><td>Trauma Gefäßverletzungen schwer</td></tr><tr><td style="white-space:nowrap">2914<a name="mind-diagnose-cs-2914"> </a></td><td>Trauma Gefäßverletzungen lebensbedrohlich oder tödlich</td></tr><tr><td style="white-space:nowrap">3001<a name="mind-diagnose-cs-3001"> </a></td><td>Verbrennung/Verbrühung</td></tr><tr><td style="white-space:nowrap">3002<a name="mind-diagnose-cs-3002"> </a></td><td>Inhalationstrauma/Rauchgasinhalation</td></tr><tr><td style="white-space:nowrap">3003<a name="mind-diagnose-cs-3003"> </a></td><td>Elektrounfall</td></tr><tr><td style="white-space:nowrap">3004<a name="mind-diagnose-cs-3004"> </a></td><td>Verätzung</td></tr><tr><td style="white-space:nowrap">3005<a name="mind-diagnose-cs-3005"> </a></td><td>(Beinahe-)Ertrinken</td></tr><tr><td style="white-space:nowrap">3006<a name="mind-diagnose-cs-3006"> </a></td><td>Tauchunfall</td></tr><tr><td style="white-space:nowrap">3098<a name="mind-diagnose-cs-3098"> </a></td><td>Sonstige spezielle Traumata</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-diagnose-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.9"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindDiagnoseCS"/>
+  <title value="MIND Diagnose"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-01T18:52:47+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="MIND-7.1-Diagnosecodes für präklinische Erkrankungen und Verletzungen."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="146"/>
+  <concept>
+    <code value="1100"/>
+    <display value="Hirninfarkt, TIA, intrakranielle Blutung"/>
+  </concept>
+  <concept>
+    <code value="1101"/>
+    <display value="TIA"/>
+  </concept>
+  <concept>
+    <code value="1102"/>
+    <display value="Hirninfarkt"/>
+  </concept>
+  <concept>
+    <code value="1103"/>
+    <display value="ICB (klinische Diagnose)"/>
+  </concept>
+  <concept>
+    <code value="1104"/>
+    <display value="SAB (klinische Diagnose)"/>
+  </concept>
+  <concept>
+    <code value="1105"/>
+    <display value="Krampfanfall"/>
+  </concept>
+  <concept>
+    <code value="1106"/>
+    <display value="Fieberkrampf"/>
+  </concept>
+  <concept>
+    <code value="1107"/>
+    <display value="Status epilepticus"/>
+  </concept>
+  <concept>
+    <code value="1108"/>
+    <display value="Meningitis/Enzephalitis"/>
+  </concept>
+  <concept>
+    <code value="1198"/>
+    <display value="sonstige Erkrankung ZNS"/>
+  </concept>
+  <concept>
+    <code value="1201"/>
+    <display value="ACS"/>
+  </concept>
+  <concept>
+    <code value="1202"/>
+    <display value="STEMI Vorderwand"/>
+  </concept>
+  <concept>
+    <code value="1203"/>
+    <display value="STEMI Hinterwand"/>
+  </concept>
+  <concept>
+    <code value="1204"/>
+    <display value="Thoraxschmerz unklarer Genese"/>
+  </concept>
+  <concept>
+    <code value="1205"/>
+    <display value="kardiogener Schock"/>
+  </concept>
+  <concept>
+    <code value="1206"/>
+    <display value="tachykarde Rhythmusstörung"/>
+  </concept>
+  <concept>
+    <code value="1207"/>
+    <display value="bradykarde Rhythmusstörung"/>
+  </concept>
+  <concept>
+    <code value="1208"/>
+    <display value="Schrittmacher-Fehlfunktion"/>
+  </concept>
+  <concept>
+    <code value="1209"/>
+    <display value="ICD-Fehlfunktion"/>
+  </concept>
+  <concept>
+    <code value="1210"/>
+    <display value="Lungenembolie"/>
+  </concept>
+  <concept>
+    <code value="1211"/>
+    <display value="Herzinsuffizienz"/>
+  </concept>
+  <concept>
+    <code value="1212"/>
+    <display value="Lungenödem"/>
+  </concept>
+  <concept>
+    <code value="1213"/>
+    <display value="hypertensive Entgleisung"/>
+  </concept>
+  <concept>
+    <code value="1214"/>
+    <display value="hypertensiver Notfall"/>
+  </concept>
+  <concept>
+    <code value="1215"/>
+    <display value="Aortenaneurysma/-dissektion"/>
+  </concept>
+  <concept>
+    <code value="1216"/>
+    <display value="Hypotonie"/>
+  </concept>
+  <concept>
+    <code value="1217"/>
+    <display value="orthostatische Fehlregulation"/>
+  </concept>
+  <concept>
+    <code value="1218"/>
+    <display value="Synkope"/>
+  </concept>
+  <concept>
+    <code value="1219"/>
+    <display value="Thrombose/arterieller Verschluss"/>
+  </concept>
+  <concept>
+    <code value="1220"/>
+    <display value="Herz-Kreislauf-Stillstand"/>
+  </concept>
+  <concept>
+    <code value="1221"/>
+    <display value="hämorrhagischer Schock"/>
+  </concept>
+  <concept>
+    <code value="1298"/>
+    <display value="sonstige Erkrankung Herz-Kreislauf"/>
+  </concept>
+  <concept>
+    <code value="1301"/>
+    <display value="Asthma (Anfall)"/>
+  </concept>
+  <concept>
+    <code value="1302"/>
+    <display value="Status asthmaticus"/>
+  </concept>
+  <concept>
+    <code value="1303"/>
+    <display value="exazerbierte COPD"/>
+  </concept>
+  <concept>
+    <code value="1304"/>
+    <display value="Aspiration"/>
+  </concept>
+  <concept>
+    <code value="1305"/>
+    <display value="Pneumonie/Bronchitis"/>
+  </concept>
+  <concept>
+    <code value="1306"/>
+    <display value="Epiglottitis"/>
+  </concept>
+  <concept>
+    <code value="1307"/>
+    <display value="Pseudokrupp"/>
+  </concept>
+  <concept>
+    <code value="1308"/>
+    <display value="anderer respiratorischer Infekt"/>
+  </concept>
+  <concept>
+    <code value="1309"/>
+    <display value="Hyperventilationssyndrom"/>
+  </concept>
+  <concept>
+    <code value="1310"/>
+    <display value="Spontanpneumothorax"/>
+  </concept>
+  <concept>
+    <code value="1311"/>
+    <display value="Hämoptysis"/>
+  </concept>
+  <concept>
+    <code value="1312"/>
+    <display value="Dyspnoe unklarer Ursache"/>
+  </concept>
+  <concept>
+    <code value="1398"/>
+    <display value="sonstige Erkrankung Atmung"/>
+  </concept>
+  <concept>
+    <code value="1401"/>
+    <display value="akutes Abdomen"/>
+  </concept>
+  <concept>
+    <code value="1402"/>
+    <display value="obere GI-Blutung"/>
+  </concept>
+  <concept>
+    <code value="1403"/>
+    <display value="untere GI-Blutung"/>
+  </concept>
+  <concept>
+    <code value="1404"/>
+    <display value="Kolik (Galle, Niere, ...)"/>
+  </concept>
+  <concept>
+    <code value="1405"/>
+    <display value="(infektiöse) Gastroenteritis"/>
+  </concept>
+  <concept>
+    <code value="1406"/>
+    <display value="Mesenterialinfarkt"/>
+  </concept>
+  <concept>
+    <code value="1498"/>
+    <display value="sonstige Erkrankung Abdomen"/>
+  </concept>
+  <concept>
+    <code value="1501"/>
+    <display value="Depression, Angst"/>
+  </concept>
+  <concept>
+    <code value="1502"/>
+    <display value="Manie, Psychose"/>
+  </concept>
+  <concept>
+    <code value="1503"/>
+    <display value="Entzugssymptomatik, Delir"/>
+  </concept>
+  <concept>
+    <code value="1504"/>
+    <display value="Suizidalität"/>
+  </concept>
+  <concept>
+    <code value="1505"/>
+    <display value="psychosoziale Krise"/>
+  </concept>
+  <concept>
+    <code value="1598"/>
+    <display value="sonstige Erkrankung Psychiatrie"/>
+  </concept>
+  <concept>
+    <code value="1601"/>
+    <display value="Hypoglykämie"/>
+  </concept>
+  <concept>
+    <code value="1602"/>
+    <display value="Hyperglykämie"/>
+  </concept>
+  <concept>
+    <code value="1603"/>
+    <display value="Urämie/akutes Nierenversagen"/>
+  </concept>
+  <concept>
+    <code value="1604"/>
+    <display value="Exsikkose"/>
+  </concept>
+  <concept>
+    <code value="1605"/>
+    <display value="Elektrolytstörungen"/>
+  </concept>
+  <concept>
+    <code value="1698"/>
+    <display value="sonstige Erkrankung Stoffwechsel"/>
+  </concept>
+  <concept>
+    <code value="1701"/>
+    <display value="Schwangerschaft über 35. SSW (zur Entbindung in die Klinik)"/>
+  </concept>
+  <concept>
+    <code value="1702"/>
+    <display value="Schwangerschaftskomplikation (z. B. Eklampsie)"/>
+  </concept>
+  <concept>
+    <code value="1703"/>
+    <display value="präklinische Geburt"/>
+  </concept>
+  <concept>
+    <code value="1704"/>
+    <display value="extrauterine Gravidität"/>
+  </concept>
+  <concept>
+    <code value="1705"/>
+    <display value="vaginale Blutung"/>
+  </concept>
+  <concept>
+    <code value="1798"/>
+    <display value="sonstige Erkrankung Gynäkologie"/>
+  </concept>
+  <concept>
+    <code value="1801"/>
+    <display value="Anaphylaxie Grad 1/2"/>
+  </concept>
+  <concept>
+    <code value="1802"/>
+    <display value="Anaphylaxie Grad 3/4"/>
+  </concept>
+  <concept>
+    <code value="1803"/>
+    <display value="Intoxikation Alkohol"/>
+  </concept>
+  <concept>
+    <code value="1804"/>
+    <display value="Intoxikation Drogen"/>
+  </concept>
+  <concept>
+    <code value="1805"/>
+    <display value="Intoxikation Medikamente"/>
+  </concept>
+  <concept>
+    <code value="1806"/>
+    <display value="sonstige Intoxikation"/>
+  </concept>
+  <concept>
+    <code value="1807"/>
+    <display value="akzidentelle Intoxikation"/>
+  </concept>
+  <concept>
+    <code value="1808"/>
+    <display value="Sepsis/septischer Schock"/>
+  </concept>
+  <concept>
+    <code value="1809"/>
+    <display value="hochkontagiöse Erreger"/>
+  </concept>
+  <concept>
+    <code value="1810"/>
+    <display value="sonstige Infektionserkrankungen"/>
+  </concept>
+  <concept>
+    <code value="1811"/>
+    <display value="Hitzeerschöpfung/Hitzschlag"/>
+  </concept>
+  <concept>
+    <code value="1812"/>
+    <display value="Unterkühlung/Erfrierung"/>
+  </concept>
+  <concept>
+    <code value="1813"/>
+    <display value="SIDS"/>
+  </concept>
+  <concept>
+    <code value="1814"/>
+    <display value="akute Lumbago"/>
+  </concept>
+  <concept>
+    <code value="1815"/>
+    <display value="palliative Situation"/>
+  </concept>
+  <concept>
+    <code value="1816"/>
+    <display value="medizinische Behandlungskomplikation"/>
+  </concept>
+  <concept>
+    <code value="1817"/>
+    <display value="Epistaxis/HNO-Erkrankung"/>
+  </concept>
+  <concept>
+    <code value="1818"/>
+    <display value="urologische Erkrankung"/>
+  </concept>
+  <concept>
+    <code value="1819"/>
+    <display value="Augenerkrankung"/>
+  </concept>
+  <concept>
+    <code value="1820"/>
+    <display value="sonstiger akuter Schmerzzustand"/>
+  </concept>
+  <concept>
+    <code value="1821"/>
+    <display value="Schock unklarer Genese"/>
+  </concept>
+  <concept>
+    <code value="1822"/>
+    <display value="Erysipel"/>
+  </concept>
+  <concept>
+    <code value="1898"/>
+    <display value="sonstige Erkrankung"/>
+  </concept>
+  <concept>
+    <code value="1899"/>
+    <display value="führendes soziales Problem"/>
+  </concept>
+  <concept>
+    <code value="9999"/>
+    <display value="keine Erkrankung/Verletzung feststellbar"/>
+  </concept>
+  <concept>
+    <code value="2001"/>
+    <display value="SHT leicht"/>
+  </concept>
+  <concept>
+    <code value="2002"/>
+    <display value="SHT mittel"/>
+  </concept>
+  <concept>
+    <code value="2003"/>
+    <display value="SHT schwer"/>
+  </concept>
+  <concept>
+    <code value="2004"/>
+    <display value="SHT lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2101"/>
+    <display value="Trauma Gesicht/Kopf/Hals leicht"/>
+  </concept>
+  <concept>
+    <code value="2102"/>
+    <display value="Trauma Gesicht/Kopf/Hals mittel"/>
+  </concept>
+  <concept>
+    <code value="2103"/>
+    <display value="Trauma Gesicht/Kopf/Hals schwer"/>
+  </concept>
+  <concept>
+    <code value="2104"/>
+    <display value="Trauma Gesicht/Kopf/Hals lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2201"/>
+    <display value="Trauma HWS leicht"/>
+  </concept>
+  <concept>
+    <code value="2202"/>
+    <display value="Trauma HWS mittel"/>
+  </concept>
+  <concept>
+    <code value="2203"/>
+    <display value="Trauma HWS schwer"/>
+  </concept>
+  <concept>
+    <code value="2204"/>
+    <display value="Trauma HWS lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2301"/>
+    <display value="Trauma Thorax leicht"/>
+  </concept>
+  <concept>
+    <code value="2302"/>
+    <display value="Trauma Thorax mittel"/>
+  </concept>
+  <concept>
+    <code value="2303"/>
+    <display value="Trauma Thorax schwer"/>
+  </concept>
+  <concept>
+    <code value="2304"/>
+    <display value="Trauma Thorax lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2401"/>
+    <display value="Trauma Abdomen leicht"/>
+  </concept>
+  <concept>
+    <code value="2402"/>
+    <display value="Trauma Abdomen mittel"/>
+  </concept>
+  <concept>
+    <code value="2403"/>
+    <display value="Trauma Abdomen schwer"/>
+  </concept>
+  <concept>
+    <code value="2404"/>
+    <display value="Trauma Abdomen lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2501"/>
+    <display value="Trauma BWS/LWS leicht"/>
+  </concept>
+  <concept>
+    <code value="2502"/>
+    <display value="Trauma BWS/LWS mittel"/>
+  </concept>
+  <concept>
+    <code value="2503"/>
+    <display value="Trauma BWS/LWS schwer"/>
+  </concept>
+  <concept>
+    <code value="2504"/>
+    <display value="Trauma BWS/LWS lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2601"/>
+    <display value="Trauma Becken leicht"/>
+  </concept>
+  <concept>
+    <code value="2602"/>
+    <display value="Trauma Becken mittel"/>
+  </concept>
+  <concept>
+    <code value="2603"/>
+    <display value="Trauma Becken schwer"/>
+  </concept>
+  <concept>
+    <code value="2604"/>
+    <display value="Trauma Becken lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2701"/>
+    <display value="Trauma obere Extremität leicht"/>
+  </concept>
+  <concept>
+    <code value="2702"/>
+    <display value="Trauma obere Extremität mittel"/>
+  </concept>
+  <concept>
+    <code value="2703"/>
+    <display value="Trauma obere Extremität schwer"/>
+  </concept>
+  <concept>
+    <code value="2704"/>
+    <display value="Trauma obere Extremität lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2801"/>
+    <display value="Trauma untere Extremität leicht"/>
+  </concept>
+  <concept>
+    <code value="2802"/>
+    <display value="Trauma untere Extremität mittel"/>
+  </concept>
+  <concept>
+    <code value="2803"/>
+    <display value="Trauma untere Extremität schwer"/>
+  </concept>
+  <concept>
+    <code value="2804"/>
+    <display value="Trauma untere Extremität lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2901"/>
+    <display value="Trauma Weichteile leicht"/>
+  </concept>
+  <concept>
+    <code value="2902"/>
+    <display value="Trauma Weichteile mittel"/>
+  </concept>
+  <concept>
+    <code value="2903"/>
+    <display value="Trauma Weichteile schwer"/>
+  </concept>
+  <concept>
+    <code value="2904"/>
+    <display value="Trauma Weichteile lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="2911"/>
+    <display value="Trauma Gefäßverletzungen leicht"/>
+  </concept>
+  <concept>
+    <code value="2912"/>
+    <display value="Trauma Gefäßverletzungen mittel"/>
+  </concept>
+  <concept>
+    <code value="2913"/>
+    <display value="Trauma Gefäßverletzungen schwer"/>
+  </concept>
+  <concept>
+    <code value="2914"/>
+    <display value="Trauma Gefäßverletzungen lebensbedrohlich oder tödlich"/>
+  </concept>
+  <concept>
+    <code value="3001"/>
+    <display value="Verbrennung/Verbrühung"/>
+  </concept>
+  <concept>
+    <code value="3002"/>
+    <display value="Inhalationstrauma/Rauchgasinhalation"/>
+  </concept>
+  <concept>
+    <code value="3003"/>
+    <display value="Elektrounfall"/>
+  </concept>
+  <concept>
+    <code value="3004"/>
+    <display value="Verätzung"/>
+  </concept>
+  <concept>
+    <code value="3005"/>
+    <display value="(Beinahe-)Ertrinken"/>
+  </concept>
+  <concept>
+    <code value="3006"/>
+    <display value="Tauchunfall"/>
+  </concept>
+  <concept>
+    <code value="3098"/>
+    <display value="Sonstige spezielle Traumata"/>
+  </concept>
+</CodeSystem>
