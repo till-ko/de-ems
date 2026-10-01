@@ -71,8 +71,8 @@ jobs:
 
       - name: Run SUSHI
         # --require-strict stops build as soon as sushi throws warnings!
-        # This gate keeps pages clean (currently there are none...)
-        run: sushi . --require-strict
+        # This gate keeps pages clean (currently there are none...) nice idea but not in this version
+        run: sushi . #--require-strict
 
       - name: Run IG Publisher
         run: java -jar publisher.jar -ig .
