@@ -2,7 +2,6 @@ CodeSystem: MindEinsatzartCS
 Id: mind-einsatzart-cs
 Title: "MIND Einsatzart"
 Description: "Einsatzart gemäß MIND 7.1 Spezifikation. Beschreibt die Art des Einsatzes (Notfallrettung, Verlegung, Intensivtransport, Krankentransport, Dienstfahrt, Pause)."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-einsatzart-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

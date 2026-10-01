@@ -10,9 +10,9 @@ Description: "Constraint-Ableitung des DIVI-Einsatz-Encounters (EncounterDeEmsDi
 
 // --- Zusätzliche MIND-only Identifier-Slices ---
 * identifier contains projektid 1..1 and primaerschluessel 1..1
-* identifier[projektid].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-projektid"
+* identifier[projektid].system = "https://till-ko.github.io/de-ems/NamingSystem/mind-projektid"
 * identifier[projektid].value 1..1
-* identifier[primaerschluessel].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-primaerschluessel"
+* identifier[primaerschluessel].system = "https://till-ko.github.io/de-ems/NamingSystem/mind-primaerschluessel"
 * identifier[primaerschluessel].value 1..1
 * identifier[primaerschluessel].value obeys mind-primaerschluessel-laenge
 

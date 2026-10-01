@@ -8,7 +8,7 @@ Description: "Vollständiges deutsches Patientprofil für das DIVI-Notfalleinsat
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains patnr 0..1
-* identifier[patnr].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-patnr"
+* identifier[patnr].system = "https://till-ko.github.io/de-ems/NamingSystem/mind-patnr"
 * identifier[patnr].value 1..1
 * identifier[patnr].value obeys mind-identifier-laenge-50
 * name 0..1

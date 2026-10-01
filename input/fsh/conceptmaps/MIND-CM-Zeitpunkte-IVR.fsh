@@ -4,12 +4,12 @@ Usage: #definition
 Title: "MIND 7.1 Zeitpunkte → CH-EMS IVR Mission Time Roles"
 Description: "Ordnet die zeitbezogenen MIND-7.1-Codes aus MindObservationstypCS den Zeit-Rollen (Mission Time Roles) des Schweizer CH-EMS-CodeSystems IVR zu, die im CH-EMS-IG im Profil 'Mission Time Status' gebunden sind. Symptombeginn-Felder haben keine IVR-Entsprechung; die IVR-Rollen 'departure from target' (1000041) sowie die Notarzt-Zeiten (1000171/1000172) haben keine MIND-Entsprechung. Umsetzung als FSH-Instance, da SUSHI keine ConceptMap-Regel kennt."
 * id = "mind-observationstyp-2-ivr"
-* url = "https://till-ko.github.io/ems-mind-de-r4/ConceptMap/mind-observationstyp-2-ivr"
+* url = "https://till-ko.github.io/de-ems/ConceptMap/mind-observationstyp-2-ivr"
 * name = "MindObservationstyp2Ivr"
 * status = #active
 * experimental = false
 * description = "Ordnet die zeitbezogenen MIND-7.1-Codes aus MindObservationstypCS den Zeit-Rollen (Mission Time Roles) des Schweizer CH-EMS-CodeSystems IVR zu (CH-EMS-IG, Profil 'Mission Time Status')."
-* group[0].source = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* group[0].source = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * group[0].target = "http://fhir.ch/ig/ch-ems/CodeSystem/IVR"
 
 * group[0].element[0].code = #zeit-notfallmeldung

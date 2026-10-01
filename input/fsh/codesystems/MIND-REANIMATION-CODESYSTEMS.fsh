@@ -2,7 +2,6 @@ CodeSystem: MindPreEmergencyStatusCS
 Id: mind-pre-emergency-status-cs
 Title: "MIND Zustand vor Eintritt des Notfalls"
 Description: "Zustand vor Eintritt des Notfalls gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-pre-emergency-status-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -19,7 +18,6 @@ CodeSystem: MindReanimationssituationCS
 Id: mind-reanimationssituation-cs
 Title: "MIND Reanimationssituation"
 Description: "Reanimationssituation gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-reanimationssituation-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -39,7 +37,6 @@ CodeSystem: MindReanimationstechnikCS
 Id: mind-reanimationstechnik-cs
 Title: "MIND Reanimationstechnik"
 Description: "Eingesetzte Reanimationstechnik gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-reanimationstechnik-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -55,7 +52,6 @@ CodeSystem: MindKreislaufstillstandursacheCS
 Id: mind-kreislaufstillstandursache-cs
 Title: "MIND Vermutete Ursache des Kreislaufstillstands"
 Description: "Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-kreislaufstillstandursache-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -82,7 +78,6 @@ CodeSystem: MindKollapsBeobachtetDurchCS
 Id: mind-kollaps-beobachtet-durch-cs
 Title: "MIND Kollaps beobachtet durch"
 Description: "Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-kollaps-beobachtet-durch-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -102,7 +97,6 @@ CodeSystem: MindHerzdruckmassageDurchCS
 Id: mind-herzdruckmassage-durch-cs
 Title: "MIND Beginn der Herzdruckmassage durch"
 Description: "Person oder Einheit, die mit der Herzdruckmassage begonnen hat, gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-herzdruckmassage-durch-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -122,7 +116,6 @@ CodeSystem: MindErsteDefibrillationDurchCS
 Id: mind-erste-defibrillation-durch-cs
 Title: "MIND Erste Defibrillation durch"
 Description: "Person oder Einheit, die die erste Defibrillation durchgeführt hat, gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-erste-defibrillation-durch-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -142,7 +135,6 @@ CodeSystem: MindRoscCS
 Id: mind-rosc-cs
 Title: "MIND ROSC"
 Description: "Erreichen eines Spontankreislaufs gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-rosc-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -155,7 +147,6 @@ CodeSystem: MindKrankenhausaufnahmeZustandCS
 Id: mind-krankenhausaufnahme-zustand-cs
 Title: "MIND Patientenzustand bei Krankenhausaufnahme"
 Description: "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-krankenhausaufnahme-zustand-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

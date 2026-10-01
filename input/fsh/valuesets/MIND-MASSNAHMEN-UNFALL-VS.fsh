@@ -2,7 +2,6 @@ ValueSet: MindSpezielleDevicesVS
 Id: mind-spezielle-devices-vs
 Title: "MIND Spezielle Devices ValueSet"
 Description: "Spezielle Devices gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-spezielle-devices-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -12,7 +11,6 @@ ValueSet: MindZeitlicheDringlichkeitVS
 Id: mind-zeitliche-dringlichkeit-vs
 Title: "MIND Zeitliche Dringlichkeit ValueSet"
 Description: "Zeitliche Dringlichkeit gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-zeitliche-dringlichkeit-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -22,7 +20,6 @@ ValueSet: MindIndikationIntensivtransportVS
 Id: mind-indikation-intensivtransport-vs
 Title: "MIND Indikation Intensivtransport ValueSet"
 Description: "Indikation für einen Intensivtransport gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-indikation-intensivtransport-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -32,7 +29,6 @@ ValueSet: MindVerletzungsmusterVS
 Id: mind-verletzungsmuster-vs
 Title: "MIND Verletzungsmuster ValueSet"
 Description: "Verletzungsmuster gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-verletzungsmuster-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -42,7 +38,6 @@ ValueSet: MindUnfallursacheVS
 Id: mind-unfallursache-vs
 Title: "MIND Unfallursache ValueSet"
 Description: "Unfallursache gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-unfallursache-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -52,7 +47,6 @@ ValueSet: MindUnfallmechanismusVS
 Id: mind-unfallmechanismus-vs
 Title: "MIND Unfallmechanismus ValueSet"
 Description: "Unfallmechanismus gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-unfallmechanismus-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -62,7 +56,6 @@ ValueSet: MindUnfallhergangVS
 Id: mind-unfallhergang-vs
 Title: "MIND Unfallhergang ValueSet"
 Description: "Unfallhergang gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-unfallhergang-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -72,7 +65,6 @@ ValueSet: MindNacaScoreVS
 Id: mind-naca-score-vs
 Title: "MIND NACA-Score ValueSet"
 Description: "NACA-Score gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-naca-score-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -82,7 +74,6 @@ ValueSet: MindMnacaScoreVS
 Id: mind-mnaca-score-vs
 Title: "MIND M-NACA-Score ValueSet"
 Description: "M-NACA-Score gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-mnaca-score-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -92,7 +83,6 @@ ValueSet: MindAirwayMassnahmeVS
 Id: mind-airway-massnahme-vs
 Title: "MIND Airway-Maßnahme ValueSet"
 Description: "Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-airway-massnahme-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -102,7 +92,6 @@ ValueSet: MindAtemunterstuetzungVS
 Id: mind-atemunterstuetzung-vs
 Title: "MIND Atemunterstützung ValueSet"
 Description: "Atemunterstützung und Beatmung gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-atemunterstuetzung-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -112,7 +101,6 @@ ValueSet: MindCirculationZugangVS
 Id: mind-circulation-zugang-vs
 Title: "MIND Medikamentenzugang ValueSet"
 Description: "Angelegter Medikamentenzugang gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-circulation-zugang-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -122,7 +110,6 @@ ValueSet: MindSpezielleMassnahmeVS
 Id: mind-spezielle-massnahme-vs
 Title: "MIND Spezielle Maßnahme ValueSet"
 Description: "Spezielle Maßnahmen gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-spezielle-massnahme-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -132,7 +119,6 @@ ValueSet: MindEkg12KanalVS
 Id: mind-ekg-12-kanal-vs
 Title: "MIND 12-Kanal-EKG ValueSet"
 Description: "Durchführung eines 12-Kanal-EKG gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-ekg-12-kanal-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -142,7 +128,6 @@ ValueSet: MindMedizintechnikVS
 Id: mind-medizintechnik-vs
 Title: "MIND Medizintechnik ValueSet"
 Description: "Eingesetzte Medizintechnik gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-medizintechnik-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -152,7 +137,6 @@ ValueSet: MindLagerungsRettungstechnikVS
 Id: mind-lagerungs-rettungstechnik-vs
 Title: "MIND Lagerungs- und Rettungstechnik ValueSet"
 Description: "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-lagerungs-rettungstechnik-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -162,7 +146,6 @@ ValueSet: MindHeilkundlicheMassnahmeVS
 Id: mind-heilkundliche-massnahme-vs
 Title: "MIND Heilkundliche Maßnahme ValueSet"
 Description: "Eigenständig oder eigenverantwortlich durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-heilkundliche-massnahme-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

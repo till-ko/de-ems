@@ -2,7 +2,6 @@ CodeSystem: MindSpezielleDevicesCS
 Id: mind-spezielle-devices-cs
 Title: "MIND Spezielle Devices"
 Description: "Spezielle Devices gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-spezielle-devices-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -19,7 +18,6 @@ CodeSystem: MindZeitlicheDringlichkeitCS
 Id: mind-zeitliche-dringlichkeit-cs
 Title: "MIND Zeitliche Dringlichkeit"
 Description: "Zeitliche Dringlichkeit gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-zeitliche-dringlichkeit-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -33,7 +31,6 @@ CodeSystem: MindIndikationIntensivtransportCS
 Id: mind-indikation-intensivtransport-cs
 Title: "MIND Indikation Intensivtransport"
 Description: "Indikation für einen Intensivtransport gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-indikation-intensivtransport-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -49,7 +46,6 @@ CodeSystem: MindVerletzungsmusterCS
 Id: mind-verletzungsmuster-cs
 Title: "MIND Verletzungsmuster"
 Description: "Verletzungsmuster gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-verletzungsmuster-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -63,7 +59,6 @@ CodeSystem: MindUnfallursacheCS
 Id: mind-unfallursache-cs
 Title: "MIND Unfallursache"
 Description: "Unfallursache gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-unfallursache-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -78,7 +73,6 @@ CodeSystem: MindUnfallmechanismusCS
 Id: mind-unfallmechanismus-cs
 Title: "MIND Unfallmechanismus"
 Description: "Unfallmechanismus gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-unfallmechanismus-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -93,7 +87,6 @@ CodeSystem: MindUnfallhergangCS
 Id: mind-unfallhergang-cs
 Title: "MIND Unfallhergang"
 Description: "Unfallhergang gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-unfallhergang-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -126,7 +119,6 @@ CodeSystem: MindNacaScoreCS
 Id: mind-naca-score-cs
 Title: "MIND NACA-Score"
 Description: "NACA-Score gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-naca-score-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -145,7 +137,6 @@ CodeSystem: MindMnacaScoreCS
 Id: mind-mnaca-score-cs
 Title: "MIND M-NACA-Score"
 Description: "M-NACA-Score gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-mnaca-score-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -163,7 +154,6 @@ CodeSystem: MindAirwayMassnahmeCS
 Id: mind-airway-massnahme-cs
 Title: "MIND Airway-Maßnahme"
 Description: "Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-airway-massnahme-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -184,7 +174,6 @@ CodeSystem: MindAtemunterstuetzungCS
 Id: mind-atemunterstuetzung-cs
 Title: "MIND Atemunterstützung"
 Description: "Atemunterstützung und Beatmung gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-atemunterstuetzung-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -202,7 +191,6 @@ CodeSystem: MindCirculationZugangCS
 Id: mind-circulation-zugang-cs
 Title: "MIND Medikamentenzugang"
 Description: "Angelegter Medikamentenzugang gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-circulation-zugang-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -220,7 +208,6 @@ CodeSystem: MindSpezielleMassnahmeCS
 Id: mind-spezielle-massnahme-cs
 Title: "MIND Spezielle Maßnahme"
 Description: "Spezielle Maßnahmen gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-spezielle-massnahme-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -246,7 +233,6 @@ CodeSystem: MindEkg12KanalCS
 Id: mind-ekg-12-kanal-cs
 Title: "MIND 12-Kanal-EKG"
 Description: "Durchführung eines 12-Kanal-EKG gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-ekg-12-kanal-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -262,7 +248,6 @@ CodeSystem: MindMedizintechnikCS
 Id: mind-medizintechnik-cs
 Title: "MIND Medizintechnik"
 Description: "Eingesetzte Medizintechnik gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-medizintechnik-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -283,7 +268,6 @@ CodeSystem: MindLagerungsRettungstechnikCS
 Id: mind-lagerungs-rettungstechnik-cs
 Title: "MIND Lagerungs- und Rettungstechnik"
 Description: "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-lagerungs-rettungstechnik-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -309,7 +293,6 @@ CodeSystem: MindHeilkundlicheMassnahmeCS
 Id: mind-heilkundliche-massnahme-cs
 Title: "MIND Eigenständige heilkundliche Maßnahme"
 Description: "Eigenständig oder eigenverantwortlich durch Notfallsanitäterinnen und Notfallsanitäter durchgeführte heilkundliche Maßnahmen gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-heilkundliche-massnahme-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

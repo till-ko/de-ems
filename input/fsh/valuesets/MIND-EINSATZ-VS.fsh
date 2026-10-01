@@ -2,7 +2,6 @@ ValueSet: MindRdTransportVS
 Id: mind-rd-transport-vs
 Title: "MIND Rettungsdienstlicher Transport ValueSet"
 Description: "Rettungsdienstlicher Transport gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-rd-transport-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -12,7 +11,6 @@ ValueSet: MindAerztlicheBegleitungVS
 Id: mind-aerztliche-begleitung-vs
 Title: "MIND Ärztliche Transportbegleitung ValueSet"
 Description: "Ärztliche Transportbegleitung gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-aerztliche-begleitung-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -22,7 +20,6 @@ ValueSet: MindKeinTransportMitPatientVS
 Id: mind-kein-transport-mit-patient-vs
 Title: "MIND Nichttransport bei Patientenkontakt ValueSet"
 Description: "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-kein-transport-mit-patient-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -32,7 +29,6 @@ ValueSet: MindKeinTransportOhnePatientVS
 Id: mind-kein-transport-ohne-patient-vs
 Title: "MIND Nichttransport ohne Patientenkontakt ValueSet"
 Description: "Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-kein-transport-ohne-patient-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -42,7 +38,6 @@ ValueSet: MindDokumentierendesRettungsmittelVS
 Id: mind-dokumentierendes-rettungsmittel-vs
 Title: "MIND Dokumentierendes Rettungsmittel ValueSet"
 Description: "Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-dokumentierendes-rettungsmittel-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -52,7 +47,6 @@ ValueSet: MindBeteiligtesRettungsmittelVS
 Id: mind-beteiligtes-rettungsmittel-vs
 Title: "MIND Beteiligtes Rettungsmittel ValueSet"
 Description: "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-beteiligtes-rettungsmittel-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -62,7 +56,6 @@ ValueSet: MindAerztlicheQualifikationVS
 Id: mind-aerztliche-qualifikation-vs
 Title: "MIND Ärztliche Qualifikation ValueSet"
 Description: "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-aerztliche-qualifikation-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -72,7 +65,6 @@ ValueSet: MindPersonalstatusVS
 Id: mind-personalstatus-vs
 Title: "MIND Personalstatus ValueSet"
 Description: "Status des am Einsatz beteiligten Personals gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-personalstatus-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

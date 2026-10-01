@@ -2,7 +2,6 @@ ValueSet: MindInfusionsgabeVS
 Id: mind-infusionsgabe-vs
 Title: "MIND Infusionsgabe ValueSet"
 Description: "Gültige MIND-7.1-Codes für die Gabe von Kristalloiden und speziellen Infusionen."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-infusionsgabe-vs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

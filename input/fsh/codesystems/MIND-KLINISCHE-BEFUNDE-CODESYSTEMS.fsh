@@ -2,7 +2,6 @@ CodeSystem: MindBewusstseinslageCS
 Id: mind-bewusstseinslage-cs
 Title: "MIND Bewusstseinslage"
 Description: "Bewusstseinslage gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-bewusstseinslage-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -21,7 +20,6 @@ CodeSystem: MindNeurologischeAuffaelligkeitCS
 Id: mind-neurologische-auffaelligkeit-cs
 Title: "MIND Neurologische Auffälligkeit"
 Description: "Akute neurologische Auffälligkeiten gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-neurologische-auffaelligkeit-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -51,7 +49,6 @@ CodeSystem: MindEkgbefundCS
 Id: mind-ekg-befund-cs
 Title: "MIND EKG-Befund"
 Description: "EKG-Befund gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-ekg-befund-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -77,7 +74,6 @@ CodeSystem: MindAtmungCS
 Id: mind-atmung-cs
 Title: "MIND Klinischer Atembefund"
 Description: "Klinische Befunde der Atmung gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-atmung-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -102,7 +98,6 @@ CodeSystem: MindHautbefundCS
 Id: mind-hautbefund-cs
 Title: "MIND Hautbefund"
 Description: "Hautbefunde gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-hautbefund-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -125,7 +120,6 @@ CodeSystem: MindPsychischerZustandCS
 Id: mind-psychischer-zustand-cs
 Title: "MIND Psychischer Zustand"
 Description: "Psychischer Zustand gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-psychischer-zustand-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -150,7 +144,6 @@ CodeSystem: MindPupillenweiteCS
 Id: mind-pupillenweite-cs
 Title: "MIND Pupillenweite"
 Description: "Pupillenweite gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-pupillenweite-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -169,7 +162,6 @@ CodeSystem: MindLichtreaktionCS
 Id: mind-lichtreaktion-cs
 Title: "MIND Lichtreaktion"
 Description: "Lichtreaktion der Pupillen gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-lichtreaktion-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

@@ -2,7 +2,6 @@ CodeSystem: MindEinsatzortTypCS
 Id: mind-einsatzort-typ-cs
 Title: "MIND Einsatzorttyp CodeSystem"
 Description: "Einsatzorttyp gemäß MIND 7.1 Spezifikation."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-einsatzort-typ-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

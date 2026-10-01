@@ -4,30 +4,30 @@ Usage: #example
 Title: "MIND 7.1 RD-Dokument"
 Description: "Minimales deutsches MIND-7.1-Dokument mit Patient, Einsatz, Einsatzort und Composition."
 * id = "mind-rd-dokument-example"
-* identifier.system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-dokument"
+* identifier.system = "https://till-ko.github.io/de-ems/NamingSystem/mind-dokument"
 * identifier.value = "MIND-RD-EXAMPLE-001"
 * timestamp = "2026-09-16T10:00:00+02:00"
-* entry[0].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Composition/mind-composition-example"
+* entry[0].fullUrl = "https://till-ko.github.io/de-ems/Composition/mind-composition-example"
 * entry[0].resource = MindRdCompositionExample
-* entry[1].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Patient/mind-patient-example"
+* entry[1].fullUrl = "https://till-ko.github.io/de-ems/Patient/mind-patient-example"
 * entry[1].resource = MindRdPatientExample
-* entry[2].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Encounter/mind-encounter-example"
+* entry[2].fullUrl = "https://till-ko.github.io/de-ems/Encounter/mind-encounter-example"
 * entry[2].resource = MindRdEncounterExample
-* entry[3].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Location/mind-location-example"
+* entry[3].fullUrl = "https://till-ko.github.io/de-ems/Location/mind-location-example"
 * entry[3].resource = MindRdLocationExample
-* entry[4].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Practitioner/mind-practitioner-example"
+* entry[4].fullUrl = "https://till-ko.github.io/de-ems/Practitioner/mind-practitioner-example"
 * entry[4].resource = MindRdPractitionerExample
-* entry[5].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-alter-example"
+* entry[5].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-alter-example"
 * entry[5].resource = MindAlterExample
-* entry[6].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-altersvaliditaet-example"
+* entry[6].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-altersvaliditaet-example"
 * entry[6].resource = MindAltersvaliditaetExample
-* entry[7].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-rdtransport-example"
+* entry[7].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-rdtransport-example"
 * entry[7].resource = MindRdTransportExample
-* entry[8].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-notarzt-nachgefordert-example"
+* entry[8].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-notarzt-nachgefordert-example"
 * entry[8].resource = MindNotarztNachgefordertExample
-* entry[9].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-zeit-alarm-example"
+* entry[9].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-zeit-alarm-example"
 * entry[9].resource = MindZeitAlarmExample
-* entry[10].fullUrl = "https://till-ko.github.io/ems-mind-de-r4/Observation/mind-zeit-einsatzende-example"
+* entry[10].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-zeit-einsatzende-example"
 * entry[10].resource = MindZeitEinsatzendeExample
 
 Instance: MindRdPatientExample
@@ -91,15 +91,15 @@ Instance: MindAlterExample
 InstanceOf: ObservationDeEmsMindAlter
 Usage: #example
 * id = "mind-alter-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #patientenalter
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
-* component[jahre].code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* component[jahre].code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * component[jahre].code.coding.code = #alter-jahre
 * component[jahre].valueInteger = 51
-* component[monate].code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* component[monate].code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * component[monate].code.coding.code = #alter-monate
 * component[monate].valueInteger = 4
 
@@ -107,7 +107,7 @@ Instance: MindAltersvaliditaetExample
 InstanceOf: ObservationDeEmsMindAltersvaliditaet
 Usage: #example
 * id = "mind-altersvaliditaet-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #altersvaliditaet
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)
@@ -120,7 +120,7 @@ Usage: #example
 Title: "MIND 7.1 Altersvalidität nicht dokumentiert"
 Description: "Altersvalidität als not-asked (nicht dokumentiert) über dataAbsentReason nach CH-EMS-Konzept."
 * id = "mind-altersvaliditaet-undokumentiert-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #altersvaliditaet
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)
@@ -132,7 +132,7 @@ InstanceOf: ObservationDeEmsMindRdTransport
 Usage: #example
 Description: "RDTransport: Transport durch RTW."
 * id = "mind-rdtransport-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #rd-transport
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)
@@ -144,7 +144,7 @@ InstanceOf: ObservationDeEmsMindNotarztNachgefordert
 Usage: #example
 Description: "NotarztNachgefordert: kein Notarzt nachgefordert."
 * id = "mind-notarzt-nachgefordert-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #notarzt-nachgefordert
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)
@@ -156,7 +156,7 @@ InstanceOf: ObservationDeEmsMindZeitAlarm
 Usage: #example
 Description: "ZeitAlarm: Alarmierung durch die Leitstelle."
 * id = "mind-zeit-alarm-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #zeit-alarm
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)
@@ -168,7 +168,7 @@ InstanceOf: ObservationDeEmsMindZeitEinsatzende
 Usage: #example
 Description: "ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.period.end)."
 * id = "mind-zeit-einsatzende-example"
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * code.coding.code = #zeit-einsatzende
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)

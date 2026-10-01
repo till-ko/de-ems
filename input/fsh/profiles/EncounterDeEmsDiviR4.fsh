@@ -15,16 +15,16 @@ Description: "Vollständiges deutsches Encounter-Profil für das DIVI-Notfallein
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains standortkennung 0..1 and leitstelle 0..1 and einsatznr 0..1 and auftragnr 0..1
-* identifier[standortkennung].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-standortkennung"
+* identifier[standortkennung].system = "https://till-ko.github.io/de-ems/NamingSystem/mind-standortkennung"
 * identifier[standortkennung] obeys mind-wert-oder-undokumentiert
 * identifier[standortkennung].value 0..1
 * identifier[standortkennung].value obeys mind-standortkennung-format
-* identifier[leitstelle].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-leitstelle"
+* identifier[leitstelle].system = "https://till-ko.github.io/de-ems/NamingSystem/mind-leitstelle"
 * identifier[leitstelle].value 1..1
-* identifier[einsatznr].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-einsatznr"
+* identifier[einsatznr].system = "https://till-ko.github.io/de-ems/NamingSystem/mind-einsatznr"
 * identifier[einsatznr].value 1..1
 * identifier[einsatznr].value obeys mind-identifier-laenge-50
-* identifier[auftragnr].system = "https://till-ko.github.io/ems-mind-de-r4/NamingSystem/mind-auftragnr"
+* identifier[auftragnr].system = "https://till-ko.github.io/de-ems/NamingSystem/mind-auftragnr"
 * identifier[auftragnr].value 1..1
 * identifier[auftragnr].value obeys mind-identifier-laenge-50
 

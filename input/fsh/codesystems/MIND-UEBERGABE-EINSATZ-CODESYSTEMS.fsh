@@ -2,7 +2,6 @@ CodeSystem: MindSchmerzerlebenCS
 Id: mind-schmerzerleben-cs
 Title: "MIND Schmerzerleben"
 Description: "Schmerzerleben durch die Patientin oder den Patienten gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-schmerzerleben-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -15,7 +14,6 @@ CodeSystem: MindNeurologischeAuffaelligkeitVerlaufCS
 Id: mind-neurologische-auffaelligkeit-verlauf-cs
 Title: "MIND Neurologische Auffälligkeit im Verlauf"
 Description: "Akute neurologische Auffälligkeiten im Verlaufsbefund gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-neurologische-auffaelligkeit-verlauf-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -45,7 +43,6 @@ CodeSystem: MindOrtPatientenuebergabeCS
 Id: mind-ort-patientenuebergabe-cs
 Title: "MIND Ort der Patientenübergabe"
 Description: "Ort der Patientenübergabe gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-ort-patientenuebergabe-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -72,7 +69,6 @@ CodeSystem: MindEinsatzbesonderheitCS
 Id: mind-einsatzbesonderheit-cs
 Title: "MIND Einsatzbesonderheit"
 Description: "Einsatzbesonderheiten gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-einsatzbesonderheit-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

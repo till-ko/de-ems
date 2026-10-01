@@ -2,7 +2,6 @@ CodeSystem: MindRdTransportCS
 Id: mind-rd-transport-cs
 Title: "MIND Rettungsdienstlicher Transport"
 Description: "Rettungsdienstlicher Transport gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-rd-transport-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -23,7 +22,6 @@ CodeSystem: MindAerztlicheBegleitungCS
 Id: mind-aerztliche-begleitung-cs
 Title: "MIND Ärztliche Transportbegleitung"
 Description: "Ärztliche Transportbegleitung gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-aerztliche-begleitung-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -41,7 +39,6 @@ CodeSystem: MindKeinTransportMitPatientCS
 Id: mind-kein-transport-mit-patient-cs
 Title: "MIND Grund für Einsatz ohne Transport bei Patientenkontakt"
 Description: "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-kein-transport-mit-patient-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -66,7 +63,6 @@ CodeSystem: MindKeinTransportOhnePatientCS
 Id: mind-kein-transport-ohne-patient-cs
 Title: "MIND Grund für Einsatz ohne Patientenkontakt"
 Description: "Grund für einen Einsatz ohne Transport und ohne Patientenkontakt gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-kein-transport-ohne-patient-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -86,7 +82,6 @@ CodeSystem: MindDokumentierendesRettungsmittelCS
 Id: mind-dokumentierendes-rettungsmittel-cs
 Title: "MIND Dokumentierendes Rettungsmittel"
 Description: "Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumentierendes-rettungsmittel-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -118,7 +113,6 @@ CodeSystem: MindBeteiligtesRettungsmittelCS
 Id: mind-beteiligtes-rettungsmittel-cs
 Title: "MIND Beteiligtes Rettungsmittel"
 Description: "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-beteiligtes-rettungsmittel-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -151,7 +145,6 @@ CodeSystem: MindAerztlicheQualifikationCS
 Id: mind-aerztliche-qualifikation-cs
 Title: "MIND Ärztliche Qualifikation"
 Description: "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifikation gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-aerztliche-qualifikation-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
@@ -175,7 +168,6 @@ CodeSystem: MindPersonalstatusCS
 Id: mind-personalstatus-cs
 Title: "MIND Personalstatus"
 Description: "Status des am Einsatz beteiligten Personals gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-personalstatus-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false

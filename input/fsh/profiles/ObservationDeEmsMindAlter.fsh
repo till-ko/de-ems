@@ -7,7 +7,7 @@ Description: "MIND-Alter zum maßgeblichen Zeitpunkt des Einsatzes als Jahre (co
 * status = #final
 * code 1..1
 * code.coding 1..1
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs" (exactly)
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" (exactly)
 * code.coding.code = #patientenalter (exactly)
 * subject 1..1
 * subject only Reference(PatientDeEmsMindR4)
@@ -24,7 +24,7 @@ Description: "MIND-Alter zum maßgeblichen Zeitpunkt des Einsatzes als Jahre (co
 * component[jahre] obeys mind-alter-jahre-bereich
 * component[jahre].code 1..1
 * component[jahre].code.coding 1..1
-* component[jahre].code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs" (exactly)
+* component[jahre].code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" (exactly)
 * component[jahre].code.coding.code = #alter-jahre (exactly)
 * component[jahre].code = MindObservationstypCS#alter-jahre
 * component[jahre].value[x] only integer
@@ -32,7 +32,7 @@ Description: "MIND-Alter zum maßgeblichen Zeitpunkt des Einsatzes als Jahre (co
 * component[monate] obeys mind-alter-monate-bereich
 * component[monate].code 1..1
 * component[monate].code.coding 1..1
-* component[monate].code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs" (exactly)
+* component[monate].code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" (exactly)
 * component[monate].code.coding.code = #alter-monate (exactly)
 * component[monate].code = MindObservationstypCS#alter-monate
 * component[monate].value[x] only integer

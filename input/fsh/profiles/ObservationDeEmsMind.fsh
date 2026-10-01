@@ -8,7 +8,7 @@ Description: "Basisprofil für alle MIND-7.1-Feld-Beobachtungen dieses IG. Erbt 
 * status = #final
 * code 1..1
 * code.coding 1..1
-* code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs" (exactly)
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" (exactly)
 * code.coding.code from MindObservationstypVS (extensible)
 * subject 1..1
 * subject only Reference(PatientDeEmsMindR4)

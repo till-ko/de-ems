@@ -2,7 +2,6 @@ CodeSystem: MindMedikamentengabeCS
 Id: mind-medikamentengabe-cs
 Title: "MIND Medikamentengabe"
 Description: "Gültige Kombinationen aus Wirkstoffcode und Applikationsweg gemäß MIND 7.1."
-* ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-medikamentengabe-cs"
 * ^version = "7.1.0"
 * ^status = #active
 * ^experimental = false
