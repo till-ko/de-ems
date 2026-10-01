@@ -112,14 +112,17 @@ jobs:
           # die dem Output sonst einzelne Verzeichnisse entfernen kann.
           touch output/.nojekyll
           cd output
-          git init -q
+          # Branch gleich passend benennen, damit der Push-Refspec greift.
+          git init -q -b gh-pages
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add -A
-          git commit -q -m "docs(ig): publish ${GITHUB_SHA::8}"
+          git commit -q -m "docs(ig): publish ${GITHUB_SHA::8}" || echo "Output unveraendert"
           # Orphan-Branch mit einem einzigen Commit: haelt das Repo schlank.
+          # "HEAD:gh-pages" ist noetig, weil der Push-Refspec sonst einen lokalen
+          # Branch "gh-pages" erwarten wuerde, den es vor dem Push nicht gibt.
           git push --force -q \
             "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
-            gh-pages
+            HEAD:gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
