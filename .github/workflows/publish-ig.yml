@@ -1,0 +1,109 @@
+name: publish-ig
+
+# Build Implementation Guide using SUSHI + IG Publisher and publish result as
+# GitHub Page on Branch "gh-pages".
+#
+# Trigger is only the branch "release-pages".
+#
+#   develop            Daily changes, no build
+#       |
+#       |  git checkout release-pages && git merge develop && git push
+#       v
+#   release-pages      Build + Deploy
+#       |
+#       v
+#   gh-pages           ready HTML, is being force pushed here
+#
+# "release-pages" must hold the complete Codebase (FSH + sushi-config.yml)
+on:
+  push:
+    branches: [release-pages]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-ig-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PUBLISHER_VERSION: "2.3.4"
+  SUSHI_VERSION: "3.20.1"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Cache FHIR packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.fhir/packages
+          key: fhir-packages-${{ hashFiles('sushi-config.yaml') }}
+          restore-keys: fhir-packages-
+
+      - name: Cache IG Publisher
+        id: publisher-cache
+        uses: actions/cache@v4
+        with:
+          path: publisher.jar
+          key: publisher-${{ env.PUBLISHER_VERSION }}
+
+      - name: Download IG Publisher
+        if: steps.publisher-cache.outputs.cache-hit != 'true'
+        run: |
+          curl -sSL -o publisher.jar \
+            "https://github.com/HL7/fhir/releases/download/v${PUBLISHER_VERSION}/publisher.jar"
+
+      - name: Install SUSHI
+        run: npm install -g "fsh-sushi@${SUSHI_VERSION}"
+
+      - name: Run SUSHI
+        # --require-strict stops build as soon as sushi throws warnings!
+        # This gate keeps pages clean (currently there are none...)
+        run: sushi . --require-strict
+
+      - name: Run IG Publisher
+        run: java -jar publisher.jar -ig .
+
+      - name: Upload QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-report
+          path: |
+            output/qa.html
+            output/qa.txt
+          retention-days: 30
+
+      - name: Deploy to gh-pages
+        # Deploy additionally depends on Branch, not only Trigger. Manual start
+        # (workflow_dispatch) from another Branch shall build QA- but not overwrite the live page.
+        if: github.ref == 'refs/heads/release'
+        run: |
+          # ".nojekyll" unterbindet die Jekyll-Verarbeitung durch GitHub Pages,
+          # die dem Output sonst einzelne Verzeichnisse entfernen kann.
+          touch output/.nojekyll
+          cd output
+          git init -q
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -q -m "docs(ig): publish ${GITHUB_SHA::8}"
+          # Orphan-Branch mit einem einzigen Commit: haelt das Repo schlank.
+          git push --force -q \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
