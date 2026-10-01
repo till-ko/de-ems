@@ -30,6 +30,7 @@ concurrency:
 env:
   PUBLISHER_VERSION: "2.3.4"
   SUSHI_VERSION: "3.20.1"
+  JEKYLL_VERSION: "4.4.1"
 
 jobs:
   build-and-deploy:
@@ -45,6 +46,15 @@ jobs:
         with:
           distribution: temurin
           java-version: "21"
+
+      - name: Install Jekyll
+        run: |
+          if ! command -v gem >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y --no-install-recommends ruby-full build-essential
+          fi
+          gem install --no-document jekyll -v "${JEKYLL_VERSION}"
+          jekyll --version
 
       - name: Cache FHIR packages
         uses: actions/cache@v4
@@ -90,7 +100,7 @@ jobs:
       - name: Deploy to gh-pages
         # Deploy additionally depends on Branch, not only Trigger. Manual start
         # (workflow_dispatch) from another Branch shall build QA- but not overwrite the live page.
-        if: github.ref == 'refs/heads/release'
+        if: github.ref == 'refs/heads/release-pages'
         run: |
           # ".nojekyll" unterbindet die Jekyll-Verarbeitung durch GitHub Pages,
           # die dem Output sonst einzelne Verzeichnisse entfernen kann.
