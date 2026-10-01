@@ -74,8 +74,34 @@ dependencies:
 #
 # Aktiviert input/ignoreWarnings.txt (Suppression fremder Publisher-Meldungen).
 # Der Publisher liest diese Datei nur, wenn der Parameter gesetzt ist.
+#
+# OID-Root fuer die automatische OID-Vergabe des IG Publisher.
+# Der Publisher haengt jeder kanonischen Ressource einen Identifier
+# (system urn:ietf:rfc:3986 / value urn:oid:...) an und legt die Zuordnung
+# in input/oids.ini fest. Diese Datei MUSS mitcommittet werden - nur sie
+# garantiert, dass eine Ressource ihre OID ueber Builds und Releases hinweg
+# behält. Wird eine Ressourcen-id geaendert, muss die id in oids.ini
+# mitgeaendert werden, sonst bekommt sie eine neue OID.
+#
+# Der Bogen 2.25.<UUID-dezimal> ist der registrierungsfreie UUID-Bogen nach
+# ITU-T X.667: eine fest einmal erzeugte UUID wird ohne Beteiligung einer
+# Registry global eindeutig. Fuer ein Draft-IG ist das die pragmatische Wahl.
+# Sobald das IG national veroeffentlicht werden soll, sollte stattdessen ein
+# bei der BSI registrierter Bogen (1.2.36.146.595.217.x) beantragt werden.
+#
+# WICHTIG: Die UUID 7f3c9a1e-4b28-4d6a-9e05-2c8b1f47d630 ist einmalig gewaehlt.
+# Sie darf nie neu erzeugt werden, sonst erhalten alle Ressourcen neue OIDs.
+#
+# https://build.fhir.org/ig/FHIR/ig-guidance/oids.html
+# https://hl7.org/fhir/tools/CodeSystem/ig-parameters (code: auto-oid-root)
+
+# feste UUID   : 7f3c9a1e-4b28-4d6a-9e05-2c8b1f47d630
+# dezimal      : 169126619167380341660016816424527320624
+# OID-Root     : 2.25.169126619167380341660016816424527320624
+
 parameters:
   path-suppressed-warnings: input/ignoreWarnings.txt
+  auto-oid-root: 2.25.169126619167380341660016816424527320624
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
