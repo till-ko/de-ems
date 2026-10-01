@@ -5,6 +5,7 @@ Description: "Rettungsdienstlicher Transport gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-rd-transport-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "kein Patiententransport, trotz Patientenkontakt"
@@ -25,6 +26,7 @@ Description: "Ärztliche Transportbegleitung gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-aerztliche-begleitung-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #00 "keine"
@@ -42,6 +44,7 @@ Description: "Grund für einen Einsatz ohne Transport trotz Patientenkontakt gem
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-kein-transport-mit-patient-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "ambulante Versorgung, keine Klinikbehandlung notwendig"
@@ -66,6 +69,7 @@ Description: "Grund für einen Einsatz ohne Transport und ohne Patientenkontakt 
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-kein-transport-ohne-patient-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "Von Leitstelle abbestellt / Abbruch vor Erreichen des Notfallorts"
@@ -85,6 +89,7 @@ Description: "Typ des dokumentierenden Rettungsmittels gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-dokumentierendes-rettungsmittel-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "NEF"
@@ -116,6 +121,7 @@ Description: "Typen der am Einsatz beteiligten Rettungsmittel gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-beteiligtes-rettungsmittel-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "NEF"
@@ -148,6 +154,7 @@ Description: "Notärztliches oder transportärztliches Fachgebiet bzw. Qualifika
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-aerztliche-qualifikation-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht dokumentiert"
@@ -171,6 +178,7 @@ Description: "Status des am Einsatz beteiligten Personals gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-personalstatus-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht dokumentiert"

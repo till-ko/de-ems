@@ -1,9 +1,11 @@
 ValueSet: MindPreEmergencyStatusVS
 Id: mind-pre-emergency-status-vs
 Title: "MIND Zustand vor Eintritt des Notfalls ValueSet"
+Description: "Zustand vor Eintritt des Notfalls gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-pre-emergency-status-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindPreEmergencyStatusCS
 
 ValueSet: MindReanimationssituationVS
@@ -12,6 +14,7 @@ Title: "MIND Reanimationssituation ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-reanimationssituation-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindReanimationssituationCS
 
 ValueSet: MindReanimationstechnikVS
@@ -20,6 +23,7 @@ Title: "MIND Reanimationstechnik ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-reanimationstechnik-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindReanimationstechnikCS
 
 ValueSet: MindKreislaufstillstandursacheVS
@@ -28,6 +32,7 @@ Title: "MIND Kreislaufstillstandursache ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-kreislaufstillstandursache-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindKreislaufstillstandursacheCS
 
 ValueSet: MindKollapsBeobachtetDurchVS
@@ -36,6 +41,7 @@ Title: "MIND Kollaps beobachtet durch ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-kollaps-beobachtet-durch-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindKollapsBeobachtetDurchCS
 
 ValueSet: MindHerzdruckmassageDurchVS
@@ -44,6 +50,7 @@ Title: "MIND Herzdruckmassage durch ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-herzdruckmassage-durch-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindHerzdruckmassageDurchCS
 
 ValueSet: MindErsteDefibrillationDurchVS
@@ -52,6 +59,7 @@ Title: "MIND Erste Defibrillation durch ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-erste-defibrillation-durch-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindErsteDefibrillationDurchCS
 
 ValueSet: MindRoscVS
@@ -60,6 +68,7 @@ Title: "MIND ROSC ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-rosc-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindRoscCS
 
 ValueSet: MindKrankenhausaufnahmeZustandVS
@@ -68,4 +77,5 @@ Title: "MIND Krankenhausaufnahmezustand ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-krankenhausaufnahme-zustand-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindKrankenhausaufnahmeZustandCS

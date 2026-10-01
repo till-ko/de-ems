@@ -5,4 +5,5 @@ Description: "Alle Beobachtungstypen (Observation.code) der MIND-7.1-Spezifikati
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-observationstyp-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindObservationstypCS

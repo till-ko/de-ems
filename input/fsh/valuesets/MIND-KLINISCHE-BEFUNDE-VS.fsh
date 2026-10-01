@@ -1,9 +1,11 @@
 ValueSet: MindBewusstseinslageVS
 Id: mind-bewusstseinslage-vs
 Title: "MIND Bewusstseinslage ValueSet"
+Description: "Bewusstseinslage gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-bewusstseinslage-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindBewusstseinslageCS
 
 ValueSet: MindNeurologischeAuffaelligkeitVS
@@ -12,6 +14,7 @@ Title: "MIND Neurologische Auffälligkeit ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-neurologische-auffaelligkeit-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindNeurologischeAuffaelligkeitCS
 
 ValueSet: MindEkgbefundVS
@@ -20,6 +23,7 @@ Title: "MIND EKG-Befund ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-ekg-befund-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindEkgbefundCS
 
 ValueSet: MindAtmungVS
@@ -28,6 +32,7 @@ Title: "MIND Atembefund ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-atmung-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindAtmungCS
 
 ValueSet: MindHautbefundVS
@@ -36,6 +41,7 @@ Title: "MIND Hautbefund ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-hautbefund-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindHautbefundCS
 
 ValueSet: MindPsychischerZustandVS
@@ -44,6 +50,7 @@ Title: "MIND Psychischer Zustand ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-psychischer-zustand-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindPsychischerZustandCS
 
 ValueSet: MindPupillenweiteVS
@@ -52,6 +59,7 @@ Title: "MIND Pupillenweite ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-pupillenweite-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindPupillenweiteCS
 
 ValueSet: MindLichtreaktionVS
@@ -60,4 +68,5 @@ Title: "MIND Lichtreaktion ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-lichtreaktion-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindLichtreaktionCS

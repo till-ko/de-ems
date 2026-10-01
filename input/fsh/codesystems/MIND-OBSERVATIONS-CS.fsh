@@ -5,6 +5,7 @@ Description: "Beobachtungstypen (Observation.code) und zugehörige Komponenten-C
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #patientenalter "Patientenalter"

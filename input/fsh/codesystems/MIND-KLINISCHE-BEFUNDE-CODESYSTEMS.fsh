@@ -5,6 +5,7 @@ Description: "Bewusstseinslage gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-bewusstseinslage-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht untersucht"
@@ -23,6 +24,7 @@ Description: "Akute neurologische Auffälligkeiten gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-neurologische-auffaelligkeit-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht untersucht"
@@ -52,6 +54,7 @@ Description: "EKG-Befund gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-ekg-befund-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "kein EKG durchgeführt"
@@ -77,6 +80,7 @@ Description: "Klinische Befunde der Atmung gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-atmung-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht untersucht"
@@ -101,6 +105,7 @@ Description: "Hautbefunde gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-hautbefund-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht untersucht"
@@ -123,6 +128,7 @@ Description: "Psychischer Zustand gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-psychischer-zustand-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht untersucht"
@@ -147,6 +153,7 @@ Description: "Pupillenweite gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-pupillenweite-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht untersucht"
@@ -165,6 +172,7 @@ Description: "Lichtreaktion der Pupillen gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-lichtreaktion-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht untersucht"

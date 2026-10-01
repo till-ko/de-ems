@@ -5,6 +5,7 @@ Description: "Spezielle Devices gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-spezielle-devices-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine speziellen Devices eingesetzt"
@@ -21,6 +22,7 @@ Description: "Zeitliche Dringlichkeit gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-zeitliche-dringlichkeit-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "Notfall - schnellstmöglich, vitale Indikation"
@@ -34,6 +36,7 @@ Description: "Indikation für einen Intensivtransport gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-indikation-intensivtransport-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #00 "nein"
@@ -49,6 +52,7 @@ Description: "Verletzungsmuster gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-verletzungsmuster-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "Einzelverletzung"
@@ -62,6 +66,7 @@ Description: "Unfallursache gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-unfallursache-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "Unfall"
@@ -76,6 +81,7 @@ Description: "Unfallmechanismus gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-unfallmechanismus-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "stumpf"
@@ -90,6 +96,7 @@ Description: "Unfallhergang gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-unfallhergang-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "PKW-Insasse"
@@ -122,6 +129,7 @@ Description: "NACA-Score gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-naca-score-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "geringfügige Störung"
@@ -140,6 +148,7 @@ Description: "M-NACA-Score gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-mnaca-score-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #02 "leichte Störung"
@@ -157,6 +166,7 @@ Description: "Maßnahmen zum Atemwegsmanagement gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-airway-massnahme-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine Maßnahmen durchgeführt"
@@ -177,6 +187,7 @@ Description: "Atemunterstützung und Beatmung gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-atemunterstuetzung-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine Atemunterstützung durchgeführt"
@@ -194,6 +205,7 @@ Description: "Angelegter Medikamentenzugang gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-circulation-zugang-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "kein Zugang gelegt"
@@ -211,6 +223,7 @@ Description: "Spezielle Maßnahmen gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-spezielle-massnahme-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine speziellen Maßnahmen durchgeführt"
@@ -236,6 +249,7 @@ Description: "Durchführung eines 12-Kanal-EKG gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-ekg-12-kanal-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "kein 12-Kanal-EKG durchgeführt"
@@ -251,6 +265,7 @@ Description: "Eingesetzte Medizintechnik gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-medizintechnik-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine Medizintechnik eingesetzt"
@@ -271,6 +286,7 @@ Description: "Eingesetzte Lagerungs- und Rettungstechnik gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-lagerungs-rettungstechnik-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine Lagerungs- und Rettungstechnik"
@@ -296,6 +312,7 @@ Description: "Eigenständig oder eigenverantwortlich durch Notfallsanitäterinne
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-heilkundliche-massnahme-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "ja, Medikamentengabe"

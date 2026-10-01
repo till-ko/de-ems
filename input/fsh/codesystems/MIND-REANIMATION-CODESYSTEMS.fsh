@@ -5,6 +5,7 @@ Description: "Zustand vor Eintritt des Notfalls gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-pre-emergency-status-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "ohne Vorerkrankungen"
@@ -21,6 +22,7 @@ Description: "Reanimationssituation gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-reanimationssituation-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #00 "keine Reanimationssituation"
@@ -40,6 +42,7 @@ Description: "Eingesetzte Reanimationstechnik gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-reanimationstechnik-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine"
@@ -55,6 +58,7 @@ Description: "Vermutete Ursache des Kreislaufstillstands gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-kreislaufstillstandursache-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "kardial"
@@ -81,6 +85,7 @@ Description: "Person oder Einheit, die den Kollaps beobachtet hat, gemäß MIND 
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-kollaps-beobachtet-durch-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht beobachtet"
@@ -100,6 +105,7 @@ Description: "Person oder Einheit, die mit der Herzdruckmassage begonnen hat, ge
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-herzdruckmassage-durch-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine Herzdruckmassage durchgeführt"
@@ -119,6 +125,7 @@ Description: "Person oder Einheit, die die erste Defibrillation durchgeführt ha
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-erste-defibrillation-durch-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "keine Defibrillation durchgeführt"
@@ -138,6 +145,7 @@ Description: "Erreichen eines Spontankreislaufs gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-rosc-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "niemals ROSC"
@@ -150,6 +158,7 @@ Description: "Patientenzustand bei Krankenhausaufnahme gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-krankenhausaufnahme-zustand-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "keine Krankenhausaufnahme, Tod an der Einsatzstelle"

@@ -5,6 +5,6 @@ Description: "ValueSet für den Protokolltyp (NA oder RD) gemäß MIND-Spezifika
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-protokolltyp-vs"
 * ^version = "7.1.0"
 * ^status = #active
-
+* ^experimental = false
 // Anbinden an Codesystem
 * include codes from system MindProtokolltypCS

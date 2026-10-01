@@ -5,6 +5,7 @@ Description: "Schmerzerleben durch die Patientin oder den Patienten gemäß MIND
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-schmerzerleben-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #00 "tolerabel"
@@ -17,6 +18,7 @@ Description: "Akute neurologische Auffälligkeiten im Verlaufsbefund gemäß MIN
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-neurologische-auffaelligkeit-verlauf-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #-1 "nicht untersucht"
@@ -46,6 +48,7 @@ Description: "Ort der Patientenübergabe gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-ort-patientenuebergabe-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #01 "ZNA/INA/PINA"
@@ -72,6 +75,7 @@ Description: "Einsatzbesonderheiten gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-einsatzbesonderheit-cs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
 * #00 "keine"

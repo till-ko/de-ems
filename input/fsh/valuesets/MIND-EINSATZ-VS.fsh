@@ -1,9 +1,11 @@
 ValueSet: MindRdTransportVS
 Id: mind-rd-transport-vs
 Title: "MIND Rettungsdienstlicher Transport ValueSet"
+Description: "Rettungsdienstlicher Transport gemäß MIND 7.1."
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-rd-transport-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindRdTransportCS
 
 ValueSet: MindAerztlicheBegleitungVS
@@ -12,6 +14,7 @@ Title: "MIND Ärztliche Transportbegleitung ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-aerztliche-begleitung-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindAerztlicheBegleitungCS
 
 ValueSet: MindKeinTransportMitPatientVS
@@ -20,6 +23,7 @@ Title: "MIND Nichttransport bei Patientenkontakt ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-kein-transport-mit-patient-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindKeinTransportMitPatientCS
 
 ValueSet: MindKeinTransportOhnePatientVS
@@ -28,6 +32,7 @@ Title: "MIND Nichttransport ohne Patientenkontakt ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-kein-transport-ohne-patient-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindKeinTransportOhnePatientCS
 
 ValueSet: MindDokumentierendesRettungsmittelVS
@@ -36,6 +41,7 @@ Title: "MIND Dokumentierendes Rettungsmittel ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-dokumentierendes-rettungsmittel-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindDokumentierendesRettungsmittelCS
 
 ValueSet: MindBeteiligtesRettungsmittelVS
@@ -44,6 +50,7 @@ Title: "MIND Beteiligtes Rettungsmittel ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-beteiligtes-rettungsmittel-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindBeteiligtesRettungsmittelCS
 
 ValueSet: MindAerztlicheQualifikationVS
@@ -52,6 +59,7 @@ Title: "MIND Ärztliche Qualifikation ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-aerztliche-qualifikation-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindAerztlicheQualifikationCS
 
 ValueSet: MindPersonalstatusVS
@@ -60,4 +68,5 @@ Title: "MIND Personalstatus ValueSet"
 * ^url = "https://till-ko.github.io/ems-mind-de-r4/ValueSet/mind-personalstatus-vs"
 * ^version = "7.1.0"
 * ^status = #active
+* ^experimental = false
 * include codes from system MindPersonalstatusCS
