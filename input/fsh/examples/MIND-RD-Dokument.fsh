@@ -130,7 +130,6 @@ Description: "Altersvalidität als not-asked (nicht dokumentiert) über dataAbse
 Instance: MindRdTransportExample
 InstanceOf: ObservationDeEmsMindRdTransport
 Usage: #example
-Title: "MIND 7.1 Rettungsdienstlicher Transport"
 Description: "RDTransport: Transport durch RTW."
 * id = "mind-rdtransport-example"
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
@@ -143,7 +142,6 @@ Description: "RDTransport: Transport durch RTW."
 Instance: MindNotarztNachgefordertExample
 InstanceOf: ObservationDeEmsMindNotarztNachgefordert
 Usage: #example
-Title: "MIND 7.1 Notarzt nachgefordert"
 Description: "NotarztNachgefordert: kein Notarzt nachgefordert."
 * id = "mind-notarzt-nachgefordert-example"
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
@@ -156,7 +154,6 @@ Description: "NotarztNachgefordert: kein Notarzt nachgefordert."
 Instance: MindZeitAlarmExample
 InstanceOf: ObservationDeEmsMindZeitAlarm
 Usage: #example
-Title: "MIND 7.1 Zeitpunkt Alarm"
 Description: "ZeitAlarm: Alarmierung durch die Leitstelle."
 * id = "mind-zeit-alarm-example"
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
@@ -169,7 +166,6 @@ Description: "ZeitAlarm: Alarmierung durch die Leitstelle."
 Instance: MindZeitEinsatzendeExample
 InstanceOf: ObservationDeEmsMindZeitEinsatzende
 Usage: #example
-Title: "MIND 7.1 Zeitpunkt Einsatzende"
 Description: "ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.period.end)."
 * id = "mind-zeit-einsatzende-example"
 * code.coding.system = "https://till-ko.github.io/ems-mind-de-r4/CodeSystem/mind-observationstyp-cs"
