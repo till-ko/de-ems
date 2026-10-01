@@ -59,8 +59,8 @@ jobs:
         # /var/lib/gems/3.2.0): dort hat der "runner"-User keine Schreibrechte.
         run: |
           gem install --no-document jekyll -v "${JEKYLL_VERSION}"
-          echo "$(gem env home)/bin" >> "$GITHUB_PATH"
-          "$(gem env home)/bin/jekyll" --version
+          echo "$(ruby -e 'print Gem.bindir')" >> "$GITHUB_PATH"
+          "$(ruby -e 'print Gem.bindir')/jekyll" --version
 
       - name: Cache FHIR packages
         uses: actions/cache@v4
