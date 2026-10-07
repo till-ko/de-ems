@@ -115,6 +115,16 @@ Konsequenz für neue DIVI-only Felder (z. B. `EinsatzStrasseName` im
 Einsatzort): **jedes** neue Feld bekommt zusätzlich zur Basis-`0..1` einen
 Gegenbefehl `* <Feld> 0..0` im zugehörigen MIND-Profil.
 
+Für die **Dokument-Composition** gilt dieselbe Hierarchie:
+`CompositionDeEmsDiviR4` (Basis: gemeinsamer Dokumentkopf, `section 1..*`)
+→ `CompositionDeEmsMindR4` (Ableitung: fixierter Titel, MIND-Softwarekennung,
+Subjekt/Einsatz auf die MIND-Profile eingeschränkt, **18 Kapitel-Sections**
+aus der Spalte `Kapitel` der Datenfelder-CSV). Die DIVI-eigene Kapitel-
+gliederung (Spalte `DIVI-Kapitel`, z. B. *Dokument-Header*,
+*EinsatztechnischeDaten*) wird später als weitere Slices in die
+DIVI-Basis aufgenommen und in der MIND-Ableitung jeweils auf `0..0`
+gesetzt — wie DIVI-only-Felder in den Ressourcen-Profilen.
+
 ## 7. Bekannte Abweichungen (Kurzfassung)
 
 Ausführliche Begründungen stehen feldweise in der jeweiligen
@@ -153,10 +163,18 @@ Ausführliche Begründungen stehen feldweise in der jeweiligen
   FSH-Instance mit `Usage: #definition`, da SUSHI keine `ConceptMap`-Regel
   kennt. Nicht zuordenbar: Symptombeginn-Felder (MIND) sowie IVR
   `departure from target`/Notarzt-Zeiten (kein MIND-Feld).
-- **Kapitel-Pflichtigkeit**: die CSV-Kapitelhinweise (z. B. *Zeiten-
-  Einsatzablauf ist immer Pflicht*) werden über `Composition.section` nicht
-  erzwungen; die Beobachtungen sind freistehende Bundle-Einträge
-  (`Composition.section` bleibt `0..*`).
+- **Kapitel-Sections (`Composition.section`)**: das Dokument ist in die 18
+  Kapitel der Datenfelder-CSV gegliedert (CodeSystem `de-ems-kapitel-cs`,
+  Binding `DeEmsKapitelVS` auf `section.code`). Jeder Slice verlangt
+  `title` und `text` (Narrative), sodass das Gesamtdokument lesbar bleibt
+  (analog CH-EMS). Die Sections sind bewusst **permissiv** angelegt
+  (`0..1`, `entry 0..*`), weil MIND und DIVI unterschiedliche Pflicht-
+  umfänge haben; in den Profilen steht je Kapitel ein
+  `TODO(Pflicht/MIND)`- bzw. `TODO(DIVI)`-Kommentar mit dem geplanten Cardinalitäten-Schärfungs-
+  schritt (z. B. *ZeitenEinsatzablauf* ist immer Pflicht → später `1..1`).
+  Nicht umgesetzte Kapitel bleiben vorerst leer, aber benannt — die
+  Beobachtungen sind weiterhin Bundle-Einträge und werden von ihrer
+  Section aus referenziert.
 - **Zeichenlimits** (z. B. *Zeichenlimit 50* bei `EinsatzNr`, `PatNr`,
   `AuftrNr`) sind als Invarianten modelliert (z. B.
   `mind-identifier-laenge-50`).
