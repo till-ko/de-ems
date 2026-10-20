@@ -304,70 +304,70 @@ ODER 09 ODER  98)
 UND KeinTranspMitPat NICHT  (05 ODER 08)
 UND EinsatzArt NICHT  (05 ODER  07 ODER  10)";;;
 ErsteMesswerteUndBefunde;Bewusstsein1;Ja;ErsteMesswerteUndBefunde;ErsteBefundeNeuro;DM;E;"Bewusstseinslage
-Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die jeweils beste Ausprägung zu wählen;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;T;Terminologie: mind-bewusstseinslage-cs / MindBewusstseinslageVS. Noch kein Profil.
+Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die jeweils beste Ausprägung zu wählen;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindBewusstsein (observation-de-ems-mind-bewusstsein); code.coding #bewusstsein, valueCodeableConcept aus MindBewusstseinslageVS (required). -2 (nicht erhoben) nur, solange das Kapitel nicht Pflicht ist, ueber dataAbsentReason."
 ErsteMesswerteUndBefunde;GlasgowComaScale1;Ja;ErsteMesswerteUndBefunde;ErsteBefundeNeuro;DM;E;"Glasgow Coma Scale
-Werteliste siehe Tabellenblatt Codes";NA + RD;Bei Seitendifferenz bessere Seite;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bei Seitendifferenz bessere Seite;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindGlasgowComaScale (observation-de-ems-mind-glasgow-coma-scale); valueInteger 3..15 (mind-gcs-bereich). Sonderwerte -1/99 ueber dataAbsentReason (not-performed/unknown), -2 ueber not-asked."
 ErsteMesswerteUndBefunde;NeurologischeAuffaelligkeiten1;Ja;ErsteMesswerteUndBefunde;ErsteBefundeNeuro;DM;M;"Neurologische Auffälligkeiten
 Werteliste siehe Tabellenblatt";NA + RD;"• sNIHSS-EMS Items und BEFAST werden abgebildet.
 • die Dokumentation von Schweregraden und der Körperseite ist im
 MIND nicht vorgesehen";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.
-Kombinationen mit 00, -1 oder 99 sind unzulässig.";-2;T;Terminologie: mind-neurologische-auffaelligkeit-cs (BEFAST/sNIHSS). Noch kein Profil.
+Kombinationen mit 00, -1 oder 99 sind unzulässig.";-2;x;"Profil ObservationDeEmsMindNeurologischeAuffaelligkeiten; valueCodeableConcept aus MindNeurologischeAuffaelligkeitVS (required). Mehrfach: je Ausprägung eine Observation. Unzulaessige Kombinationen (00/-1/99) cross-Instance, nicht erzwungen."
 ErsteMesswerteUndBefunde;SystolischerBlutdruck1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Systolischer Blutdruck Messwert in mmHg
-Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet RR-Messung durchgeführt, wenn Angabe im Wertebereich oder 999.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet RR-Messung durchgeführt, wenn Angabe im Wertebereich oder 999.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindSystolischerBlutdruck; valueQuantity 0..300 mm[Hg] (mind-sbp-bereich). Sonderwerte -1/999 ueber dataAbsentReason (not-performed/unknown), -2 ueber not-asked."
 ErsteMesswerteUndBefunde;EKGBefund1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;M;"EKG-Befund
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Hier sollen nur die Ausprägungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren (nicht diejenigen im weiteren Verlauf).
 Für QS wird EKG als durchgeführt gewertet, wenn Angabe ungleich -1.";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.
-Kombinationen mit -1 oder 99 sind unzulässig.";-2;T;Terminologie: mind-ekg-befund-cs / MindEkgbefundVS. Noch kein Profil.
+Kombinationen mit -1 oder 99 sind unzulässig.";-2;x;"Profil ObservationDeEmsMindEkgbefund; valueCodeableConcept aus MindEkgbefundVS (required). Mehrfach: je Ausprägung eine Observation. Nur erste Untersuchung; Kombinationsregeln nicht erzwungen."
 ErsteMesswerteUndBefunde;Herzfrequenz1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Herzfrequenz Messwert in /min
 Werteliste siehe Tabellenblatt Codes";NA + RD;Vom Monitor abgelesene Herzfrequenz pro Minute (ggf. palpatorisch oder pulsoximetrisch bestimmte Pulsfrequenz, wenn kein EKG abgeleitet wurde).;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.
-Werte GRÖSSER 0 bei EKGBefund1 GLEICH  09 sind unzulässig.";-2;;
+Werte GRÖSSER 0 bei EKGBefund1 GLEICH  09 sind unzulässig.";-2;x;"Profil ObservationDeEmsMindHerzfrequenz; valueQuantity 0..300 /min (mind-hf-bereich). Sonderwerte -1/999 ueber dataAbsentReason (not-performed/unknown), -2 ueber not-asked. Plausibilitaet (Wert > 0 bei EKGBefund1 = 09) cross-Instance, nicht erzwungen."
 ErsteMesswerteUndBefunde;Atemfrequenz1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Atemfrequenz
 Messwert in /min
 Werteliste siehe Tabellenblatt Codes";NA + RD;Ausgezählte oder vom Monitor abgelesene Atemfrequenz pro Minute.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.
-Werte GRÖSSER 0 bei Atmung1 GLEICH  08 sind unzulässig.";-2;;
+Werte GRÖSSER 0 bei Atmung1 GLEICH  08 sind unzulässig.";-2;x;"Profil ObservationDeEmsMindAtemfrequenz; valueQuantity 0..98 /min (mind-af-bereich). Sonderwerte -1/99 ueber dataAbsentReason (not-performed/unknown), -2 ueber not-asked. Plausibilitaet (Wert > 0 bei Atmung1 = 08) cross-Instance, nicht erzwungen."
 ErsteMesswerteUndBefunde;Sauerstoffsaettigung1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Sauerstoffsättigung
 Messwert in %
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Bedeutet Pulsoxymetrie durchgeführt, wenn Angabe im Wertebereich oder 999.
-Der Erstbefund der Sauerstoffsättigung sollte möglichst vor Therapie mit Sauerstoff ermittelt werden.";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;;
+Der Erstbefund der Sauerstoffsättigung sollte möglichst vor Therapie mit Sauerstoff ermittelt werden.";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindSauerstoffsaettigung; valueQuantity 0..100 % (mind-spo2-bereich). Sonderwerte -1/999 ueber dataAbsentReason (not-performed/unknown), -2 ueber not-asked."
 ErsteMesswerteUndBefunde;Rekapillarisierungszeit;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Rekapillarisierungszeit
 Messwert in s
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindRekapillarisierungszeit; valueQuantity 1..10 s (mind-rekap-bereich). Sonderwert 11 (groesser 10 Sekunden) als valueRange low = 10 s ohne Obergrenze. -1 ueber dataAbsentReason not-performed, -2 ueber not-asked."
 ErsteMesswerteUndBefunde;Schmerzempfinden1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Schmerzempfinden nach
 Numerischer Rating Scala (NRS)
 Werteliste siehe Tabellenblatt Codes";NA + RD;Erstbefund des Schmerzempfindens vor dem Einleiten von Maßnahmen.;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.
-Wenn Bewusstsein1 GLEICH  05, dann ist Schmerzempfinden GLEICH  (01 bis 10) unzulässig.";-2;;
+Wenn Bewusstsein1 GLEICH  05, dann ist Schmerzempfinden GLEICH  (01 bis 10) unzulässig.";-2;x;"Profil ObservationDeEmsMindSchmerzempfinden; valueInteger NRS 0..10 (mind-nrs-bereich). Sonderwerte -1/99 ueber dataAbsentReason (not-performed/unknown), -2 ueber not-asked. Plausibilitaet (Bewusstsein1 = 05) cross-Instance, nicht erzwungen."
 ErsteMesswerteUndBefunde;Schmerzerleben;Nein;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Mit dem Schmerzerleben soll der subjektive Bedarf eines Patienten nach einer Schmerztherapie zum Ausdruck
-gebracht werden und damit deren Indikation dokumentiert werden.";;-2;T;Terminologie: mind-schmerzerleben-cs / MindSchmerzerlebenVS. Noch kein Profil.
+gebracht werden und damit deren Indikation dokumentiert werden.";;-2;x;"Profil ObservationDeEmsMindSchmerzerleben; valueCodeableConcept aus MindSchmerzerlebenVS (required)."
 ErsteMesswerteUndBefunde;Blutzuckerwert1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Blutzucker
 Messwert in mg/dl bzw. mmol/l
 Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet Blutzuckermessung durchgeführt, wenn Angabe im Wertebereich, 997, 998 oder 999;"Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
-Bei Auswahl 0 bis 900 bzw. 0.0 bis 50.0 wird BlutzuckerEinheit zum Pflichtfeld Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;;
+Bei Auswahl 0 bis 900 bzw. 0.0 bis 50.0 wird BlutzuckerEinheit zum Pflichtfeld Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindBlutzuckerwert; valueQuantity 0..900 mg/dL bzw. 0..50 mmol/L (mind-blutzucker-bereich), Einheit als component[einheit] (Pflicht bei numerischem Wert, mind-blutzucker-einheit-pflicht). 997/998 als valueCodeableConcept low/high (MindBlutzuckerBefundVS), 999/-1 ueber dataAbsentReason (unknown/not-performed), -2 ueber not-asked."
 ErsteMesswerteUndBefunde;BlutzuckerEinheit;"siehe Hinweise/
 Plausibilitäten/ Abhängigkeiten";ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;Ermöglicht die Dokumentation der im jeweiligen Bundesland / Rettungsdienstbereich gültigen Maßeinheit für den Blutzuckerwert;"Pflicht wenn:
-Blutzuckerwert1 ODER Blutzuckerwert2 ENTHÄLT  (0 bis 900 bzw. 0.0 bis 50.0)";-2;;
+Blutzuckerwert1 ODER Blutzuckerwert2 ENTHÄLT  (0 bis 900 bzw. 0.0 bis 50.0)";-2;x;"Abweichend vom Observation-Muster nicht als eigene Observation: als component[einheit] der Observation ObservationDeEmsMindBlutzuckerwert (valueCodeableConcept aus MindBlutzuckerEinheitVS, required); Pflicht, wenn ein numerischer Blutzuckerwert vorliegt (mind-blutzucker-einheit-pflicht)."
 ErsteMesswerteUndBefunde;Temperatur;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Temperatur
 Messwert in Grad Celsius
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Bedeutet Temperatur-Messung durchgeführt, wenn Angabe im Wertebereich oder 99.9.
-Keine explizite Ortsangabe, wenn möglich zentral (Tympanon)";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;;
+Keine explizite Ortsangabe, wenn möglich zentral (Tympanon)";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindTemperatur; valueQuantity 20.0..50.0 Cel (mind-temperatur-bereich). Sonderwerte -1.0/99.9 ueber dataAbsentReason (not-performed/unknown), -2 ueber not-asked."
 ErsteMesswerteUndBefunde;Atmung1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;M;"Klinische Befunde Atmung
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Hier sollen nur die Ausprägungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren
 (nicht diejenigen im weiteren Verlauf).";"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.
-Kombinationen mit -1, 00 oder 99 sind unzulässig.";-2;T;Terminologie: mind-atmung-cs / MindAtmungVS. Noch kein Profil.
+Kombinationen mit -1, 00 oder 99 sind unzulässig.";-2;x;"Profil ObservationDeEmsMindAtmung; valueCodeableConcept aus MindAtmungVS (required). Mehrfach: je Ausprägung eine Observation. Nur erste Untersuchung."
 ErsteMesswerteUndBefunde;Hautbefunde;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;M;"Hautbefunde
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.
-Kombinationen mit -1, 00 oder 99 sind unzulässig.";-2;T;Terminologie: mind-hautbefund-cs / MindHautbefundVS. Noch kein Profil.
+Kombinationen mit -1, 00 oder 99 sind unzulässig.";-2;x;"Profil ObservationDeEmsMindHautbefunde; valueCodeableConcept aus MindHautbefundVS (required). Mehrfach: je Ausprägung eine Observation."
 ErsteMesswerteUndBefunde;Psyche1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;M;M;"Psychischer Zustand
 Werteliste siehe Tabellenblatt Codes";NA + RD;Hier sollen nur die Ausprägungen dokumentiert werden, die zum Zeitpunkt der ersten Untersuchung zutreffend waren (nicht diejenigen im weiteren Verlauf).;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.
-Kombinationen mit -1, 00 oder 99 sind unzulässig.";-2;T;Terminologie: mind-psychischer-zustand-cs / MindPsychischerZustandVS. Noch kein Profil.
+Kombinationen mit -1, 00 oder 99 sind unzulässig.";-2;x;"Profil ObservationDeEmsMindPsyche; valueCodeableConcept aus MindPsychischerZustandVS (required). Mehrfach: je Ausprägung eine Observation. Nur erste Untersuchung."
 ErsteMesswerteUndBefunde;Pupillenweite1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;M;E;"Pupillenweite
-Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die klinisch relevanteste Ausprägung zu dokumentieren;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;T;Terminologie: mind-pupillenweite-cs / MindPupillenweiteVS. Noch kein Profil.
+Werteliste siehe Tabellenblatt Codes";NA + RD;Es ist die klinisch relevanteste Ausprägung zu dokumentieren;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindPupillenweite; valueCodeableConcept aus MindPupillenweiteVS (required)."
 ErsteMesswerteUndBefunde;Lichtreaktion1;Ja;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"Lichtreaktion
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;T;Terminologie: mind-lichtreaktion-cs / MindLichtreaktionVS. Noch kein Profil.
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""ErsteMesswerteUndBefunde"" Pflicht, dann ist -2 unzulässig.";-2;x;"Profil ObservationDeEmsMindLichtreaktion; valueCodeableConcept aus MindLichtreaktionVS (required)."
 ErsteMesswerteUndBefunde;EtCO2Wert1;siehe Hinweise/ Plausibilitäten/ Abhängigkeiten;ErsteMesswerteUndBefunde;ErsteMesswerte;DM;E;"erster gemessener etCO2  Wert (unter Beatmung in mmHg gemessen)
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Bedeutet Kapnometrie durchgeführt, wenn Angabe im Wertebereich oder 999.
 Pflicht, wenn eine Atemwegssicherung oder eine maschinelle invasive Beatmung (unterstützt oder kontrolliert) dokumentiert ist .";"Pflicht wenn:
 Airway GLEICH  (03 ODER  05 ODER 07)
-ODER Atemunterst GLEICH 05";-2;;
+ODER Atemunterst GLEICH 05";-2;x;"Profil ObservationDeEmsMindEtco2Wert; valueQuantity 0..120 mm[Hg] (mind-etco2-bereich). Pflicht-wenn-Bedingung (Atemwegssicherung/invasive Beatmung) nicht erzwungen. Sonderwerte -1/999 ueber dataAbsentReason (not-performed/unknown), -2 ueber not-asked."
 ErsteMesswerteUndBefunde;ZeitErsteWerte;Nein;;ErsteBefundeNeuro;D;E;Angabe von Datum und Uhrzeit;;Zeit zu der begonnen wurde, die die ersten Werte des Kapitels ErsteMesswerteNeuro erfasst wurden;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
 ErsteMesswerteUndBefunde;GCSAugenOeffnen1;Nein;;ErsteBefundeNeuro;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;Erste Werte: GCS-Stadium für Augen öffnen;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
 ErsteMesswerteUndBefunde;GCSVerbaleReaktion1;Nein;;ErsteBefundeNeuro;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;Erste Werte: GCS-Stadium für Beste verbale Reaktion;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;

@@ -144,10 +144,10 @@ Bewusstsein1 Bewusstsein2;"Bewusstseinslage
 02 = wach
 03 = reagiert auf Ansprache 04 = reagiert auf Schmerzreiz 05 = bewusstlos
 98 = Sonstige
-99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-bewusstseinslage-cs und MindBewusstseinslageVS (in MIND-Klinische-Befunde-VS). Noch kein Observation-Profil.
+99 = nicht beurteilbar";DM;;T;"Terminologie: mind-bewusstseinslage-cs und MindBewusstseinslageVS. Profil ObservationDeEmsMindBewusstsein (code #bewusstsein) fuer Bewusstsein1; Bewusstsein2 (AbschlussBefundeBT) folgt."
 GlasgowComaScale1 GlasgowComaScale2;"Glasgow Coma Scale
 Wertebereich = 3 bis 15
--1 = nicht untersucht 99 = nicht beurteilbar";DM;;;
+-1 = nicht untersucht 99 = nicht beurteilbar";DM;;T;"ObservationDeEmsMindGlasgowComaScale: code #glasgow-coma-scale, valueInteger 3..15 (mind-gcs-bereich). Sonderwerte -1/99 ueber dataAbsentReason, -2 ueber not-asked. Profile nur fuer Feld 1; Feld 2 (AbschlussBefundeBT) folgt."
 NeurologischeAuffaelligkeiten1;"Akute neurologische Auffälligkeiten (ZNS, PNS)
 -1 = nicht untersucht 00 = keine
 01 = Gesichtslähmung (kein Lächeln/hängender Mundwinkel) F
@@ -163,10 +163,10 @@ NeurologischeAuffaelligkeiten1;"Akute neurologische Auffälligkeiten (ZNS, PNS)
 14 = Querschnittsymptomatik
 97 = vorbestehendes neurolog. Defizit
 98 = Sonstige
-99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-neurologische-auffaelligkeit-cs (BEFAST/sNIHSS-EMS-Items). Noch kein Observation-Profil.
+99 = nicht beurteilbar";DM;;x;ObservationDeEmsMindNeurologischeAuffaelligkeiten: code #neurologische-auffaelligkeiten, valueCodeableConcept an MindNeurologischeAuffaelligkeitVS (required). Mehrfach: je Auspraegung eine Observation.
 SystolischerBlutdruck1 SystolischerBlutdruck2;"Systolischer Blutdruck - Messwert in mmHg
 Wertebereich = 0 bis 300
--1 = nicht gemessen 999 = nicht messbar";DM;;;
+-1 = nicht gemessen 999 = nicht messbar";DM;;T;"ObservationDeEmsMindSystolischerBlutdruck: code #systolischer-blutdruck, valueQuantity 0..300 mm[Hg] (mind-sbp-bereich). Sonderwerte -1/999 ueber dataAbsentReason, -2 ueber not-asked. Profile nur fuer Feld 1; Feld 2 (AbschlussBefundeBT) folgt."
 EKGBefund1 EKGBefund2;"EKG-Befund
 -1 = kein EKG durchgeführt 01 = Sinusrhythmus
 02 = absolute Arrhythmie 03 = AV-Block II
@@ -177,41 +177,41 @@ EKGBefund1 EKGBefund2;"EKG-Befund
 11 = signifikante ST-Hebungen
 12 = Schenkelblock
 98 = Sonstige
-99 = nicht durchführbar/nicht beurteilbar";DM;;T;Terminologie definiert: mind-ekg-befund-cs und MindEkgbefundVS. Noch kein Observation-Profil.
+99 = nicht durchführbar/nicht beurteilbar";DM;;T;"Terminologie: mind-ekg-befund-cs und MindEkgbefundVS. Profil ObservationDeEmsMindEkgbefund (code #ekg-befund) fuer EKGBefund1; EKGBefund2 (AbschlussBefundeBT) folgt."
 Herzfrequenz1 Herzfrequenz2;"Herzfrequenz - Messwert in /min
 Wertebereich = 0 bis 300
--1 = nicht gemessen 999 = nicht beurteilbar";DM;;;
+-1 = nicht gemessen 999 = nicht beurteilbar";DM;;T;"ObservationDeEmsMindHerzfrequenz: code #herzfrequenz, valueQuantity 0..300 /min (mind-hf-bereich). Sonderwerte -1/999 ueber dataAbsentReason, -2 ueber not-asked. Profile nur fuer Feld 1; Feld 2 (AbschlussBefundeBT) folgt."
 Atemfrequenz1 Atemfrequenz2;"Atemfrequenz
 Wertebereich = 0 bis 98
--1 = nicht gemessen 99 = nicht beurteilbar";DM;;;
+-1 = nicht gemessen 99 = nicht beurteilbar";DM;;T;"ObservationDeEmsMindAtemfrequenz: code #atemfrequenz, valueQuantity 0..98 /min (mind-af-bereich). Sonderwerte -1/99 ueber dataAbsentReason, -2 ueber not-asked. Profile nur fuer Feld 1; Feld 2 (AbschlussBefundeBT) folgt."
 Sauerstoffsaettigung1 Sauerstoffsaettigung2;"Sauerstoffsättigung - Messwert in %
 Wertebereich = 0 bis 100
--1 = nicht gemessen 999 = nicht messbar";DM;;;
+-1 = nicht gemessen 999 = nicht messbar";DM;;T;"ObservationDeEmsMindSauerstoffsaettigung: code #sauerstoffsaettigung, valueQuantity 0..100 % (mind-spo2-bereich). Sonderwerte -1/999 ueber dataAbsentReason, -2 ueber not-asked. Profile nur fuer Feld 1; Feld 2 (AbschlussBefundeBT) folgt."
 Rekapillarisierungszeit;"Rekapillarisierungszeit - Messwert in s
 Wertebereich = 1 bis 10
 -1 = nicht gemessen
-11 = größer 10 Sekunden";DM;;;
+11 = größer 10 Sekunden";DM;;x;ObservationDeEmsMindRekapillarisierungszeit: code #rekapillarisierungszeit, valueQuantity 1..10 s (mind-rekap-bereich). Sonderwert 11 (>10s) als valueRange low = 10 s. -1 ueber dataAbsentReason, -2 ueber not-asked.
 "Schmerzempfinden1
 Schmerzempfinden2";"Schmerzempfinden - nach Numerischer Rating Scala (NRS)
 Wertebereich = 0 bis 10
--1 = nicht gemessen 99 = nicht beurteilbar";DM;;;
+-1 = nicht gemessen 99 = nicht beurteilbar";DM;;T;"ObservationDeEmsMindSchmerzempfinden: code #schmerzempfinden, valueInteger NRS 0..10 (mind-nrs-bereich). Sonderwerte -1/99 ueber dataAbsentReason, -2 ueber not-asked. Profile nur fuer Feld 1; Feld 2 (AbschlussBefundeBT) folgt."
 Schmerzerleben;"Schmerzerleben durch Patienten
 00 = tolerabel
-01 = nicht tolerabel";DM;;T;Terminologie definiert: mind-schmerzerleben-cs und MindSchmerzerlebenVS (Kapitel Uebergabe). Noch kein Observation-Profil.
+01 = nicht tolerabel";DM;;x;ObservationDeEmsMindSchmerzerleben: code #schmerzerleben, valueCodeableConcept an MindSchmerzerlebenVS (required).
 Blutzuckerwert1 Blutzuckerwert2;"Blutzucker
 Messwert in mg/dl bzw. mmol/l
 Wertebereich = 0 bis 900 bei Einheit mg/dl bzw. Wertebereich = 0.0 bis 50.0 bei Einheit mmol/l
 -1 = nicht gemessen
 997 = ""low""
 998 = ""high""
-999 = nicht messbar";DM;;;
+999 = nicht messbar";DM;;T;"ObservationDeEmsMindBlutzuckerwert: code #blutzuckerwert, valueQuantity 0..900 mg/dL bzw. 0..50 mmol/L (mind-blutzucker-bereich), Einheit als component[einheit] (mind-blutzucker-einheit-pflicht). 997/998 als valueCodeableConcept low/high (MindBlutzuckerBefundVS), 999/-1 ueber dataAbsentReason. Profile nur fuer Feld 1; Feld 2 (AbschlussBefundeBT) folgt."
 BlutzuckerEinheit;"01 = mg/dl
-02 = mmol/l";DM;;;
+02 = mmol/l";DM;;x;"Nicht als eigene Observation: component[einheit] der Observation ObservationDeEmsMindBlutzuckerwert (valueCodeableConcept an MindBlutzuckerEinheitVS, required); Pflicht bei numerischem Blutzuckerwert."
 Temperatur;"Temperatur
 Messwert in Grad Celsius
 Wertebereich = 20.0 bis 50.0
 -1.0 = nicht gemessen
-99.9 = nicht messbar";DM;;;
+99.9 = nicht messbar";DM;;x;ObservationDeEmsMindTemperatur: code #temperatur, valueQuantity 20.0..50.0 Cel (mind-temperatur-bereich). Sonderwerte -1.0/99.9 ueber dataAbsentReason, -2 ueber not-asked.
 Atmung1 Atmung2;"Klinische Befunde Atmung
 -1 = nicht untersucht
 00 = unauffällige Spontanatmung 01 = Dyspnoe
@@ -225,7 +225,7 @@ Atmung1 Atmung2;"Klinische Befunde Atmung
 09 = Beatmung
 10 = Hyperventilation
 98 = Sonstige
-99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-atmung-cs und MindAtmungVS. Noch kein Observation-Profil.
+99 = nicht beurteilbar";DM;;T;"Terminologie: mind-atmung-cs und MindAtmungVS. Profil ObservationDeEmsMindAtmung (code #atmung) fuer Atmung1; Atmung2 (AbschlussBefundeBT) folgt."
 Hautbefunde;"Hautbefunde
 -1 = nicht untersucht 00 = unauffällig
 01 = Kalt-Schweissigkeit 02 = Stehende Hautfalten 03 = Ödeme
@@ -235,7 +235,7 @@ Hautbefunde;"Hautbefunde
 07 = Marmorierung
 08 = Ikterus
 98 = Sonstige
-99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-hautbefund-cs und MindHautbefundVS. Noch kein Observation-Profil.
+99 = nicht beurteilbar";DM;;x;ObservationDeEmsMindHautbefunde: code #hautbefunde, valueCodeableConcept an MindHautbefundVS (required). Mehrfach: je Auspraegung eine Observation.
 "Psyche1
 Psyche2";"Psychischer Zustand
 -1 = nicht untersucht 00 = unauffällig
@@ -250,22 +250,22 @@ Psyche2";"Psychischer Zustand
 09 = suizidal
 10 = motorisch unruhig
 98 = Sonstige
-99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-psychischer-zustand-cs und MindPsychischerZustandVS. Noch kein Observation-Profil.
+99 = nicht beurteilbar";DM;;T;"Terminologie: mind-psychischer-zustand-cs und MindPsychischerZustandVS. Profil ObservationDeEmsMindPsyche (code #psyche) fuer Psyche1; Psyche2 (AbschlussBefundeBT) folgt."
 Pupillenweite1 Pupillenweite2;"Pupillenweite
 -1 = nicht untersucht 01 = beidseits eng
 02 = beidseits mittelweit 03 = beidseits weit
 04 = Anisokorie
 05 = entrundet
 98 = Sonstige
-99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-pupillenweite-cs und MindPupillenweiteVS. Noch kein Observation-Profil.
+99 = nicht beurteilbar";DM;;T;"Terminologie: mind-pupillenweite-cs und MindPupillenweiteVS. Profil ObservationDeEmsMindPupillenweite (code #pupillenweite) fuer Pupillenweite1; Pupillenweite2 (AbschlussBefundeBT) folgt."
 "Lichtreaktion1
 Lichtreaktion2";"Lichtreaktion
 -1 = nicht untersucht 00 = beidseits prompt 01 = beidseits träge 02 = beidseits keine 03 = Seitendifferenz
 98 = Sonstige
-99 = nicht beurteilbar";DM;;T;Terminologie definiert: mind-lichtreaktion-cs und MindLichtreaktionVS. Noch kein Observation-Profil.
+99 = nicht beurteilbar";DM;;T;"Terminologie: mind-lichtreaktion-cs und MindLichtreaktionVS. Profil ObservationDeEmsMindLichtreaktion (code #lichtreaktion) fuer Lichtreaktion1; Lichtreaktion2 (AbschlussBefundeBT) folgt."
 EtCO2Wert1 EtCO2Wert2;"erster / letzter gemessener etCO2 Wert (unter Beatmung in mmHg gemessen)
 Wertebereich = 0 bis 120
--1 = nicht gemessen 999 = nicht messbar";DM;;;
+-1 = nicht gemessen 999 = nicht messbar";DM;;T;"ObservationDeEmsMindEtco2Wert: code #etco2-wert, valueQuantity 0..120 mm[Hg] (mind-etco2-bereich). Pflicht-wenn-Bedingung nicht erzwungen. Sonderwerte -1/999 ueber dataAbsentReason, -2 ueber not-asked. Profile nur fuer Feld 1; Feld 2 (AbschlussBefundeBT) folgt."
 VBeatmung;"Beatmung (außer Heimbeatmung)
 01 = Ja
 02 = Nein";DM;x;;"Betrifft nur Baden-Württemberg (BW-markiert); nicht umgesetzt."

@@ -69,3 +69,20 @@ Description: "Lichtreaktion der Pupillen gemäß MIND 7.1."
 * ^status = #active
 * ^experimental = false
 * include codes from system MindLichtreaktionCS
+ValueSet: MindBlutzuckerEinheitVS
+Id: mind-blutzucker-einheit-vs
+Title: "MIND Blutzuckereinheit ValueSet"
+Description: "Maßeinheit des Blutzuckerwerts gemäß MIND 7.1."
+* ^version = "7.1.0"
+* ^status = #active
+* ^experimental = false
+* include codes from system MindBlutzuckerEinheitCS
+
+ValueSet: MindBlutzuckerBefundVS
+Id: mind-blutzucker-befund-vs
+Title: "MIND Blutzucker qualitativer Befund ValueSet"
+Description: "Qualitative Blutzucker-Befunde (low/high) gemäß MIND 7.1."
+* ^version = "7.1.0"
+* ^status = #active
+* ^experimental = false
+* include codes from system MindBlutzuckerBefundCS

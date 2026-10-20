@@ -174,3 +174,26 @@ Description: "Lichtreaktion der Pupillen gemäß MIND 7.1."
 * #03 "Seitendifferenz"
 * #98 "Sonstige"
 * #99 "nicht beurteilbar"
+CodeSystem: MindBlutzuckerEinheitCS
+Id: mind-blutzucker-einheit-cs
+Title: "MIND Blutzuckereinheit"
+Description: "Maßeinheit des dokumentierten Blutzuckerwerts gemäß MIND 7.1 (Feld BlutzuckerEinheit)."
+* ^version = "7.1.0"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = true
+* #01 "mg/dl"
+* #02 "mmol/l"
+
+CodeSystem: MindBlutzuckerBefundCS
+Id: mind-blutzucker-befund-cs
+Title: "MIND Blutzucker qualitativer Befund"
+Description: "Qualitative Blutzucker-Befunde gemäß MIND 7.1, wenn der Messwert nicht numerisch dokumentiert werden kann (997 = low, 998 = high)."
+* ^version = "7.1.0"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = true
+* #low "low"
+* #high "high"

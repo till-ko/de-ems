@@ -29,6 +29,12 @@ Description: "Minimales deutsches MIND-7.1-Dokument mit Patient, Einsatz, Einsat
 * entry[9].resource = MindZeitAlarmExample
 * entry[10].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-zeit-einsatzende-example"
 * entry[10].resource = MindZeitEinsatzendeExample
+* entry[11].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-bewusstsein-example"
+* entry[11].resource = MindBewusstseinExample
+* entry[12].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-pupillenweite-example"
+* entry[12].resource = MindPupillenweiteExample
+* entry[13].fullUrl = "https://till-ko.github.io/de-ems/Observation/mind-lichtreaktion-example"
+* entry[13].resource = MindLichtreaktionExample
 
 Instance: MindRdPatientExample
 InstanceOf: PatientDeEmsMindR4
@@ -75,7 +81,7 @@ Description: "Einsatz-Encounter mit allen MIND-Identifiern (Standortkennung, Pro
 Instance: MindRdCompositionExample
 InstanceOf: CompositionDeEmsMindR4
 Usage: #example
-Description: "MIND-7.1-RD-Dokumentkopf mit den vier aktuell umgesetzten Kapitel-Sections (Strukturdaten, Rettungstechnische Daten, Zeiten des Einsatzablaufs, Patientendaten); jede Section trägt Code, Überschrift und Narrative analog CH-EMS."
+Description: "MIND-7.1-RD-Dokumentkopf mit den fünf aktuell umgesetzten Kapitel-Sections (Strukturdaten, Rettungstechnische Daten, Zeiten des Einsatzablaufs, Patientendaten, Erste Messwerte und Befunde); jede Section trägt Code, Überschrift und Narrative analog CH-EMS."
 * id = "mind-composition-example"
 * subject = Reference(MindRdPatientExample)
 * encounter = Reference(MindRdEncounterExample)
@@ -108,6 +114,13 @@ Description: "MIND-7.1-RD-Dokumentkopf mit den vier aktuell umgesetzten Kapitel-
 * section[kapitel-patientendaten].entry[patient] = Reference(MindRdPatientExample)
 * section[kapitel-patientendaten].entry[observation][0] = Reference(MindAlterExample)
 * section[kapitel-patientendaten].entry[observation][1] = Reference(MindAltersvaliditaetExample)
+* section[kapitel-erste-messwerte-und-befunde].code = DeEmsKapitelCS#erste-messwerte-und-befunde
+* section[kapitel-erste-messwerte-und-befunde].title = "Erste Messwerte und Befunde"
+* section[kapitel-erste-messwerte-und-befunde].text.status = #additional
+* section[kapitel-erste-messwerte-und-befunde].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Erste Messung um 09:30 Uhr: Bewusstseinslage reagiert auf Ansprache, Pupillen beidseits mittelweit, Lichtreaktion beidseits prompt.</p></div>"
+* section[kapitel-erste-messwerte-und-befunde].entry[0] = Reference(MindBewusstseinExample)
+* section[kapitel-erste-messwerte-und-befunde].entry[1] = Reference(MindPupillenweiteExample)
+* section[kapitel-erste-messwerte-und-befunde].entry[2] = Reference(MindLichtreaktionExample)
 
 Instance: MindRdPractitionerExample
 InstanceOf: Practitioner
@@ -206,3 +219,39 @@ Description: "ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.perio
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T10:00:00+02:00"
 * valueDateTime = "2026-09-16T10:00:00+02:00"
+
+Instance: MindBewusstseinExample
+InstanceOf: ObservationDeEmsMindBewusstsein
+Usage: #example
+Description: "Bewusstsein1: Bewusstseinslage 'reagiert auf Ansprache' bei der ersten Messung."
+* id = "mind-bewusstsein-example"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
+* code.coding.code = #bewusstsein
+* subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
+* effectiveDateTime = "2026-09-16T09:30:00+02:00"
+* valueCodeableConcept = MindBewusstseinslageCS#03
+
+Instance: MindPupillenweiteExample
+InstanceOf: ObservationDeEmsMindPupillenweite
+Usage: #example
+Description: "Pupillenweite1: 'beidseits mittelweit' bei der ersten Messung."
+* id = "mind-pupillenweite-example"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
+* code.coding.code = #pupillenweite
+* subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
+* effectiveDateTime = "2026-09-16T09:30:00+02:00"
+* valueCodeableConcept = MindPupillenweiteCS#02
+
+Instance: MindLichtreaktionExample
+InstanceOf: ObservationDeEmsMindLichtreaktion
+Usage: #example
+Description: "Lichtreaktion1: 'beidseits prompt' bei der ersten Messung."
+* id = "mind-lichtreaktion-example"
+* code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
+* code.coding.code = #lichtreaktion
+* subject = Reference(MindRdPatientExample)
+* encounter = Reference(MindRdEncounterExample)
+* effectiveDateTime = "2026-09-16T09:30:00+02:00"
+* valueCodeableConcept = MindLichtreaktionCS#00

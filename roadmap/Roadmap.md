@@ -139,7 +139,17 @@ Ausführliche Begründungen stehen feldweise in der jeweiligen
   numerisch gültig. Auch der MIND-**Datums-Sonderwert
   `1902-02-02T22:00:00.000+01:00`** (Zeitfelder des Kapitels
   *ZeitenEinsatzablauf*) wird so abgebildet — nicht als echter Zeitpunkt
-  übertragen.
+  übertragen. Die Sonderwerte der numerischen Vitalwerte folgen demselben
+  Muster: **−1/−1.0 (nicht gemessen)** → `dataAbsentReason #not-performed`,
+  **−2 (nicht erhoben)** → `#not-asked`, **99/99.9/999 (nicht
+  beurteil-/messbar)** → `#unknown`. Zwei Ausprägungen werden dagegen als
+  Wert abgebildet: Blutzucker **997 = `low` / 998 = `high`** als
+  `valueCodeableConcept` aus `MindBlutzuckerBefundVS` (mit
+  `component[einheit]` aus `MindBlutzuckerEinheitVS` bei numerischem Wert)
+  und `Rekapillarisierungszeit 11` („größer 10 Sekunden") als `valueRange`
+  mit `low = 10 s` ohne Obergrenze. Die Wertebereiche (GCS 3–15,
+  NRS 0–10, Blutdruck/Herz-/Atemfrequenz/SpO2/EtCO2/Temperatur) sind als
+  Feld-Invarianten der jeweiligen Profile erzwungen.
 - **„Pflicht wenn"-Bedingungen** (z. B. *ZeitenEinsatzablauf*: Pflicht bei
   bestimmten Kombinationen aus Protokolltyp/RDTransport/EinsatzArt) sind
   cross-Resource-Plausibilitäten und werden in FHIR **nicht** erzwungen —
@@ -187,5 +197,5 @@ Ausführliche Begründungen stehen feldweise in der jeweiligen
 - Personendaten (Name, Geburtsdatum, Adresse) sind aus Datenschutzgründen
   in `PatientDeEmsMindR4` auf `0..0` gesetzt.
 - Noch offen u. a.: `NummerZK`
-  (Vorschlag: Organization/`Encounter.hospitalization.destination`),
-  Reanimations-Zeitfelder und alle numerischen Vitalwerte.
+  (Vorschlag: Organization/`Encounter.hospitalization.destination`) und
+  Reanimations-Zeitfelder.
