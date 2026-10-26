@@ -840,7 +840,7 @@ Bei Diagnose Herz-Kreislauf-Stillstand oder SIDS bzw. bei Dokumentation ""Patien
 Wenn KeinTranspMitPat GLEICH  02, dann ist Reanimationssituation GLEICH  (00 ODER 01 ODER  02 ODER  03
 ODER 04) unzulässig.
 Wenn RDTransport GLEICH  02, dann ist nur Reanimationssituation GLEICH  00 zulässig.
-Wenn Diagnose ENTHÄLT ( 1220 ODER  1813) ODER KeinTranspMitPat GLEICH  03 dann ist Reanimationssituation GLEICH  00 unzulässig.";-2;T;Terminologie: mind-reanimationssituation-cs / MindReanimationssituationVS. Noch kein Profil.
+Wenn Diagnose ENTHÄLT ( 1220 ODER  1813) ODER KeinTranspMitPat GLEICH  03 dann ist Reanimationssituation GLEICH  00 unzulässig.";-2;x;ObservationDeEmsMindReanimationssituation (#reanimationssituation), valueCodeableConcept
 Kapitel: ReanimationDetails;Kapitel: ReanimationDetails;;;;;;;;"Pflicht für NA-Protokolle, wenn dokumentierendes Rettungsmittel Reanimation durchgeführt hat.
 Pflicht für RD-Protokolle, wenn dokumentierendes Rettungsmittel Reanimation durchgeführt hat und eine Notfallrettung ohne erkennbare NA-Beteiligung bzw. -Nachforderung vorliegt.";"Pflicht wenn:
 Protokolltyp GLEICH  NA
