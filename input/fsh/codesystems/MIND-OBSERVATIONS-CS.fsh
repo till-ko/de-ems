@@ -86,6 +86,7 @@ Description: "Beobachtungstypen (Observation.code) und zugehörige Komponenten-C
 * #reanimation-zdefi1 "Zeitpunkt erste Defibrillation"
 * #reanimation-zros1 "Zeitpunkt erster ROSC"
 * #reanimation-ztod "Zeitpunkt Tod"
+* #reanimation-khauf "Krankenhausaufnahmezustand"
 * #sport "SPORT (Spontankreislauf)"
 * #zeofr "ZEOFR (Zeitpunkt Erstversorgung Fremd)"
 * #zhdm "ZHDM (Zeitpunkt Herz-Druck-Massage)"

@@ -66,3 +66,13 @@ Description: "ROSC: Return of Spontaneous Circulation erreicht?"
 * code.coding.code = #reanimation-rosc (exactly)
 * value[x] only boolean
 * valueBoolean 0..1
+
+Profile: ObservationDeEmsMindKHAUF
+Parent: ObservationDeEmsMind
+Id: observation-de-ems-mind-khauf
+Title: "MIND 7.1 Krankenhausaufnahmezustand"
+Description: "KHAUF: Zustand bei Krankenhausaufnahme."
+* code.coding.code = #reanimation-khauf (exactly)
+* value[x] only CodeableConcept
+* valueCodeableConcept 0..1
+* valueCodeableConcept from MindKrankenhausaufnahmeZustandVS (required)
