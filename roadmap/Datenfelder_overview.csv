@@ -832,7 +832,7 @@ Protokolltyp GLEICH  RD
 UND  (Diagnose ENTHƒLT ( 1220 ODER  1813)
 ODER KeinTranspMitPat GLEICH  [02 ODER  03])
 UND EinsatzArt GLEICH  (02 ODER 04 ODER  06 ODER  08)";;;
-Reanimation;Reanimationssituation;Ja;Reanimation;Reanimation;M;E;"Wurde eine Reanimation durchgef¸hrt?
+Reanimation;Reanimationssituation;Ja;Reanimation;Reanimation;M;E;"Wurde eine Reanimation durchgef¸hrt?;;;;;x;ObservationDeEmsMindReanimationssituation (#reanimationssituation), valueCodeableConcept
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Eine begonnene Reanimation ist mit 01 oder 02 oder 03 zu dokumentieren.
 Bei prim‰rer Todesfeststellung (ohne CPR) ist nur ""Reanimation nicht durchgef¸hrt..."" zul‰ssig.
 Ohne Patientenkontakt ist nur ""keine Reanimationssituation (kein Tod/kein Kreislaufstillstand)"" zul‰ssig.
@@ -850,30 +850,30 @@ Protokolltyp GLEICH RD
 UND Reanimationssituation GLEICH  (01 ODER  02 ODER  03)
 UND EinsatzArt GLEICH  (02 ODER  04 ODER  06 ODER  08)
 UND NotarztNachgefordert GLEICH  02";;;
-ReanimationDetails;Reanimationstechnik;Ja;ReanimationDetails;Massnahmen;DM;M;Werteliste siehe Tabellenblatt Codes;NA + RD;;"Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.
-Kombinationen mit -1 sind unzul‰ssig.";-2;T;Terminologie: mind-reanimationstechnik-cs / MindReanimationstechnikVS. Noch kein Profil.
-ReanimationDetails;URKRSTST;Ja;ReanimationDetails;Massnahmen;DM;E;"Vermutete Ursache des Kreislaufstillstandes
-Werteliste siehe Tabellenblatt Codes";NA + RD;Die internationalen Vorgaben des Utstein-Style Protokolls unterscheiden die Ursachen eines Kreislaufstillstandes in mehreren Sektionen. Gefragt ist die aus Sicht des Notarztes vermutliche Ursache.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;T;Terminologie: mind-kreislaufstillstandursache-cs / MindKreislaufstillstandursacheVS. Noch kein Profil.
+ReanimationDetails;Reanimationstechnik;Ja;ReanimationDetails;Massnahmen;DM;M;Werteliste siehe Tabellenblatt Codes;NA + RD;;"Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.;;x;ObservationDeEmsMindReanimationstechnik (#reanimationstechnik), valueCodeableConcept
+Kombinationen mit -1 sind unzul‰ssig.";-2;x;ObservationDeEmsMindReanimationstechnik (#reanimationstechnik), valueCodeableConcept
+ReanimationDetails;URKRSTST;Ja;ReanimationDetails;Massnahmen;DM;E;"Vermutete Ursache des Kreislaufstillstandes;;;;;x;ObservationDeEmsMindURKRSTST (#reanimation-urkrstst), valueCodeableConcept
+Werteliste siehe Tabellenblatt Codes";NA + RD;Die internationalen Vorgaben des Utstein-Style Protokolls unterscheiden die Ursachen eines Kreislaufstillstandes in mehreren Sektionen. Gefragt ist die aus Sicht des Notarztes vermutliche Ursache.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;x;ObservationDeEmsMindURKRSTST (#reanimation-urkrstst), valueCodeableConcept
 ReanimationDetails;SPORT;Nein;ReanimationDetails;Massnahmen;DM;E;"Zusammenhang mit sportlicher Aktivit‰t:
 Werteliste siehe Tabellenblatt Codes";NA + RD;Besteht ein Zusammenhang des Kreislaufstillstandes mit sportlicher Aktivit‰t?;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;x;ObservationDeEmsMindSPORT (#sport), valueBoolean
 ReanimationDetails;ZEOFR;Nein;ReanimationDetails;Notfallgeschehen;DM;E;Zeitstempel Eintreffen First Responder Angabe von Datum und Uhrzeit;NA + RD;"Eintreffzeit eines First Responders als ""Vorausversorger"" neben dem regul‰ren Rettungsdienst am Einsatzort.";"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer ""1902-02-02T22:00:00.000+01:00"" unzul‰ssig.";"1902-02-
 02T22:00
 :00.000+
 01:00";;
-ReanimationDetails;ZCKB;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Kollaps beobachtet
-Werteliste siehe Tabellenblatt Codes";NA + RD;Wer hat den Kollaps beobachtet? Ersthelfer entspricht dem nichtmedizinischen Personal bzw. Laien.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;T;Terminologie: mind-kollaps-beobachtet-durch-cs / MindKollapsBeobachtetDurchVS. Noch kein Profil.
-ReanimationDetails;ZCHDM;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Herzdruckmassage begonnen
+ReanimationDetails;ZCKB;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Kollaps beobachtet;;;;;x;ObservationDeEmsMindZCKB (#reanimation-zckb), valueCodeableConcept
+Werteliste siehe Tabellenblatt Codes";NA + RD;Wer hat den Kollaps beobachtet? Ersthelfer entspricht dem nichtmedizinischen Personal bzw. Laien.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.;-2;x;ObservationDeEmsMindZCKB (#reanimation-zckb), valueCodeableConcept
+ReanimationDetails;ZCHDM;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Herzdruckmassage begonnen;;;;;x;ObservationDeEmsMindZCHDM (#reanimation-zchdm), valueCodeableConcept
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Wer hat mit der Herzdruckmassage begonnen bzw. den Beginn angeordnet? (Es ist die jeweils am hˆchsten
 qualifizierte anwesende Person zu dokumentieren)";"Wenn Protokolltyp GLEICH  NA
 UND Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER  08), dann ist 06 unzul‰ssig.
 Wenn Protokolltyp GLEICH  RD
-UND Reanimationssituation GLEICH  (05 ODER  06 ODER 07 ODER  08), dann sind 05 ODER  06 unzul‰ssig. Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;T;Terminologie: mind-herzdruckmassage-durch-cs / MindHerzdruckmassageDurchVS. Noch kein Profil.
-ReanimationDetails;ZCDEFI;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Defibrillation durchgef¸hrt
+UND Reanimationssituation GLEICH  (05 ODER  06 ODER 07 ODER  08), dann sind 05 ODER  06 unzul‰ssig. Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;x;ObservationDeEmsMindZCHDM (#reanimation-zchdm), valueCodeableConcept
+ReanimationDetails;ZCDEFI;Ja;ReanimationDetails;Massnahmen;DM;E;"Person Defibrillation durchgef¸hrt;;;;;x;ObservationDeEmsMindZCDEFI (#reanimation-zcdefi), valueCodeableConcept
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Wer hat die erste Defibrillation durchgef¸hrt bzw. angeordnet? (Es ist die jeweils am hˆchsten qualifizierte anwesende
 Person zu kodieren.)";"Wenn Protokolltyp GLEICH  NA
 UND Reanimationssituation GLEICH (05 ODER 06 ODER 07 ODER  08), dann ist 06 unzul‰ssig.
 Wenn Protokolltyp GLEICH  RD
-UND Reanimationssituation GLEICH  (05 ODER  06 ODER 07 ODER  08), dann sind 05 ODER  06 unzul‰ssig. Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;T;Terminologie: mind-erste-defibrillation-durch-cs / MindErsteDefibrillationDurchVS. Noch kein Profil.
+UND Reanimationssituation GLEICH  (05 ODER  06 ODER 07 ODER  08), dann sind 05 ODER  06 unzul‰ssig. Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;x;ObservationDeEmsMindZCDEFI (#reanimation-zcdefi), valueCodeableConcept
 ReanimationDetails;ZHDM;Ja;ReanimationDetails;Massnahmen;DM;E;"Zeitpunkt Beginn Herzdruckmassage
 Angabe von Datum und Uhrzeit";NA + RD;Erster Zeitpunkt, zu dem mit der Herzdruckmassage begonnen wurde, ggf. sch‰tzen.;"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer ""1902-02-02T22:00:00.000+01:00"" unzul‰ssig.";"1902-02-
 02T22:00
@@ -899,13 +899,13 @@ Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dan
 02T22:00
 :00.000+
 01:00";;
-ReanimationDetails;ROSC;Ja;ReanimationDetails;Massnahmen;DM;E;"Erreichen eines Spontankreislaufs
+ReanimationDetails;ROSC;Ja;ReanimationDetails;Massnahmen;DM;E;"Erreichen eines Spontankreislaufs;;;;;x;ObservationDeEmsMindROSC (#reanimation-rosc), valueBoolean
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Konnte durch die Reanimationsmaﬂnahmen jemals ein spontaner Kreislauf > 20 Sekunden etabliert werden?
 Wenn laut Feld KHAUF ""Krankenhausaufnahme mit ROSC"", dann in Feld ROSC nur "" jemals ROSC"" zul‰ssig.";"Wenn KHAUF GLEICH  02, dann nur ROSC GLEICH  02 zul‰ssig.
-Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;T;Terminologie: mind-rosc-cs / MindRoscVS. Noch kein Profil.
-ReanimationDetails;KHAUF;Ja;ReanimationDetails;Reanimation;DM;E;"Patientenzustand bei Krankenhausaufnahme
+Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer -2 unzul‰ssig.";-2;x;ObservationDeEmsMindROSC (#reanimation-rosc), valueBoolean
+ReanimationDetails;KHAUF;Ja;ReanimationDetails;Reanimation;DM;E;"Patientenzustand bei Krankenhausaufnahme;;;;;x;ObservationDeEmsMindKHAUF (#krankenhausaufnahme-zustand), valueCodeableConcept
 Werteliste siehe Tabellenblatt Codes";NA + RD;Zustand bei ‹bergabe an die Zielklinik.;"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte auﬂer -2 unzul‰ssig.
-Wenn Reanimationssituation GLEICH   (05 ODER 06 ODER  07 ODER  08), dann sind alle Werte auﬂer 01 unzul‰ssig.";-2;T;Terminologie: mind-krankenhausaufnahme-zustand-cs / MindKrankenhausaufnahmeZustandVS. Noch kein Profil.
+Wenn Reanimationssituation GLEICH   (05 ODER 06 ODER  07 ODER  08), dann sind alle Werte auﬂer 01 unzul‰ssig.";-2;x;ObservationDeEmsMindKHAUF (#krankenhausaufnahme-zustand), valueCodeableConcept
 ReanimationDetails;ZTOD;Nein;ReanimationDetails;Reanimation;DM;E;"Zeitpunkt TOD
 Angabe von Datum und Uhrzeit";NA + RD;Beendigungszeitpunkt der Reanimationsmaﬂnahmen.;"Wenn Reanimationssituation GLEICH  (00 ODER  05 ODER  06 ODER  07 ODER  08), dann sind alle Werte auﬂer ""1902-02-02T00:00:00"" unzul‰ssig.";"1902-02-
 02T22:00

@@ -12,7 +12,7 @@ _Legende: `x` = vollständig umgesetzt · `T` = Terminologie vorhanden (CS/VS de
 
 ███░░░░░░░░░░░░░░░░░░░ `15%` · **Codes:** 27 von 185 vollständig, 113 inkl. Terminologie
 
-███████░░░░░░░░░░░░░░░ `32%` · **Datenfelder:** 83 von 262 vollständig, 122 inkl. Terminologie
+████████░░░░░░░░░░░░░░ `34%` · **Datenfelder:** 90 von 262 vollständig, 122 inkl. Terminologie
 
 ### Fortschritt je Kapitel (Datenfelder)
 
@@ -35,7 +35,7 @@ _Legende: `x` = vollständig umgesetzt · `T` = Terminologie vorhanden (CS/VS de
 | Zielklinik | 2 | 0 | 3 | 5 | `█████████░░░░░░░░░░░░░ 40%` |
 | EinsatzBesonderheiten | 0 | 2 | 0 | 2 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
 | Reanimation | 0 | 1 | 0 | 1 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
-| ReanimationDetails | 1 | 7 | 17 | 25 | `█░░░░░░░░░░░░░░░░░░░░░ 4%` |
+| ReanimationDetails | 8 | 0 | 17 | 25 | `███████░░░░░░░░░░░░░░░ 32%` |
 
 _Generiert am 2026-10-26 von `roadmap/update_roadmap_readme.py` aus den Roadmap-CSVs._
 <!-- ROADMAP-END -->
