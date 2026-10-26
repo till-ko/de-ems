@@ -174,6 +174,7 @@ Description: "Lichtreaktion der Pupillen gemäß MIND 7.1."
 * #03 "Seitendifferenz"
 * #98 "Sonstige"
 * #99 "nicht beurteilbar"
+
 CodeSystem: MindBlutzuckerEinheitCS
 Id: mind-blutzucker-einheit-cs
 Title: "MIND Blutzuckereinheit"

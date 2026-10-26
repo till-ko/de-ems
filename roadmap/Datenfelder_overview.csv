@@ -396,31 +396,31 @@ Pflicht wenn:
 Protokolltyp GLEICH  NA
 UND EinsatzArt GLEICH ( 05 ODER  07 ODER 09)";;;
 ErstbefundeVerlegung;VBeatmung;Ja;;;M;E;"Beatmung (außer Heimbeatmung)
-Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindVBeatmung (#vbeatmung), valueBoolean
 ErstbefundeVerlegung;VBeatmungDetail;siehe Hinweise/ Plausibilitäten/ Abhängigkeiten;;;M;E;"differenzierte Beatmung
 Werteliste siehe Tabellenblatt Codes";NA;"Differenzierte Beatmung bedeutet FiO2 > 0,4.
 Pflicht, wenn im Kapitel ""Erstbefunde Verlegung"" eine Beatmung dokumentiert wurde.";"Pflicht wenn:
 VBeatmung GLEICH  01
-Wenn VBeatmung GLEICH  01, dann ist -2 unzulässig.";-2;;
+Wenn VBeatmung GLEICH  01, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindVBeatmungDetail (#vbeatmung-detail), valueBoolean
 ErstbefundeVerlegung;KatecholaminPflicht;Ja;;;M;E;"Katecholaminpflichtigkeit
-Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindKatecholaminPflicht (#katecholamin-pflicht), valueBoolean
 ErstbefundeVerlegung;KatecholaminTherapie;"siehe Hinweise/
 Plausibilitäten/ Abhängigkeiten";;;M;E;"differenzierte Katecholamin-Therapie
 Werteliste siehe Tabellenblatt Codes";NA;"Differenzierte Katecholamin-Therapie bedeutet mehr als ein Katecholamin.
 Pflicht, wenn im Kapitel ""Erstbefunde Verlegung"" eine Katecholaminpflichtigkeit dokumentiert wurde.";"Pflicht wenn:
 KatecholaminPflicht GLEICH  01
-Wenn KatecholaminPflicht GLEICH  01, dann ist -2 unzulässig.";-2;;
+Wenn KatecholaminPflicht GLEICH  01, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindKatecholaminTherapie (#katecholamin-therapie), valueBoolean
 ErstbefundeVerlegung;FortlaufendSedierung;Ja;;;M;E;"fortlaufende Sedierung/Narkose
-Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindFortlaufendSedierung (#fortlaufend-sedierung), valueBoolean
 ErstbefundeVerlegung;VigilanzMinderung;Ja;;;M;E;"deutliche Vigilanzminderung mit Einschränkung von Schutzreflexen
-Werteliste siehe Tabellenblatt Codes";NA;Deutliche Vigilanzminderung mit Einschränkung von Schutzreflexen gilt bei GCS < 9.;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA;Deutliche Vigilanzminderung mit Einschränkung von Schutzreflexen gilt bei GCS < 9.;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindFortlaufendSedierung (#fortlaufend-sedierung), valueBoolean
 ErstbefundeVerlegung;InvasivBlutdruck;Ja;;;M;E;"invasive Blutdruckmessung
-Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindVigilanzMinderung (#vigilanz-minderung), valueBoolean
 ErstbefundeVerlegung;SpezDevices;Ja;;;M;M;"spezielle Devices
 Werteliste siehe Tabellenblatt Codes";NA;"Siehe Exporthinweise zu Option ""Sonstige"".";"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.
 Kombinationen mit -1 sind unzulässig.";-2;T;Terminologie: mind-spezielle-devices-cs / MindSpezielleDevicesVS. Noch kein Profil (BW-bezogen).
 ErstbefundeVerlegung;AnzahlPerfusor;Ja;;;M;E;"Anzahl der Perfusoren
-Einstellige numerische Angabe (0 bis 9)";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;;
+Einstellige numerische Angabe (0 bis 9)";NA;;"Wenn Kapitel ""ErstbefundeVerlegung"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindInvasivBlutdruck (#invasiv-blutdruck), valueBoolean
 Kapitel: EinschaetzungVerlegungsarzt;Kapitel: EinschaetzungVerlegungsarzt;;;;;;;;"Pflicht für NA-Protokolle, wenn laut Feld EinsatzArt eine Verlegung mit physisch anwesendem NA oder ein
 Intensivtransport stattfindet.
 (Für RD-Protokolle ist dieses Kapitel nie Pflicht.)";"Die Abhängigkeiten des gesamten Kapitels betreffen nur das Bundesland Baden-Württemberg
@@ -428,7 +428,7 @@ Pflicht wenn:
 Protokolltyp GLEICH  NA
 UND EinsatzArt GLEICH ( 05 ODER  07 ODER 09)";;;
 EinschaetzungVerlegungsarzt;IndikationArztbegleitung;Ja;;;M;E;"Indikation Arztbegleitung gegeben
-Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindIndikationArztbegleitung (#indikation-arztbegleitung), valueBoolean
 EinschaetzungVerlegungsarzt;ZDringlichkeit;Ja;;;M;E;"Einschätzung der zeitlichen Dringlichkeit durch Transportarzt
 Werteliste siehe Tabellenblatt Codes";NA;;"Wenn Kapitel ""EinschaetzungVerlegungsarzt"" Pflicht, dann ist -2 unzulässig.";-2;T;Terminologie: mind-zeitliche-dringlichkeit-cs / MindZeitlicheDringlichkeitVS. Noch kein Profil.
 EinschaetzungVerlegungsarzt;IndikationIT;Ja;;;M;M;"Indikation Intensivtransport
@@ -490,7 +490,7 @@ VerletzungenDetails;Unfallhergang;Ja;VerletzungenDetails;Verletzungen;DM;M;"Unfa
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""VerletzungenDetails"" Pflicht, dann ist -2 unzulässig.
 Kombinationen mit 99 sind unzulässig.";-2;T;Terminologie: mind-unfallhergang-cs / MindUnfallhergangVS. Noch kein Profil.
 VerletzungenDetails;HelmPat;Nein;VerletzungenDetails;Verletzungen;DM;E;"Helm Patient
-Werteliste siehe Tabellenblatt Codes";NA + RD;Hat der/die Verunfallte zum Zeitpunkt des Unfalls einen Helm getragen?;;-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Hat der/die Verunfallte zum Zeitpunkt des Unfalls einen Helm getragen?;;-2;x;ObservationDeEmsMindHelmPat (#helm-pat), valueBoolean
 VerletzungenDetails;Penetrierend;Nein;;Verletzungen;D;M;Werteliste siehe Tabellenblatt Codes_DIVI;;Werteliste, ob und ggf. wo penetrierende Verletzungen vorliegen;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
 VerletzungenDetails;Instabil;Nein;;Verletzungen;D;M;Werteliste siehe Tabellenblatt Codes_DIVI;;Werteliste, ob und ggf. wo instabile Verletzungen vorliegen;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
 VerletzungenDetails;SensomotorDefizit;Nein;;Verletzungen;D;M;Werteliste siehe Tabellenblatt Codes_DIVI;;Werteliste, ob und ggf. wo sensomotorische Defizite vorliegen;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
@@ -566,7 +566,7 @@ Plausibilitäten/ Abhängigkeiten";RDMassnahmen;;M;M;Werteliste siehe Tabellenblat
 Algorithmen, Handlungsempfehlungen etc. nach örtlicher Vorgabe)";"Pflicht wenn:
 Protokolltyp GLEICH  RD
 UND DurchfHeilkundlMassn GLEICH  (01 ODER  02)
-Wenn Behandlungspfad Pflicht, dann ist -2 unzulässig.";-2;;
+Wenn Behandlungspfad Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindBehandlungspfad (#behandlungspfad), valueCodeableConcept
 RDMassnahmen;Airway2;Nein;;Massnahmen;D;M;Werteliste siehe Tabellenblatt Codes_DIVI;;Werteliste zu erweiterten Airway-Massnahmen (in Ergänzung zu Feld Airway);Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
 RDMassnahmen;EndotrachealGroesse;Nein;;Massnahmen;D;E;Zahl, in mm, Format nn.n;;"Größe des Endotrachealtubus, falls dieser zur Anwendung kam (bei mehreren Intubationsversuchen wird der Tubus,
 der zur Beatmung endotracheal verblieb, genommen)";Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
@@ -653,14 +653,14 @@ UND EinsatzArt NICHT  10";;;
 AbschlussBefundeBT;Bewusstsein2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Bewusstseinslage
 Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;T;Terminologie: mind-bewusstseinslage-cs / MindBewusstseinslageVS. Noch kein Profil.
 AbschlussBefundeBT;GlasgowComaScale2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Glasgow Coma Scale
-Werteliste siehe Tabellenblatt Codes";NA + RD;Bei Seitendifferenz bessere Seite.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bei Seitendifferenz bessere Seite.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindGlasgowComaScale2 (#glasgow-coma-scale-2), valueInteger
 AbschlussBefundeBT;NeurologischeAuffaelligkeiten2;Ja;AbschlussBefundeBT;Uebergabe;DM;M;"Neurologische Auffälligkeiten
 Werteliste siehe Tabellenblatt";NA + RD;"• sNIHSS-EMS Items und BEFAST werden abgebildet.
 • die Dokumentation von Schweregraden und der Körperseite ist im MIND nicht vorgesehen";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.
 Kombinationen mit 00, -1 oder 99 sind unzulässig.";-2;T;Terminologie: mind-neurologische-auffaelligkeit-cs (Abschlussbefunde). Noch kein Profil.
 AbschlussBefundeBT;SystolischerBlutdruck2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Systolischer Blutdruck
 Messwert in mmHg
-Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet RR-Messung durchgeführt, wenn Angabe im Wertebereich oder 999.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet RR-Messung durchgeführt, wenn Angabe im Wertebereich oder 999.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindSystolischerBlutdruck2 (#systolischer-blutdruck-2), Quantity mmHg
 AbschlussBefundeBT;EKGBefund2;Ja;AbschlussBefundeBT;Uebergabe;DM;M;"EKG-Befund
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl möglich (hier sollen
 keine Ausprägungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren und nicht mehr vorhanden sind!).
@@ -670,14 +670,14 @@ AbschlussBefundeBT;Herzfrequenz2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Herzfrequ
 Messwert in /min
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Vom Monitor abgelesene Herzfrequenz pro Minute (ggf. palpatorisch oder pulsoximetrisch bestimmte Pulsfrequenz,
 wenn kein EKG abgeleitet wurde).";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.
-Wenn EKGBefund2 GLEICH  09, dann sind Werte GRÖSSER  0 unzulässig.";-2;;
+Wenn EKGBefund2 GLEICH  09, dann sind Werte GRÖSSER  0 unzulässig.";-2;x;ObservationDeEmsMindHerzfrequenz2 (#herzfrequenz-2), Quantity /min
 AbschlussBefundeBT;Atemfrequenz2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Atemfrequenz Messwert in /min
-Werteliste siehe Tabellenblatt Codes";NA + RD;Ausgezählte oder vom Monitor abgelesene Atemfrequenz pro Minute.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.  Wenn Atmung2 GLEICH  08, dann sind Werte GRÖSSER  0 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Ausgezählte oder vom Monitor abgelesene Atemfrequenz pro Minute.;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.  Wenn Atmung2 GLEICH  08, dann sind Werte GRÖSSER  0 unzulässig.";-2;x;ObservationDeEmsMindAtemfrequenz2 (#atemfrequenz-2), Quantity /min
 AbschlussBefundeBT;Sauerstoffsaettigung2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Sauerstoffsättigung Messwert in %
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Dieser Wert wird ggf. unter Sauerstofftherapie gemessen
-Bedeutet Pulsoxymetrie durchgeführt, wenn Angabe im Wertebereich oder 999.";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;;
+Bedeutet Pulsoxymetrie durchgeführt, wenn Angabe im Wertebereich oder 999.";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindSauerstoffsaettigung2 (#sauerstoffsaettigung-2), Quantity %
 AbschlussBefundeBT;Schmerzempfinden2;Ja;AbschlussBefundeBT;Uebergabe;DM;E;"Schmerzempfinden nach Numerischer Rating Scala (NRS)
-Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;;"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindSchmerzempfinden2 (#schmerzempfinden-2), valueInteger NRS 0-10
 AbschlussBefundeBT;Atmung2;Ja;AbschlussBefundeBT;Uebergabe;DM;M;"Klinische Befunde Atmung
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Sollten bei Erhebung der Abschlussbefunde mehrere Befunde zutreffen, ist eine Mehrfachauswahl möglich (hier sollen keine Ausprägungen dokumentiert werden, die vorher im Verlauf des rettungsdienstlichen Einsatzes zutreffend waren
 und nicht mehr vorhanden sind!).";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.
@@ -714,7 +714,7 @@ ODER  07 ODER 08 ODER  09 ODER  98)
 UND AerztlBegleit ENTHÄLT  (00 ODER 03)
 UND AerztlBegleit ENTH ÄLT NICHT  (01 ODER  02 ODER  04
 ODER 05 ODER  98)
-UND  EinsatzArt NICHT  10";-2;;
+UND  EinsatzArt NICHT  10";-2;x;ObservationDeEmsMindSoSiTransport (#sosi-transport), valueBoolean
 AbschlussBefundeBT;OrtPatUeberg;Ja;AbschlussBefundeBT;Uebergabe;DM;E;Werteliste siehe Tabellenblatt Codes;NA + RD;"Der Ort, an dem der Patient primär übergeben wird. Sollten mehrere Auswahlmöglichkeiten zutreffen, ist die für die Weiterversorgung des jeweiligen Patienten spezifischste anzugeben. Sofern der dokumentierende NA den Transport nicht begleitet, ist i.d.R.
 15 = Einsatzstelle zutreffend.";"Wenn Kapitel ""AbschlussbefundeBT"" Pflicht, dann ist -2 unzulässig.";-2;T;Terminologie: mind-ort-patientenuebergabe-cs / MindOrtPatientenuebergabeVS. Noch kein Profil.
 AbschlussBefundeBT;ZeitWerte2;Nein;;Uebergabe;D;E;Angabe von Datum und Uhrzeit;;Zeit zu der begonnen wurde, die die abschließenden Werte des Kapitels AbschließendeMesswerteNeuro erfasst wurden;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
@@ -747,13 +747,13 @@ AbschlussBefundeBTAV;Blutzuckerwert2;siehe Hinweise/ Plausibilitäten/ Abhängigke
 Messwert in mg/dl bzw. mmol/l Werteliste siehe Tabellenblatt Codes";NA + RD;Bedeutet Blutzuckermessung durchgeführt, wenn Angabe im Wertebereich, 997, 998 oder 999;"Triggerfeld für Dokumentationsumfang und Plausibilitätsprüfungen.
 Bei Auswahl 0 bis 900 bzw. 0.0 bis 50.0 wird BlutzuckerEinheit zum Pflichtfeld Pflicht wenn:
 Diagnose ENTHÄLT  1601
-Wenn Blutzuckerwert2 Pflicht, dann ist -2 unzulässig.";-2;;
+Wenn Blutzuckerwert2 Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindBlutzuckerwert2 (#blutzuckerwert-2), Quantity/CodeableConcept
 AbschlussBefundeBTAV;EtCO2Wert2;siehe Hinweise/ Plausibilitäten/ Abhängigkeiten;;;M;E;"etCO2  Wert (zuletzt unter Beatmung in mmHg gemessen):
 Werteliste siehe Tabellenblatt Codes";NA + RD;"Bedeutet Kapnometrie durchgeführt, wenn Angabe im Wertebereich oder 999.
 Pflicht wenn Atemwegssicherung oder maschinelle invasive Beatmung (unterstützt oder kontrolliert) dokumentiert.";"Pflicht wenn:
 Airway GLEICH  (03 ODER 05 ODER  07)
 ODER Atemunterst GLEICH  05
-Wenn EtCO2Wert2 Pflicht, dann ist -2 unzulässig.";-2;;
+Wenn EtCO2Wert2 Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindEtco2Wert2 (#etco2-wert-2), Quantity mmHg
 Kapitel: Zielklinik;Kapitel: Zielklinik;;;;;;;;"Pflicht für NA-Protokolle, wenn es sich bei dem dokumentierenden Rettungsmittel um ein bodengebundenes
 notarztbesetztes Rettungsmittel handelt, ein Patiententransport stattfindet und der Notarzt den Transport begleitet oder der RTW den Transport ohne ärztliche Begleitung durchführt.
 Pflicht für NA-Protokolle, wenn es sich bei dem dokumentierenden Rettungsmittel um ein luftgebundenes notarztbesetztes Rettungsmittel handelt, ein Patiententransport stattfindet und der Notarzt den Transport begleitet oder der RTW den Transport ohne ärztliche Begleitung durchführt.
@@ -781,7 +781,7 @@ Werteliste siehe Tabellenblatt Codes";NA + RD;"• Standortnummer nach §293 Absatz
 108 SGB V zugelassenen Krankenhäuser und ihrer Ambulanzen.
 Falls nur die Standort-ID bekannt ist (= erste 6 Stellen der Standortnummer) ist diese nach der 6. Stelle   mit ""0"" (Null) auf 9 Stellen aufzufüllen: Standortnummer (9-stellig: 77nnnnnnn) oder Standort-ID (6-stellig: 77nnnn000) der Zielklinik.
 • Einmalige Anlage aller regelhaft angefahrenen/angeflogenen Krankenhäuser der Akutversorgung in Stammdatenbank erforderlich.
-• Für Einrichtungen ohne Standortnummer müssen auf örtlicher Ebene alternative Definitionen getroffen werden.";"Wenn Kapitel ""Zielklinik"" Pflicht, dann ist -2 unzulässig.";-2;;
+• Für Einrichtungen ohne Standortnummer müssen auf örtlicher Ebene alternative Definitionen getroffen werden.";"Wenn Kapitel ""Zielklinik"" Pflicht, dann ist -2 unzulässig.";-2;x;ObservationDeEmsMindNummerZK (#nummer-zk), valueString
 Zielklinik;AnmeldungPatient;"siehe Hinweise/
 Plausibilitäten/ Abhängigkeiten";Zielklinik;EinsatztechnischeDaten;DM;E;"Wurde der Patient in der Zielklinik angemeldet?
 Muss bei Patiententransport angegeben werden, auch wenn die Anmeldung durch die Leitstelle erfolgt.
@@ -808,7 +808,7 @@ ODER  07 ODER  08 ODER 09 ODER  98)
 UND  AerztlBegleit ENTHÄLT  (00 ODER  03)
 UND AerztlBegleit ENTHÄLT NICHT  (01 ODER  02 ODER 04
 ODER  05 ODER  98)
-UND  EinsatzArt NICHT  10";-2;;
+UND  EinsatzArt NICHT  10";-2;x;ObservationDeEmsMindAnmeldungPatient (#anmeldung-patient), valueBoolean
 Zielklinik;AnmeldungWo;Nein;;EinsatztechnischeDaten;D;E;Werteliste siehe Tabellenblatt Codes_DIVI;;Werteliste zur speziellen Ressource des Krankenhauses, die eine spezifische Voranmeldung erfordert;Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
 Zielklinik;AnmeldungWoSonstige;Nein;;EinsatztechnischeDaten;D;E;Text, Zeichenlimit 200;;"Speziellen Ressource des Krankenhauses, die eine spezifische Voranmeldung erfordert aber in der zugehörigen Liste
 nicht aufgeführt ist";Für MIND-Datensatz: Feld nicht übermitteln. Abweichungen führen zu Abweisung von Datenlieferungen.;;;
@@ -855,7 +855,7 @@ Kombinationen mit -1 sind unzulässig.";-2;T;Terminologie: mind-reanimationstechn
 ReanimationDetails;URKRSTST;Ja;ReanimationDetails;Massnahmen;DM;E;"Vermutete Ursache des Kreislaufstillstandes
 Werteliste siehe Tabellenblatt Codes";NA + RD;Die internationalen Vorgaben des Utstein-Style Protokolls unterscheiden die Ursachen eines Kreislaufstillstandes in mehreren Sektionen. Gefragt ist die aus Sicht des Notarztes vermutliche Ursache.;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte außer -2 unzulässig.;-2;T;Terminologie: mind-kreislaufstillstandursache-cs / MindKreislaufstillstandursacheVS. Noch kein Profil.
 ReanimationDetails;SPORT;Nein;ReanimationDetails;Massnahmen;DM;E;"Zusammenhang mit sportlicher Aktivität:
-Werteliste siehe Tabellenblatt Codes";NA + RD;Besteht ein Zusammenhang des Kreislaufstillstandes mit sportlicher Aktivität?;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte außer -2 unzulässig.;-2;;
+Werteliste siehe Tabellenblatt Codes";NA + RD;Besteht ein Zusammenhang des Kreislaufstillstandes mit sportlicher Aktivität?;Wenn Reanimationssituation GLEICH  00, dann sind alle Werte außer -2 unzulässig.;-2;x;ObservationDeEmsMindSPORT (#sport), valueBoolean
 ReanimationDetails;ZEOFR;Nein;ReanimationDetails;Notfallgeschehen;DM;E;Zeitstempel Eintreffen First Responder Angabe von Datum und Uhrzeit;NA + RD;"Eintreffzeit eines First Responders als ""Vorausversorger"" neben dem regulären Rettungsdienst am Einsatzort.";"Wenn Reanimationssituation GLEICH  00, dann sind alle Werte außer ""1902-02-02T22:00:00.000+01:00"" unzulässig.";"1902-02-
 02T22:00
 :00.000+

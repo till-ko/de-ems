@@ -12,7 +12,7 @@ _Legende: `x` = vollständig umgesetzt · `T` = Terminologie vorhanden (CS/VS de
 
 ███░░░░░░░░░░░░░░░░░░░ `15%` · **Codes:** 27 von 185 vollständig, 113 inkl. Terminologie
 
-█████░░░░░░░░░░░░░░░░░ `23%` · **Datenfelder:** 60 von 262 vollständig, 99 inkl. Terminologie
+███████░░░░░░░░░░░░░░░ `32%` · **Datenfelder:** 83 von 262 vollständig, 122 inkl. Terminologie
 
 ### Fortschritt je Kapitel (Datenfelder)
 
@@ -23,19 +23,19 @@ _Legende: `x` = vollständig umgesetzt · `T` = Terminologie vorhanden (CS/VS de
 | ZeitenEinsatzablauf | 13 | 0 | 0 | 13 | `██████████████████████ 100%` |
 | Patientendaten | 3 | 0 | 19 | 22 | `███░░░░░░░░░░░░░░░░░░░ 14%` |
 | ErsteMesswerteUndBefunde | 20 | 0 | 21 | 41 | `███████████░░░░░░░░░░░ 49%` |
-| ErstbefundeVerlegung | 0 | 1 | 8 | 9 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
-| EinschaetzungVerlegungsarzt | 0 | 2 | 1 | 3 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
+| ErstbefundeVerlegung | 8 | 1 | 0 | 9 | `████████████████████░░ 89%` |
+| EinschaetzungVerlegungsarzt | 1 | 2 | 0 | 3 | `███████░░░░░░░░░░░░░░░ 33%` |
 | Diagnosen | 0 | 1 | 12 | 13 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
-| VerletzungenDetails | 0 | 4 | 8 | 12 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
+| VerletzungenDetails | 1 | 4 | 7 | 12 | `██░░░░░░░░░░░░░░░░░░░░ 8%` |
 | Scores | 0 | 2 | 0 | 2 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
-| RDMassnahmen | 0 | 8 | 30 | 38 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
+| RDMassnahmen | 1 | 8 | 29 | 38 | `█░░░░░░░░░░░░░░░░░░░░░ 3%` |
 | MedikamentoeseTherapie | 0 | 2 | 4 | 6 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
-| AbschlussBefundeBT | 0 | 9 | 25 | 34 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
-| AbschlussBefundeBTAV | 0 | 0 | 2 | 2 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
-| Zielklinik | 0 | 0 | 5 | 5 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
+| AbschlussBefundeBT | 7 | 9 | 18 | 34 | `█████░░░░░░░░░░░░░░░░░ 21%` |
+| AbschlussBefundeBTAV | 2 | 0 | 0 | 2 | `██████████████████████ 100%` |
+| Zielklinik | 2 | 0 | 3 | 5 | `█████████░░░░░░░░░░░░░ 40%` |
 | EinsatzBesonderheiten | 0 | 2 | 0 | 2 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
 | Reanimation | 0 | 1 | 0 | 1 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
-| ReanimationDetails | 0 | 7 | 18 | 25 | `░░░░░░░░░░░░░░░░░░░░░░ 0%` |
+| ReanimationDetails | 1 | 7 | 17 | 25 | `█░░░░░░░░░░░░░░░░░░░░░ 4%` |
 
-_Generiert am 2026-10-20 von `roadmap/update_roadmap_readme.py` aus den Roadmap-CSVs._
+_Generiert am 2026-10-26 von `roadmap/update_roadmap_readme.py` aus den Roadmap-CSVs._
 <!-- ROADMAP-END -->
