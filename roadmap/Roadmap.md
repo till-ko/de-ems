@@ -20,6 +20,11 @@ Beide Dateien unterscheiden sich in der Spaltenanzahl (Codes: 6 Spalten,
 Datenfelder: 14 Spalten), aber der Umsetzungsstatus steht in beiden in den
 Spalten **„In FHIR umgesetzt?"** und **„Anmerkung zur Umsetzung"**.
 
+Die Dateien sind UTF-8-kodiert, `;`-getrennt und verwenden CRLF-Zeilenenden
+(RFC-4180-konform). Zellen enthalten keine Zeilenumbrüche; ursprüngliche
+Zeilenumbrüche sind durch ` | ` ersetzt, sodass jede Datensatzzeile eindeutig
+einer CSV-Zeile entspricht.
+
 ## 2. Legende für „In FHIR umgesetzt?"
 
 | Markierung | Bedeutung |

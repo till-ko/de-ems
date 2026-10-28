@@ -28,7 +28,7 @@ BAR_WIDTH = 22
 
 
 def read_csv(path):
-    with open(path, encoding="latin-1", newline="") as f:
+    with open(path, encoding="utf-8-sig", newline="") as f:
         rows = list(csv.reader(f, delimiter=";", quotechar='"'))
     return rows[1:]
 
