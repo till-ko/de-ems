@@ -23,6 +23,13 @@ Description: "Constraint-Ableitung des DIVI-Einsatz-Encounters (EncounterDeEmsDi
 * location.location 1..1
 * location.location only Reference(LocationDeEmsMindR4)
 
+// --- Einsatzbeteiligte / Besatzung (MIND-Constraint) ---
+* participant[notarzt].individual only Reference(PractitionerRoleDeEmsMindR4 or PractitionerDeEmsMindR4)
+* participant[assistenz].individual only Reference(PractitionerRoleDeEmsMindR4 or PractitionerDeEmsMindR4)
+* participant[fahrer].individual only Reference(PractitionerRoleDeEmsMindR4 or PractitionerDeEmsMindR4)
+* participant[dokumentierend].individual only Reference(PractitionerRoleDeEmsMindR4 or PractitionerDeEmsMindR4)
+* participant[sonstige].individual only Reference(PractitionerRoleDeEmsMindR4 or PractitionerDeEmsMindR4)
+
 Invariant: mind-primaerschluessel-laenge
 Description: "Der Primärschlüssel darf höchstens 20 Zeichen lang sein (MIND: 'Zeichenlimit 20')."
 Severity: #error

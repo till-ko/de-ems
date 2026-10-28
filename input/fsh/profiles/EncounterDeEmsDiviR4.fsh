@@ -36,6 +36,28 @@ Description: "Vollständiges deutsches Encounter-Profil für das DIVI-Notfallein
 * location.location 1..1
 * location.location only Reference(LocationDeEmsDiviR4)
 
+// --- Einsatzbeteiligte / Besatzung (DIVI-Superset) ---
+* participant ^slicing.discriminator.type = #pattern
+* participant ^slicing.discriminator.path = "type"
+* participant ^slicing.rules = #open
+* participant contains
+    notarzt 0..1 and
+    assistenz 0..* and
+    fahrer 0..1 and
+    dokumentierend 0..1 and
+    sonstige 0..*
+* participant[notarzt].individual 0..1
+* participant[notarzt].individual only Reference(PractitionerRoleDeEmsDiviR4 or PractitionerDeEmsDiviR4)
+* participant[assistenz].individual 0..1
+* participant[assistenz].individual only Reference(PractitionerRoleDeEmsDiviR4 or PractitionerDeEmsDiviR4)
+* participant[fahrer].individual 0..1
+* participant[fahrer].individual only Reference(PractitionerRoleDeEmsDiviR4 or PractitionerDeEmsDiviR4)
+* participant[dokumentierend].individual 0..1
+* participant[dokumentierend].individual only Reference(PractitionerRoleDeEmsDiviR4 or PractitionerDeEmsDiviR4)
+* participant[sonstige].individual 0..1
+* participant[sonstige].individual only Reference(PractitionerRoleDeEmsDiviR4 or PractitionerDeEmsDiviR4)
+
+
 Invariant: mind-wert-oder-undokumentiert
 Description: "Entweder der Wert ist angegeben (MIND-Feldwert) oder - für MIND-Sonderwerte, die nicht als echter Wert übertragen werden sollen (z. B. -1 = nicht dokumentiert, -2 = nicht anwendbar, 99999999 = nicht bekannt) - die data-absent-reason-Extension (CH-EMS-Konzept)."
 Severity: #error

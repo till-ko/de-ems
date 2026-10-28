@@ -16,6 +16,9 @@ Description: "Basisprofil für alle MIND-7.1-Feld-Beobachtungen dieses IG. Erbt 
 * encounter only Reference(EncounterDeEmsMindR4)
 * effectiveDateTime 0..1
 
+// --- Performer (MIND, pseudonymisiert) ---
+* performer only Reference(PractitionerRoleDeEmsMindR4 or PractitionerDeEmsMindR4)
+
 Invariant: mind-observation-xor-undokumentiert
 Description: "Es muss entweder value[x] (dokumentiert) oder dataAbsentReason (nicht dokumentiert nach CH-EMS-Konzept) angegeben sein."
 Severity: #error
