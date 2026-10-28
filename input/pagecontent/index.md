@@ -31,3 +31,19 @@ Der aktuelle Stand der MIND 7.1-Abbildung wird über die [Roadmap](roadmap.html)
 - **MIND-Konformität** – Abbildung des MIND 7.1-Standard-Subsets
 - **DIVI-Kompatibilität** – Gemeinsame Basis für erweiterte Anwendungsfälle
 - **Klare Trennung** – Explizite Einschränkung via Profilableitung statt separater Modelle
+
+#### IP Statements
+
+{% include ip-statements.xhtml %}
+
+#### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+#### Dependency Table
+
+{% include dependency-table.xhtml %}
+
+#### Globals Table
+
+{% include globals-table.xhtml %}

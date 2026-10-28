@@ -11,7 +11,7 @@ description: Implementation Guide for the DIVI Emergency Medical Service Report 
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-language: de-DE
+# language: de-DE
 jurisdiction: urn:iso:std:iso:3166#DE "Germany"
 copyrightYear: 2026+
 releaseLabel: ci-build
@@ -35,7 +35,7 @@ dependencies:
   # hl7.fhir.r4.core: 4.0.1 already base dependancy of de.basisprofil.rf - therefore no duplicate implicite dependancy here for building ig
   de.basisprofil.r4: 
       # id:
-      uri: https://ig.fhir.de/basisprofile-de/1.6.0/Home.html
+      # uri: https://ig.fhir.de/basisprofile-de/1.6.0/Home.html
       version: 1.6.0
 #
 #
@@ -103,8 +103,8 @@ dependencies:
 parameters:
   path-suppressed-warnings: input/ignoreWarnings.txt
   auto-oid-root: 2.25.169126619167380341660016816424527320624
-  resource-language-policy: all-ig
-  default-language: de-DE
+  # resource-language-policy: all-ig
+  # default-language: de-DE
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
