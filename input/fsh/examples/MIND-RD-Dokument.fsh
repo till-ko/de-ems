@@ -146,6 +146,7 @@ Description: "Patientenalter (51 Jahre, 4 Monate) als Komponenten-Beobachtung."
 * component[monate].code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * component[monate].code.coding.code = #alter-monate
 * component[monate].valueInteger = 4
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindAltersvaliditaetExample
 InstanceOf: ObservationDeEmsMindAltersvaliditaet
@@ -158,6 +159,7 @@ Description: "Altersvalidität: Alter ist gültig (nicht geschätzt)."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * valueBoolean = false
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindAltersvaliditaetUndokumentiertExample
 InstanceOf: ObservationDeEmsMindAltersvaliditaet
@@ -171,6 +173,7 @@ Description: "Altersvalidität als not-asked (nicht dokumentiert) über dataAbse
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-asked
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindRdTransportExample
 InstanceOf: ObservationDeEmsMindRdTransport
@@ -183,6 +186,7 @@ Description: "RDTransport: Transport durch RTW."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindRdTransportCS#03
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindNotarztNachgefordertExample
 InstanceOf: ObservationDeEmsMindNotarztNachgefordert
@@ -195,6 +199,7 @@ Description: "NotarztNachgefordert: kein Notarzt nachgefordert."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueBoolean = false
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindZeitAlarmExample
 InstanceOf: ObservationDeEmsMindZeitAlarm
@@ -207,6 +212,7 @@ Description: "ZeitAlarm: Alarmierung durch die Leitstelle."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:15:00+02:00"
 * valueDateTime = "2026-09-16T09:15:00+02:00"
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindZeitEinsatzendeExample
 InstanceOf: ObservationDeEmsMindZeitEinsatzende
@@ -219,6 +225,7 @@ Description: "ZeitEinsatzende: Einsatz abgeschlossen (entspricht Encounter.perio
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T10:00:00+02:00"
 * valueDateTime = "2026-09-16T10:00:00+02:00"
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindBewusstseinExample
 InstanceOf: ObservationDeEmsMindBewusstsein
@@ -231,6 +238,7 @@ Description: "Bewusstsein1: Bewusstseinslage 'reagiert auf Ansprache' bei der er
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindBewusstseinslageCS#03
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindPupillenweiteExample
 InstanceOf: ObservationDeEmsMindPupillenweite
@@ -243,6 +251,7 @@ Description: "Pupillenweite1: 'beidseits mittelweit' bei der ersten Messung."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindPupillenweiteCS#02
+* performer = Reference(MindRdPractitionerRoleExample)
 
 Instance: MindLichtreaktionExample
 InstanceOf: ObservationDeEmsMindLichtreaktion
@@ -255,3 +264,14 @@ Description: "Lichtreaktion1: 'beidseits prompt' bei der ersten Messung."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindLichtreaktionCS#00
+* performer = Reference(MindRdPractitionerRoleExample)
+
+Instance: MindRdPractitionerRoleExample
+InstanceOf: PractitionerRoleDeEmsMindR4
+Usage: #example
+Description: "Einsatzrolle der dokumentierenden/leistenden Besatzung für MIND (pseudonymisiert)."
+* id = "mind-practitionerrole-example"
+* practitioner = Reference(MindRdPractitionerExample)
+* code.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0360"
+* code.coding.code = #EMT
+* code.text = "Rettungsdienst"

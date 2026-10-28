@@ -9,6 +9,7 @@ Description: "NeurologischeAuffaelligkeiten1: eine der Ausprägungen (Gesichtsl�
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindNeurologischeAuffaelligkeitCS#01
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindEkgbefundExample
 InstanceOf: ObservationDeEmsMindEkgbefund
@@ -21,6 +22,7 @@ Description: "EKGBefund1: Sinusrhythmus als Befund der ersten Untersuchung."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindEkgbefundCS#01
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindSchmerzerlebenExample
 InstanceOf: ObservationDeEmsMindSchmerzerleben
@@ -33,6 +35,7 @@ Description: "Schmerzerleben: Schmerz nicht tolerabel (Indikation für Schmerzth
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindSchmerzerlebenCS#01
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindAtmungExample
 InstanceOf: ObservationDeEmsMindAtmung
@@ -45,6 +48,7 @@ Description: "Atmung1: Dyspnoe bei der ersten Untersuchung."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindAtmungCS#01
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindHautbefundeExample
 InstanceOf: ObservationDeEmsMindHautbefunde
@@ -57,6 +61,7 @@ Description: "Hautbefunde: Kalt-Schweißigkeit; Mehrfachfeld — je Ausprägung 
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindHautbefundCS#01
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindHautbefunde2Example
 InstanceOf: ObservationDeEmsMindHautbefunde
@@ -69,6 +74,7 @@ Description: "Hautbefunde: stehende Hautfalten als zweite Ausprägung desselben 
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindHautbefundCS#02
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindPsycheExample
 InstanceOf: ObservationDeEmsMindPsyche
@@ -81,6 +87,7 @@ Description: "Psyche1: verwirrt bei der ersten Untersuchung."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindPsychischerZustandCS#04
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindGlasgowComaScaleExample
 InstanceOf: ObservationDeEmsMindGlasgowComaScale
@@ -93,6 +100,7 @@ Description: "GlasgowComaScale1: GCS 13 der ersten Messung."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueInteger = 13
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindSystolischerBlutdruckExample
 InstanceOf: ObservationDeEmsMindSystolischerBlutdruck
@@ -108,6 +116,7 @@ Description: "SystolischerBlutdruck1: 120 mmHg der ersten Messung."
 * valueQuantity.unit = "mmHg"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #mm[Hg]
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindSystolischerBlutdruckNichtGemessenExample
 InstanceOf: ObservationDeEmsMindSystolischerBlutdruck
@@ -120,6 +129,7 @@ Description: "SystolischerBlutdruck1: Sonderwert -1 (nicht gemessen) als dataAbs
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-performed
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindHerzfrequenzExample
 InstanceOf: ObservationDeEmsMindHerzfrequenz
@@ -135,6 +145,7 @@ Description: "Herzfrequenz1: 98 pro Minute der ersten Messung."
 * valueQuantity.unit = "/min"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #/min
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindAtemfrequenzExample
 InstanceOf: ObservationDeEmsMindAtemfrequenz
@@ -150,6 +161,7 @@ Description: "Atemfrequenz1: 20 pro Minute der ersten Messung."
 * valueQuantity.unit = "/min"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #/min
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindSauerstoffsaettigungExample
 InstanceOf: ObservationDeEmsMindSauerstoffsaettigung
@@ -165,6 +177,7 @@ Description: "Sauerstoffsaettigung1: 97 Prozent der ersten Messung."
 * valueQuantity.unit = "%"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #%
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindRekapillarisierungszeitExample
 InstanceOf: ObservationDeEmsMindRekapillarisierungszeit
@@ -180,6 +193,7 @@ Description: "Rekapillarisierungszeit: Sonderwert 11 ('groesser 10 Sekunden') al
 * valueRange.low.unit = "s"
 * valueRange.low.system = "http://unitsofmeasure.org"
 * valueRange.low.code = #s
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindSchmerzempfindenExample
 InstanceOf: ObservationDeEmsMindSchmerzempfinden
@@ -192,6 +206,7 @@ Description: "Schmerzempfinden1: NRS 6 vor Einleiten von Massnahmen."
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueInteger = 6
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindBlutzuckerExample
 InstanceOf: ObservationDeEmsMindBlutzuckerwert
@@ -210,6 +225,7 @@ Description: "Blutzuckerwert1: 120 mg/dl; die Einheit (Feld BlutzuckerEinheit) w
 * component[einheit].code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"
 * component[einheit].code.coding.code = #blutzucker-einheit
 * component[einheit].valueCodeableConcept = MindBlutzuckerEinheitCS#01
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindBlutzuckerNiedrigExample
 InstanceOf: ObservationDeEmsMindBlutzuckerwert
@@ -222,6 +238,7 @@ Description: "Blutzuckerwert1: Sonderwert 997 ('low') als valueCodeableConcept; 
 * encounter = Reference(MindRdEncounterExample)
 * effectiveDateTime = "2026-09-16T09:30:00+02:00"
 * valueCodeableConcept = MindBlutzuckerBefundCS#low
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindTemperaturExample
 InstanceOf: ObservationDeEmsMindTemperatur
@@ -237,6 +254,7 @@ Description: "Temperatur: 36,8 Grad Celsius der ersten Messung."
 * valueQuantity.unit = "Cel"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #Cel
+* performer = Reference(MindRdPractitionerRoleExample2)
 
 Instance: MindEtco2WertExample
 InstanceOf: ObservationDeEmsMindEtco2Wert
@@ -252,3 +270,14 @@ Description: "EtCO2Wert1: 35 mmHg nach Atemwegssicherung."
 * valueQuantity.unit = "mmHg"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #mm[Hg]
+* performer = Reference(MindRdPractitionerRoleExample2)
+
+Instance: MindRdPractitionerRoleExample2
+InstanceOf: PractitionerRoleDeEmsMindR4
+Usage: #example
+Description: "Einsatzrolle für MIND-Erste-Messwerte-Beispiele (pseudonymisiert)."
+* id = "mind-practitionerrole-example2"
+* practitioner = Reference(MindRdPractitionerExample)
+* code.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0360"
+* code.coding.code = #EMT
+* code.text = "Rettungsdienst"

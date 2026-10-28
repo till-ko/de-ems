@@ -5,9 +5,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: de.ems.mind.r4
 canonical: https://till-ko.github.io/de-ems
-name: de-ems
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+name: DE_EMS
+title: "DE EMS (R4)"
+description: Implementation Guide for the DIVI Emergency Medical Service Report (NFEP)
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
