@@ -14,6 +14,8 @@ Description: "Blutzuckerwert2: Blutzuckerwert bei Abschlussbefunden. Kann numeri
 * component ^slicing.discriminator.path = "code.coding.code"
 * component ^slicing.rules = #open
 * component contains einheit 0..1
+* component[einheit].code 1..1
+* component[einheit].code.coding.system = "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs" (exactly)
 * component[einheit].code.coding.code = #blutzucker-einheit (exactly)
 * component[einheit].value[x] only CodeableConcept
 * component[einheit].valueCodeableConcept 0..1
@@ -48,3 +50,5 @@ Description: "AnmeldungPatient: Anmeldung des Patienten bei der Zielklinik."
 * code.coding.code = #anmeldung-patient (exactly)
 * value[x] only boolean
 * valueBoolean 0..1
+
+

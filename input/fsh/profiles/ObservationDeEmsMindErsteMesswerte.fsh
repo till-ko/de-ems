@@ -213,27 +213,27 @@ Expression: "value.exists() implies (value >= 3 and value <= 15)"
 Invariant: mind-sbp-bereich
 Description: "Der systolische Blutdruck muss zwischen 0 und 300 mmHg liegen."
 Severity: #error
-Expression: "valueQuantity.exists() implies (valueQuantity.value >= 0 and valueQuantity.value <= 300)"
+Expression: "value.ofType(Quantity).exists() implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 300)"
 
 Invariant: mind-hf-bereich
 Description: "Die Herzfrequenz muss zwischen 0 und 300 pro Minute liegen."
 Severity: #error
-Expression: "valueQuantity.exists() implies (valueQuantity.value >= 0 and valueQuantity.value <= 300)"
+Expression: "value.ofType(Quantity).exists() implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 300)"
 
 Invariant: mind-af-bereich
 Description: "Die Atemfrequenz muss zwischen 0 und 98 pro Minute liegen."
 Severity: #error
-Expression: "valueQuantity.exists() implies (valueQuantity.value >= 0 and valueQuantity.value <= 98)"
+Expression: "value.ofType(Quantity).exists() implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 98)"
 
 Invariant: mind-spo2-bereich
 Description: "Die Sauerstoffsaettigung muss zwischen 0 und 100 Prozent liegen."
 Severity: #error
-Expression: "valueQuantity.exists() implies (valueQuantity.value >= 0 and valueQuantity.value <= 100)"
+Expression: "value.ofType(Quantity).exists() implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 100)"
 
 Invariant: mind-rekap-bereich
 Description: "Die Rekapillarisierungszeit muss 1 bis 10 Sekunden betragen; als Obergrenzen-loses valueRange mit low = 10 s ist nur 'groesser 10 Sekunden' zulaessig."
 Severity: #error
-Expression: "(valueQuantity.exists() implies (valueQuantity.value >= 1 and valueQuantity.value <= 10)) and (value.ofType(Range).exists() implies (value.ofType(Range).low.value = 10 and value.ofType(Range).high.empty()))"
+Expression: "(value.ofType(Quantity).exists() implies (value.ofType(Quantity).value >= 1 and value.ofType(Quantity).value <= 10)) and (value.ofType(Range).exists() implies (value.ofType(Range).low.value = 10 and value.ofType(Range).high.empty()))"
 
 Invariant: mind-nrs-bereich
 Description: "Der NRS-Wert des Schmerzempfindens muss zwischen 0 und 10 liegen."
@@ -243,19 +243,19 @@ Expression: "value.exists() implies (value >= 0 and value <= 10)"
 Invariant: mind-blutzucker-bereich
 Description: "Der Blutzuckerwert muss je nach Einheit zwischen 0 und 900 mg/dl bzw. 0.0 und 50.0 mmol/l liegen."
 Severity: #error
-Expression: "valueQuantity.exists() implies ((valueQuantity.code = 'mg/dL' and valueQuantity.value >= 0 and valueQuantity.value <= 900) or (valueQuantity.code = 'mmol/L' and valueQuantity.value >= 0 and valueQuantity.value <= 50))"
+Expression: "value.ofType(Quantity).exists() implies ((value.ofType(Quantity).code = 'mg/dL' and value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 900) or (value.ofType(Quantity).code = 'mmol/L' and value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 50))"
 
 Invariant: mind-blutzucker-einheit-pflicht
 Description: "Liegt ein numerischer Blutzuckerwert vor, muss die Einheit als component[einheit] angegeben sein."
 Severity: #error
-Expression: "valueQuantity.exists() implies component.where(code.coding.code = 'blutzucker-einheit').exists()"
+Expression: "value.ofType(Quantity).exists() implies component.where(code.coding.code = 'blutzucker-einheit').exists()"
 
 Invariant: mind-temperatur-bereich
 Description: "Die Temperatur muss zwischen 20.0 und 50.0 Grad Celsius liegen."
 Severity: #error
-Expression: "valueQuantity.exists() implies (valueQuantity.value >= 20 and valueQuantity.value <= 50)"
+Expression: "value.ofType(Quantity).exists() implies (value.ofType(Quantity).value >= 20 and value.ofType(Quantity).value <= 50)"
 
 Invariant: mind-etco2-bereich
 Description: "Der EtCO2-Wert muss zwischen 0 und 120 mmHg liegen."
 Severity: #error
-Expression: "valueQuantity.exists() implies (valueQuantity.value >= 0 and valueQuantity.value <= 120)"
+Expression: "value.ofType(Quantity).exists() implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 120)"
