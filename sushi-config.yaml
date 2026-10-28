@@ -111,8 +111,21 @@ parameters:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: Home
+  profiles.md:
+    title: Profiles
+  terminology.md:
+    title: Terminology
+  roadmap.md:
+    title: Roadmap
+
 menu:
   Home: index.html
+  Profiles: profiles.html
+  Terminology: terminology.html
+  Roadmap: roadmap.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
