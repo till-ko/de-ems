@@ -50,5 +50,3 @@ Description: "AnmeldungPatient: Anmeldung des Patienten bei der Zielklinik."
 * code.coding.code = #anmeldung-patient (exactly)
 * value[x] only boolean
 * valueBoolean 0..1
-
-
