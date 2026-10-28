@@ -11,10 +11,11 @@ description: Implementation Guide for the DIVI Emergency Medical Service Report 
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+language: de-DE
+jurisdiction: urn:iso:std:iso:3166#DE "Germany"
 copyrightYear: 2026+
 releaseLabel: ci-build
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: Till Koch
   url: https://github.com/till-ko
@@ -102,6 +103,8 @@ dependencies:
 parameters:
   path-suppressed-warnings: input/ignoreWarnings.txt
   auto-oid-root: 2.25.169126619167380341660016816424527320624
+  resource-language-policy: all-ig
+  default-language: de-DE
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
