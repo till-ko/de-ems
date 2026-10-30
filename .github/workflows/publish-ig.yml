@@ -28,8 +28,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  PUBLISHER_VERSION: "2.3.4"
-  SUSHI_VERSION: "3.20.1"
+  PUBLISHER_VERSION: "3.0.1"
+  SUSHI_VERSION: "3.21.0"
   JEKYLL_VERSION: "4.4.1"
 
 jobs:
