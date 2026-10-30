@@ -1,0 +1,407 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-observationstyp-cs"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-observationstyp-cs</b></p><a name=\"mind-observationstyp-cs\"> </a><a name=\"hcmind-observationstyp-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">patientenalter<a name=\"mind-observationstyp-cs-patientenalter\"> </a></td><td>Patientenalter</td></tr><tr><td style=\"white-space:nowrap\">altersvaliditaet<a name=\"mind-observationstyp-cs-altersvaliditaet\"> </a></td><td>Altersvalidität</td></tr><tr><td style=\"white-space:nowrap\">alter-jahre<a name=\"mind-observationstyp-cs-alter-jahre\"> </a></td><td>Alter in Jahren</td></tr><tr><td style=\"white-space:nowrap\">alter-monate<a name=\"mind-observationstyp-cs-alter-monate\"> </a></td><td>Alter in Monaten</td></tr><tr><td style=\"white-space:nowrap\">rd-transport<a name=\"mind-observationstyp-cs-rd-transport\"> </a></td><td>Rettungsdienstlicher Transport</td></tr><tr><td style=\"white-space:nowrap\">aerztliche-begleitung<a name=\"mind-observationstyp-cs-aerztliche-begleitung\"> </a></td><td>Ärztliche Transportbegleitung</td></tr><tr><td style=\"white-space:nowrap\">notarzt-nachgefordert<a name=\"mind-observationstyp-cs-notarzt-nachgefordert\"> </a></td><td>Notarzt nachgefordert</td></tr><tr><td style=\"white-space:nowrap\">tna-nachgefordert<a name=\"mind-observationstyp-cs-tna-nachgefordert\"> </a></td><td>Tele-Notarzt nachgefordert</td></tr><tr><td style=\"white-space:nowrap\">kein-transport-mit-patient<a name=\"mind-observationstyp-cs-kein-transport-mit-patient\"> </a></td><td>Grund für Einsatz ohne Transport trotz Patientenkontakt</td></tr><tr><td style=\"white-space:nowrap\">kein-transport-ohne-patient<a name=\"mind-observationstyp-cs-kein-transport-ohne-patient\"> </a></td><td>Grund für Einsatz ohne Transport, da kein Patientenkontakt</td></tr><tr><td style=\"white-space:nowrap\">dokumentierendes-rettungsmittel<a name=\"mind-observationstyp-cs-dokumentierendes-rettungsmittel\"> </a></td><td>Dokumentierendes Rettungsmittel</td></tr><tr><td style=\"white-space:nowrap\">beteiligte-rettungsmittel<a name=\"mind-observationstyp-cs-beteiligte-rettungsmittel\"> </a></td><td>Beteiligte Rettungsmittel</td></tr><tr><td style=\"white-space:nowrap\">aerztliche-qualifikation<a name=\"mind-observationstyp-cs-aerztliche-qualifikation\"> </a></td><td>Ärztliche Qualifikation</td></tr><tr><td style=\"white-space:nowrap\">personalstatus<a name=\"mind-observationstyp-cs-personalstatus\"> </a></td><td>Status des Personals</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn-vor-24h<a name=\"mind-observationstyp-cs-symptombeginn-vor-24h\"> </a></td><td>Symptombeginn innerhalb der letzten 24 Stunden</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn<a name=\"mind-observationstyp-cs-symptombeginn\"> </a></td><td>Zeitpunkt Symptombeginn</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn-gesichert<a name=\"mind-observationstyp-cs-symptombeginn-gesichert\"> </a></td><td>Symptombeginn gesichert oder geschätzt</td></tr><tr><td style=\"white-space:nowrap\">zeit-notfallmeldung<a name=\"mind-observationstyp-cs-zeit-notfallmeldung\"> </a></td><td>Zeitpunkt Eingang Notfallmeldung</td></tr><tr><td style=\"white-space:nowrap\">zeit-alarm<a name=\"mind-observationstyp-cs-zeit-alarm\"> </a></td><td>Zeitpunkt Alarm</td></tr><tr><td style=\"white-space:nowrap\">zeit-ausruecken<a name=\"mind-observationstyp-cs-zeit-ausruecken\"> </a></td><td>Zeitpunkt Ausrücken</td></tr><tr><td style=\"white-space:nowrap\">zeit-ankunft-einsatzort<a name=\"mind-observationstyp-cs-zeit-ankunft-einsatzort\"> </a></td><td>Zeitpunkt Ankunft Einsatzort</td></tr><tr><td style=\"white-space:nowrap\">zeit-ankunft-patient<a name=\"mind-observationstyp-cs-zeit-ankunft-patient\"> </a></td><td>Zeitpunkt Ankunft Patient</td></tr><tr><td style=\"white-space:nowrap\">zeit-transportbeginn<a name=\"mind-observationstyp-cs-zeit-transportbeginn\"> </a></td><td>Zeitpunkt Transportbeginn</td></tr><tr><td style=\"white-space:nowrap\">zeit-eintreffen-transportziel<a name=\"mind-observationstyp-cs-zeit-eintreffen-transportziel\"> </a></td><td>Zeitpunkt Eintreffen Transportziel</td></tr><tr><td style=\"white-space:nowrap\">zeit-uebergabe-patient<a name=\"mind-observationstyp-cs-zeit-uebergabe-patient\"> </a></td><td>Zeitpunkt Übergabe Patient</td></tr><tr><td style=\"white-space:nowrap\">zeit-einsatzende<a name=\"mind-observationstyp-cs-zeit-einsatzende\"> </a></td><td>Zeitpunkt Einsatzende</td></tr><tr><td style=\"white-space:nowrap\">bewusstsein<a name=\"mind-observationstyp-cs-bewusstsein\"> </a></td><td>Bewusstseinslage</td></tr><tr><td style=\"white-space:nowrap\">neurologische-auffaelligkeiten<a name=\"mind-observationstyp-cs-neurologische-auffaelligkeiten\"> </a></td><td>Neurologische Auffälligkeiten</td></tr><tr><td style=\"white-space:nowrap\">ekg-befund<a name=\"mind-observationstyp-cs-ekg-befund\"> </a></td><td>EKG-Befund</td></tr><tr><td style=\"white-space:nowrap\">schmerzerleben<a name=\"mind-observationstyp-cs-schmerzerleben\"> </a></td><td>Schmerzerleben</td></tr><tr><td style=\"white-space:nowrap\">atmung<a name=\"mind-observationstyp-cs-atmung\"> </a></td><td>Klinische Befunde Atmung</td></tr><tr><td style=\"white-space:nowrap\">hautbefunde<a name=\"mind-observationstyp-cs-hautbefunde\"> </a></td><td>Hautbefunde</td></tr><tr><td style=\"white-space:nowrap\">psyche<a name=\"mind-observationstyp-cs-psyche\"> </a></td><td>Psychischer Zustand</td></tr><tr><td style=\"white-space:nowrap\">pupillenweite<a name=\"mind-observationstyp-cs-pupillenweite\"> </a></td><td>Pupillenweite</td></tr><tr><td style=\"white-space:nowrap\">lichtreaktion<a name=\"mind-observationstyp-cs-lichtreaktion\"> </a></td><td>Lichtreaktion</td></tr><tr><td style=\"white-space:nowrap\">glasgow-coma-scale<a name=\"mind-observationstyp-cs-glasgow-coma-scale\"> </a></td><td>Glasgow Coma Scale</td></tr><tr><td style=\"white-space:nowrap\">systolischer-blutdruck<a name=\"mind-observationstyp-cs-systolischer-blutdruck\"> </a></td><td>Systolischer Blutdruck</td></tr><tr><td style=\"white-space:nowrap\">herzfrequenz<a name=\"mind-observationstyp-cs-herzfrequenz\"> </a></td><td>Herzfrequenz</td></tr><tr><td style=\"white-space:nowrap\">atemfrequenz<a name=\"mind-observationstyp-cs-atemfrequenz\"> </a></td><td>Atemfrequenz</td></tr><tr><td style=\"white-space:nowrap\">sauerstoffsaettigung<a name=\"mind-observationstyp-cs-sauerstoffsaettigung\"> </a></td><td>Sauerstoffsättigung</td></tr><tr><td style=\"white-space:nowrap\">rekapillarisierungszeit<a name=\"mind-observationstyp-cs-rekapillarisierungszeit\"> </a></td><td>Rekapillarisierungszeit</td></tr><tr><td style=\"white-space:nowrap\">schmerzempfinden<a name=\"mind-observationstyp-cs-schmerzempfinden\"> </a></td><td>Schmerzempfinden</td></tr><tr><td style=\"white-space:nowrap\">blutzuckerwert<a name=\"mind-observationstyp-cs-blutzuckerwert\"> </a></td><td>Blutzucker</td></tr><tr><td style=\"white-space:nowrap\">blutzucker-einheit<a name=\"mind-observationstyp-cs-blutzucker-einheit\"> </a></td><td>Blutzuckereinheit</td></tr><tr><td style=\"white-space:nowrap\">temperatur<a name=\"mind-observationstyp-cs-temperatur\"> </a></td><td>Temperatur</td></tr><tr><td style=\"white-space:nowrap\">etco2-wert<a name=\"mind-observationstyp-cs-etco2-wert\"> </a></td><td>EtCO2-Wert</td></tr><tr><td style=\"white-space:nowrap\">vbeatmung<a name=\"mind-observationstyp-cs-vbeatmung\"> </a></td><td>Beatmung (außer Heimbeatmung)</td></tr><tr><td style=\"white-space:nowrap\">vbeatmung-detail<a name=\"mind-observationstyp-cs-vbeatmung-detail\"> </a></td><td>Differenzierte Beatmung</td></tr><tr><td style=\"white-space:nowrap\">katecholamin-pflicht<a name=\"mind-observationstyp-cs-katecholamin-pflicht\"> </a></td><td>Katecholaminpflichtigkeit</td></tr><tr><td style=\"white-space:nowrap\">katecholamin-therapie<a name=\"mind-observationstyp-cs-katecholamin-therapie\"> </a></td><td>Differenzierte Katecholamin-Therapie</td></tr><tr><td style=\"white-space:nowrap\">fortlaufend-sedierung<a name=\"mind-observationstyp-cs-fortlaufend-sedierung\"> </a></td><td>Fortlaufende Sedierung/Narkose</td></tr><tr><td style=\"white-space:nowrap\">vigilanz-minderung<a name=\"mind-observationstyp-cs-vigilanz-minderung\"> </a></td><td>Vigilanzminderung</td></tr><tr><td style=\"white-space:nowrap\">invasiv-blutdruck<a name=\"mind-observationstyp-cs-invasiv-blutdruck\"> </a></td><td>Invasiver Blutdruck</td></tr><tr><td style=\"white-space:nowrap\">anzahl-perfusor<a name=\"mind-observationstyp-cs-anzahl-perfusor\"> </a></td><td>Anzahl Perfusoren</td></tr><tr><td style=\"white-space:nowrap\">indikation-arztbegleitung<a name=\"mind-observationstyp-cs-indikation-arztbegleitung\"> </a></td><td>Indikation zur ärztlichen Begleitung</td></tr><tr><td style=\"white-space:nowrap\">helm-pat<a name=\"mind-observationstyp-cs-helm-pat\"> </a></td><td>Helm getragen</td></tr><tr><td style=\"white-space:nowrap\">behandlungspfad<a name=\"mind-observationstyp-cs-behandlungspfad\"> </a></td><td>Behandlungspfad</td></tr><tr><td style=\"white-space:nowrap\">glasgow-coma-scale-2<a name=\"mind-observationstyp-cs-glasgow-coma-scale-2\"> </a></td><td>Glasgow Coma Scale (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">systolischer-blutdruck-2<a name=\"mind-observationstyp-cs-systolischer-blutdruck-2\"> </a></td><td>Systolischer Blutdruck (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">herzfrequenz-2<a name=\"mind-observationstyp-cs-herzfrequenz-2\"> </a></td><td>Herzfrequenz (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">atemfrequenz-2<a name=\"mind-observationstyp-cs-atemfrequenz-2\"> </a></td><td>Atemfrequenz (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">sauerstoffsaettigung-2<a name=\"mind-observationstyp-cs-sauerstoffsaettigung-2\"> </a></td><td>Sauerstoffsättigung (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">schmerzempfinden-2<a name=\"mind-observationstyp-cs-schmerzempfinden-2\"> </a></td><td>Schmerzempfinden (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">sosi-transport<a name=\"mind-observationstyp-cs-sosi-transport\"> </a></td><td>SO/SI bei Transport</td></tr><tr><td style=\"white-space:nowrap\">blutzuckerwert-2<a name=\"mind-observationstyp-cs-blutzuckerwert-2\"> </a></td><td>Blutzucker (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">etco2-wert-2<a name=\"mind-observationstyp-cs-etco2-wert-2\"> </a></td><td>EtCO2-Wert (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">nummer-zk<a name=\"mind-observationstyp-cs-nummer-zk\"> </a></td><td>Nummer Zielklinik</td></tr><tr><td style=\"white-space:nowrap\">anmeldung-patient<a name=\"mind-observationstyp-cs-anmeldung-patient\"> </a></td><td>Anmeldung Patient</td></tr><tr><td style=\"white-space:nowrap\">reanimationssituation<a name=\"mind-observationstyp-cs-reanimationssituation\"> </a></td><td>Reanimationssituation</td></tr><tr><td style=\"white-space:nowrap\">reanimationstechnik<a name=\"mind-observationstyp-cs-reanimationstechnik\"> </a></td><td>Reanimationstechnik</td></tr><tr><td style=\"white-space:nowrap\">reanimation-urkrstst<a name=\"mind-observationstyp-cs-reanimation-urkrstst\"> </a></td><td>Ursache der Reanimation</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zckb<a name=\"mind-observationstyp-cs-reanimation-zckb\"> </a></td><td>Kollaps beobachtet durch</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zchdm<a name=\"mind-observationstyp-cs-reanimation-zchdm\"> </a></td><td>Herzdruckmassage begonnen</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zcdefi<a name=\"mind-observationstyp-cs-reanimation-zcdefi\"> </a></td><td>Erste Defibrillation durch</td></tr><tr><td style=\"white-space:nowrap\">reanimation-rosc<a name=\"mind-observationstyp-cs-reanimation-rosc\"> </a></td><td>ROSC</td></tr><tr><td style=\"white-space:nowrap\">reanimation-rosc1<a name=\"mind-observationstyp-cs-reanimation-rosc1\"> </a></td><td>ROSC-Intervall 1</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zdefi1<a name=\"mind-observationstyp-cs-reanimation-zdefi1\"> </a></td><td>Zeitpunkt erste Defibrillation</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zros1<a name=\"mind-observationstyp-cs-reanimation-zros1\"> </a></td><td>Zeitpunkt erster ROSC</td></tr><tr><td style=\"white-space:nowrap\">reanimation-ztod<a name=\"mind-observationstyp-cs-reanimation-ztod\"> </a></td><td>Zeitpunkt Tod</td></tr><tr><td style=\"white-space:nowrap\">reanimation-khauf<a name=\"mind-observationstyp-cs-reanimation-khauf\"> </a></td><td>Krankenhausaufnahmezustand</td></tr><tr><td style=\"white-space:nowrap\">sport<a name=\"mind-observationstyp-cs-sport\"> </a></td><td>SPORT (Spontankreislauf)</td></tr><tr><td style=\"white-space:nowrap\">zeofr<a name=\"mind-observationstyp-cs-zeofr\"> </a></td><td>ZEOFR (Zeitpunkt Erstversorgung Fremd)</td></tr><tr><td style=\"white-space:nowrap\">zhdm<a name=\"mind-observationstyp-cs-zhdm\"> </a></td><td>ZHDM (Zeitpunkt Herz-Druck-Massage)</td></tr><tr><td style=\"white-space:nowrap\">zdefi1<a name=\"mind-observationstyp-cs-zdefi1\"> </a></td><td>ZDEFI1 (Zeitpunkt erste Defibrillation)</td></tr><tr><td style=\"white-space:nowrap\">zrosc1<a name=\"mind-observationstyp-cs-zrosc1\"> </a></td><td>ZROSC1 (Zeitpunkt erster ROSC)</td></tr><tr><td style=\"white-space:nowrap\">ztod<a name=\"mind-observationstyp-cs-ztod\"> </a></td><td>ZTOD (Zeitpunkt Tod)</td></tr><tr><td style=\"white-space:nowrap\">durchf-heilkundl-massn<a name=\"mind-observationstyp-cs-durchf-heilkundl-massn\"> </a></td><td>Durchführung heilkundlicher Maßnahmen durch Notfallsanitäter</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.169126619167380341660016816424527320624.16.34" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "MindObservationstypCS"] ;
+  fhir:CodeSystem.title [ fhir:value "MIND Beobachtungstypen"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T08:50:03+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Till Koch"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Till Koch" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/till-ko" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "87"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patientenalter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patientenalter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "altersvaliditaet" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Altersvalidität" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "alter-jahre" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alter in Jahren" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "alter-monate" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alter in Monaten" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rd-transport" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rettungsdienstlicher Transport" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aerztliche-begleitung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ärztliche Transportbegleitung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "notarzt-nachgefordert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Notarzt nachgefordert" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tna-nachgefordert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tele-Notarzt nachgefordert" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kein-transport-mit-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grund für Einsatz ohne Transport trotz Patientenkontakt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kein-transport-ohne-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grund für Einsatz ohne Transport, da kein Patientenkontakt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dokumentierendes-rettungsmittel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dokumentierendes Rettungsmittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "beteiligte-rettungsmittel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Beteiligte Rettungsmittel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aerztliche-qualifikation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ärztliche Qualifikation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "personalstatus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Status des Personals" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "symptombeginn-vor-24h" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Symptombeginn innerhalb der letzten 24 Stunden" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "symptombeginn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Symptombeginn" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "symptombeginn-gesichert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Symptombeginn gesichert oder geschätzt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-notfallmeldung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Eingang Notfallmeldung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-alarm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Alarm" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-ausruecken" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Ausrücken" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-ankunft-einsatzort" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Ankunft Einsatzort" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-ankunft-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Ankunft Patient" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-transportbeginn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Transportbeginn" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-eintreffen-transportziel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Eintreffen Transportziel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-uebergabe-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Übergabe Patient" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeit-einsatzende" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Einsatzende" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bewusstsein" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bewusstseinslage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "neurologische-auffaelligkeiten" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neurologische Auffälligkeiten" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ekg-befund" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EKG-Befund" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "schmerzerleben" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schmerzerleben" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atmung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Klinische Befunde Atmung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hautbefunde" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hautbefunde" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "psyche" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Psychischer Zustand" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pupillenweite" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pupillenweite" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lichtreaktion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lichtreaktion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "glasgow-coma-scale" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Glasgow Coma Scale" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "systolischer-blutdruck" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Systolischer Blutdruck" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "herzfrequenz" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Herzfrequenz" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atemfrequenz" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atemfrequenz" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sauerstoffsaettigung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sauerstoffsättigung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rekapillarisierungszeit" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rekapillarisierungszeit" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "schmerzempfinden" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schmerzempfinden" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "blutzuckerwert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blutzucker" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "blutzucker-einheit" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blutzuckereinheit" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "temperatur" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Temperatur" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "etco2-wert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EtCO2-Wert" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vbeatmung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Beatmung (außer Heimbeatmung)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vbeatmung-detail" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Differenzierte Beatmung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "katecholamin-pflicht" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Katecholaminpflichtigkeit" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "katecholamin-therapie" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Differenzierte Katecholamin-Therapie" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fortlaufend-sedierung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fortlaufende Sedierung/Narkose" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vigilanz-minderung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vigilanzminderung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "invasiv-blutdruck" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Invasiver Blutdruck" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anzahl-perfusor" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anzahl Perfusoren" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "indikation-arztbegleitung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Indikation zur ärztlichen Begleitung" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "helm-pat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Helm getragen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "behandlungspfad" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Behandlungspfad" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "glasgow-coma-scale-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Glasgow Coma Scale (Abschlussbefunde)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "systolischer-blutdruck-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Systolischer Blutdruck (Abschlussbefunde)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "herzfrequenz-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Herzfrequenz (Abschlussbefunde)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atemfrequenz-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atemfrequenz (Abschlussbefunde)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sauerstoffsaettigung-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sauerstoffsättigung (Abschlussbefunde)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "schmerzempfinden-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schmerzempfinden (Abschlussbefunde)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sosi-transport" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SO/SI bei Transport" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "blutzuckerwert-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blutzucker (Abschlussbefunde)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "etco2-wert-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EtCO2-Wert (Abschlussbefunde)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nummer-zk" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nummer Zielklinik" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anmeldung-patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anmeldung Patient" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimationssituation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reanimationssituation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimationstechnik" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reanimationstechnik" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-urkrstst" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ursache der Reanimation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-zckb" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kollaps beobachtet durch" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-zchdm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Herzdruckmassage begonnen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-zcdefi" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Erste Defibrillation durch" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-rosc" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ROSC" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-rosc1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ROSC-Intervall 1" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-zdefi1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt erste Defibrillation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-zros1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt erster ROSC" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-ztod" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeitpunkt Tod" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-khauf" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Krankenhausaufnahmezustand" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sport" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SPORT (Spontankreislauf)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeofr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZEOFR (Zeitpunkt Erstversorgung Fremd)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zhdm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZHDM (Zeitpunkt Herz-Druck-Massage)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zdefi1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZDEFI1 (Zeitpunkt erste Defibrillation)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zrosc1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZROSC1 (Zeitpunkt erster ROSC)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ztod" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZTOD (Zeitpunkt Tod)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "durchf-heilkundl-massn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Durchführung heilkundlicher Maßnahmen durch Notfallsanitäter" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

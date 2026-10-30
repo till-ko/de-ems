@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Patient",
+  "id" : "divi-patient-example",
+  "meta" : {
+    "profile" : ["https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient divi-patient-example</b></p><a name=\"divi-patient-example\"> </a><a name=\"hcdivi-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-de-ems-divi-r4.html\">DIVI 7.1 Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Erika Mustermann  Female, DoB: 1975-04-12 ( https://till-ko.github.io/de-ems/NamingSystem/mind-patnr#MindPatNr#PAT-2026-001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Musterstraße 1 Hildesheim 31134 DE </td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://till-ko.github.io/de-ems/NamingSystem/mind-patnr",
+    "value" : "PAT-2026-001"
+  }],
+  "name" : [{
+    "family" : "Mustermann",
+    "given" : ["Erika"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1975-04-12",
+  "address" : [{
+    "line" : ["Musterstraße 1"],
+    "city" : "Hildesheim",
+    "postalCode" : "31134",
+    "country" : "DE"
+  }]
+}

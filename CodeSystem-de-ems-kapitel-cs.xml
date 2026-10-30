@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="de-ems-kapitel-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem de-ems-kapitel-cs</b></p><a name="de-ems-kapitel-cs"> </a><a name="hcde-ems-kapitel-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/de-ems-kapitel-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">strukturdaten<a name="de-ems-kapitel-cs-strukturdaten"> </a></td><td>Strukturdaten</td><td>Stammdaten des Dokuments und des Einsatzes: Protokolltyp, Standortkennung, ProjektID, Leitstelle, Softwarekennung, EinsatzNr, PatNr, AuftrNr.</td></tr><tr><td style="white-space:nowrap">rettungstechnische-daten<a name="de-ems-kapitel-cs-rettungstechnische-daten"> </a></td><td>Rettungstechnische Daten</td><td>Einsatzort, Einsatzart, beteiligte Rettungsmittel, Qualifikation/Status des Personals, Transport- und Nachforderungsmerkmale.</td></tr><tr><td style="white-space:nowrap">zeiten-einsatzablauf<a name="de-ems-kapitel-cs-zeiten-einsatzablauf"> </a></td><td>Zeiten des Einsatzablaufs</td><td>Alle Zeitpunkte des Einsatzverlaufs von Symptombeginn und Notfallmeldung bis Einsatzende.</td></tr><tr><td style="white-space:nowrap">patientendaten<a name="de-ems-kapitel-cs-patientendaten"> </a></td><td>Patientendaten</td><td>Angaben zur Patientin oder zum Patienten: Alter, Altersvalidität, Geschlecht sowie die DIVI-Personendaten (Name, Geburtsdatum, Adresse, Krankenkassendaten).</td></tr><tr><td style="white-space:nowrap">erste-messwerte-und-befunde<a name="de-ems-kapitel-cs-erste-messwerte-und-befunde"> </a></td><td>Erste Messwerte und Befunde</td><td>Erste Messwerte und klinische Befunde bei Ankunft: Bewusstsein, GCS, Neurologie, Kreislauf, Atmung, Haut, Psyche, Pupillen, EKG, Schmerz, Blutzucker, Temperatur.</td></tr><tr><td style="white-space:nowrap">erstbefunde-verlegung<a name="de-ems-kapitel-cs-erstbefunde-verlegung"> </a></td><td>Erstbefunde bei Verlegung</td><td>Erstbefunde im Kontext der Verlegung (nur Notarztdokumentation): Beatmung, Katecholamine, Sedierung, Vigilanz, invasiver Blutdruck, Spezialgeräte, Perfusoren.</td></tr><tr><td style="white-space:nowrap">einschaetzung-verlegungsarzt<a name="de-ems-kapitel-cs-einschaetzung-verlegungsarzt"> </a></td><td>Einschätzung des Verlegungsarzts</td><td>Einschätzung durch die verlegende Ärztin oder den verlegenden Arzt (nur Notarztdokumentation): Dringlichkeit, Indikation für Arztbegleitung, Indikation für IT.</td></tr><tr><td style="white-space:nowrap">diagnosen<a name="de-ems-kapitel-cs-diagnosen"> </a></td><td>Diagnosen</td><td>Erstdiagnosen und weitere Diagnosen des Einsatzes.</td></tr><tr><td style="white-space:nowrap">verletzungen-details<a name="de-ems-kapitel-cs-verletzungen-details"> </a></td><td>Verletzungen im Detail</td><td>Verletzungsmuster, Unfallursache, Unfallmechanismus und Unfallhergang.</td></tr><tr><td style="white-space:nowrap">scores<a name="de-ems-kapitel-cs-scores"> </a></td><td>Scores</td><td>Klinische Scores wie NACA-Score und MNA-NACA-Score.</td></tr><tr><td style="white-space:nowrap">rd-massnahmen<a name="de-ems-kapitel-cs-rd-massnahmen"> </a></td><td>Rettungsdienstliche Maßnahmen</td><td>Maßnahmen des Rettungsdienstes: Airway, Atemunterstützung, Circulation/Zugang, Spezialmaßnahmen, Medizintechnik, Lagerung/Transport, Übernahmeort.</td></tr><tr><td style="white-space:nowrap">medikamentoese-therapie<a name="de-ems-kapitel-cs-medikamentoese-therapie"> </a></td><td>Medikamentöse Therapie</td><td>Medikamentengaben und Infusionsgaben inklusive Dosis und Menge.</td></tr><tr><td style="white-space:nowrap">abschluss-befunde-bt<a name="de-ems-kapitel-cs-abschluss-befunde-bt"> </a></td><td>Abschlussbefunde vor Behandlungsbeginn (BT)</td><td>Befunde bei Übernahme/Übergabe, also vor Beginn der Behandlung durch die aufnehmende Stelle (zweite Messwertreihe, EKG, Übernahmeort, Transportziel).</td></tr><tr><td style="white-space:nowrap">abschluss-befunde-btav<a name="de-ems-kapitel-cs-abschluss-befunde-btav"> </a></td><td>Abschlussbefunde BT/AV</td><td>Abschlussbefunde im Zusammenspiel Behandlung (BT) und Arztvorstellung (AV).</td></tr><tr><td style="white-space:nowrap">zielklinik<a name="de-ems-kapitel-cs-zielklinik"> </a></td><td>Zielklinik</td><td>Zielklinik und Aufnahme-/Anmeldeangaben (NummerZK, Anmeldung, Transportziel).</td></tr><tr><td style="white-space:nowrap">einsatz-besonderheiten<a name="de-ems-kapitel-cs-einsatz-besonderheiten"> </a></td><td>Einsatzbesonderheiten</td><td>Besonderheiten des Einsatzes sowie Vorbefunde (Pre-Emergency-Status).</td></tr><tr><td style="white-space:nowrap">reanimation<a name="de-ems-kapitel-cs-reanimation"> </a></td><td>Reanimation</td><td>Reanimationssituation als solche (Vorkommen, Kontext).</td></tr><tr><td style="white-space:nowrap">reanimation-details<a name="de-ems-kapitel-cs-reanimation-details"> </a></td><td>Reanimationsdetails</td><td>Details der Reanimation: Technik, GCS bei ROSC, Zeiten für Defibrillation/HDMI/ROSC/Tod, Klinik-Aufnahme, neurologischer Verlauf.</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/de-ems-kapitel-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.53"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="DeEmsKapitelCS"/>
+  <title value="de-EMS Kapitel"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-30T08:50:03+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Kapitel der Einsatzdokumentation, verwendet als Code der Composition.section-Slices. Derzeit vollständig durch die 18 Kapitel der MIND-7.1-Datenfelder-Liste abgedeckt (Spalte 'Kapitel' der roadmap/Datenfelder_overview.csv). Die Kapitelgliederung der DIVI-NFEP-Daten (Spalte 'DIVI-Kapitel' der CSV, z. B. Dokument-Header, EinsatztechnischeDaten, PatStammdaten) ist eine eigenständige Zerlegung und wird als zusätzliche Codes ergänzt, sobald das DIVI-Dokumentprofil (CompositionDeEmsDiviR4) um seine Section-Slices erweitert wird. Die Codes sind bewusst neutral (de-ems-, nicht mind-) benannt, weil beide Dokumenttypen daraus blenden."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="18"/>
+  <concept>
+    <code value="strukturdaten"/>
+    <display value="Strukturdaten"/>
+    <definition value="Stammdaten des Dokuments und des Einsatzes: Protokolltyp, Standortkennung, ProjektID, Leitstelle, Softwarekennung, EinsatzNr, PatNr, AuftrNr."/>
+  </concept>
+  <concept>
+    <code value="rettungstechnische-daten"/>
+    <display value="Rettungstechnische Daten"/>
+    <definition value="Einsatzort, Einsatzart, beteiligte Rettungsmittel, Qualifikation/Status des Personals, Transport- und Nachforderungsmerkmale."/>
+  </concept>
+  <concept>
+    <code value="zeiten-einsatzablauf"/>
+    <display value="Zeiten des Einsatzablaufs"/>
+    <definition value="Alle Zeitpunkte des Einsatzverlaufs von Symptombeginn und Notfallmeldung bis Einsatzende."/>
+  </concept>
+  <concept>
+    <code value="patientendaten"/>
+    <display value="Patientendaten"/>
+    <definition value="Angaben zur Patientin oder zum Patienten: Alter, Altersvalidität, Geschlecht sowie die DIVI-Personendaten (Name, Geburtsdatum, Adresse, Krankenkassendaten)."/>
+  </concept>
+  <concept>
+    <code value="erste-messwerte-und-befunde"/>
+    <display value="Erste Messwerte und Befunde"/>
+    <definition value="Erste Messwerte und klinische Befunde bei Ankunft: Bewusstsein, GCS, Neurologie, Kreislauf, Atmung, Haut, Psyche, Pupillen, EKG, Schmerz, Blutzucker, Temperatur."/>
+  </concept>
+  <concept>
+    <code value="erstbefunde-verlegung"/>
+    <display value="Erstbefunde bei Verlegung"/>
+    <definition value="Erstbefunde im Kontext der Verlegung (nur Notarztdokumentation): Beatmung, Katecholamine, Sedierung, Vigilanz, invasiver Blutdruck, Spezialgeräte, Perfusoren."/>
+  </concept>
+  <concept>
+    <code value="einschaetzung-verlegungsarzt"/>
+    <display value="Einschätzung des Verlegungsarzts"/>
+    <definition value="Einschätzung durch die verlegende Ärztin oder den verlegenden Arzt (nur Notarztdokumentation): Dringlichkeit, Indikation für Arztbegleitung, Indikation für IT."/>
+  </concept>
+  <concept>
+    <code value="diagnosen"/>
+    <display value="Diagnosen"/>
+    <definition value="Erstdiagnosen und weitere Diagnosen des Einsatzes."/>
+  </concept>
+  <concept>
+    <code value="verletzungen-details"/>
+    <display value="Verletzungen im Detail"/>
+    <definition value="Verletzungsmuster, Unfallursache, Unfallmechanismus und Unfallhergang."/>
+  </concept>
+  <concept>
+    <code value="scores"/>
+    <display value="Scores"/>
+    <definition value="Klinische Scores wie NACA-Score und MNA-NACA-Score."/>
+  </concept>
+  <concept>
+    <code value="rd-massnahmen"/>
+    <display value="Rettungsdienstliche Maßnahmen"/>
+    <definition value="Maßnahmen des Rettungsdienstes: Airway, Atemunterstützung, Circulation/Zugang, Spezialmaßnahmen, Medizintechnik, Lagerung/Transport, Übernahmeort."/>
+  </concept>
+  <concept>
+    <code value="medikamentoese-therapie"/>
+    <display value="Medikamentöse Therapie"/>
+    <definition value="Medikamentengaben und Infusionsgaben inklusive Dosis und Menge."/>
+  </concept>
+  <concept>
+    <code value="abschluss-befunde-bt"/>
+    <display value="Abschlussbefunde vor Behandlungsbeginn (BT)"/>
+    <definition value="Befunde bei Übernahme/Übergabe, also vor Beginn der Behandlung durch die aufnehmende Stelle (zweite Messwertreihe, EKG, Übernahmeort, Transportziel)."/>
+  </concept>
+  <concept>
+    <code value="abschluss-befunde-btav"/>
+    <display value="Abschlussbefunde BT/AV"/>
+    <definition value="Abschlussbefunde im Zusammenspiel Behandlung (BT) und Arztvorstellung (AV)."/>
+  </concept>
+  <concept>
+    <code value="zielklinik"/>
+    <display value="Zielklinik"/>
+    <definition value="Zielklinik und Aufnahme-/Anmeldeangaben (NummerZK, Anmeldung, Transportziel)."/>
+  </concept>
+  <concept>
+    <code value="einsatz-besonderheiten"/>
+    <display value="Einsatzbesonderheiten"/>
+    <definition value="Besonderheiten des Einsatzes sowie Vorbefunde (Pre-Emergency-Status)."/>
+  </concept>
+  <concept>
+    <code value="reanimation"/>
+    <display value="Reanimation"/>
+    <definition value="Reanimationssituation als solche (Vorkommen, Kontext)."/>
+  </concept>
+  <concept>
+    <code value="reanimation-details"/>
+    <display value="Reanimationsdetails"/>
+    <definition value="Details der Reanimation: Technik, GCS bei ROSC, Zeiten für Defibrillation/HDMI/ROSC/Tod, Klinik-Aufnahme, neurologischer Verlauf."/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "mind-practitioner-example",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner mind-practitioner-example</b></p><a name=\"mind-practitioner-example\"> </a><a name=\"hcmind-practitioner-example\"> </a><p><b>name</b>: Rettungsdienst Beispiel </p></div>"
+  },
+  "name" : [{
+    "family" : "Beispiel",
+    "given" : ["Rettungsdienst"]
+  }]
+}

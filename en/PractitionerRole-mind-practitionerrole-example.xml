@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="mind-practitionerrole-example"/>
+  <meta>
+    <profile value="https://till-ko.github.io/de-ems/StructureDefinition/practitionerrole-de-ems-mind-r4"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole mind-practitionerrole-example</b></p><a name="mind-practitionerrole-example"> </a><a name="hcmind-practitionerrole-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-practitionerrole-de-ems-mind-r4.html">MIND Einsatzrolle / PractitionerRole (pseudonymisiert)</a></p></div><p><b>practitioner</b>: <a href="Practitioner-mind-practitioner-example.html">Practitioner Rettungsdienst Beispiel </a></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0360 EMT}">Rettungsdienst</span></p></div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/mind-practitioner-example"/>
+  </practitioner>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0360"/>
+      <code value="EMT"/>
+    </coding>
+    <text value="Rettungsdienst"/>
+  </code>
+</PractitionerRole>

@@ -1,0 +1,148 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/de-ems-kapitel-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "de-ems-kapitel-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem de-ems-kapitel-cs</b></p><a name=\"de-ems-kapitel-cs\"> </a><a name=\"hcde-ems-kapitel-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/de-ems-kapitel-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">strukturdaten<a name=\"de-ems-kapitel-cs-strukturdaten\"> </a></td><td>Strukturdaten</td><td>Stammdaten des Dokuments und des Einsatzes: Protokolltyp, Standortkennung, ProjektID, Leitstelle, Softwarekennung, EinsatzNr, PatNr, AuftrNr.</td></tr><tr><td style=\"white-space:nowrap\">rettungstechnische-daten<a name=\"de-ems-kapitel-cs-rettungstechnische-daten\"> </a></td><td>Rettungstechnische Daten</td><td>Einsatzort, Einsatzart, beteiligte Rettungsmittel, Qualifikation/Status des Personals, Transport- und Nachforderungsmerkmale.</td></tr><tr><td style=\"white-space:nowrap\">zeiten-einsatzablauf<a name=\"de-ems-kapitel-cs-zeiten-einsatzablauf\"> </a></td><td>Zeiten des Einsatzablaufs</td><td>Alle Zeitpunkte des Einsatzverlaufs von Symptombeginn und Notfallmeldung bis Einsatzende.</td></tr><tr><td style=\"white-space:nowrap\">patientendaten<a name=\"de-ems-kapitel-cs-patientendaten\"> </a></td><td>Patientendaten</td><td>Angaben zur Patientin oder zum Patienten: Alter, Altersvalidität, Geschlecht sowie die DIVI-Personendaten (Name, Geburtsdatum, Adresse, Krankenkassendaten).</td></tr><tr><td style=\"white-space:nowrap\">erste-messwerte-und-befunde<a name=\"de-ems-kapitel-cs-erste-messwerte-und-befunde\"> </a></td><td>Erste Messwerte und Befunde</td><td>Erste Messwerte und klinische Befunde bei Ankunft: Bewusstsein, GCS, Neurologie, Kreislauf, Atmung, Haut, Psyche, Pupillen, EKG, Schmerz, Blutzucker, Temperatur.</td></tr><tr><td style=\"white-space:nowrap\">erstbefunde-verlegung<a name=\"de-ems-kapitel-cs-erstbefunde-verlegung\"> </a></td><td>Erstbefunde bei Verlegung</td><td>Erstbefunde im Kontext der Verlegung (nur Notarztdokumentation): Beatmung, Katecholamine, Sedierung, Vigilanz, invasiver Blutdruck, Spezialgeräte, Perfusoren.</td></tr><tr><td style=\"white-space:nowrap\">einschaetzung-verlegungsarzt<a name=\"de-ems-kapitel-cs-einschaetzung-verlegungsarzt\"> </a></td><td>Einschätzung des Verlegungsarzts</td><td>Einschätzung durch die verlegende Ärztin oder den verlegenden Arzt (nur Notarztdokumentation): Dringlichkeit, Indikation für Arztbegleitung, Indikation für IT.</td></tr><tr><td style=\"white-space:nowrap\">diagnosen<a name=\"de-ems-kapitel-cs-diagnosen\"> </a></td><td>Diagnosen</td><td>Erstdiagnosen und weitere Diagnosen des Einsatzes.</td></tr><tr><td style=\"white-space:nowrap\">verletzungen-details<a name=\"de-ems-kapitel-cs-verletzungen-details\"> </a></td><td>Verletzungen im Detail</td><td>Verletzungsmuster, Unfallursache, Unfallmechanismus und Unfallhergang.</td></tr><tr><td style=\"white-space:nowrap\">scores<a name=\"de-ems-kapitel-cs-scores\"> </a></td><td>Scores</td><td>Klinische Scores wie NACA-Score und MNA-NACA-Score.</td></tr><tr><td style=\"white-space:nowrap\">rd-massnahmen<a name=\"de-ems-kapitel-cs-rd-massnahmen\"> </a></td><td>Rettungsdienstliche Maßnahmen</td><td>Maßnahmen des Rettungsdienstes: Airway, Atemunterstützung, Circulation/Zugang, Spezialmaßnahmen, Medizintechnik, Lagerung/Transport, Übernahmeort.</td></tr><tr><td style=\"white-space:nowrap\">medikamentoese-therapie<a name=\"de-ems-kapitel-cs-medikamentoese-therapie\"> </a></td><td>Medikamentöse Therapie</td><td>Medikamentengaben und Infusionsgaben inklusive Dosis und Menge.</td></tr><tr><td style=\"white-space:nowrap\">abschluss-befunde-bt<a name=\"de-ems-kapitel-cs-abschluss-befunde-bt\"> </a></td><td>Abschlussbefunde vor Behandlungsbeginn (BT)</td><td>Befunde bei Übernahme/Übergabe, also vor Beginn der Behandlung durch die aufnehmende Stelle (zweite Messwertreihe, EKG, Übernahmeort, Transportziel).</td></tr><tr><td style=\"white-space:nowrap\">abschluss-befunde-btav<a name=\"de-ems-kapitel-cs-abschluss-befunde-btav\"> </a></td><td>Abschlussbefunde BT/AV</td><td>Abschlussbefunde im Zusammenspiel Behandlung (BT) und Arztvorstellung (AV).</td></tr><tr><td style=\"white-space:nowrap\">zielklinik<a name=\"de-ems-kapitel-cs-zielklinik\"> </a></td><td>Zielklinik</td><td>Zielklinik und Aufnahme-/Anmeldeangaben (NummerZK, Anmeldung, Transportziel).</td></tr><tr><td style=\"white-space:nowrap\">einsatz-besonderheiten<a name=\"de-ems-kapitel-cs-einsatz-besonderheiten\"> </a></td><td>Einsatzbesonderheiten</td><td>Besonderheiten des Einsatzes sowie Vorbefunde (Pre-Emergency-Status).</td></tr><tr><td style=\"white-space:nowrap\">reanimation<a name=\"de-ems-kapitel-cs-reanimation\"> </a></td><td>Reanimation</td><td>Reanimationssituation als solche (Vorkommen, Kontext).</td></tr><tr><td style=\"white-space:nowrap\">reanimation-details<a name=\"de-ems-kapitel-cs-reanimation-details\"> </a></td><td>Reanimationsdetails</td><td>Details der Reanimation: Technik, GCS bei ROSC, Zeiten für Defibrillation/HDMI/ROSC/Tod, Klinik-Aufnahme, neurologischer Verlauf.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://till-ko.github.io/de-ems/CodeSystem/de-ems-kapitel-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.169126619167380341660016816424527320624.16.53" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "DeEmsKapitelCS"] ;
+  fhir:CodeSystem.title [ fhir:value "de-EMS Kapitel"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T08:50:03+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Till Koch"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Till Koch" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/till-ko" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Kapitel der Einsatzdokumentation, verwendet als Code der Composition.section-Slices. Derzeit vollständig durch die 18 Kapitel der MIND-7.1-Datenfelder-Liste abgedeckt (Spalte 'Kapitel' der roadmap/Datenfelder_overview.csv). Die Kapitelgliederung der DIVI-NFEP-Daten (Spalte 'DIVI-Kapitel' der CSV, z. B. Dokument-Header, EinsatztechnischeDaten, PatStammdaten) ist eine eigenständige Zerlegung und wird als zusätzliche Codes ergänzt, sobald das DIVI-Dokumentprofil (CompositionDeEmsDiviR4) um seine Section-Slices erweitert wird. Die Codes sind bewusst neutral (de-ems-, nicht mind-) benannt, weil beide Dokumenttypen daraus blenden."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "18"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "strukturdaten" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Strukturdaten" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stammdaten des Dokuments und des Einsatzes: Protokolltyp, Standortkennung, ProjektID, Leitstelle, Softwarekennung, EinsatzNr, PatNr, AuftrNr." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rettungstechnische-daten" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rettungstechnische Daten" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Einsatzort, Einsatzart, beteiligte Rettungsmittel, Qualifikation/Status des Personals, Transport- und Nachforderungsmerkmale." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zeiten-einsatzablauf" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zeiten des Einsatzablaufs" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Alle Zeitpunkte des Einsatzverlaufs von Symptombeginn und Notfallmeldung bis Einsatzende." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patientendaten" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patientendaten" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Angaben zur Patientin oder zum Patienten: Alter, Altersvalidität, Geschlecht sowie die DIVI-Personendaten (Name, Geburtsdatum, Adresse, Krankenkassendaten)." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "erste-messwerte-und-befunde" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Erste Messwerte und Befunde" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Erste Messwerte und klinische Befunde bei Ankunft: Bewusstsein, GCS, Neurologie, Kreislauf, Atmung, Haut, Psyche, Pupillen, EKG, Schmerz, Blutzucker, Temperatur." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "erstbefunde-verlegung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Erstbefunde bei Verlegung" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Erstbefunde im Kontext der Verlegung (nur Notarztdokumentation): Beatmung, Katecholamine, Sedierung, Vigilanz, invasiver Blutdruck, Spezialgeräte, Perfusoren." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "einschaetzung-verlegungsarzt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Einschätzung des Verlegungsarzts" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Einschätzung durch die verlegende Ärztin oder den verlegenden Arzt (nur Notarztdokumentation): Dringlichkeit, Indikation für Arztbegleitung, Indikation für IT." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "diagnosen" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diagnosen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Erstdiagnosen und weitere Diagnosen des Einsatzes." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "verletzungen-details" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Verletzungen im Detail" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Verletzungsmuster, Unfallursache, Unfallmechanismus und Unfallhergang." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "scores" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Scores" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Klinische Scores wie NACA-Score und MNA-NACA-Score." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rd-massnahmen" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rettungsdienstliche Maßnahmen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Maßnahmen des Rettungsdienstes: Airway, Atemunterstützung, Circulation/Zugang, Spezialmaßnahmen, Medizintechnik, Lagerung/Transport, Übernahmeort." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medikamentoese-therapie" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medikamentöse Therapie" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medikamentengaben und Infusionsgaben inklusive Dosis und Menge." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abschluss-befunde-bt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abschlussbefunde vor Behandlungsbeginn (BT)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Befunde bei Übernahme/Übergabe, also vor Beginn der Behandlung durch die aufnehmende Stelle (zweite Messwertreihe, EKG, Übernahmeort, Transportziel)." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abschluss-befunde-btav" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abschlussbefunde BT/AV" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abschlussbefunde im Zusammenspiel Behandlung (BT) und Arztvorstellung (AV)." ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zielklinik" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zielklinik" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zielklinik und Aufnahme-/Anmeldeangaben (NummerZK, Anmeldung, Transportziel)." ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "einsatz-besonderheiten" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Einsatzbesonderheiten" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Besonderheiten des Einsatzes sowie Vorbefunde (Pre-Emergency-Status)." ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reanimation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Reanimationssituation als solche (Vorkommen, Kontext)." ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reanimation-details" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reanimationsdetails" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Details der Reanimation: Technik, GCS bei ROSC, Zeiten für Defibrillation/HDMI/ROSC/Tod, Klinik-Aufnahme, neurologischer Verlauf." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/CodeSystem/de-ems-kapitel-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

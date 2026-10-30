@@ -1,0 +1,387 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mind-observationstyp-cs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mind-observationstyp-cs</b></p><a name=\"mind-observationstyp-cs\"> </a><a name=\"hcmind-observationstyp-cs\"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">patientenalter<a name=\"mind-observationstyp-cs-patientenalter\"> </a></td><td>Patientenalter</td></tr><tr><td style=\"white-space:nowrap\">altersvaliditaet<a name=\"mind-observationstyp-cs-altersvaliditaet\"> </a></td><td>Altersvalidität</td></tr><tr><td style=\"white-space:nowrap\">alter-jahre<a name=\"mind-observationstyp-cs-alter-jahre\"> </a></td><td>Alter in Jahren</td></tr><tr><td style=\"white-space:nowrap\">alter-monate<a name=\"mind-observationstyp-cs-alter-monate\"> </a></td><td>Alter in Monaten</td></tr><tr><td style=\"white-space:nowrap\">rd-transport<a name=\"mind-observationstyp-cs-rd-transport\"> </a></td><td>Rettungsdienstlicher Transport</td></tr><tr><td style=\"white-space:nowrap\">aerztliche-begleitung<a name=\"mind-observationstyp-cs-aerztliche-begleitung\"> </a></td><td>Ärztliche Transportbegleitung</td></tr><tr><td style=\"white-space:nowrap\">notarzt-nachgefordert<a name=\"mind-observationstyp-cs-notarzt-nachgefordert\"> </a></td><td>Notarzt nachgefordert</td></tr><tr><td style=\"white-space:nowrap\">tna-nachgefordert<a name=\"mind-observationstyp-cs-tna-nachgefordert\"> </a></td><td>Tele-Notarzt nachgefordert</td></tr><tr><td style=\"white-space:nowrap\">kein-transport-mit-patient<a name=\"mind-observationstyp-cs-kein-transport-mit-patient\"> </a></td><td>Grund für Einsatz ohne Transport trotz Patientenkontakt</td></tr><tr><td style=\"white-space:nowrap\">kein-transport-ohne-patient<a name=\"mind-observationstyp-cs-kein-transport-ohne-patient\"> </a></td><td>Grund für Einsatz ohne Transport, da kein Patientenkontakt</td></tr><tr><td style=\"white-space:nowrap\">dokumentierendes-rettungsmittel<a name=\"mind-observationstyp-cs-dokumentierendes-rettungsmittel\"> </a></td><td>Dokumentierendes Rettungsmittel</td></tr><tr><td style=\"white-space:nowrap\">beteiligte-rettungsmittel<a name=\"mind-observationstyp-cs-beteiligte-rettungsmittel\"> </a></td><td>Beteiligte Rettungsmittel</td></tr><tr><td style=\"white-space:nowrap\">aerztliche-qualifikation<a name=\"mind-observationstyp-cs-aerztliche-qualifikation\"> </a></td><td>Ärztliche Qualifikation</td></tr><tr><td style=\"white-space:nowrap\">personalstatus<a name=\"mind-observationstyp-cs-personalstatus\"> </a></td><td>Status des Personals</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn-vor-24h<a name=\"mind-observationstyp-cs-symptombeginn-vor-24h\"> </a></td><td>Symptombeginn innerhalb der letzten 24 Stunden</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn<a name=\"mind-observationstyp-cs-symptombeginn\"> </a></td><td>Zeitpunkt Symptombeginn</td></tr><tr><td style=\"white-space:nowrap\">symptombeginn-gesichert<a name=\"mind-observationstyp-cs-symptombeginn-gesichert\"> </a></td><td>Symptombeginn gesichert oder geschätzt</td></tr><tr><td style=\"white-space:nowrap\">zeit-notfallmeldung<a name=\"mind-observationstyp-cs-zeit-notfallmeldung\"> </a></td><td>Zeitpunkt Eingang Notfallmeldung</td></tr><tr><td style=\"white-space:nowrap\">zeit-alarm<a name=\"mind-observationstyp-cs-zeit-alarm\"> </a></td><td>Zeitpunkt Alarm</td></tr><tr><td style=\"white-space:nowrap\">zeit-ausruecken<a name=\"mind-observationstyp-cs-zeit-ausruecken\"> </a></td><td>Zeitpunkt Ausrücken</td></tr><tr><td style=\"white-space:nowrap\">zeit-ankunft-einsatzort<a name=\"mind-observationstyp-cs-zeit-ankunft-einsatzort\"> </a></td><td>Zeitpunkt Ankunft Einsatzort</td></tr><tr><td style=\"white-space:nowrap\">zeit-ankunft-patient<a name=\"mind-observationstyp-cs-zeit-ankunft-patient\"> </a></td><td>Zeitpunkt Ankunft Patient</td></tr><tr><td style=\"white-space:nowrap\">zeit-transportbeginn<a name=\"mind-observationstyp-cs-zeit-transportbeginn\"> </a></td><td>Zeitpunkt Transportbeginn</td></tr><tr><td style=\"white-space:nowrap\">zeit-eintreffen-transportziel<a name=\"mind-observationstyp-cs-zeit-eintreffen-transportziel\"> </a></td><td>Zeitpunkt Eintreffen Transportziel</td></tr><tr><td style=\"white-space:nowrap\">zeit-uebergabe-patient<a name=\"mind-observationstyp-cs-zeit-uebergabe-patient\"> </a></td><td>Zeitpunkt Übergabe Patient</td></tr><tr><td style=\"white-space:nowrap\">zeit-einsatzende<a name=\"mind-observationstyp-cs-zeit-einsatzende\"> </a></td><td>Zeitpunkt Einsatzende</td></tr><tr><td style=\"white-space:nowrap\">bewusstsein<a name=\"mind-observationstyp-cs-bewusstsein\"> </a></td><td>Bewusstseinslage</td></tr><tr><td style=\"white-space:nowrap\">neurologische-auffaelligkeiten<a name=\"mind-observationstyp-cs-neurologische-auffaelligkeiten\"> </a></td><td>Neurologische Auffälligkeiten</td></tr><tr><td style=\"white-space:nowrap\">ekg-befund<a name=\"mind-observationstyp-cs-ekg-befund\"> </a></td><td>EKG-Befund</td></tr><tr><td style=\"white-space:nowrap\">schmerzerleben<a name=\"mind-observationstyp-cs-schmerzerleben\"> </a></td><td>Schmerzerleben</td></tr><tr><td style=\"white-space:nowrap\">atmung<a name=\"mind-observationstyp-cs-atmung\"> </a></td><td>Klinische Befunde Atmung</td></tr><tr><td style=\"white-space:nowrap\">hautbefunde<a name=\"mind-observationstyp-cs-hautbefunde\"> </a></td><td>Hautbefunde</td></tr><tr><td style=\"white-space:nowrap\">psyche<a name=\"mind-observationstyp-cs-psyche\"> </a></td><td>Psychischer Zustand</td></tr><tr><td style=\"white-space:nowrap\">pupillenweite<a name=\"mind-observationstyp-cs-pupillenweite\"> </a></td><td>Pupillenweite</td></tr><tr><td style=\"white-space:nowrap\">lichtreaktion<a name=\"mind-observationstyp-cs-lichtreaktion\"> </a></td><td>Lichtreaktion</td></tr><tr><td style=\"white-space:nowrap\">glasgow-coma-scale<a name=\"mind-observationstyp-cs-glasgow-coma-scale\"> </a></td><td>Glasgow Coma Scale</td></tr><tr><td style=\"white-space:nowrap\">systolischer-blutdruck<a name=\"mind-observationstyp-cs-systolischer-blutdruck\"> </a></td><td>Systolischer Blutdruck</td></tr><tr><td style=\"white-space:nowrap\">herzfrequenz<a name=\"mind-observationstyp-cs-herzfrequenz\"> </a></td><td>Herzfrequenz</td></tr><tr><td style=\"white-space:nowrap\">atemfrequenz<a name=\"mind-observationstyp-cs-atemfrequenz\"> </a></td><td>Atemfrequenz</td></tr><tr><td style=\"white-space:nowrap\">sauerstoffsaettigung<a name=\"mind-observationstyp-cs-sauerstoffsaettigung\"> </a></td><td>Sauerstoffsättigung</td></tr><tr><td style=\"white-space:nowrap\">rekapillarisierungszeit<a name=\"mind-observationstyp-cs-rekapillarisierungszeit\"> </a></td><td>Rekapillarisierungszeit</td></tr><tr><td style=\"white-space:nowrap\">schmerzempfinden<a name=\"mind-observationstyp-cs-schmerzempfinden\"> </a></td><td>Schmerzempfinden</td></tr><tr><td style=\"white-space:nowrap\">blutzuckerwert<a name=\"mind-observationstyp-cs-blutzuckerwert\"> </a></td><td>Blutzucker</td></tr><tr><td style=\"white-space:nowrap\">blutzucker-einheit<a name=\"mind-observationstyp-cs-blutzucker-einheit\"> </a></td><td>Blutzuckereinheit</td></tr><tr><td style=\"white-space:nowrap\">temperatur<a name=\"mind-observationstyp-cs-temperatur\"> </a></td><td>Temperatur</td></tr><tr><td style=\"white-space:nowrap\">etco2-wert<a name=\"mind-observationstyp-cs-etco2-wert\"> </a></td><td>EtCO2-Wert</td></tr><tr><td style=\"white-space:nowrap\">vbeatmung<a name=\"mind-observationstyp-cs-vbeatmung\"> </a></td><td>Beatmung (außer Heimbeatmung)</td></tr><tr><td style=\"white-space:nowrap\">vbeatmung-detail<a name=\"mind-observationstyp-cs-vbeatmung-detail\"> </a></td><td>Differenzierte Beatmung</td></tr><tr><td style=\"white-space:nowrap\">katecholamin-pflicht<a name=\"mind-observationstyp-cs-katecholamin-pflicht\"> </a></td><td>Katecholaminpflichtigkeit</td></tr><tr><td style=\"white-space:nowrap\">katecholamin-therapie<a name=\"mind-observationstyp-cs-katecholamin-therapie\"> </a></td><td>Differenzierte Katecholamin-Therapie</td></tr><tr><td style=\"white-space:nowrap\">fortlaufend-sedierung<a name=\"mind-observationstyp-cs-fortlaufend-sedierung\"> </a></td><td>Fortlaufende Sedierung/Narkose</td></tr><tr><td style=\"white-space:nowrap\">vigilanz-minderung<a name=\"mind-observationstyp-cs-vigilanz-minderung\"> </a></td><td>Vigilanzminderung</td></tr><tr><td style=\"white-space:nowrap\">invasiv-blutdruck<a name=\"mind-observationstyp-cs-invasiv-blutdruck\"> </a></td><td>Invasiver Blutdruck</td></tr><tr><td style=\"white-space:nowrap\">anzahl-perfusor<a name=\"mind-observationstyp-cs-anzahl-perfusor\"> </a></td><td>Anzahl Perfusoren</td></tr><tr><td style=\"white-space:nowrap\">indikation-arztbegleitung<a name=\"mind-observationstyp-cs-indikation-arztbegleitung\"> </a></td><td>Indikation zur ärztlichen Begleitung</td></tr><tr><td style=\"white-space:nowrap\">helm-pat<a name=\"mind-observationstyp-cs-helm-pat\"> </a></td><td>Helm getragen</td></tr><tr><td style=\"white-space:nowrap\">behandlungspfad<a name=\"mind-observationstyp-cs-behandlungspfad\"> </a></td><td>Behandlungspfad</td></tr><tr><td style=\"white-space:nowrap\">glasgow-coma-scale-2<a name=\"mind-observationstyp-cs-glasgow-coma-scale-2\"> </a></td><td>Glasgow Coma Scale (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">systolischer-blutdruck-2<a name=\"mind-observationstyp-cs-systolischer-blutdruck-2\"> </a></td><td>Systolischer Blutdruck (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">herzfrequenz-2<a name=\"mind-observationstyp-cs-herzfrequenz-2\"> </a></td><td>Herzfrequenz (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">atemfrequenz-2<a name=\"mind-observationstyp-cs-atemfrequenz-2\"> </a></td><td>Atemfrequenz (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">sauerstoffsaettigung-2<a name=\"mind-observationstyp-cs-sauerstoffsaettigung-2\"> </a></td><td>Sauerstoffsättigung (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">schmerzempfinden-2<a name=\"mind-observationstyp-cs-schmerzempfinden-2\"> </a></td><td>Schmerzempfinden (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">sosi-transport<a name=\"mind-observationstyp-cs-sosi-transport\"> </a></td><td>SO/SI bei Transport</td></tr><tr><td style=\"white-space:nowrap\">blutzuckerwert-2<a name=\"mind-observationstyp-cs-blutzuckerwert-2\"> </a></td><td>Blutzucker (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">etco2-wert-2<a name=\"mind-observationstyp-cs-etco2-wert-2\"> </a></td><td>EtCO2-Wert (Abschlussbefunde)</td></tr><tr><td style=\"white-space:nowrap\">nummer-zk<a name=\"mind-observationstyp-cs-nummer-zk\"> </a></td><td>Nummer Zielklinik</td></tr><tr><td style=\"white-space:nowrap\">anmeldung-patient<a name=\"mind-observationstyp-cs-anmeldung-patient\"> </a></td><td>Anmeldung Patient</td></tr><tr><td style=\"white-space:nowrap\">reanimationssituation<a name=\"mind-observationstyp-cs-reanimationssituation\"> </a></td><td>Reanimationssituation</td></tr><tr><td style=\"white-space:nowrap\">reanimationstechnik<a name=\"mind-observationstyp-cs-reanimationstechnik\"> </a></td><td>Reanimationstechnik</td></tr><tr><td style=\"white-space:nowrap\">reanimation-urkrstst<a name=\"mind-observationstyp-cs-reanimation-urkrstst\"> </a></td><td>Ursache der Reanimation</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zckb<a name=\"mind-observationstyp-cs-reanimation-zckb\"> </a></td><td>Kollaps beobachtet durch</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zchdm<a name=\"mind-observationstyp-cs-reanimation-zchdm\"> </a></td><td>Herzdruckmassage begonnen</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zcdefi<a name=\"mind-observationstyp-cs-reanimation-zcdefi\"> </a></td><td>Erste Defibrillation durch</td></tr><tr><td style=\"white-space:nowrap\">reanimation-rosc<a name=\"mind-observationstyp-cs-reanimation-rosc\"> </a></td><td>ROSC</td></tr><tr><td style=\"white-space:nowrap\">reanimation-rosc1<a name=\"mind-observationstyp-cs-reanimation-rosc1\"> </a></td><td>ROSC-Intervall 1</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zdefi1<a name=\"mind-observationstyp-cs-reanimation-zdefi1\"> </a></td><td>Zeitpunkt erste Defibrillation</td></tr><tr><td style=\"white-space:nowrap\">reanimation-zros1<a name=\"mind-observationstyp-cs-reanimation-zros1\"> </a></td><td>Zeitpunkt erster ROSC</td></tr><tr><td style=\"white-space:nowrap\">reanimation-ztod<a name=\"mind-observationstyp-cs-reanimation-ztod\"> </a></td><td>Zeitpunkt Tod</td></tr><tr><td style=\"white-space:nowrap\">reanimation-khauf<a name=\"mind-observationstyp-cs-reanimation-khauf\"> </a></td><td>Krankenhausaufnahmezustand</td></tr><tr><td style=\"white-space:nowrap\">sport<a name=\"mind-observationstyp-cs-sport\"> </a></td><td>SPORT (Spontankreislauf)</td></tr><tr><td style=\"white-space:nowrap\">zeofr<a name=\"mind-observationstyp-cs-zeofr\"> </a></td><td>ZEOFR (Zeitpunkt Erstversorgung Fremd)</td></tr><tr><td style=\"white-space:nowrap\">zhdm<a name=\"mind-observationstyp-cs-zhdm\"> </a></td><td>ZHDM (Zeitpunkt Herz-Druck-Massage)</td></tr><tr><td style=\"white-space:nowrap\">zdefi1<a name=\"mind-observationstyp-cs-zdefi1\"> </a></td><td>ZDEFI1 (Zeitpunkt erste Defibrillation)</td></tr><tr><td style=\"white-space:nowrap\">zrosc1<a name=\"mind-observationstyp-cs-zrosc1\"> </a></td><td>ZROSC1 (Zeitpunkt erster ROSC)</td></tr><tr><td style=\"white-space:nowrap\">ztod<a name=\"mind-observationstyp-cs-ztod\"> </a></td><td>ZTOD (Zeitpunkt Tod)</td></tr><tr><td style=\"white-space:nowrap\">durchf-heilkundl-massn<a name=\"mind-observationstyp-cs-durchf-heilkundl-massn\"> </a></td><td>Durchführung heilkundlicher Maßnahmen durch Notfallsanitäter</td></tr></table></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.16.34"
+  }],
+  "version" : "0.1.0",
+  "name" : "MindObservationstypCS",
+  "title" : "MIND Beobachtungstypen",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-30T08:50:03+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 87,
+  "concept" : [{
+    "code" : "patientenalter",
+    "display" : "Patientenalter"
+  },
+  {
+    "code" : "altersvaliditaet",
+    "display" : "Altersvalidität"
+  },
+  {
+    "code" : "alter-jahre",
+    "display" : "Alter in Jahren"
+  },
+  {
+    "code" : "alter-monate",
+    "display" : "Alter in Monaten"
+  },
+  {
+    "code" : "rd-transport",
+    "display" : "Rettungsdienstlicher Transport"
+  },
+  {
+    "code" : "aerztliche-begleitung",
+    "display" : "Ärztliche Transportbegleitung"
+  },
+  {
+    "code" : "notarzt-nachgefordert",
+    "display" : "Notarzt nachgefordert"
+  },
+  {
+    "code" : "tna-nachgefordert",
+    "display" : "Tele-Notarzt nachgefordert"
+  },
+  {
+    "code" : "kein-transport-mit-patient",
+    "display" : "Grund für Einsatz ohne Transport trotz Patientenkontakt"
+  },
+  {
+    "code" : "kein-transport-ohne-patient",
+    "display" : "Grund für Einsatz ohne Transport, da kein Patientenkontakt"
+  },
+  {
+    "code" : "dokumentierendes-rettungsmittel",
+    "display" : "Dokumentierendes Rettungsmittel"
+  },
+  {
+    "code" : "beteiligte-rettungsmittel",
+    "display" : "Beteiligte Rettungsmittel"
+  },
+  {
+    "code" : "aerztliche-qualifikation",
+    "display" : "Ärztliche Qualifikation"
+  },
+  {
+    "code" : "personalstatus",
+    "display" : "Status des Personals"
+  },
+  {
+    "code" : "symptombeginn-vor-24h",
+    "display" : "Symptombeginn innerhalb der letzten 24 Stunden"
+  },
+  {
+    "code" : "symptombeginn",
+    "display" : "Zeitpunkt Symptombeginn"
+  },
+  {
+    "code" : "symptombeginn-gesichert",
+    "display" : "Symptombeginn gesichert oder geschätzt"
+  },
+  {
+    "code" : "zeit-notfallmeldung",
+    "display" : "Zeitpunkt Eingang Notfallmeldung"
+  },
+  {
+    "code" : "zeit-alarm",
+    "display" : "Zeitpunkt Alarm"
+  },
+  {
+    "code" : "zeit-ausruecken",
+    "display" : "Zeitpunkt Ausrücken"
+  },
+  {
+    "code" : "zeit-ankunft-einsatzort",
+    "display" : "Zeitpunkt Ankunft Einsatzort"
+  },
+  {
+    "code" : "zeit-ankunft-patient",
+    "display" : "Zeitpunkt Ankunft Patient"
+  },
+  {
+    "code" : "zeit-transportbeginn",
+    "display" : "Zeitpunkt Transportbeginn"
+  },
+  {
+    "code" : "zeit-eintreffen-transportziel",
+    "display" : "Zeitpunkt Eintreffen Transportziel"
+  },
+  {
+    "code" : "zeit-uebergabe-patient",
+    "display" : "Zeitpunkt Übergabe Patient"
+  },
+  {
+    "code" : "zeit-einsatzende",
+    "display" : "Zeitpunkt Einsatzende"
+  },
+  {
+    "code" : "bewusstsein",
+    "display" : "Bewusstseinslage"
+  },
+  {
+    "code" : "neurologische-auffaelligkeiten",
+    "display" : "Neurologische Auffälligkeiten"
+  },
+  {
+    "code" : "ekg-befund",
+    "display" : "EKG-Befund"
+  },
+  {
+    "code" : "schmerzerleben",
+    "display" : "Schmerzerleben"
+  },
+  {
+    "code" : "atmung",
+    "display" : "Klinische Befunde Atmung"
+  },
+  {
+    "code" : "hautbefunde",
+    "display" : "Hautbefunde"
+  },
+  {
+    "code" : "psyche",
+    "display" : "Psychischer Zustand"
+  },
+  {
+    "code" : "pupillenweite",
+    "display" : "Pupillenweite"
+  },
+  {
+    "code" : "lichtreaktion",
+    "display" : "Lichtreaktion"
+  },
+  {
+    "code" : "glasgow-coma-scale",
+    "display" : "Glasgow Coma Scale"
+  },
+  {
+    "code" : "systolischer-blutdruck",
+    "display" : "Systolischer Blutdruck"
+  },
+  {
+    "code" : "herzfrequenz",
+    "display" : "Herzfrequenz"
+  },
+  {
+    "code" : "atemfrequenz",
+    "display" : "Atemfrequenz"
+  },
+  {
+    "code" : "sauerstoffsaettigung",
+    "display" : "Sauerstoffsättigung"
+  },
+  {
+    "code" : "rekapillarisierungszeit",
+    "display" : "Rekapillarisierungszeit"
+  },
+  {
+    "code" : "schmerzempfinden",
+    "display" : "Schmerzempfinden"
+  },
+  {
+    "code" : "blutzuckerwert",
+    "display" : "Blutzucker"
+  },
+  {
+    "code" : "blutzucker-einheit",
+    "display" : "Blutzuckereinheit"
+  },
+  {
+    "code" : "temperatur",
+    "display" : "Temperatur"
+  },
+  {
+    "code" : "etco2-wert",
+    "display" : "EtCO2-Wert"
+  },
+  {
+    "code" : "vbeatmung",
+    "display" : "Beatmung (außer Heimbeatmung)"
+  },
+  {
+    "code" : "vbeatmung-detail",
+    "display" : "Differenzierte Beatmung"
+  },
+  {
+    "code" : "katecholamin-pflicht",
+    "display" : "Katecholaminpflichtigkeit"
+  },
+  {
+    "code" : "katecholamin-therapie",
+    "display" : "Differenzierte Katecholamin-Therapie"
+  },
+  {
+    "code" : "fortlaufend-sedierung",
+    "display" : "Fortlaufende Sedierung/Narkose"
+  },
+  {
+    "code" : "vigilanz-minderung",
+    "display" : "Vigilanzminderung"
+  },
+  {
+    "code" : "invasiv-blutdruck",
+    "display" : "Invasiver Blutdruck"
+  },
+  {
+    "code" : "anzahl-perfusor",
+    "display" : "Anzahl Perfusoren"
+  },
+  {
+    "code" : "indikation-arztbegleitung",
+    "display" : "Indikation zur ärztlichen Begleitung"
+  },
+  {
+    "code" : "helm-pat",
+    "display" : "Helm getragen"
+  },
+  {
+    "code" : "behandlungspfad",
+    "display" : "Behandlungspfad"
+  },
+  {
+    "code" : "glasgow-coma-scale-2",
+    "display" : "Glasgow Coma Scale (Abschlussbefunde)"
+  },
+  {
+    "code" : "systolischer-blutdruck-2",
+    "display" : "Systolischer Blutdruck (Abschlussbefunde)"
+  },
+  {
+    "code" : "herzfrequenz-2",
+    "display" : "Herzfrequenz (Abschlussbefunde)"
+  },
+  {
+    "code" : "atemfrequenz-2",
+    "display" : "Atemfrequenz (Abschlussbefunde)"
+  },
+  {
+    "code" : "sauerstoffsaettigung-2",
+    "display" : "Sauerstoffsättigung (Abschlussbefunde)"
+  },
+  {
+    "code" : "schmerzempfinden-2",
+    "display" : "Schmerzempfinden (Abschlussbefunde)"
+  },
+  {
+    "code" : "sosi-transport",
+    "display" : "SO/SI bei Transport"
+  },
+  {
+    "code" : "blutzuckerwert-2",
+    "display" : "Blutzucker (Abschlussbefunde)"
+  },
+  {
+    "code" : "etco2-wert-2",
+    "display" : "EtCO2-Wert (Abschlussbefunde)"
+  },
+  {
+    "code" : "nummer-zk",
+    "display" : "Nummer Zielklinik"
+  },
+  {
+    "code" : "anmeldung-patient",
+    "display" : "Anmeldung Patient"
+  },
+  {
+    "code" : "reanimationssituation",
+    "display" : "Reanimationssituation"
+  },
+  {
+    "code" : "reanimationstechnik",
+    "display" : "Reanimationstechnik"
+  },
+  {
+    "code" : "reanimation-urkrstst",
+    "display" : "Ursache der Reanimation"
+  },
+  {
+    "code" : "reanimation-zckb",
+    "display" : "Kollaps beobachtet durch"
+  },
+  {
+    "code" : "reanimation-zchdm",
+    "display" : "Herzdruckmassage begonnen"
+  },
+  {
+    "code" : "reanimation-zcdefi",
+    "display" : "Erste Defibrillation durch"
+  },
+  {
+    "code" : "reanimation-rosc",
+    "display" : "ROSC"
+  },
+  {
+    "code" : "reanimation-rosc1",
+    "display" : "ROSC-Intervall 1"
+  },
+  {
+    "code" : "reanimation-zdefi1",
+    "display" : "Zeitpunkt erste Defibrillation"
+  },
+  {
+    "code" : "reanimation-zros1",
+    "display" : "Zeitpunkt erster ROSC"
+  },
+  {
+    "code" : "reanimation-ztod",
+    "display" : "Zeitpunkt Tod"
+  },
+  {
+    "code" : "reanimation-khauf",
+    "display" : "Krankenhausaufnahmezustand"
+  },
+  {
+    "code" : "sport",
+    "display" : "SPORT (Spontankreislauf)"
+  },
+  {
+    "code" : "zeofr",
+    "display" : "ZEOFR (Zeitpunkt Erstversorgung Fremd)"
+  },
+  {
+    "code" : "zhdm",
+    "display" : "ZHDM (Zeitpunkt Herz-Druck-Massage)"
+  },
+  {
+    "code" : "zdefi1",
+    "display" : "ZDEFI1 (Zeitpunkt erste Defibrillation)"
+  },
+  {
+    "code" : "zrosc1",
+    "display" : "ZROSC1 (Zeitpunkt erster ROSC)"
+  },
+  {
+    "code" : "ztod",
+    "display" : "ZTOD (Zeitpunkt Tod)"
+  },
+  {
+    "code" : "durchf-heilkundl-massn",
+    "display" : "Durchführung heilkundlicher Maßnahmen durch Notfallsanitäter"
+  }]
+}

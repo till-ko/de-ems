@@ -1,0 +1,513 @@
+{
+  "package": "de.ems.mind.r4",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
+  "extensions": [
+    {
+      "url": "https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ",
+      "title": "MIND Einsatzorttyp",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://till-ko.github.io/de-ems/StructureDefinition/mind-softwarekennung",
+      "title": "MIND Softwarekennung",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/bundle-de-ems-mind-r4",
+        "title": "MIND 7.1 Dokument-Bundle"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-divi-r4",
+        "title": "de-EMS DIVI Einsatzprotokoll (Dokumentkopf)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-mind-r4",
+        "title": "MIND 7.1 Einsatzdokument"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-divi-r4",
+        "title": "DIVI 7.1 Einsatz / Encounter"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-mind-r4",
+        "title": "MIND 7.1 Einsatz / Encounter"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-divi-r4",
+        "title": "DIVI 7.1 Einsatzort / Location"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-mind-r4",
+        "title": "MIND 7.1 Einsatzort / Location"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-base",
+        "title": "de EMS Observation Basisprofil"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind",
+        "title": "de EMS MIND Observation Basisprofil"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-begleitung",
+        "title": "MIND 7.1 Ärztliche Transportbegleitung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-qualifikation",
+        "title": "MIND 7.1 Ärztliche Qualifikation"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-alter",
+        "title": "MIND 7.1 Patientenalter"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-altersvaliditaet",
+        "title": "MIND 7.1 Altersvalidität"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-anmeldung-patient",
+        "title": "MIND 7.1 Anmeldung Patient"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-anzahl-perfusor",
+        "title": "MIND 7.1 Anzahl Perfusoren"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-atemfrequenz",
+        "title": "MIND 7.1 Atemfrequenz"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-atemfrequenz-2",
+        "title": "MIND 7.1 Atemfrequenz (Abschlussbefunde)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-atmung",
+        "title": "MIND 7.1 Klinische Befunde Atmung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-behandlungspfad",
+        "title": "MIND 7.1 Behandlungspfad"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-beteiligte-rettungsmittel",
+        "title": "MIND 7.1 Beteiligte Rettungsmittel"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-bewusstsein",
+        "title": "MIND 7.1 Bewusstseinslage"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-blutzuckerwert",
+        "title": "MIND 7.1 Blutzucker"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-blutzuckerwert-2",
+        "title": "MIND 7.1 Blutzucker (Abschlussbefunde)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-dokumentierendes-rettungsmittel",
+        "title": "MIND 7.1 Dokumentierendes Rettungsmittel"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-durchf-heilkundl-massn",
+        "title": "MIND 7.1 Durchführung heilkundlicher Maßnahmen durch Notfallsanitäter"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-ekg-befund",
+        "title": "MIND 7.1 EKG-Befund"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-etco2-wert",
+        "title": "MIND 7.1 EtCO2-Wert"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-etco2-wert-2",
+        "title": "MIND 7.1 EtCO2-Wert (Abschlussbefunde)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-fortlaufend-sedierung",
+        "title": "MIND 7.1 Fortlaufende Sedierung/Narkose"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-glasgow-coma-scale",
+        "title": "MIND 7.1 Glasgow Coma Scale"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-glasgow-coma-scale-2",
+        "title": "MIND 7.1 Glasgow Coma Scale (Abschlussbefunde)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-hautbefunde",
+        "title": "MIND 7.1 Hautbefunde"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-helm-pat",
+        "title": "MIND 7.1 Helm getragen"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-herzfrequenz",
+        "title": "MIND 7.1 Herzfrequenz"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-herzfrequenz-2",
+        "title": "MIND 7.1 Herzfrequenz (Abschlussbefunde)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-indikation-arztbegleitung",
+        "title": "MIND 7.1 Indikation zur ärztlichen Begleitung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-invasiv-blutdruck",
+        "title": "MIND 7.1 Invasiver Blutdruck"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-katecholamin-pflicht",
+        "title": "MIND 7.1 Katecholaminpflichtigkeit"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-katecholamin-therapie",
+        "title": "MIND 7.1 Differenzierte Katecholamin-Therapie"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-mit-patient",
+        "title": "MIND 7.1 Grund für Einsatz ohne Transport trotz Patientenkontakt"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-ohne-patient",
+        "title": "MIND 7.1 Grund für Einsatz ohne Transport, da kein Patientenkontakt"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-khauf",
+        "title": "MIND 7.1 Krankenhausaufnahmezustand"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-lichtreaktion",
+        "title": "MIND 7.1 Lichtreaktion"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-neurologische-auffaelligkeiten",
+        "title": "MIND 7.1 Neurologische Auffälligkeiten"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-notarzt-nachgefordert",
+        "title": "MIND 7.1 Notarzt nachgefordert"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-nummer-zk",
+        "title": "MIND 7.1 Nummer Zielklinik"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-personalstatus",
+        "title": "MIND 7.1 Status des Personals"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-psyche",
+        "title": "MIND 7.1 Psychischer Zustand"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-pupillenweite",
+        "title": "MIND 7.1 Pupillenweite"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rd-transport",
+        "title": "MIND 7.1 Rettungsdienstlicher Transport"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-reanimationssituation",
+        "title": "MIND 7.1 Reanimationssituation"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-reanimationstechnik",
+        "title": "MIND 7.1 Reanimationstechnik"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rekapillarisierungszeit",
+        "title": "MIND 7.1 Rekapillarisierungszeit"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rosc",
+        "title": "MIND 7.1 ROSC"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-sauerstoffsaettigung",
+        "title": "MIND 7.1 Sauerstoffsaettigung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-sauerstoffsaettigung-2",
+        "title": "MIND 7.1 Sauerstoffsättigung (Abschlussbefunde)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-schmerzempfinden",
+        "title": "MIND 7.1 Schmerzempfinden"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-schmerzempfinden-2",
+        "title": "MIND 7.1 Schmerzempfinden (Abschlussbefunde)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-schmerzerleben",
+        "title": "MIND 7.1 Schmerzerleben"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-sosi-transport",
+        "title": "MIND 7.1 SO/SI bei Transport"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-sport",
+        "title": "MIND 7.1 SPORT"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn",
+        "title": "MIND 7.1 Zeitpunkt Symptombeginn"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-gesichert",
+        "title": "MIND 7.1 Symptombeginn gesichert oder geschätzt"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-vor-24h",
+        "title": "MIND 7.1 Symptombeginn innerhalb der letzten 24 Stunden"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-systolischer-blutdruck",
+        "title": "MIND 7.1 Systolischer Blutdruck"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-systolischer-blutdruck-2",
+        "title": "MIND 7.1 Systolischer Blutdruck (Abschlussbefunde)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-temperatur",
+        "title": "MIND 7.1 Temperatur"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-tna-nachgefordert",
+        "title": "MIND 7.1 Tele-Notarzt nachgefordert"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-urkrstst",
+        "title": "MIND 7.1 Ursache der Reanimation"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-vbeatmung",
+        "title": "MIND 7.1 Beatmung (außer Heimbeatmung)"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-vbeatmung-detail",
+        "title": "MIND 7.1 Differenzierte Beatmung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-vigilanz-minderung",
+        "title": "MIND 7.1 Vigilanzminderung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zcdefi",
+        "title": "MIND 7.1 Erste Defibrillation durch"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zchdm",
+        "title": "MIND 7.1 Herzdruckmassage begonnen"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zckb",
+        "title": "MIND 7.1 Kollaps beobachtet durch"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zdefi1",
+        "title": "MIND 7.1 ZDEFI1"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-alarm",
+        "title": "MIND 7.1 Zeitpunkt Alarm"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-einsatzort",
+        "title": "MIND 7.1 Zeitpunkt Ankunft Einsatzort"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-patient",
+        "title": "MIND 7.1 Zeitpunkt Ankunft Patient"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ausruecken",
+        "title": "MIND 7.1 Zeitpunkt Ausrücken"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-einsatzende",
+        "title": "MIND 7.1 Zeitpunkt Einsatzende"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-eintreffen-transportziel",
+        "title": "MIND 7.1 Zeitpunkt Eintreffen Transportziel"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-notfallmeldung",
+        "title": "MIND 7.1 Zeitpunkt Eingang Notfallmeldung"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-transportbeginn",
+        "title": "MIND 7.1 Zeitpunkt Transportbeginn"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-uebergabe-patient",
+        "title": "MIND 7.1 Zeitpunkt Übergabe Patient"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeofr",
+        "title": "MIND 7.1 ZEOFR"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zhdm",
+        "title": "MIND 7.1 ZH.DM"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zrosc1",
+        "title": "MIND 7.1 ZROSC1"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-ztod",
+        "title": "MIND 7.1 ZTOD"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-divi-r4",
+        "title": "DIVI 7.1 Patient"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/patient-de-ems-mind-r4",
+        "title": "MIND 7.1 Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/practitioner-de-ems-divi-r4",
+        "title": "DIVI Einsatzbeteiligte / Practitioner"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/practitioner-de-ems-mind-r4",
+        "title": "MIND Einsatzbeteiligte / Practitioner (pseudonymisiert)"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/practitionerrole-de-ems-divi-r4",
+        "title": "DIVI Einsatzrolle / PractitionerRole"
+      },
+      {
+        "url": "https://till-ko.github.io/de-ems/StructureDefinition/practitionerrole-de-ems-mind-r4",
+        "title": "MIND Einsatzrolle / PractitionerRole (pseudonymisiert)"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.de/StructureDefinition/destatis/ags": [
+      "Bundle.entry.resource.address.city",
+      "Location.address.city"
+    ],
+    "http://fhir.de/StructureDefinition/gender-amtlich-de": [
+      "Patient.gender",
+      "Practitioner.gender"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Location.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Location.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Location.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
+      "Location.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Location.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-codedString": [
+      "Location.address.country"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/binding-definition": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://till-ko.github.io/de-ems/StructureDefinition/mind-einsatzort-typ": [
+      "Bundle.entry.resource",
+      "Location"
+    ],
+    "https://till-ko.github.io/de-ems/StructureDefinition/mind-softwarekennung": [
+      "Bundle.entry.resource",
+      "Composition"
+    ]
+  }
+}

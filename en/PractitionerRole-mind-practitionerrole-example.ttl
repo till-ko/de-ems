@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/PractitionerRole/mind-practitionerrole-example> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mind-practitionerrole-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://till-ko.github.io/de-ems/StructureDefinition/practitionerrole-de-ems-mind-r4" ;
+       fhir:index -1 ;
+       fhir:link <https://till-ko.github.io/de-ems/StructureDefinition/practitionerrole-de-ems-mind-r4>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole mind-practitionerrole-example</b></p><a name=\"mind-practitionerrole-example\"> </a><a name=\"hcmind-practitionerrole-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-practitionerrole-de-ems-mind-r4.html\">MIND Einsatzrolle / PractitionerRole (pseudonymisiert)</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner-mind-practitioner-example.html\">Practitioner Rettungsdienst Beispiel </a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0360 EMT}\">Rettungsdienst</span></p></div>"
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://till-ko.github.io/de-ems/Practitioner/mind-practitioner-example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/mind-practitioner-example" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0360" ] ;
+       fhir:Coding.code [ fhir:value "EMT" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Rettungsdienst" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://till-ko.github.io/de-ems/PractitionerRole/mind-practitionerrole-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,646 @@
+DE_EMS : Validation Results
+=========================================
+
+err = 3, warn = 89, info = 27
+IG Publisher Version: 2.3.4 Out of date - current version is 3.0.1
+Generated Fri Oct 30 08:55:18 UTC 2026. FHIR version 4.0.1 for de.ems.mind.r4#0.1.0 (canonical = https://till-ko.github.io/de-ems)
+ Build Errors : 0 / 1 / 0
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Bundle-mind-rd-dokument-example : 0 / 0 / 39
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-de-ems-kapitel-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-aerztliche-begleitung-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-aerztliche-qualifikation-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-airway-massnahme-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-atemunterstuetzung-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-atmung-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-beteiligtes-rettungsmittel-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-bewusstseinslage-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-blutzucker-befund-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-blutzucker-einheit-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-circulation-zugang-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-diagnose-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-dokumentierendes-rettungsmittel-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-einsatzart-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-einsatzbesonderheit-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-einsatzort-typ-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-ekg-12-kanal-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-ekg-befund-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-erste-defibrillation-durch-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-hautbefund-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-heilkundliche-massnahme-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-herzdruckmassage-durch-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-indikation-intensivtransport-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-kein-transport-mit-patient-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-kein-transport-ohne-patient-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-kollaps-beobachtet-durch-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-krankenhausaufnahme-zustand-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-kreislaufstillstandursache-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-lagerungs-rettungstechnik-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-lichtreaktion-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-medikamentengabe-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-medizintechnik-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-mnaca-score-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-naca-score-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-neurologische-auffaelligkeit-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-neurologische-auffaelligkeit-verlauf-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-observationstyp-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-ort-patientenuebergabe-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-personalstatus-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-pre-emergency-status-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-protokolltyp-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-psychischer-zustand-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-pupillenweite-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-rd-transport-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-reanimationssituation-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-reanimationstechnik-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-rosc-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-schmerzerleben-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-spezielle-devices-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-spezielle-massnahme-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-unfallhergang-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-unfallmechanismus-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-unfallursache-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-verletzungsmuster-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/CodeSystem-mind-zeitliche-dringlichkeit-cs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Composition-mind-composition-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ConceptMap-mind-medikamentengabe-2-snomed-atc : 0 / 6 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ConceptMap-mind-observationstyp-2-ivr : 0 / 2 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Encounter-mind-encounter-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ImplementationGuide-de.ems.mind.r4 : 0 / 2 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Location-mind-location-example : 0 / 0 / 2
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/NamingSystem-MindAuftragNrNamingSystem : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/NamingSystem-MindDokumentNamingSystem : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/NamingSystem-MindEinsatznrNamingSystem : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/NamingSystem-MindLeitstelleNamingSystem : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/NamingSystem-MindPatNrNamingSystem : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/NamingSystem-MindPrimaerschluesselNamingSystem : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/NamingSystem-MindProjektIdNamingSystem : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/NamingSystem-MindStandortkennungNamingSystem : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-alter-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-altersvaliditaet-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-altersvaliditaet-undokumentiert-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-atemfrequenz-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-atmung-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-bewusstsein-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-blutzucker-example : 1 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-blutzucker-niedrig-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-ekg-befund-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-etco2-wert-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-glasgow-coma-scale-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-hautbefunde-2-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-hautbefunde-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-herzfrequenz-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-lichtreaktion-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-neurologische-auffaelligkeiten-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-notarzt-nachgefordert-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-psyche-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-pupillenweite-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-rdtransport-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-rekapillarisierungszeit-example : 0 / 0 / 2
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-sauerstoffsaettigung-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-schmerzempfinden-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-schmerzerleben-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-systolischer-blutdruck-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-systolischer-blutdruck-nicht-gemessen-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-temperatur-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-zeit-alarm-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Observation-mind-zeit-einsatzende-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Patient-divi-patient-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Patient-mind-patient-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/Practitioner-mind-practitioner-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/PractitionerRole-mind-practitionerrole-example : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/PractitionerRole-mind-practitionerrole-example2 : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-bundle-de-ems-mind-r4 : 0 / 0 / 2
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-composition-de-ems-divi-r4 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-composition-de-ems-mind-r4 : 0 / 0 / 3
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-encounter-de-ems-divi-r4 : 0 / 1 / 3
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-encounter-de-ems-mind-r4 : 0 / 0 / 2
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-location-de-ems-divi-r4 : 1 / 7 / 4
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-location-de-ems-mind-r4 : 1 / 6 / 3
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-mind-einsatzort-typ : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-mind-softwarekennung : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-base : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind : 0 / 0 / 2
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-aerztliche-begleitung : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-aerztliche-qualifikation : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-alter : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-altersvaliditaet : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-anmeldung-patient : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-anzahl-perfusor : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-atemfrequenz : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-atemfrequenz-2 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-atmung : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-behandlungspfad : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-beteiligte-rettungsmittel : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-bewusstsein : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-blutzuckerwert : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-blutzuckerwert-2 : 0 / 2 / 3
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-dokumentierendes-rettungsmittel : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-durchf-heilkundl-massn : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-ekg-befund : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-etco2-wert : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-etco2-wert-2 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-fortlaufend-sedierung : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-glasgow-coma-scale : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-glasgow-coma-scale-2 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-hautbefunde : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-helm-pat : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-herzfrequenz : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-herzfrequenz-2 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-indikation-arztbegleitung : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-invasiv-blutdruck : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-katecholamin-pflicht : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-katecholamin-therapie : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-kein-transport-mit-patient : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-kein-transport-ohne-patient : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-khauf : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-lichtreaktion : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-neurologische-auffaelligkeiten : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-notarzt-nachgefordert : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-nummer-zk : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-personalstatus : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-psyche : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-pupillenweite : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-rd-transport : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-reanimationssituation : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-reanimationstechnik : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-rekapillarisierungszeit : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-rosc : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-sauerstoffsaettigung : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-sauerstoffsaettigung-2 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-schmerzempfinden : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-schmerzempfinden-2 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-schmerzerleben : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-sosi-transport : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-sport : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-symptombeginn : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-symptombeginn-gesichert : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-symptombeginn-vor-24h : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-systolischer-blutdruck : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-systolischer-blutdruck-2 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-temperatur : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-tna-nachgefordert : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-urkrstst : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-vbeatmung : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-vbeatmung-detail : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-vigilanz-minderung : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zcdefi : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zchdm : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zckb : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zdefi1 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-alarm : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-ankunft-einsatzort : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-ankunft-patient : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-ausruecken : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-einsatzende : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-eintreffen-transportziel : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-notfallmeldung : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-transportbeginn : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-uebergabe-patient : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeofr : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zhdm : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zrosc1 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-observation-de-ems-mind-ztod : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-patient-de-ems-divi-r4 : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-patient-de-ems-mind-r4 : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-practitioner-de-ems-divi-r4 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-practitioner-de-ems-mind-r4 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-practitionerrole-de-ems-divi-r4 : 0 / 1 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/StructureDefinition-practitionerrole-de-ems-mind-r4 : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-de-ems-kapitel-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-aerztliche-begleitung-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-aerztliche-qualifikation-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-airway-massnahme-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-atemunterstuetzung-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-atmung-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-beteiligtes-rettungsmittel-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-bewusstseinslage-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-blutzucker-befund-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-blutzucker-einheit-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-circulation-zugang-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-diagnose-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-dokumentierendes-rettungsmittel-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-einsatzart-na-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-einsatzart-rd-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-einsatzart-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-einsatzbesonderheit-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-einsatzort-typ-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-ekg-12-kanal-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-ekg-befund-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-erste-defibrillation-durch-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-hautbefund-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-heilkundliche-massnahme-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-herzdruckmassage-durch-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-indikation-intensivtransport-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-infusionsgabe-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-kein-transport-mit-patient-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-kein-transport-ohne-patient-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-kollaps-beobachtet-durch-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-krankenhausaufnahme-zustand-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-kreislaufstillstandursache-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-lagerungs-rettungstechnik-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-lichtreaktion-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-medikamentengabe-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-medizintechnik-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-mnaca-score-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-naca-score-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-neurologische-auffaelligkeit-verlauf-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-neurologische-auffaelligkeit-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-observationstyp-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-ort-patientenuebergabe-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-personalstatus-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-pre-emergency-status-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-protokolltyp-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-psychischer-zustand-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-pupillenweite-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-rd-transport-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-reanimationssituation-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-reanimationstechnik-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-rosc-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-schmerzerleben-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-spezielle-devices-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-spezielle-massnahme-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-unfallhergang-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-unfallmechanismus-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-unfallursache-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-verletzungsmuster-vs : 0 / 0 / 1
+ /home/runner/work/de-ems/de-ems/fsh-generated/resources/ValueSet-mind-zeitliche-dringlichkeit-vs : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide: The assigned auto-oid-root value '2.25.169126619167380341660016816424527320624' is not registered in https://github.com/FHIR/ig-registry/blob/master/oid-assignments.json so isn't known to be valid
+== fsh-generated/resources/Bundle-mind-rd-dokument-example.json ==
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle.entry[0].resource/*Composition/mind-composition-example*/.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = https://till-ko.github.io/de-ems/CodeSystem/mind-protokolltyp-cs#RD)
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle.entry[3].resource/*Location/mind-location-example*/.address.city.extension[0].value.ofType(Coding).system: A definition for CodeSystem 'http://fhir.de/sid/destatis/ags' could not be found, so the code cannot be validated
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[5].resource.performer[0])
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[6].resource.performer[0])
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[7].resource.performer[0])
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[8].resource.performer[0])
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[9].resource.performer[0])
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[10].resource.performer[0])
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[11].resource.performer[0])
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[12].resource.performer[0])
+INFORMATION: Bundle/mind-rd-dokument-example: Bundle: Can't find 'PractitionerRole/mind-practitionerrole-example' in the bundle (Bundle.entry[13].resource.performer[0])
+== fsh-generated/resources/CodeSystem-de-ems-kapitel-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-aerztliche-begleitung-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-aerztliche-qualifikation-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-airway-massnahme-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-atemunterstuetzung-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-atmung-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-beteiligtes-rettungsmittel-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-bewusstseinslage-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-blutzucker-befund-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-blutzucker-einheit-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-circulation-zugang-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-diagnose-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-dokumentierendes-rettungsmittel-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-einsatzart-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-einsatzbesonderheit-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-einsatzort-typ-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-ekg-12-kanal-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-ekg-befund-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-erste-defibrillation-durch-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-hautbefund-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-heilkundliche-massnahme-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-herzdruckmassage-durch-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-indikation-intensivtransport-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-kein-transport-mit-patient-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-kein-transport-ohne-patient-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-kollaps-beobachtet-durch-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-krankenhausaufnahme-zustand-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-kreislaufstillstandursache-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-lagerungs-rettungstechnik-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-lichtreaktion-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-medikamentengabe-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-medizintechnik-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-mnaca-score-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-naca-score-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-neurologische-auffaelligkeit-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-neurologische-auffaelligkeit-verlauf-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-observationstyp-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-ort-patientenuebergabe-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-personalstatus-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-pre-emergency-status-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-protokolltyp-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-psychischer-zustand-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-pupillenweite-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-rd-transport-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-reanimationssituation-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-reanimationstechnik-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-rosc-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-schmerzerleben-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-spezielle-devices-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-spezielle-massnahme-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-unfallhergang-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-unfallmechanismus-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-unfallursache-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-verletzungsmuster-cs.json ==
+== fsh-generated/resources/CodeSystem-mind-zeitliche-dringlichkeit-cs.json ==
+== fsh-generated/resources/Composition-mind-composition-example.json ==
+== fsh-generated/resources/ConceptMap-mind-medikamentengabe-2-snomed-atc.json ==
+WARNING: ConceptMap/mind-medikamentengabe-2-snomed-atc: ConceptMap.group[0].source: The Source Code System https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mind-medikamentengabe-2-snomed-atc: ConceptMap.group[0].target: The Target Code System http://snomed.info/sct is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+WARNING: ConceptMap/mind-medikamentengabe-2-snomed-atc: ConceptMap.group[1].source: The Source Code System https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mind-medikamentengabe-2-snomed-atc: ConceptMap.group[1].target: The Target Code System http://snomed.info/sct is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+WARNING: ConceptMap/mind-medikamentengabe-2-snomed-atc: ConceptMap.group[2].source: The Source Code System https://till-ko.github.io/de-ems/CodeSystem/mind-medikamentengabe-cs is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mind-medikamentengabe-2-snomed-atc: ConceptMap.group[2].target: The Target Code System http://fhir.de/CodeSystem/bfarm/atc is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+== fsh-generated/resources/ConceptMap-mind-observationstyp-2-ivr.json ==
+WARNING: ConceptMap/mind-observationstyp-2-ivr: ConceptMap.group[0].target: No definition could be found for URL value 'http://fhir.ch/ig/ch-ems/CodeSystem/IVR'
+WARNING: ConceptMap/mind-observationstyp-2-ivr: ConceptMap.group[0].target: The Target Code System http://fhir.ch/ig/ch-ems/CodeSystem/IVR is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+== fsh-generated/resources/Encounter-mind-encounter-example.json ==
+== fsh-generated/resources/ImplementationGuide-de.ems.mind.r4.json ==
+WARNING: ImplementationGuide/de.ems.mind.r4: ImplementationGuide.dependsOn[2].uri: A definition could not be found for Canonical URL 'http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4'
+WARNING: ImplementationGuide/de.ems.mind.r4: ImplementationGuide.dependsOn[2]: The canonical URL http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4 doesn't point to an actual ImplementationGuide resource
+== fsh-generated/resources/Location-mind-location-example.json ==
+INFORMATION: Location/mind-location-example: Location.address.city.extension[0].value.ofType(Coding).system: A definition for CodeSystem 'http://fhir.de/sid/destatis/ags' could not be found, so the code cannot be validated
+== fsh-generated/resources/NamingSystem-MindAuftragNrNamingSystem.json ==
+== fsh-generated/resources/NamingSystem-MindDokumentNamingSystem.json ==
+== fsh-generated/resources/NamingSystem-MindEinsatznrNamingSystem.json ==
+== fsh-generated/resources/NamingSystem-MindLeitstelleNamingSystem.json ==
+== fsh-generated/resources/NamingSystem-MindPatNrNamingSystem.json ==
+== fsh-generated/resources/NamingSystem-MindPrimaerschluesselNamingSystem.json ==
+== fsh-generated/resources/NamingSystem-MindProjektIdNamingSystem.json ==
+== fsh-generated/resources/NamingSystem-MindStandortkennungNamingSystem.json ==
+== fsh-generated/resources/Observation-mind-alter-example.json ==
+== fsh-generated/resources/Observation-mind-altersvaliditaet-example.json ==
+== fsh-generated/resources/Observation-mind-altersvaliditaet-undokumentiert-example.json ==
+== fsh-generated/resources/Observation-mind-atemfrequenz-example.json ==
+== fsh-generated/resources/Observation-mind-atmung-example.json ==
+== fsh-generated/resources/Observation-mind-bewusstsein-example.json ==
+== fsh-generated/resources/Observation-mind-blutzucker-example.json ==
+ERROR: Observation/mind-blutzucker-example: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:einheit in profile https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-blutzuckerwert|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions
+== fsh-generated/resources/Observation-mind-blutzucker-niedrig-example.json ==
+== fsh-generated/resources/Observation-mind-ekg-befund-example.json ==
+== fsh-generated/resources/Observation-mind-etco2-wert-example.json ==
+== fsh-generated/resources/Observation-mind-glasgow-coma-scale-example.json ==
+== fsh-generated/resources/Observation-mind-hautbefunde-2-example.json ==
+== fsh-generated/resources/Observation-mind-hautbefunde-example.json ==
+== fsh-generated/resources/Observation-mind-herzfrequenz-example.json ==
+== fsh-generated/resources/Observation-mind-lichtreaktion-example.json ==
+== fsh-generated/resources/Observation-mind-neurologische-auffaelligkeiten-example.json ==
+== fsh-generated/resources/Observation-mind-notarzt-nachgefordert-example.json ==
+== fsh-generated/resources/Observation-mind-psyche-example.json ==
+== fsh-generated/resources/Observation-mind-pupillenweite-example.json ==
+== fsh-generated/resources/Observation-mind-rdtransport-example.json ==
+== fsh-generated/resources/Observation-mind-rekapillarisierungszeit-example.json ==
+INFORMATION: Observation/mind-rekapillarisierungszeit-example: Observation.value.ofType(Range): This element does not match any known slice defined in the profile https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rekapillarisierungszeit|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/Observation-mind-sauerstoffsaettigung-example.json ==
+== fsh-generated/resources/Observation-mind-schmerzempfinden-example.json ==
+== fsh-generated/resources/Observation-mind-schmerzerleben-example.json ==
+== fsh-generated/resources/Observation-mind-systolischer-blutdruck-example.json ==
+== fsh-generated/resources/Observation-mind-systolischer-blutdruck-nicht-gemessen-example.json ==
+== fsh-generated/resources/Observation-mind-temperatur-example.json ==
+== fsh-generated/resources/Observation-mind-zeit-alarm-example.json ==
+== fsh-generated/resources/Observation-mind-zeit-einsatzende-example.json ==
+== fsh-generated/resources/Patient-divi-patient-example.json ==
+== fsh-generated/resources/Patient-mind-patient-example.json ==
+== fsh-generated/resources/Practitioner-mind-practitioner-example.json ==
+== fsh-generated/resources/PractitionerRole-mind-practitionerrole-example.json ==
+== fsh-generated/resources/PractitionerRole-mind-practitionerrole-example2.json ==
+== fsh-generated/resources/StructureDefinition-bundle-de-ems-mind-r4.json ==
+INFORMATION: StructureDefinition/bundle-de-ems-mind-r4: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+== fsh-generated/resources/StructureDefinition-composition-de-ems-divi-r4.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/composition-de-ems-divi-r4'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-composition-de-ems-mind-r4.json ==
+INFORMATION: StructureDefinition/composition-de-ems-mind-r4: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/composition-de-ems-mind-r4: StructureDefinition.snapshot.element[45].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-encounter-de-ems-divi-r4.json ==
+INFORMATION: StructureDefinition/encounter-de-ems-divi-r4: StructureDefinition.differential.element[16].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/encounter-de-ems-divi-r4: StructureDefinition.snapshot.element[66].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/encounter-de-ems-divi-r4'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-encounter-de-ems-mind-r4.json ==
+INFORMATION: StructureDefinition/encounter-de-ems-mind-r4: StructureDefinition.snapshot.element[84].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-location-de-ems-divi-r4.json ==
+WARNING: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[26].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct|5.4.0'
+WARNING: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[33].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName|5.4.0'
+WARNING: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[34].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber|5.4.0'
+WARNING: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[35].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator|5.4.0'
+WARNING: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[36].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox|5.4.0'
+INFORMATION: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[37].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.4.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+INFORMATION: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[45].example[0].value.ofType(Coding).system: A definition for CodeSystem 'http://fhir.de/sid/destatis/ags' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[60].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString' to 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString|5.4.0'
+ERROR: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[60].example[0].value.ofType(Coding).display: Wrong Display Name 'Deutschland' for urn:iso:std:iso:3166#DE. Valid display is 'Germany' (en) (for the language(s) 'en')
+INFORMATION: StructureDefinition/location-de-ems-divi-r4: StructureDefinition.snapshot.element[66].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/location-de-ems-divi-r4'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-location-de-ems-mind-r4.json ==
+WARNING: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[26].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct|5.4.0'
+WARNING: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[33].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName|5.4.0'
+WARNING: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[34].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber|5.4.0'
+WARNING: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[35].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator|5.4.0'
+WARNING: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[36].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox|5.4.0'
+INFORMATION: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[45].example[0].value.ofType(Coding).system: A definition for CodeSystem 'http://fhir.de/sid/destatis/ags' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[60].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString' to 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString|5.4.0'
+ERROR: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[60].example[0].value.ofType(Coding).display: Wrong Display Name 'Deutschland' for urn:iso:std:iso:3166#DE. Valid display is 'Germany' (en) (for the language(s) 'en')
+INFORMATION: StructureDefinition/location-de-ems-mind-r4: StructureDefinition.snapshot.element[66].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-mind-einsatzort-typ.json ==
+WARNING: StructureDefinition/mind-einsatzort-typ: StructureDefinition.context[0]: Review the extension type for mind-einsatzort-typ: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-mind-softwarekennung.json ==
+WARNING: StructureDefinition/mind-softwarekennung: StructureDefinition.context[0]: Review the extension type for mind-softwarekennung: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-observation-de-ems-base.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-base'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind.json ==
+INFORMATION: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-aerztliche-begleitung.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-begleitung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-aerztliche-qualifikation.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-aerztliche-qualifikation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-alter.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-altersvaliditaet.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-anmeldung-patient.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-anmeldung-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-anzahl-perfusor.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-anzahl-perfusor'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-atemfrequenz.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-atemfrequenz-2.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-atemfrequenz-2'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-atmung.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-behandlungspfad.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-behandlungspfad'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-beteiligte-rettungsmittel.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-beteiligte-rettungsmittel'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-bewusstsein.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-blutzuckerwert.json ==
+WARNING: StructureDefinition/observation-de-ems-mind-blutzuckerwert: StructureDefinition.snapshot.element[0].constraint[9]: mind-blutzucker-einheit-pflicht: The left side is inherently a collection, and so the expression 'code.coding.code = 'blutzucker-einheit'' may fail or return false if there is more than one item in the content being evaluated
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-blutzuckerwert-2.json ==
+INFORMATION: StructureDefinition/observation-de-ems-mind-blutzuckerwert-2: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/observation-de-ems-mind-blutzuckerwert-2: StructureDefinition.snapshot.element[0].constraint[9]: mind-blutzucker-einheit-pflicht: The left side is inherently a collection, and so the expression 'code.coding.code = 'blutzucker-einheit'' may fail or return false if there is more than one item in the content being evaluated
+INFORMATION: StructureDefinition/observation-de-ems-mind-blutzuckerwert-2: StructureDefinition.snapshot.element[62].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-blutzuckerwert-2'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-dokumentierendes-rettungsmittel.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-dokumentierendes-rettungsmittel'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-durchf-heilkundl-massn.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-durchf-heilkundl-massn'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-ekg-befund.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-etco2-wert.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-etco2-wert-2.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-etco2-wert-2'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-fortlaufend-sedierung.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-fortlaufend-sedierung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-glasgow-coma-scale.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-glasgow-coma-scale-2.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-glasgow-coma-scale-2'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-hautbefunde.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-helm-pat.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-helm-pat'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-herzfrequenz.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-herzfrequenz-2.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-herzfrequenz-2'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-indikation-arztbegleitung.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-indikation-arztbegleitung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-invasiv-blutdruck.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-invasiv-blutdruck'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-katecholamin-pflicht.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-katecholamin-pflicht'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-katecholamin-therapie.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-katecholamin-therapie'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-kein-transport-mit-patient.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-mit-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-kein-transport-ohne-patient.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-kein-transport-ohne-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-khauf.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-khauf'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-lichtreaktion.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-neurologische-auffaelligkeiten.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-notarzt-nachgefordert.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-nummer-zk.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-nummer-zk'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-personalstatus.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-personalstatus'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-psyche.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-pupillenweite.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-rd-transport.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-reanimationssituation.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-reanimationssituation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-reanimationstechnik.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-reanimationstechnik'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-rekapillarisierungszeit.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-rosc.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-rosc'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-sauerstoffsaettigung.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-sauerstoffsaettigung-2.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-sauerstoffsaettigung-2'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-schmerzempfinden.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-schmerzempfinden-2.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-schmerzempfinden-2'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-schmerzerleben.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-sosi-transport.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-sosi-transport'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-sport.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-sport'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-symptombeginn.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-symptombeginn-gesichert.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-gesichert'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-symptombeginn-vor-24h.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-symptombeginn-vor-24h'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-systolischer-blutdruck.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-systolischer-blutdruck-2.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-systolischer-blutdruck-2'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-temperatur.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-tna-nachgefordert.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-tna-nachgefordert'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-urkrstst.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-urkrstst'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-vbeatmung.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-vbeatmung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-vbeatmung-detail.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-vbeatmung-detail'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-vigilanz-minderung.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-vigilanz-minderung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zcdefi.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zcdefi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zchdm.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zchdm'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zckb.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zckb'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zdefi1.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zdefi1'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-alarm.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-ankunft-einsatzort.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-einsatzort'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-ankunft-patient.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ankunft-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-ausruecken.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-ausruecken'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-einsatzende.json ==
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-eintreffen-transportziel.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-eintreffen-transportziel'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-notfallmeldung.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-notfallmeldung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-transportbeginn.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-transportbeginn'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeit-uebergabe-patient.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeit-uebergabe-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zeofr.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zeofr'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zhdm.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zhdm'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-zrosc1.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-zrosc1'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-de-ems-mind-ztod.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/observation-de-ems-mind-ztod'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-patient-de-ems-divi-r4.json ==
+== fsh-generated/resources/StructureDefinition-patient-de-ems-mind-r4.json ==
+== fsh-generated/resources/StructureDefinition-practitioner-de-ems-divi-r4.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/practitioner-de-ems-divi-r4'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-practitioner-de-ems-mind-r4.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/practitioner-de-ems-mind-r4'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-practitionerrole-de-ems-divi-r4.json ==
+WARNING: StructureDefinition.where(url = 'https://till-ko.github.io/de-ems/StructureDefinition/practitionerrole-de-ems-divi-r4'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-practitionerrole-de-ems-mind-r4.json ==
+== fsh-generated/resources/ValueSet-de-ems-kapitel-vs.json ==
+== fsh-generated/resources/ValueSet-mind-aerztliche-begleitung-vs.json ==
+== fsh-generated/resources/ValueSet-mind-aerztliche-qualifikation-vs.json ==
+== fsh-generated/resources/ValueSet-mind-airway-massnahme-vs.json ==
+== fsh-generated/resources/ValueSet-mind-atemunterstuetzung-vs.json ==
+== fsh-generated/resources/ValueSet-mind-atmung-vs.json ==
+== fsh-generated/resources/ValueSet-mind-beteiligtes-rettungsmittel-vs.json ==
+== fsh-generated/resources/ValueSet-mind-bewusstseinslage-vs.json ==
+== fsh-generated/resources/ValueSet-mind-blutzucker-befund-vs.json ==
+== fsh-generated/resources/ValueSet-mind-blutzucker-einheit-vs.json ==
+== fsh-generated/resources/ValueSet-mind-circulation-zugang-vs.json ==
+== fsh-generated/resources/ValueSet-mind-diagnose-vs.json ==
+== fsh-generated/resources/ValueSet-mind-dokumentierendes-rettungsmittel-vs.json ==
+== fsh-generated/resources/ValueSet-mind-einsatzart-na-vs.json ==
+== fsh-generated/resources/ValueSet-mind-einsatzart-rd-vs.json ==
+== fsh-generated/resources/ValueSet-mind-einsatzart-vs.json ==
+== fsh-generated/resources/ValueSet-mind-einsatzbesonderheit-vs.json ==
+== fsh-generated/resources/ValueSet-mind-einsatzort-typ-vs.json ==
+== fsh-generated/resources/ValueSet-mind-ekg-12-kanal-vs.json ==
+== fsh-generated/resources/ValueSet-mind-ekg-befund-vs.json ==
+== fsh-generated/resources/ValueSet-mind-erste-defibrillation-durch-vs.json ==
+== fsh-generated/resources/ValueSet-mind-hautbefund-vs.json ==
+== fsh-generated/resources/ValueSet-mind-heilkundliche-massnahme-vs.json ==
+== fsh-generated/resources/ValueSet-mind-herzdruckmassage-durch-vs.json ==
+== fsh-generated/resources/ValueSet-mind-indikation-intensivtransport-vs.json ==
+== fsh-generated/resources/ValueSet-mind-infusionsgabe-vs.json ==
+== fsh-generated/resources/ValueSet-mind-kein-transport-mit-patient-vs.json ==
+== fsh-generated/resources/ValueSet-mind-kein-transport-ohne-patient-vs.json ==
+== fsh-generated/resources/ValueSet-mind-kollaps-beobachtet-durch-vs.json ==
+== fsh-generated/resources/ValueSet-mind-krankenhausaufnahme-zustand-vs.json ==
+== fsh-generated/resources/ValueSet-mind-kreislaufstillstandursache-vs.json ==
+== fsh-generated/resources/ValueSet-mind-lagerungs-rettungstechnik-vs.json ==
+== fsh-generated/resources/ValueSet-mind-lichtreaktion-vs.json ==
+== fsh-generated/resources/ValueSet-mind-medikamentengabe-vs.json ==
+== fsh-generated/resources/ValueSet-mind-medizintechnik-vs.json ==
+== fsh-generated/resources/ValueSet-mind-mnaca-score-vs.json ==
+== fsh-generated/resources/ValueSet-mind-naca-score-vs.json ==
+== fsh-generated/resources/ValueSet-mind-neurologische-auffaelligkeit-verlauf-vs.json ==
+== fsh-generated/resources/ValueSet-mind-neurologische-auffaelligkeit-vs.json ==
+== fsh-generated/resources/ValueSet-mind-observationstyp-vs.json ==
+== fsh-generated/resources/ValueSet-mind-ort-patientenuebergabe-vs.json ==
+== fsh-generated/resources/ValueSet-mind-personalstatus-vs.json ==
+== fsh-generated/resources/ValueSet-mind-pre-emergency-status-vs.json ==
+== fsh-generated/resources/ValueSet-mind-protokolltyp-vs.json ==
+== fsh-generated/resources/ValueSet-mind-psychischer-zustand-vs.json ==
+== fsh-generated/resources/ValueSet-mind-pupillenweite-vs.json ==
+== fsh-generated/resources/ValueSet-mind-rd-transport-vs.json ==
+== fsh-generated/resources/ValueSet-mind-reanimationssituation-vs.json ==
+== fsh-generated/resources/ValueSet-mind-reanimationstechnik-vs.json ==
+== fsh-generated/resources/ValueSet-mind-rosc-vs.json ==
+== fsh-generated/resources/ValueSet-mind-schmerzerleben-vs.json ==
+== fsh-generated/resources/ValueSet-mind-spezielle-devices-vs.json ==
+== fsh-generated/resources/ValueSet-mind-spezielle-massnahme-vs.json ==
+== fsh-generated/resources/ValueSet-mind-unfallhergang-vs.json ==
+== fsh-generated/resources/ValueSet-mind-unfallmechanismus-vs.json ==
+== fsh-generated/resources/ValueSet-mind-unfallursache-vs.json ==
+== fsh-generated/resources/ValueSet-mind-verletzungsmuster-vs.json ==
+== fsh-generated/resources/ValueSet-mind-zeitliche-dringlichkeit-vs.json ==

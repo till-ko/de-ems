@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mind-observationstyp-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mind-observationstyp-cs</b></p><a name="mind-observationstyp-cs"> </a><a name="hcmind-observationstyp-cs"> </a><p>This case-sensitive code system <code>https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">patientenalter<a name="mind-observationstyp-cs-patientenalter"> </a></td><td>Patientenalter</td></tr><tr><td style="white-space:nowrap">altersvaliditaet<a name="mind-observationstyp-cs-altersvaliditaet"> </a></td><td>Altersvalidität</td></tr><tr><td style="white-space:nowrap">alter-jahre<a name="mind-observationstyp-cs-alter-jahre"> </a></td><td>Alter in Jahren</td></tr><tr><td style="white-space:nowrap">alter-monate<a name="mind-observationstyp-cs-alter-monate"> </a></td><td>Alter in Monaten</td></tr><tr><td style="white-space:nowrap">rd-transport<a name="mind-observationstyp-cs-rd-transport"> </a></td><td>Rettungsdienstlicher Transport</td></tr><tr><td style="white-space:nowrap">aerztliche-begleitung<a name="mind-observationstyp-cs-aerztliche-begleitung"> </a></td><td>Ärztliche Transportbegleitung</td></tr><tr><td style="white-space:nowrap">notarzt-nachgefordert<a name="mind-observationstyp-cs-notarzt-nachgefordert"> </a></td><td>Notarzt nachgefordert</td></tr><tr><td style="white-space:nowrap">tna-nachgefordert<a name="mind-observationstyp-cs-tna-nachgefordert"> </a></td><td>Tele-Notarzt nachgefordert</td></tr><tr><td style="white-space:nowrap">kein-transport-mit-patient<a name="mind-observationstyp-cs-kein-transport-mit-patient"> </a></td><td>Grund für Einsatz ohne Transport trotz Patientenkontakt</td></tr><tr><td style="white-space:nowrap">kein-transport-ohne-patient<a name="mind-observationstyp-cs-kein-transport-ohne-patient"> </a></td><td>Grund für Einsatz ohne Transport, da kein Patientenkontakt</td></tr><tr><td style="white-space:nowrap">dokumentierendes-rettungsmittel<a name="mind-observationstyp-cs-dokumentierendes-rettungsmittel"> </a></td><td>Dokumentierendes Rettungsmittel</td></tr><tr><td style="white-space:nowrap">beteiligte-rettungsmittel<a name="mind-observationstyp-cs-beteiligte-rettungsmittel"> </a></td><td>Beteiligte Rettungsmittel</td></tr><tr><td style="white-space:nowrap">aerztliche-qualifikation<a name="mind-observationstyp-cs-aerztliche-qualifikation"> </a></td><td>Ärztliche Qualifikation</td></tr><tr><td style="white-space:nowrap">personalstatus<a name="mind-observationstyp-cs-personalstatus"> </a></td><td>Status des Personals</td></tr><tr><td style="white-space:nowrap">symptombeginn-vor-24h<a name="mind-observationstyp-cs-symptombeginn-vor-24h"> </a></td><td>Symptombeginn innerhalb der letzten 24 Stunden</td></tr><tr><td style="white-space:nowrap">symptombeginn<a name="mind-observationstyp-cs-symptombeginn"> </a></td><td>Zeitpunkt Symptombeginn</td></tr><tr><td style="white-space:nowrap">symptombeginn-gesichert<a name="mind-observationstyp-cs-symptombeginn-gesichert"> </a></td><td>Symptombeginn gesichert oder geschätzt</td></tr><tr><td style="white-space:nowrap">zeit-notfallmeldung<a name="mind-observationstyp-cs-zeit-notfallmeldung"> </a></td><td>Zeitpunkt Eingang Notfallmeldung</td></tr><tr><td style="white-space:nowrap">zeit-alarm<a name="mind-observationstyp-cs-zeit-alarm"> </a></td><td>Zeitpunkt Alarm</td></tr><tr><td style="white-space:nowrap">zeit-ausruecken<a name="mind-observationstyp-cs-zeit-ausruecken"> </a></td><td>Zeitpunkt Ausrücken</td></tr><tr><td style="white-space:nowrap">zeit-ankunft-einsatzort<a name="mind-observationstyp-cs-zeit-ankunft-einsatzort"> </a></td><td>Zeitpunkt Ankunft Einsatzort</td></tr><tr><td style="white-space:nowrap">zeit-ankunft-patient<a name="mind-observationstyp-cs-zeit-ankunft-patient"> </a></td><td>Zeitpunkt Ankunft Patient</td></tr><tr><td style="white-space:nowrap">zeit-transportbeginn<a name="mind-observationstyp-cs-zeit-transportbeginn"> </a></td><td>Zeitpunkt Transportbeginn</td></tr><tr><td style="white-space:nowrap">zeit-eintreffen-transportziel<a name="mind-observationstyp-cs-zeit-eintreffen-transportziel"> </a></td><td>Zeitpunkt Eintreffen Transportziel</td></tr><tr><td style="white-space:nowrap">zeit-uebergabe-patient<a name="mind-observationstyp-cs-zeit-uebergabe-patient"> </a></td><td>Zeitpunkt Übergabe Patient</td></tr><tr><td style="white-space:nowrap">zeit-einsatzende<a name="mind-observationstyp-cs-zeit-einsatzende"> </a></td><td>Zeitpunkt Einsatzende</td></tr><tr><td style="white-space:nowrap">bewusstsein<a name="mind-observationstyp-cs-bewusstsein"> </a></td><td>Bewusstseinslage</td></tr><tr><td style="white-space:nowrap">neurologische-auffaelligkeiten<a name="mind-observationstyp-cs-neurologische-auffaelligkeiten"> </a></td><td>Neurologische Auffälligkeiten</td></tr><tr><td style="white-space:nowrap">ekg-befund<a name="mind-observationstyp-cs-ekg-befund"> </a></td><td>EKG-Befund</td></tr><tr><td style="white-space:nowrap">schmerzerleben<a name="mind-observationstyp-cs-schmerzerleben"> </a></td><td>Schmerzerleben</td></tr><tr><td style="white-space:nowrap">atmung<a name="mind-observationstyp-cs-atmung"> </a></td><td>Klinische Befunde Atmung</td></tr><tr><td style="white-space:nowrap">hautbefunde<a name="mind-observationstyp-cs-hautbefunde"> </a></td><td>Hautbefunde</td></tr><tr><td style="white-space:nowrap">psyche<a name="mind-observationstyp-cs-psyche"> </a></td><td>Psychischer Zustand</td></tr><tr><td style="white-space:nowrap">pupillenweite<a name="mind-observationstyp-cs-pupillenweite"> </a></td><td>Pupillenweite</td></tr><tr><td style="white-space:nowrap">lichtreaktion<a name="mind-observationstyp-cs-lichtreaktion"> </a></td><td>Lichtreaktion</td></tr><tr><td style="white-space:nowrap">glasgow-coma-scale<a name="mind-observationstyp-cs-glasgow-coma-scale"> </a></td><td>Glasgow Coma Scale</td></tr><tr><td style="white-space:nowrap">systolischer-blutdruck<a name="mind-observationstyp-cs-systolischer-blutdruck"> </a></td><td>Systolischer Blutdruck</td></tr><tr><td style="white-space:nowrap">herzfrequenz<a name="mind-observationstyp-cs-herzfrequenz"> </a></td><td>Herzfrequenz</td></tr><tr><td style="white-space:nowrap">atemfrequenz<a name="mind-observationstyp-cs-atemfrequenz"> </a></td><td>Atemfrequenz</td></tr><tr><td style="white-space:nowrap">sauerstoffsaettigung<a name="mind-observationstyp-cs-sauerstoffsaettigung"> </a></td><td>Sauerstoffsättigung</td></tr><tr><td style="white-space:nowrap">rekapillarisierungszeit<a name="mind-observationstyp-cs-rekapillarisierungszeit"> </a></td><td>Rekapillarisierungszeit</td></tr><tr><td style="white-space:nowrap">schmerzempfinden<a name="mind-observationstyp-cs-schmerzempfinden"> </a></td><td>Schmerzempfinden</td></tr><tr><td style="white-space:nowrap">blutzuckerwert<a name="mind-observationstyp-cs-blutzuckerwert"> </a></td><td>Blutzucker</td></tr><tr><td style="white-space:nowrap">blutzucker-einheit<a name="mind-observationstyp-cs-blutzucker-einheit"> </a></td><td>Blutzuckereinheit</td></tr><tr><td style="white-space:nowrap">temperatur<a name="mind-observationstyp-cs-temperatur"> </a></td><td>Temperatur</td></tr><tr><td style="white-space:nowrap">etco2-wert<a name="mind-observationstyp-cs-etco2-wert"> </a></td><td>EtCO2-Wert</td></tr><tr><td style="white-space:nowrap">vbeatmung<a name="mind-observationstyp-cs-vbeatmung"> </a></td><td>Beatmung (außer Heimbeatmung)</td></tr><tr><td style="white-space:nowrap">vbeatmung-detail<a name="mind-observationstyp-cs-vbeatmung-detail"> </a></td><td>Differenzierte Beatmung</td></tr><tr><td style="white-space:nowrap">katecholamin-pflicht<a name="mind-observationstyp-cs-katecholamin-pflicht"> </a></td><td>Katecholaminpflichtigkeit</td></tr><tr><td style="white-space:nowrap">katecholamin-therapie<a name="mind-observationstyp-cs-katecholamin-therapie"> </a></td><td>Differenzierte Katecholamin-Therapie</td></tr><tr><td style="white-space:nowrap">fortlaufend-sedierung<a name="mind-observationstyp-cs-fortlaufend-sedierung"> </a></td><td>Fortlaufende Sedierung/Narkose</td></tr><tr><td style="white-space:nowrap">vigilanz-minderung<a name="mind-observationstyp-cs-vigilanz-minderung"> </a></td><td>Vigilanzminderung</td></tr><tr><td style="white-space:nowrap">invasiv-blutdruck<a name="mind-observationstyp-cs-invasiv-blutdruck"> </a></td><td>Invasiver Blutdruck</td></tr><tr><td style="white-space:nowrap">anzahl-perfusor<a name="mind-observationstyp-cs-anzahl-perfusor"> </a></td><td>Anzahl Perfusoren</td></tr><tr><td style="white-space:nowrap">indikation-arztbegleitung<a name="mind-observationstyp-cs-indikation-arztbegleitung"> </a></td><td>Indikation zur ärztlichen Begleitung</td></tr><tr><td style="white-space:nowrap">helm-pat<a name="mind-observationstyp-cs-helm-pat"> </a></td><td>Helm getragen</td></tr><tr><td style="white-space:nowrap">behandlungspfad<a name="mind-observationstyp-cs-behandlungspfad"> </a></td><td>Behandlungspfad</td></tr><tr><td style="white-space:nowrap">glasgow-coma-scale-2<a name="mind-observationstyp-cs-glasgow-coma-scale-2"> </a></td><td>Glasgow Coma Scale (Abschlussbefunde)</td></tr><tr><td style="white-space:nowrap">systolischer-blutdruck-2<a name="mind-observationstyp-cs-systolischer-blutdruck-2"> </a></td><td>Systolischer Blutdruck (Abschlussbefunde)</td></tr><tr><td style="white-space:nowrap">herzfrequenz-2<a name="mind-observationstyp-cs-herzfrequenz-2"> </a></td><td>Herzfrequenz (Abschlussbefunde)</td></tr><tr><td style="white-space:nowrap">atemfrequenz-2<a name="mind-observationstyp-cs-atemfrequenz-2"> </a></td><td>Atemfrequenz (Abschlussbefunde)</td></tr><tr><td style="white-space:nowrap">sauerstoffsaettigung-2<a name="mind-observationstyp-cs-sauerstoffsaettigung-2"> </a></td><td>Sauerstoffsättigung (Abschlussbefunde)</td></tr><tr><td style="white-space:nowrap">schmerzempfinden-2<a name="mind-observationstyp-cs-schmerzempfinden-2"> </a></td><td>Schmerzempfinden (Abschlussbefunde)</td></tr><tr><td style="white-space:nowrap">sosi-transport<a name="mind-observationstyp-cs-sosi-transport"> </a></td><td>SO/SI bei Transport</td></tr><tr><td style="white-space:nowrap">blutzuckerwert-2<a name="mind-observationstyp-cs-blutzuckerwert-2"> </a></td><td>Blutzucker (Abschlussbefunde)</td></tr><tr><td style="white-space:nowrap">etco2-wert-2<a name="mind-observationstyp-cs-etco2-wert-2"> </a></td><td>EtCO2-Wert (Abschlussbefunde)</td></tr><tr><td style="white-space:nowrap">nummer-zk<a name="mind-observationstyp-cs-nummer-zk"> </a></td><td>Nummer Zielklinik</td></tr><tr><td style="white-space:nowrap">anmeldung-patient<a name="mind-observationstyp-cs-anmeldung-patient"> </a></td><td>Anmeldung Patient</td></tr><tr><td style="white-space:nowrap">reanimationssituation<a name="mind-observationstyp-cs-reanimationssituation"> </a></td><td>Reanimationssituation</td></tr><tr><td style="white-space:nowrap">reanimationstechnik<a name="mind-observationstyp-cs-reanimationstechnik"> </a></td><td>Reanimationstechnik</td></tr><tr><td style="white-space:nowrap">reanimation-urkrstst<a name="mind-observationstyp-cs-reanimation-urkrstst"> </a></td><td>Ursache der Reanimation</td></tr><tr><td style="white-space:nowrap">reanimation-zckb<a name="mind-observationstyp-cs-reanimation-zckb"> </a></td><td>Kollaps beobachtet durch</td></tr><tr><td style="white-space:nowrap">reanimation-zchdm<a name="mind-observationstyp-cs-reanimation-zchdm"> </a></td><td>Herzdruckmassage begonnen</td></tr><tr><td style="white-space:nowrap">reanimation-zcdefi<a name="mind-observationstyp-cs-reanimation-zcdefi"> </a></td><td>Erste Defibrillation durch</td></tr><tr><td style="white-space:nowrap">reanimation-rosc<a name="mind-observationstyp-cs-reanimation-rosc"> </a></td><td>ROSC</td></tr><tr><td style="white-space:nowrap">reanimation-rosc1<a name="mind-observationstyp-cs-reanimation-rosc1"> </a></td><td>ROSC-Intervall 1</td></tr><tr><td style="white-space:nowrap">reanimation-zdefi1<a name="mind-observationstyp-cs-reanimation-zdefi1"> </a></td><td>Zeitpunkt erste Defibrillation</td></tr><tr><td style="white-space:nowrap">reanimation-zros1<a name="mind-observationstyp-cs-reanimation-zros1"> </a></td><td>Zeitpunkt erster ROSC</td></tr><tr><td style="white-space:nowrap">reanimation-ztod<a name="mind-observationstyp-cs-reanimation-ztod"> </a></td><td>Zeitpunkt Tod</td></tr><tr><td style="white-space:nowrap">reanimation-khauf<a name="mind-observationstyp-cs-reanimation-khauf"> </a></td><td>Krankenhausaufnahmezustand</td></tr><tr><td style="white-space:nowrap">sport<a name="mind-observationstyp-cs-sport"> </a></td><td>SPORT (Spontankreislauf)</td></tr><tr><td style="white-space:nowrap">zeofr<a name="mind-observationstyp-cs-zeofr"> </a></td><td>ZEOFR (Zeitpunkt Erstversorgung Fremd)</td></tr><tr><td style="white-space:nowrap">zhdm<a name="mind-observationstyp-cs-zhdm"> </a></td><td>ZHDM (Zeitpunkt Herz-Druck-Massage)</td></tr><tr><td style="white-space:nowrap">zdefi1<a name="mind-observationstyp-cs-zdefi1"> </a></td><td>ZDEFI1 (Zeitpunkt erste Defibrillation)</td></tr><tr><td style="white-space:nowrap">zrosc1<a name="mind-observationstyp-cs-zrosc1"> </a></td><td>ZROSC1 (Zeitpunkt erster ROSC)</td></tr><tr><td style="white-space:nowrap">ztod<a name="mind-observationstyp-cs-ztod"> </a></td><td>ZTOD (Zeitpunkt Tod)</td></tr><tr><td style="white-space:nowrap">durchf-heilkundl-massn<a name="mind-observationstyp-cs-durchf-heilkundl-massn"> </a></td><td>Durchführung heilkundlicher Maßnahmen durch Notfallsanitäter</td></tr></table></div>
+  </text>
+  <url value="https://till-ko.github.io/de-ems/CodeSystem/mind-observationstyp-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.169126619167380341660016816424527320624.16.34"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MindObservationstypCS"/>
+  <title value="MIND Beobachtungstypen"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-30T08:50:03+00:00"/>
+  <publisher value="Till Koch"/>
+  <contact>
+    <name value="Till Koch"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/till-ko"/>
+    </telecom>
+  </contact>
+  <description value="Beobachtungstypen (Observation.code) und zugehörige Komponenten-Codes für MIND-7.1-Beobachtungen."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="87"/>
+  <concept>
+    <code value="patientenalter"/>
+    <display value="Patientenalter"/>
+  </concept>
+  <concept>
+    <code value="altersvaliditaet"/>
+    <display value="Altersvalidität"/>
+  </concept>
+  <concept>
+    <code value="alter-jahre"/>
+    <display value="Alter in Jahren"/>
+  </concept>
+  <concept>
+    <code value="alter-monate"/>
+    <display value="Alter in Monaten"/>
+  </concept>
+  <concept>
+    <code value="rd-transport"/>
+    <display value="Rettungsdienstlicher Transport"/>
+  </concept>
+  <concept>
+    <code value="aerztliche-begleitung"/>
+    <display value="Ärztliche Transportbegleitung"/>
+  </concept>
+  <concept>
+    <code value="notarzt-nachgefordert"/>
+    <display value="Notarzt nachgefordert"/>
+  </concept>
+  <concept>
+    <code value="tna-nachgefordert"/>
+    <display value="Tele-Notarzt nachgefordert"/>
+  </concept>
+  <concept>
+    <code value="kein-transport-mit-patient"/>
+    <display value="Grund für Einsatz ohne Transport trotz Patientenkontakt"/>
+  </concept>
+  <concept>
+    <code value="kein-transport-ohne-patient"/>
+    <display value="Grund für Einsatz ohne Transport, da kein Patientenkontakt"/>
+  </concept>
+  <concept>
+    <code value="dokumentierendes-rettungsmittel"/>
+    <display value="Dokumentierendes Rettungsmittel"/>
+  </concept>
+  <concept>
+    <code value="beteiligte-rettungsmittel"/>
+    <display value="Beteiligte Rettungsmittel"/>
+  </concept>
+  <concept>
+    <code value="aerztliche-qualifikation"/>
+    <display value="Ärztliche Qualifikation"/>
+  </concept>
+  <concept>
+    <code value="personalstatus"/>
+    <display value="Status des Personals"/>
+  </concept>
+  <concept>
+    <code value="symptombeginn-vor-24h"/>
+    <display value="Symptombeginn innerhalb der letzten 24 Stunden"/>
+  </concept>
+  <concept>
+    <code value="symptombeginn"/>
+    <display value="Zeitpunkt Symptombeginn"/>
+  </concept>
+  <concept>
+    <code value="symptombeginn-gesichert"/>
+    <display value="Symptombeginn gesichert oder geschätzt"/>
+  </concept>
+  <concept>
+    <code value="zeit-notfallmeldung"/>
+    <display value="Zeitpunkt Eingang Notfallmeldung"/>
+  </concept>
+  <concept>
+    <code value="zeit-alarm"/>
+    <display value="Zeitpunkt Alarm"/>
+  </concept>
+  <concept>
+    <code value="zeit-ausruecken"/>
+    <display value="Zeitpunkt Ausrücken"/>
+  </concept>
+  <concept>
+    <code value="zeit-ankunft-einsatzort"/>
+    <display value="Zeitpunkt Ankunft Einsatzort"/>
+  </concept>
+  <concept>
+    <code value="zeit-ankunft-patient"/>
+    <display value="Zeitpunkt Ankunft Patient"/>
+  </concept>
+  <concept>
+    <code value="zeit-transportbeginn"/>
+    <display value="Zeitpunkt Transportbeginn"/>
+  </concept>
+  <concept>
+    <code value="zeit-eintreffen-transportziel"/>
+    <display value="Zeitpunkt Eintreffen Transportziel"/>
+  </concept>
+  <concept>
+    <code value="zeit-uebergabe-patient"/>
+    <display value="Zeitpunkt Übergabe Patient"/>
+  </concept>
+  <concept>
+    <code value="zeit-einsatzende"/>
+    <display value="Zeitpunkt Einsatzende"/>
+  </concept>
+  <concept>
+    <code value="bewusstsein"/>
+    <display value="Bewusstseinslage"/>
+  </concept>
+  <concept>
+    <code value="neurologische-auffaelligkeiten"/>
+    <display value="Neurologische Auffälligkeiten"/>
+  </concept>
+  <concept>
+    <code value="ekg-befund"/>
+    <display value="EKG-Befund"/>
+  </concept>
+  <concept>
+    <code value="schmerzerleben"/>
+    <display value="Schmerzerleben"/>
+  </concept>
+  <concept>
+    <code value="atmung"/>
+    <display value="Klinische Befunde Atmung"/>
+  </concept>
+  <concept>
+    <code value="hautbefunde"/>
+    <display value="Hautbefunde"/>
+  </concept>
+  <concept>
+    <code value="psyche"/>
+    <display value="Psychischer Zustand"/>
+  </concept>
+  <concept>
+    <code value="pupillenweite"/>
+    <display value="Pupillenweite"/>
+  </concept>
+  <concept>
+    <code value="lichtreaktion"/>
+    <display value="Lichtreaktion"/>
+  </concept>
+  <concept>
+    <code value="glasgow-coma-scale"/>
+    <display value="Glasgow Coma Scale"/>
+  </concept>
+  <concept>
+    <code value="systolischer-blutdruck"/>
+    <display value="Systolischer Blutdruck"/>
+  </concept>
+  <concept>
+    <code value="herzfrequenz"/>
+    <display value="Herzfrequenz"/>
+  </concept>
+  <concept>
+    <code value="atemfrequenz"/>
+    <display value="Atemfrequenz"/>
+  </concept>
+  <concept>
+    <code value="sauerstoffsaettigung"/>
+    <display value="Sauerstoffsättigung"/>
+  </concept>
+  <concept>
+    <code value="rekapillarisierungszeit"/>
+    <display value="Rekapillarisierungszeit"/>
+  </concept>
+  <concept>
+    <code value="schmerzempfinden"/>
+    <display value="Schmerzempfinden"/>
+  </concept>
+  <concept>
+    <code value="blutzuckerwert"/>
+    <display value="Blutzucker"/>
+  </concept>
+  <concept>
+    <code value="blutzucker-einheit"/>
+    <display value="Blutzuckereinheit"/>
+  </concept>
+  <concept>
+    <code value="temperatur"/>
+    <display value="Temperatur"/>
+  </concept>
+  <concept>
+    <code value="etco2-wert"/>
+    <display value="EtCO2-Wert"/>
+  </concept>
+  <concept>
+    <code value="vbeatmung"/>
+    <display value="Beatmung (außer Heimbeatmung)"/>
+  </concept>
+  <concept>
+    <code value="vbeatmung-detail"/>
+    <display value="Differenzierte Beatmung"/>
+  </concept>
+  <concept>
+    <code value="katecholamin-pflicht"/>
+    <display value="Katecholaminpflichtigkeit"/>
+  </concept>
+  <concept>
+    <code value="katecholamin-therapie"/>
+    <display value="Differenzierte Katecholamin-Therapie"/>
+  </concept>
+  <concept>
+    <code value="fortlaufend-sedierung"/>
+    <display value="Fortlaufende Sedierung/Narkose"/>
+  </concept>
+  <concept>
+    <code value="vigilanz-minderung"/>
+    <display value="Vigilanzminderung"/>
+  </concept>
+  <concept>
+    <code value="invasiv-blutdruck"/>
+    <display value="Invasiver Blutdruck"/>
+  </concept>
+  <concept>
+    <code value="anzahl-perfusor"/>
+    <display value="Anzahl Perfusoren"/>
+  </concept>
+  <concept>
+    <code value="indikation-arztbegleitung"/>
+    <display value="Indikation zur ärztlichen Begleitung"/>
+  </concept>
+  <concept>
+    <code value="helm-pat"/>
+    <display value="Helm getragen"/>
+  </concept>
+  <concept>
+    <code value="behandlungspfad"/>
+    <display value="Behandlungspfad"/>
+  </concept>
+  <concept>
+    <code value="glasgow-coma-scale-2"/>
+    <display value="Glasgow Coma Scale (Abschlussbefunde)"/>
+  </concept>
+  <concept>
+    <code value="systolischer-blutdruck-2"/>
+    <display value="Systolischer Blutdruck (Abschlussbefunde)"/>
+  </concept>
+  <concept>
+    <code value="herzfrequenz-2"/>
+    <display value="Herzfrequenz (Abschlussbefunde)"/>
+  </concept>
+  <concept>
+    <code value="atemfrequenz-2"/>
+    <display value="Atemfrequenz (Abschlussbefunde)"/>
+  </concept>
+  <concept>
+    <code value="sauerstoffsaettigung-2"/>
+    <display value="Sauerstoffsättigung (Abschlussbefunde)"/>
+  </concept>
+  <concept>
+    <code value="schmerzempfinden-2"/>
+    <display value="Schmerzempfinden (Abschlussbefunde)"/>
+  </concept>
+  <concept>
+    <code value="sosi-transport"/>
+    <display value="SO/SI bei Transport"/>
+  </concept>
+  <concept>
+    <code value="blutzuckerwert-2"/>
+    <display value="Blutzucker (Abschlussbefunde)"/>
+  </concept>
+  <concept>
+    <code value="etco2-wert-2"/>
+    <display value="EtCO2-Wert (Abschlussbefunde)"/>
+  </concept>
+  <concept>
+    <code value="nummer-zk"/>
+    <display value="Nummer Zielklinik"/>
+  </concept>
+  <concept>
+    <code value="anmeldung-patient"/>
+    <display value="Anmeldung Patient"/>
+  </concept>
+  <concept>
+    <code value="reanimationssituation"/>
+    <display value="Reanimationssituation"/>
+  </concept>
+  <concept>
+    <code value="reanimationstechnik"/>
+    <display value="Reanimationstechnik"/>
+  </concept>
+  <concept>
+    <code value="reanimation-urkrstst"/>
+    <display value="Ursache der Reanimation"/>
+  </concept>
+  <concept>
+    <code value="reanimation-zckb"/>
+    <display value="Kollaps beobachtet durch"/>
+  </concept>
+  <concept>
+    <code value="reanimation-zchdm"/>
+    <display value="Herzdruckmassage begonnen"/>
+  </concept>
+  <concept>
+    <code value="reanimation-zcdefi"/>
+    <display value="Erste Defibrillation durch"/>
+  </concept>
+  <concept>
+    <code value="reanimation-rosc"/>
+    <display value="ROSC"/>
+  </concept>
+  <concept>
+    <code value="reanimation-rosc1"/>
+    <display value="ROSC-Intervall 1"/>
+  </concept>
+  <concept>
+    <code value="reanimation-zdefi1"/>
+    <display value="Zeitpunkt erste Defibrillation"/>
+  </concept>
+  <concept>
+    <code value="reanimation-zros1"/>
+    <display value="Zeitpunkt erster ROSC"/>
+  </concept>
+  <concept>
+    <code value="reanimation-ztod"/>
+    <display value="Zeitpunkt Tod"/>
+  </concept>
+  <concept>
+    <code value="reanimation-khauf"/>
+    <display value="Krankenhausaufnahmezustand"/>
+  </concept>
+  <concept>
+    <code value="sport"/>
+    <display value="SPORT (Spontankreislauf)"/>
+  </concept>
+  <concept>
+    <code value="zeofr"/>
+    <display value="ZEOFR (Zeitpunkt Erstversorgung Fremd)"/>
+  </concept>
+  <concept>
+    <code value="zhdm"/>
+    <display value="ZHDM (Zeitpunkt Herz-Druck-Massage)"/>
+  </concept>
+  <concept>
+    <code value="zdefi1"/>
+    <display value="ZDEFI1 (Zeitpunkt erste Defibrillation)"/>
+  </concept>
+  <concept>
+    <code value="zrosc1"/>
+    <display value="ZROSC1 (Zeitpunkt erster ROSC)"/>
+  </concept>
+  <concept>
+    <code value="ztod"/>
+    <display value="ZTOD (Zeitpunkt Tod)"/>
+  </concept>
+  <concept>
+    <code value="durchf-heilkundl-massn"/>
+    <display value="Durchführung heilkundlicher Maßnahmen durch Notfallsanitäter"/>
+  </concept>
+</CodeSystem>

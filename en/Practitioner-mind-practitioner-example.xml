@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="mind-practitioner-example"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner mind-practitioner-example</b></p><a name="mind-practitioner-example"> </a><a name="hcmind-practitioner-example"> </a><p><b>name</b>: Rettungsdienst Beispiel </p></div>
+  </text>
+  <name>
+    <family value="Beispiel"/>
+    <given value="Rettungsdienst"/>
+  </name>
+</Practitioner>

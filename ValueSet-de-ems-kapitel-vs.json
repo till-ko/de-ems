@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "de-ems-kapitel-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet de-ems-kapitel-vs</b></p><a name=\"de-ems-kapitel-vs\"> </a><a name=\"hcde-ems-kapitel-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-de-ems-kapitel-cs.html\"><code>https://till-ko.github.io/de-ems/CodeSystem/de-ems-kapitel-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://till-ko.github.io/de-ems/ValueSet/de-ems-kapitel-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.169126619167380341660016816424527320624.48.56"
+  }],
+  "version" : "0.1.0",
+  "name" : "DeEmsKapitelVS",
+  "title" : "de-EMS Kapitel ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-30T08:50:03+00:00",
+  "publisher" : "Till Koch",
+  "contact" : [{
+    "name" : "Till Koch",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/till-ko"
+    }]
+  }],
+  "description" : "Kapitel, die als Composition.section.code verwendet werden dürfen (derzeit die 18 MIND-7.1-Kapitel; Codes der DIVI-NFEP-Gliederung folgen, sobald das DIVI-Dokumentprofil seine Section-Slices erhält).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://till-ko.github.io/de-ems/CodeSystem/de-ems-kapitel-cs"
+    }]
+  }
+}
