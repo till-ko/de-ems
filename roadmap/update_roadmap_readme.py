@@ -30,7 +30,7 @@ BAR_WIDTH = 22
 def read_csv(path):
     with open(path, encoding="utf-8-sig", newline="") as f:
         rows = list(csv.reader(f, delimiter=";", quotechar='"'))
-    return rows[1:]
+    return rows[0], rows[1:]
 
 
 def is_data_row(r, status_col):
@@ -54,7 +54,7 @@ def status_counts(rows, status_col):
     return x, t, blank
 
 
-def chapters(rows):
+def chapters(rows, status_col):
     """Ordered list of (chapter_name, (x, t, blank)) for the Datenfelder file."""
     out, cur = [], None
     for r in rows:
@@ -65,7 +65,7 @@ def chapters(rows):
             continue
         if cur is None or not kap or not r[1].strip():
             continue
-        s = r[12].strip()
+        s = r[status_col].strip()
         if s == "x":
             out[-1][1][0] += 1
         elif s == "T":
@@ -150,12 +150,15 @@ def write_json(name, data):
 
 
 def main():
-    codes_rows = read_csv(CODES_CSV)
-    felder_rows = read_csv(FELDER_CSV)
+    codes_header, codes_rows = read_csv(CODES_CSV)
+    felder_header, felder_rows = read_csv(FELDER_CSV)
 
-    codes = status_counts(codes_rows, 4)
-    felder = status_counts(felder_rows, 12)
-    chap = chapters(felder_rows)
+    codes_status_col = codes_header.index("In FHIR umgesetzt?")
+    felder_status_col = felder_header.index("In FHIR umgesetzt?")
+
+    codes = status_counts(codes_rows, codes_status_col)
+    felder = status_counts(felder_rows, felder_status_col)
+    chap = chapters(felder_rows, felder_status_col)
 
     n_codes = sum(codes)
     n_df = sum(felder)
